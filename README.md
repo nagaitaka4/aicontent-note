@@ -38,7 +38,7 @@ aicontent-note/
 │   ├── service_model.md      # サービスモデル
 │   ├── workflow.md           # 記事制作ワークフロー
 │   └── writing_rules.md      # 執筆ルール
-├── operations/        # 運用ログ・改善記録
+├── operations/        # 運用ログ・改善記録・記事バックログ
 ├── seo/               # SEO検証サマリー
 ├── side-business/     # 副業検証・ツールメモ
 └── CLAUDE.md          # AI編集エージェント向け指示書

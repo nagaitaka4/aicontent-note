@@ -55,30 +55,25 @@
 
 | 種別 | 命名規則 | 例 |
 |---|---|---|
-| 通常記事（SEO・仕事記事） | `eyecatch_XX.png`（記事frontmatter `no` と一致） | `eyecatch_01.png` / `eyecatch_07.png` |
-| 副業検証シリーズ | `eyecatch_series_XX.png`（シリーズ内連番） | `eyecatch_series_01.png` |
+| 全記事共通 | `eyecatch_XXXX.png`（記事frontmatter `no` と一致） | `eyecatch_0001.png` / `eyecatch_0012.png` |
 
 **ルール：**
 - 記事のフロントマター `no` と画像番号を完全に一致させる
+- シリーズ・種別にかかわらず `no` で統一管理
 - 形式はすべて PNG に統一
-- 番号は2桁ゼロ埋め（01, 02, … 10, 11）
+- 番号は4桁ゼロ埋め（0001, 0002, … 0010, 0100, 1000）
 
 ## 保存先
 
 ```
 images/
-├── eyecatch_01.png
-├── eyecatch_02.png
-├── eyecatch_03.png
-├── eyecatch_04.png
-├── eyecatch_05.png
-├── eyecatch_06.png
-├── eyecatch_07.png  ← 直近（S-08相当）
-└── series/
-    ├── eyecatch_series_01.png
-    ├── eyecatch_series_02.png
-    ├── eyecatch_series_03.png
-    └── eyecatch_series_04.png
+├── eyecatch_0001.png  ← no:1
+├── eyecatch_0002.png  ← no:2
+├── eyecatch_0003.png  ← no:3
+├── eyecatch_0004.png  ← no:4
+├── eyecatch_0005.png  ← no:5
+├── eyecatch_0006.png  ← no:6
+└── ...
 ```
 
 ---

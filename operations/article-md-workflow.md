@@ -32,9 +32,26 @@ series_no: [シリーズ内の番号。なければ省略]
 title: [記事タイトル]
 date: [公開日 YYYY-MM-DD形式]
 url: [記事URL]
+slug: [URLスラッグ（url末尾のパス部分）]
 status: [published / draft]
+category: [カテゴリー名（日本語）]
+tags: [タグ1, タグ2, タグ3]
 ---
 ```
+
+### カテゴリー一覧
+
+| カテゴリー名 | スラッグ | 対象記事 |
+|---|---|---|
+| AIとコンテンツの実務 | `ai-content-practice` | AIツール・実務ノウハウ系 |
+| AIコンテンツ運用検証 | `ai-content-verification` | 副業検証シリーズ・検証記事 |
+| 継続できる運用設計 | `sustainable-operation` | 運用の仕組み・継続方法系 |
+| 費用対効果と現実 | `cost-effectiveness` | コスト・費用対効果系 |
+
+### タグについて
+- タグ名（日本語）で記述する
+- WordPress投稿時にそのまま使用する
+- スラッグはWordPress側で自動生成される（手動設定も可）
 
 ### シリーズ一覧
 
@@ -53,6 +70,21 @@ status: [published / draft]
 - H2 → `##`
 - H3 → `###`
 - 記事本文のみ。サイドバー・ナビ・フッターは含めない。
+
+---
+
+## WordPressへの投稿手順
+
+VSCodeのMarkdownファイルをそのままWordPressに貼り付けても見出しや改行が反映されない。以下の手順でコピーする。
+
+```
+① VSCodeでmdファイルを開く
+② 右上のプレビューアイコンをクリック（または Cmd + Shift + V）
+③ プレビュー画面で Cmd + A → Cmd + C
+④ WordPressの新規投稿画面にペースト
+```
+
+プレビュー画面はMarkdownをHTMLとして表示しているため、H1/H2/H3・改行がそのまま反映される。プラグイン不要。
 
 ---
 
@@ -80,3 +112,4 @@ status: [published / draft]
 | 4 | side-business | 3 | ai-webwriting-verification-03.md | 2026-03-16 |
 | 5 | - | - | ai-writing-claude-setup.md | 2026-03-17 |
 | 6 | side-business | 4 | ai-webwriting-verification-04.md | 2026-03-22 |
+| 7 | - | - | content-operation-system.md | 2026-04-02 |

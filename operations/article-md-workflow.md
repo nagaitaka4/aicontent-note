@@ -100,6 +100,20 @@ VSCodeのMarkdownファイルをそのままWordPressに貼り付けても見出
 
 ---
 
+## 記事公開時のチェックリスト
+
+記事を公開したら、以下を必ず実行する。
+
+1. **MDファイルのフロントマター更新**：`status: draft` → `status: published`
+2. **作成済み記事一覧に追記**：下のテーブルに追加
+3. **GitHub issue #2（記事テーマ設計）を更新**：
+   - 該当記事のチェックボックスを `[ ]` → `[x]` にする
+   - タイトルを正式タイトルに更新する
+   - 次の記事に「← **次回確定**」マークをつける
+   - 概要の公開済み本数を更新する
+
+---
+
 ## 作成済み記事一覧
 
 ※ このテーブルは「公開した事実」の記録。未公開・予定は記載しない。
@@ -113,3 +127,4 @@ VSCodeのMarkdownファイルをそのままWordPressに貼り付けても見出
 | 5 | - | - | ai-writing-claude-setup.md | 2026-03-17 |
 | 6 | side-business | 4 | ai-webwriting-verification-04.md | 2026-03-22 |
 | 7 | - | - | content-operation-system.md | 2026-04-02 |
+| 8 | side-business | 5 | ai-webwriting-verification-05.md | 2026-04-03 |

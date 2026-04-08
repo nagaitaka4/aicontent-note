@@ -128,3 +128,4 @@ VSCodeのMarkdownファイルをそのままWordPressに貼り付けても見出
 | 6 | side-business | 4 | ai-webwriting-verification-04.md | 2026-03-22 |
 | 7 | - | - | content-operation-system.md | 2026-04-02 |
 | 8 | side-business | 5 | ai-webwriting-verification-05.md | 2026-04-03 |
+| 9 | - | - | claude-code-introduction.md | 2026-04-07 |

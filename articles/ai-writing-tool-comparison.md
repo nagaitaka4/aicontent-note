@@ -1,11 +1,12 @@
 ---
 no: 11
-title: AIライティングツール比較｜ChatGPTとClaudeを実際に使って選んだ
-date:
+title: AIライティングツール比較｜ChatGPTとClaudeを両方使って気づいたこと
+date: 2026-04-15
 url: https://aicontent-note.com/ai-writing-tool-comparison/
 slug: ai-writing-tool-comparison
-status: draft
-description: ChatGPTとClaudeを実際に使い続けて見えてきた、それぞれの得意・不得意と使い分けを正直にまとめました。同じAIでも使い方によって全然違う。その実感をもとに、AIライティングツール選びのヒントを整理しています。
+status: published
+meta_description: ChatGPTとClaudeを実際に使い続けて見えてきた、それぞれの得意・不得意と使い分けを正直にまとめました。同じAIでも、チャット版とカスタムGPT・Claude Codeでは用途も感覚も全然違います。どのツールが何に向いているか、実際の運用感をもとに整理しています。
+eyecatch_alt: 「AIツール、結局どれが正解？」のテキストとサングラスをかけたキャラクターのアイキャッチ画像
 category: AIとコンテンツの実務
 tags: AI活用,ChatGPT,Claude,Claude Code,ライティングツール,比較
 eyecatch: eyecatch_0011.png
@@ -110,7 +111,7 @@ ChatGPTを使いながら、Claudeの存在が気になっていました。
 最初はChatGPTと同じように、Claudeのプロジェクト機能で
 ルールやファイルを読み込ませて使い始めました。
 
-この経緯については、
+こちらの経緯については、
 [記事4本書いて気づいたこと。AIライティングの設計を見直した話](https://aicontent-note.com/ai-writing-claude-setup/)
 にも書いています。
 
@@ -150,19 +151,6 @@ Claude Codeに切り替えてから、作業時間はChatGPTやClaudeで動い�
 ChatGPTで感じていたストレスがほぼなくなりました。
 「ツールを管理する手間」ではなく、「コンテンツを作る作業」に集中できるようになった、
 というのが正直な変化です。
-
-### 非エンジニアでも使えるのか
-
-正直に言うと、私のような非エンジニアが、導入に全くハードルがないとは言い切れません。
-ターミナルの操作、VS Code、GitHubの連携。
-聞き慣れない言葉が並ぶので、最初は戸惑うかもしれません。
-
-ただ、わからないことはChatGPTやClaudeに一つひとつ聞きながら進めれば、
-ほとんどつまずかずに進められると思います。
-
-セットアップさえ終われば、日常の使い方はチャットとほぼ同じです。
-「この記事を書いて」「このファイルを更新して」と話しかけると動いてくれる。
-コードを書く必要はなく、会話の延長で作業が進められます。
 
 ### 「人」が介入すべきところに集中できる
 

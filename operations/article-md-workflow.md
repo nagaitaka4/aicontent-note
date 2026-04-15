@@ -34,8 +34,11 @@ date: [公開日 YYYY-MM-DD形式]
 url: [記事URL]
 slug: [URLスラッグ（url末尾のパス部分）]
 status: [published / draft]
+meta_description: [検索結果に表示されるディスクリプション（120〜140文字、メインキーワード含む）]
+eyecatch_alt: [アイキャッチ画像の代替テキスト（画像の内容を説明、キーワードを含む）]
 category: [カテゴリー名（日本語）]
 tags: [タグ1, タグ2, タグ3]
+eyecatch: [eyecatch_XXXX.png]
 ---
 ```
 
@@ -155,3 +158,4 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 8 | side-business | 5 | ai-webwriting-verification-05.md | 2026-04-03 |
 | 9 | - | - | claude-code-introduction.md | 2026-04-07 |
 | 10 | - | - | swell-seo-settings.md | 2026-04-09 |
+| 11 | - | - | ai-writing-tool-comparison.md | 2026-04-15 |

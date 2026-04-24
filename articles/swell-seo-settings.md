@@ -240,7 +240,7 @@ SEOの設定ひとつとっても、調べて・試して・確認して、と�
 
 まずは気軽にご相談ください。
 
-→ [お問い合わせはこちら](https://docs.google.com/forms/d/e/1FAIpQLSe8jfdIBRRWYVzuB4yrZygYzjFNxJAMVE4HnFxlZ3ssJU7gXA/viewform?usp=header)
+→ [お問い合わせはこちら](https://aicontent-note.com/contact/)
 
 <!-- 関連記事ブロック（WordPress入稿時に設置）-->
 <!-- ・コンテンツ運用を止めないための仕組みの作り方（no.7）-->

@@ -81,7 +81,7 @@ AIを使い始めてからも、この感覚は変わりませんでした。
 ブログ記事の更新・運用について
 ご相談はこちらから
 
-▶ [お問い合わせフォームはこちら](https://docs.google.com/forms/d/e/1FAIpQLSe8jfdIBRRWYVzuB4yrZygYzjFNxJAMVE4HnFxlZ3ssJU7gXA/viewform?usp=header)
+▶ [お問い合わせフォームはこちら](https://aicontent-note.com/contact/)
 
 ---
 
@@ -141,7 +141,7 @@ Claude Codeのプロジェクト機能を使い、メディアのルールや過
 ブログ記事の更新・運用について
 ご相談はこちらから
 
-▶ [お問い合わせフォームはこちら](https://docs.google.com/forms/d/e/1FAIpQLSe8jfdIBRRWYVzuB4yrZygYzjFNxJAMVE4HnFxlZ3ssJU7gXA/viewform?usp=header)
+▶ [お問い合わせフォームはこちら](https://aicontent-note.com/contact/)
 
 ---
 
@@ -165,7 +165,7 @@ Claude Codeのプロジェクト機能を使い、メディアのルールや過
 手間なく、継続的に情報発信ができる状態を作ります。
 
 まずはお気軽にご相談ください。
-▶ [お問い合わせフォームはこちら](https://docs.google.com/forms/d/e/1FAIpQLSe8jfdIBRRWYVzuB4yrZygYzjFNxJAMVE4HnFxlZ3ssJU7gXA/viewform?usp=header)
+▶ [お問い合わせフォームはこちら](https://aicontent-note.com/contact/)
 
 ※メールでのご連絡も可能です。
 ▶ support@aicontent-note.com

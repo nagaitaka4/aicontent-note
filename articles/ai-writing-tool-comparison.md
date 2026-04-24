@@ -265,7 +265,7 @@ AIを活用したコンテンツ運用代行を行っています。
 
 まずは気軽にご相談ください。
 
-→ [お問い合わせはこちら](https://docs.google.com/forms/d/e/1FAIpQLSe8jfdIBRRWYVzuB4yrZygYzjFNxJAMVE4HnFxlZ3ssJU7gXA/viewform?usp=header)
+→ [お問い合わせはこちら](https://aicontent-note.com/contact/)
 
 <!-- 関連記事ブロック（WordPress入稿時に設置）-->
 <!-- ・Claude Codeとは何か？（no.9）-->

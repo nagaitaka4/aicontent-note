@@ -162,3 +162,5 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 12 | side-business | 6 | ai-webwriting-verification-06.md | 2026-04-16 |
 | 13 | - | - | ai-article-quality-check.md | 2026-04-22 |
 | 14 | cc-writer | 1 | claude-code-compatible-jobs.md | 2026-04-23 |
+| 15 | side-business | 7 | ai-webwriting-verification-07.md | 2026-04-24 |
+| 16 | cc-writer | 2 | claude-code-article-structure.md | 2026-04-27 |

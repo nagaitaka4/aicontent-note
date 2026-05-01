@@ -112,3 +112,11 @@ S-13完成後に順次制作。1記事1テーマ完結・実体験ベース。
 | # | 検証内容 | 目的 |
 |---|---|---|
 | V-01 | Claude Code × WordPress REST API直接連携 | 入稿の自動化が実用レベルか検証。成功・失敗どちらも記事ネタになる。SWELLブロックの崩れ・使用量・安定性を確認 |
+
+---
+
+## リサーチ由来の記事ネタ（随時追加）
+
+- [2026-05-01 リサーチ由来] GEOとは何か？AI検索時代に自分の記事を参照させる方法 | GEO / Generative Engine Optimization / AI Overview 対策
+- [2026-05-01 リサーチ由来] GoogleはAI記事のどこをスパム判定するのか【2026年3月アップデートの実態】 | AI コンテンツ SEO スパム Google 対策
+- [2026-05-01 リサーチ由来] Claude Code Computer Use を実際に使ってみた | Claude Code Computer Use できること 使い方

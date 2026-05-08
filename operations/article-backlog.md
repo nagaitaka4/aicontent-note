@@ -145,3 +145,6 @@ S-13完成後に順次制作。1記事1テーマ完結・実体験ベース。
 - [2026-05-01 リサーチ由来] GEOとは何か？AI検索時代に自分の記事を参照させる方法 | GEO / Generative Engine Optimization / AI Overview 対策
 - [2026-05-01 リサーチ由来] GoogleはAI記事のどこをスパム判定するのか【2026年3月アップデートの実態】 | AI コンテンツ SEO スパム Google 対策
 - [2026-05-01 リサーチ由来] Claude Code Computer Use を実際に使ってみた | Claude Code Computer Use できること 使い方
+- [2026-05-08 リサーチ由来] Claude CodeのAPI上限が一気に2倍に。SpaceXとのコンピュート提携で何が変わるか | Claude Code レート制限 API 上限
+- [2026-05-08 リサーチ由来] AI Overview掲載でCTRが最大46%下落。引用される記事になるための条件 | AI Overview CTR 低下 GEO 対策（※GEO記事と連携・具体データ記事として差別化）
+- [2026-05-08 リサーチ由来] 大企業59%・中小企業30%。生成AI導入格差が開くいま、コンテンツ外注が現実解になる理由 | 中小企業 生成AI 導入 格差 コンテンツ運用代行

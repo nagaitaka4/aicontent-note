@@ -3,10 +3,10 @@ no: 21
 series:
 series_no:
 title: Claude Code初心者が最初に理解すべき用語まとめ【非エンジニア向け・完全版】
-date:
+date: 2026-05-11
 url: https://aicontent-note.com/claude-code-glossary-beginners/
 slug: claude-code-glossary-beginners
-status: draft
+status: published
 description: Claude Codeを使い始めた非エンジニアが最初にぶつかる用語の壁を解消します。プロンプト・コンテキスト・トークン・Markdown・リポジトリ・Gitなど、実務で必ず出てくる重要用語を「どう使うか」の視点で厳選してまとめた完全ガイドです。
 eyecatch: eyecatch_0021.png
 eyecatch_alt: Claude Code初心者が最初に理解すべき用語まとめ（非エンジニア向け・完全版）のアイキャッチ画像

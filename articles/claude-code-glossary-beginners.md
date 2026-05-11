@@ -58,7 +58,7 @@ Claude Codeはチャット型のAIとは使い方が根本的に違います。�
 
 ブログの更新が止まっている、記事運用を外部に任せたいと考えている方は、お気軽にご相談ください。
 
-[お問い合わせはこちら](https://aicontent-note.com/contact/)
+[お問い合わせフォームはこちら](https://aicontent-note.com/contact/)
 
 ---
 
@@ -124,7 +124,7 @@ Claude Codeを使い続けていると、設定の段階からわからない言
 
 ブログ・コンテンツの運用代行に興味がある方は、まずはお問い合わせください。現状をお聞きした上で、何ができるかをお伝えします。
 
-[お問い合わせはこちら](https://aicontent-note.com/contact/)
+[お問い合わせフォームはこちら](https://aicontent-note.com/contact/)
 
 ---
 

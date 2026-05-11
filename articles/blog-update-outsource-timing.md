@@ -1,5 +1,5 @@
 ---
-no: 21
+no: 20
 series:
 series_no:
 title: ブログ更新が止まる理由と、外注を検討するタイミングの見極め方
@@ -8,7 +8,7 @@ slug: blog-update-outsource-timing
 status: published
 date: 2026-05-07
 description: ブログ更新が止まる理由の多くは、意志や時間ではなく運用設計の問題です。止まり続けるリスク・担当者依存でリセットされる構造・「いつか内製でやる」が成立しにくい理由をまとめ、外注を検討するタイミングを5つのチェックポイントで判断する方法を解説します。
-eyecatch: eyecatch_0021.png
+eyecatch: eyecatch_0020.png
 eyecatch_alt: ブログ更新が止まる理由と外注を検討するタイミングの見極め方のアイキャッチ画像
 category: 継続できる運用設計
 tags: ブログ運用,外注,コンテンツ運用代行,更新,継続

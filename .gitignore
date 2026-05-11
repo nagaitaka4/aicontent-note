@@ -140,3 +140,6 @@ vite.config.ts.timestamp-*
 
 # セキュリティ情報（GitHubにアップしない）
 security/
+
+# Claude Code worktrees
+.claude/worktrees/

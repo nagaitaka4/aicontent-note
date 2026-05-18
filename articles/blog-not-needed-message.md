@@ -3,10 +3,10 @@ no: 24
 series:
 series_no:
 title: 「うちはブログいらない」と思っている会社に伝えたいこと
-url:
+url: https://aicontent-note.com/blog-not-needed-message/
 slug: blog-not-needed-message
-status: draft
-date:
+status: published
+date: 2026-05-18
 description: 「うちはブログいらない」と思っている会社に、一つだけ伝えたいことがあります。ブログがない会社と更新が止まっている会社は、外から見ると同じに映ります。なぜ続けることが信頼につながるのか、止まると何が起きるのか、続けられない本当の理由を整理しました。
 eyecatch: eyecatch_0024.png
 eyecatch_alt: 「うちはブログいらない」と思っている会社に伝えたいことのアイキャッチ画像

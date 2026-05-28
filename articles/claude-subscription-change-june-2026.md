@@ -3,10 +3,10 @@ no: 27
 series:
 series_no:
 title: Claudeの課金が6月から変わる。影響がある使い方・ない使い方
-date:
+date: 2026-05-28
 url: https://aicontent-note.com/claude-subscription-change-june-2026/
 slug: claude-subscription-change-june-2026
-status: draft
+status: published
 description: 2026年6月15日からClaudeの課金構造が変わります。自動化・Agent SDK・GitHub Actions利用は別枠クレジットになります。手動でClaude Codeを使うだけなら影響は小さいですが、利用方法によって差が出ます。自分の使い方と照らし合わせて確認してください。
 eyecatch: eyecatch_0027.png
 eyecatch_alt: Claudeの課金変更について解説した記事のアイキャッチ画像
@@ -33,23 +33,15 @@ claude.aiで会話したり、ターミナルで手動Claude Codeを動かして
 > 【ポイント】
 > 「手動で自分が指示して使う」か「プログラムが自動で大量に呼び出す」かで、影響の有無が大きく変わります。
 
-### 影響が出るのは自動化・大量実行系
+### 影響の有無は利用形態で決まる
 
-次の利用が、今回の変更で「別枠クレジット」から消費されるようになります。
-
-・Claude Code SDK
-・Agent SDK
-・GitHub Actions
-・API系自動化
-・`claude -p`の大量実行
-
-### 手動のClaude Code利用は対象外に近い
-
-次の利用は「インタラクティブ利用」に分類され、今回の変更対象外です。
-
-・通常のclaude.ai
-・手動Claude Code（ターミナルで会話ベース利用）
-・Claude Cowork
+| 対象（別枠クレジット） | 対象外（従来通り） |
+|---|---|
+| Claude Code SDK | 通常のclaude.ai |
+| Agent SDK | 手動Claude Code |
+| GitHub Actions | Claude Cowork |
+| API系自動化 | |
+| `claude -p`大量実行 | |
 
 ---
 
@@ -57,23 +49,15 @@ claude.aiで会話したり、ターミナルで手動Claude Codeを動かして
 
 変更点を整理します。
 
-### まず対象になるもの
+### 対象になるもの・ならないもの
 
-・Claude Code SDK
-・Agent SDK
-・GitHub Actions
-・API系自動化
-・`claude -p`の大量実行
-
-これらは6月15日から、通常の利用枠とは別の「クレジット枠」から消費されるようになります。
-
-### 対象外に近いもの
-
-・通常のclaude.ai
-・手動Claude Code（会話利用）
-・Claude Cowork
-
-これらは今まで通りの利用上限の中で使えます。
+| 対象になるもの | 対象外（従来通り） |
+|---|---|
+| Claude Code SDK | 通常のclaude.ai |
+| Agent SDK | 手動Claude Code |
+| GitHub Actions | Claude Cowork |
+| API系自動化 | |
+| `claude -p`大量実行 | |
 
 ### これまでの仕組み
 
@@ -138,14 +122,14 @@ Anthropicは2026年2月に、サブスクリプションプランでの第三者
 
 ### まず結論比較表
 
-| 使い方 | 影響 |
+| 影響が大きい使い方 | 影響が小さい使い方 |
 |---|---|
-| claude.aiで会話 | 小 |
-| 手動Claude Code | 小 |
-| Cursor連携 | 中（利用方法次第） |
-| GitHub Actions | 大 |
-| Agent SDK | 大 |
-| `claude -p`大量実行 | 大 |
+| Agent SDK | claude.aiで会話 |
+| GitHub Actions | 手動Claude Code |
+| `claude -p`大量実行 | Claude Cowork |
+| API系自動化 | |
+
+※Cursor連携は手動で会話している範囲では影響が小さいですが、自動補完を大量に使う場合は確認が必要です。
 
 ### 影響が大きい使い方
 
@@ -200,7 +184,7 @@ Agent SDKは使っていません。`claude -p`の自動化スクリプトも動
 
 ## ⑤ 6月15日までに確認しておくこと
 
-### 自分が自動化利用しているか確認する
+### 自動化利用しているか確認する
 
 まず、自分の利用の中に「自動化・プログラマティック利用」が含まれているかを確認します。手動でClaude Codeを使っているだけであれば、とくに対応は必要ありません。
 
@@ -210,7 +194,7 @@ Claude Code GitHub Actionsを設定している場合、6月15日以降は別枠
 
 ### `claude -p`を常用している人は確認推奨
 
-`claude -p`（非インタラクティブモード）を使ったスクリプトを走らせている場合も同様です。月間の実行量を確認し、別枠クレジット内に収まるかを確認してください。
+`claude -p`（非インタラクティブモード）を使ったスクリプトを走らせている場合も同様です。月間の実行量を確認し、別枠クレジット内に収まるかを確認することをおすすめします。
 
 ### 通常会話メインなら過度に心配しなくてよい
 

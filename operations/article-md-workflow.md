@@ -174,3 +174,4 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 24 | - | - | blog-not-needed-message.md | 2026-05-18 |
 | 25 | - | - | claude-code-desktop-renewal.md | 2026-05-23 |
 | 26 | - | - | content-operation-outsource-what-is.md | 2026-05-27 |
+| 27 | - | - | claude-subscription-change-june-2026.md | 2026-05-28 |

@@ -8,19 +8,23 @@
 
 ### Claude Code / Anthropic
 
-- **Claude Opus 4.8 リリース**（2026-05-28）：Claude Codeにデフォルト統合。Dynamic Workflows・Ultracode Mode・Fast Mode（2.5×速度・前モデル比3倍コスト削減）を搭載（Anthropic公式）
-- **Dynamic Workflows**：数十〜数百のエージェントをバックグラウンドで並列オーケストレーション。コードベース全体のバグハント・セキュリティ監査・大規模リファクタリング（数千ファイル規模）に対応
-- **Ultracode Mode**：effort levelをxhighに設定しDynamic Workflowsを自動判断で使用するClaude Code専用設定
+- **Claude Opus 4.8 リリース（2026-05-28）**：Claude Codeにデフォルト統合。エージェントコーディングスコア 64.3% → 69.2%、ツール使用を伴う多分野推論 54.7% → 57.9%に向上。「判断の鋭さ・進捗の誠実な報告・長時間の自律作業」が強化（MacRumors, 9to5Mac, 2026-05-28）
+- **Dynamic Workflows（Research Preview）**：1セッション内で数十〜数百のサブエージェントをバックグラウンドで並列オーケストレーション。コードベース全体のバグハント・セキュリティ監査・大規模リファクタリング（数千ファイル規模）に対応（ghacks.net, 2026-05-30）
+- **Ultracode Mode / Effort Controls**：effort levelをxhigh（Ultracode）に設定しDynamic Workflowsを自動使用するClaude Code専用設定。high/extra/maxの3段階調整が可能。highは前モデル同等トークンで性能向上を実現
+- **Fast Modeが前モデル比3倍安価に**：Opus 4.8のFast Modeは2.5倍速で動作。価格自体はOpus 4.7と同一
 - **Security Guidance Plugin**：コード編集・diff・コミットをリアルタイム監視。SQLインジェクション・XSS・ハードコードAPIキーなど約25種の脆弱性クラスをregexベースで自動検出
 - **Claude Managed Agents 強化（6月）**：セルフホストサンドボックス対応・アクティブセッション中のMCPサーバー設定更新が可能に・100Kトークン超の大出力を自動ファイルスピル
 - **Claude Platform on AWS 開始**：IAM認証・AWSビリングでMessages API・Files API・Managed Agentsなどを利用可能。AWSユーザーへのエンタープライズ展開が加速
+- **Anthropicが65億ドルの資金調達発表**（2026-05-28）：Opus 4.8発表と同日。コンピュート・インフラ拡張の資金とみられる（SiliconANGLE, 2026-05-28）
+- **Mythosクラスモデルを近日予告**：「coming weeks」内に全ユーザー向けリリースと予告。Opus 4.8と別ラインの高性能モデルとして位置づけ（MacRumors, 2026-05-28）
 - **モデル廃止予定**：Claude Sonnet 4・Opus 4はAPI上で2026年6月15日に廃止予定
 
 ### AIコンテンツ・業務効率化トレンド
 
-- **AI検索対応がコンテンツ戦略の最重要課題に**：コンテンツマーケティング実務者の約6割がAI検索の影響を実感。対策意向は8割（日本SPセンター調査, 2026）
+- **マーケターの85%が2026年にコンテンツ制作へAIを活用**（2023年61%から増加）。AIを使ったコンテンツ制作が標準化しつつある（affinco.com / CleverType, 2026）
+- **生成AIグローバル市場規模が2026年に914億ドル見通し**（2025年630億ドルから約45%増）（businessresearchinsights.com, 2026）
+- AIコンテンツツール投資企業で「420% ROI・62%の制作速度向上・32%のエンゲージメント増加」が報告されている（Siege Media, 2026）
 - **少人数体制でのコンテンツ運用が標準化**：専任2〜5名が最多・約3割が専任なしで運営。増員よりツール活用で成果を出すモデルが普及
-- **エージェントAI活用の実績が数値化**：ソフトバンクがロジスティクスにエージェントAI導入で配送効率40%向上。製造業でも在庫管理・予知保全のPoCが進行中
 - **AI活用による外注費ゼロ化事例が増加**：LP制作内製化で月額10万円の外注費ゼロ・制作時間3営業日→2時間という事例あり（AIアナリスト, 2026）
 
 ---

@@ -176,3 +176,4 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 26 | - | - | content-operation-outsource-what-is.md | 2026-05-27 |
 | 27 | - | - | claude-subscription-change-june-2026.md | 2026-05-28 |
 | 28 | ai-ops-basics | 1 | prompt-design-basics.md | 2026-05-29 |
+| 29 | - | - | claude-opus-4-8-honesty.md | 2026-06-01 |

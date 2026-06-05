@@ -178,3 +178,4 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 28 | ai-ops-basics | 1 | prompt-design-basics.md | 2026-05-29 |
 | 29 | - | - | claude-opus-4-8-honesty.md | 2026-06-01 |
 | 30 | ai-ops-basics | 2 | context-design-basics.md | 2026-06-02 |
+| 31 | ai-ops-basics | 3 | token-design-basics.md | 2026-06-04 |

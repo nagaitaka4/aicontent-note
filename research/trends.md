@@ -1,6 +1,22 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-06-01
+最終更新: 2026-06-05
+
+---
+
+## [2026-06-05] 調査結果
+
+### Claude Code / Anthropic
+
+- **Claude Mythos クラスモデルが一般公開間近**：Opus ラインの上位に位置する新モデル。Anthropicが「coming weeks」でリリース予定と確認済み。セキュリティベンチマークで約90倍の能力向上（オフェンシブセキュリティで181 vs 2 Firefox exploits）。価格帯は$25+/M入力・$125+/M出力のプレミアム想定。当初はAWS Bedrock経由で先行提供の可能性（BleepingComputer, TokenMix, AndroidHeadlines, 2026-05-28〜）
+- **6月15日 課金構造変更（本日施行10日前）**：Agent SDK・`claude -p`（非インタラクティブ）・Claude Code GitHub Actions・サードパーティエージェントアプリが既存サブスク枠から切り出され、独立した「Agent SDK クレジットプール」へ移行。付与額はPro=$20 / Max5x=$100 / Max20x=$200。月末未使用分は失効・非繰り越し。**インタラクティブ利用（端末でのClaude Code・Claude Cowork・チャット）は影響なし**（devtoolpicks.com, codersera.com, 2026-06）
+- **Claude 障害（2026-06-02）**：サブエージェントシステムのバグにより無限ループ・指数的トークン消費が発生。数時間分の使用枠が数分で消滅するケースあり。Web・API・Claude Code が影響を受け、6/3に主要インシデント解決（一部継続）（TechRadar, SQMagazine, 2026-06-02〜03）
+
+### AIコンテンツ・業務効率化トレンド
+
+- **AI検索利用率が8ヶ月で3.5倍増**（AI検索白書2026・日本）：検索行動の変化が数値として確認。「AI検索を使っている」層が急拡大中（webtan.impress.co.jp, 2026-04）
+- **日本の生成AI勢力図が変化**：Geminiの利用率が1.5倍に急成長し、ChatGPT一強から多様化フェーズへ。週複数回利用比率はGemini 71.6%・Claude 70.4%・Perplexity 69.2%（サイバーエージェント調べ, 2026）
+- **AIコンテンツマーケティング市場：2026年に50億ドル規模**（2025年40億ドルからCAGR 25.4%増）。代行市場への需要も継続拡大（gii.co.jp, 2026）
 
 ---
 

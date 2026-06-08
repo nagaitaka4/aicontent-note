@@ -179,3 +179,5 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 29 | - | - | claude-opus-4-8-honesty.md | 2026-06-01 |
 | 30 | ai-ops-basics | 2 | context-design-basics.md | 2026-06-02 |
 | 31 | ai-ops-basics | 3 | token-design-basics.md | 2026-06-04 |
+| 32 | - | - | in-house-vs-outsource-cost.md | 2026-06-04 |
+| 33 | side-business | 8 | ai-webwriting-verification-08.md | 2026-06-08 |

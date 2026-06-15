@@ -41,6 +41,7 @@
 ## 作業前ルール
 - `operations/session-handoff.md` を必ず読む
 - **TOP6は `~/Documents/GitHub/tasks/README.md` が唯一の正（session-handoff.mdのTOP6は廃止）**
+- `sns/posts-stock.md` と `operations/article-backlog.md` を読んで実態を確認してから動く（引き継ぎ情報より実ファイルを優先する）
 
 ## タスクリスト自動更新ルール（省略禁止）
 

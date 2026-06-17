@@ -2,8 +2,8 @@
 no: 37
 title: AIに記事構成を任せていい理由と、それでもズレるH1の話
 date: 
-url: https://aicontent-note.com/blog-article-structure-h1-h2-h3/
-slug: blog-article-structure-h1-h2-h3
+url: https://aicontent-note.com/ai-article-structure-h1/
+slug: ai-article-structure-h1
 status: draft
 description: AIに記事構成を任せると、H2・H3の展開はほぼ外れません。しかし構成がズレるときは、必ずH1のテーマ設定や視点の角度に原因があります。なぜAIの構成は精度が高いのか、それでもズレる原因はどこにあるのか。AIコンテンツ運用の実務視点から整理します。
 eyecatch: eyecatch_0037.png

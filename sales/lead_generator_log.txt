@@ -1,0 +1,229 @@
+=======================================================
+  営業リスト自動生成スクリプト（Playwright版）
+  実行日時: 2026-06-16 18:31
+  目標: A判定 30件 が集まるまで継続
+=======================================================
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=10）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 介護（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 建設（start=0）
+  [警告] 会社名が取得できませんでした（start=0）
+
+▼ Indeed検索: 福祉（start=0）

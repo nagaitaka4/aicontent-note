@@ -201,6 +201,18 @@
 
 ---
 
+## [2026-06-19] 調査結果
+
+### GEO・AI検索の最新動向
+
+- **GEO Conference 2026 開催（6月・チェンマイ）**（geo-conference.com / createwith.com, 2026-06）：GEO が専門カンファレンスを持つ独立した分野として確立。SEO の延長ではなく「AI検索引用最適化」という独自の領域として業界が認識を共有し始めている
+- **Google が公式 AI 検索最適化ガイドを公開**（developers.google.com, 2026-06）：「Optimizing for Generative AI Features on Google Search」として Google Search Central に掲載。公式にGEO/AI Overview向けの最適化指針を開発者向けに提供開始
+- **LLM はベクトル（関係性）でコンテンツを読む**（enrichlabs.ai / llmrefs.com, 2026-06）：AI検索エンジンは単語ではなく「エンティティ間の関係性」でコンテンツを評価。ブランド・固有名詞・概念の関係性の明示化（エンティティ最適化）が重要になってきた
+- **GEO = SEO の追加レイヤー（置き換えではない）**（enrichlabs.ai, 2026-06）：2026年時点で GEO に強いメディアは、従来の SEO 基盤も強い。SEO なしで GEO 単独で戦う戦略は非推奨。「両方やる」が前提
+- **Perplexity・Google AI Overview はページの冒頭 200 語で評価**（enrichlabs.ai / rizzoyoung.com, 2026-06）：リアルタイム検索型 AI（Perplexity・AI Overview）はページの冒頭コンテンツを主要評価対象とする。最初の 200 語でメインクエリに直接回答することが引用獲得の主条件
+
+---
+
 ## 検索トレンド・アルゴリズム変化
 
 （定期リサーチで随時追記）

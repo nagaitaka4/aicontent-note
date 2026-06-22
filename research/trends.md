@@ -234,6 +234,18 @@
 
 ---
 
+## [2026-06-19] 調査結果
+
+### Claude Code / Anthropic
+
+- **Claude Code 最新アップデート（6月中旬〜後半）**：言語認識セッションタイトルが追加（日本語入力時に適切なタイトルを生成）。フッターリンクのバッジ表示が改善。Bedrock認証情報キャッシュが最適化（releasebot.io, 2026-06）
+- **Bedrock / Vertex / Foundry での auto mode**：Opus 4.7 / Opus 4.8 向けに auto mode が有効化。パーミッションプロンプトをバックグラウンド安全チェックに置き換える設計（サードパーティプロバイダー向け）（releasebot.io, 2026-06）
+- **/plugin list コマンド追加**：インストール済みプラグインの一覧表示が可能に。managed deployment 向けバージョン管理機能も追加（mexc.com / releasebot.io, 2026-06）
+- **接続切断時の部分レスポンス保存**：mid-stream での接続断発生時に、それまでの部分レスポンスが raw エラーではなく保存されるよう改善（releasebot.io, 2026-06）
+- **WSL2 マウスホイール修正**：WSL2 環境でのスクロール問題を修正。サンドボックス動作・ウェルカムバナー・プラグイン読み込みパフォーマンスも改善（releasebot.io, 2026-06）
+
+---
+
 ## Claude Code / Anthropic アップデート
 
 （定期リサーチで随時追記）

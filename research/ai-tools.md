@@ -51,6 +51,30 @@
 
 ---
 
+---
+
+## [2026-06-19] 調査結果
+
+### OpenCode（最注目・OSSコーディングエージェント）
+
+- **OpenCode が 160K+ GitHub スター・7.5M MAU を記録**（developersdigest.tech / abhs.in, 2026-06）：2026年6月時点で最多採用のオープンソースコーディングエージェント。6月時点では176,017 スター。Cursor を抜いて最初の大きな disruption を起こした
+- **特徴**：75+ AIプロバイダーに対応（Claude・GPT・Gemini・DeepSeek・Ollama等）。LSP統合でコンパイラのリアルタイム診断をモデルへフィードバック（他ツールにはない機能）。SQLiteで会話を保存し、MITライセンスでフルOSS。エアギャップ展開（regulated industries向け）対応（developersdigest.tech, 2026-06）
+- **Claude Code との差別化**：OpenCode はモデル非依存で切り替えが自由。Claude Code は Anthropic エコシステムとの深い統合・Claude 特有の安全制限対応・企業向けツールが強み。「どちらが正解か」ではなく「何を優先するか」の選択軸になってきた
+
+### Gemini CLI / Google
+
+- **Gemini CLI が 2026-06-18 でサービス終了**（morphllm.com / lushbinary.com, 2026-06）：後継は **Antigravity CLI**（Go 製・非同期ワークフロー・統一アーキテクチャ）。Antigravity 2.0（5/19リリース）では動的サブエージェント・スケジュールバックグラウンドタスク・公開 SDK・Gemini 3.5 Flash 対応
+
+### OpenAI / GPT
+
+- **GPT-5.5 の市場評価が固まってきた**（morphllm.com, 2026-06）：Terminal-Bench 2.0 でスコア 82.7%。GPT-4.5比でハルシネーション 52.5% 減。OpenAI 初の完全再訓練ベースモデルとして評価が定まりつつある
+
+### Cursor
+
+- **Cursor が並列エージェント対応に UI を刷新（6/9確認）**（lushbinary.com, 2026-06）：Claude Fable 5 / Opus 4.8 / GPT-5.5 / Gemini 3.1 Pro 等のマルチモデル選択が可能に。「どのモデルでも動くエディタ」として再ポジション
+
+---
+
 ## このメディアへの示唆
 
 - Hermes Agentは「Claude Codeの比較対象」として記事に使える。差別化ポイントが明確（コーディング特化 vs 汎用常時稼働）

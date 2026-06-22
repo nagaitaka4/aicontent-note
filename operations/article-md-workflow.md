@@ -185,3 +185,4 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 35 | ai-ops-basics | 4 | markdown-basics.md | 2026-06-10 |
 | 36 | - | - | claude-fable-5.md | 2026-06-12 |
 | 37 | - | - | ai-article-structure-h1.md | 2026-06-17 |
+| 38 | - | - | ai-composition-operation-flow.md | 2026-06-19 |

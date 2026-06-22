@@ -39,6 +39,7 @@
 煽り表現・根拠のない断定・再現性のないノウハウ・AIっぽい文章
 
 ## 作業前ルール
+- `git pull --rebase origin main` を実行してローカルをリモートに揃えてから作業を始める（コンフリクト防止）
 - `operations/session-handoff.md` を必ず読む
 - **TOP6は `~/Documents/GitHub/tasks/README.md` が唯一の正（session-handoff.mdのTOP6は廃止）**
 - `sns/posts-stock.md` と `operations/article-backlog.md` を読んで実態を確認してから動く（引き継ぎ情報より実ファイルを優先する）

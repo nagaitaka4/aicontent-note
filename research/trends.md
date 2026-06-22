@@ -1,6 +1,6 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-06-15
+最終更新: 2026-06-22
 
 ---
 
@@ -220,6 +220,17 @@
 - **Claude Mythos 5**：Project Glasswing参加の限定ユーザーのみ提供継続。一般公開の予定は現時点で未定（Anthropic, 2026-06-09）
 - **Claude Code v2.1.170（2026-06-09）**：Fable 5アクセスを追加。プラグイン検索機能追加。Chrome・VSCode・ターミナルワークフロー改善。VSCode統合ターミナルからのセッション起動時にトランスクリプトが保存されないバグを修正（releasebot.io, 2026-06）
 - **Claude Code v2.1.172（2026-06）**：ネストされたサブエージェントが最大5階層まで可能に。エージェントが自分自身のサブエージェントを起動でき、各フレームが独自のシステムプロンプト・モデルを持つ構造。「コンテキスト管理のためのエージェント起動」がユースケース（claudefa.st, 2026-06）
+
+---
+
+## [2026-06-22] 調査結果
+
+### Claude Code / Anthropic
+
+- **Claude Code Artifacts（2026-06-18 リリース）**：Team・Enterpriseプラン向け。セッションの成果物をライブインタラクティブなHTML共有ページとして公開できる新機能。複数データソース・コードをリアルタイム連携し、チームメンバーはURLを開くだけで更新内容を即時確認可能。セキュリティ設計：デフォルトでプライベート・CSPにより外部スクリプト/フォント/スタイルシートの読み込みをブロック。fetch/XHR/WebSocketも完全ブロック（Stripe社の事例：5,000万行Rubyコードベースの全体マイグレーションを1日で完了。通常チーム全体で2ヶ月超かかる作業）（VentureBeat / claude.com/blog, 2026-06-18）
+- **Claude Code Auto Modeの安全性強化**：破壊的gitコマンド（git reset --hard・git checkout -- .・git clean -fd・git stash drop）を明示的指示なしに自動ブロック。エージェントが同セッション内で作成していないコミットへのgit commit --amendも自動ブロック。terraform destroy/pulumi destroy/cdk destroyもスタック指定なしでブロック（releasebot.io, 2026-06）
+- **Fable 5の無料サブスク期間終了（2026-06-22）**：本日をもってPro/Max/Team/Enterpriseプランでの無料利用終了。6/23以降は使用クレジット（APIレートと同一：$10/M入力・$50/M出力）が必要。なお無料期間中もFable 5は通常モデルの約2倍の使用量をカウントしていた。容量確保次第でプランへの復帰を予定しているが日程は未定（claudefa.st / developersdigest.tech, 2026-06）
+- **Claude Design：Brand Controls・Code Sync追加**：エンタープライズチーム向けにブランドコントロール機能とコード同期機能を追加（TechRepublic / Anthropic, 2026-06）
 
 ---
 

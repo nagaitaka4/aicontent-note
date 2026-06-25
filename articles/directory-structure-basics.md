@@ -1,10 +1,10 @@
 ---
 no: 41
 title: ディレクトリ構造とは？AI業務が整理されるフォルダ設計の考え方
-date:
+date: 2026-06-25
 url: https://aicontent-note.com/directory-structure-basics/
 slug: directory-structure-basics
-status: draft
+status: published
 series: ai-ops-basics
 series_no: 5
 description: ディレクトリ構造とは、ファイルやフォルダを階層的に整理した体系のことです。AIはパス（ファイルの住所）でファイルを認識するため、フォルダ設計が整っているかどうかが、AI業務の精度と効率に直接影響します。非エンジニア向けに実務の視点で解説します。

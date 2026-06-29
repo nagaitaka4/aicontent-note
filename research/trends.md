@@ -1,6 +1,6 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-06-22
+最終更新: 2026-06-29
 
 ---
 
@@ -243,6 +243,28 @@
 - **/plugin list コマンド追加**：インストール済みプラグインの一覧表示が可能に。managed deployment 向けバージョン管理機能も追加（mexc.com / releasebot.io, 2026-06）
 - **接続切断時の部分レスポンス保存**：mid-stream での接続断発生時に、それまでの部分レスポンスが raw エラーではなく保存されるよう改善（releasebot.io, 2026-06）
 - **WSL2 マウスホイール修正**：WSL2 環境でのスクロール問題を修正。サンドボックス動作・ウェルカムバナー・プラグイン読み込みパフォーマンスも改善（releasebot.io, 2026-06）
+
+---
+
+## [2026-06-29] 調査結果
+
+### Claude Code / Anthropic
+
+- **Claude Code v2.1.195（2026-06-26 リリース）**：複数のバグ修正とパフォーマンス改善（github.com/anthropics/claude-code, 2026-06-26）
+  - **日本語・中国語・タイ語等の語間スペースがない言語で音声入力の自動送信が動作しないバグを修正**：日本語ユーザーに影響していた問題が解消
+  - macOS でデフォルト音声入力デバイス変更後に無音をキャプチャし続けるバグを修正
+  - フック識別子のハイフン名（`code-reviewer`・`mcp__brave-search` 等）が部分一致していたバグ→完全一致に変更
+  - JetBrains IDE ターミナル（IntelliJ / PyCharm / WebStorm 等）のちらつきを修正
+  - `CLAUDE_CODE_DISABLE_MOUSE_CLICKS` 環境変数を追加：フルスクリーンモードでマウスクリック/ドラッグ/ホバーを無効化しながらホイールスクロールは維持できる設定
+- **ストリーミング中の CPU 使用量を約 37% 削減**：MCP 信頼性と OAuth 再試行ロジックも強化（releasebot.io, 2026-06）
+- **Trusted Devices for Remote Control（Team・Enterprise 向け）**：管理者がメンバーのローカル Claude Code セッションをリモート閲覧・操作する前にデバイス認証を必須化できる新機能（support.claude.com, 2026-06）
+- **JetBrains IDE：Claude をエージェントプロバイダーとして使用するプレビュー開始**（GitHub Changelog, 2026-06-22）：IntelliJ / PyCharm / WebStorm 等で Claude をネイティブエージェントとして使用できる環境が整備
+
+### AIコンテンツ・業務効率化トレンド
+
+- **LLM 由来のトラフィックが前年比 527% 増加**（Evolv Agency, 2026）：ただし米国デスクトップ検索全体に占める LLM 経由の割合は約 5.6%（WSJ, 2025年6月時点）。絶対量はまだ小さいが成長速度は急加速
+- **LLM 引用の 44.2% がページ冒頭 30% のコンテンツから発生**（position.digital / omnibound.ai, 2026-06）：「冒頭200語」という既存データをより広い定義（冒頭 30% ≒ 約 600〜800語）で補強する新データ。冒頭セクション全体の質が引用確率を大きく左右する
+- **コンテンツ形式別の LLM 引用率**（AI Mode・ChatGPT・Perplexity 共通・omnibound.ai, 2026-06）：リスト記事 21.9%・一般記事 16.7%・製品ページ 13.7%。リスト形式が LLM に引用されやすい傾向を複数エンジンで確認
 
 ---
 

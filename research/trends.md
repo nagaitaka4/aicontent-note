@@ -267,6 +267,17 @@
 - **コンテンツ形式別の LLM 引用率**（AI Mode・ChatGPT・Perplexity 共通・omnibound.ai, 2026-06）：リスト記事 21.9%・一般記事 16.7%・製品ページ 13.7%。リスト形式が LLM に引用されやすい傾向を複数エンジンで確認
 
 ---
+---
+
+## [2026-06-26] 調査結果
+
+### Claude Code / Anthropic
+
+- **Claude Code `/rewind` サポート追加**：エージェント・パーミッション動作改善、MCP耐障害性・OAuth処理改善、CPU・メモリ使用量低下。長時間セッション・ストリーミング中のリソース消費が改善（releasebot.io, 2026-06）
+- **Claude Tag on Slack（ベータ開始）**：Slackチャンネルで `@Claude` タグ付けでタスク委任・文脈蓄積・非同期作業が可能に。ツール・データへのアクセスは制御付き。Claude Enterprise/Team向けベータ（technobezz.com, 2026-06）
+- **Anthropic が $965B 評価で資金調達・IPO 機密申請**：OpenAI を抜いて時価総額首位に。Claude Code が Anthropic の急成長を牽引していると CNBC が報道（cnbc.com, 2026-06）
+
+---
 
 ## Claude Code / Anthropic アップデート
 

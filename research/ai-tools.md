@@ -75,6 +75,29 @@
 
 ---
 
+---
+
+## [2026-06-26] 調査結果
+
+### Cursor
+
+- **Cursor が SpaceX（xAI 子会社）に $600 億で買収**（buildfastwithai.com, 2026-06-24）：300名・年間収益 $4M→$2B を 18 ヶ月で達成した最速成長SaaS企業の一つ。xAI 傘下に入ることで Grok モデルとの統合強化が予想される。Claude Code との競合関係が資本レベルでより複雑化
+
+### Anthropic / Claude Code
+
+- **Anthropic が $965B 評価で資金調達・IPO 機密申請**（cnbc.com, 2026-06）：OpenAI を抜いて AI 企業時価総額首位に。Claude Code が成長を牽引していると報道
+
+### OpenAI
+
+- **Codex でエンタープライズ注力にシフト**：Claude Code と正面からぶつかる形。GitHub Copilot の失速が鮮明に（morphllm.com, 2026-06）
+- **LLM 最適化推論チップを Broadcom と共同開発**：独自ハードウェアへの投資を加速
+
+### Google
+
+- **AI 開発者向けサブスクリプション $100/月 を発表**：Antigravity（旧 Gemini CLI 後継）等の開発者向けツールをバンドル。開発者取り込みを強化
+
+---
+
 ## このメディアへの示唆
 
 - Hermes Agentは「Claude Codeの比較対象」として記事に使える。差別化ポイントが明確（コーディング特化 vs 汎用常時稼働）

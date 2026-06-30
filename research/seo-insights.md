@@ -231,6 +231,22 @@
 - **特定トピックの ChatGPT 引用：上位 10 ドメインで 46%・上位 30 ドメインで 67% を占有**（omnibound.ai, 2026-06）：引用ポジションの集中化が進んでおり、早期に引用実績を積んだドメインが固定化されやすい構造
 
 ---
+---
+
+## [2026-06-26] 調査結果
+
+### Google アルゴリズム・スパムアップデート
+
+- **Google June 2026 スパムアップデート（6/24 開始）**（launchcodex.com / digitalapplied.com, 2026-06）：AI Mode・AI Overview での引用操作・購入もスパムポリシーの対象に。「GEO施策」として売られているインチキな引用誘導が明示的に取り締まり対象へ
+- **FAQ リッチリザルト、5/7 で終了済み**（searchenginejournal.com, 2026-06）：Search Console には以前の表示が残る場合あり。新規での最適化は不要
+- **Search Console に AI パフォーマンスセクション追加（展開中）**：AI Overview・AI Mode 経由のトラフィックを個別に可視化できるレポートが順次公開
+
+### GEO・AI検索の最新指針
+
+- **Google VP「Good SEO is Good GEO」**（digitalapplied.com, 2026-06）：AI Mode・AI Overview は通常の検索と同じコアランキングシステムで動作。GEO 専用の別チャンネルは存在しない。「SEO をやれば GEO も上がる」が公式見解
+- **Google 公式：llms.txt・コンテンツチャンキング・AI 専用スキーマは不要**（searchenginejournal.com, 2026-06）：「GEO 施策」として売られている技術的対策の大半を Google が明示的に否定。残る有効な施策は「独自性のあるコンテンツをクロール可能な状態で公開する」のみ
+
+---
 
 ## 検索トレンド・アルゴリズム変化
 

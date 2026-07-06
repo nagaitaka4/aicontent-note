@@ -1,6 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-07-06
+最終更新: 2026-07-10
+
+---
+
+## [2026-07-10] 調査結果
+
+### Claude Code / Anthropic
+
+- **サブエージェントとコンテキスト圧縮が拡張思考設定を継承**：`claude agents` で起動したサブエージェントと自動コンテキスト圧縮が、セッションの拡張思考（extended thinking）設定を引き継ぐようになった。委任タスクの出力品質が向上し、複雑な推論が必要なコーディングタスクでも一貫した思考深度を維持できる（releasebot.io, 2026-07）
+- **Claude Design が Claude Code と統合**：Claude Designがプロジェクトをまたいでデザインシステムを引き継ぐようになり、Claude Code とフルイドに連携。デザインキャンバス上で直接編集でき、既存ツールとの接続も拡充（releasebot.io, 2026-07）
+- **Claude Fable 5：7/8以降はメータリングクレジット（API課金）のみに移行確認**：Anthropicが予告した通り7/8をもってPro/Max/Teamサブスクリプションからのアクセスは終了。利用継続にはAPI経由のメータリングクレジット（$10/$50/Mtok）が必要な状態となった（Anthropic, 2026-07-08）
+- **Claude Opus 4.7 Fast Mode 廃止（2026-07-24予定）確認**：7/24以降は `claude-opus-4-7` に `speed: "fast"` を指定するとエラー返却になるため、Opus 4.8 Fast Modeへの移行が必要（releasebot.io, 2026-07）
 
 ---
 

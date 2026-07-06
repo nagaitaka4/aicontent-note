@@ -1,6 +1,6 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-06-08
+最終更新: 2026-07-10
 
 ---
 
@@ -117,11 +117,42 @@
 
 ---
 
+---
+
+## [2026-07-10] 調査結果
+
+### ZCode（Z.ai・新規参入）
+
+- **Z.ai が ZCode を発表、Claude Code・Cursor・GitHub Copilot に真っ向対抗**（VentureBeat, 2026-07）：Z.aiが自社開発モデルを搭載したコーディングエージェント ZCode をリリース。Claude Code・Cursor・Copilotを競合として明示的に対抗ポジションを取る。AIコーディングエージェント市場への参入プレイヤーが一段と増加した
+- **AI コーディングエージェントの競合構図（2026-07-04時点）**（lushbinary.com, morphllm.com）：Claude Code・OpenCode・Antigravity（旧Gemini CLI）・Codex・Cursor・Windsurf・GitHub Copilot・ZCode。「フロンティアモデルが収束しているため、エージェントラッパーが体験を決める」局面に移行
+
+### Cursor
+
+- **Cursor が iOS 版をパブリックベータ公開（全有料プラン対象）**（releasebot.io, 2026-07）：7/5までComposer 2.5ランを75%割引で提供するキャンペーンを実施。AIコーディングツールのモバイル展開が本格化
+- **Cursor が Continue（オープンソースのGitHub Copilot代替）を買収**（thenewstack.io, 2026-07）：ContinueはGitHub CopilotのOSS代替として開発者コミュニティで普及していたツール。CursorがOSSエコシステムの取り込みに動き、Claude Code・Copilotとの差別化を強化
+- **Cursor が Automations（常時オンエージェント）を追加**：反復タスクを処理する常時稼働エージェント機能と、GitHub・Slackトリガーの拡充、クラウドエージェントでコンピュータ使用に対応
+
+### Windsurf → Devin Desktop にリブランディング
+
+- **Windsurf がブランド名を Devin Desktop に変更**（lushbinary.com, 2026-07）：AIコーディングエージェント市場で「Devin」ブランドへの統合が進行。ツール名の変遷が加速しており、市場の再編・統合フェーズに入っている
+
+### OpenAI
+
+- **GPT-5.6 ファミリー（Sol・Terra・Luna）限定プレビュー**（llm-stats.com, 2026-07）：Sol（旗艦）・Terra（バランス型・GPT-5.5の約半額相当）・Luna（高速・低コスト）の3モデル構成でプレビュー発表。米政府要請により約20の承認パートナーへのAPI限定プレビュー段階。一般向け時期は未定
+- **Codex がエンタープライズ注力にシフト**：Claude Code と正面衝突の構図は継続。GPT-5.6ファミリーがCodexに統合されれば競合強化が予想される
+
+### Google / Gemini
+
+- **Gemini 3.5 Flash が一般提供開始**（llm-stats.com, 2026-07）：エージェント・コーディング向けにチューニング。サブエージェント展開・マルチステップツール使用に最適化。Google AI Mode のデフォルトモデルとしてグローバル展開中
+
+---
+
 ## このメディアへの示唆
 
 - Hermes Agentは「Claude Codeの比較対象」として記事に使える。差別化ポイントが明確（コーディング特化 vs 汎用常時稼働）
 - 「AIツール乱立時代にどれを選ぶか」系の記事はターゲット読者（中小企業・コンテンツ運用者）に刺さりやすい
 - GPT-5.5・Gemini急成長はClaude Codeユーザーへの「比較検討層」が増えることを意味し、差別化コンテンツの需要が上がる
+- ZCode参入で比較候補がさらに増加。「2026年AIコーディングエージェント全比較」系の記事需要が高まっている
 
 ---
 

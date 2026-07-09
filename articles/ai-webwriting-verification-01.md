@@ -115,3 +115,5 @@ status: published
 このシリーズは、AIコンテンツを「止めずに回す」という本メディアのテーマそのものの実験でもあります。
 
 まずは、やってみます。
+
+次回は、実際にクラウドワークスの案件一覧を開いてみます。[AIでWEBライティング副業は回せるのか。案件一覧を開いて見えた"最初の壁"](https://aicontent-note.com/ai-webwriting-verification-02/)

@@ -194,8 +194,8 @@ eyecatch: eyecatch_0012.png
 ---
 
 *このシリーズは「AIを使ったWEBライティングで月3万円は稼げるか」の実況記録です。*
-*→ [#5 AIライティング副業。応募条件は後回し、1件取るために応募した話](https://aicontent-note.com/ai-webwriting-verification-05/)*
+*→ [#5 応募条件は後回し、最初の1件取るために低単価で応募した話](https://aicontent-note.com/ai-webwriting-verification-05/)*
 
 <!-- 関連記事（WP入稿時に設定する）
-- [AIライティング副業。応募条件は後回し、1件取るために応募した話](https://aicontent-note.com/ai-webwriting-verification-05/) ← シリーズ#5・本文・フッターにリンクあり
+- [応募条件は後回し、最初の1件取るために低単価で応募した話](https://aicontent-note.com/ai-webwriting-verification-05/) ← シリーズ#5・本文・フッターにリンクあり
 -->

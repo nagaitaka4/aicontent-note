@@ -2,7 +2,7 @@
 no: 8
 series: side-business
 series_no: 5
-title: AIライティング副業。応募条件は後回し、1件取るために低単価で応募した話
+title: 応募条件は後回し、最初の1件取るために低単価で応募した話
 date: 2026-04-03
 url: https://aicontent-note.com/ai-webwriting-verification-05/
 slug: ai-webwriting-verification-05
@@ -11,7 +11,7 @@ category: AIコンテンツ運用検証
 tags: AIライティング,副業,クラウドワークス,案件応募
 ---
 
-# AIライティング副業。応募条件は後回し、1件取るために低単価で応募した話
+# 応募条件は後回し、最初の1件取るために低単価で応募した話
 
 [前回の記事](https://aicontent-note.com/ai-webwriting-verification-04/)では、
 クラウドワークスで初めて案件をリサーチして応募まで試みました。

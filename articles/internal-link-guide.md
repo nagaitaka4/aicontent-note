@@ -3,10 +3,10 @@ no: 46
 series:
 series_no:
 title: ブログの内部リンクの貼り方とSEO効果の出し方
-date:
-url:
+date: 2026-07-09
+url: https://aicontent-note.com/internal-link-guide/
 slug: internal-link-guide
-status: draft
+status: published
 description: 内部リンクとは何かという基本から、貼るタイミングは3つあること、アンカーテキストは記事内容を自然に表す文言にすること、本数より関連性を優先する考え方までを実務視点で整理します。実際の運用例と、サーチコンソールでの確認・改善サイクルもあわせて解説します。
 eyecatch_alt: ブログの内部リンクの貼り方とSEO効果の出し方を解説する記事のアイキャッチ
 category: AIとコンテンツの実務

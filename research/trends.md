@@ -1,6 +1,25 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-07-10
+最終更新: 2026-07-13
+
+---
+
+## [2026-07-13] 調査結果
+
+### Claude Code / Anthropic
+
+- **Claude Code Desktop にブラウザ内蔵（v2.1.206）**：Claude Code Desktop に組み込みブラウザが追加。ドキュメント・デザインファイル・任意の Web ページを直接開き、読み取り・クリック・操作が可能。ショートカット：macOS = Cmd+Shift+B、Windows = Ctrl+Shift+B（Views メニューからも起動可）（jls42.org / dev.classmethod.jp, 2026-07）
+- **Sonnet 5 が Pro・Team Standard・Enterprise のデフォルトモデルとして確定**：Sonnet 価格で Opus クラスに近いコーディング性能を提供。適応思考（Adaptive Thinking）がデフォルトオン。アクティブセッションが PR を編集・マージ・コメント・プッシュした場合に `claude agents` へリンクが表示されるようになった（releasebot.io, 2026-07）
+- **Auto Mode が Bedrock・Vertex AI・Foundry でオプトイン不要に**：これまで `CLAUDE_CODE_ENABLE_AUTO_MODE` 環境変数が必要だったが、3プラットフォームでデフォルト有効化。`disableAutoMode` 設定で無効化可能（code.claude.com, 2026-07）
+- **バックグラウンドエージェントの自動更新が静音化**：Claude Code アップデート直後にバックグラウンドエージェントが静かに更新されるようになり、ユーザーがアタッチした瞬間に更新待ちが発生しなくなった（code.claude.com, 2026-07）
+- **`/doctor` が対話型セットアップ診断に機能拡張**：CLAUDE.md ファイルのうちリポジトリを探索すれば推定可能なコンテンツを削ぎ落とす提案機能を追加（code.claude.com / gradually.ai, 2026-07）
+- **自動更新バイナリのピークメモリ使用量を約 400 MB 削減**：ディスクへのストリーミング書き込みへの切り替えによる改善（code.claude.com, 2026-07）
+
+### AIコンテンツ・業務効率化トレンド
+
+- **AIライティングツール世界市場が 2026 年に $4.2B 規模**：2030 年に $12B 規模へ成長予測（CAGR 約 30%）。AIコンテンツ生成市場全体（$28.75B）とは別にライティングツールカテゴリが独立成長（TextShift / Siege Media, 2026）
+- **AIを「編集・校閲」に使うコンテンツマーケターが前年比 2 倍に拡大**：2025 年 19% → 2026 年 38%。生成だけでなく品質チェック・リライト工程へのAI活用が本格化（Siege Media, 2026）
+- **AIライティングの使われ方が「単発プロンプト」から「チームワークフロー組み込み」に転換**：反復タスクをエージェントが担い、人間が判断・レビュー・アカウンタビリティを担う役割分担が標準化。AI単体ではなく「AI+人間の設計力」が競争力の軸に（FutureTechnologyHub, 2026）
 
 ---
 

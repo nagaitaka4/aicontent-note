@@ -31,17 +31,13 @@
 ```
 aicontent-note/
 ├── articles/          # 公開済みブログ記事（Markdown）
-├── docs/              # メディア運用ルール・戦略ドキュメント
-│   ├── content_strategy.md   # コンテンツ戦略
-│   ├── media_strategy.md     # メディア戦略
-│   ├── seo_rules.md          # SEOルール
-│   ├── service_model.md      # サービスモデル
-│   ├── workflow.md           # 記事制作ワークフロー
-│   └── writing_rules.md      # 執筆ルール
+├── rules/             # 記事制作・X投稿・タスク管理の工程別ルール
+├── knowledge/          # WP設定・サービス・アイキャッチ等の固定リファレンス
 ├── operations/        # 運用ログ・改善記録・記事バックログ
+├── archive/           # 役目を終えた戦略ドキュメント（履歴として保管）
 ├── seo/               # SEO検証サマリー
 ├── side-business/     # 副業検証・ツールメモ
-└── CLAUDE.md          # AI編集エージェント向け指示書
+└── CLAUDE.md          # AI編集エージェント向け指示書（rules/knowledgeへの索引）
 ```
 
 ---
@@ -76,7 +72,7 @@ aicontent-note/
 - 具体例・数字・体験談を軸に構成
 - 抽象論のみの説明は禁止
 
-詳細は [docs/](./docs/) 以下の各ドキュメントを参照してください。
+詳細は [CLAUDE.md](./CLAUDE.md) のルール・ナレッジ索引から各ファイルを参照してください。
 
 ---
 

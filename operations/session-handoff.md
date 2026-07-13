@@ -81,4 +81,4 @@
 - メディアは営業装置。ゴールはAIコンテンツ運用代行の受注
 - 全体導線：X → 記事 → シリーズ → note → 代行
 - 最重要原則：「Claude Codeを売るのではなく、業務を回す仕組みを売る」
-- 詳細：docs/strategy_master.md
+- 詳細：CLAUDE.mdの役割・概要（メディアの軸）／経緯は`archive/strategy_master.md`

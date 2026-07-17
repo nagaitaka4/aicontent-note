@@ -194,3 +194,4 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 45 | ai-ops-basics | 7 | readme-basics.md | 2026-07-07 |
 | 46 | - | - | internal-link-guide.md | 2026-07-09 |
 | 47 | ai-ops-basics | 8 | template-basics.md | 2026-07-14 |
+| 48 | task-fit | 1 | claude-code-task-fit.md | 2026-07-17 |

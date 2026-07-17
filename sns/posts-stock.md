@@ -252,7 +252,7 @@ https://aicontent-note.com/claude-code-entry-publish/
 | 3 | ② | AI動向を実務視点で（時事ネタ） | 時事枠・差し替えOK |
 | 4 | ③ | README-リ | README-気から4本後 |
 | 5 | ① | ルールファイルが増えて困ったこと・整理方法 | ✅ 2026-07-16投稿済み（rule-file-気） |
-| 6 | ④ | cc-writing-rewrite-リ | リンク型 |
+| 6 | ④ | cc-writing-rewrite-リ | ~~リンク型~~ → SEO向き記事のためX投稿見送り |
 | 6.5 | ③ | rule-file-リ | R-09公開後に出す（rule-file-気のリンク型ペア） |
 | 7 | ① | AIとのやり取りで「書く」より「判断」が仕事になった | ヒアリング |
 | 8 | ② | AI動向（実務に影響があるものだけ） | 時事枠・差し替えOK |
@@ -260,7 +260,7 @@ https://aicontent-note.com/claude-code-entry-publish/
 | 10 | ④ | メルカリ-リ | メルカリ-気から十分間隔が空く |
 | 11 | ① | Git・README・ルールがそろって初めてAIが安定した話 | ヒアリング |
 | 12 | ② | AI動向 | 時事枠・差し替えOK |
-| 13 | ④ | cc-entry-publish-リ | リンク型 |
+| 13 | ④ | cc-entry-publish-リ | ~~リンク型~~ → SEO向き記事のためX投稿見送り |
 | 14 | ① | 「AIに任せる」ではなく「AIが迷わない環境を作る」に変わった | ヒアリング |
 | 15 | ② | AI動向 | 時事枠・差し替えOK |
 

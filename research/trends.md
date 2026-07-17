@@ -1,6 +1,16 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-07-15
+最終更新: 2026-07-17
+
+---
+
+## [2026-07-17] 調査結果
+
+### Claude Code / Anthropic
+
+- **Claude Code 安定性・ワークフロー刷新アップデート**：サブエージェントのテキストストリーミング対応、`--forward-subagent-text` フラグ／`CLAUDE_CODE_FORWARD_SUBAGENT_TEXT` 環境変数を追加（サブエージェントのテキスト・思考過程をstream-json出力に含められるように）。パーミッション・アップロード処理改善、バックグラウンドエージェントのレポート改善、ターミナル描画高速化。Chrome・Windows・Bedrock・Vertex・hooks・セッション復旧まわりの修正多数（releasebot.io, 2026-07）
+- **Auto modeにセッショントランスクリプト改ざん防止ルールを追加**：セッション記録ファイルの改ざんをブロックする新ルールがauto modeのセーフティに追加。`/doctor` によるフルセットアップチェック機能・より賢いPRリンク付け・バックグラウンドタスク処理の改善・Windows向け低メモリ自動更新ダウンロードも追加（releasebot.io / code.claude.com, 2026-07）
+- **Claude Artifacts（ベータ）**：セッションの成果物をclaude.ai上でライブ共有ページ化できる機能。セッション実行中も内容がその場で更新される。Team・Enterprise プランでベータ提供開始（releasebot.io, 2026-07）
 
 ---
 

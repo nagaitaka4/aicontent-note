@@ -283,6 +283,8 @@ Claude Codeへの指示が安定しやすいです。
 
 同じ構造は、他の業務にも応用できます。
 
+職種ではなく業務の特性で相性を見極める考え方は、[職種じゃない、"業務"で決まる。Claude Code適性の見極め方](https://aicontent-note.com/claude-code-task-fit/)でさらに詳しく整理しています。士業を入り口にしたシリーズもここから始まっています。
+
 ＼ 自分でやる時間がない方へ。まるっとブログ記事運用代行します／
 【WP入稿】SWELLボタン：「AIコンテンツ運用のご相談はこちら」/ https://aicontent-note.com/contact/
 

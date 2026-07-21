@@ -55,7 +55,7 @@
 ## 作業前ルール
 - `git pull --rebase origin main` を実行してローカルをリモートに揃えてから作業を始める（コンフリクト防止）
 - `operations/session-handoff.md` を必ず読む
-- **TOP6は `~/Documents/GitHub/tasks/README.md` が唯一の正（session-handoff.mdのTOP6は廃止）**
+- **TOP10は `~/Documents/GitHub/tasks/README.md` が唯一の正（session-handoff.mdのTOP6は廃止）**
 - `sns/posts-stock.md` と `operations/article-backlog.md` を読んで実態を確認してから動く（引き継ぎ情報より実ファイルを優先する）
 - **rules/・knowledge/配下のルールファイルは、一度読んだ記憶で動かない**：記事執筆・アイキャッチプロンプト作成・リポジトリ整理など、特定ルールに従う作業に着手する直前は、同一セッション内で既に読んでいても対象ファイルを毎回読み直してから実行する。セッションの経過時間・ターン数は言い訳にしない（2026-07-16確定）
 

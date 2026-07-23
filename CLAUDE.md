@@ -91,10 +91,11 @@
 | [knowledge/wp-settings.md](knowledge/wp-settings.md) | WordPress・ツール設定、カテゴリー一覧 |
 | [knowledge/service-rules.md](knowledge/service-rules.md) | サービスの方向性・受注フロー |
 | [knowledge/eyecatch-rules.md](knowledge/eyecatch-rules.md) | アイキャッチ画像の管理ルール |
+| [knowledge/x/published.md](knowledge/x/published.md) | X投稿パフォーマンスデータ（全47件・ビュー/いいね/評価） |
 
 ### 各工程での参照順の目安
 
 - 記事を書く・編集する → まず`rules/article-flow.md`
-- Xの投稿を作る → まず`rules/x-post-flow.md`（`sns/posts-stock.md`の戦略部分も必ず読む）
+- Xの投稿を作る → まず`rules/x-post-flow.md`（`sns/posts-stock.md`の戦略部分・`knowledge/x/published.md`も読む）
 - タスクリスト・引き継ぎを更新する → `rules/task-management.md` / `rules/session-handoff.md`
 - WP設定・カテゴリー・サービス文言・アイキャッチで迷ったとき → `knowledge/`配下

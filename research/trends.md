@@ -1,6 +1,19 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-07-20
+最終更新: 2026-07-24
+
+---
+
+## [2026-07-24] 調査結果
+
+### Claude Code / Anthropic
+
+- **Claude Voice Mode 刷新（2026-07-23）**：音声モードで応答生成モデルをOpus・Sonnet・Haikuから選択可能に。従来は常にHaikuが担当し即答重視だったが、複雑な作業には不向きだった。新設計ではテキストチャットで直近使用したモデルの最速版がデフォルトになる（TechCrunch, 2026-07-23）
+- **Claude Developer Platform：Managed Agents機能拡張**：モデルのeffort設定・environment/memory storeイベントを含むwebhookカバレッジ拡大・初期イベント付きセッションシーディング・更新時のバージョンチェック任意化・スレッドストリームのイベントデルタを追加（releasebot.io, 2026-07）
+- **Claude Code Week 29（v2.1.207〜v2.1.212・7/13〜17）**：`/code-review`がバックグラウンドサブエージェントとして実行されるように変更。**`/deep-research`も手動起動専用に変更**（Claudeが自動でスキルを起動しなくなった。7/20記録済みの`/verify`・`/code-review`の手動化方針が`/deep-research`にも拡大）。スクリーンリーダーモードに削除テキストの読み上げ通知を追加。Windowsパスの特殊プレフィックス破損バグ修正。plan modeのauto設定がBashコマンドの確認プロンプトではなくauto-modeクラシファイアに依存するよう変更（code.claude.com / releasebot.io, 2026-07）
+- **Claude Code Artifacts：公開共有リンク・エディターロールを追加（Team/Enterprise）**：7/20記録済みのライブMCPコネクター対応に加え、閲覧者への公開共有リンクと共同編集用エディターロールが正式に追加されたことを確認（releasebot.io, 2026-07）
+
+（定期リサーチで随時追記）
 
 ---
 

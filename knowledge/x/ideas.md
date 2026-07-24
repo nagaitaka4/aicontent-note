@@ -54,7 +54,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 | 記事 | URL | X向き判定 | 理由 | 投稿可能時期 |
 |---|---|---|---|---|
 | 弁護士-リ（no.49） | https://aicontent-note.com/claude-code-lawyer-case-management/ | ✅ X向き | 具体的業務・判断の残し方・実体験（規約作成3ヶ月） | 士A投稿から3〜5本後 |
-| メルカリ-リ（no.42） | https://aicontent-note.com/mercari-ai-listing/ | ✅ X向き | 数字あり・メルカリ-気から十分間隔が空く | メルカリ-気から10本以上後 |
+| メルカリ-リ（no.42） | https://aicontent-note.com/mercari-ai-listing/ | ✅ X向き | 数字あり・2週間以上空いた | 士A投稿後（体験型として制作） |
 | README-リ（no.45） | https://aicontent-note.com/readme-basics/ | ✅ X向き | README-気から4本後 | 要タイミング確認 |
 
 ---

@@ -135,6 +135,17 @@ def main(path):
     if over_h3:
         print(f"[要確認] 同一H2内にH3が3つ以上: {over_h3}（表化を検討）")
 
+    # --- ブロック要素（【ポイント】等）が長すぎないか ---
+    block_matches = re.finditer(r"^【([^】]+)】<br>\n((?:.+\n?)+?)(?=\n\n|\n---|\Z)", body, re.M)
+    long_blocks = []
+    for m in block_matches:
+        block_name, block_body = m.group(1), m.group(2)
+        block_chars = len(re.sub(r"\s|<br>", "", block_body))
+        if block_chars > 80:
+            long_blocks.append((block_name, block_chars))
+    if long_blocks:
+        print(f"[要確認] ブロック要素が長すぎる可能性: {long_blocks}（80字目安。一言で伝わる長さか確認・箇条書き2つ以上の対比説明は表に戻すことを検討）")
+
     # --- 箇条書き3行以上連続（表化候補） ---
     bullet_runs = re.findall(r"(?:^・.*\n){3,}", body, re.M)
     if bullet_runs:

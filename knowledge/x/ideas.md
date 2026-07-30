@@ -43,7 +43,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 | ID | 動向・ネタ | 出典ファイル | リサーチ日 | 鮮度期限 | 軸 |
 |---|---|---|---|---|---|
-| research-20260724-01 | AI Overview表示率が業種別に急拡大（教育18%→83%・B2Bテック36%→82%・飲食10%→78%、全体は前年比58%増） | research/seo-insights.md | 2026-07-24 | 2週間以内目安（データ系のため即時性は低いが優先度は高め） | ② |
+| research-20260729-01 | AI Overview表示クエリで1位ページCTRが58%低下・AI Overview閲覧後にクリックするのは8%のみ（no.34のゼロクリック83%とは別角度・AI-ov-気投稿から3〜5本後推奨） | research/seo-insights.md | 2026-07-29 | データ系のため鮮度は長め | ② |
 
 ---
 
@@ -54,7 +54,6 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 | 記事 | URL | X向き判定 | 理由 | 投稿可能時期 |
 |---|---|---|---|---|
 | 弁護士-リ（no.49） | https://aicontent-note.com/claude-code-lawyer-case-management/ | ✅ X向き | 具体的業務・判断の残し方・実体験（規約作成3ヶ月） | 士A投稿から3〜5本後 |
-| メルカリ-リ（no.42） | https://aicontent-note.com/mercari-ai-listing/ | ✅ X向き | 数字あり・2週間以上空いた | 士A投稿後（体験型として制作） |
 | README-リ（no.45） | https://aicontent-note.com/readme-basics/ | ✅ X向き | README-気から4本後 | 要タイミング確認 |
 
 ---

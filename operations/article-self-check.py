@@ -140,11 +140,12 @@ def main(path):
     long_blocks = []
     for m in block_matches:
         block_name, block_body = m.group(1), m.group(2)
-        block_chars = len(re.sub(r"\s|<br>", "", block_body))
+        block_body_no_links = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", block_body)
+        block_chars = len(re.sub(r"\s|<br>", "", block_body_no_links))
         if block_chars > 80:
             long_blocks.append((block_name, block_chars))
-    if long_blocks:
-        print(f"[要確認] ブロック要素が長すぎる可能性: {long_blocks}（80字目安。一言で伝わる長さか確認・箇条書き2つ以上の対比説明は表に戻すことを検討）")
+    if not report("ブロック要素が80字以内", not long_blocks, f"{long_blocks}（一言で伝わる長さか確認・箇条書き2つ以上の対比説明は表に戻すことを検討。内容が濃く80字超が妥当な場合のみ目視判断でOK扱いにしてよい）"):
+        failures += 1
 
     # --- 箇条書き3行以上連続（表化候補） ---
     bullet_runs = re.findall(r"(?:^・.*\n){3,}", body, re.M)
@@ -192,6 +193,28 @@ def main(path):
         print(f"[{'NG' if over else 'OK'}] {h2title[:30]} リード文{sentence_count}文" + ("（3文超）" if over else ""))
         if over:
             failures += 1
+
+    # --- 段落の長さチェック（リード文だけでなく本文中の全段落が対象。2026-07-31〜）---
+    # 従来のリード文チェックは「最初のブロック/箇条書きが出るまで」しか見ておらず、
+    # 箇条書き・表・ブロックの後に続く地の文が野放しになっていた。文数だけでなく字数（4行=160字目安）も見る。
+    print("\n--- 段落の長さチェック（4行=160字目安。箇条書き・ブロック後の地の文も対象） ---")
+    # H1直下の導入リード文はGEO対応ルール（メインKW+直接回答を1文目に含む別基準）の対象のため除外する
+    body_after_intro = re.split(r"^## ", body, maxsplit=1, flags=re.M)
+    body_for_para_check = "## " + body_after_intro[1] if len(body_after_intro) > 1 else ""
+    paragraphs = re.split(r"\n\s*\n", body_for_para_check)
+    long_paras = []
+    for p in paragraphs:
+        p = p.strip()
+        if not p or p in BOILERPLATE_EXACT:
+            continue
+        if re.match(r"^(#|---|\||＼|【|・|-|\[お問い合わせ)", p):
+            continue
+        plain = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", p)
+        plain = re.sub(r"<br>|\s", "", plain)
+        if len(plain) > 160:
+            long_paras.append((len(plain), p[:30] + "…"))
+    if not report("4行(160字)を超える段落がない", not long_paras, f"{long_paras}"):
+        failures += 1
 
     # --- 重複チェック（feedback_no_repetition.mdより統合） ---
     print("\n--- 重複チェック ---")

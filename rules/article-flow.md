@@ -196,7 +196,7 @@ CLAUDE.mdの記事制作フローと、これまでCCのメモリにのみ存在
 
 ## 9. 記事公開時の必須作業（省略禁止）
 
-「入稿が完了した」の報告を受けたら、以下6つすべてを実行する。公開日はcurrentDate。確認不要。
+「入稿が完了した」の報告を受けたら、以下7つすべてを実行する。公開日はcurrentDate。確認不要。
 
 1. MDファイル：`status: draft` → `published`／`date:`にcurrentDate記入
 2. `operations/article-md-workflow.md`：作成済み記事一覧に追記
@@ -204,6 +204,7 @@ CLAUDE.mdの記事制作フローと、これまでCCのメモリにのみ存在
 4. GitHub issue #2：`[ ]`→`[x]`、タイトル更新、次の記事に**次回確定**、公開済み本数更新
 5. `~/Documents/GitHub/tasks/README.md`：TOP6を更新
 6. MDファイルのWP同期：公開ページを取得し、誤字脱字がなければWPの内容を正としてMDのテキストを修正する
+7. **X投稿キューへのネタ抽出**：公開記事から気づき型断片を3本抽出→下書き化（文字数Bash実測）→ランク判定→★★★★☆以上を`knowledge/x/queue.md`に追加。リンク型候補は`knowledge/x/ideas.md`の記事由来に追記（詳細は`rules/x-post-flow.md` 3.5章）
 
 > 注意：MDファイルはWPの最新状態と一致しない場合がある。grep確認しても古い記事はWP側で個別に変更され同期漏れの可能性がある。ズレを指摘されたらユーザーに正しい情報を確認する。
 

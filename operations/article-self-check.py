@@ -276,13 +276,26 @@ def main(path):
         (round(difflib.SequenceMatcher(None, a, b).ratio(), 2), a, b)
         for a, b in itertools.combinations(chunks, 2)
         if len(a) >= 12 and len(b) >= 12
-        and difflib.SequenceMatcher(None, a, b).ratio() > 0.4
+        and difflib.SequenceMatcher(None, a, b).ratio() >= 0.6
         and not (link_href(a) and link_href(a) == link_href(b))  # 同じ内部リンクの本文/関連記事欄への重複掲載は仕様上OK
+        and not (a.lstrip().startswith("|") and b.lstrip().startswith("|"))  # 表の行同士は対比構造なので除外
+        and not (link_href(a) and link_href(b))  # 内部リンク導入文同士は「〜は「記事名」で〜」の型が似るため除外
+        and not (
+            a.lstrip().startswith("・") and b.lstrip().startswith("・")
+            and difflib.SequenceMatcher(None, a, b).ratio() < 0.99
+        )  # 箇条書き同士は型が揃うのが自然（チェックリスト等）。完全一致のみ検出する
     ]
+    # 2026-08-05：閾値0.4は表の並列や導入文の型まで拾い、毎回20件超のNGが出て
+    # 「目視で判断」の名のもとに読み流される状態だった。実害のある重複だけを
+    # 検出するよう0.6へ引き上げ、表の行同士と内部リンク導入文同士を除外する。
+    # 完全一致（1.0）は文言の使い回しなので、閾値に関わらず必ず検出される。
     if similar:
-        print(f"[NG] 類似度0.4超の文ペアが{len(similar)}件見つかった（CTA・関連記事リンクは仕様上OKなので除外して目視確認）")
-        for ratio, a, b in similar[:10]:
-            print(f"   {ratio}: {a[:40]} / {b[:40]}")
+        exact = [x for x in similar if x[0] >= 0.99]
+        print(f"[NG] 類似度0.6以上の文ペアが{len(similar)}件（うち完全一致{len(exact)}件）")
+        print("     → 完全一致は必ず修正する。0.6〜0.99は片方の表現を変えるか、内容の重複ならセクションごと見直す")
+        for ratio, a, b in similar:
+            mark = "★完全一致" if ratio >= 0.99 else "        "
+            print(f"   {mark} {ratio}: {a[:38]} / {b[:38]}")
         failures += 1
     else:
         print("[OK] 文単位の類似度チェックで重複なし")

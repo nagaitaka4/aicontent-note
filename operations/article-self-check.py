@@ -216,6 +216,27 @@ def main(path):
     if not report("4行(160字)を超える段落がない", not long_paras, f"{long_paras}"):
         failures += 1
 
+    # --- 一文の長さチェック（2026-08-05〜）---
+    # 段落チェック（160字）は通っても、1文が長いままだと読みにくい。
+    # 公開53本の実測では平均文長34〜53字・70字超は各記事0〜8件。70字を上限として運用する。
+    print("\n--- 一文の長さチェック（70字上限） ---")
+    sent_src = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", body_for_para_check)
+    long_sents = []
+    for line in sent_src.split("\n"):
+        line = line.strip()
+        if not line or line in BOILERPLATE_EXACT:
+            continue
+        if re.match(r"^(#|---|\||＼|\[お問い合わせ)", line):
+            continue
+        for sent in re.split(r"(?<=。)", re.sub(r"<br>", "", line)):
+            sent = sent.strip()
+            if len(sent) > 70:
+                long_sents.append((len(sent), sent[:40] + "…"))
+    if not report("70字を超える一文がない", not long_sents, f"{len(long_sents)}件"):
+        for n, s in long_sents:
+            print(f"   {n}字: {s}")
+        failures += 1
+
     # --- 重複チェック（feedback_no_repetition.mdより統合） ---
     print("\n--- 重複チェック ---")
     quotes = re.findall(r"「[^」]{2,20}」", body)
@@ -259,9 +280,16 @@ def main(path):
     else:
         print("[OK] 文単位の類似度チェックで重複なし")
 
-    # --- 文字数 ---
+    # --- 文字数（2026-08-05〜 INFO表示からNG判定へ変更）---
+    # 従来は[INFO]表示のみで上限を超えても素通りしていた。公開53本の実測は中央値3,563字・
+    # 直近2本は2,552/2,860字。「重要でないことは省く」を機械的に効かせるため4,000字を上限にする。
+    print("\n--- 文字数チェック（目安2,500〜3,500字・上限4,000字） ---")
     char_count = len(re.sub(r"\s", "", body))
-    print(f"\n[INFO] 本文文字数（空白除く概算）: {char_count}字")
+    if not report("本文が4,000字以内", char_count <= 4000, f"{char_count}字"):
+        print("   → 重要でない説明・言い換え・補足を削る。文を足すのではなく減らす方向で直す")
+        failures += 1
+    elif char_count > 3500:
+        print(f"[要確認] {char_count}字。目安上限3,500字を超えている（削れる箇所がないか確認）")
 
     print(f"\n=== 結果: NG {failures}件 ===")
     print("\n--- 👁 判断チェック（このスクリプトでは検出不可・目視で毎回確認） ---")

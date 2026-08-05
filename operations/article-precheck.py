@@ -1,0 +1,127 @@
+#!/usr/bin/env python3
+"""執筆前チェック（article-precheck.py）
+
+執筆・リライトを始める前に実行し、後から指摘されがちな確認項目を先に潰すためのスクリプト。
+2026-08-05のno.40リライトで、執筆後に9回の手戻りが発生した反省から作成。
+手戻りの内訳は「執筆前に確認できたはずのもの」が大半だった。
+
+使い方:
+    python3 operations/article-precheck.py <slug> ["メインKW"]
+
+例:
+    python3 operations/article-precheck.py blog-outsource-pricing-guide "ブログ代行 相場"
+"""
+import os
+import re
+import subprocess
+import sys
+from statistics import median
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def body_len(path):
+    """frontmatterを除いた本文の字数（空白除く）"""
+    text = open(path, encoding="utf-8").read()
+    parts = text.split("---", 2)
+    body = parts[2] if len(parts) > 2 else text
+    return len(re.sub(r"\s", "", body))
+
+
+def fm(path, key):
+    m = re.search(rf"^{key}:\s*(.*)$", open(path, encoding="utf-8").read(), re.M)
+    return m.group(1).strip() if m else ""
+
+
+def section(title):
+    print(f"\n{'=' * 60}\n{title}\n{'=' * 60}")
+
+
+def main(slug, kw=""):
+    target = os.path.join(ROOT, "articles", f"{slug}.md")
+    exists = os.path.exists(target)
+
+    section("① この記事に適した分量（既存記事の実測から）")
+    lens = []
+    for f in sorted(os.listdir(os.path.join(ROOT, "articles"))):
+        if not f.endswith(".md") or "composition" in f:
+            continue
+        p = os.path.join(ROOT, "articles", f)
+        if fm(p, "status") == "published":
+            lens.append(body_len(p))
+    if lens:
+        lens.sort()
+        print(f"公開{len(lens)}本：中央値 {int(median(lens))}字／最小 {lens[0]}／最大 {lens[-1]}")
+        print(f"直近の水準：{lens[len(lens)//2-2:len(lens)//2+3]}")
+    if exists:
+        print(f"→ この記事の現在: {body_len(target)}字")
+    print("\n【重要】文字数は目標値ではなく冗長検知の指標。")
+    print("執筆前にこの記事の適正分量を決め、書いた後に数値で削らない。")
+    print("削ってよいのは冗長のみ。正確さ・分かりやすさを損なう削減は禁止。")
+
+    section("② 内部リンク候補（同テーマの公開記事・全件）")
+    if kw:
+        keys = [k for k in re.split(r"[ 　]", kw) if k]
+    else:
+        keys = []
+    target_cat = fm(target, "category") if exists else ""
+    found = []
+    for f in sorted(os.listdir(os.path.join(ROOT, "articles"))):
+        if not f.endswith(".md") or "composition" in f:
+            continue
+        p = os.path.join(ROOT, "articles", f)
+        if fm(p, "status") != "published" or f == f"{slug}.md":
+            continue
+        t = fm(p, "title")
+        cat = fm(p, "category")
+        hit_kw = any(k in t for k in keys) if keys else False
+        hit_cat = bool(target_cat) and cat == target_cat
+        if hit_kw or hit_cat or not keys:
+            mark = "KW" if hit_kw else "同カテゴリ"
+            found.append((fm(p, "slug"), t, mark))
+    for sl, t, mark in found:
+        print(f"  [{mark}] {sl}\n         {t}")
+    if not found:
+        print("  （キーワード一致なし。キーワードを変えて再実行するか全件を目視で確認）")
+    print("\n→ この中にリンクしていない関連記事がないか確認する（2026-08-05にno.40で漏れが発生）")
+
+    section("③ 自社サービス情報の参照先（記憶で書かない）")
+    for rel in ["knowledge/service-rules.md", "pages/service.md", "archive/service_model.md"]:
+        p = os.path.join(ROOT, rel)
+        print(f"  {'✓' if os.path.exists(p) else '×'} {rel}")
+    print("\n→ 料金・プラン名・含まれるもの/含まれないものを書くときは3ファイルすべてで照合する")
+    print("→ お試しプランは初月限定。『月4本5万円〜』のような下限表記は誤認を招くため使わない")
+
+    section("④ 外部出典の確認（記事に統計・相場を書く場合）")
+    if exists:
+        urls = re.findall(r"\((https?://[^)]+)\)", open(target, encoding="utf-8").read())
+        ext = sorted({u for u in urls if "aicontent-note.com" not in u})
+        if ext:
+            for u in ext:
+                print(f"  {u}")
+            print("\n→ WebFetchで再取得し、数値の変更有無と公開/更新日を確認する")
+            print("→ 本文には出典名だけでなく『（YYYY年M月公開）』等の時期も明記する")
+        else:
+            print("  外部リンクなし")
+    print("→ URLは記憶で書かない。WebSearch/WebFetchで実在を確認してから使う")
+
+    section("⑤ 執筆中に守る制約（機械チェックの対象）")
+    print("  一文70字以内 ／ 段落160字以内 ／ H2直下リード2〜3文（表・箇条書きの後の地の文も対象）")
+    print("  表は3個まで ／ 関連記事3本 ／ CTA2回（間に3セクション以上）")
+    print("  `・`項目内の列挙は `A / B`（`・`を重ねない）")
+    print("  本文4,000字が上限（超過はNG）。ただし数値のために内容を削らない")
+
+    section("⑥ 提示前の宣言基準（省略禁止）")
+    print("  1. article-self-check.py を実行し【全出力】を読む（grep/headで絞らない）")
+    print("  2. NGは1件ずつ誤検知か実修正かを判断し、実修正はすべて直す")
+    print("  3. 全文を読者視点で通し読みする（削った後は特に）")
+    print("  4. 上記3つを終えてから『入稿できます』と言う")
+    print("\n  修正が必要な場合は、問題を全部洗い出してから一度に直す。")
+    print("  1件ずつ直して都度提示しない（手戻りが増えるため）。")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print(__doc__)
+        sys.exit(1)
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else "")

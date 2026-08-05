@@ -64,6 +64,8 @@ def report(label, ok, detail=""):
 def main(path):
     text, frontmatter, body = load(path)
     lines = body.split("\n")
+    # bodyはfrontmatter除去後のため、報告する行番号にファイル基準のオフセットを加える
+    offset = text[: text.index(body)].count("\n") if body in text else 0
     failures = 0
 
     print("=== 🤖 機械チェック（rules/article-flow.md準拠） ===\n")
@@ -81,8 +83,13 @@ def main(path):
     if not report("`-`箇条書きが残っていない", not bad_bullets, f"該当行: {bad_bullets}"):
         failures += 1
 
-    nested = [i for i, l in enumerate(lines, 1) if re.match(r"^・.*・", l)]
-    if not report("`・`のネストがない", not nested, f"該当行: {nested}（内部リンクタイトルの・は誤検知の可能性あり・目視で除外可）"):
+    nested = [
+        i + offset
+        for i, l in enumerate(lines, 1)
+        if re.match(r"^・.*・", re.sub(r"\[.*?\]\(.*?\)", "", l))
+        and not l.lstrip().startswith(("|", "#"))
+    ]
+    if not report("`・`のネストがない", not nested, f"該当行（ファイル基準）: {nested}／項目内の列挙は`A / B`にする"):
         failures += 1
 
     blank_sep = re.findall(r"^・.*$\n\n^・.*$", body, re.M)

@@ -279,13 +279,16 @@ def main(path):
             continue
         if re.match(r"^・?\[.*\]\(https?://[^)]+\)\s*$", line):  # リンクのみの行（関連記事リスト等）は構造上似るため除外
             continue
+        # 2026-08-06：表のセルは構造化データであり、同じ製品名・項目名が複数の表に出るのは正常。
+        # 旧実装はセルを「|」を外して取り出していたため、後段の「表の行同士は除外」条件が一度も
+        # 効かず、ヘッダーの製品名同士が完全一致NGとして毎回上がっていた。このチェックの目的は
+        # 地の文の言い回しの使い回し検出なので、表の行そのものを対象外にする。
         if line.startswith("|"):
-            chunks.extend(c.strip() for c in line.split("|") if c.strip() and c.strip() not in BOILERPLATE_EXACT)
-        else:
-            for sent in re.split(r"(?<=。)", line):
-                sent = sent.strip()
-                if sent and sent not in BOILERPLATE_EXACT:
-                    chunks.append(sent)
+            continue
+        for sent in re.split(r"(?<=。)", line):
+            sent = sent.strip()
+            if sent and sent not in BOILERPLATE_EXACT:
+                chunks.append(sent)
     def link_href(s):
         m = re.search(r"\((https?://[^)]+)\)", s)
         return m.group(1) if m else None
@@ -296,7 +299,6 @@ def main(path):
         if len(a) >= 12 and len(b) >= 12
         and difflib.SequenceMatcher(None, a, b).ratio() >= 0.6
         and not (link_href(a) and link_href(a) == link_href(b))  # 同じ内部リンクの本文/関連記事欄への重複掲載は仕様上OK
-        and not (a.lstrip().startswith("|") and b.lstrip().startswith("|"))  # 表の行同士は対比構造なので除外
         and not (link_href(a) and link_href(b))  # 内部リンク導入文同士は「〜は「記事名」で〜」の型が似るため除外
         and not (
             a.lstrip().startswith("・") and b.lstrip().startswith("・")

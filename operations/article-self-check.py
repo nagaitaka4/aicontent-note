@@ -96,6 +96,24 @@ def main(path):
     if not report("`・`箇条書きが空行区切りになっていない（<br>を使う）", not blank_sep, f"{len(blank_sep)}件"):
         failures += 1
 
+    # 2026-08-06：文頭の接続語・主題の「〜は」のあとに読点がないと読みづらいという
+    # 指摘を受けて追加。目的語（〜を）や短い副詞の直後は対象外（読点過多を防ぐ）。
+    CONJ = "ただし|しかし|また|なお|さらに|一方|逆に|つまり|そのため|例えば"
+    comma_miss = []
+    for i, l in enumerate(lines, 1):
+        if l.lstrip().startswith(("|", "#", "・", "＼", ">")):
+            continue
+        for m in re.finditer(rf"(?:^|。)({CONJ})(?![、。])", l):
+            comma_miss.append((i + offset, m.group(1)))
+        for m in re.finditer(r"(当サービス|このメディア|当社)は(?![、。])", l):
+            comma_miss.append((i + offset, m.group(0)))
+    if not report(
+        "接続語・主題の「〜は」の後に読点がある",
+        not comma_miss,
+        f"該当（ファイル基準）: {comma_miss}／「ただし、」「当サービスは、」の形にする",
+    ):
+        failures += 1
+
     half_space = [i for i, l in enumerate(lines, 1) if re.search(r"[。、] ", l)]
     if not report("句読点の後に不要な半角スペースがない", not half_space, f"該当行: {half_space}"):
         failures += 1

@@ -4,6 +4,7 @@ series: cc-writer
 series_no: 1
 title: Claude Codeと相性が良い職種・業種まとめ【業務効率化の視点で整理】
 date: 2026-04-23
+updated: 2026-08-06
 url: https://aicontent-note.com/claude-code-compatible-jobs/
 slug: claude-code-compatible-jobs
 status: published
@@ -284,6 +285,11 @@ Claude Codeへの指示が安定しやすいです。
 同じ構造は、他の業務にも応用できます。
 
 職種ではなく業務の特性で相性を見極める考え方は、[職種じゃない、"業務"で決まる。Claude Code適性の見極め方](https://aicontent-note.com/claude-code-task-fit/)でさらに詳しく整理しています。士業を入り口にしたシリーズもここから始まっています。
+
+シリーズでは、職種ごとに実際の業務を分解しています。
+
+・[弁護士業務の案件管理と書類作成に、Claude Codeを当てはめた](https://aicontent-note.com/claude-code-lawyer-case-management/)<br>
+・[社労士業務の就業規則・36協定に、Claude Codeを当てはめた](https://aicontent-note.com/claude-code-labor-consultant-rules-agreement/)
 
 ＼ 自分でやる時間がない方へ。まるっとブログ記事運用代行します／
 【WP入稿】SWELLボタン：「AIコンテンツ運用のご相談はこちら」/ https://aicontent-note.com/contact/

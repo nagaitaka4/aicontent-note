@@ -4,6 +4,7 @@ series:
 series_no:
 title: コンテンツ運用代行とは？料金・内容・依頼する前に知っておくこと
 date: 2026-05-27
+updated: 2026-08-07
 url: https://aicontent-note.com/content-operation-outsource-what-is/
 slug: content-operation-outsource-what-is
 status: published
@@ -213,7 +214,7 @@ tags: コンテンツ運用代行,外注,ブログ運用,料金相場
 
 これらに明確に答えられる代行先であれば、継続しやすいです。
 
-このメディアのサービスも、ブログ・コンテンツの運用代行を行っています。
+このメディアのサービスも、ブログ・コンテンツの運用代行を行っています。対応範囲と料金は[ブログ記事更新代行](https://aicontent-note.com/service/)にまとめています。
 
 テーマ設定から執筆・公開まで一括して担えるため、社内の運用コストをほぼかけずに運用を回せます。費用もかなり抑えた設定にしており、更新にリソースを割きにくい中小企業や個人事業主でも継続しやすい体制を意識しています。
 

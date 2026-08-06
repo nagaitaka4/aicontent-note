@@ -4,6 +4,7 @@ series:
 series_no:
 title: 社内更新と外注、どちらが本当にコスパがいいのか
 date: 2026-06-04
+updated: 2026-08-07
 url: https://aicontent-note.com/in-house-vs-outsource-cost/
 slug: in-house-vs-outsource-cost
 status: published
@@ -70,7 +71,7 @@ SEO・構成設計・ライティングスキルは、ある程度の学習が�
 
 **外注費**
 
-記事単価型（1本○万円）または月額型（月○万円で○本）が基本です。範囲・本数・品質によって大きく変わります。
+記事単価型（1本○万円）または月額型（月○万円で○本）が基本です。範囲・本数・品質によって大きく変わります（当メディアの[ブログ記事更新代行](https://aicontent-note.com/service/)は月の記事数でプランを分けています）。
 
 **確認・やり取りの時間**
 

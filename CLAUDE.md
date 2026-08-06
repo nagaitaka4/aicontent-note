@@ -95,7 +95,7 @@
 
 ### 各工程での参照順の目安
 
-- 記事を書く・編集する → **着手前に`python3 operations/article-precheck.py <slug> "KW"`を実行**（2026-08-05〜・省略禁止）→ その後`rules/article-flow.md`冒頭の「3原則」を読む。**測れるルールはスクリプトが正・プロースは原則のみ**（経緯は`operations/lessons.md`）
+- 記事を書く・編集する → **着手前に`python3 operations/article-precheck.py <slug> "KW"`を実行**（2026-08-05〜・省略禁止）→ その後`rules/article-flow.md`冒頭の「4原則」を読む。**測れるルールはスクリプトが正・プロースは原則のみ**（経緯は`operations/lessons.md`）
 - Xの投稿を作る → まず`rules/x-post-flow.md`（`sns/posts-stock.md`の戦略部分・`knowledge/x/published.md`も読む）
 - タスクリスト・引き継ぎを更新する → `rules/task-management.md` / `rules/session-handoff.md`
 - WP設定・カテゴリー・サービス文言・アイキャッチで迷ったとき → `knowledge/`配下

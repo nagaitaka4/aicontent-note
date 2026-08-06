@@ -201,3 +201,4 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 53 | task-fit | 3 | claude-code-labor-consultant-rules-agreement.md | 2026-07-30 |
 | 54 | - | - | geo-ai-citation-difference.md | 2026-08-03 |
 | 55 | ai-ops-basics | 9 | rule-file-basics.md | 2026-08-04 |
+| 56 | - | - | chatgpt-work-claude-code-comparison.md | 2026-08-06 |

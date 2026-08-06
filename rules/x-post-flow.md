@@ -543,7 +543,30 @@ CCが以下をすべて実行する（確認不要・自動実行）。
 6. 両リポジトリをコミット
 7. 在庫数を報告し、**次の1位を一言で予告**する（「次はM02-01・順位76%→38%の話です」など）。10本未満なら補充の動きも併せて報告
 
-### 「ビューを確認してきました」
+### X投稿分析（2週間おき・GSC定点観測と同日／2026-08-06新設）
+
+**CCがChromeで直接取得する。ユーザーの作業は不要**（アプリ内ブラウザはX側にログインをブロックされるため使わない）。
+
+1. `mcp__claude-in-chrome__list_connected_browsers` で接続を確認
+2. `x.com/aicontent_note` を開き、ログイン済みか確認
+3. 下記スクリプトで全投稿のビュー・反応を収集（スクロールしながら蓄積）
+
+```js
+window.__x={};window.__collect=()=>{document.querySelectorAll('article').forEach(a=>{
+ const t=(a.querySelector('[data-testid="tweetText"]')?.innerText||'').replace(/\s+/g,' ').slice(0,30);
+ const d=a.querySelector('time')?.getAttribute('datetime')?.slice(0,10)||'';
+ const g=a.querySelector('[role="group"]')?.getAttribute('aria-label')||'';
+ if(d&&t)window.__x[d+'|'+t]=g;});return Object.keys(window.__x).length};
+window.__collect();
+let n=0;const iv=setInterval(()=>{window.scrollBy(0,2000);window.__collect();if(++n>25)clearInterval(iv);},700);
+```
+（20〜30秒待ってから `window.__collect()` を再実行し、`window.__x` を出力する）
+
+4. `knowledge/x/published.md` に実測として追記する。**アナリティクスの日付を正とし、記録とのズレは訂正する**（2026-08-06に3件のズレが判明）
+5. 分析して次の選定に反映：**伸びた投稿の共通項／10未満の投稿の共通項／軸別の傾向**
+6. 結果をもとにキューの順位を再評価する
+
+### 「ビューを確認してきました」（ユーザーが手動で確認した場合）
 
 CCが以下を実行する。
 

@@ -317,9 +317,12 @@ def format_date_jp(date_str):
 # =============================
 
 def generate_themes(company_name, location, site_text):
-    """Claude Haiku APIで会社ごとの記事テーマ3本を生成する"""
+    """Claude API（Opus 5）で会社ごとの記事テーマ3本を生成する"""
     if not _HAIKU_AVAILABLE or not _ANTHROPIC_CLIENT:
         return "（テーマ自動生成：ANTHROPIC_API_KEY未設定）", "", ""
+
+    # 空白・改行を圧縮して情報密度を上げる
+    site_text = re.sub(r"\s+", " ", site_text)
 
     prompt = f"""あなたはブログ運用代行の営業担当者です。
 以下の会社情報とホームページの内容を参考に、この会社が情報発信できそうなブログ記事タイトルを3本提案してください。
@@ -327,7 +330,7 @@ def generate_themes(company_name, location, site_text):
 会社名：{company_name}
 所在地：{location}
 HPの内容（抜粋）：
-{site_text[:1500]}
+{site_text[:2500]}
 
 条件：
 ・建設・土木・電気工事などの業種に合わせた実務的なテーマにする
@@ -343,8 +346,8 @@ HPの内容（抜粋）：
 
     try:
         response = _ANTHROPIC_CLIENT.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=300,
+            model="claude-opus-5",
+            max_tokens=1024,
             messages=[{"role": "user", "content": prompt}],
         )
         lines = [l.strip() for l in response.content[0].text.strip().split("\n") if l.strip()]
@@ -422,6 +425,11 @@ HPの情報発信は、求職者だけでなく、お客様や取引先などが
 このような内容を継続的に発信できるよう、
 まずは1ヶ月のお試しプラン（5万円）もご用意しております。
 
+なお、継続してご利用いただく場合は、2026年11月に受付が始まる
+「小規模事業者持続化補助金」の対象にできる可能性があります
+（ホームページの更新・SEO対策が補助対象・補助率2/3）。
+※採択審査があるため確実ではありませんが、申請に関する手続きもサポートいたします。
+
 ■サービス詳細
 {SENDER_SERVICE_URL}
 
@@ -476,6 +484,10 @@ AIコンテンツ運用ノートというメディアを運営しております
 ・{theme_1}
 ・{theme_2}
 ・{theme_3}
+
+なお、継続してご利用いただく場合は、2026年11月受付開始の
+「小規模事業者持続化補助金」の対象にできる可能性があります（採択審査あり）。
+申請に関する手続きもサポートいたします。
 
 サービスの詳細はこちらをご覧ください。
 {SENDER_SERVICE_URL}

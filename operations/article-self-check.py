@@ -107,6 +107,17 @@ def main(path):
             comma_miss.append((i + offset, m.group(1)))
         for m in re.finditer(r"(当サービス|このメディア|当社)は(?![、。])", l):
             comma_miss.append((i + offset, m.group(0)))
+        # 2026-08-07追加：サービス紹介文の主題を取りこぼしていた（「対応範囲と料金は」
+        # 「当メディアのブログ運用代行は」がpublished記事へ混入）。
+        # 一般の長い主題まで対象にすると全62記事が該当し検査として機能しないため、
+        # サービス言及の型だけを対象にする。残りは目視で確認する（lessons.md参照）。
+        # リンク記法はアンカーテキストに畳んでから判定する（URLの長さで検出が漏れるため）
+        l_flat = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", l)
+        for m in re.finditer(
+            r"(当メディア(?:の[^、。]{0,20})?|(?:対応範囲|料金|価格|費用|プラン)[^、。]{0,10}[^、。でにとは])は(?![、。])",
+            l_flat,
+        ):
+            comma_miss.append((i + offset, m.group(0)))
     if not report(
         "接続語・主題の「〜は」の後に読点がある",
         not comma_miss,

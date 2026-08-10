@@ -2,6 +2,7 @@
 no: 34
 title: AIでサボろうとしたら、思ったよりサボれなかった。でも今は回っている。
 date: 2026-06-09
+updated: 2026-08-10
 url: https://aicontent-note.com/ai-content-operation-experience/
 slug: ai-content-operation-experience
 status: published
@@ -47,6 +48,8 @@ AIは使い方を知らなければ、思ったような結果にならない。
 WordPressの設定、テーマのカスタマイズ、SEOプラグインの設定、Googleサーチコンソールとの連携、入稿の仕方の習得など
 
 「AIを使ってコンテンツを出す」より前提の話が、最初の2ヶ月を占めていました。
+
+このうちSEO設定で何を優先したかは、[SWELLのSEO設定｜最初にやるべき項目を優先順位つきでまとめてみた](https://aicontent-note.com/swell-seo-settings/)にまとめています。
 
 > 【メモ】
 > 「AIでコンテンツ運用を始める」と一言で言っても、コンテンツを出す前の準備が想像以上に多い。これはやってみないとわかりませんでした。

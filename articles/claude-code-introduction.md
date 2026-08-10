@@ -2,6 +2,7 @@
 no: 9
 title: Claude Codeとは何か？できること・使い方を実際に使って整理した
 date: 2026-04-07
+updated: 2026-08-10
 url: https://aicontent-note.com/claude-code-introduction/
 slug: claude-code-introduction
 status: published
@@ -82,6 +83,8 @@ Claude Codeはもともとエンジニア向けのツールのようです。
 - GitHub連携（変更履歴管理・Issue管理）
 
 「作業そのものを任せられる」というのが、チャット型のAIとの一番の違いです。
+
+どこまで任せられるかは、[Claude Codeでメルカリ出品の手間を半分にした話](https://aicontent-note.com/mercari-ai-listing/)に具体例を書いています。
 
 ### 外部ツールと組み合わせると広がること
 

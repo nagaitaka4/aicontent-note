@@ -270,6 +270,13 @@ Googleサーチコンソールのデータをスナップショットとして�
 4. 期間を「3か月」に設定し、「平均掲載順位」のトグルをオンにする
 5. **クエリ**タブ・**ページ**タブの両方を取得する（行数セレクタを50に変更してから`get_page_text`）
    - **特定ページのクエリ内訳を見るときはURLパラメータが速い**：`?resource_id=<encoded>&breakdown=query&page=!<ページURLをencode>&num_of_months=3`
+   - **よく使うURL（ブックマーク代わり。`<res>` = `https%3A%2F%2Faicontent-note.com%2F`）**
+     - 全クエリ：`https://search.google.com/search-console/performance/search-analytics?resource_id=<res>&breakdown=query&num_of_months=3`
+     - 全ページ：同上の`breakdown=page`
+     - 特定ページのクエリ内訳：`...&breakdown=query&page=!<ページURLをencode>&num_of_months=3`
+   - **⚠️ セッションを切らさない：既にタブがある状態で`preview_start`を呼ぶと新しいブラウザコンテキストが作られ、GSCのログインが失われる。**2回目以降は必ず`navigate`を使う（2026-08-10に実際にログインし直しが発生）
+   - **⚠️ Claude in Chrome（実Chrome）は google.com へ遷移できない。**GSCはアプリ内ブラウザ側で開くこと
+   - 表は`javascript_tool`で`document.querySelectorAll('tr')`を読むと全行まとめて取れる（行数セレクタの操作より速い）
    - **⚠️ `page=*文字列*`（contains指定）は効かない。**2026-08-07に対照テストで確認（`*claude-code*`でno.14が0表示になる）。**必ず`page=!<完全URL>`の完全一致で指定する。**contains指定の結果を「0表示」と読むと誤った結論に直結する
    - ブラウザペインが非表示だと`computer`のscrollがタイムアウトする。UI操作に頼らずURLパラメータで取得するほうが確実
 6. 以下を判定して`site-status.md`に新スナップショットとして追記する

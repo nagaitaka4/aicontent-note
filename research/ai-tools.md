@@ -9,12 +9,14 @@
 ### ChatGPT（OpenAI）
 
 - **【旬ネタ】ChatGPT大型アップデート（2026-08-06）**（9to5mac.com, 2026-08-06）
-  - **Intelligence Slider（推論スライダー）を追加**：回答ごとに「どの程度考えさせるか」をユーザーが選べる。簡単な質問は低く、リサーチ・企画・執筆・コーディングなど複雑な判断は高く設定する使い分けが想定されている。Plus・Proユーザーが対象で当日から利用可
+  - **考える量を選ぶスライダーを追加**：回答ごとに「どの程度考えさせるか」をユーザーが選べる。web・モバイル・デスクトップが対象で、Plus・Proユーザーが利用可
+    - ⚠️ **「Intelligence Slider」は正式名称ではない**（2026-08-11確認）。9to5macが使っていた呼称で、OpenAI自身は"a slider ... how much thought the model puts into an answer"としか書いていない。TechCrunchは"thinking slider"と表記。**記事・X投稿では機能の説明で書き、ブランド名として扱わない**
   - **無料ユーザーのテキストチャットが無制限に**：GPT-5.6 Lunaでのテキストチャット制限を撤廃。深い推論が必要なときに使う「Think」ボタンも無料ユーザーに開放
-  - **GPT-5.6 Solを改良**：「より直接的な回答・タイトなフォーマット・不要な詳細の回避」を方針に調整。OpenAIは金融・医療・法律プロンプトの内部評価で、**事実誤りを含む回答がGPT-5.5 Instant比で68%減少**したと報告（内部評価であり第三者検証はない点に注意）
+    - ⚠️ **無制限はテキストのみ。**ファイル・画像・音声・画像生成には別の制限が残る（OpenAI明言）。また発表当日ではなく「翌週から」の展開
+  - **GPT-5.6 Solを改良**：「より直接的な回答・タイトなフォーマット・不要な詳細の回避」を方針に調整。OpenAIは金融・医療・法律プロンプトの内部評価で、**事実誤りを含む回答がGPT-5.5 Instant比で68%減少**（Solの場合）と報告。**Lunaは同じ指標で62%減**（内部評価であり第三者検証はない点に注意）
   - **`Sign in with ChatGPT`ベータを開始**：Airtable・GitLab・HubSpot・Notion・Supabase・Vercel等の一部プラグイン／パートナーサイトが対象
   - **DALL·E GPTを2026-08-30で終了**。Atlasの動作終了（2026-08-09）は前回記録どおり実施
-- **Anthropicとの対比**：Claude Code（Opus 5のeffort toggle・low/medium/high）とChatGPT（Intelligence Slider）が、ほぼ同時期に「推論量をユーザーが選ぶ」UIへ収束した。**M-04（Claude Code vs OSSエージェント比較）およびM-01系の比較記事で使える視点**：性能競争から「同じモデルをどう使い分けさせるか」の設計競争に移っている
+- **Anthropicとの対比**：Claude Code（Opus 5のeffort・**low/medium/high/xhigh/maxの5段階、デフォルトはhigh**）とChatGPTのスライダーが、ほぼ同時期に「推論量をユーザーが選ぶ」UIへ収束した（Claude Code側は公式ドキュメントで確認済み：https://code.claude.com/docs/en/model-config ）。**M-04（Claude Code vs OSSエージェント比較）およびM-01系の比較記事で使える視点**：性能競争から「同じモデルをどう使い分けさせるか」の設計競争に移っている
 
 ### Gemini（Google）
 

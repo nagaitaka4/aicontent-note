@@ -18,6 +18,14 @@
 - **Claude Enterprise：inference hooks をベータ提供**：チャット・Claude Code・Coworkを横断して、プロンプトとツール呼び出しがモデルに届く前に検査するリアルタイムDLP（情報漏えい防止）機能。コンプライアンス部門向け。併せて管理者分析の詳細化・モデル単位の利用権限・支出アラートも提供（releasebot.io, 2026-08時点）
 - Sonnet 5のプロモ価格（$2/$10）が2026-08-31終了・9/1から$3/$15になる件は今回も変更なし（再確認のみ）
 
+#### 【10:15 補足回】同日2回目の自動実行による差分追記
+
+同日07:43に本日分のリサーチが完了済みのため、07:43以降・および朝の回で拾えていなかった項目のみ追記する。
+
+- **Anthropicが英Voltaと6年10億ドルのクラウド契約（2026-08-04）**（[techcrunch.com, 2026-08-04](https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/)）：Voltaは2026年初頭設立の英AIクラウド新興企業でNvidiaのクラウドパートナープログラム参加企業。Bitdeerと組みノルウェーに133MWのデータセンターを建設し、Nvidia Vera Rubinチップで稼働予定。**朝の回で未記録だった項目**。計算資源の確保競争という文脈で、料金・使用制限の見通しを語る際の背景材料になる
+- **Anthropicが Mariano-Florentino (Tino) Cuéllar 氏を Chief Global Affairs Officer に迎える（2026-08-04）**：規制・政策対応の体制強化。記事ネタとしての優先度は低いが、企業動向として記録
+- **Claude CLI v2.1.226（2026-08-10）**：バグ修正・安定性改善が中心。併せてゲートウェイの支出上限（spend-limit）に対応した使用量警告、`claude agents`のワークスペース信頼プロンプトを追加。OAuth・セッション・履歴・UIのバグ修正、科学的記数法の環境変数値の不具合、巨大なMarkdown表のレンダリング遅延も修正（[releasebot.io](https://releasebot.io/updates/anthropic/claude-code) / [gradually.ai](https://www.gradually.ai/en/changelogs/claude-code/), 2026-08-10）。**記事化に足る新機能はなし**
+
 （定期リサーチで随時追記）
 
 ---

@@ -1,6 +1,23 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-11
+最終更新: 2026-08-12
+
+---
+
+#### 【デイリー】2026-08-12
+
+**この領域は実質的な差分なし。**8/11以降、OpenAI・Googleとも読者の使い方に影響する新発表は確認できなかった。以下は確認の記録と、二次情報の誤りを1件潰した記録。
+
+- **ChatGPT（OpenAI）**
+  - 8/10：レストラン予約検索に対応（OpenTable・Resy・Yelp連携）。全プラン対象だがChatGPT Workは対象外。**このメディアの読者層には無関係のため記録のみ**
+  - 8/10：ChatGPT Businessに上位シート（premium seats）を追加。法人向けのため優先度低
+  - ⚠️ **二次情報の誤りを1件排除**：検索結果に「ChatGPT Adsが2026-08-11に日本・英国・メキシコ・ブラジル・韓国でローンチ」という記述が複数あったが、**これは誤り**。日本での広告表示開始は**2026年6月19日**（[Impress Watch](https://www.watch.impress.co.jp/docs/news/2118443.html)）、日本の広告主向けAds Manager開放は6/28。8/11という日付は「その時点でのローンチ済み国一覧」を新着と誤読したもの。**約7週間前の出来事であり、デイリーの新情報ではない**
+    - 内容自体の事実関係（参考）：広告表示は**Free・Goプランのログイン成人ユーザーのみ**。Plus・Pro・Business・Enterprise・Educationは対象外。回答の下に「Sponsored」表記で表示され、会話内容は広告主に渡らない
+- **Gemini（Google）**
+  - API changelogに8/10〜8/12の新規エントリなし。最新は7/30（Gemini Robotics ER 2）
+  - Imagen 4系3モデル（`imagen-4.0-generate-001`ほか）が**2026-08-17に停止**。ただし告知は6/15で新情報ではなく、画像生成APIのため読者層との接点も薄い（[ai.google.dev](https://ai.google.dev/gemini-api/docs/changelog)）
+
+（定期リサーチで随時追記）
 
 ---
 

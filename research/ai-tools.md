@@ -1,6 +1,23 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-12
+最終更新: 2026-08-13
+
+---
+
+#### 【デイリー】2026-08-13
+
+**このメディアの読者の使い方に影響する差分はなし。**動きはあったが、いずれも対象が違う。
+
+- **Gemini（Google）：Made by Google 2026を8/12開催**（[techcrunch.com, 2026-08-12](https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/)）
+  - Pixel 11シリーズ・Pixel Watch 5・AirTag対抗のPixel Tagを発表。あわせて**Gemini Automation**（自然言語1回の指示でアプリ・サイトを横断操作させる機能）を発表。Pixel 11でのデビューが見込まれている
+  - 上位機能は**Google AI Pro（月$19.99）**に紐づく
+  - **採らない理由**：端末購入が前提のハードウェア発表で、PCでClaude Codeを回している読者の使い方は変わらない。「新製品が出た」型の発表そのもの（実測で最も伸びない帯）
+  - Gemini APIのchangelogは**8/10〜8/13に新規エントリなし**。最新は7/30のまま（[ai.google.dev](https://ai.google.dev/gemini-api/docs/changelog)）
+- **ChatGPT（OpenAI）：新規の機能・料金変更なし。**8/12に企業向けのAI活用事例記事を公開した程度
+  - ⚠️ **昨日（8/12）潰した二次情報の誤りが、今日の検索でも同じ形で再浮上した。**「ChatGPT Adsが2026-08-11に日本・英国・メキシコ・ブラジル・韓国でローンチ」という記述。**再確認したが8/12の判断どおり誤り**で、日本での広告表示開始は**2026年6月19日**（[Impress Watch](https://www.watch.impress.co.jp/docs/news/2118443.html)）。8/11という日付は「その時点でのローンチ済み国一覧」を新着と誤読したもの。**明日以降のリサーチでも同じ形で出てくる可能性が高い。この件は決着済みとして扱う**
+  - 事実関係（再掲）：広告表示は**Free・Goプランのログイン成人ユーザーのみ**。Plus・Pro・Business・Enterprise・Educationは対象外
+
+（定期リサーチで随時追記）
 
 ---
 

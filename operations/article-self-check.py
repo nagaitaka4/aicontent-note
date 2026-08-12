@@ -160,9 +160,12 @@ def main(path):
         failures += 1
 
     # --- 表・H3の使いすぎ ---
+    # 2026-08-12：NG判定からINFOに変更。公開53本の実測は中央値1.2個・最大5個で、
+    # 上限3に当たった記事がほぼなく制約として機能していなかった。
+    # かつ「表・ブロック要素中心の視覚的構成にする」という方針とは逆向きの制約だった。
     table_count = len(re.findall(r"^\|.*\|\s*$\n\|[-:| ]+\|", body, re.M))
-    if not report("表は3個まで", table_count <= 3, f"{table_count}個"):
-        failures += 1
+    note = "（4個以上は多い。比較・多列情報以外を表にしていないか確認）" if table_count >= 4 else ""
+    print(f"[INFO] 表 {table_count}個{note}")
 
     h3s = re.findall(r"^### ", body, re.M)
     # 同一H2配下のH3が3つ以上連続していないか
@@ -216,19 +219,85 @@ def main(path):
         related_items = [l for l in related_match.group(1).split("\n") if l.strip()]
         report("関連記事が3本", len(related_items) == 3, f"{len(related_items)}本")
 
-    # --- H2直下リード文の文数・段落長 ---
-    print("\n--- H2直下リード文チェック ---")
+    # --- 外部一次情報リンク（2026-08-12追加。ルール自体は2026-08-03制定）---
+    # GEO論文（arXiv:2311.09735）で統計的に有意だった3施策のうち、このメディアが
+    # 手当てできているのはサイテーション（引用元明示）。ルールはあるが機械チェックがなく
+    # 形骸化しやすいためINFOで可視化する（公開53本中46本が0本のまま）。
+    all_links = re.findall(r"\[([^\]]*)\]\((https?://[^)]+)\)", body)
+    ext_links = [u for _, u in all_links if "aicontent-note.com" not in u]
+    int_links = [u for _, u in all_links if "aicontent-note.com" in u]
+    hint = ""
+    if not ext_links:
+        hint = "（統計・製品・公式の仕組みに触れているなら一次情報へのリンクが要る）"
+    print(f"[INFO] 外部一次情報リンク {len(ext_links)}本／内部リンク {len(int_links)}本{hint}")
+
+    # --- H2直下リード文の文数・字数 ---
+    # 2026-08-12：字数の上限を追加。従来は「3文まで」しか見ておらず、
+    # 7月〜の公開記事では中央値66字・最大204字まで膨らんでいた（5〜6月は44字）。
+    print("\n--- H2直下リード文チェック（3文以内・100字以内） ---")
     for s in re.split(r"^## ", body, flags=re.M)[1:]:
         h2title, rest = s.split("\n", 1) if "\n" in s else (s, "")
-        # 【ブロック】・箇条書き・H3・CTA(＼)のいずれかが出た時点でリード文とみなす
-        lead = re.split(r"\n(【|・|### |＼)", rest)[0].strip()
+        # 【ブロック】・箇条書き・H3・表・画像・CTA(＼)のいずれかが出た時点でリード文とみなす
+        lead = re.split(r"\n(【|・|### |＼|\||!\[)", rest)[0].strip()
         # 内部リンクのアンカーテキスト内の「。」は文区切りではないため除外してからカウント
         lead_for_count = re.sub(r"\[[^\]]*\]", lambda m: m.group(0).replace("。", ""), lead)
         sentence_count = lead_for_count.count("。")
-        over = sentence_count > 3
-        print(f"[{'NG' if over else 'OK'}] {h2title[:30]} リード文{sentence_count}文" + ("（3文超）" if over else ""))
+        lead_chars = len(re.sub(r"\s|<br>", "", re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", lead)))
+        reasons = []
+        if sentence_count > 3:
+            reasons.append("3文超")
+        if lead_chars > 100:
+            reasons.append("100字超")
+        over = bool(reasons)
+        print(
+            f"[{'NG' if over else 'OK'}] {h2title[:30]} リード文{sentence_count}文/{lead_chars}字"
+            + (f"（{'・'.join(reasons)}）" if over else "")
+        )
         if over:
             failures += 1
+
+    # --- H1直下リード文チェック（2026-08-12新設）---
+    # それまでH1直下のリードは段落チェック・一文チェックのどちらの対象でもなく、
+    # 完全な無検査領域だった（下の body_for_para_check が最初の ## 以降しか見ていないため）。
+    # 実測は中央値191字・5文、最大409字。GEOルールで「冒頭でメインクエリに直接答える」と
+    # 決めているのに、5文あると回答が埋もれる。3文・150字・1文目40字を上限とする。
+    print("\n--- H1直下リード文チェック（3文以内・150字以内・1文目40字以内） ---")
+    intro_m = re.search(r"^# .*?$(.*?)(?=^## )", body, re.M | re.S)
+    intro_raw = intro_m.group(1) if intro_m else ""
+    intro_lines = []
+    for line in intro_raw.split("\n"):
+        line = line.strip()
+        if not line or line in BOILERPLATE_EXACT:
+            continue
+        if re.match(r"^(#|---|\||＼|!\[|\[お問い合わせ)", line):
+            continue
+        intro_lines.append(re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line))
+    intro_plain = re.sub(r"\s|<br>", "", "".join(intro_lines))
+    intro_for_count = re.sub(r"\[[^\]]*\]", lambda m: m.group(0).replace("。", ""), intro_plain)
+    intro_sents = intro_for_count.count("。")
+    first_sent = ""
+    for line in intro_lines:
+        cand = re.split(r"(?<=。)", re.sub(r"<br>", "", line))[0].strip()
+        if len(cand) >= 5:
+            first_sent = cand
+            break
+    intro_reasons = []
+    if not intro_plain:
+        intro_reasons.append("リードがない（冒頭でメインクエリに直接答える）")
+    else:
+        if intro_sents > 3:
+            intro_reasons.append(f"{intro_sents}文（3文超）")
+        if len(intro_plain) > 150:
+            intro_reasons.append(f"{len(intro_plain)}字（150字超）")
+        if len(first_sent) > 40:
+            intro_reasons.append(f"1文目{len(first_sent)}字（40字超）")
+    if not report(
+        "リードが3文・150字以内で、1文目が40字以内",
+        not intro_reasons,
+        "／".join(intro_reasons) if intro_reasons else f"{intro_sents}文/{len(intro_plain)}字/1文目{len(first_sent)}字",
+    ):
+        print(f"   1文目: {first_sent}")
+        failures += 1
 
     # --- 段落の長さチェック（リード文だけでなく本文中の全段落が対象。2026-07-31〜）---
     # 従来のリード文チェックは「最初のブロック/箇条書きが出るまで」しか見ておらず、
@@ -252,12 +321,17 @@ def main(path):
     if not report("4行(160字)を超える段落がない", not long_paras, f"{long_paras}"):
         failures += 1
 
-    # --- 一文の長さチェック（2026-08-05〜）---
+    # --- 一文の長さチェック（2026-08-05〜。2026-08-12に70字→60字）---
     # 段落チェック（160字）は通っても、1文が長いままだと読みにくい。
-    # 公開53本の実測では平均文長34〜53字・70字超は各記事0〜8件。70字を上限として運用する。
-    print("\n--- 一文の長さチェック（70字上限） ---")
+    # 旧70字は「当時の実測の上端」に合わせて置いたためブレーキとして機能していなかった
+    # （70字超は記事あたり中央値1件）。一方で平均文長は29.0→33.0→36.5字、
+    # 50字超の割合は8.7%→14.4%→21.5%（〜4月／5〜6月／7月〜）と伸び続けていた。
+    # 上限は60字。50字超の割合は参考値として出す（サイト上位2本は2.1%・6.6%）。
+    # ※長い文は「削る」のではなく「分ける」で直す（原則2：数値のために内容を削らない）
+    print("\n--- 一文の長さチェック（60字上限） ---")
     sent_src = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", body_for_para_check)
     long_sents = []
+    all_sents = []
     for line in sent_src.split("\n"):
         line = line.strip()
         if not line or line in BOILERPLATE_EXACT:
@@ -266,12 +340,23 @@ def main(path):
             continue
         for sent in re.split(r"(?<=。)", re.sub(r"<br>", "", line)):
             sent = sent.strip()
-            if len(sent) > 70:
+            if len(sent) < 5:
+                continue
+            all_sents.append(len(sent))
+            if len(sent) > 60:
                 long_sents.append((len(sent), sent[:40] + "…"))
-    if not report("70字を超える一文がない", not long_sents, f"{len(long_sents)}件"):
+    if not report("60字を超える一文がない", not long_sents, f"{len(long_sents)}件"):
         for n, s in long_sents:
             print(f"   {n}字: {s}")
         failures += 1
+    if all_sents:
+        over50 = sum(1 for n in all_sents if n > 50)
+        ratio = over50 / len(all_sents) * 100
+        hint = "（サイト上位2本は2.1%・6.6%。15%を超えたら詰まって読みにくい）" if ratio > 15 else ""
+        print(
+            f"[INFO] 全{len(all_sents)}文／平均{sum(all_sents) / len(all_sents):.1f}字／"
+            f"50字超{over50}件（{ratio:.1f}%）{hint}"
+        )
 
     # --- 重複チェック（feedback_no_repetition.mdより統合） ---
     print("\n--- 重複チェック ---")

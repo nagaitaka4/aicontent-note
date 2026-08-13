@@ -77,7 +77,7 @@ Googleの[ページ インデックス登録レポート](https://support.google
 
 2記事は、次の内容を扱っています。
 
-・no.7「コンテンツ運用が続かない理由と、止めないための仕組みの作り方」<br>
+・no.7「[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)」<br>
 ・no.26「[コンテンツ運用代行とは？料金・内容・依頼する前に知っておくこと](https://aicontent-note.com/content-operation-outsource-what-is/)」
 
 並べてみると、どちらも抽象度が高く、自社サービスに近い印象を持ちました。

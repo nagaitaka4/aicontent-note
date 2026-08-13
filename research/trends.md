@@ -1,6 +1,26 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-13
+最終更新: 2026-08-14
+
+---
+
+#### 【デイリー】2026-08-14
+
+- **【本日発動】auto modeの既定化が本日8/14から適用される**（既報。8/12・8/13の記録どおり実施）
+- **【新規・数値】auto mode既定化の根拠データを公式ブログで確認した**（[Anthropic公式ブログ「Auto mode is now the default in Claude Code for Pro, Max, and Team plans」2026-08-07](https://claude.com/blog/auto-mode-default-in-claude-code)）
+  - **ユーザーはClaude Codeの許可プロンプトの97%を承認している**（比較対象として、plan reviewなど他の承認では39%が却下されるとしている）
+  - **1,053人の有料テスターを使った対照実験**：セッション途中で許可プロンプトを1つだけ明確に危険なコマンドに差し替えたところ、**人間のレビューが止められたのは13.6%、auto modeの分類器は89%**を検知した
+  - **条件・除外まで確認した点**：既定が変わるのは**Pro・Max・Teamの新規セッション**のみ。**Enterprise・Claude API・AWS上のClaude Platform・Amazon Bedrock・Google CloudのAgent Platform・Microsoft Foundryではauto modeはopt-inのまま**。既定を自分で設定済みの人には一度だけ切り替えプロンプトが出る（pin済みなら変化なし）。元の挙動に戻すのはCLIのShift+Tabまたはデスクトップのモードドロップダウン、組織はmanaged settingsの`defaultMode`で固定できる
+  - ⚠️ **二次情報の誤りを1件排除**：8/14の検索で「承認率93%」と書く記事があったが、**公式は97%**。数字を使うときは必ず上記ブログを参照する
+  - **軸②のX投稿ネタとして採用（→ ideas.md）**。「使う側の何が変わるか」に加えて「自分がどう振る舞っていたか（＝ほぼ全部Yesしていた）」まで書ける数字
+- **Claude Code v2.1.229（8/12）・v2.1.231（8/13）**（[公式changelog, code.claude.com](https://code.claude.com/docs/en/changelog)）：**読者の使い方が変わる変更はなし。記録のみ**
+  - v2.1.231：Slackなど事前登録型OAuthクライアントを使うMCPサーバーでサインインがredirect URI不一致で失敗する不具合を修正
+  - v2.1.229：`claude remote-control --continue`をドキュメント化／プラグインマーケットプレイスに`command`ソース追加／`ListAgents`が切断済みRemote Controlセッションを`offline`、クラウドセッションを`cloud`と表示／ストリーミング中に長い応答が消える・二重出力される不具合など多数修正
+- **Week 33（8/10〜8/14）のダイジェストは本日時点で未公開**（`/docs/en/whats-new/2026-w33`は404）。最新は**Week 32**のまま
+- **【期限接近・既知／未確認】Claude Codeの週次使用制限+50%の延長期間が2026-08-19で切れる予定**
+  - 7/18に「8/19まで延長」とアナウンスされた件（`research/trends.md` 8/3記録）。**本日、公式サポート記事（[Using Claude Code with your Pro or Max plan](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)）を確認したが、この+50%施策と期限の記載はない。**出典は@ClaudeDevsのX投稿を引用した二次情報のみ
+  - **5月以降3回延長されており、4回目の延長もありうる。「8/19に戻る」と断定して書かない。**8/18に再確認する
+- **Anthropic本体：8/13〜8/14に新規の料金・モデル・提供範囲の変更は確認できず**（8/11のSonnet 5価格据え置きが直近）
 
 ---
 

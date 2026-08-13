@@ -1,6 +1,19 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-13
+最終更新: 2026-08-14
+
+---
+
+#### 【デイリー】2026-08-14
+
+**このメディアの読者の使い方に影響する差分はなし。**OpenAIに動きはあったが、対象が違う。
+
+- **ChatGPT／OpenAI：「Ultrafast」モードをプレビュー発表（2026-08-13）**（[OpenAI公式, openai.com](https://openai.com/index/previewing-ultrafast/) ／ [TechCrunch, 2026-08-13](https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/)）
+  - GPT-5.6 Solを**最大14倍速**で動かす新しいサービスティア。Cerebrasのハードウェアで動き、出力は**最大750トークン/秒**。**知能はStandardと同じ**でスピードだけが変わる
+  - **条件・除外まで確認した点**：**まずOpenAI APIから、限定プレビューとして一部の顧客のみ**に提供。ChatGPTのPlus・Proなどの一般プランでは使えない。容量の増加に応じて対象を広げるとしている
+  - **採らない理由**：APIの限定プレビューで、ChatGPTやClaude Codeを実務で使っている読者の使い方は今日何も変わらない。「新しいものが出た」型の発表
+  - 同日、Dali Rajic氏をChief Revenue Officerに任命（企業動向のため記録のみ）
+- **Gemini（Google）：Gemini API changelogに8/13〜8/14の新規エントリなし。**既報の**Imagen 4系・Gemini 3 Image系の停止は8/17**（告知は6/15・変更なし）、`gemini-robotics-er-1.6-preview`の停止は8/31（[ai.google.dev](https://ai.google.dev/gemini-api/docs/changelog)）
 
 ---
 

@@ -174,6 +174,31 @@ def main(path):
     if over_h3:
         print(f"[要確認] 同一H2内にH3が3つ以上: {over_h3}（表化を検討）")
 
+    # --- 表の直後で、表の内容を地の文で言い直していないか（2026-08-13追加）---
+    # no.57で、表の各行を直後の段落が順番に説明し直す箇所が約400字あった。
+    # 読者は同じ情報を2回読むことになり、一文が短くても「文字が多い」と感じる原因になる。
+    # 数値の再出現で検出する。判断は目視のため[要確認]に留める（誤検知でシグナルを消さないため）。
+    print("\n--- 表の言い直しチェック（表の直後の地の文に、表と同じ数値が出ていないか） ---")
+    restate_hits = []
+    for m in re.finditer(r"((?:^\|.*\|\s*$\n)+)", body, re.M):
+        table_src = m.group(1)
+        # 「no.7」等の記事番号は行ラベルとして本文でも自然に使うため除外する
+        nums = set(re.findall(r"\d+", re.sub(r"no\.\s*\d+", "", table_src)))
+        after = body[m.end():]
+        # 次の見出し・表・箇条書き・ブロック・CTA・注記までを「表の直後の地の文」とみなす
+        after = re.split(r"\n(?:#{2,3} |\||・|【|＼|※|---)", after)[0]
+        after_nums = set(re.findall(r"\d+", re.sub(r"no\.\s*\d+", "", after)))
+        shared = sorted(nums & after_nums, key=lambda x: -len(x))
+        if len(shared) >= 3:
+            head = table_src.split("\n")[0][:34]
+            restate_hits.append((head, shared[:6]))
+    if restate_hits:
+        for head, shared in restate_hits:
+            print(f"[要確認] 表「{head}」の直後に同じ数値が{len(shared)}種類: {shared}")
+        print("   → 表に書いた内容を文章で繰り返していないか確認する。要点1〜2文に畳む")
+    else:
+        print("[OK] 表の内容を直後の地の文で言い直している箇所はない")
+
     # --- ブロック要素（【ポイント】等）が長すぎないか ---
     block_matches = re.finditer(r"^【([^】]+)】<br>\n((?:.+\n?)+?)(?=\n\n|\n---|\Z)", body, re.M)
     long_blocks = []
@@ -319,6 +344,35 @@ def main(path):
         if len(plain) > 160:
             long_paras.append((len(plain), p[:30] + "…"))
     if not report("4行(160字)を超える段落がない", not long_paras, f"{long_paras}"):
+        failures += 1
+
+    # --- 文字だけの段落が続いていないか（2026-08-13追加）---
+    # 1文が短くても、同じ大きさの段落が並び続けると「文字の壁」になる。
+    # プロースの「H2内の段落が4つ以上になったらH3を1〜2個」を機械化したもの。
+    # H3・表・箇条書き・ブロック・CTAはいずれも区切りとして数え、4連続までを許容する。
+    # 公開53本の実測は中央値6連続（最大12）。no.57は言い直しを削って6→3連続になった。
+    # 直し方は「視覚要素を足す」ではなく「冗長な段落を畳む・H3で切る」（原則2）。
+    print("\n--- 文字だけの段落の連続チェック（4連続まで） ---")
+    BREAKERS = ("|", "・", "【", "＼", "※", "![", "---", "[お問い合わせ")
+    runs_over = []
+    for blk in re.split(r"^## ", body, flags=re.M)[1:]:
+        h2title = blk.split("\n", 1)[0][:30]
+        run = 0
+        worst = 0
+        for para in re.split(r"\n\s*\n", blk):
+            para = para.strip()
+            if not para or para in BOILERPLATE_EXACT:
+                continue
+            first = para.split("\n")[0]
+            if first.startswith("#") or first.startswith(BREAKERS):
+                run = 0
+                continue
+            run += 1
+            worst = max(worst, run)
+        if worst >= 5:
+            runs_over.append((h2title, worst))
+    if not report("文字だけの段落が5つ以上続くH2がない", not runs_over, f"{runs_over}"):
+        print("   → 冗長な段落を畳むか、H3で切るか、比較情報なら表に寄せる")
         failures += 1
 
     # --- 一文の長さチェック（2026-08-05〜。2026-08-12に70字→60字）---

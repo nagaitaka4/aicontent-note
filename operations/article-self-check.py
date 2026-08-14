@@ -262,8 +262,8 @@ def main(path):
     print("\n--- H2直下リード文チェック（3文以内・100字以内） ---")
     for s in re.split(r"^## ", body, flags=re.M)[1:]:
         h2title, rest = s.split("\n", 1) if "\n" in s else (s, "")
-        # 【ブロック】・箇条書き・H3・表・画像・CTA(＼)のいずれかが出た時点でリード文とみなす
-        lead = re.split(r"\n(【|・|### |＼|\||!\[)", rest)[0].strip()
+        # 【ブロック】・箇条書き（・と 1. の番号付き）・H3・表・画像・CTA(＼)のいずれかが出た時点でリード文とみなす
+        lead = re.split(r"\n(【|・|\d+\. |### |＼|\||!\[)", rest)[0].strip()
         # 内部リンクのアンカーテキスト内の「。」は文区切りではないため除外してからカウント
         lead_for_count = re.sub(r"\[[^\]]*\]", lambda m: m.group(0).replace("。", ""), lead)
         sentence_count = lead_for_count.count("。")
@@ -294,7 +294,7 @@ def main(path):
         line = line.strip()
         if not line or line in BOILERPLATE_EXACT:
             continue
-        if re.match(r"^(#|---|\||＼|!\[|\[お問い合わせ)", line):
+        if re.match(r"^(#|---|\||＼|!\[|\d+\. |\[お問い合わせ)", line):
             continue
         intro_lines.append(re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line))
     intro_plain = re.sub(r"\s|<br>", "", "".join(intro_lines))
@@ -337,7 +337,7 @@ def main(path):
         p = p.strip()
         if not p or p in BOILERPLATE_EXACT:
             continue
-        if re.match(r"^(#|---|\||＼|【|・|-|\[お問い合わせ)", p):
+        if re.match(r"^(#|---|\||＼|【|・|-|\d+\. |\[お問い合わせ)", p):
             continue
         plain = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", p)
         plain = re.sub(r"<br>|\s", "", plain)
@@ -364,7 +364,7 @@ def main(path):
             if not para or para in BOILERPLATE_EXACT:
                 continue
             first = para.split("\n")[0]
-            if first.startswith("#") or first.startswith(BREAKERS):
+            if first.startswith("#") or first.startswith(BREAKERS) or re.match(r"^\d+\. ", first):
                 run = 0
                 continue
             run += 1

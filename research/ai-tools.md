@@ -1,6 +1,17 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-14
+最終更新: 2026-08-15
+
+---
+
+#### 【デイリー】2026-08-15
+
+**このメディアの読者の使い方に影響する差分はなし。**
+
+- **Gemini（Google）**：Gemini API changelogに**8/14〜8/15の新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)で直接確認）。最新は8/13の`Gemini 3.7 Flash generally available (GA)`で、これは8/14に記録済み
+- **ChatGPT（OpenAI）**：**8/14付でChatGPT Enterprise／EDUの「個人ユーザーが個別に認可した同期コネクション」が無効化され、同期済みデータの削除が開始された**。管理者が管理する同期は影響を受けない（新規の個別認可は8/10で停止済み）。**対象がEnterprise／EDUの管理機能であり、このメディアの読者＝個人・中小企業の使い方は変わらない。記録のみ**
+  - ⚠️ **一次確認は取れていない**：`help.openai.com`のリリースノートはWebFetchが403で読めず、確認できたのは検索結果の要約と[OpenAIリリースノート一覧](https://openai.com/products/release-notes/)経由の二次情報のみ。**日付・対象範囲を投稿で断定しない**
+- **国産AIライティングツール**：8/14〜8/15付の新機能・料金変更は確認できず。検索でヒットするのは日付のない比較記事・まとめ記事のみだった。**差分なし**
 
 ---
 

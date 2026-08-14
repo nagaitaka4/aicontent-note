@@ -1,6 +1,28 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-14
+最終更新: 2026-08-15
+
+---
+
+#### 【デイリー】2026-08-15
+
+- **【重要・既定変更】Claude Code v2.1.233（2026-08-14）で、Task／Todo系ツールが新しめのモデルでは既定で使えなくなった**（[公式changelog, code.claude.com](https://code.claude.com/docs/en/changelog)）
+  - 原文（verbatim）：`Todo/task-tracking tools (TaskCreate/Get/Update/List, TodoWrite) are no longer available on Opus 4.8, Sonnet 5, Fable 5, Mythos 5, and newer models; set CLAUDE_CODE_ENABLE_TODO_TOOLS=1 to bring them back`
+  - **条件・除外まで確認した点**：対象は**Opus 4.8・Sonnet 5・Fable 5・Mythos 5、およびそれ以降のモデル**。古いモデルでは従来どおり使える。戻す手段は環境変数`CLAUDE_CODE_ENABLE_TODO_TOOLS=1`
+  - 経緯：TodoWriteは2026-05に`TaskCreate`／`TaskUpdate`／`TaskGet`／`TaskList`の4ツールへ分割済み。今回は**その後継のTaskツールごと既定から外れた**形
+  - ⚠️ **自分の環境ではまだ消えていない（2026-08-15 08時・実機確認）**：手元の`claude --version`は**2.1.233**、`~/.claude/settings.json`・プロジェクト設定・環境変数のいずれにも`CLAUDE_CODE_ENABLE_TODO_TOOLS`／`CLAUDE_CODE_ENABLE_TASKS`は入っていない。それでも**本日のOpus 5セッションではTaskCreate等が提示された**。changelogの記述とローカルの挙動が一致していない。**「タスクリストが消えた」と断定して書かない**
+  - ⚠️ `CLAUDE_CODE_ENABLE_TODO_TOOLS`は**settingsドキュメント（[code.claude.com/docs/en/settings](https://code.claude.com/docs/en/settings)）には未掲載**（8/15確認）。出典はchangelogの1行のみ
+  - **軸②のX投稿ネタとして採用（→ ideas.md）**。8/13のサブエージェントfork既定オン・8/14のauto mode既定化と合わせて、**2日で「何も設定していない人の画面」が3回変わっている**という角度で書ける
+- **v2.1.233のその他の変更**（同changelog）
+  - **Windows：auto modeが`cd <dir> && <command> > file`のような普通のBashコマンドで繰り返し手動承認を求めるv2.1.232のリグレッションを修正**。auto mode既定化の当日にauto mode側の不具合が直っている
+  - **Claude DesktopまたはVS Code配下で、許可プロンプト時にNotificationフックが発火しない不具合を修正**
+  - v2.1.232で入れたBashパーミッション変更のうち、**Windowsのcygwin形式シンボリックリンクと入力リダイレクト（`< file`）の扱いは差し戻し**。「より狭い版を後のリリースで再投入する」と明記
+  - `CLAUDE_CODE_WEBFETCH_CACHE_TTL_MS`追加（WebFetchのURLキャッシュTTL設定・既定15分は据え置き）／Linuxで`CLAUDE_CODE_TOOL_MEMORY_LIMIT`によるBashコマンドのメモリcgroup上限／`--worktree`と`claude agents`ビューがGitLabのマージリクエストURLに対応
+  - 使う側の挙動が変わるのは上のWindows auto modeとデスクトップの通知フックの2点。**単独ではX投稿ネタにならない。記録のみ**
+- **Week 33（8/10〜8/14）のダイジェストは8/15時点でも未公開**（`/docs/en/whats-new/2026-w33`は404のまま）。最新は**Week 32**
+- **Anthropic本体：8/14〜8/15に新しい料金・モデル・提供範囲の変更はなし**（[公式リリースノート, support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)を確認。最新エントリは8/6の「スキル・プラグインのセキュリティスキャン（β・Enterprise向け）」のまま）
+  - ⚠️ **検索結果には「Sonnet 5の$2/$10は8/31まで、9/1から$3/$15」と書く二次情報がまだ複数残っている**（releasebot等）。これは**8/11に撤回済みで誤り**（8/13記録・公式Pricing docsで確認済み）。今後もこの誤情報を拾わない
+- **週次使用制限+50%の8/19期限は本日も新情報なし**。再確認は予定どおり**8/18**に行う
 
 ---
 

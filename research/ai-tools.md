@@ -4,6 +4,26 @@
 
 ---
 
+## [2026-08-14] 調査結果（定期リサーチ・12:00の回）
+
+### Gemini（Google）
+
+- **⚠️【本日8:00のデイリー回の記録は誤り。訂正する】Gemini 3.7 Flashが2026-08-13にGA（一般提供）になっている**
+  - デイリー回は「Gemini API changelogに8/13〜8/14の新規エントリなし」と記録したが、**changelogには8/13付で`Gemini 3.7 Flash generally available (GA)`のエントリがある**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)）。**この領域を「差分なし」で閉じたのは誤りだった**
+  - **価格（公式ブログで確認）**（[Google公式ブログ「Gemini 3.7 Flash: our most intelligent workhorse model」2026-08-13](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/)）：**導入価格が入力$0.75／出力$3.75 per 1M tokens で2026-12-31まで。2027-01-01から通常価格の$1.50／$7.50に移行する**。公式は導入価格を「3.6 Flashの50%」と表現している
+  - **条件・除外まで確認した点**：使える場所は**Gemini API（Google AI Studio・Android Studio経由）・Google Antigravity・Gemini Enterprise Agent Platform**、および**Gemini Spark（Google AI Pro／Ultraの加入者向け・160か国以上）**。導入価格はあくまで**期限付きの値下げ**であり、2027年からは3.6 Flashの標準価格と同額に戻る。「Geminiが恒久的に半額になった」と書くと誤りになる
+  - 性能面の公式主張：FrontierCode 1.1で43.6%（3.6 Flashは34.4%）、DeepSWEで65.3%（同49.0%）、GDP.pdfベンチマークで34.0%（同22.0%）。**いずれもGoogle自身のベンチマーク値**
+  - **3.6 Flashからわずか約3週間での投入**（3.6 Flashは7/21のGA）
+  - **X投稿ネタとしての判断**：単独では「新モデルが出た」型のため採用基準を満たさない。ただし**8/11に撤回されたClaude Sonnet 5の値上げ予告（$3/$15）とセットにすると「AIの価格は予告どおりには動かない」という料金の話になる**。既存の`research-20260813-01`（Sonnet 5価格据え置き）の補強材料として使う（→ ideas.md に追記）
+
+### ChatGPT（OpenAI）
+
+- **8/13の「Ultrafast」プレビュー（本日8:00の回で記録済み）以降、新規の発表は確認できず**。API限定プレビューという位置付けも変更なし。読者の使い方が変わる差分はこの領域では引き続きなし
+
+（定期リサーチで随時追記）
+
+---
+
 #### 【デイリー】2026-08-14
 
 **このメディアの読者の使い方に影響する差分はなし。**OpenAIに動きはあったが、対象が違う。

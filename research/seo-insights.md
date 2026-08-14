@@ -1,6 +1,31 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-08-11
+最終更新: 2026-08-14
+
+---
+
+## [2026-08-14] 調査結果（定期リサーチ）
+
+### GEO・AI検索の動向
+
+- **【今回最大の収穫・保留記事の再開条件に到達】Search Consoleの生成AIパフォーマンスレポートが、実質すべてのサイトで見られる状態になった（2026-08-11〜12に観測）**
+  - 一次に近い出典：[Search Engine Roundtable「Google Search Console Generative AI Performance Report Live For All」](https://www.seroundtable.com/google-search-console-ai-report-live-41850.html)（**同サイトは直接取得が403のため、内容は日本語での紹介記事[scale-basics.com, 2026-08-12](https://scale-basics.com/news/gsc-generative-ai-report-all-users/)で確認**）。機能そのものの公式説明は[Google Search Central Blog, 2026-06-03](https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports)・[Search Console ヘルプ](https://support.google.com/webmasters/answer/16984139)
+  - **⚠️ Googleは全面展開を公式にアナウンスしていない。**「8/11時点で全員に対して有効になっているように見える」という**観測ベースの報告**である点を必ず添える。公式発表を待たずに「Googleが全展開を発表した」と書かない
+  - 経緯：2026-06-03に発表 → UK先行 → 6/23に UK 以外へ拡大 → **8/11に事実上の全開放**、という流れ
+  - **見られるのは5項目のみ**：表示回数・ページ・国・デバイス・日付。**クリック数・CTR・検索クエリは依然として含まれない**（この制約は6月の発表時から変わっていない）
+  - **オプトアウトのトグルも同じ画面まわりにある**。自サイトを生成AI機能から除外している場合、このレポートには表示が出ない
+  - **`operations/article-backlog.md`の保留記事（no.52ドラフト・`articles/search-console-ai-overview-optout.md`）の再開判定**：2026-07-28に「日本のSearch Consoleに実装され次第、実際に使ってみた実況記事として書き直す」という条件で保留したが、**その条件を満たした可能性が高い**。ただし**ユーザー自身のaicontent-note.comのSearch Consoleで実物を確認するまでは着手しない**（7/28・8/3の実機確認では未表示だった。地域単位の展開報道とサイト単位の反映にラグがあることは既に2回経験している）。**次のセッションでユーザーにSearch Consoleの「検索パフォーマンス > 検索結果 > 生成AI」と設定画面を確認してもらうところから始める**。tasks/README.mdへの再掲候補として記録した（最終判断はユーザー）
+- **llms.txtにGEOの特別な効果はない、という検証結果が出た**（[suzukikenichi.com, 2026-08-10](https://www.suzukikenichi.com/blog/does-llms-txt-have-any-special-benefit-for-geo-tested-with-the-cats-txt-experiment/)）
+  - Mark Williams-Cook氏が、架空の猫の情報を書いたジョーク規格「**cats.txt**」を公開して検証した。結果、**AIボットのクロール・Googleでのインデックス登録・AIによる引用・ChatGPTが内容を肯定的に回答することのすべてが、cats.txtでも同じように再現された**
+  - 結論：クロール・インデックス・RAGの対象になること自体は**普通のウェブの挙動**であり、「llms.txtという形式が特別に認識・評価された証明にはならない」
+  - **当メディアへの意味**：GEO記事群（no.43・no.54）の系列で「**やらなくていいこと**」を示せる材料。GEO対策として llms.txt の設置を勧める記事が国内にも増えているため、**検証で否定された側の情報**として価値がある。記事ネタとして`operations/article-backlog.md`に追加（M-11）
+
+### 検索トレンド・アルゴリズム変化
+
+- **2026年8月のコアアップデートは、本日時点で公式アナウンスなし**。直近の確認済みコアアップデートは3/27と5/22で、「小規模コアアップデートは常時ロールアウト」という方針の継続を再確認したのみ。**8/13〜8/14は主要SEOメディアの更新自体が薄く、この期間の大きな動きはない**
+- 前回（8/11補足回）に記録したゼロクリック率の国別データ（グローバル平均46.96%・日本約41%）について、**新しい一次情報の追加はなし**
+
+（定期リサーチで随時追記）
 
 ---
 

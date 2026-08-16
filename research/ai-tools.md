@@ -1,6 +1,22 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-15
+最終更新: 2026-08-16
+
+---
+
+#### 【デイリー】2026-08-16
+
+**8/15〜8/16の新規差分はなし。ただし8/15の回で拾い漏れていたChatGPTの8/14付リリースノートに、読者の使い方に効く項目があったため補足する。**
+
+- **【8/15の記録漏れ・補足／一次確認済み】ChatGPTのWeb版で、無料プランとGoプランでも「Think」を選べるようになった**（[ChatGPT — Release Notes, help.openai.com](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・**2026-08-14付**）
+  - 原文（verbatim）：`Use Think on Free and Go. Select Think on the web when you want ChatGPT to reason through a harder question.`
+  - **一次確認の方法**：`help.openai.com`はWebFetchが403で読めない状態が続いているため、**ブラウザで直接開いて本文を読んだ**（8/15の回で「一次確認は取れていない」と記録した制約を、今回は突破できた）。**このページの最新エントリは8/14で、8/15・8/16のエントリは無い**
+  - **⚠️「新機能」と書かないこと**：Think自体は**8/6前後の発表（GPT-5.6 Lunaを無料・Goの既定モデルにする／テキストチャット無制限化）の中で予告済み**で、記事no.59の構成案にも既に記載がある。今回のリリースノートは**「Webで選べるようになった」という提供面の着地**。「新しくThinkが使えるようになった」と書くと誤り
+  - 同じ8/14エントリのその他（読者に効く順）：**プロジェクトのメモリ設定を作成後に変更できるようになった**（既定メモリ⇔プロジェクト限定メモリ・**全プラン対象**。ただし共有プロジェクトはプロジェクト限定のまま変更不可）／**対話型クイズ**（全consumerプラン＋Eduプラン・web/mobile）／**Linuxデスクトップアプリが公開プレビュー**（Ubuntu 24.04・26.04 LTS、Debian 13、Fedora 43・44）
+  - 8/13エントリ（記録のみ）：Google DriveがLibraryに統合（Plus・Pro・Enterprise・Edu・Healthcare・BusinessのWeb版から順次）／macOS版の`Computer History`（既定オフ・Pro・Business・Enterprise向け・EEA/UK/スイスでは未提供）
+- **⚠️GPT-5.6のリリース（8/13）は二次情報のみ**：releasebot経由の要約に「GPT-5.6リリース・エージェント性能とコストの改善」とあるが、上記の公式ChatGPTリリースノートには該当エントリが無い（モデル側の別ページに載っている可能性）。**単独では「新モデルが出た」型でX投稿の採用基準を満たさないため、追いかけない。記録のみ**
+- **Gemini（Google）：8/14以降の新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を直接確認）。最新は8/13の`Gemini 3.7 Flash generally available (GA)`で記録済み
+- **国産AIライティングツール：8/15〜8/16の新機能・料金変更は確認できず**。検索でヒットするのは日付のない比較記事・ランキング記事のみ。**差分なし**
 
 ---
 

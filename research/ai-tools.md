@@ -1,6 +1,17 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-16
+最終更新: 2026-08-17
+
+---
+
+#### 【デイリー】2026-08-17
+
+**差分なし。3社とも公式チャネルに8/15以降の新規エントリが無いことを一次情報で確認した。**
+
+- **ChatGPT（OpenAI）：8/15〜8/17の新規エントリなし**。[ChatGPT — Release Notes, help.openai.com](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**ブラウザで直接開いて本文を確認**（WebFetchは403が続いている）。**最新エントリは8/14のまま**で、その内容（Web版の無料・GoでThinkが選べる／プロジェクトのメモリ設定変更／対話型クイズ／Linuxデスクトップ公開プレビュー）は8/16の回で記録済み
+- **Gemini（Google）：8/14以降の新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を確認。ページの`Last updated`も**2026-08-13 UTC**のまま）。最新は8/13の`Gemini 3.7 Flash generally available (GA)`で記録済み
+- **国産AIライティングツール：8/15〜8/17の新機能・料金変更は確認できず**。検索でヒットするのは日付のない比較記事・ランキング記事のみで、3日連続で同じ状態。**差分なし**
+- ⚠️ **記録のみ／投稿候補にしない**：8月の料金まとめ記事（[Business Insider Japan, 2026-08](https://www.businessinsider.jp/article/2608-how-much-did-major-generative-ai-service-fees/)）は「主要8サービスの料金は据え置き」としている。**新情報ではなく既知の状態の確認**にとどまるため、ネタにはしない
 
 ---
 

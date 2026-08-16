@@ -1,6 +1,23 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-16
+最終更新: 2026-08-17
+
+---
+
+#### 【デイリー】2026-08-17
+
+**Claude Code本体・Anthropic本体ともに新しいリリースはなし。ただし8/16の回で「未確認の噂」として保留した1件が、一次情報で確認できたので訂正する。**
+
+- **【8/16の記録を訂正／一次確認済み】「上限で止まったセッションを、枠のリセット後に自動で再開するチェックボックス」は実在した**
+  - 出典：**Anthropic公式の開発者向けアカウント[@ClaudeDevs のX投稿（2026-08-14 6:28）](https://x.com/ClaudeDevs/status/2088014831605702937)**。8/16の回はWebFetchが読めず二次情報しか取れなかったが、本日**ブラウザで投稿本文を直接開いて確認した**
+  - 原文（verbatim）：`Hit your usage limit in Claude Code desktop? There's now an auto-continue checkbox. Turn it on, and it'll automatically continue where you left off once your limit resets.`
+  - **条件・除外まで確認した点**：原文が指しているのは **Claude Code の「desktop」** で、CLIについては言及がない。**オプトイン**（チェックボックスを自分でオンにする）。**上限そのものは増えていない**——リセットを待つ時間は変わらず、リセット後に自分で打ち直す手間だけが消える
+  - ⚠️ **公式changelog・公式リリースノートのどちらにも記載がない**（本日あらためて両方を確認）。**告知チャネルはこのX投稿だけ**。「changelogに載った」「正式リリースされた」と書かない
+  - 参考：この投稿は**132.8万再生・1,013リプライ**まで伸びており、リプライの上位は「そもそも上限を上げてほしい」という反応で占められている。**ただし他人の不満をなぞる形で使うと煽りになるので、投稿に使うなら自分の運用にどう効くかまで書く**
+- **Claude Codeの最新版はv2.1.233（2026-08-14）のまま**。8/15〜8/17に新しいリリースは出ていない（[公式changelog, code.claude.com](https://code.claude.com/docs/en/changelog)で最新5バージョンの本文を確認）
+- **Anthropic本体：新しい料金・モデル・提供範囲の変更なし**（[公式リリースノート, support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)を確認。最新エントリは**8/6の「スキル・プラグインのセキュリティスキャン（β・Enterprise向け）」のまま**で、11日間エントリが増えていない）
+- **Week 33（8/10〜8/14）のダイジェストは本日も404**：`/docs/en/whats-new/2026-w33`はHTTP 404。8/15は404、8/16はタイムアウトで判定不能だったが、**本日は明確に404を返した**。この週のダイジェストは現時点で存在しない
+- **週次使用制限+50%の8/19期限：本日も公式記載なし**。あらためて[Pro/Maxプランでのclaude code利用の公式ヘルプ](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)を確認したが、**+50%施策そのものへの言及が無い**状態が続いている。裏付けは依然として@ClaudeDevs・@TestingCatalogのX投稿を引用した二次情報のみ。**再確認は予定どおり8/18に行う**
 
 ---
 

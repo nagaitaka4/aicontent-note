@@ -4,6 +4,34 @@
 
 ---
 
+## [2026-08-17] 調査結果（定期リサーチ・12:00の回）
+
+**本日8:00のデイリー回は「差分なし」で閉じたが、フル版で掘り直したところ2件見つかった。1件は期限付きの提供終了（＝使う側が動く必要がある）、1件は8/16の記録の訂正。**
+
+### ChatGPT（OpenAI）
+
+- **【今回の収穫・期限あり】ChatGPT内の公式「DALL·E GPT」が2026-08-30で提供終了する。残しておきたい画像は、それまでにダウンロードが必要**
+  - 出典：[ChatGPT — Release Notes, help.openai.com](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)（**このページはWebFetchが403で読めないため、本日確認できたのは検索結果の要約と複数の英語メディア（[Tom's Guide](https://www.tomsguide.com/ai/chatgpt/you-have-until-august-30-to-save-your-chatgpt-dall-e-images-heres-how-to-avoid-losing-them-forever) ／ [Notebookcheck](https://www.notebookcheck.net/DALL-E-leaves-ChatGPT-on-August-30-download-your-images-first.1360522.0.html) ／ [Windows Report](https://windowsreport.com/openai-will-retire-the-official-dalle-gpt-on-august-30/) 等）まで。日付と主旨は各社で一致している**
+  - **⚠️ここを間違えると誤報になる**：終わるのは**ChatGPT内にプリセットされた公式の「DALL·E」GPTという入口だけ**で、**ChatGPTの画像生成そのものは終わらない**。後継は`gpt-image-1`／`gpt-image-1-mini`で動く**ChatGPT Images**。**画像生成を有効にしたカスタムGPTは影響を受けない**とされている。「ChatGPTで画像が作れなくなる」と書くと完全に誤り
+  - 背景：API側のDALL·E-2／DALL·E-3のモデルスナップショットは**2026-05-12までに廃止予定**として先行して告知されていた。今回はChatGPT側の入口が畳まれる番
+  - **X投稿ネタとしての判断：採用（→ ideas.md）。**「使う側の何かが変わる」に該当し、しかも**8/30という期限があって、放置すると自分の資産（過去の生成画像）が消える**タイプ。⚠️ただし**このメディアの読者がDALL·E GPTを使っているかは未確認**。自分ごと化できないなら無理に出さない
+- **【8/16の記録を訂正】「GPT-5.6が8/13にリリースされた」という二次情報は、日付が誤り**
+  - 8/16の回で「releasebot経由の要約にGPT-5.6リリース（8/13）とあるが公式リリースノートに該当エントリなし」と保留したが、**改めて調べると GPT-5.6ファミリー（Sol／Terra／Luna の3モデル）の投入は2026-07-09**で、8月の新発表ではなかった。公式リリースノートに8/13のエントリが無かったのは当然だった
+  - ⚠️ **価格は一次確認できていない**：[openai.com/index/gpt-5-6/](https://openai.com/index/gpt-5-6/)はWebFetchが403。二次情報（Wikipedia・devtk.ai・benchlm.ai）が一致して伝えているのは「**発表時はSol $5/$30・Terra $2.50/$15・Luna $1/$6**、その後**2026-07-30にLunaを80%・Terraを20%値下げしてLuna $0.20/$1.20・Terra $2/$12 になった**」という内容。**記事・投稿で数字を使うなら公式Pricingページで取り直す**
+  - **このメディアへの意味**：8/13にSonnet 5の値上げ予告が撤回され、8/13にGemini 3.7 Flashが半額の導入価格で出て、7/30にGPT-5.6 Lunaが80%値下げされている。**`research-20260813-01`（料金は予告どおりに動かない）の補強材料が、これで3社そろった**
+- **8/15〜8/17の新規リリースノートエントリは確認できず**。最新は8/14付（Web版の無料・GoでThinkが選べる／プロジェクトのメモリ設定変更／対話型クイズ／Linuxデスクトップ公開プレビュー）のままで、8/16の回の記録から変化なし
+- 記録のみ：**Atlas（ブラウザ型のエージェント機能）は2026-08-09で稼働終了済み**。機能はChatGPTとCodexに取り込まれた
+
+### Gemini（Google）
+
+- **8/14以降の新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を確認。ページの`Last updated`も**2026-08-13 UTC**のまま）。最新は8/13の`Gemini 3.7 Flash generally available (GA)`で記録済み
+
+### 国産AIライティングツール
+
+- **8/15〜8/17の新機能・料金変更は確認できず**。検索でヒットするのは日付のない比較記事・ランキング記事のみで、**4日連続で同じ状態**。差分なし
+
+---
+
 #### 【デイリー】2026-08-17
 
 **差分なし。3社とも公式チャネルに8/15以降の新規エントリが無いことを一次情報で確認した。**

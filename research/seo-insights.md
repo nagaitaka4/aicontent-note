@@ -1,6 +1,35 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-08-14
+最終更新: 2026-08-17
+
+---
+
+## [2026-08-17] 調査結果（定期リサーチ）
+
+### GEO・AI検索の動向
+
+- **ChatGPTがどのブランドを回答に出すかは、「最初の検索候補に入れるかどうか」で約33倍の差がつく**（[suzukikenichi.com「ChatGPTはどのブランドを回答に出す？ 最初の検索候補で約33倍の差【SEO Weekly Update】」2026-08-17](https://www.suzukikenichi.com/blog/seo-weekly-update-august-2026-week2/)）
+  - **⚠️数値の裏取りは未完了**：記事本文には見出しの「約33倍」以外の内訳が書かれておらず、**詳細と出典はMieruca のYouTube動画側にある**構成になっている。**この数字を記事に書くなら、動画または元調査を当たって取り直す必要がある**。現時点では「そういう調査があるらしい」以上には使わない
+  - **このメディアへの意味**：no.54（AI検索で引用される記事とされない記事の違い）の続き筋。**「AIの回答に出るかどうかは、最終出力の前段＝AIが最初に投げる検索クエリの候補に入れるかで決まっている」**という構造の話で、GEOを「文章の書き方」ではなく「検索候補に入る条件」として語り直せる材料になる
+- **AI検索経由の流入は+197%、AI検索経由の購入はコンバージョン率が約80%高い（Shopifyのデータ）**（同上の[SEO Weekly Update, 2026-08-17](https://www.suzukikenichi.com/blog/seo-weekly-update-august-2026-week2/)内で紹介）
+  - **⚠️ECの購買データであり、当メディア（BtoBのブログ運用代行）にそのまま当てはまらない**。「AI検索の流入は量は少ないが質が高い」という主張の傍証として使うにとどめる。**Shopifyの原典を確認していないため、数値を記事に書くなら一次を取り直す**
+- **llms.txtにGEOの特別な効果はない（cats.txt実験）は、今週も同じ結論のまま**（8/14に記録済み・[suzukikenichi.com, 2026-08-10](https://www.suzukikenichi.com/blog/does-llms-txt-have-any-special-benefit-for-geo-tested-with-the-cats-txt-experiment/)）。新しい反証は出ていない。M-11の記事ネタは有効
+
+### 検索トレンド・アルゴリズム変化
+
+- **Googleが「検索プロフィール」のフォロワー要件を約3分の1に緩和**（[suzukikenichi.com, 2026-08-17](https://www.suzukikenichi.com/blog/google-lowers-follower-requirements-for-search-profiles-by-about-two-thirds/)／出典はGoogle検索のプロダクト担当VP **Robby Stein のX投稿・2026-08-12**）
+  - 変更内容：**YouTube・Instagram・X は10万→3.5万フォロワー、TikTokは30万→10万**。対象国の拡大も予告されている
+  - **⚠️当メディアには直接使えない**：3.5万フォロワーという水準は現状のX運用から遠い。**「AI検索で流入が減った批判への対応として、Googleがクリエイター側の露出枠を広げている」という文脈の材料**として記録するにとどめる。施策としては採用しない
+- **2026年8月のコアアップデートは、本日時点でも公式アナウンスなし**。2026年の確認済みコアアップデートは**3/27と5/22の2回**のみ
+  - ⚠️ **「8〜9月に3回目が来る可能性が高い」と書く日本語解説記事が複数あるが、これはGoogleの発表ではなく各社の予想**（[media-growth.co.jp](https://media-growth.co.jp/core-update/) / [stock-sun.com](https://stock-sun.com/column/google-core-update/) 等）。**予想を事実として記録しない**
+- ⚠️ **【再混入注意】「AI Overviewsでクリック率が62.7%減」という表記が日本語メディアで流通し続けている**（[Web担当者Forum, 2026-07-29](https://webtan.impress.co.jp/n/2026/07/29/53036)等が上位に出てくる）。**このリポジトリでは2026-08-11に「1位CTRへの影響37.8%／日本全体でCTR38%減・世界58%減」と訂正済み**（`knowledge/x/ideas.md`の`research-20260731-01`）。**検索するたびに62.7%が目に入る状態なので、記事・投稿で使う前に必ず訂正後の数値を確認する**
+
+### Search Console 生成AIパフォーマンスレポートの再開判定（保留記事・省略禁止項目）
+
+- **本日時点で状況の変化なし。保留を継続する**
+- 8/12前後の「全サイトに公開されたか？」という観測報告（[namaz.jp のSEOニュース一覧, 2026-08-12](https://namaz.jp/seo_news.php)にも掲載）以降、**Googleからの公式アナウンスは引き続き出ていない**
+- 日本語の解説記事が伝えている内容も8/14から変化なし：**確認できるのは表示回数・ページ・国・デバイス・日付の5項目のみで、クリック数とクエリは含まれない**（[jinrai.co.jp, 2026-08-09](https://jinrai.co.jp/blog/2026/08/09/search-console-generative-ai-report/) / [note.com/canon_non_no](https://note.com/canon_non_no/n/n2494f99eded0) / [Search Console ヘルプ（日本語）](https://support.google.com/webmasters/answer/16984139?hl=ja)）。**全サイト一斉ではなく順次利用可能になる方式**という説明も変わっていない
+- **aicontent-note.comの実機確認は7/28・8/3・8/14の3回連続で未展開。**本日は実機確認を行っていない（**次の確認は9/1のGSC月次スナップショット時にまとめて行う**方針・tasks/README.md 近々一時タスク#21）。**報道を根拠に着手判断をしないという8/14の決定を維持する**
 
 ---
 

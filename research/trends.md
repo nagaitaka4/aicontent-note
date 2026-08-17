@@ -4,6 +4,30 @@
 
 ---
 
+## [2026-08-17] 調査結果（定期リサーチ・12:00の回）
+
+**本日8:00のデイリー回の結論（差分なし）を、一次ソースを自分で開いて再確認した。結果は一致。この領域に新しい差分はない。**
+
+### Claude Code本体
+
+- **最新版はv2.1.233（2026-08-14）のまま。8/15〜8/17に新しいリリースは出ていない**（[公式changelog, code.claude.com](https://code.claude.com/docs/en/changelog)の**最新5バージョン分の全項目を読み直して確認**。最新から順にv2.1.233・v2.1.232・v2.1.231・v2.1.229・v2.1.228で、8/14以降のエントリはゼロ）
+  - v2.1.233の全項目を読み直したが、**既に記録済みの4点（Taskツールの既定オフ／Windowsのauto modeリグレッション修正／デスクトップの通知フック修正／Bashパーミッションの一部差し戻し）以外に、使う側の挙動が変わる項目はなかった**。残りはGitLab MR対応・apps gateway・self-hosted runner・スクリーンリーダー対応など、対象が限られる改善
+- **Week 33（8/10〜8/14）のダイジェストは本日も404**：`/docs/en/whats-new/2026-w33`はHTTP 404。8/15・8/17（デイリー）に続き**3回連続で404**。この週のダイジェストは存在しないと見てよい
+
+### Anthropic本体
+
+- **新しい料金・モデル・提供範囲の変更なし**（[公式リリースノート, support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)を確認）。**最新エントリは8/6の「スキル・プラグインのセキュリティスキャン（β・Enterprise向け）」のままで、11日間エントリが増えていない**
+
+### 週次使用制限+50%の8/19期限（残り2日・要再確認）
+
+- **公式サポート記事には、本日時点でも+50%施策そのものの記載がない**（[Pro/Maxプランでのclaude code利用, support.claude.com](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)を直接取得して本文を確認。**週次上限に関する記述も、8/19という日付も無い**）
+- ⚠️ **検索結果には「サポート文書が8/19 23:59 PT までと記載している」とする要約が出てくるが、実際にそのページを開いても該当記述は無かった。**この要約を根拠にしない
+- 裏付けは依然として**@ClaudeDevsのX投稿**（[2026-07-18, x.com](https://x.com/ClaudeDevs/status/2078511173759324328)・原文`We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.`）と、それを引用した二次情報（[note.com/zephel01](https://note.com/zephel01/n/nb7d668ade5b5)等）のみ
+- **対象範囲（二次情報の整理・投稿時は要注意）**：Pro／Max／Team／シート課金のEnterpriseが対象で、**Freeと従量課金のEnterpriseシートは対象外**。上がるのは**週次上限だけで、5時間の短期上限は変わらない**。適用は自動
+- **再確認は予定どおり8/18（明日）に行う。**4回目の延長もありうるため「8/19に戻る」と断定して書かない
+
+---
+
 #### 【デイリー】2026-08-17
 
 **Claude Code本体・Anthropic本体ともに新しいリリースはなし。ただし8/16の回で「未確認の噂」として保留した1件が、一次情報で確認できたので訂正する。**

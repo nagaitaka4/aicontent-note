@@ -90,6 +90,7 @@
 |---|---|
 | [knowledge/wp-settings.md](knowledge/wp-settings.md) | WordPress・ツール設定、カテゴリー一覧 |
 | [knowledge/service-rules.md](knowledge/service-rules.md) | サービスの方向性・受注フロー |
+| [knowledge/service-strategy.md](knowledge/service-strategy.md) | サービス戦略（環境構築への展開・競合調査・ターゲット仮説） |
 | [knowledge/eyecatch-rules.md](knowledge/eyecatch-rules.md) | アイキャッチ画像の管理ルール |
 | [knowledge/x/published.md](knowledge/x/published.md) | X投稿パフォーマンスデータ（全47件・ビュー/いいね/評価） |
 

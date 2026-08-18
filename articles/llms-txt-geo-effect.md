@@ -10,7 +10,7 @@ status: draft
 description: llms.txtはGEO対策として紹介されることが増えましたが、Google公式は検索では使用しないと明記しています。架空の猫データを書いた「cats.txt」実験で何が再現されたのか、この検証から言えることと言えないことを切り分けて整理します。
 eyecatch_alt: llms.txtの効果をcats.txt実験とGoogle公式の記述から整理した記事のアイキャッチ画像
 eyecatch: eyecatch_0060.png
-category: SEO・GEO
+category: AIとコンテンツの実務
 tags: llms.txt,GEO,AI検索,SEO,コンテンツ運用
 ---
 

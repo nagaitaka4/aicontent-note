@@ -59,7 +59,7 @@ def main(slug, kw=""):
     print("執筆前にこの記事の適正分量を決め、書いた後に数値で削らない。")
     print("削ってよいのは冗長のみ。正確さ・分かりやすさを損なう削減は禁止。")
 
-    section("② 内部リンク候補（同テーマの公開記事・全件）")
+    section("② 内部リンク候補（同テーマの公開記事）＋ 制作中のdraft")
     if kw:
         keys = [k for k in re.split(r"[ 　]", kw) if k]
     else:
@@ -70,7 +70,10 @@ def main(slug, kw=""):
         if not f.endswith(".md") or "composition" in f:
             continue
         p = os.path.join(ROOT, "articles", f)
-        if fm(p, "status") != "published" or f == f"{slug}.md":
+        # 2026-08-18：draftも対象に含める。publishedだけを見ていたため、別セッションで
+        # 制作中だったno.59とテーマが完全に重複しかけた（記事を1本まるごと重複制作する事故）。
+        st = fm(p, "status")
+        if st not in ("published", "draft") or f == f"{slug}.md":
             continue
         t = fm(p, "title")
         cat = fm(p, "category")
@@ -78,12 +81,19 @@ def main(slug, kw=""):
         hit_cat = bool(target_cat) and cat == target_cat
         if hit_kw or hit_cat or not keys:
             mark = "KW" if hit_kw else "同カテゴリ"
-            found.append((fm(p, "slug"), t, mark))
-    for sl, t, mark in found:
+            if st == "draft":
+                mark = "⚠️制作中/" + mark
+            found.append((fm(p, "slug"), t, mark, st))
+    for sl, t, mark, st in sorted(found, key=lambda x: x[3] != "draft"):
         print(f"  [{mark}] {sl}\n         {t}")
     if not found:
         print("  （キーワード一致なし。キーワードを変えて再実行するか全件を目視で確認）")
+    drafts = [x for x in found if x[3] == "draft"]
+    if drafts:
+        print(f"\n⚠️ draftが{len(drafts)}本ヒットしている。**内部リンク候補ではなくカニバリ候補**として見る。")
+        print("   テーマが重なっていないかを本文まで開いて確認する（2026-08-18にno.59と重複しかけた）")
     print("\n→ この中にリンクしていない関連記事がないか確認する（2026-08-05にno.40で漏れが発生）")
+    print("→ 別セッションで進行中の記事はMD未作成の場合がある。`git log`も併せて確認する")
 
     section("③ 自社サービス情報の参照先（記憶で書かない）")
     for rel in ["knowledge/service-rules.md", "pages/service.md", "archive/service_model.md"]:

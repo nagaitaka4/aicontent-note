@@ -1,6 +1,17 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-17
+最終更新: 2026-08-18
+
+---
+
+#### 【デイリー】2026-08-18
+
+**差分なし。3社とも公式チャネルに8/15以降の新規エントリが無いことを一次情報で確認した（8/17の回と同じ状態）。**
+
+- **ChatGPT（OpenAI）：8/15〜8/18の新規エントリなし**。[ChatGPT — Release Notes, help.openai.com](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**ブラウザで直接開いて本文を確認**（WebFetchは403が続いている）。**最新エントリは8/14のまま**で、内容は8/16の回で記録済み（Web版の無料・GoでThinkが選べる／プロジェクトのメモリ設定変更／対話型クイズ／Linuxデスクトップ公開プレビュー）
+  - ⚠️ **検索結果の要約に「Health experience（米国18歳以上）」「OpenTableとResy・Yelpのレストラン予約」が新着のように混ざるが、いずれも新情報ではない。**本文で日付を確認したところ**レストラン予約は8/10付**、Computer History（macOS）とGoogle DriveのLibrary対応は**8/13付**。**検索要約は日付を落として並べるので、本文で日付を取り直さないと新着と誤認する**
+- **Gemini（Google）：8/14以降の新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を確認。ページの`Last updated`も**2026-08-13 UTC**のまま）。最新は8/13の`Gemini 3.7 Flash generally available (GA)`で記録済み
+- **国産AIライティングツール：8/15〜8/18の新機能・料金変更は確認できず**。検索でヒットするのは日付のない比較記事・ランキング記事のみで、**5日連続で同じ状態**。差分なし
 
 ---
 

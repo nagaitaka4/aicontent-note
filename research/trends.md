@@ -1,6 +1,34 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-17
+最終更新: 2026-08-18
+
+---
+
+#### 【デイリー】2026-08-18
+
+**8/17の回・同日12:00のフル回はどちらも「最新版はv2.1.233のまま」と記録したが、それは誤り。v2.1.234が8/17付で出ている。しかも中身に、使う側の既定の挙動が変わる項目が入っていた。**
+
+- **【8/17の記録を訂正】Claude Code v2.1.234（2026-08-17）が出ている**（[公式changelog, code.claude.com](https://code.claude.com/docs/en/changelog)）。8/17は8:00のデイリー回・12:00のフル回の両方で「最新5バージョンを読み直してv2.1.233が最新」と記録したが、**同日中にv2.1.234が公開されている**。**日中に出たリリースを翌日拾う運びになっており、8/13のv2.1.232を8/14に拾ったときと同じ取りこぼし方をしている**
+- **【本日の収穫・使う側の既定が変わる】上限で止まったセッションの自動再開が、Claude Code本体に入った。しかも「オフにする」側の書き方になっている**
+  - 原文（verbatim・v2.1.234）：`Claude Code now continues your session automatically when a claude.ai usage limit resets; turn it off in /config ("Continue automatically at usage limit")`
+  - **8/17の記録（`research-20260817-01`）からの変化が2点ある**
+    1. **対象**：8/14の[@ClaudeDevsのX投稿](https://x.com/ClaudeDevs/status/2088014831605702937)は`Claude Code desktop`限定の書き方だったが、**changelogの本文にdesktopという限定が無い**。Claude Code本体の変更として書かれている
+    2. **既定**：X投稿は`Turn it on`（自分でオンにするチェックボックス）だったが、**changelogは`turn it off in /config`**。**オフにする手順しか書かれていない＝既定でオンと読める**
+  - ⚠️ **「既定でオン」は文面からの読み取りであって、実機で確認できていない。**手元のClaude Codeは**v2.1.233**（本日確認）で、この項目自体がまだ入っていない。**投稿する前に更新して`/config`の「Continue automatically at usage limit」の初期値を自分の目で見る**
+  - ⚠️ **上限そのものは1ミリも増えていない。**リセットを待つ時間は変わらない。変わるのは「リセット後に人が打ち直すかどうか」だけ
+- **v2.1.234のその他（記録のみ・X投稿には採らない）**
+  - `/permissions`が作業中でも開けるようになり、ルール変更がそのターンの残りから効く
+  - 組み込みskill`claude-api`の読み込みコストが**約200k+トークン→約25k**に（参照ドキュメントを必要時ロードに変更）
+  - auto modeが全Agentツール呼び出しの下に出していた`Allowed by auto mode classifier`の行を削除
+  - `/config`から「Default teammate model」を削除。エージェントチームのteammateはリーダーのモデルを使う
+  - セキュリティ：リモートのファイル読み込み・セッション復元・CLAUDE.mdのinclude・ワークフロースクリプト・ファイルアップロードがWindows NT名前空間（`\??\`）のパスを拒否するようになった（NTLM資格情報リークの残り経路を塞ぐ）
+- **Anthropic本体：新しい料金・モデル・提供範囲の変更なし**（[公式リリースノート, support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)を確認。**最新エントリは8/6の「スキル・プラグインのセキュリティスキャン（β・Enterprise向け）」のままで、12日間エントリが増えていない**）
+
+### 週次使用制限+50%の8/19期限（本日が予告どおりの再確認日・結論：新情報なし）
+
+- **8/14・8/15・8/17の記録どおり、公式チャネルには本日時点でも一切の記載がない。**[Pro/Maxプランでのclaude code利用の公式ヘルプ](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)を本日あらためて取得したが、**週次上限の期間・+50%施策・8/19という日付のいずれも本文に無い**
+- **4回目の延長のアナウンスも、終了のアナウンスも出ていない。**検索で出てくるのは依然として[@ClaudeDevs（2026-07-18）](https://x.com/ClaudeDevs/status/2078511173759324328)の`We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.`と、それを引用した二次情報（[@TestingCatalog](https://x.com/testingcatalog/status/2078529470894330026)／[note.com/zephel01](https://note.com/zephel01/n/nb7d668ade5b5)／[explainx.ai](https://www.explainx.ai/blog/claude-usage-limits-2026-timeline-explained)等）のみ
+- **判断**：**期限は明日（8/19）。「8/19で戻る」と断定して書ける材料は最後まで揃わなかった。**5月13日開始・3回延長という経緯があるため4回目もありうる。**投稿するなら、8/19以降に自分のアカウントの週次上限が実際にどうなったかを見てから出す。**予告を事実として書いて撤回された前例が、このリポジトリには既に1件ある（`research-20260813-01`のSonnet 5値上げ予告）
 
 ---
 

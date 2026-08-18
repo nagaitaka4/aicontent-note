@@ -13,6 +13,7 @@ import re
 import sys
 import itertools
 import difflib
+from constraints import T
 from collections import Counter
 
 NG_AI_PHRASES = [
@@ -73,9 +74,9 @@ def main(path):
     # --- フロントマター ---
     title = fm_value(frontmatter, "title")
     desc = fm_value(frontmatter, "description")
-    if not report("タイトル35字以内", len(title) <= 35, f"{len(title)}字: {title}"):
+    if not report(f"タイトル{T['title_max']}字以内", len(title) <= T["title_max"], f"{len(title)}字: {title}"):
         failures += 1
-    if not report("descriptionが120〜140字", 120 <= len(desc) <= 140, f"{len(desc)}字"):
+    if not report(f"descriptionが{T['desc_min']}〜{T['desc_max']}字", T["desc_min"] <= len(desc) <= T["desc_max"], f"{len(desc)}字"):
         failures += 1
 
     # --- 禁止記号・表記 ---
@@ -164,13 +165,13 @@ def main(path):
     # 上限3に当たった記事がほぼなく制約として機能していなかった。
     # かつ「表・ブロック要素中心の視覚的構成にする」という方針とは逆向きの制約だった。
     table_count = len(re.findall(r"^\|.*\|\s*$\n\|[-:| ]+\|", body, re.M))
-    note = "（4個以上は多い。比較・多列情報以外を表にしていないか確認）" if table_count >= 4 else ""
+    note = "（4個以上は多い。比較・多列情報以外を表にしていないか確認）" if table_count >= T["table_count_info"] else ""
     print(f"[INFO] 表 {table_count}個{note}")
 
     h3s = re.findall(r"^### ", body, re.M)
     # 同一H2配下のH3が3つ以上連続していないか
     h2_blocks = re.split(r"^## ", body, flags=re.M)[1:]
-    over_h3 = [b.split("\n", 1)[0] for b in h2_blocks if len(re.findall(r"^### ", b, re.M)) >= 3]
+    over_h3 = [b.split("\n", 1)[0] for b in h2_blocks if len(re.findall(r"^### ", b, re.M)) >= T["h3_run_check"]]
     if over_h3:
         print(f"[要確認] 同一H2内にH3が3つ以上: {over_h3}（表化を検討）")
 
@@ -189,7 +190,7 @@ def main(path):
         after = re.split(r"\n(?:#{2,3} |\||・|【|＼|※|---)", after)[0]
         after_nums = set(re.findall(r"\d+", re.sub(r"no\.\s*\d+", "", after)))
         shared = sorted(nums & after_nums, key=lambda x: -len(x))
-        if len(shared) >= 3:
+        if len(shared) >= T["table_shared_nums"]:
             head = table_src.split("\n")[0][:34]
             restate_hits.append((head, shared[:6]))
     if restate_hits:
@@ -206,9 +207,9 @@ def main(path):
         block_name, block_body = m.group(1), m.group(2)
         block_body_no_links = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", block_body)
         block_chars = len(re.sub(r"\s|<br>", "", block_body_no_links))
-        if block_chars > 80:
+        if block_chars > T["block_chars_max"]:
             long_blocks.append((block_name, block_chars))
-    if not report("ブロック要素が80字以内", not long_blocks, f"{long_blocks}（一言で伝わる長さか確認・箇条書き2つ以上の対比説明は表に戻すことを検討。内容が濃く80字超が妥当な場合のみ目視判断でOK扱いにしてよい）"):
+    if not report(f"ブロック要素が{T['block_chars_max']}字以内", not long_blocks, f"{long_blocks}（一言で伝わる長さか確認・箇条書き2つ以上の対比説明は表に戻すことを検討。内容が濃く80字超が妥当な場合のみ目視判断でOK扱いにしてよい）"):
         failures += 1
 
     # --- 箇条書き3行以上連続（表化候補） ---
@@ -235,14 +236,14 @@ def main(path):
         cta_positions = [m.start() for m in re.finditer(r"お問い合わせフォームはこちら", body)]
         between = body[cta_positions[0]:cta_positions[1]]
         h2_between = len(re.findall(r"^## ", between, re.M))
-        if not report("途中CTAと末尾CTAの間が3セクション以上", h2_between >= 3, f"{h2_between}セクション"):
+        if not report(f"途中CTAと末尾CTAの間が{T['cta_gap_sections_min']}セクション以上", h2_between >= T["cta_gap_sections_min"], f"{h2_between}セクション"):
             failures += 1
 
     # --- 関連記事 ---
     related_match = re.search(r"\*\*関連記事\*\*\n((?:・.*\n?)+)", body)
     if related_match:
         related_items = [l for l in related_match.group(1).split("\n") if l.strip()]
-        report("関連記事が3本", len(related_items) == 3, f"{len(related_items)}本")
+        report(f"関連記事が{T['related_count']}本", len(related_items) == T["related_count"], f"{len(related_items)}本")
 
     # --- 外部一次情報リンク（2026-08-12追加。ルール自体は2026-08-03制定）---
     # GEO論文（arXiv:2311.09735）で統計的に有意だった3施策のうち、このメディアが
@@ -269,9 +270,9 @@ def main(path):
         sentence_count = lead_for_count.count("。")
         lead_chars = len(re.sub(r"\s|<br>", "", re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", lead)))
         reasons = []
-        if sentence_count > 3:
-            reasons.append("3文超")
-        if lead_chars > 100:
+        if sentence_count > T["h2_lead_sents_max"]:
+            reasons.append(f"{T['h2_lead_sents_max']}文超")
+        if lead_chars > T["h2_lead_chars_max"]:
             reasons.append("100字超")
         over = bool(reasons)
         print(
@@ -310,11 +311,11 @@ def main(path):
     if not intro_plain:
         intro_reasons.append("リードがない（冒頭でメインクエリに直接答える）")
     else:
-        if intro_sents > 3:
-            intro_reasons.append(f"{intro_sents}文（3文超）")
-        if len(intro_plain) > 150:
+        if intro_sents > T["intro_sents_max"]:
+            intro_reasons.append(f"{intro_sents}文（{T['intro_sents_max']}文超）")
+        if len(intro_plain) > T["intro_chars_max"]:
             intro_reasons.append(f"{len(intro_plain)}字（150字超）")
-        if len(first_sent) > 40:
+        if len(first_sent) > T["intro_first_sent_max"]:
             intro_reasons.append(f"1文目{len(first_sent)}字（40字超）")
     if not report(
         "リードが3文・150字以内で、1文目が40字以内",
@@ -341,7 +342,7 @@ def main(path):
             continue
         plain = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", p)
         plain = re.sub(r"<br>|\s", "", plain)
-        if len(plain) > 160:
+        if len(plain) > T["paragraph_max"]:
             long_paras.append((len(plain), p[:30] + "…"))
     if not report("4行(160字)を超える段落がない", not long_paras, f"{long_paras}"):
         failures += 1
@@ -369,7 +370,7 @@ def main(path):
                 continue
             run += 1
             worst = max(worst, run)
-        if worst >= 5:
+        if worst >= T["plain_para_run_ng"]:
             runs_over.append((h2title, worst))
     if not report("文字だけの段落が5つ以上続くH2がない", not runs_over, f"{runs_over}"):
         print("   → 冗長な段落を畳むか、H3で切るか、比較情報なら表に寄せる")
@@ -397,7 +398,7 @@ def main(path):
             if len(sent) < 5:
                 continue
             all_sents.append(len(sent))
-            if len(sent) > 60:
+            if len(sent) > T["sentence_max"]:
                 long_sents.append((len(sent), sent[:40] + "…"))
     if not report("60字を超える一文がない", not long_sents, f"{len(long_sents)}件"):
         for n, s in long_sents:
@@ -447,7 +448,7 @@ def main(path):
         (round(difflib.SequenceMatcher(None, a, b).ratio(), 2), a, b)
         for a, b in itertools.combinations(chunks, 2)
         if len(a) >= 12 and len(b) >= 12
-        and difflib.SequenceMatcher(None, a, b).ratio() >= 0.6
+        and difflib.SequenceMatcher(None, a, b).ratio() >= T["similarity_threshold"]
         and not (link_href(a) and link_href(a) == link_href(b))  # 同じ内部リンクの本文/関連記事欄への重複掲載は仕様上OK
         and not (link_href(a) and link_href(b))  # 内部リンク導入文同士は「〜は「記事名」で〜」の型が似るため除外
         and not (

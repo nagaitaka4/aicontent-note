@@ -15,6 +15,7 @@ import os
 import re
 import subprocess
 import sys
+from constraints import lines as constraint_lines
 from statistics import median
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -120,17 +121,11 @@ def main(slug, kw=""):
             print("  外部リンクなし")
     print("→ URLは記憶で書かない。WebSearch/WebFetchで実在を確認してから使う")
 
-    section("⑤ 執筆中に守る制約（機械チェックの対象）")
-    print("  一文60字以内 ／ 段落160字以内（2026-08-12に70→60字）")
-    print("  リード（H1直下）3文・150字以内、1文目40字以内で検索意図に直接答える")
-    print("  H2直下リード 3文・100字以内（表・箇条書きの後の地の文も段落チェックの対象）")
-    print("  文字だけの段落は4連続まで（H2内。H3・表・箇条書き・ブロックが区切りになる）")
-    print("  表・ブロックに書いたことを直後の地の文で言い直さない（表の後は『そこから何が言えるか』だけ）")
-    print("  関連記事3本 ／ CTA2回（間に3セクション以上）")
-    print("  `・`項目内の列挙は `A / B`（`・`を重ねない）")
-    print("  ※長い文は『削る』のではなく『分ける』で直す（原則2）")
-    print("  ※文字数に上限はない。適正な分量は記事とKWによって決まる（原則2）")
-    print("  ※表の個数は上限撤廃（INFO表示のみ）。比較・多列情報以外を表にしないことだけ守る")
+    section("⑤ 執筆中に守る制約（operations/constraints.py が唯一の正）")
+    print("\n".join(constraint_lines("write")))
+    print("\n  ※長い文は『削る』のではなく『分ける』で直す（原則2）")
+    print("  ※記事全体の文字数に上限はない。適正な分量は記事とKWによって決まる（原則2）")
+    print("  ※この一覧は article-self-check.py と同じ定義から生成している（手書きの同期はしない）")
 
     section("⑥ 提示前の宣言基準（省略禁止）")
     print("  1. article-self-check.py が【NG 0件】になるまで直す")

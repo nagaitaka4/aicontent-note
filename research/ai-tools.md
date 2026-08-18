@@ -1,6 +1,19 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-18
+最終更新: 2026-08-19
+
+---
+
+#### 【デイリー】2026-08-19
+
+**差分なし。ChatGPT・Geminiとも公式チャネルに新規エントリが無いことを一次情報で確認した（8/17・8/18に続き3日連続）。**
+
+- **ChatGPT（OpenAI）：新規エントリなし**。[ChatGPT — Release Notes, help.openai.com](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**ブラウザで直接開いて本文を確認**（WebFetchは403のまま）。ページの表示は`Updated: 3 日前`で、**最新エントリは8/14付のまま**（対話型クイズ／プロジェクトのメモリ設定変更／Web版の無料・GoでThink／Androidの音声入力／Linuxデスクトップ公開プレビュー）。いずれも8/16の回で記録済み
+  - ⚠️ 検索要約には「Health experience」「Computer History（macOS）」が新着のように出てくるが、**本文で日付を取り直すとComputer HistoryとGoogle DriveのLibrary対応は8/13付**。8/18の回と同じ誤認パターンなので、**検索要約の並びを新着と読まない**
+- **Gemini（Google）：新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を確認。ページの`Last updated`は**2026-08-13 UTC**のまま）。最新は8/13の`Gemini 3.7 Flash generally available (GA)`で記録済み
+- **国産AIライティングツール：新機能・料金変更は確認できず**。検索でヒットするのは日付のない比較記事・ランキング記事のみで、**6日連続で同じ状態**
+
+> **本日の収穫は`research/trends.md`側にある**（Claudeの出力テキストへの透かし導入。Claude Codeも対象）。競合ツール側は静かな日が続いている。
 
 ---
 

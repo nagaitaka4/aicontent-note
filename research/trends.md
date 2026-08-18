@@ -1,6 +1,34 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-18
+最終更新: 2026-08-19
+
+---
+
+#### 【デイリー】2026-08-19
+
+**本日の収穫は1件で、しかも大きい。Claudeが出力した文章そのものに、目に見えない透かしが入る。Claude Codeも対象に明記されている。このメディアはClaude Codeで記事を書いているので、直撃する側の変更。**
+**あわせて自戒：この発表は8/11に報道が出て、8/14に公式ブログが出ている。デイリーを毎日回していながら1週間拾えていなかった。**
+
+- **【最重要】Claudeの出力テキストに機械可読な透かし（watermark）が入る。対象にClaude Codeが明記されている**
+  - **対象サーフェス（公式ヘルプ・verbatim）**：[How Claude marks AI-generated content, support.claude.com](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content) — `Claude markings cover output from supported models everywhere you use Claude, including Claude Platform (API), Claude, Claude Code, Claude Cowork, and Claude Tag.`
+  - **対象モデルと時期（公式ヘルプ・verbatim）**：`Claude models launched in the EU on or after August 2, 2026 will support machine-readable marking at launch.` ／ 旧モデルについては `We're also working to add marking support to Claude models released before that date`
+  - **仕組み（公式ブログ 2026-08-14）**：[How Claude's text watermarking works, anthropic.com](https://www.anthropic.com/news/claude-text-watermark) — `Future Claude models will generate text that contains a watermark.` 文中に何かを埋め込むのではなく、**次の単語を選ぶときの乱数の出どころを変える**方式（Google DeepMindがNature論文で公開したSynthID-Textの応用）
+  - **編集しても消えない（公式ブログ・verbatim）**：`Light editing probably won't remove the watermark completely; a complete rewrite where every word is replaced will.` **軽く直したくらいでは残る。全単語を書き換える全面リライトで消える**
+  - **コードは扱いが違う（公式ブログ・verbatim）**：`code—which in very many cases has to be exact—has generally less watermarking than some other forms of text`。正確さが要るコードは透かしが薄い
+  - **検出は未提供**：公式ブログは `We will soon be offering a watermark detection API. We're in the process of working out the details of its implementation.`、公式ヘルプは `We'll share details on detection mechanisms in forthcoming technical documentation.`。**検出APIも検出ツールもまだ出ていない**
+  - **背景**：EU AI Act第50条の透明性義務。ただし**適用はEU限定ではなく、Claudeが提供されている全世界**（公式ヘルプの記載どおり、EUで8/2以降にローンチするモデルが起点）
+  - ⚠️ **「supported models」の具体的なモデル名一覧は公式に出ていない。**手元で使っているOpus 5・Sonnet 5・Fable 5のどれが対象かは公式に確認できない。**「いま自分が書いた文章に透かしが入っている」と断定して書かない**
+  - ⚠️ **オプトアウトの記載は公式2ページのいずれにも無い。**ただし「オプトアウトできない」と公式が明言しているわけでもない。**「拒否できない」と断定しない**
+  - ⚠️ **煽らない。**検出APIが出ていない以上、いま「AIで書いたことがバレる」と書くのは実態より先走り。**書くとしたら「消しても消えない前提で、AIで書くことをどう扱うか」まで**
+  - ⚠️ 二次情報には「8/2から適用」「C2PAでファイルにも署名」といった書き方が混ざるが、**公式ヘルプが日付を紐づけているのは『EUで8/2以降にローンチするモデル』であって『8/2から全出力に適用』ではない**。ここを混ぜない
+
+- **Claude Code v2.1.235（2026-08-18）が出ている**（[公式changelog](https://code.claude.com/docs/en/changelog)）。**使う側の既定が変わる項目は無い。**追加は`spellcheck`設定（プロンプト入力の誤字にアンダーラインを引く／ローカルのaspell・hunspell・ispellを使う・任意）1件のみで、残りは不具合修正と改善。**X投稿には採らない**
+  - 記録のみ：`/ultrareview`等のクラウドセッション実行中のメモリ・CPU改善、権限ダイアログの表示範囲と「don't ask again」の一致、`ctrl+t`のタスク一覧が再開時に畳まれる不具合の修正
+
+- **週次使用上限+50%の延長は、本日8/19（23:59 PT）で切れる予定のまま動いていない**
+  - **本日あらためて[公式ヘルプ](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)を取得したが、週次上限の期間・+50%施策・8/19という日付のいずれも本文に無い**（8/14・8/18に続き3回目の確認・結果は同じ）
+  - **4回目の延長のアナウンスも、終了のアナウンスも公式チャネルに出ていない**。二次情報（[aicatchup.com](https://aicatchup.com/news/claude-code-weekly-limits-50-percent-promo)等）は「サポート記事に8/19 23:59 PTまでと書かれている」としているが、**本日時点の公式ヘルプ本文では確認できない**
+  - **判断：`research-20260814-02`の方針どおり、実機で自分のアカウントの週次上限がどうなったかを見てから出す。**期限前・確認前には出さない
 
 ---
 

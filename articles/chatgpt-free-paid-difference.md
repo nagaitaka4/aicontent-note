@@ -185,9 +185,10 @@ ChatGPTワークの違いは、[Claude Codeとの比較記事](https://aicontent
 
 3つ目に当てはまるなら、待っても解決しません。
 
-料金で比べるときは、公式の表記が2つある点に気をつけてください。
-[公式ヘルプ](https://help.openai.com/ja-jp/articles/6950777-what-is-chatgpt-plus)は月額20ドル、日本の[料金ページ](https://chatgpt.com/pricing)は、月額¥3,000です。
-税は別途で、請求額は契約時期や請求通貨によって変わります。
+料金は、契約した時期によって請求額が変わります。
+いま日本で新しく契約すると、[月額¥3,000](https://chatgpt.com/pricing)です。
+円建ての対応より前にドル建てで契約した場合は、[月額20ドル](https://help.openai.com/ja-jp/articles/6950777-what-is-chatgpt-plus)のまま請求されます。
+[通貨を変えるには解約して契約し直す必要がある](https://help.openai.com/ja-jp/articles/10421635-multicurrency-billing)と公式に書かれています。
 
 ## 多くは上限の差。ただし、お金を払わないと使えないものもある
 

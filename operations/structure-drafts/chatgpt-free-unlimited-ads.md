@@ -3,7 +3,7 @@ slug: chatgpt-free-unlimited-ads
 no: 61
 メインKW: ChatGPT 無料 無制限
 検索意図: 「無料が無制限になったなら、もう課金しなくていいのでは？」を確かめたい
-状態: 構成案（ユーザー確認待ち）
+状態: 【中止】no.59 chatgpt-free-paid-difference と完全重複のため取り下げ（2026-08-18）
 ---
 
 # 構成案：ChatGPT 無料 無制限
@@ -42,7 +42,7 @@ no: 61
 |---|---|---|
 | [OpenAI公式：GPT-5.6 Sol を改善し、無料ユーザーの利用機会を拡大](https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/) | 無料のデフォルトが GPT-5.6 Luna に。テキストチャット無制限。Thinkボタン。**ファイルのアップロード・画像・その他のツールには引き続き制限**。不正利用防止の制限あり。Plus/Proは GPT-5.6 Sol と思考量スライダー | 2026-08-06 |
 | [OpenAI公式：ChatGPT での広告のテスト](https://openai.com/index/testing-ads-in-chatgpt/) | 広告**テストの対象**は Free / Go のログイン済み成人。Plus・Pro・Business・Enterprise・Education には非表示。**「広告を表示したくない場合は、Plus または Pro プランにアップグレードするか、無料プランで広告をオプトアウトして、1日あたりの無料メッセージ数を減らすことで対応可能」**。回答には影響しない・会話は広告主に非公開・18歳未満には非表示・健康／メンタルヘルス／政治では非表示 | 初出2026-02-09／**2026-08-11更新で日本提供開始** |
-| [OpenAI公式：ChatGPT Free Tier FAQ](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq) | **無料でもファイル/画像のアップロード・画像生成・データ分析・音声・ウェブ検索・GPTsの使用は可能。**ただし「File uploads, image generation, voice, data analysis, and other tools have separate usage limits」＝**テキストチャットとは別枠の上限**がある。有料は higher rate limits。上限に達したら待つ必要がある。**GPTの新規作成は Free / Go / Plus / Pro すべてで不可**（Business / Enterprise / Edu のみ） | 4日前更新 |
+| [OpenAI公式：ChatGPT Free Tier FAQ](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq) | **無料でもファイル/画像のアップロード・画像生成・データ分析・音声・ウェブ検索・GPTsの使用は可能。**ただし「File uploads, image generation, voice, data analysis, and other tools have separate usage limits」＝**テキストチャットとは別枠の上限**がある。有料は higher rate limits。上限に達したら待つ必要がある | 4日前更新 |
 
 ### 断定してはいけない点（執筆時に厳守）
 
@@ -82,9 +82,9 @@ no: 61
 ## それでも課金する意味が残るのはどこか
 → 実務の結論。「課金しろ」ではなく判断軸を出す
 → 表：課金の意味が残る使い方／無料で足りる使い方
-   残る：ファイル・画像・データ分析を頻繁に使い、無料の別枠上限に当たる ／ 広告を表示せず、テキストチャットの無制限も維持したい ／ GPT-5.6 Solと思考量スライダーが要る
+   残る：ファイル・画像・データ分析を頻繁に使い、無料の別枠上限に当たる ／ **広告を表示せず、無料プランより高い利用上限で使いたい** ／ GPT-5.6 Solと思考量スライダーが要る
    足りる：テキストの相談・下書き・調べもの中心 ／ ツールの利用が上限に当たらない範囲
-→ 【メモ】：GPTの新規作成は Plus / Pro でもできない（Business / Enterprise / Edu のみ）。課金すれば全部できるわけではない
+→ **⚠️「課金すれば広告なしで無制限になる」と書かない。**3資料のどこにも Plus / Pro のテキストチャットが無制限だとは書かれていない。FAQにあるのは "higher rate limits"（無料より高い上限）まで
 
 ## 課金判断は、モデルの新しさでは決まらない
 → このメディアの視点。Claudeの課金変更記事（no.29）と同じ構造の話に接続する
@@ -114,6 +114,7 @@ no: 61
 ## 材料がない枠を作らないための確認
 
 - **体験セクションは置かない。**このメディアでChatGPTの無料無制限や広告表示を検証した実体験はない
-- **料金の数値は書かない。**プラン名（Plus / Pro / Go）は公式に出ているが、金額は今回の一次情報2本に含まれていない。書くなら別途公式で確認が必要になるため、判断軸の記事として金額に依存しない構成にする
+- **料金の数値は書かない。**プラン名（Plus / Pro / Go）は公式に出ているが、金額は今回確認した一次情報3本に含まれていない。書くなら別途公式で確認が必要になるため、判断軸の記事として金額に依存しない構成にする
+- **有料プランの上限も数値では書かない。**FAQの記述は "higher rate limits" までで、具体的な上限値は3本に含まれていない
 - 表は全行が埋まるものだけ指定した（4個）
 - 想定分量：3,500字前後

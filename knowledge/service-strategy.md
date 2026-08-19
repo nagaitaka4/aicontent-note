@@ -286,6 +286,10 @@ GPT Workは執筆器であって環境ではない。選択肢は **Claude Code*
 
 環境の実体はファイル群。noteで配布できる形（zip添付／GitHubリンク／手順書のみ）を確認していない。`note/strategy.md` と併せて検討する。
 
+# 実行リポジトリ（2026-08-20新設）
+
+サイト制作事業の実行は **`~/Documents/GitHub/site-business`** で行う（部署構成：hq／marketing／sales／production／clients）。商品仕様・価格の現在値は `site-business/hq/service-spec.md` が唯一の正。このファイル（service-strategy.md）は**検討の経緯・戦略判断の記録**として残る。
+
 # 次に確かめること
 
 1. Codex cloud にブラウザから入れるか（`chatgpt.com/codex`）。プラン要件と共有条件

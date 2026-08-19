@@ -1,6 +1,33 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-19
+最終更新: 2026-08-20
+
+---
+
+#### 【デイリー】2026-08-20
+
+**本日の収穫は1件で、しかもこのリポジトリが6日間追いかけていた件の決着。週次上限+50%は4回目の延長に入り、8/31まで続く。加えてAnthropicが初めて「恒久化したい」と書いた。**
+**あわせて自戒：この告知は昨日8/19の4:35（X表示・JST）に出ている。昨日のデイリー実行（8:00）の3時間半前だったのに拾えなかった。8/19の透かし1週間遅れに続いて2日連続の取りこぼし。原因は巡回先が公式changelog・公式ヘルプ中心で、Xを見ていないこと。この件の告知チャネルは公式Xだけだった。**
+
+- **【最重要】Claude Codeの週次使用上限+50%が4回目の延長。8/31まで。初めて「恒久化したい」と明言された**
+  - **一次情報（公式X・verbatim）**：[@ClaudeDevs, 2026-08-19 4:35（X表示・JST）](https://x.com/ClaudeDevs/status/2089798442306711646) — `We're extending the 50% increase to weekly Claude Code limits through August 31. We hope to make this a permanent change to our plans, but strong demand for our models means that capacity may be tight over the coming weeks. We'll keep you posted as things develop.`
+  - **本日CCがブラウザでX上の原文を直接確認済み**（WebFetchはx.comに402を返すため。表示は317.6万再生・1,333リプライ）。この投稿は7/18の投稿（`We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.`）の引用ポストになっている
+  - ⚠️ **JSTとPTの差に注意**：X表示は2026-08-19 4:35（JST）で、これは**2026-08-18 12:35 PT**にあたる。リプライに8月18日付が並んでいるのはこのため。「8/19に発表」と書くと現地時間では前日になる。**日付を書くなら『日本時間8/19未明』と書く**
+  - **使う側の何が変わるか**：8/19の23:59 PTで標準に戻る前提で1週間の作業量を組んでいた人は、**8/31まで1.5倍のまま**。かつ「一時的な施策」から「恒久化の候補」に格が上がった
+  - ⚠️ **同時に釘も刺されている**：`capacity may be tight over the coming weeks`。恒久化は希望であって確定ではない。**「恒久化された」と書いたら誤り**
+  - ⚠️ **[公式ヘルプ](https://support.claude.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan)には本日も週次上限の期間・+50%施策・8/19・8/31のいずれも記載が無い**（8/14・8/18・8/19に続き4回目の確認・結果は同じ）。**告知チャネルは公式Xのみという状態が続いている**
+  - **このリポジトリにとっての意味**：`research-20260814-02`で「4回目の延長もありうるため8/19に戻ると断定して書かない」「期限前・確認前には出さない」と3回にわたって判断を据え置いた。**その翌日に4回目の延長が来た。**期限当日の8/19に「今日で戻ります」と投稿していたら、翌日には外れていた。**予告を事実として書かなかったから助かった、という実話が日付つきで手元に残っている**（前例：`research-20260813-01`のSonnet 5値上げ予告の撤回）
+
+- **Claude Code v2.1.236（2026-08-19）が出ている**（[公式changelog](https://code.claude.com/docs/en/changelog)）。**既定の挙動が変わる項目は無いが、auto mode関連の変更が3件入っている**
+  - **`ANTHROPIC_DEFAULT_MODEL`環境変数の追加**（verbatim）：`sets the model new sessions start on, while a /model pick still overrides it and persists across restarts (unlike ANTHROPIC_MODEL)`。新規セッションの開始モデルを指定できる。`ANTHROPIC_MODEL`と違い`/model`での選択が優先される
+  - **auto modeの変更3件**（verbatim）：`Monitor allow rules are now set aside while auto mode is active, so Monitor commands are reviewed the same way Bash commands are` ／ `Improved auto mode on Bedrock, Vertex AI, and Foundry, and when telemetry is disabled: the classifier now uses the same defaults as on the Claude API, including severity-scored classification` ／ `the git status check can no longer be fooled by a repo's status.showUntrackedFiles=no setting into reporting a clean tree`
+  - **サンドボックスの穴が塞がれた（macOS・verbatim）**：`wildcard read-deny rules (e.g. **/.env) now take precedence inside allowed read regions, cover matched directories' contents, and can't be bypassed by renaming the denied file`。**`.env`をdenyしていても、ファイル名を変えれば読めていた**。⚠️ **X投稿には採らない**：効くのはサンドボックスのdenyルールを自分で書いている層に限られ、このメディアの読者層とずれる
+  - その他：`/usage`にTeam・Enterpriseの使用クレジット消費行を追加／`/goal`が長時間のバックグラウンド作業待ちで30分後（次に1h・2h）に自動チェックイン／`SendMessage`に`notify_when_idle`（同一マシンの他セッションがidleになったとき1回だけ通知・macOSとLinux）／スラッシュコマンドの打ち間違いで一番近い候補を勝手に実行せずエラーを返すように変更
+
+- **Sonnet 5の価格：検索要約がいまだに撤回前の情報を流している。公式は本日も「$2/$10が標準」のまま**
+  - 本日の検索要約は`Claude Sonnet 5's promotional pricing of $2/$10 per million tokens ends August 31, 2026, with standard pricing of $3/$15 taking effect September 1`と出してきたが、**[公式Pricing docs](https://platform.claude.com/docs/en/about-claude/pricing)を本日取得すると本文は逆**（verbatim）：`The $2/$10 per million input/output token pricing for Claude Sonnet 5, announced at launch as introductory pricing through August 31, 2026, is now the standard price. The previously scheduled increase to $3/$15 per million input/output tokens on September 1, 2026 will not occur.`
+  - 表の実値も **Claude Sonnet 5：入力$2/MTok・出力$10/MTok** のまま
+  - **`research-20260813-01`の補強材料**：撤回から1週間が経っても、検索要約は撤回前の予告を現在形で返してくる。**「二次情報は撤回に追いつかない」の実例が、今日また1つ増えた**
 
 ---
 

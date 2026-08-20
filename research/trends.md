@@ -1,6 +1,38 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-20
+最終更新: 2026-08-21
+
+---
+
+#### 【デイリー】2026-08-21
+
+**本日の最重要は、Claude Codeに「Concise（簡潔）」という出力スタイルが標準搭載されたこと。設定ひとつでClaudeの答え方が結論先出しに変わる。同じ日に「指定した出力スタイルがセッション途中で既定の声に戻る」不具合も修正されている。**
+**あわせて巡回手順を1つ変えた：8/20の自戒（巡回先が公式changelog・公式ヘルプ中心でXを見ておらず、公式Xだけの告知を2日連続で取りこぼした）を受け、本日から`@ClaudeDevs`のXをブラウザで直接見る手順を追加した。**その初日に、本日の最重要ネタがそのXで245万再生を集めていた。**巡回先を変えたその日に効いている。**
+
+- **【最重要】Claude Codeに「Concise」出力スタイルが標準で入った。設定ひとつで、前置きと実況をやめて結論から書く答え方に変わる**
+  - **一次情報①（公式X・verbatim）**：[@ClaudeDevs](https://x.com/ClaudeDevs/status/2090245922685063634) — `You can now set Claude Code's output style to Concise.` ／ `Claude leads with the result, keeps responses short, and still gives full detail when you ask.` ／ `Turn it on in /config → Output style, or set "outputStyle": "Concise" in settings.json.`
+  - **一次情報②（公式changelog v2.1.237・2026-08-20・verbatim）**：`Added a built-in "Concise" output style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select it under Output style in /config.`
+  - **本日CCがブラウザでX上の原文を直接確認済み**（WebFetchはx.comに402を返すため）。表示は**245万再生・846リプライ・1.8万いいね**。投稿の表示は8/21 8:10 JST時点で「21h」＝**日本時間8/20の昼ごろ**
+  - **使う側の何が変わるか**：`/config`の Output style で選ぶか、`settings.json`に`"outputStyle": "Concise"`と書くだけで、**Claude Codeの答え方そのものが変わる**。長い前置き・作業の実況に付き合わされていた人は、その画面が変わる。**プロンプトで毎回「短く」と頼む必要がなくなる**
+  - ⚠️ **「短くなる＝手を抜く」と読ませない。**公式Xは`still gives full detail when you ask`、changelogは`while doing the work just as thoroughly`と、**作業量は落とさないことを両方で明記している**。変わるのは報告の仕方であって仕事の中身ではない
+  - ⚠️ **245万再生・846リプライという反応の大きさは「長さに困っていた人が多かった」の裏付けに使えるが、他人の不満をなぞる形にしない**（`research-20260817-01`と同じ注意）
+  - ⚠️ **手元はv2.1.233でこの機能自体がまだ入っていない**（8/21朝に`claude --version`で確認）。`~/.claude/output-styles/`も`.claude/output-styles/`も存在せず、settings.jsonに`outputStyle`の指定も無い。**実機で選んで挙動を見てから書く**
+
+- **同じ日に、出力スタイルが途中で外れる不具合も直っている**（[公式changelog](https://code.claude.com/docs/en/changelog) v2.1.238・2026-08-20・verbatim）：`Fixed custom, project, and plugin output styles drifting back to the default voice mid-session`
+  - **つまり、出力スタイルを指定していても、セッションの途中で既定の声に戻ることが実際に起きていた。**「最初は言うとおりに書いていたのに、途中から元に戻る」を経験していた人には、原因が公式に名指しされた形になる
+  - ⚠️ **この`output styles`は`/config`の出力スタイル機能のことで、CLAUDE.mdに書いた文体ルールとは別物。**混同して「CLAUDE.mdの指示が途中で外れる不具合が直った」と書いたら誤り
+
+- **v2.1.238（2026-08-20）のその他**（[公式changelog](https://code.claude.com/docs/en/changelog)・verbatim）
+  - `Fixed unbounded memory growth in long interactive sessions: subagent tool results are now released once they leave the recent display window` — **長時間セッションのメモリが際限なく増えていた**。サブエージェントを多用する運用（このリポジトリの自動リサーチが該当）には効く
+  - `Changed Ctrl+L and Cmd+K in fullscreen to always just repaint — the double-press /clear shortcut was removed` — **Ctrl+L・Cmd+Kの2回押しで`/clear`が走る挙動が廃止**。画面を消すつもりが会話ごと消える事故が減る
+  - `Added a keybindingFlavor setting: set it to "readline" to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default ("classic") is unchanged`
+  - `Improved startup: bare claude starts sooner on macOS` ／ `Improved startup responsiveness: the automatic update check now runs about 10 seconds after launch instead of competing with startup for CPU`
+  - ⚠️ **X投稿には採らない**：残りはプラグインの`headersHelper`・self-hosted runner・Remote Control・MCPの修正が大半で、効く層がこのメディアの読者とずれる
+
+- **Claude PlatformでComputer use・browser tool・Skills API・Files APIが一般提供（GA）に**（[@ClaudeDevs](https://x.com/ClaudeDevs/status/2090540270219567575)・8/21 8:10 JST時点でX表示「2h」＝**本日8/21の早朝**・verbatim）：`Computer use, the browser tool, the Skills API, and the Files API are now generally available on the Claude Platform.` ／ `Automate work in applications that have no API with fewer round trips per task, and build Claude Managed Agents on versioned skills and reusable files.`
+  - ⚠️ **X投稿には採らない**：対象がAPIを直接叩く開発者で、このメディアの読者（コンテンツ運用者・中小企業）の手元では何も変わらない。**「新機能が出た報告だけ」に該当する**
+
+- **Sonnet 5の価格：本日も公式は「$2/$10が標準」のまま**（[公式Pricing docs](https://platform.claude.com/docs/en/about-claude/pricing)）。9/1の$3/$15への値上げは撤回済みの状態が継続（`research-20260813-01`・8/20の記録から変化なし）
 
 ---
 

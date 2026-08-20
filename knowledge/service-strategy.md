@@ -288,7 +288,7 @@ GPT Workは執筆器であって環境ではない。選択肢は **Claude Code*
 
 # 実行リポジトリ（2026-08-20新設）
 
-サイト制作事業の実行は **`~/Documents/GitHub/site-business`** で行う（部署構成：hq／marketing／sales／production／clients）。商品仕様・価格の現在値は `site-business/hq/service-spec.md` が唯一の正。このファイル（service-strategy.md）は**検討の経緯・戦略判断の記録**として残る。
+サイト制作事業の実行は **`~/Documents/GitHub/ok-made`（サービス名：OK MADE）** で行う（部署構成：hq／marketing／sales／production／clients）。商品仕様・価格の現在値は `ok-made/hq/service-spec.md` が唯一の正。このファイル（service-strategy.md）は**検討の経緯・戦略判断の記録**として残る。
 
 # 次に確かめること
 

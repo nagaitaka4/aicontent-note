@@ -1,6 +1,6 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-21
+最終更新: 2026-08-22
 
 ---
 
@@ -36,6 +36,36 @@
 ### Sonnet 5の価格
 
 - **変化なし。**$2/$10が標準のまま（`research-20260813-01`／8/21朝のデイリー回から変化なし）
+
+---
+
+#### 【デイリー】2026-08-22
+
+**本日の最重要は、Remote Controlのアップデート。スマホから「続ける」だけだったのが、スマホから「新しく始める」ができるようになった。**@ClaudeDevsが日本時間7:44に出したスレッドで、本デイリー実行の約20分前。**8/21から追加した「@ClaudeDevsのXをブラウザで直接見る」手順が2日連続で効いている。**
+
+- **【最重要】スマホからClaude Codeのセッションを新規に開始できるようになった**
+  - **一次情報（公式X・[@ClaudeDevs 2026-08-22 7:44 JST](https://x.com/ClaudeDevs/status/2090933155847143498)のスレッド・本日CCがブラウザで原文を直接確認**。WebFetchはx.comに402を返すため）
+  - スレッド冒頭（verbatim）：`Last month you told us Remote Control was the thing you'd most like us to fix, so we've been working hard on reliability.`
+  - **新規開始（verbatim）**：`You can now start a Claude Code session directly from your phone.` ／ `Any machine running claude remote-control shows up as a device card at the top of the Code tab. Tap it, pick a directory, and it starts on that machine.`
+  - **同期（verbatim）**：`Resuming a session on your laptop keeps the phone on the live session instead of archiving it. When Claude Code exits, your phone shows it offline within seconds instead of leaving a stale session hanging around`
+  - **自動再接続（verbatim）**：`Dropped connections now recover on their own, so if you briefly close your laptop or switch wifi, it'll automatically reconnect.`
+  - **モデル・effortの同期とスラッシュコマンド（verbatim）**：`Your phone and CLI sessions also stay in sync on model and effort level, and heavy sessions open much faster on iOS.` ／ `/clear resets the phone view` ／ `/compact shows a compaction marker` ／ `/diff opens the native diff sheet`
+  - ⚠️ **公式ドキュメント側はまだ追いついていない。**[Remote Controlのdocs](https://code.claude.com/docs/en/remote-control)を本日確認したが、`device card`・`Code tab`から新規開始する記述は**まだ載っていない**（ページのタイトルは`Continue local sessions from any device with Remote Control`のまま＝「続ける」前提の記述）。**現時点の一次情報は公式Xのみ。**docsに反映されたら差し替える
+  - **docsで確認できる前提条件（verbatim）**：`Subscription: available on Pro, Max, Team, and Enterprise plans. API keys are not supported. On Team and Enterprise, an Owner must first enable the Remote Control toggle`／PC側で`claude remote-control`を起動しておく必要がある（`The process stays running in your terminal in server mode, waiting for remote connections.`）
+  - **使う側の何が変わるか**：これまでは「机で始めた作業をスマホで続ける」だけだった。**始める側がスマホに来た。**外出先で思いついた記事の直しに、机に戻らず着手できる。⚠️ ただしPCが起動していて`claude remote-control`が動いていることが条件なので、「スマホだけで完結する」ではない
+
+- **Claude Code公式changelogに v2.1.239（2026-08-21）が出ていた**（[公式changelog](https://code.claude.com/docs/en/changelog)を本日確認）。前回記録の v2.1.238 から1つ進んだ。**中身はほぼ不具合修正で、X採用基準（使う側の何かが変わる）を満たす項目は少ない。**実務に関係しうるものだけ抜き出す（verbatim）
+  - `The usage-limit message shown when your monthly spend limit is already used up now also says when your session or weekly limit resets`（上限で止まったときのメッセージに、次のリセット時刻が出るようになった）
+  - `Fixed a race where pressing Esc with a prompt queued could let the next turn finish early, leaving the session idle while Claude was still working and letting a later resubmit repeat actions`（Escを押したのに裏で動き続け、後から同じ操作が繰り返される不具合）
+  - `Improved the reminder shown after compaction so a skill's original arguments are not re-run as a new request`（圧縮後にスキルの引数が新しい依頼として再実行される問題）
+  - `Windows: cross-session messaging is now available`（Windowsでもセッション間メッセージが使えるようになった。macOS・Linuxに追いついた）
+  - ⚠️ **X投稿には採らない**：どれも「壊れていたものが直った」で、読者の仕事のやり方は変わらない
+
+- **Anthropic Newsroom は 2026-08-14（透かしの記事）から新規なし**（[anthropic.com/news](https://www.anthropic.com/news)を本日ブラウザで確認）
+- **Claude Apps リリースノートは 2026-08-06 のまま**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)・**16日連続で動きなし**。前回8/21の記録から1日伸びた）
+- **Claude Platform リリースノートは 2026-08-20（Python SDK v1.0）が最新のまま**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日確認）。差分なし
+- **Sonnet 5の価格は変化なし。**$2/$10が標準のまま（`research-20260813-01`から変化なし）
+- **参考（新情報ではない・8/6発表の再確認）**：セルフホスト環境（[Self-hosted environments for Claude Code](https://claude.com/blog/run-claude-code-sessions-on-your-own-compute)）は**Team・Enterpriseプラン限定のpublic beta**。このメディアの読者（個人・中小企業）の手元では何も変わらないため**X投稿には採らない**
 
 ---
 

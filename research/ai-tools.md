@@ -1,6 +1,6 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-21
+最終更新: 2026-08-22
 
 ---
 
@@ -32,6 +32,24 @@
 
 - **新機能・料金変更は確認できず（9日連続で同じ状態）**。検索でヒットするのは日付のない比較記事・ランキング記事のみ
 - 参考：[Business Insider Japan「【2026年8月版】生成AI主要8サービス料金早見表」](https://www.businessinsider.jp/article/2608-how-much-did-major-generative-ai-service-fees/)は**2026-08-01時点で主要8サービスに明確な料金改定はなかった**とまとめている。**⚠️同記事は「7月にOpenAIがGPT-5.6を正式公開」と書いているが、このリポジトリは8/17に「GPT-5.6ファミリーの投入は2026-07-09」と確定させている**（8/16に一度「8/13リリース」と誤記録し訂正済み）。7月である点は整合する
+
+---
+
+#### 【デイリー】2026-08-22
+
+**差分なし（新機能・料金変更ともに確認できず）。**ただし、記録漏れが1件見つかったので下に足す。
+
+- **ChatGPT リリースノート：新規エントリなし**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて本文を確認**。WebFetchは403のまま）。ページ表示は`Updated: 3 時間前`だが、**最新エントリは8/20付`Codex and ChatGPT feature updates`のままで内容も変わっていない**（8/21の記録から進んでいない）
+- **Gemini：新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日確認。`Last updated`は**2026-08-13 UTC**のまま）。最新は8/13の`Gemini 3.7 Flash generally available (GA)`。**10日連続で動きなし**
+- **国産AIライティングツール：新機能・料金変更は確認できず（10日連続で同じ状態）**。検索でヒットするのは日付のない比較記事・ランキング記事のみ
+
+**【記録漏れの補完】OpenAI o3 が 2026-08-26 にChatGPTから提供終了になる**
+
+- **一次情報（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・本日CCがブラウザで原文を直接確認・verbatim）**：`OpenAI o3 will be retired from ChatGPT on August 26, 2026 following a 90-day sunset period, and GPT-4.5 will be retired from ChatGPT on June 26, 2026 following a 30-day sunset period. These models are currently available to paid users only via model settings. These changes apply to ChatGPT only; there are no changes to the API.`
+- **新情報ではない**（告知は2026年5月下旬の90日サンセット予告）。**このリポジトリに記録が無かったので補完する。**期限は4日後
+- ⚠️ **「ChatGPTからo3が消える」であって、APIは対象外**。原文が`These changes apply to ChatGPT only`と明記している
+- ⚠️ **同じ告知にあるGPT-4.5の日付は「June 26」**。このリポジトリ外の二次情報には「June 27」と書くものがあるが、**公式原文は26日**
+- **X投稿の判定**：**採らない（単独では）。**o3は有料ユーザーが「Show additional models」を開かないと出てこないレガシーモデルで、コンテンツ運用者の手元では実質何も変わらない。**ただし、既にストック済みの「公式DALL·E GPTが8/30終了」（`research-20260817-02`）と合わせると「8月末にChatGPTの中から2つ消える」という束になる。**束で出すならX編集部の判断で
 
 ---
 

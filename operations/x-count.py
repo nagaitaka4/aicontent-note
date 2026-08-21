@@ -26,8 +26,14 @@ LIGHT_RANGES = [
 MAX_WEIGHT = 280
 
 
+URL_WEIGHT = 23  # Xは全URLをt.coに置換し長さにかかわらず一律23で数える
+
+
 def weight(text):
-    total = 0
+    import re
+    urls = re.findall(r"https?://\S+", text)
+    text = re.sub(r"https?://\S+", "", text)
+    total = URL_WEIGHT * len(urls)
     for ch in text:
         o = ord(ch)
         total += 1 if any(a <= o <= b for a, b in LIGHT_RANGES) else 2

@@ -1,6 +1,44 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-08-17
+最終更新: 2026-08-21
+
+---
+
+## [2026-08-21] 調査結果（定期リサーチ）
+
+**本日の最大の収穫は2件。①Googleが「August 2026 spam update」を8/18から展開中で、本日時点でまだ完了していない（＝順位が動いている最中）。②ChatGPTが`site:`検索を0.3%→約23%まで急増させ、「まず信頼できる公式ドメインの中を探す」挙動に変わった。**
+
+### 検索トレンド・アルゴリズム変化
+
+- **【最重要】August 2026 spam update が2026-08-18から展開中。本日8/21時点でまだ「完了」になっていない**（**一次情報を自分で開いて確認**：[Google Search Status Dashboard・ranking updates 履歴](https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history)。**開始 18 Aug 2026・duration欄が空で"Information"表示のまま**）
+  - 告知は[Google Search Central のX投稿](https://x.com/googlesearchc/status/2089752491499938186)（verbatim）：`Today we released the August 2026 spam update. We'll update our ranking release history page when the rollout is complete:`
+  - **2026年3本目のスパムアップデート**（ダッシュボードで確認できる2026年の履歴：3/24 spam・3/27 core・5/21 core・6/24 spam・8/18 spam）。**全言語・全地域が対象**で、展開には数日かかるとされる
+  - **新しいスパムポリシーの発表は伴っていない**（既存ポリシー違反への執行）。**サイト側にやることが増えたわけではない**
+  - ⚠️ **これはコアアップデートではない。**このリポジトリは8/17に「2026年の確認済みコアアップデートは3/27と5/22の2回」と記録したが、**ダッシュボードの表記は5月分が`21 May 2026`開始（11日21時間）**。**日付は5/22ではなく5/21が正**（記事に書くならダッシュボードの表記を使う）
+  - ⚠️ **「8〜9月にコアアップデートが来る」という日本語解説記事の予想（8/17に記録済み）とは別件。**スパムアップデートが来たからといって予想が当たったことにはならない。**混ぜて書かない**
+  - **このメディアへの意味**：**順位が動いている最中に自サイトのGSCを見ると、変動を実力の変化と誤読しやすい。**9/1のGSC月次スナップショット（近々一時タスク#21）は、**この展開期間と重なっている可能性を明記して読む**
+
+- **Googleが「Google検索」ボタンをAI Modeボタンに置き換えるテストを実施**（[suzukikenichi.com, 2026-08-20](https://www.suzukikenichi.com/blog/)の当日記事タイトル：「「Google検索」ボタンが消える？ AI Modeボタンへの置き換えをテスト」）
+  - ⚠️ **記事本文をまだ開けていない**（個別URLを特定できず、ブログ一覧の見出しでのみ確認）。**テストの規模・対象国・出典が未確認のため、この段階では記事にもX投稿にも使わない**。次回リサーチで本文を取り直す
+- **Googleが検索・Discover・Googleニュースに新しいパーソナライズ機能を導入**（[suzukikenichi.com, 2026-08-21](https://www.suzukikenichi.com/blog/)の当日記事）。**同じく本文未確認**。次回持ち越し
+
+### GEO・AI検索の動向
+
+- **【M-12を強化する新事実】ChatGPTの`site:`検索が、ファンアウトクエリ全体の0.3%から約23%へ急増した**（[suzukikenichi.com「ChatGPTの「site: 検索」が急増、公式サイトや信頼できる情報源を優先」2026-08-18](https://www.suzukikenichi.com/blog/chatgpt-dramatically-increases-site-searches-prioritizing-official-and-trusted-sources/)／元データは**Peec AI と Nectiv**の2社）
+  - 1プロンプトあたりの検索回数も増えた：**Peec AI が 12回→24回、Nectiv が平均 2.17回→7.61回**
+  - **取得URLは倍になったのに、回答内で引用される固有ドメイン数は 19→15 に減った**。**広く読んで、狭く引く**という方向に動いている
+  - 何を優先するか：**価格・スペックはメーカー公式サイトと製品ページ／医療・法律（YMYL）は.gov等の当局ドメイン／レビュー・評判はRedditと大手レビュープラットフォーム**
+  - **このメディアへの意味**：**M-12（AIの回答に出るかは「最初の検索候補に入るか」で決まる）と同じ構造の、別ルートの裏付けが取れた。**M-12の根拠だった「約33倍」は詳細が動画側にあり裏取り未完だったが、**こちらは検索挙動の実測値として数字が具体的で、出典も2社ある**。**M-12の主根拠をこちらに差し替えられる**
+  - ⚠️ **Peec AI・Nectiv の原典を直接は確認していない**（鈴木謙一氏の記事経由）。**記事に数値を書くなら原典を当たる。**8/11の教訓（二次情報の数値をそのまま書かない）をそのまま適用する
+  - ⚠️ **記事の推奨アクション（公式サイトに価格・スペックを一貫して明記／フッターと会社ページでドメインの帰属を明示）は、当メディアのようなオウンドメディアより「製品を持つ企業」向け。**そのまま読者への提案にしない
+
+### Search Console 生成AIパフォーマンスレポート／AI表示オプトアウトの再開判定（保留記事・省略禁止項目）
+
+- **本日時点で状況の変化なし。保留を継続する**
+- **オプトアウトのトグル**：**Googleの公式アナウンスは2026-06-03（英国限定でのテスト開始）から進んでいない**（[suzukikenichi.com, 2026-06-05](https://www.suzukikenichi.com/blog/google-introduces-search-console-controls-for-ai-overviews-and-ai-mode-visibility/)を本日開いて公開日と内容を確認。英国CMAとの協議を受けた措置で、対象は`a limited number of sites in the United Kingdom`）
+  - **⚠️「英国以外にも波状で展開中（米国・インド・スイス等）」と書く英語ベンダーブログが出てきている**（[tryvizup.com](https://www.tryvizup.com/blog/search-console-generative-ai-controls-the-opt-out-toggle-is-rolling-out-beyond)等）。**ただしGoogleの公式発表はなく、日本の名前はどこにも挙がっていない。ベンダーブログを根拠に着手判断をしない**（8/14に決めた方針を維持）
+- **生成AIパフォーマンスレポート**：日本のサイトへは2026年6月下旬から順次提供という説明のまま変化なし（[suzukikenichi.com](https://www.suzukikenichi.com/blog/google-search-consoles-ai-performance-report-is-now-available-in-japan/)／[Google公式ブログ 2026-06](https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports)）。見られるのは**表示回数・ページ・国・デバイス・日付の5項目のみ**で、クリック・クエリは含まれないという内容も変わっていない
+- **aicontent-note.comの実機確認は7/28・8/3・8/14の3回連続で未展開。本日も実機確認は行っていない**（次の確認は**9/1のGSC月次スナップショット時**にまとめて行う方針・tasks/README.md 近々一時タスク#21）
 
 ---
 

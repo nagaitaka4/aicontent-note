@@ -4,6 +4,41 @@
 
 ---
 
+## [2026-08-21] 調査結果（定期リサーチ・12:00の回）
+
+**本日朝のデイリー回が拾った内容（Concise出力スタイル・v2.1.238・Platform GA）は一次情報で再確認し、重複しない差分だけを以下に足す。**
+**フル版の役目どおり、デイリーが見ていないチャネル（Claude Platform リリースノート本体・Claude Apps リリースノート）を自分で開いた。結果、GAの中身がXの1文よりかなり広いことが分かった。**
+
+### Claude Code本体
+
+- **公式changelogに v2.1.238（2026-08-20）より新しい版はない**（[公式changelog](https://code.claude.com/docs/en/changelog)を12:00の回で直接確認）。本日朝のデイリー回の記録から進んでいない
+- **朝の回が拾っていない、実務に効く1件（v2.1.236・2026-08-19）**（verbatim）：`Improved auto mode: the git status check can no longer be fooled by a repo's status.showUntrackedFiles=no setting into reporting a clean tree`。**auto modeが「作業ツリーはきれい」と誤認する経路が塞がれた**。auto modeを常用しているこのリポジトリには直接効く
+
+### Claude Platform（デイリー回が見ていないチャネル・本日の主な収穫）
+
+- **8/21早朝のGA告知（@ClaudeDevsの1文）の実体は、[Claude Platform リリースノート 2026-08-19](https://platform.claude.com/docs/en/release-notes/overview)の8項目だった。**朝の回はXの1文だけを見ていたため、以下は未記録だった（verbatim・要旨）
+  - **Computer use tool がGA**：`computer_toolset_20260801`。**betaヘッダ不要・batch actions（1ターンで複数操作）・`zoom`が既定で有効・`configs`によるメンバー単位の設定**。旧beta版も引き続き利用可。既存実装の移行はリクエスト形状が変わる
+  - **Browser use tool を新規ローンチ**：`browser_toolset_20260801`。**デスクトップ全体ではなくブラウザのビューポート内で動き、ページのアクセシビリティツリー・要素・フォーム・タブを読む**。要素参照・フォーム入力・タブ管理・ダウンロード報告・オプトインのファイルアップロードが、スクリーンショット＋クリック操作の上に乗る
+  - 両toolsetの対象モデル：**Fable 5・Mythos 5・Opus 5・Sonnet 5・Opus 4.8**
+  - **Files API がGA**：`files-api-2025-04-14`ヘッダ不要。**アップロード時に`expires_in_seconds`で有効期限を指定でき、fileオブジェクトが`expires_at`を返す**。一覧はページネーションと`ids[]`フィルタに対応
+  - **Agent Skills と Skills API（`/v1/skills`）がGA**：`skills-2025-10-02`ヘッダ不要
+  - **Admin API のユーザー管理エンドポイントが Claude Enterprise 向けにGA**（メンバー・招待・グループ・カスタムロール）
+  - **Claude Managed Agents の`web_search`／`web_fetch`が到達できるサイトを制限できるようになった**：`agent_toolset_20260401`の`configs`に`allowed_domains`／`blocked_domains`を設定。`web_fetch`は`max_content_tokens`、`web_search`は`user_location`も受け付ける
+  - **Console のセッションビューアが刷新**：タイムラインのミニマップ、モデルリクエスト単位のトランスクリプト、セッション詳細とコストのInspectorパネル
+- **8/18：Console の「Workbench」が「Playground」に改称**（[同リリースノート](https://platform.claude.com/docs/en/release-notes/overview)・[platform.claude.com/playground](https://platform.claude.com/playground)）。Messages APIの全パラメータに対応し、コード実行・Web検索などのテンプレートを同梱。**実行ごとにSDKリクエストとAPIレスポンスの全文を表示する**
+  - ⚠️ **このリポジトリには「レガシーWorkbenchは2026-08-17でアクセス終了」とだけ記録があった**（`research/trends.md`の7/27の回）。**終了と改称は別の出来事。混同して「Workbenchが終わった」とだけ書くと誤り**
+- ⚠️ **X投稿には採らない（朝の回の判断を維持）**：対象がAPIを直接叩く開発者で、このメディアの読者（コンテンツ運用者・中小企業）の手元では何も変わらない
+
+### Claude Apps（consumer側・本日確認）
+
+- **[Claude Apps リリースノート](https://support.claude.com/en/articles/12138966-release-notes)の最新エントリは 2026-08-06 のまま**（Enterprise向けのskill・pluginセキュリティスキャンβ）。**8月に入ってから15日間、消費者向けアプリ側の公表更新は1件も出ていない**。Claude Code側の更新頻度との差が開いている
+
+### Sonnet 5の価格
+
+- **変化なし。**$2/$10が標準のまま（`research-20260813-01`／8/21朝のデイリー回から変化なし）
+
+---
+
 #### 【デイリー】2026-08-21
 
 **本日の最重要は、Claude Codeに「Concise（簡潔）」という出力スタイルが標準搭載されたこと。設定ひとつでClaudeの答え方が結論先出しに変わる。同じ日に「指定した出力スタイルがセッション途中で既定の声に戻る」不具合も修正されている。**

@@ -1,6 +1,6 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-22
+最終更新: 2026-08-23
 
 ---
 
@@ -32,6 +32,26 @@
 
 - **新機能・料金変更は確認できず（9日連続で同じ状態）**。検索でヒットするのは日付のない比較記事・ランキング記事のみ
 - 参考：[Business Insider Japan「【2026年8月版】生成AI主要8サービス料金早見表」](https://www.businessinsider.jp/article/2608-how-much-did-major-generative-ai-service-fees/)は**2026-08-01時点で主要8サービスに明確な料金改定はなかった**とまとめている。**⚠️同記事は「7月にOpenAIがGPT-5.6を正式公開」と書いているが、このリポジトリは8/17に「GPT-5.6ファミリーの投入は2026-07-09」と確定させている**（8/16に一度「8/13リリース」と誤記録し訂正済み）。7月である点は整合する
+
+---
+
+#### 【デイリー】2026-08-23
+
+**ChatGPTのリリースノートに 2026-08-21 付のエントリが増えていた。**前回8/22の巡回時点では最新が8/20付だったので、**8/22の日中に公開された差分**（本日のページ表示は`Updated: 23 時間前`）。ただし**X投稿には採らない**（理由は各項目に記載）。
+
+- **ChatGPT リリースノート 2026-08-21 付エントリ（5件）**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて本文を確認**。WebFetchは403のまま）
+  - **プラグインの並び順の基準が変わった**（verbatim）：`Rankings now prioritize plugins people keep using after installation, helping relevant options surface across ChatGPT on web and mobile.`＝**インストール数ではなく「入れたあとも使い続けられているか」で並ぶ**。⚠️ `Desktop is not included in this update.`と明記
+  - **時刻を踏まえた回答**（verbatim）：`ChatGPT can better account for your local time when responding to time-sensitive questions.`＝**裏を返せば、これまでは会話中の現地時刻の扱いが弱かった**
+  - **Web版の長い会話が速くなった**（verbatim）：`ChatGPT loads messages in smaller sections instead of retrieving the entire conversation at once.`
+  - **インタラクティブな出力が生成中から表示される**（verbatim）：`Interactive experiences now appear progressively in the conversation instead of waiting until the full experience is ready.`／Android版`1.2026.216`以降
+  - **iOS**：`+`長押しで直近の写真を選べる／接続待ちの表示が出る。**Android**：生成画像が会話幅いっぱいに表示／サイドバーの最近の会話が最大8件
+  - ⚠️ **X投稿には採らない**：5件とも表示速度・並び順・アプリの操作性の改善で、**料金・制限・既定モデル・提供終了・使える範囲のどれも動いていない**（`rules/x-post-flow.md`「軸②の採用基準」）。プラグインの並び順は「使い続けられているか」で決まるという点が面白いが、**効くのはプラグインを出す側で、このメディアの読者（コンテンツ運用者・中小企業）の仕事は変わらない**
+- **ChatGPT広告の欧州31か国展開（8/24開始）を本日あらためて一次情報で確認**（[OpenAI公式・日本語版 2026-08-18](https://openai.com/ja-JP/index/chatgpt-ads-expands-across-europe/)をブラウザで直接確認）。`research-20260821-02`の記録どおりで変更なし
+  - **8/21の記録に無かった条件を1つ補う**（verbatim）：`当初、ChatGPT 広告は OpenAI Ads Solutions チーム、広告代理店パートナー、テクノロジーパートナーを通じて利用できます。広告マネージャーによるセルフサービスは、今四半期中に開始予定です。`
+  - ⚠️ **つまり8/24時点では「誰でも出稿できる」状態ではない。**セルフサービスは今四半期中の予定。**「明日から誰でもChatGPTに広告を出せる」と書いたら誤り**
+  - **本日、この素材を下書き化してキューへ入れた**（消化先＝`queue.md`の`ADS-01`）。**鮮度期限が本日（〜8/24が山）だったため**
+- **Gemini：新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日確認。`Last updated`は**2026-08-13 UTC**のまま）。最新は8/13の`Gemini 3.7 Flash generally available (GA)`。**11日連続で動きなし**
+- **国産AIライティングツール：新機能・料金変更は確認できず（11日連続で同じ状態）**。検索でヒットするのは日付のない比較記事・ランキング記事のみ
 
 ---
 

@@ -1,6 +1,6 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-22
+最終更新: 2026-08-23
 
 ---
 
@@ -36,6 +36,23 @@
 ### Sonnet 5の価格
 
 - **変化なし。**$2/$10が標準のまま（`research-20260813-01`／8/21朝のデイリー回から変化なし）
+
+---
+
+#### 【デイリー】2026-08-23
+
+**差分なし（X投稿に採れる新情報はゼロ）。**日曜のため各チャネルとも動きが止まっている。巡回した5チャネルすべての確認結果を下に残す。
+
+- **Claude Code公式changelogに v2.1.240（2026-08-22）が出た**（[公式changelog](https://code.claude.com/docs/en/changelog)を本日確認）。前回記録の v2.1.239 から1つ進んだ
+  - **本文は1行のみ**（verbatim）：`Bug fixes and reliability improvements`
+  - ⚠️ **X投稿には採らない**：中身が公表されておらず、使う側の何が変わったかを書けない
+  - ⚠️ **二次情報の取り違えに注意（本日実際に起きた）**：検索結果の要約が「8/22に`ANTHROPIC_DEFAULT_MODEL`と`notify_when_idle`が追加された」と伝えていたが、[Releasebot](https://releasebot.io/updates/anthropic/claude-code)を直接開くと**この2件は8/18の v2.1.236 の項目**で、同サイトは版の日付を公式changelogより1日ずれた形で並べている。**公式changelogを開いて確認しなければ、この誤りをそのまま記録していた**
+- **@ClaudeDevsのXに8/22・8/23の投稿なし**（[x.com/ClaudeDevs](https://x.com/ClaudeDevs)を本日CCがブラウザで直接確認。WebFetchはx.comに402を返すため）。最新は8/21付のRemote Controlスレッド（`research-20260822`で記録済み・**8/22の消化先＝`queue.md`の`RC-01`**）
+- **Anthropic Newsroom は 2026-08-14（透かしの記事）から新規なし**（[anthropic.com/news](https://www.anthropic.com/news)を本日確認。**9日連続で動きなし**）
+- **Claude Apps リリースノートは 2026-08-06 のまま**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)・**17日連続で動きなし**）
+- **Claude Platform リリースノートは 2026-08-20（Python SDK v1.0）が最新のまま**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日確認）。差分なし
+- **Sonnet 5の価格は変化なし**（[公式Pricing docs](https://platform.claude.com/docs/en/about-claude/pricing)を本日確認）。表は`$2 / MTok`・`$10 / MTok`のまま。注記も残っている（verbatim）：`The $2/$10 per million input/output token pricing for Claude Sonnet 5, announced at launch as introductory pricing through August 31, 2026, is now the standard price. The previously scheduled increase to $3/$15 per million input/output tokens on September 1, 2026 will not occur.`
+  - **9/1の値上げが撤回されたままであることを、本日も一次情報で確認した**（`research-20260813-01`の「9/1前後に『値上げされなかった日』として再利用可」の前提が生きている）
 
 ---
 

@@ -1,6 +1,6 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-23
+最終更新: 2026-08-24
 
 ---
 
@@ -36,6 +36,25 @@
 ### Sonnet 5の価格
 
 - **変化なし。**$2/$10が標準のまま（`research-20260813-01`／8/21朝のデイリー回から変化なし）
+
+---
+
+#### 【デイリー】2026-08-24
+
+**差分なし（X投稿に採れる新情報はゼロ）。**巡回した6チャネルすべての確認結果を下に残す。**①側は8/21のRemote Controlスレッド以降、4日間新しい発表がない。**
+
+- **Claude Code公式changelogに v2.1.241（2026-08-23）が出た**（[公式changelog](https://code.claude.com/docs/en/changelog)を本日確認）。前回記録の v2.1.240 から1つ進んだ
+  - **本文は1行のみ**（verbatim）：`Bug fixes and reliability improvements`
+  - ⚠️ **X投稿には採らない**：8/22の v2.1.240 と同じで中身が公表されておらず、使う側の何が変わったかを書けない。**2日連続で「Bug fixes」1行のみ**
+- **「Claude Codeにセルフホスト環境が追加された」という検索要約を一次情報で否定した**（本日実際に起きた取り違え）。検索結果は8/22前後の新機能のように伝えていたが、公式changelogを開くと **v2.1.224（2026-08-07）** の項目だった（verbatim）：`Added self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans`
+  - **8/23に続いて2日連続で、二次情報の日付が公式とずれていた。**検索要約の日付は毎回changelog本体で突き合わせる
+- **@ClaudeDevsのXに8/22〜8/24の投稿なし**（[x.com/ClaudeDevs](https://x.com/ClaudeDevs)を本日CCがブラウザで直接確認。WebFetchはx.comに402を返すため）。最新は8/21付のRemote Controlスレッド（消化先＝`queue.md`の`RC-01`・**本日8/24が鮮度期限の最終日**）
+- **Anthropic Newsroom は 2026-08-14（透かしの記事）から新規なし**（[anthropic.com/news](https://www.anthropic.com/news)を本日確認。**10日連続で動きなし**）
+- **Claude Apps リリースノートは 2026-08-06 のまま**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)・**18日連続で動きなし**）
+- **Claude Platform リリースノートは 2026-08-20（Python SDK v1.0）が最新のまま**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日確認）。差分なし
+- **Sonnet 5の価格は変化なし**（[公式Pricing docs](https://platform.claude.com/docs/en/about-claude/pricing)を本日確認）。表は`$2 / MTok`・`$10 / MTok`のまま。注記も残っている（verbatim）：`The $2/$10 per million input/output token pricing for Claude Sonnet 5, announced at launch as introductory pricing through August 31, 2026, is now the standard price. The previously scheduled increase to $3/$15 per million input/output tokens on September 1, 2026 will not occur.`
+  - **9/1の値上げが撤回されたままであることを、本日も一次情報で確認した**（`research-20260813-01`の「9/1前後に『値上げされなかった日』として再利用可」の前提が生きている）
+  - **本日、OpenAIがGPT-5.6 Solの従量課金を2割以上下げたことを確認した**（`research/ai-tools.md`の本日エントリ）。**同じ月に、Anthropicは値上げを撤回し、OpenAIは値下げした。**フロンティアモデルの単価が下がる方向で揃っている点は、9月以降の料金ネタの背景として使える
 
 ---
 

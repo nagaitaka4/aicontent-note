@@ -1,6 +1,6 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-23
+最終更新: 2026-08-24
 
 ---
 
@@ -32,6 +32,41 @@
 
 - **新機能・料金変更は確認できず（9日連続で同じ状態）**。検索でヒットするのは日付のない比較記事・ランキング記事のみ
 - 参考：[Business Insider Japan「【2026年8月版】生成AI主要8サービス料金早見表」](https://www.businessinsider.jp/article/2608-how-much-did-major-generative-ai-service-fees/)は**2026-08-01時点で主要8サービスに明確な料金改定はなかった**とまとめている。**⚠️同記事は「7月にOpenAIがGPT-5.6を正式公開」と書いているが、このリポジトリは8/17に「GPT-5.6ファミリーの投入は2026-07-09」と確定させている**（8/16に一度「8/13リリース」と誤記録し訂正済み）。7月である点は整合する
+
+---
+
+#### 【デイリー】2026-08-24
+
+**本日の収穫は1件。OpenAIがGPT-5.6 Solの従量課金を2割以上下げていた。**⚠️ **発表は8/21で、8/22・8/23のデイリー回が2日続けて見逃していた。**理由は巡回先で、②は「ChatGPTリリースノート・Geminiチェンジログ・国産ツール検索」しか見ていない。**価格の変更はリリースノートには載らない**（載るのは製品の変更だけ）。8/21のフル版が「②の巡回先に各社のニュース/ブログ面を足す必要がある」と書いた穴が、そのまま2日間再発した。**本日から②の巡回先に各社の料金ページを常設する。**
+
+### ChatGPT（OpenAI）
+
+- **【本日の主収穫】GPT-5.6 Solの従量課金が2割以上下がった**（一次情報を2つ直接確認：[OpenAI公式・API料金ページ日本語版](https://openai.com/api/pricing/)を**本日CCがブラウザで直接開いて数字を確認**／[OpenAI公式アナウンス（community.openai.com・Announcements・2026-08-21投稿）](https://community.openai.com/t/20-price-reduction-for-gpt-5-6-sol-api-codex-credits-and-chatgpt-work/1391726)。**WebFetchはopenai.com本体に403を返すためブラウザ経由**）
+  - **新価格（本日の公式ページ表示・verbatim）**：`入力：$4.00/ 1M トークン` ／ `キャッシュ入力（キャッシュ入力）：$0.40/ 1M トークン` ／ `出力：$20.00/ 1M トークン`
+  - **旧価格**：入力 $5.00 ／ キャッシュ入力 $0.50 ／ 出力 $30.00（公式アナウンスの新旧対照より）。**入力は20%減、出力は約33%減**
+  - **期間（公式ページ・verbatim）**：`GPT-5.6 Sol's promotional pricing is available at least through 2026年11月21日.` ⚠️ **`at least through`＝「少なくとも11月21日まで」。「11月21日で終わる」と書いたら誤り**
+  - **対象（公式Xの告知・verbatim）**：`we're dropping API and credit pricing of GPT-5.6 Sol by over 20% for the next 3 months.`（[@OpenAI](https://x.com/OpenAI/status/2090885187634905500)）。API に加え、**ChatGPT Work の対象プランと Codex のクレジット**にも順次展開
+  - ⚠️ **対象外が明記されている**：`Pro, Plus, and Business subscription usage remains unchanged.`（公式アナウンス）。**さらに公式料金ページのFAQも「APIへのアクセスはChatGPT Plus、Business、Enterprise、Eduの料金に含まれますか？→ いいえ」と明記**。**サブスク契約者の請求は1円も変わらない**
+  - ⚠️ **「値下げ」を一般化しない。**下がったのは**使った分だけ払う側**であって、月額プランではない
+  - **このメディアへの意味**：読者の多くはChatGPT Plusなので**何も起きない**。だからこそ「AIが値下げというニュースは、自分の払い方によって当たり外れが変わる」という**線引きの話**にできる。実測でも当たってきたのは料金・制限の変更（Opus 5デフォルト化96／Gemini CLI有料化72／Claude課金変更93）
+  - **本日、この素材を下書き化してキューへ入れた**（消化先＝`queue.md`の`SOL-01`）
+  - 参考（二次・数字の突き合わせに使用）：[Techmeme](https://x.com/Techmeme/status/2090925890071073133)／[WinBuzzer](https://winbuzzer.com/2026/08/23/openai-cuts-gpt-5-6-sol-api-prices-by-up-to-33-percent-through-november-21-xcxwbn/)
+- **DALL·E GPT終了（8/30）の一次情報を本日ようやく直接確認した**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**ブラウザで開いて本文を取得**。`research-20260817-02`が「一次ページはWebFetchが403で読めていない」と保留していた宿題）
+  - **本文（verbatim・エントリ日付は July 31, 2026）**：`On August 30, 2026, we're retiring the official DALL·E GPT in ChatGPT. We encourage you to download any images you want to keep before then.` ／ `To continue creating or editing images, use ChatGPT Images. User-created GPTs with image generation enabled are not affected.`
+  - ⚠️ **リポジトリは出所を「8/17に拾った」としていたが、公式の掲載日は7/31だった。**ニュース自体は24日前のもので、**残っている鮮度は「8/30という締切が近いこと」だけ**
+  - ⚠️ **投稿化は保留のまま。**理由は日付ではなく、**ユーザー自身がDALL·E GPTを使っていたかが未確認**なため（`research-20260817-02`が自ら課した条件）。アイキャッチはChatGPTで作っているが、それが「DALL·E GPT」だったのか通常の画像生成だったのかを確認できていない。**確認が取れれば〜8/28に出せる**
+- **ChatGPT リリースノートに新規エントリなし**（本日ブラウザで直接確認。ページ表示は`Updated: 一昨日`で、**最新は8/21付のまま**）。8/23の回で記録済みの5件から進んでいない
+
+### Gemini（Google）
+
+- **APIチェンジログは新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日確認。`Last updated`は**2026-08-13 UTC**のまま）。**12日連続で動きなし**
+- **Workspace側で「Ask Gemini in Google Chat」が8/26に始まる**（[Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/)・告知は2026-08-19）。**Chatのサイドパネルは廃止**され、会話履歴はエクスポート可。Workspace顧客は**2026-10-01まで上限が緩和されるプロモーション付き**
+  - ⚠️ **X投稿には採らない**：Google Workspace（特にChat）を業務の中心に置いている読者が想定しにくく、このメディアの読者（コンテンツ運用者・中小企業）の手元では何も変わらない。**「提供終了」に当たるのはChatのサイドパネルだけで、影響範囲が狭い**
+- 8/17告知のGemini DLP（Driveデータへのアクセスをラベル・条件で制限）が**8/24から段階展開**。Workspace管理者向けのため同じく採らない
+
+### 国産AIライティングツール
+
+- **新機能・料金変更は確認できず（12日連続で同じ状態）**。検索でヒットするのは日付のない比較記事・ランキング記事のみで、8/24時点の新情報はゼロ
 
 ---
 

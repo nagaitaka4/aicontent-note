@@ -1,6 +1,31 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-24
+最終更新: 2026-08-25
+
+---
+
+## [2026-08-25] 調査結果（デイリー・8:00の回）
+
+**②は本日、新しい収穫がなかった。**ChatGPT・Geminiとも公式のリリースノートに差分がなく、国産ツールも14日連続でゼロ。**唯一動きがあるのは期限側で、明日8/26にOpenAI o3がChatGPTから消える**（8/24のフル版が記録済み。判定も「o3単独では採らない」のまま変えない）。
+
+### ChatGPT（OpenAI）
+
+- **ChatGPT リリースノートに新規エントリなし**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接確認**。WebFetchは403のまま）。ページ表示は`Updated: 3 日前`で、**最新は8/21付のまま**。8/23のデイリー回が記録した5件から進んでいない
+- **明日8/26にOpenAI o3がChatGPTから消える（既報・判定は据え置き）**（[Model Release Notes](https://help.openai.com/en/articles/9624314-model-release-notes)を本日ブラウザで再確認）
+  - **原文（verbatim）**：`OpenAI o3 will be retired from ChatGPT on August 26, 2026 following a 90-day sunset period` ／ `These models are currently available to paid users only via model settings. These changes apply to ChatGPT only; there are no changes to the API.`
+  - ⚠️ **X投稿には採らない（8/24フル版の判定を維持）。**読者が手を動かす必要があるのはDALL·E側（8/30・画像のダウンロード）だけで、**o3は有料プランのモデル設定を開かないと出てこないレガシーモデル**。さらに**キューの`DALL-01`が「ChatGPTの中の何かが終わる」角度を8/26に出す予定**で、同じ形の投稿が並ぶ
+- 参考（今回の巡回で確認した既報）：ChatGPTデスクトップアプリのLinux版パブリックプレビュー（8/14付エントリ・Ubuntu 24.04/26.04・Debian 13・Fedora 43/44）。⚠️**採らない**：対象がLinuxユーザーで読者の手元は変わらない
+
+### Gemini（Google）
+
+- **APIチェンジログは新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日ブラウザで直接確認）。**日付つきエントリの最新は2026-07-21（Gemini 3.6 Flash・3.5 Flash-Lite のGA）のまま**
+- **「Ask Gemini in Google Chat」は明日 2026-08-26 開始**（8/24のデイリー回が記録済み）。⚠️採らない（Workspace管理者向け・影響範囲はChatのサイドパネル廃止に限られる）
+
+### 国産AIライティングツール
+
+- **新機能・料金変更は確認できず（14日連続で同じ状態）**
+- **8/24フル版の宿題（巡回方法を変える）に着手した。**個別ツール名（Catchy・SAKUBUN）を入れて検索したが、**返ってくるのは日付のない比較記事・ランキング記事のみで、8月の新機能・料金改定に触れた一次情報は出てこなかった**
+  - ⚠️ **検索では届かないと判断してよい段階。次回以降は各社の公式サイト（お知らせ／料金ページ）をブラウザで直接開く方式に切り替える**
 
 ---
 

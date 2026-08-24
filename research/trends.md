@@ -1,6 +1,38 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-24
+最終更新: 2026-08-25
+
+---
+
+## [2026-08-25] 調査結果（デイリー・8:00の回）
+
+**本日の収穫は1件。Claudeのウェブ版とデスクトップアプリで、長い回答の表示（ストリーミング描画）が作り直された。**モデルの賢さではなく画面の描き方の改善で、**長文を出させる人ほど体感が変わる**。公式が数字（詰まる回数9分の1・最長の固まり4.5分の1・120Hzで120fps維持）を出しているため、実務に落として語れる。**本日この素材を下書き化してキューへ入れた**（消化先＝`queue.md`の`STREAM-01`）。
+
+### Claude Code / Anthropic
+
+- **【本日の主収穫・使う側の体感が変わる】Claudeのウェブ版とデスクトップアプリで、長い回答の表示が作り直された**（一次情報＝[@ClaudeDevs・日本時間 2026-08-25 6:51](https://x.com/ClaudeDevs/status/2092006814804214163)を**本日CCがブラウザで直接開いて本文を確認**）
+  - **原文（verbatim）**：`Long answers on Claude on web and desktop now stream ~4x smoother.` ／ `We rebuilt the streaming renderer to only touch what's still changing, so a long reply stalls 9x less on a slower laptop, its worst freeze is 4.5x shorter, and on a 120Hz MacBook it holds 120fps start to finish.`
+  - **数字の読み方**：`~4x smoother`＝**滑らかさが約4倍であって、速度が4倍ではない**。`stalls 9x less`＝途中で詰まる回数が9分の1、`worst freeze is 4.5x shorter`＝いちばん長い固まりの時間が4.5分の1。いずれも`on a slower laptop`（遅いノートPC）の条件付き
+  - ⚠️ **対象は`Claude on web and desktop`＝Claudeアプリ（チャット）のウェブ版とデスクトップアプリ。Claude Codeとは書かれていない。**「Claude Codeが速くなった」と書いたら誤り
+  - ⚠️ **公式のリリースノートには載っていない。**[Claude Apps リリースノート](https://support.claude.com/en/articles/12138966-release-notes)は**2026-08-06のまま**（本日確認）で、この改善のエントリは無い。**一次情報は@ClaudeDevsの投稿そのもの**として扱う
+  - **使う側の何が変わるか**：記事1本分のような長い回答を出させたとき、途中で表示が固まる・カクつくのが減る。**中身の進化ではなく表示側の改善**で、長文を書かせる人ほど効く
+  - **本日この素材を下書き化してキューへ入れた**（消化先＝`queue.md`の`STREAM-01`）
+- **MCPコネクタの企業管理認証が一般提供に**（[@ClaudeDevs・日本時間 2026-08-25 3時台](https://x.com/ClaudeDevs/status/2091953609185657251)）。原文（verbatim）：`Enterprise-managed auth for MCP connectors is now generally available.` Team・Enterpriseの管理者がIdPで認可を一元化し、利用者は個別のOAuthなしでツールに繋がる
+  - ⚠️ **X投稿には採らない**：対象がTeam・Enterpriseの管理者で、このメディアの読者（個人・中小企業のコンテンツ運用者）の手元では何も変わらない
+- **公式changelogは v2.1.241（2026-08-23）が最新のまま**（[公式changelog](https://code.claude.com/docs/en/changelog)を本日確認）。本文は`Bug fixes and reliability improvements`の1行のみで、**4日連続で中身が公表されていない**
+- **Anthropic Newsroom は 2026-08-14（透かしの記事）から新規なし**（[anthropic.com/news](https://www.anthropic.com/news)を本日確認・**11日連続**）
+- **Claude Platform リリースノートは 2026-08-20（Python SDK v1.0）が最新のまま**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日確認）
+- **Claude Apps リリースノートは 2026-08-06 のまま**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)・**19日連続で動きなし**）
+- **Claude Academy（8/24からデイリーの巡回先に追加）は数字に変化なし**（[academy.claude.com/products/code](https://academy.claude.com/products/code)を本日確認）。`Claude Code 101`は**12 lessons · 1 quiz · 1 hr**のままで、8/24のフル版の記録どおり
+  - ⚠️ **8/24の記録「日本語で表示される」は環境によって変わる。**本日この環境で開いたときはコース本文が英語表示だった（日付表記だけ`9月1日`のように日本語）。**「日本語のコースがある」と断定して書かない**
+
+### 障害（記録のみ・X投稿には採らない）
+
+- **2026-08-24〜25に障害が3件あった**（[status.claude.com](https://status.claude.com/)を本日確認）
+  - **モデルのエラー増加**：`From 9:50pm PT / 04:50 UTC through 00:36am PT / 07:36 UTC, users saw elevated errors`＝**日本時間 8/24 13:50〜16:36**。Claude Opus 5・Fable 5ほかが対象（[ITmedia AI+ 2026-08-24](https://www.itmedia.co.jp/aiplus/article/2608/24/2000000719/)も同じ時間帯で報道）
+  - **claude.aiのログインエラー**：日本時間 **8/25 01:02〜01:08** と **8/25 05:00〜05:08** の2回。どちらもClaude Codeのサブスク接続にも影響
+  - **手元の事実**：8/24の障害時間帯（13:50〜16:36）の中で、**14:00にこのリポジトリへコミットが通っている**（`docs: 3点セットの提示は3点だけに絞るルールを追記`）。ただし**この日エラーに当たったかどうかはユーザーに確認していない**
+  - ⚠️ **X投稿には採らない。**理由は日付ではなく**角度の重複**：2026-06-08の43番「6/2のClaude障害、実は全く気が付きませんでした」が**63ビュー**で、同じ枠組みの再演になる（`knowledge/x/published.md`）。出すとしたら別の角度が要る
 
 ---
 

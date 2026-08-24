@@ -4,6 +4,45 @@
 
 ---
 
+## [2026-08-24] 調査結果（定期リサーチ・12:00のフル版）
+
+**本日の最重要は、Anthropicが公式の学習サイト「Claude Academy」を出していたこと（2026-08-20公開）。日本語で、無料で、Claude Code・Coworkの入門コースがある。**
+**⚠️ この発見は「フル版はデイリーが見ていないチャネルを開く」というルール（`research/README.md` 2026-08-21）がそのまま効いた事例。**本日朝までのデイリー回は①側を6チャネル（changelog・@ClaudeDevs・Newsroom・Apps／Platformリリースノート・料金ページ）巡回して「4日間新しい発表なし」と閉じているが、**Claude Academyはそのどれにも載っていない**。Newsroomにも、Apps／Platformのリリースノートにも出ていない。**製品の変更でも事業のリリースでもない「学習リソースの公開」は、既存の巡回先の外に出る。**
+
+### Claude Academy（本日の主収穫・デイリーの巡回先の外にあった）
+
+- **【最重要】Anthropicの公式学習サイト「Claude Academy」が 2026-08-20 に公開された**（**本日CCがブラウザで [academy.claude.com](https://academy.claude.com/) を直接開いて確認**。公開日の出典は[gihyo.jp「Anthropic、AIの活用方法を学べる「Claude Academy」を公開」2026-08-20](https://gihyo.jp/article/2026/08/claude-academy)）
+  - **日本語で表示される。**トップの見出し（verbatim）：`Claude Academy へようこそ` ／ `AIを探求している方、Claude を使い始めたばかりの方、チームへの導入を検討している方など、すべての方のためのリソースです。`
+  - **製品別に5トラック**：Claude.ai ／ **Claude Cowork** ／ **Claude Code** ／ Claude Tag ／ Claude Platform。加えて **AI Fluency**（4Dフレームワーク：委任力・記述力・評価力・倫理的責任）
+  - **Claude Codeトラックの中身**（[academy.claude.com/products/code](https://academy.claude.com/products/code)を直接確認）：入口は **「Claude Code 101」＝12レッスン＋クイズ1・所要1時間**。ほかに**チュートリアル11件・コース6件**。ドキュメントへの導線（CLAUDE.mdファイル／MCPサーバー／フック／サブエージェント／.claudeディレクトリ／コンテキストウィンドウの仕組み）も同じページに並ぶ
+  - **サインインは任意**（ヘッダーに`サインイン`リンクはあるが、コース一覧・製品トラックは未ログインで閲覧できた）。gihyoは「コースやチュートリアルは無料で誰にでも公開」と記載
+  - ⚠️ **コース総数は二次情報で割れている**（gihyo 22件／英語メディアは20件・26件）。**総数は書かない。**書くなら本日確認できた「Claude Code 101＝12レッスン・1時間」のような**トラック単位の実数**を使う
+  - ⚠️ **Anthropic公式のアナウンス記事（Newsroom／ブログ）は本日時点で見つけられていない。**Newsroomは8/14の透かし記事から動いていない。**一次情報はサイト本体そのもの**として扱う
+  - **使う側の何が変わるか**：これまで非エンジニアがClaude Codeを覚える経路は、公式ドキュメントか有志の記事しかなかった。**そこに、公式・無料・日本語・1時間の入門コースができた。**「Claude Codeは難しそう」という手前で止まっている人の入口が1段下がる
+  - **このメディアへの意味**：no.14（Claude Codeとは何か・417表示でサイト1位）・no.24（初心者が最初に理解すべき用語）と**同じ読者層が行く先が公式にできた**。競合ではなく、**「公式講座を1時間受けたあと、実際に業務で回すとどうなるか」がこのメディアの持ち場**という線引きがはっきりする
+
+- **【TOP10 #10に直結】Coworkトラックに「ユースケース72件」が部署別で公開されている**（[academy.claude.com/products/cowork](https://academy.claude.com/products/cowork)を本日直接確認）
+  - **部署タブ**（verbatim）：`一般 / マーケティング / 製品 / エンジニアリング / 人事 / 財務 / オペレーション / データ / デザイン / 法務 / 営業 / リサーチ / 教育 / 個人`
+  - 入口コースは**「Claude Cowork入門」＝14レッスン＋クイズ1・所要2.5時間**。ほかに**ユースケース72件・チュートリアル17件・コース1件**
+  - マーケティング枠の具体例（verbatim）：`キャンペーンブリーフを作成する`（10分）／`ガイドラインに対してビジュアルアセットのフォルダを監査する`（15分・Opus 4.7が画像を**フル解像度で読み**、ブランドに合わない色・古いロゴ・不足している法的文言を見つける）
+  - **no.58「Claude Coworkの使い方｜実際の9割は開発以外だった」の裏付けが、提供元の実データ（9割が開発以外）から公式の実例72件に増えた。**no.58は公開データの読み方で体験ゼロ、TOP10 #10は「実際に動かした記録」。**その間を埋める材料として、公式が想定している使い道の一覧が使える**
+  - ⚠️ **72件は「Anthropicが想定している用途」であって、実測でも実績でもない。**記事に書くなら「公式が挙げている用途」と明示する
+
+### Claude Code本体（デイリーの記録の再確認）
+
+- **公式changelogは v2.1.241（2026-08-23）が最新のまま**（[公式changelog](https://code.claude.com/docs/en/changelog)を本日フル版でも確認）。本文は`Bug fixes and reliability improvements`の1行のみで、**3日連続で中身が公表されていない**。デイリー回の判断（X投稿に採らない）を維持する
+- **Claude Platform リリースノートは 2026-08-20（Python SDK v1.0）が最新のまま**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日フル版で直接確認）。**8/19のGA8項目以降、新規なし**
+- **Claude Apps リリースノートは 2026-08-06 のまま**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)・**18日連続で動きなし**）
+- **Anthropic Newsroom は 2026-08-14（透かしの記事）から新規なし**（[anthropic.com/news](https://www.anthropic.com/news)を本日確認・**10日連続**）
+  - ⚠️ **にもかかわらずClaude Academyは8/20に出ている。**「Newsroomが止まっている＝Anthropicが何も出していない」ではない。**巡回先の穴として記録する**
+- **Mythos 5 が Claude Security の脆弱性スキャンに開放された（2026-08-21・Enterpriseプラン向け）**（[ITmedia AI+ 2026-08-22](https://www.itmedia.co.jp/aiplus/article/2608/22/2000000697/)）。⚠️ **X投稿には採らない**：Enterprise限定でこのメディアの読者の手元では何も変わらない
+
+### 運用上の学び（`research/README.md`へ反映する）
+
+**①の巡回先に「Claude Academy（academy.claude.com）」を足す。**理由は上記のとおり、**学習リソースの公開はリリースノートにもNewsroomにも載らない**ため。8/21のフル版が②について出した結論（「リリースノートは製品の変更しか載せない」）が、**①でも同じ形で起きた**。
+
+---
+
 ## [2026-08-21] 調査結果（定期リサーチ・12:00の回）
 
 **本日朝のデイリー回が拾った内容（Concise出力スタイル・v2.1.238・Platform GA）は一次情報で再確認し、重複しない差分だけを以下に足す。**

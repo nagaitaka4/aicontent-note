@@ -4,6 +4,36 @@
 
 ---
 
+## [2026-08-24] 調査結果（定期リサーチ・12:00のフル版）
+
+**②は本日、新しい収穫がなかった。**朝のデイリー回がGPT-5.6 Solの値下げを拾った直後で、その先に差分がない。**フル版の役目（デイリーが見ていないチャネルを開く）としてOpenAIのニュース面・モデルリリースノート・Google Workspace側を開いたが、いずれも既記録の範囲だった。**代わりに、**8月末にChatGPTから2つ消える件の「束」としての整理**を下に残す。
+
+### ChatGPT（OpenAI）
+
+- **OpenAIニュース面に新規なし**（[openai.com/news](https://openai.com/news/)を**本日CCがブラウザで直接確認**。WebFetchは403のまま）。最新は**2026-08-20「AI Futures のご紹介」**で、8/21以降の掲載はゼロ。8/19の`フロンティアモデルへのゼロデータ保持の提供`は企業向けで採らない
+- **ChatGPT リリースノートに新規なし**（本日ブラウザで直接確認。ページ表示は`Updated: 一昨日`で最新は**8/21付のまま**）。8/23のデイリー回が記録した5件から進んでいない
+- **【束として整理】8月末にChatGPTの中から2つ消える**。どちらも新情報ではないが、**期限が5日以内に並んだ**ので判断材料としてここにまとめる
+  | 消えるもの | 期限 | 読者がやること | 一次情報 |
+  |---|---|---|---|
+  | **OpenAI o3**（ChatGPTのみ・APIは対象外） | **2026-08-26** | なし（レガシーモデルで、モデル設定を開かないと出てこない） | [Model Release Notes・2026-05-28付エントリ](https://help.openai.com/en/articles/9624314-model-release-notes)を本日ブラウザで直接確認 |
+  | **公式「DALL·E」GPT** | **2026-08-30** | **残したい画像を期限までにダウンロードする** | [ChatGPT — Release Notes・2026-07-31付エントリ](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)（8/24のデイリー回が原文確認済み） |
+  - **o3の原文（verbatim・本日フル版で再確認）**：`OpenAI o3 will be retired from ChatGPT on August 26, 2026 following a 90-day sunset period` ／ `These models are currently available to paid users only via model settings.` ／ `These changes apply to ChatGPT only; there are no changes to the API.`
+  - ⚠️ **同じ告知のGPT-4.5の日付が、OpenAIの2ページ間でずれている。**8/22のデイリー回が[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)で確認した原文は`June 26`、**本日フル版が[Model Release Notes](https://help.openai.com/en/articles/9624314-model-release-notes)で確認した原文は`June 27`**。**どちらもOpenAI公式で、突き合わせても正解が決まらない。**GPT-4.5の日付は記事にもX投稿にも使わない（6月に終わって済んだ話で、今回の論点はo3の8/26だけ）
+  - **X投稿の判定**：**o3単独では採らない**（デイリー回の判断を維持）。**読者が手を動かす必要があるのはDALL·E側だけ**なので、束にするなら「2つ消える」ではなく**「1つは何もしなくていい／もう1つは期限までにダウンロードしないと取り出せない」という線引き**で書く。線引きこそが読者に効く（8/24のデイリー回がSOL-01で使ったのと同じ型）
+
+### Gemini（Google）
+
+- **APIチェンジログは新規エントリなし**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日確認。`Last updated`は**2026-08-13 UTC**のまま）。**13日連続で動きなし**
+- **米国の大学生向けにGoogle AI Proの12ヶ月無料が再開、140以上の市場の学生にはAI Plusの1年無料**（2026-08-19）。⚠️ **X投稿には採らない**：対象が学生で、このメディアの読者の仕事は変わらない
+- **「Ask Gemini in Google Chat」は 2026-08-26 開始**（8/24のデイリー回が記録済み）。⚠️採らない（Workspace管理者・Chat中心の読者を想定しにくい）
+
+### 国産AIライティングツール
+
+- **新機能・料金変更は確認できず（13日連続で同じ状態）**。検索でヒットするのは日付のない比較記事・ランキング記事のみ
+- ⚠️ **13日ゼロが続いている。**巡回のやり方（キーワード検索のみ）が原因の可能性がある。**次回以降、Catchy・SAKUBUN・TACT SEO・EmmaToolsの公式お知らせページを直接開く形に変える**（②で2回起きた「検索では出ないが公式の面には出ている」と同じ構造の疑いがあるため）
+
+---
+
 ## [2026-08-21] 調査結果（定期リサーチ・12:00の回）
 
 **本日の最大の収穫は、ChatGPTの広告が8/24から欧州31市場に入ること。OpenAI公式が8/18に発表していたが、リリースノート（製品更新）には載らないため、デイリー回の巡回先（リリースノート・changelog）では拾えなかった。**

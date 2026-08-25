@@ -1,6 +1,30 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-25
+最終更新: 2026-08-26
+
+---
+
+## [2026-08-26] 調査結果（デイリー・8:00の回）
+
+**本日の主収穫は1件。Claude Code v2.1.246で、`/permissions`に「Auto mode」タブが増え、autoモードが自動承認するときの分類ルールを画面で見て編集できるようになった。**本日04:17（JST）公開で、旬としてはいちばん新しい。**自分の設定は`defaultMode: auto`＋許可リスト411件（グローバル80／プロジェクト331）で、まさに使っている機能そのもの**のため、実務に落として語れる。**本日この素材を下書き化してキューへ入れた**（消化先＝`queue.md`の`AUTOTAB-01`）。
+
+### Claude Code / Anthropic
+
+- **【本日の主収穫・使う側の何かが変わる】Claude Code v2.1.246 で `/permissions` に「Auto mode」タブが追加された**（一次情報＝[anthropics/claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)を**本日CCが直接取得して確認**）
+  - **原文（verbatim）**：`Added Auto mode tab to /permissions for viewing and editing auto mode classifier rules`
+  - **公開時刻**：npmレジストリの`time`フィールドで確認。`2.1.246` は **2026-08-25T19:17:34Z＝日本時間 2026-08-26 04:17**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）
+  - **使う側の何が変わるか**：autoモードは「安全そうな操作は聞かずに進める」モード。**これまでその判断（分類）ルールは画面から見えなかった。**今回のタブで**見る・編集するの両方ができる**ようになった。自分で書く許可リスト（`settings.json`の`permissions.allow`）とは別レイヤーの話
+  - ⚠️ **CHANGELOGの記述は上の1行だけ。**タブの中身（ルールの粒度・書式・既定でいくつ入っているか）は書かれていない。**「◯種類のルールが見える」等は書かない**（実機で開くまで不明）
+  - ⚠️ **公式ドキュメント側の追記は未確認。**一次情報はCHANGELOGの1行
+- **v2.1.243（日本時間 2026-08-25 08:10 公開）も未記録だった**（前回のデイリー回が8:00に走った10分後の公開）。使う側に効くものだけ抜き出す
+  - `Improved native install download size: binary now zstd-compressed (~75 MB vs 340 MB)`＝**ネイティブ版の配布サイズが340MB→約75MB**
+  - `Fixed /resume only listing 50 most recent sessions`＝**`/resume`が直近50件しか出ない不具合の修正**
+  - `Added promptCacheTtl and subagentPromptCacheTtl settings for cache management`＝プロンプトキャッシュのTTLを設定で持てるようになった
+  - `Added keyless sign-in under /login via Anthropic Console account`＝Consoleアカウントでのキーなしサインイン
+  - `Updated /model picker and claude-api skill showing Sonnet 5's $2/$10 list price`＝**8/21のフル版が記録済みのSonnet 5価格が、`/model`の表示側にも反映された**（新しい値下げではない）
+- **バージョンの公開時刻（本日npmレジストリで実測）**：`2.1.242`＝8/25 04:16／`2.1.243`＝8/25 08:10／`2.1.245`＝8/25 13:45／`2.1.246`＝**8/26 04:17**（JST）。**`2.1.244`は存在しない**
+  - ⚠️ **npmの`dist-tags`は`latest: 2.1.246`／`stable: 2.1.231`。**`stable`タグは15バージョン分遅れている。**「最新版」と「安定版」は別物**で、記事・投稿で「最新版が◯◯になった」と書くときは`latest`の話だと明示する
+- **料金の差分なし**（[claude.com/pricing](https://claude.com/pricing)を本日確認）。Free $0／Pro **$17（年払い）・$20（月払い）**／Max $100〜（5x・20x）／Team $20・$25（標準）＋$100・$125（プレミアム）／Enterprise カスタム。**8/24に常設化した料金ページ巡回の2日目。変更なし**
 
 ---
 

@@ -1,6 +1,39 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-25
+最終更新: 2026-08-26
+
+---
+
+## [2026-08-26] 調査結果（デイリー・8:00の回）
+
+**②は本日、収穫が1件。ChatGPTのリリースノートに8/25付エントリが2件入った**（前回8/25回の時点では8/21が最新だった）。**うち「スケジュールタスク」の変更は使える範囲が変わる話**で、採用基準は満たす。ただし**直近の投稿がChatGPT題材で3本続いている**ため、本日は`ideas.md`に置くだけにして下書き化は見送った（判断の材料は下に書く）。**あわせて、前回のGemini記録に誤りがあったので訂正する。**
+
+### ChatGPT（OpenAI）
+
+- **【本日の収穫】8/25付エントリ2件が新規に入った**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**。WebFetchは403のまま）
+  - **① スケジュールタスクがwebhookで起動できるようになり、共有もできるようになった**
+    - **原文（verbatim）**：`Scheduled tasks in ChatGPT Work can use webhooks to respond when something changes in a supported app` ／ `Supported webhooks include new Gmail messages, Slack channel messages, and GitHub pull request activity.`
+    - **プラン条件（原文）**：`Plus and Pro users can ask Work on web, iOS, and Android to respond when...` ／ `Free users can create up to three active scheduled tasks. Tasks can run once or recur no more than once per day using flexible scheduling windows. Free and Go users cannot create webhook-triggered tasks.` ／ 共有は `Free, Go, Plus, and Pro users can share scheduled tasks.`
+    - ⚠️ **「無料でも使える」と単純に書かない。**無料は**アクティブ3件まで・1日1回まで・webhookトリガーは不可**。webhookはPlus/Proのみ。Slackは**監視する各チャンネルに`@ChatGPT`を追加する必要がある**（原文：`Add @ChatGPT to each monitored Slack channel.`）
+    - **使う側の何が変わるか**：予約実行が「時刻で回す」だけでなく「**何かが起きたら動く**」に広がった。**自分は`ai-trends-daily`を毎朝8:00の時刻起動で回している**ので、同じ設計思想の話として実務に落とせる
+  - **② ChatGPT Workのブラウザが、ログインの要るサイトでも作業を続けられるようになった**
+    - **原文（verbatim）**：`ChatGPT Work's browser on web and mobile can also help you get tasks done on some websites that require you to sign in` ／ `Authentication in ChatGPT Work's browser is available for Plus and Pro plans.`
+    - ⚠️ **採らない。**ログイン情報を渡す前提の機能で、**このアカウントの読者に勧められる話ではない**（当リポジトリの運用ルールでも認証情報の入力は行わない）。記録だけで止める
+- **料金の差分なし**（[chatgpt.com/pricing](https://openai.com/chatgpt/pricing/)の日本語表示を本日ブラウザで確認）。無料 ¥0／**Go ¥1,400**／**Plus ¥3,000**／**Pro ¥16,800〜**。8/24に常設化した料金ページ巡回の2日目、変更なし
+- **既報の期限：本日8/26にOpenAI o3がChatGPTから消える**（8/24フル版・8/25デイリーが記録済み。**判定は「採らない」のまま変えない**）
+
+### Gemini（Google）
+
+- **⚠️ 前回（8/25）の記録を訂正する。**「日付つきエントリの最新は2026-07-21のまま」と書いたが**誤り**。正しくは**2026-08-13に`Gemini 3.7 Flash generally available (GA)`のエントリがある**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日再取得。[Google公式ブログ](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/)でも同日発表を確認）
+  - **原因**：前回はページの取得結果だけで「差分なし」と判定し、**日付を1件ずつ突き合わせていなかった**。**日付つきエントリは必ず最新3件を書き出してから差分を判定する**（次回以降）
+  - **X投稿には採らない**：①**新モデルのGA報告であって、使う側の何かが変わる話ではない**（採用基準の「採らない」側）②発表から13日経っており旬でもない
+  - 記録として：導入価格は**2026年末まで $0.75/1M入力・$3.75/1M出力**（前モデルの半額）。コンテキスト1,048,576トークン／最大出力65,536トークン
+- **APIチェンジログにそれ以降の新規エントリはなし**（最新は上記の2026-08-13）
+
+### 国産AIライティングツール
+
+- **新機能・料金変更は確認できず（15日連続で同じ状態）**
+- 8/25に決めた方針（検索ではなく各社公式サイトを直接開く）は**次回のフル版（8/28金）でまとめて実施する**。デイリー回で毎日巡回するコストに見合わないため
 
 ---
 

@@ -355,6 +355,31 @@ def main(path):
     if not report("4行(160字)を超える段落がない", not long_paras, f"{long_paras}"):
         failures += 1
 
+    # --- 1段落に文を並べすぎていないか（2026-08-26追加）---
+    # 一文60字・段落160字をすべて満たしていても、同じ形の文を並べると読みにくい。
+    # no.62の初稿で「Aは〜でした。Bは〜です。Cは〜でした。」と3つの概念を地の文で並べ、
+    # 115字・各文60字以内で全チェックを通過したまま「長い」と指摘された。
+    # 4文以上の段落は、箇条書き・表に移すか文を削れないかを目視で見る。
+    print("\n--- 1段落の文数チェック（3文まで・4文以上は要確認） ---")
+    many_sent = []
+    for para in paragraphs:
+        para = para.strip()
+        if not para or para in BOILERPLATE_EXACT:
+            continue
+        if re.match(r"^(#|---|\||＼|【|・|-|\d+\. |\[お問い合わせ)", para):
+            continue
+        plain = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", para)
+        plain = re.sub(r"<br>|\s", "", plain)
+        n = plain.count("。")
+        if n >= 4:
+            many_sent.append((n, plain[:28] + "…"))
+    if many_sent:
+        print(f"[要確認] 4文以上の段落が{len(many_sent)}件（箇条書き・表への移動か、削れる文がないか見る）")
+        for n, t in many_sent:
+            print(f"   {n}文: {t}")
+    else:
+        print("[OK] 4文以上の段落はない")
+
     # --- 文字だけの段落が続いていないか（2026-08-13追加）---
     # 1文が短くても、同じ大きさの段落が並び続けると「文字の壁」になる。
     # プロースの「H2内の段落が4つ以上になったらH3を1〜2個」を機械化したもの。

@@ -28,6 +28,7 @@ import os
 import re
 import sys
 import json
+import unicodedata
 import urllib.request
 
 SITE = "https://aicontent-note.com"
@@ -166,6 +167,48 @@ def post_link(title, url):
     )
 
 
+COPY_MARK = "=" * 26 + " ここから下を全文コピー " + "=" * 26
+
+
+def frontmatter(md):
+    """MDのfrontmatterを辞書で返す（値にコロンが含まれても壊れないよう1回だけ分割する）。"""
+    if not md.startswith("---"):
+        return {}
+    raw = md.split("---", 2)[1]
+    fm = {}
+    for line in raw.split("\n"):
+        if ":" in line and not line.strip().startswith("#"):
+            k, v = line.split(":", 1)
+            fm[k.strip()] = v.strip()
+    return fm
+
+
+def info_header(fm):
+    """WPの入力欄に写す情報。**この部分はWPに貼らない**（区切り線から下だけを貼る）。"""
+    title = fm.get("title", "")
+    desc = fm.get("description", "")
+    rows = [
+        ("タイトル", "%s（%d字）" % (title, len(title))),
+        ("スラッグ", fm.get("slug", "")),
+        ("URL", fm.get("url", "")),
+        ("説明文（SEO）", "%s（%d字）" % (desc, len(desc))),
+        ("カテゴリー", fm.get("category", "")),
+        ("タグ", fm.get("tags", "")),
+        ("アイキャッチ", fm.get("eyecatch", "")),
+        ("アイキャッチalt", fm.get("eyecatch_alt", "")),
+        ("記事no.", "%s（%s %s）" % (fm.get("no", ""), fm.get("series", "-"), fm.get("series_no", ""))),
+    ]
+    # 全角・半角が混ざるので、表示幅（East Asian Width）でそろえる
+    def width(t):
+        return sum(2 if unicodedata.east_asian_width(ch) in "WF" else 1 for ch in t)
+
+    w = max(width(k) for k, _ in rows)
+    lines = ["【WPの入力欄に写す情報】※ここはWPの本文に貼らない", ""]
+    lines += ["  %s%s : %s" % (k, " " * (w - width(k)), v) for k, v in rows]
+    lines += ["", COPY_MARK, ""]
+    return "\n".join(lines)
+
+
 def convert(md):
     body = md.split("---", 2)[2] if md.startswith("---") else md
     chunks = re.split(r"\n\s*\n", body)
@@ -260,8 +303,9 @@ def main(path):
     os.makedirs(OUT_DIR, exist_ok=True)
     dest = os.path.join(OUT_DIR, slug + ".wp.txt")
     wp = convert(md)
+    fm = frontmatter(md)
     with open(dest, "w", encoding="utf-8") as f:
-        f.write(wp)
+        f.write(info_header(fm) + wp)
     n = {k: wp.count('{"className":"%s"}' % v) for k, v in BLOCKS.items()
          if '{"className":"%s"}' % v in wp}
     print("出力: %s" % dest)
@@ -275,7 +319,8 @@ def main(path):
             n or "なし",
         )
     )
-    print("\nWPの記事編集画面 →「⋮」→「コードエディター」に全文を貼り付ける。")
+    print("\n冒頭に入稿情報（タイトル・説明文・カテゴリー・タグ・アイキャッチ）を付けた。")
+    print("『ここから下を全文コピー』の線より下だけを、WPの「コードエディター」に貼り付ける。")
 
 
 if __name__ == "__main__":

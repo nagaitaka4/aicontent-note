@@ -184,27 +184,27 @@ def frontmatter(md):
 
 
 def info_header(fm):
-    """WPの入力欄に写す情報。**この部分はWPに貼らない**（区切り線から下だけを貼る）。"""
+    """WPの入力欄に写す情報。値を独立した行にして、そのまま選択・コピーできる形にする。
+
+    **この部分はWPに貼らない**（COPY_MARKの線から下だけを貼る）。
+    ラベル側に文字数を出し、値の行には余計な文字を混ぜない（2026-08-26）。
+    """
     title = fm.get("title", "")
     desc = fm.get("description", "")
     rows = [
-        ("タイトル", "%s（%d字）" % (title, len(title))),
+        ("タイトル（%d字）" % len(title), title),
         ("スラッグ", fm.get("slug", "")),
         ("URL", fm.get("url", "")),
-        ("説明文（SEO）", "%s（%d字）" % (desc, len(desc))),
+        ("説明文・SEO（%d字）" % len(desc), desc),
         ("カテゴリー", fm.get("category", "")),
         ("タグ", fm.get("tags", "")),
         ("アイキャッチ", fm.get("eyecatch", "")),
         ("アイキャッチalt", fm.get("eyecatch_alt", "")),
         ("記事no.", "%s（%s %s）" % (fm.get("no", ""), fm.get("series", "-"), fm.get("series_no", ""))),
     ]
-    # 全角・半角が混ざるので、表示幅（East Asian Width）でそろえる
-    def width(t):
-        return sum(2 if unicodedata.east_asian_width(ch) in "WF" else 1 for ch in t)
-
-    w = max(width(k) for k, _ in rows)
-    lines = ["【WPの入力欄に写す情報】※ここはWPの本文に貼らない", ""]
-    lines += ["  %s%s : %s" % (k, " " * (w - width(k)), v) for k, v in rows]
+    lines = ["【WPの入力欄に写す情報】※ここはWPの本文に貼らない"]
+    for label, value in rows:
+        lines += ["", "■ " + label, value]
     lines += ["", COPY_MARK, ""]
     return "\n".join(lines)
 
@@ -319,8 +319,8 @@ def main(path):
             n or "なし",
         )
     )
-    print("\n冒頭に入稿情報（タイトル・説明文・カテゴリー・タグ・アイキャッチ）を付けた。")
-    print("『ここから下を全文コピー』の線より下だけを、WPの「コードエディター」に貼り付ける。")
+    print("\n『ここから下を全文コピー』の線より下だけを、WPの「コードエディター」に貼り付ける。")
+    print("\n" + info_header(fm).split(COPY_MARK)[0].rstrip())
 
 
 if __name__ == "__main__":

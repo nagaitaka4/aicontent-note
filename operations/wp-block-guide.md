@@ -54,6 +54,20 @@ frontmatterから転記されている。**これも段落ブロックなので�
 **変換しないもの**（記事ごとに人が判断して付ける装飾）：リード1文目のマーカー、
 `is-style-stitch` などの段落装飾、画像・キャプションボックス。
 
+### 強調の記法（2026-08-26追加）
+
+| MD記法 | 変換後 | 使いどころ |
+|---|---|---|
+| `[text](url)` | `<a href="url"><strong>text</strong></a>` | リンクは**自動で太字**。`**`を付けない |
+| `**text**` | `<strong>text</strong>` | 重要な部分 |
+| `==text==` | `<strong><span class="swl-marker mark_yellow">text</span></strong>` | 最重要。1記事3〜5箇所まで |
+
+実測（公開20本）：アンカー61件中53件が太字（87%）／マーカーは97件すべて`swl-marker mark_yellow`で、うち73件（75%）が`<strong>`と併用。1記事あたり1〜13件・中央値4件。
+
+`article-self-check.py`は字数を数えるとき`**`と`==`の記号を外す（`strip_decoration`）。
+
+---
+
 ### MDのブロック名とSWELLクラスの対応（2026-08-26に入稿済み61本を実測）
 
 | MD記法 | SWELLクラス | 実測 |

@@ -17,7 +17,6 @@ WP上で作り直しており、区切り線（wp:separator）がno.59・no.60�
 
 ## 変換しないもの（入稿後に人が付ける装飾）
 
-- リード1文目のマーカー（`swl-marker mark_yellow`）
 - 段落単位の装飾（`is-style-stitch` / `is-style-crease` / `is-style-kakko_box` 等）
 - 画像・キャプションボックス
 
@@ -77,9 +76,23 @@ CTA_BUTTON = (
 )
 
 
+# 最重要の一節に付ける装飾。実測97件すべてがこの1種類で、うち73件（75%）が<strong>と併用。
+MARKER = '<strong><span class="swl-marker mark_yellow">%s</span></strong>'
+
+
 def inline(text):
-    """MDのインライン記法をHTMLに変換する。"""
-    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', text)
+    """MDのインライン記法をHTMLに変換する。
+
+    - `[text](url)` … リンクは**アンカーテキストを太字にする**（実測61件中53件＝87%がstrong付き）
+    - `==text==`   … 最重要。太字＋黄色マーカー
+    - `**text**`   … 重要。太字
+    """
+    # 先に「太字にしたリンク」をまとめて処理する（strongが二重に入るのを避ける）
+    text = re.sub(
+        r"\*\*\[([^\]]+)\]\(([^)]+)\)\*\*", r'<a href="\2"><strong>\1</strong></a>', text
+    )
+    text = re.sub(r"==([^=]+)==", MARKER.replace("%s", r"\1"), text)
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2"><strong>\1</strong></a>', text)
     text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", text)
     return text.strip()
 

@@ -47,6 +47,16 @@ BOILERPLATE_EXACT = {
 }
 
 
+def strip_decoration(text):
+    """字数を数えるとき、強調の記法そのものは本文に数えない（2026-08-26追加）。
+
+    `==text==`（最重要・太字＋黄色マーカー）を導入したので、記法の記号が
+    一文の長さ・段落の長さに乗らないようにする。`**` も同じ扱いにする。
+    """
+    text = re.sub(r"==([^=]+)==", r"\1", text)
+    return re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+
+
 def load(path):
     with open(path, encoding="utf-8") as f:
         text = f.read()
@@ -213,7 +223,9 @@ def main(path):
     long_blocks = []
     for m in block_matches:
         block_name, block_body = m.group(1), m.group(2)
-        block_body_no_links = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", block_body)
+        block_body_no_links = strip_decoration(
+            re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", block_body)
+        )
         block_chars = len(re.sub(r"\s|<br>", "", block_body_no_links))
         if block_chars > T["block_chars_max"]:
             long_blocks.append((block_name, block_chars))
@@ -276,7 +288,9 @@ def main(path):
         # 内部リンクのアンカーテキスト内の「。」は文区切りではないため除外してからカウント
         lead_for_count = re.sub(r"\[[^\]]*\]", lambda m: m.group(0).replace("。", ""), lead)
         sentence_count = lead_for_count.count("。")
-        lead_chars = len(re.sub(r"\s|<br>", "", re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", lead)))
+        lead_chars = len(
+            re.sub(r"\s|<br>", "", strip_decoration(re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", lead)))
+        )
         reasons = []
         if sentence_count > T["h2_lead_sents_max"]:
             reasons.append(f"{T['h2_lead_sents_max']}文超")
@@ -306,7 +320,7 @@ def main(path):
         if re.match(r"^(#|---|\||＼|!\[|\d+\. |\[お問い合わせ)", line):
             continue
         intro_lines.append(re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line))
-    intro_plain = re.sub(r"\s|<br>", "", "".join(intro_lines))
+    intro_plain = re.sub(r"\s|<br>", "", strip_decoration("".join(intro_lines)))
     intro_for_count = re.sub(r"\[[^\]]*\]", lambda m: m.group(0).replace("。", ""), intro_plain)
     intro_sents = intro_for_count.count("。")
     first_sent = ""
@@ -348,7 +362,7 @@ def main(path):
             continue
         if re.match(r"^(#|---|\||＼|【|・|-|\d+\. |\[お問い合わせ)", p):
             continue
-        plain = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", p)
+        plain = strip_decoration(re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", p))
         plain = re.sub(r"<br>|\s", "", plain)
         if len(plain) > T["paragraph_max"]:
             long_paras.append((len(plain), p[:30] + "…"))
@@ -417,7 +431,9 @@ def main(path):
     # 上限は60字。50字超の割合は参考値として出す（サイト上位2本は2.1%・6.6%）。
     # ※長い文は「削る」のではなく「分ける」で直す（原則2：数値のために内容を削らない）
     print("\n--- 一文の長さチェック（60字上限） ---")
-    sent_src = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", body_for_para_check)
+    sent_src = strip_decoration(
+        re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", body_for_para_check)
+    )
     long_sents = []
     all_sents = []
     for line in sent_src.split("\n"):

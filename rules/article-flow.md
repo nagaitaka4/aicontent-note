@@ -107,6 +107,8 @@
 
 ## 8. 公開時（「入稿しました」の報告で自動実行・確認不要）
 
+**入稿前**：`python3 operations/md-to-wp.py articles/<slug>.md` を実行し、出力を「コードエディター」に貼り付ける（手でブロックを作らない・`operations/wp-block-guide.md`）
+
 1. MD：`status: published`／`date:`記入
 2. `operations/article-md-workflow.md`に追記
 3. `operations/article-backlog.md`：`[x]`＋次回確定マーク移動

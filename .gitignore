@@ -143,3 +143,6 @@ security/
 
 # Claude Code worktrees
 .claude/worktrees/
+
+# WP入稿用の変換出力（md-to-wp.pyが生成・一時ファイル）
+operations/wp-output/

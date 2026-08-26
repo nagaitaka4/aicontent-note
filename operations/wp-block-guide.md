@@ -29,6 +29,51 @@ MDファイル上では`>`（Markdown引用記法）を使わず、`【ブロッ
 
 ---
 
+## 入稿は変換スクリプトで行う（2026-08-26新設・手作業は廃止）
+
+```
+python3 operations/md-to-wp.py articles/<slug>.md
+```
+
+出力された `operations/wp-output/<slug>.wp.txt` を、WPの記事編集画面 → 右上「⋮」→
+**「コードエディター」**に全文貼り付ける（ビジュアルエディタに貼るとブロックにならない）。
+
+これで次が自動で入る。**手で1つずつブロックを作る作業はしない。**
+
+- 【ブロック名】→ SWELLのスタイル付き段落
+- 区切り線（各H2直前・CTA直前・記事末尾＝合計7本前後）
+- 表・H2・H3・内部リンク・箇条書きの装飾
+- CTAボタン（`loos/button`）・関連記事（`loos/post-link`・記事IDは公開APIで自動取得）
+- 2文以上の段落の句点改行（`<br>`）
+
+**変換しないもの**（記事ごとに人が判断して付ける装飾）：リード1文目のマーカー、
+`is-style-stitch` などの段落装飾、画像・キャプションボックス。
+
+### MDのブロック名とSWELLクラスの対応（2026-08-26に入稿済み61本を実測）
+
+| MD記法 | SWELLクラス | 実測 |
+|---|---|---|
+| 【ポイント】 | `is-style-big_icon_point` | ○ |
+| 【チェック】 | `is-style-big_icon_check` | ○ |
+| 【バツ印】 | `is-style-big_icon_batsu` | ○ |
+| 【アラート】 | `is-style-big_icon_caution` | ○ |
+| 【はてな】 | `is-style-big_icon_hatena` | ○ |
+| 【メモ】 | `is-style-big_icon_memo` | ○ |
+| 【グッド】 | `is-style-icon_good` | ○ |
+| 【インフォ】 | `is-style-icon_info` | ○ |
+| 【アナウンス】 | `is-style-icon_announce` | ○ |
+| 【バッド】 | `is-style-icon_bad` | 未実測（初回は表示確認） |
+| 【ペン】 | `is-style-icon_pen` | 未実測（初回は表示確認） |
+| 【本】 | `is-style-icon_book` | 未実測（初回は表示確認） |
+
+**ブロック内の`<strong>`は付けない**（実測では記事ごとにばらついていた。手作業だったためで、
+意図的な使い分けではない。スクリプトで素に統一した）。
+
+**`・`箇条書きの装飾は `has-border -border03 is-style-bg_grid`**（実測118件中93件がbg_grid系・
+最多65件がこの組み合わせ）。
+
+---
+
 ## セクション区切り線（2026-08-20確定・省略禁止）
 
 WP入稿時、**区切り線ブロック（`wp:separator`）を次の3箇所に入れる**。

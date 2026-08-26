@@ -167,7 +167,20 @@ def post_link(title, url):
     )
 
 
-COPY_MARK = "=" * 26 + " ここから下を全文コピー " + "=" * 26
+def info_rows(fm):
+    title = fm.get("title", "")
+    desc = fm.get("description", "")
+    return [
+        ("タイトル（%d字）" % len(title), title),
+        ("スラッグ", fm.get("slug", "")),
+        ("URL", fm.get("url", "")),
+        ("説明文・SEO（%d字）" % len(desc), desc),
+        ("カテゴリー", fm.get("category", "")),
+        ("タグ", fm.get("tags", "")),
+        ("アイキャッチ", fm.get("eyecatch", "")),
+        ("アイキャッチalt", fm.get("eyecatch_alt", "")),
+        ("記事no.", "%s（%s %s）" % (fm.get("no", ""), fm.get("series", "-"), fm.get("series_no", ""))),
+    ]
 
 
 def frontmatter(md):
@@ -183,30 +196,31 @@ def frontmatter(md):
     return fm
 
 
-def info_header(fm):
-    """WPの入力欄に写す情報。値を独立した行にして、そのまま選択・コピーできる形にする。
+def esc(t):
+    return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-    **この部分はWPに貼らない**（COPY_MARKの線から下だけを貼る）。
-    ラベル側に文字数を出し、値の行には余計な文字を混ぜない（2026-08-26）。
+
+def info_block(fm):
+    """WPの入力欄に写す情報を、**編集できる段落ブロック**として先頭に置く。
+
+    2026-08-26：最初はプレーンテキストで出していたが、`<!-- wp:... -->` で囲まれていない
+    生テキストをWPが「クラシックブロック」として扱うため、貼り付けた後に編集も削除もできなかった。
+    段落ブロックにすれば、他のブロックと同じように扱える（各欄に写したらブロックごと削除する）。
     """
-    title = fm.get("title", "")
-    desc = fm.get("description", "")
-    rows = [
-        ("タイトル（%d字）" % len(title), title),
-        ("スラッグ", fm.get("slug", "")),
-        ("URL", fm.get("url", "")),
-        ("説明文・SEO（%d字）" % len(desc), desc),
-        ("カテゴリー", fm.get("category", "")),
-        ("タグ", fm.get("tags", "")),
-        ("アイキャッチ", fm.get("eyecatch", "")),
-        ("アイキャッチalt", fm.get("eyecatch_alt", "")),
-        ("記事no.", "%s（%s %s）" % (fm.get("no", ""), fm.get("series", "-"), fm.get("series_no", ""))),
-    ]
-    lines = ["【WPの入力欄に写す情報】※ここはWPの本文に貼らない"]
-    for label, value in rows:
-        lines += ["", "■ " + label, value]
-    lines += ["", COPY_MARK, ""]
-    return "\n".join(lines)
+    lines = ["【WPの入力欄に写す情報】※各欄に写したら、このブロックを削除する", ""]
+    for label, value in info_rows(fm):
+        lines += ["■ " + esc(label), esc(value), ""]
+    return "<!-- wp:paragraph -->\n<p>%s</p>\n<!-- /wp:paragraph -->" % "<br>".join(
+        lines
+    ).rstrip("<br>")
+
+
+def info_text(fm):
+    """ターミナル表示用（チャットからそのままコピーできる形）。"""
+    out = ["【WPの入力欄に写す情報】"]
+    for label, value in info_rows(fm):
+        out += ["", "■ " + label, value]
+    return "\n".join(out)
 
 
 def convert(md):
@@ -305,7 +319,7 @@ def main(path):
     wp = convert(md)
     fm = frontmatter(md)
     with open(dest, "w", encoding="utf-8") as f:
-        f.write(info_header(fm) + wp)
+        f.write(info_block(fm) + "\n\n" + wp)
     n = {k: wp.count('{"className":"%s"}' % v) for k, v in BLOCKS.items()
          if '{"className":"%s"}' % v in wp}
     print("出力: %s" % dest)
@@ -319,8 +333,9 @@ def main(path):
             n or "なし",
         )
     )
-    print("\n『ここから下を全文コピー』の線より下だけを、WPの「コードエディター」に貼り付ける。")
-    print("\n" + info_header(fm).split(COPY_MARK)[0].rstrip())
+    print("\nファイルを全文コピーして、WPの「コードエディター」に貼り付ける。")
+    print("先頭の入稿情報は段落ブロックなので、各欄に写したらブロックごと削除する。")
+    print("\n" + info_text(fm))
 
 
 if __name__ == "__main__":

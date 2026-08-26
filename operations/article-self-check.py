@@ -325,7 +325,7 @@ def main(path):
     intro_sents = intro_for_count.count("。")
     first_sent = ""
     for line in intro_lines:
-        cand = re.split(r"(?<=。)", re.sub(r"<br>", "", line))[0].strip()
+        cand = re.split(r"(?<=。)", strip_decoration(re.sub(r"<br>", "", line)))[0].strip()
         if len(cand) >= 5:
             first_sent = cand
             break

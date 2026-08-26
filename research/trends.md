@@ -1,6 +1,44 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-26
+最終更新: 2026-08-27
+
+---
+
+## [2026-08-27] 調査結果（デイリー・8:00の回）
+
+**本日の主収穫は1件。Claudeの「記憶（メモリ）」がチャットとCoworkで共通になり、覚えている中身を`Settings > Memory`の`Topics`で1件ずつ編集・削除できるようになった。**公式のClaude Appsリリースノートに**8月25日付のエントリ**として入っている。**⚠️ 8/26のデイリー回は「リリースノートは2026-08-06のまま（19日連続で動きなし）」と記録していたが、本日開いたらページの表示が`Updated yesterday`＝8/26更新になっており、8/25付エントリが追加されていた。**8/25という日付は載った日ではなく、対象の日付として遡って付けられている。**本日この素材を下書き化してキューへ入れた**（消化先＝`queue.md`の`MEM-01`）。
+
+**あわせて、料金ページの読み方に誤りが生まれかけたので、その検証結果を残す（下の「⚠️料金ページ」）。**
+
+### Claude Code / Anthropic
+
+- **【本日の主収穫・使う側の何かが変わる】Claudeの記憶がチャットとCoworkで共通になり、覚えている中身を見て消せるようになった**（一次情報＝[Claude Apps リリースノート](https://support.claude.com/en/articles/12138966-release-notes)の**August 25, 2026**エントリを**本日CCがブラウザで直接開いて確認**）
+  - **見出し（verbatim）**：`Memory in Claude Cowork, editable topics, and a sensitive topics setting`
+  - **本文（verbatim）**：`Memory now works across chat and Cowork in the cloud. Everything Claude remembers is listed under Topics in Settings > Memory, where you can edit or delete any item. Topics such as health or beliefs stay out of memory unless you turn on Include sensitive topics in memory. Memory is on by default for Free, Pro, and Max plans and off by default for Team and Enterprise organizations.`
+  - **使う側の何が変わるか**：①**チャットで話した前提が、Cowork側の作業にも引き継がれる**（クラウド実行のCoworkが対象）②**Claudeが何を覚えているかが`Settings > Memory`の`Topics`に全部並び、1件ずつ編集・削除できる**③**健康・信条のような話題は、`Include sensitive topics in memory`をオンにしない限りメモリに入らない**
+  - **プラン別のデフォルト**：**Free・Pro・Maxはオン**／**Team・Enterpriseはオフ**（原文どおり）
+  - ⚠️ **「メモリが新しくできた」と書かない。**メモリ自体は既存機能で、**2026-07-10のエントリ**（`Memory on Claude now works as a set of individual, categorized entries...`）で日次要約から個別エントリ方式に変わっている。今回新しいのは**Cowork側への拡張・Topicsの編集/削除・センシティブ話題の設定**の3点
+  - ⚠️ **対象は`in the cloud`。**Coworkのクラウド実行が対象と書かれており、デスクトップのローカル実行についての記述はない
+  - ⚠️ **Claude Codeの`CLAUDE.md`やメモリファイルとは別物。**今回の話はClaudeアプリ（チャット／Cowork）側の記憶。混ぜて書くと事実が崩れる
+- **Claude Code の`latest`は v2.1.246 のまま。ただし`next`タグに v2.1.247 が入った**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で**本日実測**）
+  - `dist-tags`＝`latest: 2.1.246` ／ `stable: 2.1.231` ／ **`next: 2.1.247`**
+  - `2.1.247`の公開時刻＝`2026-08-26T18:02:01.046Z`＝**日本時間 2026-08-27 03:02**
+  - ⚠️ **[CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)の最上段は`## 2.1.246`のままで、2.1.247の項目は存在しない**（本日直接取得して確認）。**中身が公表されていないので「2.1.247で◯◯が入った」とは書けない**
+- **Claude Platform リリースノートに 2026-08-26 付エントリが2件入った**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日確認）。どちらもCompliance API（Cowork・Claude Codeのセッション記録取得がベータ卒業／Claude Science・Microsoft 365セッションの記録に対応）
+  - ⚠️ **X投稿には採らない。**対象がEnterprise組織の管理者で、このメディアの読者（個人・中小企業のコンテンツ運用者）の手元では何も変わらない
+- **Anthropic Newsroom は 2026-08-14（透かしの記事）から新規なし**（[anthropic.com/news](https://www.anthropic.com/news)を本日確認・**13日連続**）
+- **障害は差分なし**（[status.claude.com](https://status.claude.com/)を本日確認）。`All Systems Operational`。**8/25・8/26はどちらも`No incidents reported`**。直近は8/24のclaude.aiログインエラー（既報）
+
+### ⚠️ 料金ページ：日本から見ると全プラン1割高い金額が出る（本日判明・値上げではない）
+
+**巡回の手順を間違えると「値上げ」と誤報しかねなかったので、検証の結果をそのまま残す。**
+
+- **ブラウザ（この環境＝日本）で[claude.com/pricing](https://claude.com/pricing)を開いたときの表示**：Free `$0`／Pro **`$18`**（verbatim：`Per month with annual subscription discount ($220 billed up front). $22 if billed monthly.`）／Max **`From $110`**（`Per month`）／Team標準 **`$22`**（`$27.50 if billed monthly.`）／Teamプレミアム **`$110`**（`$137.50 if billed monthly.`）
+- **同じURLをWebFetch（米国側）で取得したときの表示**：Pro `$17`（`$200 billed up front`）／`$20 if billed monthly`／Max `From $100`
+- **差は全項目でちょうど+10%**（$200→$220・$20→$22・$100→$110・$25→$27.50・$125→$137.50）
+- **判定：値上げではない。**Newsroom・リリースノートに料金変更の告知はなく、第三者ソースも$17/$20のまま。**日本の消費税10%が乗った税込表示と見るのが自然**（⚠️ ページ上に`tax`・`税`の記載は無いため、**税だと断定はできない。「日本から見ると1割高い金額が出る」という観測事実まで**）
+- **巡回ルールに追加**：**料金ページは必ずWebFetch（米国側）と突き合わせる。**ブラウザの表示だけで前日比を取ると、毎回「値上げ」に見える。**過去の記録（Pro $17／$20・Max $100〜）は米国側の表示＝税抜**で、これを正とする
+- ⚠️ **X投稿には採らない。**税込表示という推測が入るうえ、料金そのものは動いていない
 
 ---
 

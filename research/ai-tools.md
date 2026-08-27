@@ -1,6 +1,36 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-27
+最終更新: 2026-08-28
+
+---
+
+## [2026-08-28] 調査結果（デイリー・8:00の回）
+
+**②の本日の差分は1件。ChatGPTの一時チャット（Temporary chat）に、メモリ・プラグイン・カスタム指示を使うかどうかの選択と、「あとから保存して普通のチャットに変える」操作が入った。**公式リリースノートの**8月27日付**エントリで、**本日CCがブラウザで直接開いて確認**。**使う側の使える範囲が変わる変更なので採用基準を満たす**が、**本日は下書き化せず`ideas.md`に置く**（理由は下の判定）。Geminiは8/27付で`Gemini Omni Flash`のGA。**新モデルのGA報告＝採らない側**。国産ツールは17日連続で差分なし。
+
+### ChatGPT（OpenAI）
+
+- **【本日の差分・使う側の使える範囲が変わる】一時チャットで、メモリ・プラグイン・カスタム指示を使うかを選べるようになり、あとから保存もできるようになった**（一次情報＝[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)の**August 27, 2026**エントリ。**本日CCがブラウザで直接開いて本文を確認**。WebFetchは403のまま）
+  - **見出し（verbatim）**：`More controls in temporary chat`
+  - **本文（verbatim・冒頭）**：`We're rolling out new controls in temporary chat. You can now choose to personalize responses in a temporary chat with memory, plugins, and custom instructions from your regular chat settings. You can also choose to save a temporary chat.`
+  - **使う側の何が変わるか**：①一時チャットを始めるときに「パーソナライズする／しない」を選べる（**選べるのは開始時だけで、始めたあとは変えられない**＝`Personalization can be set only when you start a temporary chat and cannot be changed after the conversation begins`）②**既定はパーソナライズなし**（`By default, temporary chats are not personalized`）③**あとから保存すると普通のチャットに変わり、履歴に入る**（`Saving converts it into a regular chat`）
+  - ⚠️ **「一時チャットが記憶するようになった」と書かない。**パーソナライズしても**新しいメモリは作らない**（`They do not create new memories`）。使うのは既存のメモリだけ
+  - **X投稿の判定：採用基準は満たす（使える範囲が変わる）。ただし本日は下書き化しない。**理由は2つ。①**キューの`MEM-01`（Claudeの記憶を1件ずつ消せる・期限〜8/29）と題材が「記憶の扱い」で重なる**。同じ週に2本出すと同じ話に見える ②**旬ネタ4本の置き場が決まっていない状態**（`rules/x-post-flow.md`「旬ネタの優先と投稿枠」の判断待ち）。**`ideas.md`に鮮度期限〜8/30で置き、本日12:00のフル版か明日のデイリー回で下書き化を判断する**
+- **8/25付の2件（スケジュールタスクのwebhook起動・共有／ChatGPT Workのブラウザ）は既報**（8/26のデイリー回が記録済み・判定は据え置き）
+- **既報の期限：DALL·E GPTの提供終了は8/30（変更なし）。**画像を残したい人は期限までにダウンロードが要る。**キューの`DALL-01`で下書き済み（出すのは〜8/28）**
+- **既報：OpenAI o3は8/26でChatGPTから消えた。**判定は「採らない」のまま変えない（読者が手を動かす必要がない）
+
+### Gemini（Google）
+
+- **【本日の差分】8/27付で`Gemini Omni Flash`が一般提供（GA）になった**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を**本日確認**）
+  - `gemini-omni-1.1-flash`。動画の続きを生成して延長する`extend`タスク、画像間の補間、解像度の指定（360p・720p既定・1080p・4k）
+  - **プレビュー版のエンドポイントは2026-09-30に廃止**
+  - ⚠️ **X投稿には採らない。新モデルのGA報告**であり、対象はGemini APIを叩く開発者。**このメディアの読者の手元では何も変わらない**（採用基準の「新モデルが出たという報告だけ」）
+- **8/26付の`Gemini 3.5 Transcribe`のGAは昨日記録済み**（判定は同じく「採らない」）
+
+### 国産AIライティングツール
+
+- **差分なし（17日連続）。**本日検索したが、**8/27〜8/28の新機能・料金変更の一次情報は確認できず**。上位に出るのは比較記事のみ
 
 ---
 

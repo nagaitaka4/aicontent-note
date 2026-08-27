@@ -1,6 +1,47 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-27
+最終更新: 2026-08-28
+
+---
+
+## [2026-08-28] 調査結果（デイリー・8:00の回）
+
+**本日の主収穫は1件。Claude Code v2.1.248（日本時間 本日05:35公開）で、「デスクトップアプリで作ったセッションが30日で消える」不具合が直った。**Claude Codeの会話記録は**公式ドキュメントに「`~/.claude/projects/`に平文で30日保存。`cleanupPeriodDays`で変更可」と明記**されており、これまではアプリの中に見えているセッションもその30日で消されていた。**このPCの実測でも、会話記録171本のうち7/29より前が1本も残っていない**（＝ちょうど30日前で切れている）。**本日この素材を下書き化してキューへ入れた**（消化先＝`queue.md`の`KEEP-01`）。
+
+**あわせて、8/27に「日本から見ると全プランが1割高い」と記録した件の結論が出た（下の「⚠️料金ページ」）。**
+
+### Claude Code / Anthropic
+
+- **【本日の主収穫・使う側の何かが変わる】Claude Code v2.1.248 で、デスクトップアプリのセッションが30日で消える不具合が直った**（一次情報＝[anthropics/claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)の`## 2.1.248`を**本日CCが直接取得して確認**）
+  - **原文（verbatim）**：`Fixed Claude Desktop and Cowork sessions disappearing after 30 days: the transcript cleanup now keeps desktop-written sessions while they are in the app (unless org policy manages retention); the new `desktopSessionCleanupPeriodDays` setting caps the exemption`
+  - **公開時刻**：npmレジストリの`time`フィールドで実測。`2.1.248`＝`2026-08-27T20:35:36.671Z`＝**日本時間 2026-08-28 05:35**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）
+  - **前提となる公式仕様（一次情報）**：[Data usage](https://code.claude.com/docs/en/data-usage)。verbatim：`Local caching: Claude Code clients store session transcripts locally in plaintext under ~/.claude/projects/ for 30 days by default to enable session resumption. Adjust the period with cleanupPeriodDays.`
+  - **このPCでの実測（本日CCが数えた）**：`~/.claude/projects/`配下のセッション記録は**171本**（15プロジェクト・サブエージェントのログを除く）。**いちばん前のものが2026-07-29 11:33＝ちょうど30日前**で、それより前は1本もない。30日で切られている状態がそのまま出ている
+  - **使う側の何が変わるか**：①**デスクトップアプリで作ったセッションは、アプリに残っている間は消えなくなる**（`while they are in the app`）②免除の上限は新設の`desktopSessionCleanupPeriodDays`で決まる ③**組織のポリシーが保持期間を管理している場合は対象外**（`unless org policy manages retention`）
+  - ⚠️ **「会話が消えなくなった」と広げて書かない。**対象は**デスクトップアプリで作ったセッション**で、ターミナルで動かした分の30日は`cleanupPeriodDays`の既定のまま
+  - ⚠️ **「バグで消えていた」と断定しない。**30日で消えること自体は公式の仕様。今回直ったのは**アプリの中にまだ見えているものまで消していた**点
+- **v2.1.248にはもう1つ、使う側に効く追加がある：`--restricted`（`CLAUDE_CODE_RESTRICTED=1`）**（同CHANGELOG・本日取得）
+  - **原文（verbatim）**：`Added `--restricted` (or `CLAUDE_CODE_RESTRICTED=1`): removes the built-in tools that run commands or code and `WebFetch` (unless named in `--tools`), keeps file tools inside the working directory, refuses `bypassPermissions`, and ignores user, project and local settings files`
+  - **使う側の何が変わるか**：コマンド実行・コード実行・WebFetchを外し、ファイル操作を作業フォルダの中だけに閉じ、設定ファイルも読まない起動モード。**このアカウントの「許可プロンプトを全部autoにしている」運用とちょうど逆方向のスイッチ**
+  - ⚠️ **X投稿には今日は採らない。**主収穫（30日）と同じ日に出すと軸②の中で題材が重なる。**`AUTOTAB-01`（`/permissions`のAuto modeタブ）と直接つながる素材**なので、`ideas.md`に残さず本ファイルの記録に留める（AUTOTAB-01を出したあとの続き玉として使える）
+- **v2.1.247（日本時間 8/27 03:02公開）の中身が公表された**（8/27のデイリー回は「`next`タグに入ったが中身が非公表」と記録していた。**本日CHANGELOGに`## 2.1.247`として掲載を確認**）
+  - `Added the SendFeedback tool`＝不具合が起きたときにClaudeが`/feedback`用の報告を下書きする（`feedbackDrafts`設定でオフにできる）
+  - `Added a tip on Bash permission prompts pointing to auto mode, with a one-keystroke "Yes, and switch to auto mode" option`＝**許可プロンプトの画面から1キーでautoモードに切り替えられるようになった**。⚠️ **`AUTO-気`（8/14投稿）・`AUTOTAB-01`と同じ題材**なので、単独ではX投稿に採らない
+  - `Added /claude-api cost-optimize`＝Claude APIの支出をプロファイルしてコストの打ち手を1つずつ試すコマンド
+- **npmの`dist-tags`（本日実測）**：`latest: 2.1.248` ／ `stable: 2.1.231` ／ `next: 2.1.250`。**`2.1.249`は存在しない**。`2.1.250`は`2026-08-27T22:27:48Z`＝日本時間 8/28 07:27公開で、**CHANGELOGに項目がない**（中身が非公表のため「2.1.250で◯◯が入った」とは書けない）
+- **Anthropic Newsroom に 2026-08-27 付が2件**（[anthropic.com/news](https://www.anthropic.com/news)を本日確認）。`Previewing the Model Hardware Standard`（AIエージェントが物理デバイスを安全に操作するための共通仕様・研究プレビュー）／`Expanding our support for scientists`
+  - ⚠️ **どちらもX投稿には採らない。**対象が研究機関・製造業とサイエンス領域で、**このメディアの読者（個人・中小企業のコンテンツ運用者）の手元では何も変わらない**
+- **Claude Apps リリースノートは 2026-08-25 付のまま**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)を本日確認）。8/26・8/27・8/28付の新規エントリなし（8/25＝メモリのCowork拡張・Topics編集＝`MEM-01`で消化済み）
+- **障害は差分なし**（[status.claude.com](https://status.claude.com/)を本日確認）。`All Systems Operational`。**8/26・8/27はどちらも`No incidents reported`**。直近は8/24のclaude.aiログインエラー（既報）
+
+### ⚠️ 料金ページ：8/27の「日本から見ると1割高い」は税込表示だった（本日決着・値上げではない）
+
+**8/27のデイリー回は「ページ上に`tax`・`税`の記載が無いため、税だと断定はできない」と保留していた。本日WebFetch（米国側）で取得したページに、注記が明示されていた。**
+
+- **原文（verbatim・本日取得）**：`Prices shown don't include applicable tax` ／ `Price and plans are subject to change at Anthropic's discretion.`
+- **本日の米国側の表示**：Free `$0`／Pro **`$17`**（年払い）・`$20`（月払い）／Max **`From $100`**（5x・20x）／Team 標準 `$20`・`$25`／Team プレミアム `$100`・`$125`／Enterprise `$20/seat`＋API従量
+- **結論**：**8/26・8/27・8/28で米国側の金額は1ドルも動いていない。**日本から見た+10%は**税込表示**（公式が`don't include applicable tax`と書いている）。**8/27の巡回ルール（料金ページは必ずWebFetchの米国側を正とする）はそのまま維持する**
+- ⚠️ **X投稿には採らない。**料金そのものが動いていない
 
 ---
 

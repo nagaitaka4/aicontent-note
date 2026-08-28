@@ -141,6 +141,40 @@ python3 operations/md-to-wp.py articles/<slug>.md
 
 ---
 
+## 7.6 WP入稿はCCが実行する（2026-08-28新設・V-05で確定）
+
+**入稿用ファイルができたら、CCがChromeを操作して下書き完成の状態まで作る。**ユーザーの作業は
+**ログインと公開ボタンの2つだけ**。手でコピペしない。
+
+### 使うブラウザを間違えない（ここで1回止まった）
+
+| | ログイン状態 | 使うか |
+|---|---|---|
+| **アプリ内ブラウザ**（Claude Codeの画面内・`mcp__Claude_Browser__*`） | 持っていない | ❌ 使わない |
+| **Chrome**（拡張機能ごしに操作・`mcp__claude-in-chrome__*`） | いつものChromeなのでログイン済み | ✅ **こちらを使う** |
+
+**2つはセッションが別。**Chromeでログインしていてもアプリ内ブラウザには引き継がれない。
+**パスワード入力はCCができない**ので、Chrome側で操作するのが唯一の道。
+
+### 手順
+
+1. `wp-admin`を開き、ログイン済みか確認する（`#wpadminbar`の有無）
+2. **同スラッグの記事がすでにないか確認する**（`/wp-json/wp/v2/posts?slug=...&status=any`）。二重作成の防止
+3. タグを解決する（`/wp-json/wp/v2/tags?search=`）。無ければ`POST /wp/v2/tags`で作る
+4. 本文をbase64にして2回に分けて`window`変数へ積み、ページ側で復元する（1回のJS呼び出しに入りきらない）
+5. `POST /wp-json/wp/v2/posts`で**`status:'draft'`**として作る（タイトル・スラッグ・本文・カテゴリー・タグ）
+6. アイキャッチを`media-new.php`のfile inputへ流し込む → `POST /wp/v2/media/<id>`でalt → `POST /wp/v2/posts/<id> {featured_media}`
+7. **SEO SIMPLE PACKの説明文はRESTでは入らない。**エディターを開き、
+   `textarea[name="ssp_meta_description"]`に値を入れて`input`/`change`を発火 →
+   `wp.data.dispatch('core/editor').savePost()`
+8. 入った内容を実測で確認して報告する（H2数・表数・区切り線・CTA・関連記事・マーカー・SSPの字数）
+9. **公開ボタンは押さない。**公開判断は人に残す（2026-08-27決定・成否に関わらず自動化しない）
+
+⚠️ **`media-new.php`ではREST nonceが取れない**（`wpApiSettings`が別物で403）。`upload.php`かエディターで取る。
+⚠️ **REST APIの`meta`に無い項目は、POSTしても201が返って黙って無視される。**返り値の`meta`を必ず見る。
+
+**経緯**：2026-08-28にno.63で検証（V-05）。全11項目のうち10項目をCCが実行できた。詳細は`operations/automation-log.md`。
+
 ## 8. 公開時（「入稿しました」の報告で自動実行・確認不要）
 
 1. MD：`status: published`／`date:`記入

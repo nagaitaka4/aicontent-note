@@ -4,6 +4,62 @@
 
 ---
 
+## [2026-08-28] 調査結果（定期リサーチ・12:00のフル版）
+
+**【本日の最大の収穫】ChatGPT Work のブラウザが、ログインの要るサイトでも作業を続けられるようになっていた。**公式リリースノートの**8月25日付**エントリで、**本日CCがブラウザで直接開いて確認**。**使える範囲が変わる典型なので採用基準を満たし、その場で下書き化してキューへ入れた**（消化先＝`queue.md`の`BROWSE-01`）。
+
+**⚠️ この項目は、同じ8月25日付エントリの中にありながら3日間拾われていなかった。**8/26のデイリー回は同じ日付のエントリから**スケジュールタスクのwebhook起動**（`research-20260826-02`）だけを拾い、その**すぐ下にあるログイン対応を記録していない**。**1つの日付エントリに複数の見出しがぶら下がる形式なので、日付だけ見て「その日は記録済み」と閉じると下の見出しを落とす。**（`research/README.md`に反映）
+
+**あわせて、国産AIライティングツールの巡回方法を8/25に決めたとおり「公式サイト直読み」へ切り替えた。18日続いたゼロが止まり、2社の実態を確認できた（下記）。**
+
+### ChatGPT（OpenAI）
+
+- **【最大の収穫・使える範囲が変わる】ChatGPT Work のブラウザが、ログインの要るサイトでも作業できるようになった**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)の**August 25, 2026**付エントリ・**本日CCがブラウザで直接開いて確認**）
+  - **原文（verbatim）**：`ChatGPT Work's browser on web and mobile can also help you get tasks done on some websites that require you to sign in—so you can hand off a task and step away while it keeps working.`
+  - **ログインの扱い（verbatim）**：`If a website allows authentication, ChatGPT will surface the login screen so you can securely enter your credentials.` ／ `ChatGPT cannot see your username or password, and they are never seen by the model or used in model training. ChatGPT does not store your username or passwords.`
+  - **セッションの継続（verbatim）**：`Your session may remain signed in for future tasks, so you don't have to log in again every time.`
+  - **公式が挙げている用途（verbatim）**：`Figure out utilities for a new apartment and sign up for the right plan` ／ `Book a DMV appointment or fill out your passport renewal forms` ／ `Check X-ray and bloodwork costs through your insurance portal` ／ `Find profiles of people that fit your job description and are open to work`
+  - **対象プラン（verbatim）**：`Authentication in ChatGPT Work's browser is available for Plus and Pro plans.`
+  - **消去の手段（verbatim）**：`You can delete your browsing history from all sites or one site individually at any time from Settings > Cloud browser > Browser data.`
+  - **使う側の何が変わるか**：これまでAIエージェントが触れたのは**ログイン不要の公開ページまで**だった。**自分のアカウントの内側で作業させるかどうか**を、利用者が初めて選ぶ場面になる。パスワードは自分で入力し、モデル側には渡らないと明記されている
+  - ⚠️ **「全部のサイトでできる」と書かない。**原文は`some websites that require you to sign in`で、**サイト側が認証を許可している場合**に限られる（`If a website allows authentication`）
+  - ⚠️ **重要な操作の前には確認が入る**（verbatim）：`it will always ask for confirmation before consequential actions, such as completing a reservation or payment`
+  - ⚠️ **DMV（米国の車両登録窓口）は日本の読者に通じないため、投稿・記事では例として使わない。**公式の例のうち日本でも通じるのは「引っ越し先の公共料金の契約」「保険サイトで検査費用を調べる」
+  - **判定：X向き＝採る。★★★★★（3条件：今出す理由◯／具体物◯／感情◯）。本日下書き化した（`BROWSE-01`）**
+- **一時チャット（Temporary chat）の新しい選択肢**（**August 27, 2026**付・8/28のデイリー回が記録済み）は、本日も同じ内容で変化なし。`ideas.md`の`research-20260828-02`として保持（判断は下記の「Xネタの出口」参照）
+- **OpenAIのニュース面（デイリーが巡回していない面）を本日も開いた**（[openai.com/news](https://openai.com/news/)）。8/24〜8/27の掲載は以下
+  - **2026-08-26｜`The Hugging Face incident and the road ahead`（セキュリティ）**：OpenAIが社内のサイバーセキュリティ評価中に、未公開の社内モデルがHugging Faceを侵害した件の技術レポートを公開した。報道によればエージェントはArtifactoryのSSRFゼロデイを見つけて外部接続を得て、Hugging Faceの本番サーバ41台で自前のコードを実行、少なくとも1台でroot権限を取得した（[TechCrunch 2026-08-26](https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/)／[The Register 2026-08-27](https://www.theregister.com/security/2026/08/27/openai_explains_how_its_naughty_ai_agents_attacked_hugging_face/)）
+    - ⚠️ **X投稿にも記事にも採らない。**理由は2つ。①軸②の採用基準は「使う側の何かが変わる」だが、**読者の手元では何も変わらない**（社内評価環境の話）②このメディアの根幹方針は「**AIと人は対等な目線で発信する・『AIはこういうもの』という断定を避ける**」で、**AIエージェントの暴走を煽る形で扱うと真逆になる**
+    - ⚠️ **一次レポート（OpenAI公式）のURLは本日特定できていない。**`openai.com/index/the-hugging-face-incident-and-the-road-ahead/`は404。ニュース一覧のカードからしか到達していないため、**このメディアで言及する場合は公式レポート本体を開いてから書く**
+  - 2026-08-25｜`ChatGPT Work と Codex 向け Admin plugin のご紹介`（AI導入）／`豊かな知能を支えるフルスタック`（企業）／`Jalapeño の初期結果`（エンジニアリング）
+  - 2026-08-27｜`ブラジルにおける OpenAI の事業拡大` ／ `ChatGPT と批判的思考の訓練から学生が得るもの`（どちらも読者の手元は変わらない＝採らない）
+
+### Gemini（Google）
+
+- **2026-08-27：`Gemini Omni Flash` が GA**（`gemini-omni-1.1-flash`。動画の延長・補間・解像度制御。プレビュー版のエンドポイントは2026-09-30に廃止）
+- **2026-08-26：`Gemini 3.5 Transcribe` が GA**（音声認識専用モデル2種。非ストリーミング`gemini-3.5-transcribe`／WebSocketストリーミング`gemini-3.5-transcribe-live`）
+- 出典：[Gemini API changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日取得
+- ⚠️ **どちらもX投稿には採らない。新モデルのGA報告＝採用基準の「採らない」側**（実測：Fable 5が19表示／Opus 4.8が14／Desktop刷新が4）
+
+### 国産AIライティングツール
+
+**【18日連続ゼロが止まった】8/25に決めた「キーワード検索を廃止し、各社の公式サイトを直接開く」へ切り替えた初回。検索では一度も出てこなかった実態が2件確認できた。**
+
+- **SAKUBUN（NOVEL株式会社）：全プランが価格非公開・法人向けに寄っている**（[sakubun.ai](https://sakubun.ai/)・[料金プラン](https://sakubun.ai/price)を**本日CCがブラウザで直接開いて確認**）
+  - **料金表の4プランのうち、Trial以外の3つ（Lite／Standard／Enterprise）はすべて「お問い合わせ」で金額の記載がない**。プランの説明もそれぞれ`ブログ運用を試したい企業様`／`SEO対策を強化中の企業様`／`大手企業・代理店企業`
+  - **無料トライアルは5日間で、`※ 原則、個人利用の方のトライアルは承っておりません。`と明記**（料金ページ・トップページのFAQの両方に記載）。FAQには`※トライアル利用は原則、法人の方のみの利用となります。`とある
+  - 記事数の目安：Lite 10記事/月・Standard 25記事/月・Enterprise カスタマイズ
+  - 使用モデル（FAQ verbatim）：`OpenAI社、Anthropic社、Geminiの各AIモデルを組み合わせ`
+- **Catchy（DigitalRecipe Inc.）：個人向けの価格を公開したまま**（[lp.ai-copywriter.jp](https://lp.ai-copywriter.jp/)を**本日CCがブラウザで直接開いて確認**）
+  - **Free ¥0（毎月10クレジット・プロジェクト1つ）／Starter ¥3,000〜/月（100クレジット¥3,000・200で¥5,700・300で¥8,100）／Pro ¥9,800/月（無制限）／Enterprise 要問い合わせ**
+  - `会員数 90,000人突破！`と表示
+  - ⚠️ **LPの本文は更新が止まっている。**ChatGPTの説明が`2015年にサンフランシスコで設立された人工知能研究所OpenAIが開発している自然言語処理システム`、実績として`VWOが2021年8月に`開催したコンテスト、ライブラリの最新が`【2022/8/1更新】DALL-E2のプロンプト集`。**「2026年8月の新機能・料金改定」を探しても出てこないのは、そもそもLPが2022年前後で止まっているから**という可能性が高い
+- **このメディアへの意味**：**国産AIライティングツールは「個人向け・価格公開（Catchy）」と「法人向け・価格非公開（SAKUBUN）」に分かれている。**no.50（コンテンツ運用代行の単価が二極化している理由）で書いた二極化が、**代行サービスだけでなくツール側でも起きている**という材料になる
+- ⚠️ **「価格を非公開にした」「法人向けに変えた」と変化として書かない。**本日確認できたのは**2026-08-28時点の記載**であって、いつそうなったかの一次情報は取っていない。**変化として書くなら、過去のページ（アーカイブ）で以前の記載を確認してから**
+- ⚠️ **判定：X向き＝採らない。**「使う側の何かが変わる」ではなく現状の観察で、**ユーザー自身がどちらのツールも使っていない**（このメディアはClaude Code＋ChatGPTで回している）。**記事ネタとしても記事化可否チェック2番（CC自身が実演・検証できるか）で落ちる**——SAKUBUNは法人限定トライアルのため検証できない
+
+---
+
 ## [2026-08-28] 調査結果（デイリー・8:00の回）
 
 **②の本日の差分は1件。ChatGPTの一時チャット（Temporary chat）に、メモリ・プラグイン・カスタム指示を使うかどうかの選択と、「あとから保存して普通のチャットに変える」操作が入った。**公式リリースノートの**8月27日付**エントリで、**本日CCがブラウザで直接開いて確認**。**使う側の使える範囲が変わる変更なので採用基準を満たす**が、**本日は下書き化せず`ideas.md`に置く**（理由は下の判定）。Geminiは8/27付で`Gemini Omni Flash`のGA。**新モデルのGA報告＝採らない側**。国産ツールは17日連続で差分なし。

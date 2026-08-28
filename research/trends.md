@@ -4,6 +4,24 @@
 
 ---
 
+## [2026-08-28] 調査結果（定期リサーチ・12:00のフル版）
+
+**フル版の役割どおり「デイリーが開いていない面」を開いた結果、①の差分は Claude Platform リリースノート側に2日分あった**（8/26・8/27）。**ただしX投稿には採らない**（対象が組織管理者と開発者で、このメディアの読者の手元では何も変わらない）。**Claude Code側（v2.1.247・248・250）は本日08:00のデイリー回が一次情報を直接取得して記録済みで、フル版で再確認したが取りこぼしはなかった。**
+
+### Claude Code / Anthropic
+
+- **【デイリーが開いていない面・差分2日分】Claude Platform リリースノート**（[platform.claude.com/docs/en/release-notes/overview](https://platform.claude.com/docs/en/release-notes/overview)を**本日CCが直接取得して確認**）
+  - **2026-08-27**：Claude Console で**個人キー（personal keys）とサービスアカウントキー（service account keys）**を作れるようになった。キーは本人またはサービスアカウントとして同じ権限で動き、**アカウントが組織から外れると停止する**。従来のワークスペースAPIキーは「レガシーな選択肢」として継続。あわせて各SDKで`client.beta.files`・`client.beta.skills`のベータヘッダー廃止
+  - **2026-08-26**：**Compliance API のセッションエンドポイントが Cowork と Claude Code についてベータを卒業した**（＝組織側がCowork・Claude Codeのセッション記録を正式なAPIで取得できる）。あわせてClaude Science・Claude for Microsoft 365（Excel/PowerPoint/Word/Outlook）のローカルセッションもベータで対象に。Admin APIが`ant` CLIと各SDKで利用可能に
+  - ⚠️ **X投稿には採らない。**軸②の採用基準は「**使う側の何かが変わる**」だが、**変わるのは組織の管理者側**（Enterprise・Console管理者）。個人・中小企業のコンテンツ運用者の手元では何も変わらない
+  - **記録として残す価値**：`KEEP-01`（Claude Codeの会話記録は`~/.claude/projects/`に30日）と**同じ「作業ログはどこに残るのか」という主題の、組織側の面**。将来この主題で記事を書くときの材料になる（会社が導入した場合、Claude Code・Coworkのセッションは組織がAPIで取得できる、という事実）
+- **Claude Code の CHANGELOG をフル版でも直接取得して再確認した**（[anthropics/claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)）。**本日08:00のデイリー回の記録（v2.1.250はCHANGELOGに項目なし／v2.1.248の`--restricted`／v2.1.247の`SendFeedback`・`/claude-api cost-optimize`）と一致し、取りこぼしはなかった**
+  - **`research/README.md`の2026-08-14の注意（フル版はデイリーの「差分なし」を信用せず一次ソースを自分で開く）を実行した結果、①のClaude Code側は今回は差分ゼロ**。デイリー回が一次情報を直接取得する運用に変わってから、この面の取りこぼしは出ていない
+- **Anthropic Newsroom：8/27付の2件（Model Hardware Standard の研究プレビュー／科学者支援の拡大）・8/25付の1件（ウェルビーイング評価への研究助成）**（[anthropic.com/news](https://www.anthropic.com/news)を本日確認）。**デイリー回の判定（読者の手元で何も変わらないため採らない）を維持する**
+- **Claude Apps リリースノートは 2026-08-25 付が最新のまま**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)を本日確認）。8/26〜8/28の新規エントリなし
+
+---
+
 ## [2026-08-28] 調査結果（デイリー・8:00の回）
 
 **本日の主収穫は1件。Claude Code v2.1.248（日本時間 本日05:35公開）で、「デスクトップアプリで作ったセッションが30日で消える」不具合が直った。**Claude Codeの会話記録は**公式ドキュメントに「`~/.claude/projects/`に平文で30日保存。`cleanupPeriodDays`で変更可」と明記**されており、これまではアプリの中に見えているセッションもその30日で消されていた。**このPCの実測でも、会話記録171本のうち7/29より前が1本も残っていない**（＝ちょうど30日前で切れている）。**本日この素材を下書き化してキューへ入れた**（消化先＝`queue.md`の`KEEP-01`）。

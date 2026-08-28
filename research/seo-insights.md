@@ -1,6 +1,42 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-08-24
+最終更新: 2026-08-28
+
+---
+
+## [2026-08-28] 調査結果（定期リサーチ・12:00のフル版）
+
+**【本日の最重要】Similarweb の年次レポート（2026-08-04公開）に、このメディアが最も欲しかった数字があった。「ChatGPTを使っている人の95%は、今もGoogleを使っている」。しかも2025年9月から2026年5月まで95%のまま動いていない。**記事ネタ**M-16**として追加し、TOP10昇格候補に上げた。
+
+**⚠️ この材料は8/4公開で、24日間見落としていた。**気づいたきっかけは[鈴木謙一氏の解説記事（2026-08-27）](https://www.suzukikenichi.com/blog/how-generative-ai-is-transforming-search-and-discovery-2026-usage-trends/)。**③の巡回先はGoogle公式・GSC・SEO系ブログに寄っていて、調査会社の年次レポートを見る面が無い。**（`research/README.md`に反映）
+
+### AI検索・GEO
+
+- **【最重要・記事ネタM-16の根拠】ChatGPT利用者の95%はGoogleも使っている。9ヶ月間まったく動いていない**（**一次情報を自分で開いて確認**：[Similarweb「Is AI Replacing Search?」2026-08-04公開](https://aisearch.similarweb.com/blog/is-ai-replacing-search/)。同社の年次レポート `2026 Generative AI Landscape` に基づく。**観測期間：2025年9月〜2026年5月**）
+  - **原文（verbatim）**：`the share of ChatGPT users who also use Google sat at 95% in September 2025...in May 2026, it's still 95%`
+  - **同社の解釈（verbatim）**：`adding a tool to an existing habit, not swapping one habit for another` ／ `converging into a shared discovery layer, not one replacing the other`
+  - **規模（verbatim）**：`Worldwide visits to generative AI platforms hit 9.5 billion a month in May 2026, up 70% year over year.`（月間95億訪問・前年比70%増）
+  - **シェアの変化**：生成AIのウェブトラフィックに占めるChatGPTの割合は`roughly 76% a year ago to around 53% today`（約76%→約53%）。Meta AI・Claude・Grok・Perplexityが伸びて分散が進んでいる（[Search Engine Journal](https://www.searchenginejournal.com/ai-search-isnt-replacing-google-its-layering-on-top-similarweb-data/583378/)／[TheNextWeb](https://thenextweb.com/news/similarweb-2026-generative-ai-landscape-ai-search-fragmentation)でも同じ数字を確認）
+  - **鈴木謙一氏の記事から追加で確認できた数字**：アプリのダウンロードは44億件・58%増／`米国では、AI にすすめられたブランドは競合ブランドよりも、その後のサイト訪問が 2〜4 倍多かった`／`ChatGPT がウェブ上の情報を引用する割合は、2026 年 5 月に 6.8% まで上昇した`
+  - **このメディアへの意味（受注導線に直結する）**：見込み客の「AIが答えるようになったから、もうブログは要らないのでは」に対して、**煽らずに一次データで返せる唯一の材料。**既存 no.42（「うちはブログいらない」と思っている会社に伝えたいこと）と直結し、GEO記事群（no.43・no.54・no.60）の前提を支える
+  - ⚠️ **観測期間が2025年9月〜2026年5月である点を必ず明記する。**M-10（ゼロクリックの国別データ）とまったく同じ注意。**「2026年8月時点の実態」として書くと誤りになる**
+  - ⚠️ **「AI検索は脅威ではない」と読み替えない。**同じレポートが**ChatGPTのシェアが76%→53%に落ちた**ことと**引用率が6.8%に上がった**ことを同時に示している。95%は「**Googleが消えない**」の根拠であって、「**流入が減らない**」の根拠ではない
+  - **判定：記事向き＝採る（M-16）／X向き＝採らない。**軸②の採用基準は「使う側の何かが変わる」で、これは調査データ。**実測でも「ゼロクリック83%」の投稿は5ビュー**で、データ解説型は伸びていない
+
+- **⚠️「AI Overviewsで1位のCTRが62.7%減」が、2026年8月の日本語ブログでまだ流通している**（本日の検索で[nextoria.jp](https://nextoria.jp/column/ai-search-seo-2026/)等を確認）
+  - **この数字は当リポジトリで2026-08-11に訂正済み。**正しくは「**1位CTRへの影響37.8%／日本全体でCTR38%減（世界58%減）**」（詳細は本ファイルの2026-08-03エントリ・`knowledge/x/ideas.md`の`research-20260731-01`）
+  - **記事・投稿で絶対に62.7%を使わない。**外部記事を引用するときも、この数字が入っていたら採用しない
+
+### 検索トレンド・アルゴリズム変化
+
+- **August 2026 spam update：8/24の記録から変化なし**（開始 18 Aug 2026・所要 2 days, 16 hours で完了済み）。**9/1のGSC月次スナップショットの読み方も8/24の結論のまま**（月次平均を前月と比べず、日別で8/18前後の段差を見る）
+- **2026年8月のコアアップデートは実施されていない**（本日の検索でも8月はスパムアップデートのみ）。**「8月のコアアップデートで順位が落ちた」と書いている記事は誤り**
+
+### Search Console 保留記事の再開判定（`operations/article-backlog.md`・省略禁止）
+
+- **保留継続（5回連続）。判断ルールは8/14に確定したとおり「報道を根拠に着手しない。実機で見えた日を起点にする」。**
+- 本日の検索で新しい展開ニュースはなし。**日本語の解説記事は「2026-06-24までに日本にも拡大」「8/11ごろに対象サイトが大きく広がった」と書いているが、いずれも観測ベースでGoogleの公式アナウンスは依然として無い**（[note.com/canon_non_no](https://note.com/canon_non_no/n/n2494f99eded0)／[jinrai.co.jp](https://jinrai.co.jp/blog/2026/08/09/search-console-generative-ai-report/)）。**この状況は8/14・8/17・8/21・8/24と同じ**
+- **`aicontent-note.com`のプロパティでは7/28・8/03・8/14の3回とも未展開。次の実機確認は9/1のGSC月次スナップショット**（tasks/README.md 近々一時タスク#18）**にまとめる。本日は実機確認をしていない**（ルーティンの範囲外・月次に統合済み）
 
 ---
 

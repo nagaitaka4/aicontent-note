@@ -6,9 +6,9 @@
 
 ## 次のセッションでまず行うこと
 
-**M-13（no.63）の構成案は第3稿まで出した。ユーザー確認 → アイキャッチ → 執筆の順で進める。**
+**M-13（no.63）の構成案は第4稿まで出した（構成としては確定できる状態）。ユーザー確認 → アイキャッチ → 執筆の順で進める。**
 
-- 構成案：`operations/structure-drafts/chatgpt-ads-ai-search-geo.md`（第3稿）
+- 構成案：`operations/structure-drafts/chatgpt-ads-ai-search-geo.md`（第4稿）
 - タイトル案：**ChatGPT広告が日本でも開始。AI検索とGEOは何が変わるのか**（33字・実測）
 - スラッグ：`chatgpt-ads-ai-search-geo`／カテゴリー：AIとコンテンツの実務
 - `article-precheck.py`実行済み。既存GEO3本（no.54・43・60）とのカニバリ確認済み（3本とも「引用されるか」の話で重複なし）

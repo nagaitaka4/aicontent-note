@@ -1,6 +1,31 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-30
+最終更新: 2026-08-31
+
+---
+
+## [2026-08-31] 調査結果（デイリー）
+
+**本日の主収穫は1件。Claude Codeの週次上限の「+50%」に、5回目の延長と着地の両方が同時に出た。**日本時間 **2026-08-30 01:47** に@ClaudeDevsが告知し、**9/14から標準の週次上限が恒久的に+25%**／**それまでは現在の+50%が続く**／**公式自身が「今日と比べると17%減」と明言**。**キューの`LIMIT-01`（8/31が山と書いてあった）の前提が変わったため、本日この下書きを事実に合わせて書き直した。**
+
+**⚠️ この告知は昨日8/30 08:00のデイリー回が見落としている。**発表は同日01:47で、**デイリーの巡回先（CHANGELOG・npm・Claude Apps／Platformリリースノート・Newsroom）のどれにも載らないチャネル＝公式Xだけで出た**ため。**8/26の「料金ページを見ていなかった」と同型の見落とし**（`research/README.md`へ巡回先の追加を提案する）。
+
+### Claude Code / Anthropic
+
+- **【本日の主収穫・使う側の何かが変わる】週次上限の+50%は9/13まで続き、9/14から標準の上限が恒久的に+25%になる。今と比べると17%減る**（一次情報＝[@ClaudeDevs](https://x.com/ClaudeDevs/status/2093742321473065266)・**本日CCがブラウザで原文を直接確認**）
+  - **verbatim（告知本体）**：`Starting September 14, we're permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans. Until then, the current 50% increase will be in place.`
+  - **verbatim（同スレッドの続き・公式自身の言葉）**：`Compared to today, this works out to a 17% reduction in weekly limits on Claude Code. We're working on exciting changes that will make it feel like you're getting more from Claude, while having more visibility and control of your usage.`
+  - **投稿時刻の裏取り**：投稿IDのスノーフレークから実測。`2093742321473065266` → **日本時間 2026-08-30 01:47:23**（同じ式を既知の[8/19 4:35の告知](https://x.com/ClaudeDevs/status/2089798442306711646)に当てて一致を確認した）
+  - **公式ヘルプ側は本日時点でも週次上限に触れていない**（[Use Claude Code with your Pro or Max plan](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)を本日CCがブラウザで直接確認。`weekly`・`50%`・`August`のいずれも本文に無い）。**8/14・8/18・8/19に3回確認したときと同じ状態が続いている**
+  - **使う側の何が変わるか**：**8/31で切れる予定だった1.5倍が9/13まで続く。**そのうえで**9/14以降は「元の上限＋25%」が恒久の水準になり、今の1.5倍と比べると17%少ない状態で固定される**
+  - ⚠️ **「25%増える」と書かない。**増えるのは**プロモーション前の標準の上限**に対してであって、**今使えている量に対しては17%減る**。公式自身がそう書いている
+  - ⚠️ **「9/14で終わり」と書かない。**終わるのは+50%のプロモーションで、上限そのものは残る
+  - ⚠️ **「元スレッドを削除して投稿し直した」は二次情報のみ**（bleepingcomputer・notebookcheck）。**一次で確認できていないので事実として書かない**
+  - **判定：X向き＝採る。★★★★★（3条件：旬◯／具体物◯／決断◯）。本日`LIMIT-01`を書き直す形で消化した**
+- **Claude Code本体は差分なし。**CHANGELOGの最新は`## 2.1.251`のままで、npmレジストリの`time`でも**最新公開は`2.1.251`＝`2026-08-28T15:34:26.421Z`（日本時間 8/29 00:34）**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）。**8/30のデイリー回から新しいバージョンは出ていない**
+- **Claude Apps リリースノートは 2026-08-25 付が最新のまま**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)を本日確認）。8/26以降の新規エントリなし
+- **Claude Platform リリースノートは 2026-08-27 付が最新のまま**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日確認）。8/28以降の新規エントリなし
+- **Anthropic Newsroom は 2026-08-27 付（Model Hardware Standardの研究プレビュー）が最新のまま**（[anthropic.com/news](https://www.anthropic.com/news)を本日確認）。**8/28のデイリー・フル両方の判定（読者の手元で何も変わらないため採らない）を維持する**
 
 ---
 

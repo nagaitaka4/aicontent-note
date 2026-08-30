@@ -1,6 +1,25 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-30
+最終更新: 2026-08-31
+
+---
+
+## [2026-08-31] 調査結果（デイリー）
+
+**②は差分なし。**ChatGPT・Geminiとも公式の一次ソースに8/30のデイリー回以降の新規エントリがない。
+
+### ChatGPT（OpenAI）
+
+- **ChatGPT リリースノートは 2026-08-28 付（Googleアカウントの複数接続）が最新のまま**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**。ページ上部の表示も`Updated: 一昨日`＝8/29）。**8/29〜8/31の新規エントリなし**＝8/30のデイリー回が記録した内容から差分なし
+- 保留中の条件付き素材に変化なし：`research-20260826-02`（スケジュールタスクのwebhook）・`research-20260828-02`（一時チャットの選択肢）・`research-20260830-02`（Googleアカウント複数接続）。**3件とも「直近5投稿のChatGPT／OpenAI題材が2本以下になったら」という条件が本日も満たされていない**（直近5投稿＝**ADS63-訂8/31**・CG59-リ8/30・DALL-気8/28・SOL-気8/26・RC-気8/25のうち**4本がChatGPT／OpenAI題材**）
+
+### Gemini（Google）
+
+- **Gemini API リリースノートは 2026-08-27 付が最新のまま**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日確認）。**8/28以降の新規エントリなし**＝`Gemini Omni Flash`のGA（8/27）・`Gemini 3.5 Transcribe`のGA（8/26）から差分なし
+
+### 国産AIライティングツール
+
+- **本日は巡回していない。**公式サイト直読みは月・金のフル版が担当する（2026-08-25に決定）。**本日12:00のフル版が担当する**
 
 ---
 

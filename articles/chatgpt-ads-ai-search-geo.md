@@ -3,10 +3,10 @@ no: 63
 series:
 series_no:
 title: ChatGPT広告が日本でも開始。AI検索とGEOは何が変わるのか
-date:
-url:
+date: 2026-08-28
+url: https://aicontent-note.com/chatgpt-ads-ai-search-geo/
 slug: chatgpt-ads-ai-search-geo
-status: draft
+status: published
 description: ChatGPT広告は日本でもすでに始まっています。対象は無料版とGoで、Plus・Proなどでは表示されません。広告は回答とは別のシステムで配信され、広告主が回答を形成・順位付け・変更することはできないと公式が明記しています。引用のための打ち手は変わるのかを整理します。
 eyecatch_alt: ChatGPT広告の日本での提供状況とAI検索・GEOへの影響を一次情報から整理した記事のアイキャッチ画像
 eyecatch: eyecatch_0063.png

@@ -1,6 +1,34 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-28
+最終更新: 2026-08-30
+
+---
+
+## [2026-08-30] 調査結果（デイリー）
+
+**⚠️ 8/29のデイリー回は走っていない**（`git log`に8/29のコミットが1件もない）。**本回は8/29〜8/30の2日分の差分を見た。**
+
+**②の差分は1件。ChatGPTでGmail・Googleカレンダー・Google連絡先のプラグインに複数アカウントをつなげるようになった**（8/28付・本日CCがブラウザで直接開いて確認）。**採用基準の「使える範囲が変わる」には当たるので`ideas.md`に入れたが、下書き化はしない**（理由は下）。**Geminiは8/27付から差分なし。**
+
+### ChatGPT（OpenAI）
+
+- **【差分・使える範囲が変わる】Gmail・Googleカレンダー・Google連絡先のプラグインに、複数アカウントをつなげられるようになった**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)の**August 28, 2026**付エントリ・**本日CCがブラウザで直接開いて確認**）
+  - **原文（verbatim）**：`You can now connect multiple accounts for Gmail, Google Calendar, and Google Contacts plugins in ChatGPT, bringing your personal and work accounts into the same conversation. Ask ChatGPT to check your calendars together when planning your day or find emails across your connected inboxes.`
+  - **対象（verbatim）**：`Available globally on supported Plus, Pro, Business, and Enterprise plans across web, desktop, iOS, and Android.`
+  - **使う側の何が変わるか**：**個人用と仕事用のGmail・カレンダーを、1つの会話の中で同時に見られるようになった。**これまでは1アカウントずつ切り替える必要があった
+  - ⚠️ **「無料でも使える」と書かない**（原文は`supported Plus, Pro, Business, and Enterprise plans`）
+  - ⚠️ **「すべてのプラグイン」と書かない**（対象はGmail・Googleカレンダー・Google連絡先の3つ）
+  - **判定：X向き＝採るが、本日は下書き化しない。**理由は**直近5投稿のChatGPT／OpenAI題材がすでに4本**（`DALL-気`8/28・`SOL-気`8/26・`ADS-気`8/24・`Plus3-気`8/21）で、5本目を足すと軸②が題材ごと偏るため。`ideas.md`に`research-20260830-02`として条件付きで置いた（`research-20260826-02`と同じ扱い）
+- **8/27付の一時チャット（Temporary chat）の新しい選択肢**は本日も同じ内容で変化なし。`ideas.md`の`research-20260828-02`として保持（条件付き・9/5で無条件クローズ）
+- **8/25付のエントリ2件**（ChatGPT Workのブラウザがログイン必須サイトに対応／スケジュールタスクのwebhook・共有）は8/28のフル版が記録済みで変化なし
+
+### Gemini（Google）
+
+- **Gemini API リリースノートは 2026-08-27 付が最新のまま**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日確認）。**8/28〜8/30の新規エントリなし**＝8/28のフル版が記録した`Gemini Omni Flash`のGA（8/27）・`Gemini 3.5 Transcribe`のGA（8/26）から差分なし
+
+### 国産AIライティングツール
+
+- **本日は巡回していない。**8/25に決めたとおり**公式サイト直読みは月・金のフル版が担当**する（デイリーは①Claude／Anthropic ②ChatGPT・Geminiの一次ソース巡回にとどめる）。**次のフル版は9/1（月）**
 
 ---
 

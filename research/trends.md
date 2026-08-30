@@ -1,6 +1,37 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-28
+最終更新: 2026-08-30
+
+---
+
+## [2026-08-30] 調査結果（デイリー）
+
+**⚠️ 8/29のデイリー回は走っていない**（`git log`に8/29のコミットが1件もない）。**本回は8/29〜8/30の2日分の差分を見た。**
+
+**本日の主収穫は1件。Claude Code v2.1.251（日本時間 2026-08-29 00:34公開）で、許可・拒否の判定をすり抜けていた穴が4件まとめて塞がれた。**このPCの実測では`~/.claude/settings.json`が**許可80件・確認6件・拒否0件・既定はautoモード**で、**4件のうち「拒否ルールがすり抜ける」1件は自分には効かない**。**本日この素材を下書き化してキューへ入れた**（消化先＝`queue.md`の`PERM-01`）。
+
+### Claude Code / Anthropic
+
+- **【本日の主収穫・使う側の何かが変わる】Claude Code v2.1.251 で、許可・拒否の判定をすり抜けていた穴が4件直った**（一次情報＝[anthropics/claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)の`## 2.1.251`を**本日CCが直接取得して確認**）
+  - **公開時刻**：npmレジストリの`time`フィールドで実測。`2.1.251`＝`2026-08-28T15:34:26.421Z`＝**日本時間 2026-08-29 00:34**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）
+  - **4件の原文（verbatim）**
+    1. `Fixed file tools (Read, Write, Edit) following a symlink swapped inside the working directory after the permission check, which could read or write outside the approved location`
+    2. `Fixed plugin commands declared in a marketplace entry being able to point outside the plugin directory; such paths are now rejected with a path-traversal error`
+    3. `Fixed Grep and Glob not applying `Read(...)` deny rules to files reached through a symlinked search path`
+    4. `Fixed Bash permission checks auto-approving commands that assign an arithmetic expression to an integer shell variable (e.g. `OPTIND=1/0`, `RANDOM=2+2`); these now prompt for approval`
+  - **このPCでの実測（本日CCが`~/.claude/settings.json`を読んで数えた）**：`permissions.allow`＝**80件**／`permissions.ask`＝**6件**／`permissions.deny`＝**0件**／`defaultMode`＝**auto**
+  - **使う側の何が変わるか**：**許可・拒否のリストを書いても、書いたとおりに効いていない経路があった。**①承認した場所の外へ、作業ディレクトリ内で差し替えられたシンボリックリンク経由で読み書きできた ②Grep・Globは`Read(...)`の拒否ルールを、シンボリックリンク先のファイルに適用していなかった ③Bashの許可判定が、整数変数への算術代入（`OPTIND=1/0`等）を確認なしで自動承認していた
+  - ⚠️ **拒否ルールを1件も書いていない環境では、上の②は効かない。**「4件全部が自分に効く」と書かない
+  - ⚠️ **「危険だった」と煽らない。**いずれも修正済みで、悪用された事例の記載はCHANGELOGにない
+  - **判定：X向き＝採る。★★★★★（3条件：旬◯／具体物◯）。本日下書き化した（`PERM-01`）**
+- **v2.1.251のその他の変更**（同じCHANGELOG・投稿には採らない）
+  - `PreModelSwitch`／`PostModelSwitch`フックの追加、`/usage`のSpend limit bar、`/cost`のプロンプトキャッシュ行（ヒット率・再キャッシュ量）
+  - `Fixed the first launch on a fresh install starting in default mode instead of auto mode for accounts whose startup default is auto mode`（autoモード既定のアカウントで、新規インストール初回がdefaultモードで始まっていた）
+  - `Fixed Opus 5 requests failing with "effort … is not supported when thinking is disabled"`（effortがxhigh/maxでthinkingオフのとき`high`として送るよう変更）
+  - ⚠️ **採らない理由**：どれも「使う側の何かが変わる」に当たるが、**1本の投稿に主張は1つ**（`rules/x-post-flow.md`）。許可の穴のほうが読者の設定に直結する
+- **Claude Apps リリースノートは 2026-08-25 付が最新のまま**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)を本日確認）。8/26〜8/30の新規エントリなし
+- **Claude Platform リリースノートは 2026-08-27 付が最新のまま**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日確認）。8/28〜8/30の新規エントリなし＝**8/28のフル版が記録した内容から差分なし**
+- **Anthropic Newsroom は 2026-08-27 付が最新のまま**（[anthropic.com/news](https://www.anthropic.com/news)を本日確認）。**8/28のデイリー・フル両方の判定（読者の手元で何も変わらないため採らない）を維持する**
 
 ---
 

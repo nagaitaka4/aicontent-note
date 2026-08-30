@@ -98,9 +98,26 @@ def inline(text):
 
 
 def split_sentences(text):
-    """句点で分ける。閉じ括弧・引用符が続く場合はそこまでを1文に含める。"""
-    parts = re.split(r"(?<=。)(?![」』）\)])", text)
-    return [p for p in (s.strip() for s in parts) if p]
+    """句点で分ける。閉じ括弧・引用符が続く場合はそこまでを1文に含める。
+
+    ⚠️ リンクのアンカーテキスト内の「。」では切らない（2026-08-28修正）。
+    inline() でリンクをHTML化したあとに呼ばれるため、素朴に分割すると
+    <a>記事タイトル。<br>続き</a> のようにアンカーの内側で改行が入り、
+    記事タイトルが途中で切れて別の文に見える。no.63の公開後に発覚した。
+    """
+    anchors = []
+
+    def _mask(m):
+        anchors.append(m.group(0))
+        return "\x00%d\x00" % (len(anchors) - 1)
+
+    masked = re.sub(r"<a\b[^>]*>.*?</a>", _mask, text, flags=re.S)
+    parts = re.split(r"(?<=。)(?![」』）\)])", masked)
+
+    def _unmask(x):
+        return re.sub(r"\x00(\d+)\x00", lambda m: anchors[int(m.group(1))], x)
+
+    return [p for p in (_unmask(s).strip() for s in parts) if p]
 
 
 def paragraph(text, class_name=None, align_center=False, strong=False):

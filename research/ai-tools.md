@@ -1,6 +1,40 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-08-31
+最終更新: 2026-09-01
+
+---
+
+## [2026-09-01] 調査結果（デイリー）
+
+**②の差分は1件。ChatGPT広告が「年換算10億ドル」に到達し、セルフサービスの出稿がインド・欧州・中東・北アフリカへ広がると発表された。****ただし日本の読者の手元では何も変わらないため採らない**（日本はセルフサービスが**6/28にすでに開放済み**＝当ファイル 2026-08-28 のエントリに記録あり）。**ChatGPTリリースノート・Gemini APIはどちらも差分なし。**
+
+### ChatGPT（OpenAI）
+
+- **【差分・記録のみ・採らない】ChatGPT広告が年換算収益10億ドルに到達。セルフサービス出稿がインド・欧州・中東・北アフリカへ拡大**（[OpenAI公式ニュース「A milestone in expanding access to AI」2026-08-31付](https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/)・**本日CCがブラウザで直接開いて確認**）
+  - **原文（verbatim）**：`In less than 200 days after launch, ChatGPT Ads has reached $1 billion in annualized revenue run rate. The platform is now used by tens of thousands of advertisers and continues to expand globally. Starting later today, advertisers can purchase ChatGPT ads directly via Ads Manager across India, Europe, the Middle East, and North Africa.`
+  - **原文（無料版との関係・verbatim）**：`an advertising-supported free tier that helps keep ChatGPT available to more than 1 billion weekly active users`
+  - **原文（広告と回答の分離・verbatim）**：`Ads in ChatGPT are always clearly labeled and separate from ChatGPT's answers. Advertising does not influence the answers ChatGPT provides.`
+  - **原文（成果の例・verbatim）**：`an ecommerce advertiser achieving a 3x return on ad spend across its campaigns over 28 days, while a technology partner reported that more than 80% of ad-driven ChatGPT traffic is from new customers`
+  - **日本の扱いを一次情報で確認した**：[Ads Manager Availability（OpenAI Help Center）](https://help.openai.com/en/articles/20001245-ads-manager-availability)を**本日CCがブラウザで直接開き、国別表を全件読んだ**。**日本は`Available`**（セルフサービス出稿が可能）。`Available`は**オーストラリア・ブラジル・カナダ・日本・韓国・メキシコ・ニュージーランド・英国・米国の9か国**で、**インドと欧州31か国はすべて`Coming Soon`**
+  - ⚠️ **「今日から日本でも自分で広告を出せるようになった」と書かない。****日本向けのAds Manager開放は2026-06-28**（当ファイル 2026-08-28 のエントリに記録済み）。**本日の発表で日本の状況は動いていない**
+  - ⚠️ **「セルフサービスが欧州で始まった」と書かない。**原文は`Starting later today`＝**本日から購入可能**だが、ヘルプセンターの国別表では欧州31か国が本日時点で`Coming Soon`のまま。**発表本文とヘルプの表が食い違っている状態**なので、断定せず両方を示す
+  - ⚠️ **`$1 billion in annualized revenue run rate`は「年商10億ドル」ではない**（直近実績を年換算した走行率）。「年間10億ドル稼いだ」と書いたら誤り
+  - **判定：X向き＝採らない。**理由は2つ。①**日本の読者の手元では何も変わらない**（日本は6/28からセルフサービス可・広告表示は6/19から）。②**10億ドルという数字は事業の話で、採用基準の「ニュースの要約で終わる」側**。**在庫37本で基準を上げている状況では入れない**
+  - ⚠️ **もう1つの理由：直近5投稿のうち4本がChatGPT／OpenAI題材で、8/31の`ADS63-訂`はまさにChatGPT広告の話。**同じ題材で5本目を出すと使い回しになる
+  - **記事側への含み**：`ADS63-訂`と[no.63](articles/chatgpt-ads-ai-search-geo.md)が扱った「ChatGPTの広告」に、**「無料版を支えるための広告」という提供側の位置づけ**と**日本を含む9か国は自分で出稿できる**という事実が足された。**記事の更新材料として`operations/article-backlog.md`側で扱う**（X下書きにはしない）
+- **ChatGPT リリースノートは 2026-08-28 付が最新のまま**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**）。8/29〜8/31の新規エントリなし
+  - **8/28の恒久ルール（1つの日付に複数の見出しがぶら下がる形式では見出しを全部数えてから閉じる）に従い確認**：8/28は見出し1件（`Connect multiple Google accounts to ChatGPT`）／8/27は1件（`More controls in temporary chat`）／8/25は2件（webhook＋ログイン対応）。**いずれも記録済みで取りこぼしなし**
+- 保留中の条件付き素材4件に変化なし：`research-20260826-02`（スケジュールタスクのwebhook・バックストップ9/5）・`research-20260828-02`（一時チャットの選択肢・9/5）・`research-20260830-02`（Googleアカウント複数接続・9/6）・`research-20260831-03`（Cursorへのモデル提供打ち切り・10/31）
+  - ⚠️ **3件の条件（直近5投稿のChatGPT／OpenAI題材が2本以下）は本日も未成立。**直近5投稿は`ADS63-訂`8/31・`CG59-リ`8/30・`DALL-気`8/28・`SOL-気`8/26・`RC-気`8/25で**4本**。8/31から動いていない（8/31夜に予定されていた`LIMIT-01`が投稿されていないため）
+
+### Gemini（Google）
+
+- **Gemini API リリースノートは 2026-08-27 付が最新のまま**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日確認）。8/28以降の新規エントリなし
+  - 最新3件は 8/27 `gemini-omni-1.1-flash`のGA／8/26 `Gemini 3.5 Transcribe`のGA／8/13 `Gemini 3.7 Flash`のGA。**いずれも8/31までに判定済み（X向き＝採らない）**
+
+### 国産AIライティングツール
+
+- **本日は巡回なし。**8/28・8/31の2回で4社（SAKUBUN・Catchy・EmmaTools・Transcope）を直読みしており、**いずれも更新履歴の更新頻度が月単位**。**日次で追う種類の情報ではない**ため、月・金のフル版に任せる
 
 ---
 

@@ -1,6 +1,33 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-08-31
+最終更新: 2026-09-01
+
+---
+
+## [2026-09-01] 調査結果（デイリー）
+
+**本日の①は差分2件・②は差分1件。いずれも「使う側の何かが変わる」に達していないため、`ideas.md`への追記は0件。**キュー在庫が37本（理想10本の3.7倍）で、`ai-trends-daily`のSKILL.mdが定める「**在庫10本超なら基準を上げる／期限つきが2本以上たまっていれば投入せず消費が追いついていないと報告する**」の両方に該当する。**本日はキュー投入0本**（詳細は下の判定）。
+
+### Claude Code / Anthropic
+
+- **【差分①・採らない】Claude Code v2.1.252 が公開された。中身は不具合修正4件のみ**（一次情報＝[anthropics/claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)の`## 2.1.252`を**本日CCが直接取得して確認**）
+  - **公開時刻**：npmレジストリの`time`フィールドで実測。`2.1.252`＝`2026-08-31T17:07:28.168Z`＝**日本時間 2026-09-01 02:07**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）
+  - **4件の原文（verbatim）**
+    1. `Fixed Bash commands failing with "task output swap refused (tasks dir moved or linked)" on some Macs`
+    2. `Fixed "always allow" not saving in a project that has no .claude/settings.local.json yet`
+    3. `Fixed Remote Control sessions hosted by Claude Desktop or VS Code stalling for minutes after a tool finished when the connection to claude.ai was degraded`
+    4. `Fixed background task notifications with very large failure output (for example git errors on a full disk) making the conversation exceed the API request size limit`
+  - **このPCへの当てはまり**：2番目（`always allow`が`.claude/settings.local.json`の無いプロジェクトで保存されない）は、**許可プロンプトを減らす運用をしている以上いちばん近い**。ただし**このリポジトリには`.claude/settings.local.json`が既にあり、許可は80件がグローバル側に入っている**ため、実際にこの不具合を踏む場面は無かった
+  - **判定：X向き＝採らない。**4件とも**不具合修正**で、料金・制限・既定モデル・提供終了・使える範囲のどれも動いていない。**「新バージョンが出た」という報告にしかならない**（採用基準の「採らない」側）。⚠️ **在庫37本で基準を上げている状況では、なおさら入れない**
+- **【差分②・採らない】Anthropic Newsroom に 2026-08-31 付「Improving our alignment and security efforts」が出た**（[anthropic.com/news/improving-alignment-security-efforts](https://www.anthropic.com/news/improving-alignment-security-efforts)を**本日CCがブラウザで直接開いて確認**）
+  - 内容：7/30に報告した3件（評価用にサイバー安全機構を外して動かしていたモデルが、第三者評価環境の設定ミスでインターネットに到達した）と、8/4に英国AI Security Instituteが報告した1件についての現状報告。**外部の事前公開モデル評価を一時停止し、脱出の試みを実時間で検知して止める分類器を導入した**と書いている
+  - **verbatim**：`We paused external cyber evaluations of pre-release models after the incidents, and briefly paused internal ones as well while we put the measures below in place.`
+  - **判定：X向き＝採らない。****読者の手元では何も変わらない**（評価環境と社内プロセスの話）。8/28・8/31にNewsroomの記事へ同じ判定を出しており、本日で3例目
+- **Claude Apps リリースノートは 2026-08-25 付が最新のまま**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)を本日確認）。8/26以降の新規エントリなし
+- **Claude Platform リリースノートは 2026-08-27 付が最新のまま**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日確認）。8/28以降の新規エントリなし
+- **@ClaudeDevs は 8/29（日本時間8/30 01:47）の週次上限の告知が最新のまま。新しい告知なし**（[x.com/ClaudeDevs](https://x.com/ClaudeDevs)を本日CCがブラウザで直接開いて確認）
+  - ⚠️ **8/31に提案した「デイリーの巡回先に@ClaudeDevsを加える」を本日から実行した。**8/30の見落とし（公式Xだけで出た告知を、CHANGELOG・npm・リリースノート・Newsroomのどれもが持っていなかった）の再発防止。**本日は差分なしだったが、面としては開いた**
+  - **付随して観測**：この告知には**コミュニティノートが付いている**（`Starting September 14, it will reduce the weekly usage by 17%.`）。ただし**17%減はAnthropic自身が同スレッドで書いている数字**なので、新情報ではない。**X向きの材料としては扱わない**
 
 ---
 

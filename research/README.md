@@ -80,6 +80,23 @@
 - Claude Code / Anthropic の公式アップデート・新機能
 - Anthropicのモデルリリース・価格変更
 
+**デイリー回が毎回開くチャネル（2026-08-31に明文化・省略禁止）**
+
+| # | チャネル | ここにしか出ないもの |
+|---|---|---|
+| 1 | [claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) | Claude Code本体の変更 |
+| 2 | [npmレジストリの`time`](https://registry.npmjs.org/@anthropic-ai/claude-code) | 各バージョンの**公開時刻**（鮮度期限の起点） |
+| 3 | **[@ClaudeDevs](https://x.com/ClaudeDevs)** | **上限・価格・提供範囲の変更**。リリースノートに出ない・出る前に出る |
+| 4 | [Claude Apps リリースノート](https://support.claude.com/en/articles/12138966-release-notes) | チャット／Cowork側の機能 |
+| 5 | [Claude Platform リリースノート](https://platform.claude.com/docs/en/release-notes/overview) | API・SDK・Console |
+| 6 | [Anthropic Newsroom](https://www.anthropic.com/news) | 事業・研究の発表 |
+| 7 | [公式Pricing／プラン別ヘルプ](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan) | 料金・プラン別の条件（2026-08-26に追加） |
+| 8 | [Claude Academy](https://academy.claude.com/) | 学習リソース（2026-08-24に追加・**フル版で足りる**） |
+
+> **⚠️ 2026-08-31：3のチャネルを開かずに1日見落とした。**Claude Codeの週次上限の答え（**9/14から標準+25%＝今と比べて17%減**）は**2026-08-30 01:47に@ClaudeDevsだけで出た**が、8/30 08:00のデイリー回は1・2・4・5・6を開いて「差分なし」で閉じ、**3を開いていない**。
+> **@ClaudeDevsは8/24・8/25の時点ですでに巡回先6チャネルの1つとして記録されていた。**足りなかったのはチャネルではなく、**巡回先が経緯メモの中にしか書かれておらず、開いたかどうかを確認できる形になっていなかったこと**。この表はそのために置く。**「差分なし」と書く前に、8チャネルすべてを開いたかを表で確認する。**
+> **同じ構造の4例目**（8/21＝②のニュース面／8/24＝①の学習リソース／8/25＝チャットアプリの改善／8/31＝上限・価格の変更）。**情報の種類ごとに出る面が違う。**
+
 ### 競合AIツール（ai-tools.md）← 2026-06-08追加
 - Hermes Agent・OpenClaw・Cursor等の主要AIエージェントツールの動向
 - ChatGPT（OpenAI）・Gemini（Google）の新機能・価格変更

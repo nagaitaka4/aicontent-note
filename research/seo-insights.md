@@ -1,6 +1,55 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-08-28
+最終更新: 2026-08-31
+
+---
+
+## [2026-08-31] 調査結果（定期リサーチ・12:00のフル版）
+
+**【本日の最重要】Googleが検索結果のリンクを`google.com/goto`経由に書き換えたことを、8/26に正式な仕様変更として認めた。**順位チェックツールのスクレイピング対策とみられ、**副作用としてリダイレクトURL自体がインデックスされている。**このメディアは順位チェックツールを使っていない（リポジトリ全体をgrepして0件）ため実務影響はなく、**そこが投稿の核になる**と判断して本日下書き化した（`GOTO-01`）。
+
+**あわせて2件。**①Googleが**サイトの評判ポリシー**を刷新し、**EEA域内では手動対策のランキング適用をやめた**（8/30発効の欧州委の義務）②**RedditのChatGPT引用シェアが3.8%→0.5%（86%減）**に落ちた（8/14〜17観測・暫定値）。
+
+**⚠️ 8/28に決めた「③の巡回先に調査会社のブログを加える」を実行した初回。**Ahrefs・Semrushのブログを直接開き、**Semrush側でRedditの件を拾えた**（検索では上位に出てこなかった）。方式は継続する。
+
+### 検索トレンド・アルゴリズム変化
+
+- **【最重要】Google検索結果のリンクが`google.com/goto`経由のリダイレクトに変わった。Googleが8/26に正式な仕様変更と認めた**
+  - **一次に近い出典（本日CCがブラウザで直接開いて確認）**：[鈴木謙一氏・2026-08-28](https://www.suzukikenichi.com/blog/google-search-result-links-now-route-through-google-com-goto-an-anti-scraping-measure/)。verbatim：`Google 検索結果のリンクが、現在、google.com/goto 経由でリダイレクトされるようになっています。`
+  - **展開時期（verbatim）**：`goto 経由のリダイレクトは、8 月第 1 週頃から大規模に展開が始まったようです。現在は、100% 近くに到達していると思われます。`
+  - **Google広報のコメント**（Search Engine Roundtable宛。英語原文は[Search Engine Land・2026-08-26](https://searchengineland.com/google-confirms-deploying-goto-url-redirects-to-search-results-links-485926)で確認）：`We have a long history of deploying technical measures against evolving forms of abuse, and we regularly take steps to protect our services and users.`
+  - **位置づけ（鈴木氏の見立て・verbatim）**：`検索結果での JavaScript 実行や &num=100 パラメータ廃止と同様に、ランキングチェックツールに代表される検索結果のスクレイピング対策の一環と思われます。`
+  - **副作用（verbatim）**：`http://www.google.com/goto で始まる URL が Google 検索にインデックスされてしまっているのです。` → 現在は`/goto?`を含むURLをrobots.txtでブロック中。ただし**robots.txtはクロール制御でインデックス防止の仕組みではない**ため、外部リンクがあれば検索結果に出ることがある（スニペットは非表示）
+  - **サイト運営者への影響**：**Search Consoleのデータには影響しない**（[Search Engine Land](https://searchengineland.com/google-confirms-deploying-goto-url-redirects-to-search-results-links-485926)）。影響が出るのは**検索結果をスクレイピングする順位チェックツール側**。一部ツールはすでに対応済み
+  - **このメディアの実務影響：ゼロ。**リポジトリ全体を`順位チェック`／`GRC`／`ランクトラッカー`／`Rank Tracker`／`検索順位ツール`でgrepして**0件**＝順位チェックツールを一つも使っていない。順位はGSCの平均掲載順位を月次スナップショットで見る運用（tasks/README.md 近々一時タスク）
+  - **判定：X向き＝採る。★★★★★（3条件：今出す理由◯／具体物◯）。本日下書き化した（`GOTO-01`）。**「大きな変更が起きたが、自分の運用では何も起きなかった」という形で、**煽らずに読者の判断材料になる**
+  - **判定：記事向き＝採らない。**受注距離が遠く（順位チェックツールの話）、鈴木氏自身が`[レベル: 上級]`と付けているとおり検索需要も薄い
+- **【新規】Googleがサイトの評判ポリシーを刷新。EEA域内では手動対策をランキングに反映しない**（[鈴木謙一氏・2026-08-31](https://www.suzukikenichi.com/blog/google-revamps-site-reputation-policy-with-different-enforcement-in-the-eea/)）
+  - ポリシー名から`abuse`（悪用）が外れ、**第三者コンテンツが本当にサイトに統合されているかを見る評価枠組みが詳細化**された（デザインの一貫性・品質の水準・著者表記の明確さ・他サイトとの重複）
+  - **EEA域内**：欧州委員会の義務（**2026-08-30発効**）により、**サイトの評判に関する手動対策をランキングに適用しない。**代わりに該当部分を主要ドメインと別扱いに分類して個別に評価する。**過去にEEAの検索結果へ影響していた手動対策も解除する**
+  - **EEA域外**：従来どおり手動対策がランキングに影響する
+  - ⚠️ **X向き＝採らない／記事向き＝採らない。**このメディアの読者（自社サイトに自社コンテンツを載せている個人・中小企業）は**そもそも対象外の話**（第三者コンテンツを貸しドメインで載せる行為が対象）
+- **August 2026 spam update：8/28の記録から変化なし**（開始 2026-08-18・所要 2 days, 16 hours で完了済み。[Google公式ステータスダッシュボード](https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history)を本日再確認）
+  - **2026年8月にコアアップデートは実施されていない**（7月も実施なし）。**「8月のコアアップデートで順位が落ちた」と書いている記事は誤り**
+  - **明日9/1のGSC月次スナップショットの読み方は8/24の結論のまま**：月次平均を前月と比べず、**日別で8/18前後の段差を見る**
+
+### AI検索・GEO
+
+- **【新規】RedditのChatGPT引用シェアが3.8%→0.5%へ。4日間で86%減**（[Semrush・2026-08-26](https://www.semrush.com/blog/reddits-citations-in-chatgpt-fall/)／[Search Engine Land](https://searchengineland.com/reddit-chatgpt-search-citations-fall-report-485473)／元データは[Promptwatch](https://promptwatch.com/data/reddit-citations-are-dropping-in-chatgpt)）
+  - **観測**：7/18〜8/7はシェア3.8%で安定 → **8/14〜17の平均は0.5%**。8/8にChatGPT Searchのクエリの投げ方（fan-out）が変わったのを起点に下がり始め、8/14に急落した
+  - ⚠️ **Promptwatch自身が「暫定値」と述べており、自社の計測不具合の可能性を排除していない。**確定した事実として書かない
+  - ⚠️ **OpenAIは「個別サイトに固定の露出量は設定していない／ChatGPTは今もRedditを引用している」とコメントしている**（Yahoo Tech宛）
+  - ⚠️ **同種の急落は1年前にもあった**（2025年8月初旬 約60% → 9月中旬 約10%）。**「初めて起きた異変」と書かない**
+  - **このメディアへの意味**：GEO記事群（no.43・no.54・no.60）が前提にしている「引用元になる」は、**サイト側が何もしなくても数日で入れ替わる**。**M-16（ChatGPT利用者の95%はGoogleも使う）と組で使うと、「AI検索に賭けきらない」という結論の根拠になる**
+  - **判定：X向き＝採らない**（軸②の採用基準は「使う側の何かが変わる」で、これは他社サイトの調査データ。実測でも「ゼロクリック83%」型は5ビュー）。**記事向き＝単独記事にはしない。**既存GEO記事のリライト用の補強データとして`article-backlog.md`に残す
+- **Ahrefsブログの8月の掲載を確認**（[ahrefs.com/blog](https://ahrefs.com/blog/)を本日直接確認）。AI検索まわりは`What Is Information Gain in SEO?`（8/20）・`AI adjusted Volume`（8/17）・`Reddit Appears in 83.9% of Google's Discussions and Forums Results`（8/27）
+  - ⚠️ **いずれも本日は深追いしない。**Redditの83.9%はGoogleの「ディスカッションとフォーラム」枠に限った話で、**上のChatGPT引用シェアの話とは別物。混同して並べない**
+
+### Search Console 保留記事の再開判定（`operations/article-backlog.md`・省略禁止）
+
+- **保留継続（6回連続）。**本日の検索でも**Googleの公式アナウンスは依然として無い。**外部の解説記事が言う「2026-06-03に発表→UK先行（6/17発効）→グローバル展開は時期未発表」という状態から動いていない
+- **判断ルールは8/14に確定したとおり「報道を根拠に着手しない。実機で見えた日を起点にする」。**`aicontent-note.com`のプロパティでは7/28・8/03・8/14の3回とも未展開
+- **次の実機確認は明日9/1のGSC月次スナップショット**（tasks/README.md 近々一時タスク）。**本日は実機確認をしていない**（ルーティンの範囲外・月次に統合済み）
 
 ---
 

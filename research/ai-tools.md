@@ -4,6 +4,53 @@
 
 ---
 
+## [2026-08-31] 調査結果（定期リサーチ・12:00のフル版）
+
+**【本日の最大の収穫】OpenAIが、Cursorへのモデル提供を打ち切ると発表していた。停止予定日は2026-11-12。**（[OpenAI公式ニュース・2026年8月28日付](https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/)・**本日CCがブラウザで直接開いて確認**）
+
+**⚠️ これもOpenAIのニュース面にしか出ていない。**8/28のフル版はニュース面を開いて8/24〜8/27の4件を記録したが、**この記事は同じ8/28の掲載で、フル版の実行時刻（12:00 JST）より後に出た**とみられる。**リリースノート側（ChatGPT Release Notes）には本日時点でも一切載っていない。**8/21に確立した「事業側の変更はニュース面に出る」の**5例目**。
+
+### ChatGPT（OpenAI）
+
+- **【最大の収穫・使える範囲が変わる】OpenAIがCursorとの契約を終了する。OpenAIモデルの提供停止は2026-11-12予定**（出典は上記の公式ニュース）
+  - **原文（verbatim）**：`Today, we notified SpaceX that we intend to wind down our contract providing OpenAI models to Cursor, with a proposed shutoff date of November 12, 2026.`
+  - **理由（verbatim）**：`We are making this choice because we cannot be confident that SpaceX will use our technology within our terms of service, based on our experience with Elon Musk's companies violating contracts.`
+  - **今後のモデルについて（verbatim）**：`we've decided to hold the contract cancellation to the latest date we can while not providing future models to Cursor.`
+  - **付き合いの長さ（verbatim）**：`We've worked with Cursor for nearly four years`
+  - **前提**：Cursorは2026-06にSpaceX（xAI）に買収されている（当ファイル 2026-06-24 のエントリに記録済み）。**契約の解除権はこの支配権の変更から一定期間内に限られる**（verbatim：`Our custom agreement with Cursor gives us a limited time window to cancel it after a change of control.`）
+  - **使う側の何が変わるか**：**CursorでGPT系モデルを使っている人は、11/12以降それが選べなくなる。**ツールそのものは残るが、**中で動かせるモデルの品揃えが、利用者の関与しない他社間の契約で減る**
+  - ⚠️ **「Cursorが終わる」と書かない。**終わるのはOpenAIモデルの提供で、Cursor自体はxAI傘下でGrok等を含む他モデルを持つ
+  - ⚠️ **「11/12に止まる」と断定しない。**原文は`a proposed shutoff date`＝**提案されている停止予定日**
+  - ⚠️ **Cursor／SpaceX側の反論・声明は本日確認していない。**片側の発表であることを明記せずに書かない
+  - ⚠️ **`Astra`という未発表モデル名が原文に出てくる**（verbatim：`our upcoming model, Astra`）。**リリースされた製品ではないので、これを新モデル情報として扱わない**
+  - **判定：X向き＝採る。ただし本日は下書き化しない。**理由は**直近5投稿のChatGPT／OpenAI題材が4本**（`ADS63-訂`8/31・`CG59-リ`8/30・`DALL-気`8/28・`SOL-気`8/26）で、5本目を足すと軸②が題材ごと偏るため。`ideas.md`に`research-20260831-03`として条件付きで置いた（`research-20260826-02`・`-20260828-02`・`-20260830-02`と同じ扱い）。**停止予定日が11/12と先なので、発表当日が山ではない＝条件が満たされるまで待てる**
+- **ChatGPT リリースノートは 2026-08-28 付が最新のまま**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**）。8/29〜8/31の新規エントリなし
+  - **⚠️ 8/28の恒久ルール（1つの日付に複数の見出しがぶら下がる形式では、見出しを全部数えてから閉じる）に従い、8/20〜8/28の全日付の見出しを数え直した。**結果、**取りこぼしはなかった**：8/28（1件）／8/27（1件）／8/25（2件）／8/21（5件）／8/20（1件・内訳5項目）。8/21・8/20の内容はいずれも既存記録どおりで新規なし
+- 保留中の条件付き素材3件に変化なし：`research-20260826-02`（スケジュールタスクのwebhook）・`research-20260828-02`（一時チャットの選択肢）・`research-20260830-02`（Googleアカウント複数接続）
+
+### Gemini（Google）
+
+- **Gemini API リリースノートは 2026-08-27 付が最新のまま**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日確認）。8/28以降の新規エントリなし
+  - 8/27付は`gemini-omni-1.1-flash`のGA（動画の延長生成・2枚の画像間の補間・360p/720p/1080p/4kの解像度指定）。**プレビュー版`gemini-omni-flash-preview`は2026-09-30で廃止**
+  - ⚠️ **X向き＝採らない。**動画生成APIの話で、このメディアの読者の手元では何も変わらない
+
+### 国産AIライティングツール
+
+**8/28に続き2回目の公式サイト直読み。前回のSAKUBUN・Catchyに加えて2社を開いた。**
+
+- **【新規・機能追加】EmmaTools（株式会社EXIDEA）が2026-08-17に「AI Overviewチェック」をリリースしていた**（[emma.tools](https://emma.tools/)のお知らせ欄を**本日確認**。原文：`【新機能】「AI Overviewチェック」をリリース`）
+  - 同ページのお知らせは他に`EmmaQuick(β版)をリリースしました！`（2026-04-14）、メディア掲載（2026-02-13）
+  - **料金は非公開**（`プランやご利用状況に応じてご案内しています`）。使用モデルの記載もなし
+  - **このメディアへの意味**：**国産のSEOツール側が「AI Overviewに出ているかを見る」を機能として売り始めた。**GEO記事群（no.43・no.54・no.60）が扱ってきた「引用されるか」が、**ツールで確認する対象になった**という変化。記事ネタ**M-17**の材料にした
+- **Transcope（シェアモル株式会社）は個人でも入れる価格を公開している**（[transcope.io](https://transcope.io/)を本日確認）
+  - Free ¥0（1週間トライアル）／Basic ¥11,000/月（5万文字）／Pro ¥38,500/月（25万文字・`人気No.1`表示）／Enterprise ¥66,000/月（60万文字）
+  - 使用モデルの記載は`OpenAIのGPT`のみで、バージョンの明記なし
+  - **お知らせ・更新履歴のセクションが存在しない。**導入社数の表記は`2025年2月時点`で止まっている
+- **⚠️ 8/28に書いた「個人向け・価格公開（Catchy）／法人向け・価格非公開（SAKUBUN）」という二分は、本日の2社で崩れた。**Transcopeは**価格を公開しているが金額は法人価格帯**（月1.1万〜6.6万）、EmmaToolsは**価格非公開だが機能はGEO寄りに尖っている**。**「二極化」で括らず、価格の開示／金額帯／機能の方向の3つを別々に見る**
+- ⚠️ **判定：X向き＝採らない**（4社とも読者の手元で何かが変わる話ではない）。**記事ネタ＝EmmaToolsの機能リリースをM-17の材料にした**（ツールの紹介記事にはしない。詳細は`operations/article-backlog.md`）
+
+---
+
 ## [2026-08-31] 調査結果（デイリー）
 
 **②は差分なし。**ChatGPT・Geminiとも公式の一次ソースに8/30のデイリー回以降の新規エントリがない。

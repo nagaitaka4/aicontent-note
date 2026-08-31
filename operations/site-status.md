@@ -446,7 +446,7 @@ GSCの「ページのインデックス登録」を確認（最終更新2026/08/
      - 全ページ：同上の`breakdown=page`
      - 特定ページのクエリ内訳：`...&breakdown=query&page=!<ページURLをencode>&num_of_months=3`
    - **⚠️ セッションを切らさない：既にタブがある状態で`preview_start`を呼ぶと新しいブラウザコンテキストが作られ、GSCのログインが失われる。**2回目以降は必ず`navigate`を使う（2026-08-10に実際にログインし直しが発生）
-   - **⚠️ Claude in Chrome（実Chrome）は google.com へ遷移できない。**GSCはアプリ内ブラウザ側で開くこと
+   - **✅ 2026-08-31に訂正：実Chrome（claude-in-chrome）でGSCを開けた。**プロパティ指定のURLで直接サマリー・検索パフォーマンス・設定まで到達している。**むしろアプリ内ブラウザ側のGoogleログインが切れていて使えなかった**（accounts.google.comへリダイレクト）。**今後はまず実Chromeで開く。**旧記述：~~Claude in Chrome（実Chrome）は google.com へ遷移できない。GSCはアプリ内ブラウザ側で開くこと~~
    - 表は`javascript_tool`で`document.querySelectorAll('tr')`を読むと全行まとめて取れる（行数セレクタの操作より速い）
    - **⚠️ `page=*文字列*`（contains指定）は効かない。**2026-08-07に対照テストで確認（`*claude-code*`でno.14が0表示になる）。**必ず`page=!<完全URL>`の完全一致で指定する。**contains指定の結果を「0表示」と読むと誤った結論に直結する
    - ブラウザペインが非表示だと`computer`のscrollがタイムアウトする。UI操作に頼らずURLパラメータで取得するほうが確実

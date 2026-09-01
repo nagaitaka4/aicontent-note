@@ -872,7 +872,7 @@ Claude Codeの上限、「8/31で1.5倍が終わります」とは書きませ�
 - **素の文字数151／X重み266（上限280）・`operations/x-count.py`で実測済み**（2026-08-31）
 - **出典（一次情報・公式X）**：[@ClaudeDevs](https://x.com/ClaudeDevs/status/2093742321473065266)。**本日CCがブラウザで原文を直接確認**
   - verbatim（告知本体）：`Starting September 14, we're permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans. Until then, the current 50% increase will be in place.`
-  - verbatim（同スレッドの続き・**「17%減」は公式自身の言葉**）：`Compared to today, this works out to a 17% reduction in weekly limits on Claude Code.`
+  - verbatim（同スレッドの続き・**⚠️ 2026-09-01訂正：「17%減」は公式の言葉ではない。**CCが原文を取り直したところ、17%の記述は投稿本体ではなく**背景情報（コミュニティノート＝Xの利用者が書いた注記）**だった。公式が書いているのは`Starting September 14, we're permanently raising standard weekly limits in Claude Code by 25% ... Until then, the current 50% increase will be in place.`の1文のみ。**数字自体は計算で出せる**（標準100→今150→9/14に125＝約17%減）ので、**「公式いわく」ではなく計算として書く**）：`Compared to today, this works out to a 17% reduction in weekly limits on Claude Code.`
 - **投稿時刻の裏取り**：投稿IDのスノーフレークから実測。`2093742321473065266` → **日本時間 2026-08-30 01:47:23**。同じ式を既知の[8/19 4:35の告知](https://x.com/ClaudeDevs/status/2089798442306711646)に当てて一致を確認した
 - **「公式ヘルプに期限が書いてない」の裏取り**：[Use Claude Code with your Pro or Max plan](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)を**本日CCがブラウザで直接確認**。`weekly`・`50%`・`August`のいずれも本文に無い。`research/trends.md`に8/14・8/18・8/19の3回、同じ状態を日付つきで記録している（**今日で4回目も同じ**）
 - **旧稿から引き継いだ裏取り**：4回目の延長は[@ClaudeDevs・日本時間2026-08-19 4:35](https://x.com/ClaudeDevs/status/2089798442306711646)。verbatim：`We're extending the 50% increase to weekly Claude Code limits through August 31.`

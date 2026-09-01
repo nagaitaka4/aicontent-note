@@ -1,6 +1,44 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-01
+最終更新: 2026-09-02
+
+---
+
+## [2026-09-02] 調査結果（デイリー）
+
+**本日の①は差分3件。うち2件が採用基準の「採る」側に該当した**（①auto modeの自動承認範囲が狭まった ②Claude Fable 5.1がClaude Codeの既定Fableモデルになった）。**どちらも`ideas.md`には追記したが、`queue.md`への投入は0本。**キュー在庫36本（理想10本の3.6倍）で、SKILL.mdの消費側ゲート「**期限つきが2本以上たまっていれば投入せず、消費が追いついていないと報告する**」に該当したため。
+
+### Claude Code / Anthropic
+
+- **【差分①・採る】Claude Code v2.1.257 で、auto modeが自動承認しない操作が2種類増えた**（一次情報＝[anthropics/claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)の`## 2.1.257`を**本日CCが直接取得して確認**）
+  - **公開時刻**：npmレジストリの`time`フィールドで実測。`2.1.257`＝`2026-09-01T17:15:33.223Z`＝**日本時間 2026-09-02 02:15**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）
+  - **原文（verbatim）**
+    1. `Added a Containment Escape rule to auto mode so cloud metadata-credential fetches, egress evasion, and cross-tenant reach are no longer auto-approved unless your environment marks them expected`
+    2. `Added a one-time prompt in auto mode before the first file read outside the working directories, with the option to block such reads (permissions.blockReadsOutsideWorkingDirectories)`
+  - **このPCへの当てはまり（本日CCが実機確認）**：`~/.claude/settings.json`は`permissions.defaultMode`＝**`auto`**（グローバル）、`allow`**80件**・`ask`6件・`deny`0件。**`blockReadsOutsideWorkingDirectories`は未設定／`additionalDirectories`も未設定。**このリポジトリでの作業は`~/Documents/GitHub/tasks/README.md`（TOP10）を毎回読むので、**作業ディレクトリ外の読み取りが日常的に起きている**＝2番目の変更が当たる位置にいる
+  - ⚠️ **このMacは本日時点で`2.1.243`のまま**（`claude --version`で実測）。**まだ更新していないので、確認プロンプトが実際にどう出るかは未体験。**書くときは「これから出る」であって「出た」ではない
+  - ⚠️ **docsはまだ追いついていない。**[Claude Code settings](https://code.claude.com/docs/en/settings)を本日取得して`blockReadsOutsideWorkingDirectories`を全文検索したが**0件**。**現時点の一次情報はCHANGELOGだけ**
+  - ⚠️ **「auto modeが厳しくなった」と一般化して書かない。**厳しくなったのは**この2種類**で、通常のファイル編集やコマンド実行の扱いは変わっていない
+  - **判定：X向き＝採る**（採用基準の「使える範囲」が動いた）。**ただし`ideas.md`止まり。**理由は下の在庫判定
+- **【差分②・採る】Claude Fable 5.1（`claude-fable-5-1`）が公開され、Claude Codeの既定Fableモデルになった**
+  - **一次情報3点を突き合わせた**（①[CHANGELOG `## 2.1.257`](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) ②[Claude Platform リリースノート 2026-09-01](https://platform.claude.com/docs/en/release-notes/overview) ③[Anthropic「Introducing Claude Fable 5.1 and Claude Mythos 5.1」2026-09-01](https://www.anthropic.com/claude-fable-and-mythos-5-1)を**本日CCがブラウザで直接開いて確認**）
+  - **CHANGELOG（verbatim）**：`Added Claude Fable 5.1 (claude-fable-5-1), now the default Fable model — 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads`
+  - **発表ページ（verbatim）**：`Fable 5.1 will cost an estimated 25% less than Fable 5 for typical workloads, wherever usage is billed by token.` ／ `For highly agentic work, the savings will often be much larger—up to approximately 45%.`
+  - **発表ページ（effortの既定・verbatim）**：`(Note that Fable 5.1 defaults to High effort in Claude Code, and to Medium in Claude Cowork and on Claude.ai.)`
+  - **[@ClaudeDevs](https://x.com/ClaudeDevs)（日本時間 2026-09-02 04時ごろ・本日CCがブラウザで直接確認）**：`Fable 5.1 is now live in Claude Code and the Claude Platform.` ／ `It's priced the same as Fable 5, with 75% cheaper API cache reads. It gets a lot further into a long task before it needs your input, is better at telling you when it's stuck, and its writing style is more natural.`
+  - **[公式Pricing docs](https://platform.claude.com/docs/en/about-claude/pricing)で数字を取り直した**：Fable 5.1＝入力`$10 / MTok`・出力`$50 / MTok`・キャッシュ読み`$0.25 / MTok`。**Fable 5は入力・出力が同額でキャッシュ読みが`$1 / MTok`。**動いたのは**キャッシュ読みだけ**（$1→$0.25＝**4分の1**）
+  - ⚠️ **「Fable 5.1は25%安い」と書かない。**発表ページの25%は`for typical workloads`の**推定**で、**`wherever usage is billed by token`＝従量課金の場合に限る**。@ClaudeDevsは同じことを`priced the same as Fable 5, with 75% cheaper API cache reads`と書いている。**基本料金は据え置き・キャッシュ読みだけ4分の1**が正確
+  - ⚠️ **Pro・Maxの月額は1円も変わらない。**8/26の`SOL-気`（GPT-5.6 Solの値下げ）とまったく同じ構造。**値下げ角度で書くと直近の投稿と同型になる**
+  - ⚠️ **`fable`／`best`の指定はまだFable 5のまま**（verbatim：`Changed fable and best in Claude apps gateway sessions to keep resolving to Fable 5 for now, since gateways not yet configured for Fable 5.1 reject it; pick Fable 5.1 in /model to use it`）。**これはClaude apps gatewayセッションの話で、通常のCLIには当てはまらない。**混同しない
+  - **判定：X向き＝採る**（採用基準の「既定モデル」が動いた）。**ただし`ideas.md`止まり**
+- **【差分③・採らない】Claude Code v2.1.258**（npm実測`2026-09-01T22:25:07.449Z`＝**日本時間 2026-09-02 07:25**・本日朝）。**不具合修正2件のみ**
+  - verbatim：`Fixed Claude Code failing to launch on macOS 12 (Monterey), a regression introduced in 2.1.255` ／ `Fixed remote and scheduled sessions failing with "user messages must have non-empty content" after a re-sent permission approval could not be applied`
+  - **観測**：npmには`2.1.253`〜`2.1.256`が無く、`2.1.252`（8/31）の次が`2.1.257`（9/1）。**ただし2.1.258の説明文に`a regression introduced in 2.1.255`とあるため、公開されなかったバージョンが存在する。**理由は公表されていないので**推測を書かない**
+  - **判定：X向き＝採らない**（不具合修正のみ。使う側の何も動いていない）
+- **【差分・採らない】Anthropic Newsroom に 2026-09-01 付「Developing Enterprise Frontier Safeguards with our customers」が出た**（[anthropic.com/news](https://www.anthropic.com/news)を本日CCがブラウザで直接開いて確認）
+  - Fable 5.1の発表ページ側の説明（verbatim）：`EFS works by storing data in cloud infrastructure controlled entirely by the customer, not Anthropic. It will be made available to enterprise customers in phases, beginning later this fall.`
+  - **判定：X向き＝採らない。****エンタープライズ契約の話で、読者の手元では何も変わらない。**Newsroom記事に同じ判定を出すのは8/28・8/31・9/1に続いて4例目
+- **Claude Apps リリースノートに 2026-09-01 付エントリ**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)を本日確認）。見出しは`Claude Fable 5.1 and Claude Mythos 5.1 launch`で、**上の差分②と同じ内容**
 
 ---
 

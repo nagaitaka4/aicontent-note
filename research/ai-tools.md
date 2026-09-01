@@ -1,6 +1,37 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-01
+最終更新: 2026-09-02
+
+---
+
+## [2026-09-02] 調査結果（デイリー）
+
+**②の差分は6件（ChatGPT 8/31付が4件・9/1付が1件・Gemini 9/1付が1件）。全件「採らない」。**どれも**日本の読者の手元では使い方が変わらない**か、**このメディアが使っていないもの**。加えて**直近5投稿の題材がChatGPT／OpenAIに偏ったままで、同じ題材を続けられない**（下記）。
+
+### ChatGPT（OpenAI）
+
+⚠️ **前回（9/1）の記録「8/28付が最新のまま・8/29〜8/31の新規エントリなし」は、本日時点の同ページと食い違う。**本日開くと**8/31付に4件・9/1付に1件**がある。**8/31のリサーチ時点でまだ掲載されていなかったか、当方が取り逃がしたかは判別できない。**8/28に立てた恒久ルール（1つの日付に複数の見出しがぶら下がる形式では見出しを全部数える）は守っていたが、**日付そのものが後から現れる場合がある**とわかったので、**デイリーでは「最新日付」だけでなく直近3日分の見出しを毎回数え直す**（本日から）。
+
+- **【差分・記録のみ・採らない】2026-08-31付の4件**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**）
+  1. `Create and share personalized sticker packs` — モバイルで全ユーザー向け（verbatim：`Available to all ChatGPT users on mobile globally.`）
+  2. `See Live voice content on your Lock Screen` — iPhoneのロック画面／Dynamic Islandに音声会話の内容が出る
+  3. `Use website tools in the desktop browser` — **ChatGPT WorkとCodexが、デスクトップアプリ内蔵ブラウザで、対応サイトが提供するツールを直接使えるようになった**（verbatim：`Site tools use WebMCP and require a supported account, model, and webpage. They are available in the built-in desktop browser, not through the Chrome extension.`）
+  4. `Use the browser extension in more browsers` — **拡張がMicrosoft Edge・Brave・Opera・Vivaldiに対応**（verbatim：`Side chat is available in Edge, Brave, and Vivaldi. Opera supports tab mentions and browser control, but not side chat.`）
+  - **判定：X向き＝採らない。**3番目（WebMCP）は構造として面白いが、**`ChatGPT Work`と`Codex`限定・内蔵ブラウザ限定・対応サイト限定**で、**このメディアの手元では何も変わらない**（ChatGPT WorkもCodexも使っていない）。4番目も**このMacはChromeで、対応済みのブラウザが増えただけ**
+  - ⚠️ **もう1つの理由：直近5投稿のうち4本がChatGPT／OpenAI題材のまま。**直近5は`LIMIT-気`9/1（Claude）・`ADS63-訂`8/31（ChatGPT広告）・`CG59-リ`8/30（ChatGPTの上限）・`DALL-気`8/28（ChatGPTのDALL·E）・`SOL-気`8/26（GPT-5.6 Sol）＝**4本**。**9/1に`LIMIT-気`が入って`RC-気`（Claude題材）が枠から落ちたため、比率は8/31から動いていない**
+- **【差分・記録のみ・採らない】2026-09-01付の1件**：`Healthcare Public Data in ChatGPT for Clinicians`。verbatim：`Eligible ChatGPT for Clinicians users in the United States can now use Healthcare Public Data in ChatGPT.`
+  - **判定：X向き＝採らない。****米国の臨床医向けで、日本の読者には当てはまらない**
+- 保留中の条件付き素材4件に変化なし：`research-20260826-02`（スケジュールタスクのwebhook・バックストップ9/5）・`research-20260828-02`（一時チャットの選択肢・9/5）・`research-20260830-02`（Googleアカウント複数接続・9/6）・`research-20260831-03`（Cursorへのモデル提供打ち切り・10/31）
+  - ⚠️ **4件の条件（直近5投稿のChatGPT／OpenAI題材が2本以下）は本日も未成立。**上記のとおり**4本**で、8/31から動いていない。**成立させるにはClaude題材か軸①を2本続けて出す必要がある**（そのたびに`SOL-気`側から1本ずつ枠を抜ける）
+
+### Gemini（Google）
+
+- **【差分・記録のみ・採らない】2026-09-01付：Flash系の複数モデルで agentic video understanding が公開**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日確認）。動画のタイムラインを動的にたどり、必要に応じて字幕・フレーム・音声トラックを取りに行く仕組みで、長尺では最大88%のトークン削減とされる
+  - **判定：X向き＝採らない。****このメディアは動画を扱っていないので、実務に落として語れない**（採用基準の「ニュースの要約で終わる」側）
+
+### 国産AIライティングツール
+
+- **本日は巡回なし。**更新履歴の更新頻度が月単位のため、月・金のフル版に任せる（8/28・8/31・9/1と同じ判断）
 
 ---
 

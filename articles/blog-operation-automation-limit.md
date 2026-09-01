@@ -3,10 +3,10 @@ no: 64
 series:
 series_no:
 title: ブログ運用はどこまで自動化できたか。人に残った2つの判断
-date:
-url:
+date: 2026-09-02
+url: https://aicontent-note.com/blog-operation-automation-limit/
 slug: blog-operation-automation-limit
-status: draft
+status: published
 description: AIにブログ運用をどこまで任せられるのかを、実際の運用記録から整理します。4ヶ月前に無理だと書いた入稿作業は、ログイン後から下書き保存までを人が触らずに終えられました。それでも記事1本の流れで見ると、どの工程にもAIと人の両方が入っています。人に残った2つの判断まで書きます。
 eyecatch_alt: ブログ運用の自動化でAIに任せた工程と人に残った2つの判断を整理した記事のアイキャッチ画像
 eyecatch: eyecatch_0064.png

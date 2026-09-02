@@ -124,7 +124,7 @@ Claude Codeは置いたCLAUDE.mdを自動で読み込みます（[Claude Code公
 
 ## よくある疑問
 
-よく出る疑問を4つ整理します。
+よく出る疑問を5つ整理します。
 
 【はてな】<br>
 ChatGPT WorkだけでClaude Codeは不要になる？<br>
@@ -141,6 +141,12 @@ ChatGPT Workです。普段のChatGPTから使えて、初期設定の負担が�
 【はてな】<br>
 競合なのか、併用できるのか？<br>
 受け持つ工程が重ならないため、どちらかを選んで捨てる関係にはなっていません。
+
+【はてな】<br>
+Claude Coworkは選択肢に入る？<br>
+入ります。Claudeアプリの入力欄で切り替えるだけで、初期設定の負担はありません。
+
+Coworkの実際の使われ方は、[Claude Coworkの使い方｜実際の9割は開発以外だった](https://aicontent-note.com/claude-cowork-usage-data/)にまとめています。
 
 ---
 

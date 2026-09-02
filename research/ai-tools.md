@@ -1,6 +1,32 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-02
+最終更新: 2026-09-03
+
+---
+
+## [2026-09-03] 調査結果（デイリー）
+
+**②の差分は2件（ChatGPTが8/31付に1件・Geminiが9/2付に1件）。全件「採らない」。**ChatGPT側は**9/2・9/3の新規日付が0件**で、9/1付が最新のまま。Gemini側は**新モデルのGA**で、採用基準が明示的に「採らない」としている「新モデルが出たという報告だけ」に当たる。
+
+### ChatGPT（OpenAI）
+
+- **【最新日付は9/1のまま・新規日付なし】**[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**。**最上部は`September 1, 2026`（Healthcare Public Data in ChatGPT for Clinicians＝9/2に記録済み・米国の臨床医向けで採らない）で、9/2・9/3付のエントリは存在しない**
+- **【差分・記録のみ・採らない】8/31付に見出しが1件増えていた**：`Improved pronunciation help in ChatGPT`（verbatim：`When you ask how to pronounce a word or phrase, you can now tap to hear it aloud and see a phonetic breakdown`）
+  - **9/2の記録では8/31付を4件としていたが、本日は5件ある。**8/28に立てた「1つの日付にぶら下がる見出しを全部数える」ルールは守っていたので、**後から見出しが足された側**とみられる。**9/1に続いて2回目**なので、**「直近3日分の見出しを毎回数え直す」（9/2新設）を継続する**
+  - **判定：X向き＝採らない。**発音の読み上げ機能で、**このメディアの実務に落として語れない**
+- 保留中の条件付き素材4件に変化なし：`research-20260826-02`（スケジュールタスクのwebhook・バックストップ9/5）・`research-20260828-02`（一時チャットの選択肢・9/5）・`research-20260830-02`（Googleアカウント複数接続・9/6）・`research-20260831-03`（Cursorへのモデル提供打ち切り・10/31）
+  - ✅ **4件の条件（直近5投稿のChatGPT／OpenAI題材が2本以下）に近づいた。**直近5＝`GOTO-気`9/2（Google検索）・`LIMIT-気`9/1（Claude）・`ADS63-訂`8/31（ChatGPT広告）・`CG59-リ`8/30（ChatGPTの上限）・`DALL-気`8/28（ChatGPTのDALL·E）＝**3本**。**9/2に`GOTO-気`が入って`SOL-気`（GPT-5.6 Sol）が枠から落ち、4本→3本に減った。**あと1本、Claude題材か軸①を出せば条件が成立する。**本日投入した`CU-01`はClaude題材なので、出せばこの4件が動き出す**
+
+### Gemini（Google）
+
+- **【差分・記録のみ・採らない】2026-09-02付：`gemini-3.8-flash`がGA（一般提供）になった**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)を本日確認。**ページ上の最新エントリも9/2付で、9/3付は0件**）
+  - 公式の位置づけ（verbatim）：`our most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows`
+  - 二次情報では**3.7 Flashの発表からわずか3週間**での投入で、**料金は3.7と同じ$0.75／$3.75 per MTok**と報じられている（[マイナビ 2026-09-03](https://news.mynavi.jp/techplus/article/20260903-4908595/)・[9to5Google 2026-09-02](https://9to5google.com/2026/09/02/gemini-3-8-flash-launch/)）。⚠️ **料金は二次情報なので、書くなら公式Pricingで取り直す**
+  - **判定：X向き＝採らない。****採用基準が「採らない」と明示している「新モデルが出たという報告だけ」に当たる。**料金も据え置きで、**このメディアはGemini APIを使っていないので実務に落として語れない**
+
+### 国産AIライティングツール
+
+- **差分なし**（本日の①②で採る材料が立ったため、深追いはしていない）
 
 ---
 

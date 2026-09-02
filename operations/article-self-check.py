@@ -466,7 +466,8 @@ def main(path):
     print("\n--- 重複チェック ---")
     quotes = re.findall(r"「[^」]{2,20}」", body)
     dup_quotes = {k: v for k, v in Counter(quotes).items() if v > 1}
-    report("同じ引用フレーズの使い回しがない", not dup_quotes, f"{dup_quotes}")
+    if not report("同じ引用フレーズの使い回しがない", not dup_quotes, f"{dup_quotes}"):
+        failures += 1  # 2026-09-03修正：[NG]を表示しながら件数に加算していなかった
 
     chunks = []
     for line in body.split("\n"):

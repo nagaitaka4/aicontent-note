@@ -1,6 +1,32 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-02
+最終更新: 2026-09-03
+
+---
+
+## [2026-09-03] 調査結果（デイリー）
+
+**本日の①は差分3件。うち1件が採用基準の「採る」側に該当した**（Claude Codeのデスクトップアプリで、画面制御が裏で動くようになった）。**この1件は`ideas.md`に追記したうえで、そのまま`queue.md`へ下書き投入した（`CU-01`）。**キュー在庫37本（理想10本の3.7倍）で「在庫10本超 → 基準を上げる」に該当するため、**「自分の使い方が変わるもの」だけを通した。**残り2件は`research/`止まり。
+
+### Claude Code / Anthropic
+
+- **【差分①・採る】Claude Codeのデスクトップアプリで、computer use（画面制御）が裏で動くようになった**（一次情報＝[@ClaudeDevs・日本時間 2026-09-03 04時ごろ](https://x.com/ClaudeDevs/status/2095226982644830648)を**本日CCがブラウザで直接開いて確認**）
+  - **原文（verbatim）**：`Computer use in the Claude Code desktop app now runs in the background.` ／ `Claude works in the apps you've allowed it to while you keep working. It's already on if you've used computer use before, or turn it on in Settings > General.` ／ `In beta on Pro and Max, macOS only.`
+  - **何が変わるか**：**これまでは、Claudeが画面を触っている間、ほかのウィンドウが全部隠れていた。**[Desktop docs](https://code.claude.com/docs/en/desktop)の`Unhide apps when Claude finishes`の説明（verbatim）：`while Claude is working, your other windows are hidden so it interacts with only the approved app. When Claude finishes, hidden windows are restored unless you turn this setting off.` **＝画面制御を頼んだらMacを1台まるごと明け渡す形だったものが、任せたまま自分の作業を続けられるようになる**
+  - **条件**：**Pro・Max限定／macOS限定／ベータ。**`It's already on if you've used computer use before`＝**過去にcomputer useを使っていれば設定は不要**。使っていなければ**Settings > General**（Desktop app の欄）でオンにする
+  - ⚠️ **公式ドキュメントはまだ追いついていない。**[Desktop docs](https://code.claude.com/docs/en/desktop)・[CLI docs](https://code.claude.com/docs/en/computer-use)の両方を本日取得したが、**どちらも「他のウィンドウは隠れる」のままで、`background`での実行に触れた記述は0件。**現時点の一次情報は@ClaudeDevsの投稿だけ（8/31〜9/2にCHANGELOGとdocsのズレを記録したのと同じ形）
+  - ⚠️ **「Claude Codeが裏で動くようになった」と広げて書かない。**変わったのは**デスクトップアプリのcomputer use**であって、CLIでもなければClaude Code全体の話でもない。CLI docsの比較表は本日時点でも`Auto-unhide toggle：Desktop=Optional／CLI=Always on`のまま
+  - ⚠️ **このMacで実機確認はしていない。**デスクトップアプリの画面制御をユーザーが使っているかは未確認で、**「自分は使っていた／使っていなかった」と書ける材料がない。**下書きは事実と条件だけで組んだ
+  - **判定：X向き＝採る**（採用基準の「使える範囲」が動いた）。**在庫37本で基準を上げているが、それでも通した理由は、①このMacがmacOSでプランがMax＝条件に当てはまる位置にいる ②「画面を取られるから任せられない」という制約が消える話で、このメディアの軸（AIに任せて自分は別のことをやる）に直結する ③本日発表で最も鮮度が高い、の3点**
+- **【差分②・採らない】Claude Code v2.1.259**（npmレジストリの`time`で実測：`2026-09-02T21:21:42.115Z`＝**日本時間 2026-09-03 06:21**。`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）。**追加5件・修正26件・改善6件・変更1件の大きな回だが、料金・制限・既定モデル・提供終了のどれも動いていない**
+  - **使う側に近い項目を3つ拾って検討した（いずれも採らない）**
+    1. `Fixed Bash Read() deny rules not covering files given as option values (--ignore-revs-file=.env, -f.env, @file), git diff/git grep file operands, or cd DIR && cat FILE compounds; grep -r/cp -r over a directory holding a denied file now asks` — **`.env`のような拒否ファイルが抜け道から読めていた穴。**ただし**このMacの`~/.claude/settings.json`は`deny`0件**（8/28・9/2に実機確認済み）で、**拒否ルールを1つも書いていない以上、手元では何も変わらない**
+    2. `Fixed concurrent sessions silently reverting each other's ~/.claude.json changes` ／ `Fixed remote and scheduled sessions doing nothing after a connector-tool permission prompt was approved while the session was paused` — **スケジュール実行・リモートのセッションが許可の承認でつまずく不具合の修正**（前日の`2.1.258`にも同種の修正あり）。**このリポジトリは毎朝8時の`ai-trends-daily`と月金12時の`marketing-research-mon-fri`を回しているので当たる位置にはいる。**⚠️ **ただし`research/`の記録を見るかぎり8/13〜9/2のデイリーは毎日実行できており、この不具合を踏んだ形跡がない。**「たぶん踏んでいた」は推測なので書かない
+    3. `Added --permission-prompts none for unattended headless hosts` — 無人のヘッドレス実行向け。**このメディアの使い方に当てはまらない**
+  - **判定：X向き＝採らない**（不具合修正が中心で、使う側の何かが動いたと言えるものがない）
+- **【差分③・採らない】Anthropicが Claude Commerce Agents をオープンソース化**（[@ClaudeDevs・日本時間 2026-09-03 05時ごろ](https://x.com/ClaudeDevs)を本日CCがブラウザで直接確認）。verbatim：`We're open-sourcing Claude Commerce Agents.` ／ `This is a blueprint for building shopping and merchant agents, with reference implementations across retail, travel, telecom, and entertainment.`
+  - **判定：X向き＝採らない。****買い物・小売のエージェントを作る人向けの実装例で、読者の手元では何も変わらない**
+- **【差分なし】Claude Platform リリースノート・Anthropic Newsroom**：[Platform リリースノート](https://platform.claude.com/docs/en/release-notes/overview)・[anthropic.com/news](https://www.anthropic.com/news)を本日取得。**どちらも最新が9/1付のままで、9/2・9/3の新規エントリは0件**（9/1＝Fable 5.1／Mythos 5.1の公開と、Enterprise Frontier Safeguards。いずれも9/2に記録済み）
 
 ---
 

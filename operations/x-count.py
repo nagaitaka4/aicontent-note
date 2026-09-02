@@ -31,8 +31,11 @@ URL_WEIGHT = 23  # Xは全URLをt.coに置換し長さにかかわらず一律23
 
 def weight(text):
     import re
-    urls = re.findall(r"https?://\S+", text)
-    text = re.sub(r"https?://\S+", "", text)
+    # スキームありのURL＋裸のドメイン（Xは両方リンク化してt.co＝23で数える）
+    # 2026-09-02修正：google.com/goto のような裸のドメインを数え落としていた
+    URL_RE = r"(?:https?://\S+|(?<![\w@./])(?:[\w-]+\.)+(?:com|net|org|jp|io|ai|co|dev|app|me|to|so|tv|info|biz)(?:/\S*)?)"
+    urls = re.findall(URL_RE, text)
+    text = re.sub(URL_RE, "", text)
     total = URL_WEIGHT * len(urls)
     for ch in text:
         o = ord(ch)

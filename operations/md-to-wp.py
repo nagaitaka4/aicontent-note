@@ -185,6 +185,37 @@ def post_id(slug):
         return None
 
 
+def media_id(url):
+    """公開APIで画像URLからメディアIDを引く（wp:imageブロックに必要）。"""
+    slug = url.rsplit("/", 1)[-1].rsplit(".", 1)[0]
+    api = "%s/wp-json/wp/v2/media?slug=%s&_fields=id,source_url" % (SITE, slug)
+    try:
+        with urllib.request.urlopen(api, timeout=10) as r:
+            data = json.load(r)
+        for m in data:
+            if m.get("source_url") == url:
+                return m["id"]
+        return data[0]["id"] if data else None
+    except Exception:
+        return None
+
+
+def image_block(alt, url):
+    """`![alt](url)` を SWELL/WPの画像ブロックにする（2026-09-03新設）。
+    IDが引けない場合は0を入れず警告する。0のままだとWP側で画像が孤立する。
+    """
+    mid = media_id(url)
+    if mid is None:
+        print("  ⚠️ メディアIDを取得できなかった: %s（先にWPへアップする）" % url, file=sys.stderr)
+        return None
+    return (
+        '<!-- wp:image {"id":%d,"sizeSlug":"large","linkDestination":"none"} -->\n'
+        '<figure class="wp-block-image size-large">'
+        '<img src="%s" alt="%s" class="wp-image-%d"/></figure>\n'
+        '<!-- /wp:image -->' % (mid, url, alt, mid)
+    )
+
+
 def post_link(title, url):
     slug = url.rstrip("/").rsplit("/", 1)[-1]
     pid = post_id(slug)
@@ -294,6 +325,14 @@ def convert(md):
                     "<strong>%s</strong>" % inner if BLOCK_STRONG else inner,
                 )
             )
+            continue
+
+        # 画像（![alt](url) 単独行 → wp:image）2026-09-03新設
+        mimg = re.match(r"^!\[([^\]]*)\]\((https?://[^)]+)\)$", c.strip())
+        if mimg:
+            blk = image_block(mimg.group(1), mimg.group(2))
+            if blk:
+                out.append(blk)
             continue
 
         # CTA（＼〜／ の2行 → 中央寄せ段落 → ボタン）

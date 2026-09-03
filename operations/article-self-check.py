@@ -470,7 +470,9 @@ def main(path):
 
     # --- 重複チェック（feedback_no_repetition.mdより統合） ---
     print("\n--- 重複チェック ---")
-    quotes = re.findall(r"「[^」]{2,20}」", body)
+    # 画像行のaltとキャプションは、本文と同じ画面名を指すので「」が重なる。除外する。
+    body_no_img = re.sub(r"^!\[[^\]]*\]\([^)]*\)$", "", body, flags=re.M)
+    quotes = re.findall(r"「[^」]{2,20}」", body_no_img)
     dup_quotes = {k: v for k, v in Counter(quotes).items() if v > 1}
     if not report("同じ引用フレーズの使い回しがない", not dup_quotes, f"{dup_quotes}"):
         failures += 1  # 2026-09-03修正：[NG]を表示しながら件数に加算していなかった
@@ -479,6 +481,10 @@ def main(path):
     for line in body.split("\n"):
         line = line.strip()
         if not line or line.startswith(("#", "---", "＼", "[", "【")):
+            continue
+        # 2026-09-04：画像行（![alt](url "caption")）は読者が読む文ではない。
+        # altとキャプションは同じ画面を指すので語が重なるのが正常。対象外にする。
+        if line.startswith("!["):
             continue
         if line in BOILERPLATE_EXACT:
             continue
@@ -542,8 +548,18 @@ def main(path):
     # という原則2違反を誘発していた。適正な分量は記事とKWによって異なるので
     # 上限は設けず、参考値の表示のみにする（判断は人が行う）。
     print("\n--- 文字数（参考値・NG判定はしない） ---")
-    char_count = len(re.sub(r"\s", "", body))
-    print(f"[INFO] 本文 {char_count}字（公開記事の中央値は約3,500字）")
+    # 2026-09-04：画像のalt（読者は読まない）を字数に含めない。
+    # キャプションは読者が読むので、画像行からキャプションだけ残して数える。
+    body_for_count = re.sub(
+        r'^!\[[^\]]*\]\([^)\s]+(?:\s+"([^"]*)")?\)$',
+        lambda m: m.group(1) or "",
+        body,
+        flags=re.M,
+    )
+    char_count = len(re.sub(r"\s", "", body_for_count))
+    n_img = len(re.findall(r"^!\[", body, flags=re.M))
+    note = f"／画像{n_img}枚（altは字数に含めない）" if n_img else ""
+    print(f"[INFO] 本文 {char_count}字（公開記事の中央値は約3,500字）{note}")
     print("   → 冗長なら削る。ただし数値を理由に内容を削らない（原則2）")
 
     print(f"\n=== 結果: NG {failures}件 ===")

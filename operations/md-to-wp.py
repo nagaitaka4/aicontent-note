@@ -186,33 +186,48 @@ def post_id(slug):
 
 
 def media_id(url):
-    """公開APIで画像URLからメディアIDを引く（wp:imageブロックに必要）。"""
-    slug = url.rsplit("/", 1)[-1].rsplit(".", 1)[0]
-    api = "%s/wp-json/wp/v2/media?slug=%s&_fields=id,source_url" % (SITE, slug)
-    try:
-        with urllib.request.urlopen(api, timeout=10) as r:
-            data = json.load(r)
+    """公開APIで画像URLからメディアIDを引く（wp:imageブロックに必要）。
+
+    ⚠️ スラッグはファイル名と一致しない。同名を再アップすると
+    ファイルは `img_0065_01-1.png`・スラッグは `img_0065_01-2` のようにずれる
+    （2026-09-04に実際にずれた）。**必ずsource_urlの完全一致で確定する。**
+    """
+    stem = url.rsplit("/", 1)[-1].rsplit(".", 1)[0]
+    for q in ("slug=%s" % stem, "search=%s" % stem.split("-")[0]):
+        api = "%s/wp-json/wp/v2/media?%s&per_page=100&_fields=id,source_url" % (SITE, q)
+        try:
+            with urllib.request.urlopen(api, timeout=10) as r:
+                data = json.load(r)
+        except Exception:
+            continue
         for m in data:
             if m.get("source_url") == url:
                 return m["id"]
-        return data[0]["id"] if data else None
-    except Exception:
-        return None
+    return None
 
 
-def image_block(alt, url):
-    """`![alt](url)` を SWELL/WPの画像ブロックにする（2026-09-03新設）。
+def image_block(alt, url, caption=None):
+    """`![alt](url "キャプション")` を SWELL/WPの画像ブロックにする（2026-09-03新設）。
     IDが引けない場合は0を入れず警告する。0のままだとWP側で画像が孤立する。
+    キャプションは2026-09-04追加。**画像は必ずキャプションを付ける**——
+    本文中に画像を置くと、何の画面なのかが読者に伝わらない（2026-09-04ユーザー指摘）。
     """
     mid = media_id(url)
     if mid is None:
         print("  ⚠️ メディアIDを取得できなかった: %s（先にWPへアップする）" % url, file=sys.stderr)
         return None
+    if not caption:
+        print("  ⚠️ 画像にキャプションがない: %s（何の画面か分からない）" % url, file=sys.stderr)
+    cap = (
+        '<figcaption class="wp-element-caption">%s</figcaption>' % inline(caption)
+        if caption
+        else ""
+    )
     return (
         '<!-- wp:image {"id":%d,"sizeSlug":"large","linkDestination":"none"} -->\n'
         '<figure class="wp-block-image size-large">'
-        '<img src="%s" alt="%s" class="wp-image-%d"/></figure>\n'
-        '<!-- /wp:image -->' % (mid, url, alt, mid)
+        '<img src="%s" alt="%s" class="wp-image-%d"/>%s</figure>\n'
+        '<!-- /wp:image -->' % (mid, url, alt, mid, cap)
     )
 
 
@@ -328,9 +343,11 @@ def convert(md):
             continue
 
         # 画像（![alt](url) 単独行 → wp:image）2026-09-03新設
-        mimg = re.match(r"^!\[([^\]]*)\]\((https?://[^)]+)\)$", c.strip())
+        mimg = re.match(
+            r'^!\[([^\]]*)\]\((https?://[^)\s]+)(?:\s+"([^"]*)")?\)$', c.strip()
+        )
         if mimg:
-            blk = image_block(mimg.group(1), mimg.group(2))
+            blk = image_block(mimg.group(1), mimg.group(2), mimg.group(3))
             if blk:
                 out.append(blk)
             continue

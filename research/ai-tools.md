@@ -1,6 +1,30 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-03
+最終更新: 2026-09-04
+
+---
+
+## [2026-09-04] 調査結果（デイリー）
+
+**②の差分は1件（OpenAIがGPT-6 Astraを公開）。採らない。**採用基準が明示的に「採らない」としている「**新モデルが出たという報告だけ**」に当たるうえ、**公式が「まだ一般提供していない」と書いている**＝使う側の手元では現時点で何も変わっていない。Gemini・国産ツールは差分なし。
+
+### ChatGPT（OpenAI）
+
+- **【差分①・採らない】GPT-6 Astra が公開された。ただし一般提供はされていない**（一次情報＝[ChatGPT Release Notes・2026-09-03付](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**）
+  - **原文（verbatim）**：`Today we're introducing GPT-6 Astra, with improvements in coding, research, computer use, and complex, multi-step work.` ／ `Access is rolling out to a limited set of organizations. Astra is not yet generally available. Broader availability is planned over the coming days.`
+  - **安全監視の追記（verbatim）**：`Astra includes additional safety monitoring to look for cases where agents may not have interpreted your instructions correctly. If a potential case is detected, the conversation may be paused or stopped as a precaution for you to review and decide how to proceed.`
+  - 🚨 **二次情報との食い違いを検出した（重要）。**Bloomberg・9to5Mac系の記事は「**数日以内に Plus・Pro・Business・Enterprise の全ユーザーと OpenAI API・AWS で使えるようになる**」と書いているが、**公式リリースノートにはプラン名もAPIもAWSも一切書かれていない**（上のverbatimが全文の該当箇所）。さらに[openai.com の Product News](https://openai.com/news/product-releases/)を本日ブラウザで開いて確認したが、**Astraのエントリ自体が無く、最新は9/1付**。**プラン名・提供時期は二次情報なので書かない**（8/24の`ADS-気`＝英語メディア発の情報を公式扱いしかけて8/31に訂正投稿を出した件と同じ型）
+  - **判定：X向き＝採らない。**理由は2つ。①採用基準の「採らない」列＝**新モデルが出たという報告だけ** ②**公式が`not yet generally available`と明記しており、Plusの手元では現時点で何も変わっていない**。**「使える範囲が変わった」と書ける材料がまだない**
+  - **再訪の条件**：**Plusで実際に選べるようになったら判定し直す。**そのときは「新モデルが出た」ではなく、**上の安全監視（会話が途中で止まりうる）**のように**使う側の挙動が変わる部分**で書けるかを見る
+- **【差分なし】その他のChatGPT リリースノート**：9/1付（ChatGPT for Clinicians向けHealthcare Public Data）・8/31付（ステッカーパック等）はいずれも記録済みまたは対象外。**9/4付の新規エントリは0件**
+
+### Gemini（Google）
+
+- **【差分なし】**[Gemini Apps リリースノート](https://gemini.google/release-notes/)を本日取得。**最新は8/19付（学生向けハブ）のままで、9/2〜9/4の新規エントリは0件**
+
+### 国産AIライティングツール
+
+- **【差分なし】**本日の検索で、SAKUBUN・Catchy・Transcope・BringRitera等の**料金改定・機能変更の一次情報は確認できなかった**。ヒットするのは比較まとめ記事（2026年版）のみで、**公式発表の日付が特定できるものが無い**ため記録しない
 
 ---
 

@@ -1,6 +1,27 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-03
+最終更新: 2026-09-04
+
+---
+
+## [2026-09-04] 調査結果（デイリー）
+
+**本日の①は差分2件。どちらも「採らない」。****`ideas.md`への追記は0件・`queue.md`への投入も0本。**投入0本の理由は採用基準を満たすネタがなかったことに加え、**SKILL.mdの消費側ゲート「期限つきが2本以上たまっていれば投入せず、消費が追いついていないと報告する」に該当した**ため（期限つきは`PERM-01`〜9/4・`CU-01`〜9/5の2本）。在庫37本＝理想10本の3.7倍で「在庫10本超 → 基準を上げる」にも該当している。
+
+### Claude Code / Anthropic
+
+- **【差分①・採らない】Claude Codeの拡張の仕組みとして「Function Hooks」の提案が公開された。ただし出荷されていない**（一次情報＝[@ClaudeDevs・日本時間 2026-09-04 03時ごろ](https://x.com/ClaudeDevs/status/2095572891941351550)を**本日CCがブラウザで直接開いて確認**／[anthropics/claude-code issue #91870](https://github.com/anthropics/claude-code/issues/91870)を`gh`で本文取得）
+  - **@ClaudeDevs（verbatim）**：`We're exploring a new way to let you extend and customize Claude Code: Function Hooks.` ／ `Here's a couple videos showing what you'd be able to do. It hasn't shipped yet, we'd love feedback on this on our GitHub issue.`
+  - **issue本文（verbatim）**：`it would be neat if you could hook into CC using TypeScript functions a la Express (or Koa!), and basically change whatever you want.` ／ `If you want this, please engage here - the response from the community likely dictates whether this ships or not.`
+  - **判定：X向き＝採らない。**理由は2つ。①**出荷されていない**（公式自身が`It hasn't shipped yet`と書き、**出るかどうかもコミュニティの反応次第**だと明記している）。採用基準の「使う側の何かが変わる」に**まだ達していない** ②**TypeScriptの関数を書いてClaude Codeの挙動を差し替える提案**で、このメディアの読者（非エンジニア／コンテンツ運用側）の手元では何も変わらない
+  - ⚠️ **「Claude Codeにフックが追加された」と書かない。**既存のhooks（`settings.json`の`PreToolUse`等）とは別物の**提案**であって、追加された機能ではない
+  - **再訪の条件**：出荷されたら、そのときに採用基準で判定し直す
+- **【差分②・採らない】npmに`2.1.260`が出たが、中身が一次情報で確認できない**
+  - **npmレジストリの`time`で実測**：`2.1.260`＝`2026-09-03T22:32:02.087Z`＝**日本時間 2026-09-04 07:32**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）
+  - ⚠️ **`dist-tags`は`next`で、`latest`は`2.1.259`のまま**（同じ実測。9/3に記録した`2.1.259`が引き続き通常の配布版）
+  - ⚠️ **[CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)に`## 2.1.260`の項目は0件**（本日取得して全文検索）。**変更点が公表されていないので、中身については何も書かない**
+  - **判定：X向き＝採らない**（内容が確認できない。推測を書かない）
+- **【差分なし】Anthropic Newsroom・Claude Platform リリースノート・Claude Apps リリースノート**：[anthropic.com/news](https://www.anthropic.com/news)・[Platform リリースノート](https://platform.claude.com/docs/en/release-notes/overview)・[Claude Apps リリースノート](https://support.claude.com/en/articles/12138966-release-notes)の3つを本日取得。**いずれも最新が9/1付のままで、9/2〜9/4の新規エントリは0件**（9/1＝Fable 5.1／Mythos 5.1の公開、Enterprise Frontier Safeguards。どちらも9/2に記録済み）
 
 ---
 

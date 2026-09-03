@@ -3,10 +3,10 @@ no: 65
 series:
 series_no:
 title: AI Overviewの確認方法。管理画面と検索画面の2つで見る
-date: 2026-09-03
-url:
+date: 2026-09-04
+url: https://aicontent-note.com/ai-overview-check-method/
 slug: ai-overview-check-method
-status: draft
+status: published
 description: Search Consoleの生成AIレポートでは、AI概要とAIモードを合わせた表示回数まで確認できます。ただし、どのキーワードで出たのかは分かりません。実際に検索してAI Overviewの引用元を開く手順と、4つのキーワードで自分のサイトを確かめた結果まで書きます。
 eyecatch_alt: AI Overviewに自分の記事が出ているかをSearch Consoleと検索画面の2つで確認する方法を解説した記事のアイキャッチ画像
 eyecatch: eyecatch_0065.png

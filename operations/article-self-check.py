@@ -486,6 +486,11 @@ def main(path):
         # 地の文の言い回しの使い回し検出なので、表の行そのものを対象外にする。
         if line.startswith("|"):
             continue
+        # 2026-09-03：箇条書きの項目は「並列に並べるもの」であり、構文が似るのは正常。
+        # 地の文の言い回しの使い回しを検出するのがこのチェックの目的なので、`・`で始まる行は
+        # 対象外にする（`**・…**` のように強調が付いた形も同じ）。
+        if re.match(r"^(\*\*)?・", line):
+            continue
         for sent in re.split(r"(?<=。)", line):
             sent = sent.strip()
             if sent and sent not in BOILERPLATE_EXACT:

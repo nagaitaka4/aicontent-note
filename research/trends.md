@@ -1,6 +1,55 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-04
+最終更新: 2026-09-05
+
+---
+
+## [2026-09-05] 調査結果（デイリー）
+
+**本日の収穫は1つのソースに集中した。Claude CodeのCHANGELOGが、昨日まで「中身が非公表」だった`2.1.260`を公開し、さらに`2.1.261`が出て`latest`になった。**9/4のフル版が「`2.1.260`はnpmに出ているがCHANGELOGに項目0件なので中身については何も書かない」と記録した、その項目が本日埋まった。**判断を保留にしておくと、翌日に材料が揃うことがある。**
+
+**採用基準に照らした結論：X投稿ネタとして`ideas.md`に入れるのは1件（`/skill-doctor`）。最も強い材料はキューの`PERM-01`の更新材料で、新規ネタではない。**
+
+### Claude Code / Anthropic
+
+- **【本日の最重要・既存下書きの更新材料】auto modeが自動承認しない操作が、8/29・9/2に続いて3回目の追加**（一次情報＝[anthropics/claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)の`## 2.1.261`を**本日CCが直接取得して確認**）
+  - **公開時刻**：npmレジストリの`time`で実測。`2.1.261`＝`2026-09-04T17:49:34.927Z`＝**日本時間 2026-09-05 02:49**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）。**`dist-tags`は`latest: 2.1.261` ／ `next: 2.1.261` ／ `stable: 2.1.236`**（同じ実測）
+  - verbatim：`Changed auto mode to treat a link that packs content into a public diagram renderer's URL as an upload to that site: no longer auto-approved unless you asked for it`
+  - **使う側の何が変わるか**：**図の描画サービスのURLに中身を詰め込むリンクは「そのサイトへのアップロード」として扱われ、頼んでいなければ自動承認されなくなった。**auto modeで確認が増える操作の3件目にあたる
+  - **この材料の位置づけ**：**新規ネタではなく、キューの`PERM-01`（「auto modeの確認が1週間で2回増えた」）の更新材料。**`PERM-01`は8/29の`v2.1.251`と9/2の`v2.1.257`の2回で組んであり、**本日の`v2.1.261`で3回目になった＝「1週間で2回」が「1週間で3回」になる。**⚠️ **本文の書き換えはX編集部の判断**（9/2の統合もユーザー指示で実施した）。本タスクは注記だけ入れて判断材料を渡す
+  - ⚠️ **「auto modeが使いにくくなった」と書かない。**増えたのは自動承認しない操作であって、既存の許可設定が壊れたわけではない
+
+- **【採る・`ideas.md`へ追記】`/skill-doctor`が入った。読み込んだスキルのうち使われていないものと、そのコンテキストコストが見えるようになった**（同じ`## 2.1.261`）
+  - verbatim：`Added /skill-doctor to show which loaded skills go unused and what they cost in context, so you can prune them`
+  - **使う側の何が変わるか**：**「積んだルールが実際に使われているか」を測る手段ができた。**採用基準の「使える範囲」に該当する
+  - **このリポジトリに直接当たる**：`CLAUDE.md`＋`rules/`4本＋`knowledge/`配下＋スキルを積み続けている。「**買った人が守れるルールか**」を問う運用（`feedback_env_is_the_product`）に対して、初めて**コンテキストコストという数字**で答えられる
+  - ⚠️ **実測なしでは出せない。**回せば数字が出る性質のネタなので、**実際に`/skill-doctor`を実行した結果とセットで下書き化する**。実行前に「これで無駄なルールが分かります」と書くと、採用基準が「採らない」とする**ニュースの要約**になる
+  - ⚠️ **スラッシュコマンドなのでBashからは実行できない**（Claude CodeのCLI内で人が打つ必要がある）。**実測はユーザーの操作が要る**
+
+- **【差分・記録のみ・採らない】9/3のデイリーが記録した`2.1.259`の変更が、翌日の`2.1.260`で取り消されていた**
+  - verbatim：`Reverted the 2.1.259 change applying Read() deny rules to Bash arguments; it denied npm run build under a Read(./**/build/**) rule in every mode and made cd … && grep prompt even in auto mode`
+  - **採らない理由**：**このMacの`~/.claude/settings.json`は拒否ルール0件**なので、入ったときも取り消されたときも手元では何も起きていない。9/3のデイリーが`2.1.259`を「採らない」と判断した理由（`deny`0件なので無関係）が、そのまま今日も成立する
+  - ⚠️ **「1日で撤回された」という速報の型では書けない。**自分に起きた出来事がなく、3条件の「決断か感情」も「今出す理由」も立たない
+
+- **【差分・記録のみ・採らない】`2.1.260`で、括弧を含む許可・拒否ルールの穴が2件塞がれた**（本日CHANGELOGに項目が出た）
+  - verbatim（抜粋）：`Fixed Edit/Write/Read permission rules whose path contains parentheses being dropped as invalid or ignored by the Bash sandbox, which left "read-only" folders writable` ／ `Fixed one file permission rule with an uncompilable pattern (e.g. an unclosed [) making every file edit fail with Invalid regular expression`
+  - **採らない理由**：**`PERM-01`（8/29の`v2.1.251`で穴が4件直った話）と同じ系統で、単独で出すと同じ話に見える。**`rules/x-post-flow.md`の「連投するときは開き方と角度を変えて『同じ話』に見せない」に照らして、素材としては`PERM-01`側に寄せる
+  - ⚠️ **このリポジトリの許可リストに括弧を含むパスは無い**（実測せずに「自分も踏んでいた」とは書かない）
+
+- **【差分・記録のみ・採らない】`2.1.261`の`bashOutputMaxChars`／`taskOutputMaxChars`（最大128K文字）**
+  - verbatim：`Added bashOutputMaxChars and taskOutputMaxChars settings to raise how much command and background-task output Claude receives inline before it is saved to a file, up to 128K characters`
+  - **採らない理由**：設定を触っていない状態では何も変わらない。**「使う側の何かが変わる」に届くのは、実際に上げて挙動が変わったときだけ**
+
+- **【差分・記録のみ・採らない】`2.1.261`で`/usage`の週次上限の行が落ちる不具合が直った**
+  - verbatim：`Fixed /usage and the VS Code usage panel dropping a model-specific weekly limit row when the usage endpoint is rate limited or when opened right after startup`
+  - **採らない理由**：`LIMIT-気`（9/1投稿・週次上限の話）と題材が近いうえ、**表示の不具合修正であって上限そのものは動いていない**
+
+- **【差分なし】Claude Platform リリースノート**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を**本日CCがブラウザで直接開いて確認**）。**最新は9/3の`ant CLI 1.30.0`／`ant apply`で、9/4・9/5のエントリは0件。**`ant apply`は**リポジトリのファイルからエージェント・環境・スキル・デプロイを作る開発者向けコマンド**で、採用基準の「実務に落として語れる」に届かない（このメディアの読者はCLIでエージェントを配布しない）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記＝1件**（`/skill-doctor`）。**`queue.md`への投入＝0本**（消費側ゲート「期限つきが2本以上」に該当。詳細は`knowledge/x/queue.md`の2026-09-05ブロック）
+- **保留していた判断が翌日に解けた例として記録する。**9/4のフル版は`2.1.260`について「CHANGELOGに項目0件なので中身については何も書かない」と止めた。**推測で埋めなかったので、本日そのまま事実を足せた**
 
 ---
 

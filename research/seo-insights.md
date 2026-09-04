@@ -1,6 +1,47 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-08-31
+最終更新: 2026-09-04
+
+---
+
+## [2026-09-04] 調査結果（定期リサーチ・12:00のフル版）
+
+**③の収穫は1件。しかも「これまで観測ベースだったものが、Google公式の記述になった」という形。****生成AIパフォーマンスレポートと検索の生成AI設定（オプトアウト）は、2026-08-31付で全世界の全ウェブサイトへの展開が完了したとGoogleのヘルプ本文に明記された。**
+
+### Google / Search Console
+
+- **【最大の収穫】Google公式ヘルプが「2026年8月31日付で世界中のすべてのウェブサイトにリリース」と明記した**（2ページとも本日CCがブラウザで直接開いて確認）
+  - [Search generative AI control（検索の生成 AI 設定）](https://support.google.com/webmasters/answer/16908024?hl=en)（verbatim）：`Note: As of August 31, 2026, we've rolled out this control to all websites worldwide.`
+  - [Generative AI performance report（生成 AI パフォーマンス レポート）](https://support.google.com/webmasters/answer/16984139?hl=en)（verbatim）：`Note: As of August 31, 2026, we've rolled out these insights to all websites worldwide.`
+  - **日本語版にも同じ注記が入っている**（[日本語版](https://support.google.com/webmasters/answer/16984139?hl=ja)・verbatim）：`注: これらの分析情報は、2026 年 8 月 31 日付けで世界中のすべてのウェブサイトにリリースされました。`
+  - **二次報道**：[Search Engine Land・2026-08-31](https://searchengineland.com/google-search-console-ai-performance-reports-and-search-generative-ai-control-rolling-out-globally-486269) ／ [Search Engine Roundtable・2026-09-01 7:51am](https://www.seroundtable.com/google-search-console-generative-ai-tools-live-41984.html)。**どちらも根拠として上のヘルプ本文の1文を引いている**
+  - **何が変わったか**：8/14以降このファイルに記録してきた「全開放は**観測ベースの報告**で、Googleは公式アナウンスしていない」という状態が、**Googleの公式ヘルプ本文に日付入りで書かれた状態**に変わった
+- **⚠️ ただし同じページに、真逆の記述がまだ残っている（今日いちばん重要な注意）**
+  - 同じ生成AIパフォーマンスレポートのヘルプの「レポートが表示されませんか？」欄（verbatim・日本語版）：`段階的にリリースされているため、一部のプロパティはこのレポートにアクセスできません。`
+  - **つまり1ページの中で「全世界に展開完了」と「一部プロパティは未提供」が同居している。**どちらか片方だけを読むと、正反対の結論になる
+  - **8/26（料金ページを見ていなかった）・9/1（発表本文とヘルプの国別表が食い違う）と同じ構造の3例目。****今回は"別のページ"ですらなく、同じページの上下。**「ページ上部の注記を読んだ」で閉じない
+  - **✅ no.65の記述は正しいままだった**（2026-09-04公開・`ai-overview-check-method`）。本文に`同じ公式ヘルプには段階的にリリースしているため一部のプロパティは開けない、とも書かれています`とあり、**今日の実物と一致している。**訂正は不要。**追記できる材料が1つ増えただけ**（8/31付の全世界展開の注記）
+
+### 保留中記事の再開判定（省略禁止項目・**本項目は今回で終了**）
+
+- **`articles/search-console-ai-overview-optout.md`（旧no.52・2026-07-28保留）は、2026-09-02に保留解除・統合済み。**`operations/article-backlog.md`の記録どおり、**ドラフトは`archive/drafts/`へ移動し、52番は欠番。**中身は**M-17＝2026-09-04公開のno.65「AI Overviewの確認方法。管理画面と検索画面の2つで見る」**に統合され、**生成AIレポートの見方・オプトアウトの3択・出し続ける判断まで公開記事に入っている**
+- **したがって、この「毎回検索して展開状況を確認する」項目は本日で終了する。**残す理由（記事が書けるかの判定材料）が消えたため。**今後、AI Overview／生成AIレポートの仕様変更を拾ったら、通常の③の項目として記録し、必要ならno.65のリライト材料として扱う**
+- なお本日の確認結果自体は上記のとおり「**全世界展開完了が公式ヘルプに明記された**」で、**7/28の保留理由（日本未展開）は完全に消えている**
+
+### 調査会社のブログ（2026-08-28に巡回先へ追加・月金のフル版で足りる）
+
+- **Semrush**（[semrush.com/blog](https://www.semrush.com/blog/)）：前回フル版（8/31）以降の新着は3件
+  - **9/2 `How to prepare your site for AI agents`**（Carlos Silva）：サイトをAIエージェントから見て`crawlable, readable, trustworthy, and easy to cite`にするという整理
+  - **9/2 `Create an AI Brand Visibility Report [+ Template]`**（Luke Harsel）：AI可視性の指標とGA4のコンバージョンを1枚に載せる型
+  - **9/1 `Where does AI get its information? And how to get cited`**（Zach Paruch）：AIの情報源を`training data, live online information, and licensing partnerships`の3つに分ける整理
+  - **判定：いずれも記事ネタとしては採らない。**3本とも**Semrushの製品を前提にした運用ガイド**で、一次データ（調査・実測）ではない。**M-12（AIの回答に出るかは「最初の検索候補に入るか」で決まる）の未解決点＝Peec AI・Nectivの原典が未確認、はこの3本では解決しない**
+- **Ahrefs**（[ahrefs.com/blog](https://ahrefs.com/blog/)）：前回フル版以降の新着は2件で、どちらも8/31より前
+  - 8/28 `How We Use AI for Every Article Without Making AI Slop`（Si Quan Ong）
+  - 8/27 `Analysis: Reddit Appears in 83.9% of Google's Discussions and Forums Results`（Glen Allsopp）**←未記録だったので記録する。**8/26のSemrush（RedditのChatGPT引用シェア3.8%→0.5%）と**同じRedditの話で向きが逆**（Googleのフォーラム枠では8割超を占める／ChatGPTの引用では激減）。**単独記事にはしない。**GEO記事群のリライト時に「引用元はプラットフォームごとに全然違う」の補強に使う
+
+### コアアップデート
+
+- **2026年9月のコアアップデート・スパムアップデートの新規アナウンスは確認できなかった。**直近の確定した順位変動は**8/18開始の2026年8月スパムアップデート**のままで、8/31から変化なし
 
 ---
 

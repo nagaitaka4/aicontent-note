@@ -24,6 +24,7 @@
 - **`ideas.md`への追記＝0件**（採用基準を満たす新情報が0件）。**`queue.md`への投入＝0本**（素材0件＋消費側ゲート「期限つきが2本以上」に該当）
 - **⚠️ 9/6のデイリー回は`research/`と`ideas.md`まで書いて`queue.md`・`tasks/README.md`が未更新のまま止まっていた**（コミットは本日06:41の取りこぼし分に含まれている）。**本日の回で両方を更新した**
 - **9/5から保留している`/skill-doctor`（`research-20260905-01`）は、本日も実測が無いため保留のまま**
+- **🕗 08:04の定時回で再確認（本日2回目）。①に追加の差分なし。**06:52の回のあと、**npmレジストリの`modified`は`2026-09-06T02:53:41.719Z`のまま動いておらず、`dist-tags`も`latest: 2.1.263` ／ `next: 2.1.263` ／ `stable: 2.1.236`で変化なし**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で08時台に再取得）。**CHANGELOGの`2.1.263`も`Bug fixes and reliability improvements`の1行のままで、項目は埋まっていない**（再訪条件の「翌日に埋まる」は本日時点では起きていない。**明日も見る**）。[Claude Platform リリースノート](https://platform.claude.com/docs/en/release-notes/overview)も**最新は9/3の`ant CLI 1.30.0`のまま**で9/4〜9/7は0件
 
 ---
 

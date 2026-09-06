@@ -20,6 +20,11 @@
 
 - **本日は巡回対象外**（月・金12:00のフル版が月単位で担当。デイリーの担当面ではない）
 
+### 🕗 08:04の定時回で再確認（本日2回目）
+
+- **②に追加の差分なし。**[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を08時台にブラウザで再取得。**最新エントリは`September 3, 2026`のままで、ページ自身の更新表示も`Updated: 3 日前`＝9/4のまま**（06:52の回と同じ）。[Gemini API 変更履歴](https://ai.google.dev/gemini-api/docs/changelog)＝`September 3, 2026`の`Lyria 3.5`、[Gemini Apps リリースノート](https://gemini.google/release-notes/)＝`2026.08.19`（学生向けハブ）で、**どちらも9/4以降0件のまま**
+- ⚠️ **Web検索で「GPT-6 Astra（9/3）／Zendesk・OneNoteプラグイン／Sitesの外部共有」が上位に出たが、いずれも9/3付＝9/4のデイリー回とフル版で記録・判定済み**。二次情報のまとめ記事が新しいだけで**原典に新規はない**ため、新情報として書かない
+
 ---
 
 ## [2026-09-06] 調査結果（デイリー）

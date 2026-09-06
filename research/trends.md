@@ -1,6 +1,29 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-06
+最終更新: 2026-09-07
+
+---
+
+## [2026-09-07] 調査結果（デイリー）
+
+**①の差分は1件（Claude Code `2.1.263`）。採らない。****CHANGELOGの本文が`Bug fixes and reliability improvements`の1行だけで、何が直ったのかが公表されていない。**料金・制限・既定モデル・提供終了・使える範囲のどれが動いたのかを書けないため、採用基準の「採る」列に届かない。
+
+### Claude Code / Anthropic
+
+- **【差分①・採らない】`2.1.263`が出て`latest`になった。ただし中身は非公表**（一次情報＝[anthropics/claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)を**本日CCが直接取得**）
+  - **公開時刻**：npmレジストリの`time`で実測。`2.1.263`＝`2026-09-06T02:07:58.391Z`＝**日本時間 2026-09-06 11:07**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）。**`dist-tags`は`latest: 2.1.263` ／ `next: 2.1.263` ／ `stable: 2.1.236`**
+  - verbatim（**これが項目の全文**）：`- Bug fixes and reliability improvements`
+  - **採らない理由**：**中身が書かれていない。**9/4のフル版が`2.1.260`について「npmに出ているがCHANGELOGに項目0件なので中身については何も書かない」と止めたのと同じ扱いにする。**推測で埋めない**
+  - ⚠️ **`2.1.262`はnpmに存在しない**（`2.1.261`の次が`2.1.263`）。**欠番の理由は公表されていないので、取り下げがあったとは書かない**
+  - **再訪の条件**：`2.1.260`のときは**翌日にCHANGELOGの項目が埋まった**（9/5のデイリーが記録）。**同じことが起きうるので、明日この版の項目が埋まっていないか見る**
+- **【差分なし】Claude Platform リリースノート**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日取得）。**最新は9/3の`ant CLI 1.30.0`／`ant apply`のままで、9/4〜9/7のエントリは0件**
+- **【差分なし】Anthropic Newsroom**（[anthropic.com/news](https://www.anthropic.com/news)を本日取得）。**最新は9/1付の2件**（`Introducing Claude Fable 5.1 and Claude Mythos 5.1`／`Developing Enterprise Frontier Safeguards with our customers`）で、9/2〜9/7の新規投稿は0件。**9/6に確認した内容から動いていない**
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記＝0件**（採用基準を満たす新情報が0件）。**`queue.md`への投入＝0本**（素材0件＋消費側ゲート「期限つきが2本以上」に該当）
+- **⚠️ 9/6のデイリー回は`research/`と`ideas.md`まで書いて`queue.md`・`tasks/README.md`が未更新のまま止まっていた**（コミットは本日06:41の取りこぼし分に含まれている）。**本日の回で両方を更新した**
+- **9/5から保留している`/skill-doctor`（`research-20260905-01`）は、本日も実測が無いため保留のまま**
 
 ---
 

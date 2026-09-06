@@ -1,6 +1,24 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-06
+最終更新: 2026-09-07
+
+---
+
+## [2026-09-07] 調査結果（デイリー）
+
+**②は差分なし（2日連続）。**巡回した3面すべてで、9/4以降の新規エントリが0件のまま。**無理に書き足さない。**
+
+### ChatGPT（OpenAI）
+
+- **差分なし。**[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**（`curl`・WebFetchはどちらも403で読めない）。**最新エントリは`September 3, 2026`のままで、9/4〜9/7付の新規は0件。**ページ自身の更新表示は`Updated: 3 日前`＝**9/4のまま動いていない**（9/6の確認時は`一昨日`＝同じ9/4を指していた）
+
+### Gemini（Google）
+
+- **差分なし。**[Gemini API 変更履歴](https://ai.google.dev/gemini-api/docs/changelog)・[Gemini Apps リリースノート](https://gemini.google/release-notes/)の2面を本日取得。**API側の最新は`September 3, 2026`の`Lyria 3.5`、Apps側の最新は`2026.08.19`（学生向けハブ）のまま**で、どちらも9/4以降の新規は0件
+
+### 国産AIライティングツール
+
+- **本日は巡回対象外**（月・金12:00のフル版が月単位で担当。デイリーの担当面ではない）
 
 ---
 

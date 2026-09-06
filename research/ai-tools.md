@@ -1,6 +1,25 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-05
+最終更新: 2026-09-06
+
+---
+
+## [2026-09-06] 調査結果（デイリー）
+
+**②も差分なし。**巡回した3面すべてで、9/4以降の新規エントリが0件のまま。**①と②が同じ日に両方とも差分なしになったのは、デイリー新設（8/11）以降で初めて。**
+
+### ChatGPT（OpenAI）
+
+- **差分なし。**[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**（`curl`・WebFetchはどちらも403で読めない。ブラウザ経由が必要）。**最新エントリは`September 3, 2026`のままで、9/4〜9/6付の新規は0件。**ページ自身の更新表示も`Updated: 一昨日`＝9/4
+  - 9/3付の3件（GPT-6 Astra／Zendesk・OneNoteプラグイン／Sitesの外部共有）は**9/4のデイリー回とフル版で記録・判定済み**（Astraは採用基準が「採らない」とする新モデル報告で、しかも公式が`not yet generally available`と明記）
+
+### Gemini（Google）
+
+- **差分なし。**[Gemini API 変更履歴](https://ai.google.dev/gemini-api/docs/changelog)・[Gemini Apps リリースノート](https://gemini.google/release-notes/)の2面を本日取得。**API側の最新は`September 3, 2026`の`Lyria 3.5`（9/5に「採らない」と判定済み）、Apps側の最新は`2026.08.19`（学生向けハブ）のまま**で、どちらも9/4以降の新規は0件
+
+### 国産AIライティングツール
+
+- **本日は巡回対象外**（月・金12:00のフル版が月単位で担当。デイリーの担当面ではない）
 
 ---
 

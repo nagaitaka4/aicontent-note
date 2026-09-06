@@ -1,6 +1,26 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-05
+最終更新: 2026-09-06
+
+---
+
+## [2026-09-06] 調査結果（デイリー）
+
+**①は差分なし。**巡回した4面すべてで、9/5以降の新規エントリが0件だった。**無理に書き足さない。**
+
+### Claude Code / Anthropic
+
+- **【差分なし】Claude Code CHANGELOG**（[anthropics/claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)を**本日CCが直接取得**）。**最上部は`## 2.1.261`のままで、9/5のデイリー回が全項目を記録済み。**9/5・9/6付の新規バージョンは0件
+- **【差分なし・npmで実測】`2.1.261`が最新のまま動いていない**（`curl https://registry.npmjs.org/@anthropic-ai/claude-code`で本日取得）。`dist-tags`は`latest: 2.1.261` ／ `next: 2.1.261` ／ `stable: 2.1.236`で、**9/5朝の実測から変化なし**。`2.1.261`の公開時刻は`2026-09-04T17:49:34.927Z`＝**日本時間 9/5 02:49**で、**そこから約30時間、新しい版が出ていない**
+- **【差分なし】Claude Platform リリースノート**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)を本日取得）。**最新は9/3の`ant CLI 1.30.0`／`ant apply`のままで、9/4〜9/6のエントリは0件。**9/5の判定（開発者向けコマンドで、このメディアの読者はCLIでエージェントを配布しない＝採らない）をそのまま維持する
+- **【差分なし】Anthropic Newsroom**（[anthropic.com/news](https://www.anthropic.com/news)を本日取得）。**最新は9/1付の2件**（`Introducing Claude Fable 5.1 and Claude Mythos 5.1`／`Developing Enterprise Frontier Safeguards with our customers`）で、9/2〜9/6の新規投稿は0件
+  - ⚠️ **`Enterprise Frontier Safeguards`は採らない。**顧客側のクラウドにデータを置いたままミス利用の検知を回す**法人向けの仕組み**で、Maxプラン個人の手元では何も変わらない。採用基準の「使う側の何かが変わる」に届かない
+  - 🚨 **検索結果に「9/5にEFSを発表」と書いた二次情報があったが、公式の日付は9/1だった。**`research/README.md`のファクトチェック規定に従い、**公式の日付を採る**（8/24の`ADS-気`＝英語メディア発の情報を公式扱いしかけて8/31に訂正投稿を出した件と同じ型）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記＝0件**（採用基準を満たす新情報が0件のため）。**`queue.md`への投入＝0本**（素材が0件。加えて消費側ゲート「期限つきが2本以上」にも該当。詳細は`knowledge/x/queue.md`の2026-09-06ブロック）
+- **9/5に「実測とセットでないと下書き化しない」と保留した`/skill-doctor`（`research-20260905-01`）は、本日も実測が無いため保留のまま。**スラッシュコマンドなのでCC側からは実行できず、ユーザーがCLIで打つ必要がある
 
 ---
 

@@ -1,6 +1,34 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-07
+最終更新: 2026-09-08
+
+---
+
+## [2026-09-08] 調査結果（デイリー）
+
+**②は差分なし（3日連続）。**巡回した4面すべてで、前回（9/7 12:00のフル版）以降の新規エントリが0件。
+
+### ChatGPT / OpenAI
+
+- **【差分なし】ChatGPT リリースノート**：[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**（`curl`・WebFetchはどちらも403で読めない状態が続いている）。**最新は`September 3, 2026`のままで、9/4〜9/8付の新規は0件。**ページ自身の更新表示も`Updated: 4 days ago`＝9/4のまま
+  - **9/3付の見出しは3件で全件記録済み**（`Introducing GPT-6 Astra`／`Zendesk & OneNote Plugins in ChatGPT and Codex [Beta]`／`Share Sites with people outside your workspace`）。8/28の恒久ルール（日付だけを見て閉じない・見出しを全部数える）を適用
+- **【差分なし】OpenAI ニュース面**：[openai.com/news](https://openai.com/news/)を**本日CCがブラウザで直接開いて確認**。最新は**9/6付の2本**（`An Alien Mind`／`Research acceleration: The view inside OpenAI`）のままで、9/7〜9/8の新規は0件。**この2本は9/7のフル版が記録・判定済み**（どちらも採らない）
+- ⚠️ **Web検索では「GPT-6 Astra（9/3）」が今日も上位に出るが、原典に新規はない。**さらに検索結果には**「数日以内にPlus・Pro・Business・EnterpriseとAPI・Azure・Bedrockで使える」と書く二次情報が今日も混ざっている**が、**公式リリースノートは今日読んでも`Access is rolling out to a limited set of organizations. Astra is not yet generally available.`のままでプラン名もAPIも書いていない**（9/4に検出した食い違いが5日目も解消していない）。**プラン名・提供時期は書かない**
+
+### Gemini / Google
+
+- **【差分なし】**[Gemini API 変更履歴](https://ai.google.dev/gemini-api/docs/changelog)＝最新は**9/3の`Lyria 3.5`**（音楽生成・9/5に「採らない」と判定済み）のままで9/4以降0件
+- **【差分なし】**[Gemini Apps リリースノート](https://gemini.google/release-notes/)＝最新は**`2026.08.19`**（学生向けハブ）のままで、**8/20以降20日間0件**
+  - ⚠️ **Web検索では「9月のAndroid Feature DropでGemini関連の新機能5つ」という二次情報が多数出るが、Geminiアプリのリリースノートには載っていない。**面が違う情報なので、**Geminiアプリの差分としては書かない**（拾うならAndroid側の一次情報を当てる必要がある。**本日は当てていないので未確認**）
+
+### 国産AIライティングツール
+
+- **本日は巡回対象外**（月・金12:00のフル版の担当。デイリーでは触らない）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**（差分そのものが0件）
+- **`queue.md`への投入：0本**
 
 ---
 

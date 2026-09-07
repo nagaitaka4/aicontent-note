@@ -1,6 +1,29 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-07
+最終更新: 2026-09-08
+
+---
+
+## [2026-09-08] 調査結果（デイリー）
+
+**①は差分なし。巡回8面すべてで、前回（9/7 12:00のフル版）以降の新規エントリが0件。**無理に書き足さない。
+
+### Claude Code / Anthropic
+
+- **【差分なし】CHANGELOG・npmの`time`**：`latest`は**`2.1.263`**のままで、9/6以降の新規バージョンは**0件**（npm実測＝`2.1.263`は`2026-09-06T02:07:58Z`＝日本時間9/6 11:07公開／`modified`も`2026-09-06T02:53:41Z`から動いていない）。CHANGELOGの`## 2.1.263`は`Bug fixes and reliability improvements`の1行のままで、**3日連続で項目が埋まっていない**（「中身が非公表のため採らない」の判定を維持）
+- **【差分なし】@ClaudeDevs**：最新は**9/3の`ant apply`**のままで、9/4以降の新規投稿は0件（本日CCがブラウザで直接開いて確認）
+- **【差分なし】Claude Platform リリースノート**：最新は**9/3の`ant CLI 1.30.0`／`ant apply`**のままで、9/4〜9/8のエントリは0件
+- **【差分なし】Claude Apps リリースノート**：最新は**9/1（Claude Fable 5.1／Claude Mythos 5.1）**のままで、9/2以降は0件
+- **【差分なし】Anthropic Newsroom**：最新は**9/1**のままで、9/2〜9/8の新規は0件
+- **【差分なし】公式Pricing／プラン別ヘルプ**：[Pro・Maxプランでのclaude code利用](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)に日付入りの変更なし。**8/30に@ClaudeDevsで出た「9/14から標準+25%」は今日もこのページに載っていない**（上限・価格はこのページの外に出る、を4回連続で確認）
+- **【差分なし】Claude Academy**：掲載コースは**3本＋Beta1本の構成のまま**（`AI Fluency: Framework & Foundations`14レッスン／`AI Capabilities and Limitations`13レッスン／`Building Effective Human Agent Teams (Beta)`5レッスン）。**「今後のライブウェビナー」欄も9/7と同じ3件**（9/10 9:00 PT `Maximizing Value from Claude Code`／9/10 11:00 PT `Building Claude Commerce Agents`／9/15 11:00 PT `Scaling Claude with Cost Controls`）
+  - ⚠️ **9/7の記録にある`The 4 Properties of AI`が、本日読んだ範囲（ページ本文の先頭2,500字）には出てこなかった。**ただし**取得を途中で打ち切っているので「消えた」とは書かない。****未確認として残す**（次回はページ全体を取得して数え直す）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**（差分そのものが0件）
+- **`queue.md`への投入：0本。**在庫35本＝理想10本の3.5倍で「基準を上げる」に該当し続けている
+- **巡回チェック（8チャネル）**：①CHANGELOG ✅ ②npm`time` ✅ ③@ClaudeDevs ✅ ④Claude Apps ✅ ⑤Claude Platform ✅ ⑥Newsroom ✅ ⑦Pricing／プラン別ヘルプ ✅ ⑧Claude Academy ✅ ＝**8面すべて開いた**
 
 ---
 

@@ -4,6 +4,41 @@
 
 ---
 
+## [2026-09-07] 調査結果（定期リサーチ・12:00のフル版）
+
+**本日の収穫は1件。しかも「これまで開いていた面の、見ていなかった欄」から出た。****Claude Academyに4本目のコースが増え、さらに「今後のライブウェビナー」欄が存在していた。**8/31のフル版はこのページを開いて掲載3本を数えているが、**ウェビナー欄には一度も触れていない。**
+
+**8/28に②で確認した「1つの日付に複数の見出しがぶら下がる形式では、日付だけを見て閉じない」の、面バージョン。**同じURLでも**欄が違えば別の情報**が載る。
+
+### Claude Code / Anthropic
+
+- **【最大の収穫・記録／Xは採らない】Claude Academyに4本目のコースが増え、ライブウェビナーの予告欄がある**（[academy.claude.com](https://academy.claude.com/)を**本日CCがブラウザで直接開いて確認**）
+  - **8/31の記録との差分**：8/31は掲載3本（`AI活用力：フレームワーク&基礎`14レッスン／`AIの能力と限界`13レッスン／`The 4 Properties of AI`）と記録している。**本日は4本目がある**
+    - **`Building Effective Human Agent Teams (Beta)`**（verbatim）：`Explore the benefits of moving from single-player to multiplayer AI and learn how to prepare your team for the shift.` ／ **5レッスン＋クイズ1・45分**
+  - **さらに「今後のライブウェビナー」欄が存在する（8/31までの記録に一度も出てこない欄）。**予告されているのは3件
+    | 開催 | タイトル | 内容（verbatim） |
+    |---|---|---|
+    | **9/10 9:00 PT** | **`Maximizing Value from Claude Code`** | `Learn where your Claude Code tokens go and the habits and settings that separate an efficient session from a wasteful one.` |
+    | 9/10 11:00 PT | `Building Claude Commerce Agents` | 小売・旅行・通信・エンタメの参照実装 |
+    | 9/15 11:00 PT | `Scaling Claude with Cost Controls` | Enterprise向けのモデル既定・支出可視化・利用レポート |
+  - **判定：X向き＝採らない。**学習リソースとイベントの追加で、**使う側の手元では何も変わらない**（採用基準の「採る」列＝料金・制限・既定モデル・提供終了・使える範囲のどれにも当たらない）
+  - **記事側＝M-14の材料が増えた。**M-14（Claude Codeの公式無料講座ができた）の着手条件は「実際にコースを受けること」で未達のまま。**ただし9/10のウェビナーはテーマがこのメディアの中心に重なる**（トークンがどこに消えるか・効率的なセッションと無駄なセッションを分ける習慣と設定）。**受講すれば体験が乗る**
+  - **⚠️ 「新しいコースが公開された日付」は公式に出ていない。**8/31の記録に無く本日ある、という差分でしか言えない。**「9月に公開された」と書かない**
+- **【差分なし】CHANGELOG・npmの`time`**：`latest`は**`2.1.263`**（npm実測＝**2026-09-06T02:07:58Z＝日本時間9/6 11:07**公開）のままで、9/6以降の新規バージョンは0件。`modified`も`2026-09-06T02:53:41Z`から動いていない。**`2.1.263`の本文は`Bug fixes and reliability improvements`の1行のままで、項目は今日も埋まっていない**（9/7のデイリー2回が出した「中身が非公表のため採らない」判定を維持）
+- **【差分なし】@ClaudeDevs**：最新は**9/3の`ant apply`**のままで、9/4以降の新規投稿は0件（本日CCがブラウザで直接確認）
+- **【差分なし】Claude Platform リリースノート**：最新は**9/3の`ant CLI 1.30.0`／`ant apply`**のままで、9/4〜9/7のエントリは0件。9/5の判定（開発者向けコマンド＝採らない）を維持
+- **【差分なし】Claude Apps リリースノート**：最新は**9/1（Fable 5.1／Mythos 5.1）**のまま。8/25（Coworkのメモリ・トピック編集）より新しいものは9/1の1件だけで、9/2以降は0件
+- **【差分なし】Anthropic Newsroom**：最新は**9/1の2本**（`Introducing Claude Fable 5.1 and Claude Mythos 5.1`／`Developing Enterprise Frontier Safeguards with our customers`）のままで、9/2〜9/7の新規は0件
+- **【差分なし】公式Pricing／プラン別ヘルプ**：[Pro・Maxプランでのclaude code利用](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)に**日付入りの変更なし**。上限の具体的な数字はこのページには書かれておらず、8/30に@ClaudeDevsで出た「9/14から標準+25%」の記載もこのページには載っていない（**上限・価格は今日もこのページの外に出る**）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件。**上のAcademyの1件は採用基準に届かない（手元が変わらない）
+- **`queue.md`への投入：0本。**素材が0件であることに加え、**在庫が理想10本の3.5倍**で「基準を上げる」に該当
+- **巡回チェック（8チャネル）**：①CHANGELOG ✅ ②npm`time` ✅ ③@ClaudeDevs ✅ ④Claude Apps ✅ ⑤Claude Platform ✅ ⑥Newsroom ✅ ⑦Pricing／プラン別ヘルプ ✅ ⑧Claude Academy ✅ ＝**8面すべて開いた**
+
+---
+
 ## [2026-09-07] 調査結果（デイリー）
 
 **①の差分は1件（Claude Code `2.1.263`）。採らない。****CHANGELOGの本文が`Bug fixes and reliability improvements`の1行だけで、何が直ったのかが公表されていない。**料金・制限・既定モデル・提供終了・使える範囲のどれが動いたのかを書けないため、採用基準の「採る」列に届かない。

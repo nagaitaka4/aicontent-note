@@ -4,6 +4,40 @@
 
 ---
 
+## [2026-09-07] 調査結果（定期リサーチ・12:00のフル版）
+
+**②の差分は2件で、どちらも「OpenAIのニュース面」から出た。****リリースノートは4日連続で止まっている（最新9/3）のに、ニュース面には9/6付が2本入っている。**8/21に確定した「リリースノート・changelogは製品の変更しか載せず、事業側・研究側の発表は別の面に出る」の**6例目**。
+
+**あわせて、記録の穴を1つ埋めた。**9/2に記録した`gemini-3.8-flash`のGAは**API側だけを書いていて、同じ発表にあった消費者側の面（AI Mode・Geminiアプリ・Google Sheets）を落としていた。**
+
+### ChatGPT / OpenAI
+
+- **【差分①・記録のみ・採らない】9/6付`Research acceleration: The view inside OpenAI`**（[openai.com](https://openai.com/index/research-acceleration-view-inside-openai/)を**本日CCがブラウザで直接開いて確認**・カテゴリは`Research / Publication / Safety`）
+  - **verbatim**：`According to our measurements, we have now reached the goal, announced last fall, of having an automated research intern by September of this year.` ／ `We are making strong progress toward creating an automated AI researcher by March of 2028.`
+  - **verbatim（働き方の部分・ここが④の材料）**：`Researchers are using coding agents throughout the day (often in concurrent sessions) and total usage is rapidly increasing, outpacing growth among other OpenAI teams.` ／ `People still set our research priorities, judge which ideas and results to pursue, and decide whether to scale, pause, or deploy systems.`
+  - **判定：X向き＝採らない。**フロンティアラボの内部の話で、**読者の手元では何も変わらない**。⚠️ **`research intern`はOpenAIが自社の測定で「達成した」と言っているだけで、外部の検証はない**
+  - **④の材料としては記録する**（→`research/market.md`）。**「人が残っているのは優先順位・採否・スケールするかの判断」という切り分けが、no.64（ブログ運用はどこまで自動化できたか。人に残った2つの判断）の結論と同型**
+- **【差分②・記録のみ・採らない】9/6付`An Alien Mind`**（[openai.com](https://openai.com/index/an-alien-mind/)を本日直読み・著者はOpenAIのChief Scientist Jakub Pachocki）。再帰的自己改善の見通しを述べたエッセイ。**判定：採らない**（製品・料金・提供範囲のどれも動いていない）
+- **【差分なし】ChatGPT リリースノート**：[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)を**本日CCがブラウザで直接開いて確認**（`curl`・WebFetchはどちらも403）。**最新は`September 3, 2026`のままで、9/4〜9/7付の新規は0件。**ページ自身の更新表示も`Updated: 3 日前`＝9/4のまま
+  - **9/3付の見出しを数え直した：3件で全部記録済み**（`Introducing GPT-6 Astra`／`Zendesk & OneNote Plugins in ChatGPT and Codex [Beta]`／`Share Sites with people outside your workspace`）。8/28の恒久ルール（日付だけを見て閉じない・見出しを全部数える）を適用
+
+### Gemini / Google
+
+- **【記録の穴を埋めた・採らない】`gemini-3.8-flash`は、AI Mode・Geminiアプリ・Google SheetsでもGoogle AI Pro／Ultra向けに提供されている**（一次情報＝[Google公式ブログ 2026-09-02](https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/)・verbatim）：`3.8 Flash is available to Google AI Pro and Ultra subscribers across the Gemini app, AI Mode in Google Search and Gemini in Google Sheets.`
+  - **9/2の記録はAPI側（`ai.google.dev`のchangelog）だけを見ていて、消費者側の面を落としていた。**同じ9/2の発表なのに、**changelogには消費者向けサーフェスが書かれない**
+  - 本日この穴に気づいたきっかけは[鈴木謙一氏・2026-09-07](https://www.suzukikenichi.com/blog/)の`Google、AI ModeにGemini 3.8 Flashを導入。Pro/Ultraユーザー向けに提供`。**二次情報が先に見つかり、そこから一次情報を開いて確認した**
+  - **判定：X向き＝採らない。**「AI Modeの中身のモデルが変わった」は**読者が何をすればいいのかを書けない**（Googleは何も要求していない）＝採用基準の「実務に落として語れる」に届かず、**ニュースの要約で終わる**
+  - ⚠️ **「AI Modeが速くなった／賢くなった」と書かない。**公式は提供先を書いているだけで、AI Modeの回答品質の変化には触れていない
+- **【差分なし】**[Gemini API 変更履歴](https://ai.google.dev/gemini-api/docs/changelog)＝最新は**9/3の`Lyria 3.5`**（音楽生成・9/5に「採らない」と判定済み）で9/4以降0件。[Gemini Apps リリースノート](https://gemini.google/release-notes/)＝最新は**`2026.08.19`**（学生向けハブ）のままで、**8/20以降19日間0件**
+
+### 国産AIライティングツール（フル版の担当・月単位で巡回）
+
+- **EmmaTools：8/17から変化なし（3回連続）**（[emma.tools](https://emma.tools/)を本日直読み）。お知らせ欄の最新は**2026-08-17の`【新機能】「AI Overviewチェック」をリリース`**のままで、8/18以降の新規は0件
+- **Transcope：料金に変化なし**（[transcope.io](https://transcope.io/)を本日直読み）。**Free ¥0／Basic ¥11,000/月／Pro ¥38,500/月／Enterprise ¥66,000/月**で、8/31の記録（月1.1万〜6.6万）と一致。お知らせ欄に2026年8月以降の新規は0件
+- **⚠️ SAKUBUN：料金ページ（[sakubun.ai/price](https://sakubun.ai/price)）は取得できたがWebFetchで本文が読めなかった。**8/31に決めた方式（この2社は料金ページの数字が変わったときだけ拾う）は、**ブラウザで開かないと数字に届かない。**次回はブラウザ直読みに切り替える。**「変化なし」ではなく「未確認」として残す**（8/31の教訓＝「更新がない」と「更新を載せる面がない」を混同しない、の派生）
+
+---
+
 ## [2026-09-07] 調査結果（デイリー）
 
 **②は差分なし（2日連続）。**巡回した3面すべてで、9/4以降の新規エントリが0件のまま。**無理に書き足さない。**

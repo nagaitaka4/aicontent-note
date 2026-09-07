@@ -1,6 +1,35 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-09-04
+最終更新: 2026-09-07
+
+---
+
+## [2026-09-07] 調査結果（定期リサーチ・12:00のフル版）
+
+**③の新規は実質ゼロ。**Google側の順位変動なし・Search Central Blogも8月から動かず・調査会社の新着1件は一次データではない。
+**そのうえで、追いかける先を1つ閉じた。**8/28に巡回先へ加えたSimilarwebのレポートのうち、`2026 Generative AI Brand Visibility Index`は**2026-03-03公開の古いもの**だった。
+
+### Google / Search Console
+
+- **【差分なし】コアアップデート・スパムアップデートの新規アナウンスなし**（[Google Search Status Dashboard](https://status.search.google.com/summary)を本日取得）。**直近の確定した順位変動は8/18開始の2026年8月スパムアップデート**（所要2日16時間）のままで、**9月の新規は0件**。8/31・9/4の記録から変化なし
+- **【差分なし】Search Central Blog**：最新は**2026年8月の`Update to the Site Reputation Policy`**のままで、9月の新規投稿は0件（8/31に鈴木謙一氏経由で記録済みの件）
+- **【本項目は9/4で終了】AI Overviewオプトアウト／生成AIパフォーマンスレポートの展開状況**：9/4のフル版で**「2026-08-31付で全世界の全ウェブサイトへ展開完了」とGoogle公式ヘルプ本文に明記されている**ことを確認し、保留理由が消えたため**省略禁止項目を終了した**。中身は**no.65（`ai-overview-check-method`・2026-09-04公開）**に統合済み。**今後は通常の③の項目として扱う**
+
+### 調査会社のブログ（2026-08-28に巡回先へ追加）
+
+- **Semrush**（[semrush.com/blog](https://www.semrush.com/blog/)）：前回フル版（9/4 12:00）以降の新着は**1件**
+  - **9/3 `Long-tail keywords: the ultimate guide`**：ロングテールKWで検索とAIの両方から質の高い流入を取る、という入門ガイド
+  - **判定：採らない。**一次データ（調査・実測）ではなく入門ガイド。**9/4に3本まとめて「Semrushの製品前提の運用ガイドは記事ネタにしない」と判定した基準をそのまま適用する**
+- **Ahrefs**（[ahrefs.com/blog](https://ahrefs.com/blog/)）：**8/28以降の新着は0件**（最新は8/28 `How We Use AI for Every Article Without Making AI Slop`）。9/4の記録から変化なし
+- **⚠️ Similarweb：`2026 Generative AI Brand Visibility Index`は新着ではなかった（本日確定）**
+  - ブログのトップに大きく出ているため新しく見えるが、**公開は2026-03-03**（[Similarweb IRのプレスリリース](https://ir.similarweb.com/news-events/press-releases/detail/147/similarweb-report-benchmarks-ai-brand-visibility-winners-and-overachievers)・同日付の配信が複数媒体に残っている）。測定の基準点は2025年4月
+  - **中身も当メディアの読者から遠い。**対象は金融・旅行・家電・美容・ファッション・ニュースの6業界の**ブランド言及シェア**で、個人・中小企業のブログ運用には落ちない
+  - **次回以降、このレポートは「新着候補」から外す。**Similarwebで追うのは**`Is AI Replacing Search?`系の検索行動データ**（M-16の根拠になった2026-08-04の`2026 Generative AI Landscape`）に限定する
+
+### 記事側への影響
+
+- **no.65（AI Overviewの確認方法・9/4公開）に本日追加すべき訂正・追記はない。**Google側の仕様変更が0件のため
+- **M-12（AIの回答に出るかは「最初の検索候補に入るか」で決まる）の保留は継続。**Peec AI・Nectivの原典は本日も特定できていない。**Semrushの新着1件では解決しない**（9/4の判定と同じ）
 
 ---
 

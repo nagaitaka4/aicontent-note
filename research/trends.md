@@ -1,6 +1,39 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-08
+最終更新: 2026-09-09
+
+---
+
+## [2026-09-09] 調査結果（デイリー）
+
+**①に差分あり。巡回8面のうち2面が動いた**（CHANGELOG／npm＝`2.1.265`公開、@ClaudeDevs＝本日3投稿）。**ただしどちらも軸②の採用基準には届かない**（理由は下記）。
+
+### Claude Code / Anthropic
+
+- **【差分あり・記録／Xは採らない】Claude Code `2.1.265` が公開された**（一次情報2点＝[npmレジストリ](https://registry.npmjs.org/@anthropic-ai/claude-code)の`time`実測＝**`2026-09-08T19:05:16.492Z`＝日本時間 9/9 04:05**公開・`dist-tags`は`latest: 2.1.265`／`next: 2.1.265`／`stable: 2.1.236` ／ [CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)の`## 2.1.265`）
+  - **9/6の`2.1.263`が「`Bug fixes and reliability improvements`の1行だけ」だったのと違い、今回は約60項目の大型リリース。**
+  - **使う側の変更で目に付くもの（verbatim）**
+    - `Added a 1 GB cap on tool results saved to disk; the in-conversation preview says when a saved file was truncated`（**ディスクに保存するツール結果に1GBの上限が入った**＝制限の新設）
+    - `[VSCode] Added automatic archiving of sessions inactive for a set period (new "Archive inactive sessions" setting, default 14 days)`（**VS Code拡張のセッションが既定14日で自動アーカイブされるようになった**）
+    - `Added support for pointing --plugin-dir at a folder of plugins`／`Improved --worktree startup on large repositories`／`Fixed /model opusplan[1m] being rejected with "Model not found"`
+    - `Improved the Artifact tool's read of an artifact someone else wrote: the summary now treats the page as untrusted content and flags embedded instructions rather than relaying them`
+  - **⚠️ auto modeの自動承認に関する新しい変更は`2.1.265`には無い。**キュー`PERM-01`（auto modeの確認が1週間で2回増えた）の**「3回目」の材料は`2.1.261`のままで、4回目は出ていない**。`.claude`フォルダの許可オプションについては`Updated the .claude folder permission option to say what it actually allows`＝**文言の説明を実態に合わせただけ**で、確認が増えたわけではない。**「また増えた」とは書かない。**
+  - **⚠️ `2.1.264`はnpmに存在しない**（`2.1.263`→`2.1.265`）。**9/7に記録した`2.1.262`の欠番と同じで、理由は公表されていないので「取り下げがあった」とは書かない。**
+  - **Xに採らない理由**：1GBキャップは**手元で何も変わらない**（記事制作でツール結果が1GBに届く場面がない）。VS Codeの14日自動アーカイブは**使う側の既定が変わる話で基準には該当する**が、**このメディアの制作環境でClaude CodeのVS Code拡張を使っているかが未確認**（`operations/workflow.md`にあるのは「VS CodeのAIチャットで編集」＝拡張の特定に至らない）。**実機で確認できたら書ける**（`research-20260817-01`を実機未確認のまま閉じた前例と同じ扱いにする）。
+- **【差分あり・記録／Xは採らない】@ClaudeDevsが本日3投稿**（[@ClaudeDevs](https://x.com/ClaudeDevs)を**本日CCがブラウザで直接開いて確認**）。①`Our CI team's on-call first responder is Claude Tag.`（CIのオンコール一次対応をClaude Tagにやらせている自社事例。テンプレートとスキルを公開）②Claude Managed Agentsで作っている3社（@WisprFlow・@useactively・@pendoio）の創業者インタビュー ③ブログ`Reducing cost and improving performance with Claude Platform`（プロンプトキャッシュ・指示・effortのチューニングでコストを下げる話）。**3件とも事例・解説で、使う側の何かが変わる変更ではない。**
+  - ⚠️ **記録の穴を1件埋めた**：9/3の`Function Hooks`（`We're exploring a new way to let you extend and customize Claude Code: Function Hooks.`）が9/7・9/8の記録に入っていなかった。**ただし本人が`It hasn't shipped yet`と書いており、GitHub issueでフィードバックを募っている段階**。**未リリースなので事実として書かない。**
+- **【差分なし】Claude Platform リリースノート**：最新は**9/3の`ant CLI 1.30.0`／`ant apply`**のままで、9/4〜9/9のエントリは0件
+- **【差分なし】Claude Apps リリースノート**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)）：最新は**9/1（Claude Fable 5.1／Claude Mythos 5.1）**のままで、9/2以降は0件
+- **【差分なし】Anthropic Newsroom**（[anthropic.com/news](https://www.anthropic.com/news)）：最新は**9/1の2本**（`Introducing Claude Fable 5.1 and Claude Mythos 5.1`／`Developing Enterprise Frontier Safeguards with our customers`）のままで、9/2以降の新規は0件
+- **【差分なし】公式Pricing／プラン別ヘルプ**：[Pro・Maxプランでのclaude code利用](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)に日付入りの変更なし（表示は`Updated over 2 weeks ago`）。**9/14の週次上限25%増（`LIMIT-気`で投稿済み）に関する追記も無い**
+- **【差分なし】Claude Academy**（[academy.claude.com](https://academy.claude.com/)）：`AI Fluency: Framework & Foundations`（14レッスン・4時間）／`AI Capabilities and Limitations`（13レッスン・3.5時間）／`Building Effective Human Agent Teams (Beta)`（5レッスン・45分）の3本を確認
+  - ⚠️ **9/7に記録した`The 4 Properties of AI`と「今後のライブウェビナー」欄（9/10の`Maximizing Value from Claude Code`）が、本日の取得結果には出てこなかった。**本日はWebFetch（ページ本文の要約取得）で、9/7はブラウザでの直接確認と**取得方法が違う。取得範囲の差なので「消えた」とは書かない**（9/8にも同じ注記を残している）。**気になるなら次のフル版でブラウザ確認する。**
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**（①からは0件。②から1件を追記＝`research-20260909-01`は`research/ai-tools.md`側）
+- **`queue.md`への投入：0本。**在庫36本＝理想10本の3.6倍で「基準を上げる」に該当し続けている
+- **巡回チェック（8チャネル）**：①CHANGELOG ✅ ②npm`time` ✅ ③@ClaudeDevs ✅ ④Claude Apps ✅ ⑤Claude Platform ✅ ⑥Newsroom ✅ ⑦Pricing／プラン別ヘルプ ✅ ⑧Claude Academy ✅ ＝**8面すべて開いた**
 
 ---
 

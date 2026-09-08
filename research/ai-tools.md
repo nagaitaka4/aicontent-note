@@ -1,6 +1,44 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-08
+最終更新: 2026-09-09
+
+---
+
+## [2026-09-09] 調査結果（デイリー）
+
+**②に差分あり。4日ぶりに動いた。**ChatGPTのリリースノートに**9/8付で`ChatGPT Images 2.5`**が入った。Geminiは2面とも差分なし。
+
+### ChatGPT / OpenAI
+
+- **【差分あり・採用】ChatGPT Images 2.5：画像生成がテンプレートから始められるようになった**（一次情報2点＝[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)の**September 8, 2026**エントリ・**本日CCがブラウザで直接開いて確認**〔`curl`・WebFetchはどちらも403で読めないため〕／[Introducing ChatGPT Images 2.5](https://openai.com/news/)＝OpenAIニュース面に**2026年9月8日・製品カテゴリ**で掲載）
+  - **verbatim（リリースノート冒頭）**：`ChatGPT Images 2.5 brings sharper details, more precise editing, and faster image generation. We're also introducing new ways to create and share:`
+  - **新しくできること（verbatim・4点）**
+    - `Start from a template. Open Images → Templates, choose a template, and customize the details. ChatGPT may ask follow-up questions to help refine your request.`
+    - `Turn a sketch into an image. On mobile, type @ in the message box and select Sketch. Draw your idea, then describe the image you want to create.`
+    - `Edit and comment. On mobile, open a generated image full-screen to edit it or add comments to tell ChatGPT what you'd like to change..`（末尾のピリオド2つは原文ママ）
+    - `Share a prompt. Share the prompt for a generated image so others can create their own version.`
+  - **⚠️ 条件・除外まで確認した（verbatim）**：`Templates are not yet available in Work mode. Existing image-generation limits are unchanged.`＝**Work modeではテンプレートはまだ使えない／生成の上限は変わっていない。**「無制限になった」「上限が緩んだ」とは書けない。
+  - **⚠️ 用意されたテンプレートから選ぶ機能で、「自分のテンプレートを保存できる」とは書かれていない。**公式が書いていないことを足さない。
+  - **⚠️ `sharper details`・`faster`は公式の表現で、倍率・秒数などの数字は出ていない。**「◯倍速くなった」とは書かない。
+  - **⚠️ ローディング中のアニメーションとスネークゲームについても`The loading experience varies by platform and rollout; Snake isn't available in Work mode.`＝出方は環境による。**「全員に出る」と書かない。
+  - **なぜ採るか（軸②の採用基準）**：**使える範囲が変わる**（テンプレート・スケッチ入力・プロンプト共有）。かつ**このメディアはアイキャッチをGPTで生成している**（`knowledge/eyecatch-rules.md`：`生成はGPT推奨（Firefly非推奨）`・出力サイズは`1200×630px`をプロンプトで直接指定・提案は1パターン）ため、**実務に落として語れる余地がある**。→ `knowledge/x/ideas.md`に`research-20260909-01`として追記。
+  - **ただしキューには入れない**（理由は`ideas.md`の該当行と`queue.md`の本日ブロックに記載）
+- **【差分あり・記録／Xは採らない】OpenAIニュース面に9/8付が6本**（[openai.com/news](https://openai.com/news/)を**本日CCがブラウザで直接開いて確認**）。`How GPT-5.6 Sol helps run quantum computing experiments`（応用AI）／`The Work Now Within Reach`（企業）／**`Introducing ChatGPT Images 2.5`（製品・上記）**／`An OpenAI model proposes a solution to the Navier–Stokes problem`（研究）／`Funding grants for new research into AI and teen development`（安全性）／`Supporting journalism from classrooms to newsrooms`（企業）。**Images 2.5以外の5本は研究・安全・企業発表で、使う側の何かが変わる変更ではない。**
+
+### Gemini / Google
+
+- **【差分なし】**[Gemini API 変更履歴](https://ai.google.dev/gemini-api/docs/changelog)＝最新は**9/3の`Lyria 3.5 in public preview`**（音楽生成・9/5に「採らない」と判定済み）のままで、9/4以降0件
+- **【差分なし】**[Gemini Apps リリースノート](https://gemini.google/release-notes/)＝最新は**`2026.08.19`**（学生向けハブ・米国のGoogle AI Pro／140か国以上のGoogle AI Plusを2026-12-31まで無償）のままで、**8/20以降21日間0件**
+
+### 国産AIライティングツール
+
+- **本日は巡回対象外**（月・金12:00のフル版の担当。デイリーでは触らない）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：1件**（`research-20260909-01`＝ChatGPT Images 2.5）
+- **`queue.md`への投入：0本**（在庫36本で基準を上げているため。詳細は`queue.md`の本日ブロック）
+- **巡回チェック（4チャネル）**：①ChatGPTリリースノート ✅ ②OpenAIニュース面 ✅ ③Gemini API変更履歴 ✅ ④Geminiアプリ リリースノート ✅ ＝**4面すべて開いた**
 
 ---
 

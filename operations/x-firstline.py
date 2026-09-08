@@ -23,6 +23,8 @@ NOUNS = [
     "Codex","Gemini","Cursor","DALL","Copilot","Perplexity","Anthropic","OpenAI",
     "WordPress","Search Console","GSC","Cowork","メルカリ","note","X",
     "Plus","Pro","Max","Git","GitHub","llms.txt","cats.txt",
+    # カタカナ表記（2026-09-08追加：「サーチコンソール」を拾えず誤検知した）
+    "サーチコンソール","グーグル","クロード","チャットGPT","ワードプレス","メルカリ",
 ]
 
 def check(text):

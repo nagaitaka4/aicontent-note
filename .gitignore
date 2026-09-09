@@ -146,3 +146,7 @@ security/
 
 # WP入稿用の変換出力（md-to-wp.pyが生成・一時ファイル）
 operations/wp-output/
+
+# Pythonのキャッシュ（article-self-check.pyがconstraintsをimportした副産物）
+__pycache__/
+*.pyc

@@ -1,6 +1,42 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-09
+最終更新: 2026-09-10
+
+---
+
+## [2026-09-10] 調査結果（デイリー）
+
+**②に差分あり。2日連続で動いた。**ChatGPTのリリースノートに**9/9付で2件**（音声のモデル・上限の変更／ライブラリの共有）が入った。**1件を採用**（`research-20260910-01`）。Geminiは2面とも差分なし。
+
+### ChatGPT / OpenAI
+
+- **【差分あり・採用】ChatGPT Voiceのモデルと利用上限が変わり、音声だけにあった「賢さの3段階」が廃止された**（一次情報2点＝[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)の**September 9, 2026**エントリ ／ [ChatGPT Voice ヘルプ](https://help.openai.com/en/articles/20001274-chatgpt-voice)の`Usage limits`表〔本日時点の更新表示は`Updated: 5 時間前`〕。**どちらも本日CCがブラウザで直接開いて確認**〔`curl`・WebFetchはどちらも403で読めないため〕）
+  - **verbatim（リリースノート冒頭）**：`ChatGPT Voice can now use GPT-5.6 or GPT-6 Astra when it needs to search or reason through harder questions. Choose your model and reasoning effort using the same controls as text chat. Available models and their usage limits depend on your plan.`
+  - **verbatim（上限の整理）**：`We're also simplifying GPT-Live daily usage limits:` ／ `Go: Up to 3 hours with GPT-Live-1 mini, replacing GPT-Live-1 access.` ／ `Plus: Up to 3 hours with GPT-Live-1.` ／ `Pro ($100/month): Up to 15 hours with GPT-Live-1.` ／ `Pro ($200/month): Unlimited GPT-Live-1 usage.` ／ `Plus and Pro no longer switch to GPT-Live mini after reaching a Voice limit.`
+  - **verbatim（提供終了）**：`With these updates, the separate Instant/Medium/High Voice intelligence levels are deprecated.`
+  - **ヘルプ側の`Usage limits`表でも同じ数字を確認した**（`Free`＝`Limited access to GPT-Live-1 mini. Limits may change.` ／ `Go`＝`3 hours with GPT-Live-1 mini` ／ `Plus`＝`3 hours with GPT-Live-1` ／ `Pro ($100/month)`＝`15 hours with GPT-Live-1` ／ `Pro ($200/month)`＝`Unlimited GPT-Live-1`）。**上限は`rolling 24-hour period`＝24時間のローリング計測**（verbatim：`In Chat mode, Live usage is measured over a rolling 24-hour period.`）
+  - **⚠️ 条件・除外まで確認した**
+    - **`Unlimited`は Pro の $200/月プランだけ。**「無制限になった」と主語なしで書かない
+    - **`Go`は`GPT-Live-1`から`GPT-Live-1 mini`へ置き換え**（verbatim：`replacing GPT-Live-1 access`）＝**Goは上位モデルを失っている。**「全プランで良くなった」とは書けない
+    - **上の表は`Voice in Chat`の話。**`Voice in Desktop`は別ページ扱い（verbatim：`See ChatGPT Voice in Desktop pricing and limits for current availability, plan allowances, and usage limits.`）
+    - **`GPT-6 Astra`が音声で使えると書かれているが、Astra本体は9/3時点で`not yet generally available`。**「Plusでも今日からAstraが使える」とは書かない（9/4〜9/9に6日連続で記録している二次情報とのズレと同じ論点）
+  - **なぜ採るか（軸②の採用基準）**：**制限が変わり、提供終了が1つある**（`Instant/Medium/High`の廃止）。採用基準の「採る」列に2つ当たっている。**さらに、このアカウントは8/12の`SL-気`（27ビュー）で「賢さを選ぶ＝待ち時間を選ぶ」を投稿済み**で、**音声だけ別枠だった賢さの設定がテキストと同じ操作に統合された**という続きにあたる
+  - **ただしキューには入れない**（理由は`ideas.md`の該当行と`queue.md`の本日ブロックに記載）
+- **【差分あり・記録／Xは採らない】ライブラリのファイル・フォルダを共有できるようになった**（同じ9/9付エントリ）
+  - **verbatim（冒頭）**：`Library sharing lets you share files and folders in ChatGPT, choose who can access them, and work with shared content directly in your conversations.`
+  - **できること（verbatim・要点）**：`Share with specific people. Invite recipients and assign Viewer or Editor access.` ／ `Share across your workspace. Make content available to everyone in your workspace.` ／ `Manage access. Review who has access, change permissions, or remove access from the sharing dialog.`
+  - **⚠️ 所有権の注意も書かれている（verbatim）**：`Files uploaded to a shared folder belong to the folder's owner.` ／ `If you upload a file to someone else's shared folder and they later remove your folder access, the file stays in their folder and you lose access to it.`
+  - **Xに採らない理由**：**チームで使う機能**で、**このメディアは1人運用**（`workspace`も共有相手も無い）。使う側の手元では何も変わらない
+- **⚠️ OpenAIニュース面（[openai.com/news](https://openai.com/news/)）は本日、確認できなかった。**WebFetchは403、アプリ内ブラウザは`openai.com`への遷移が2回とも失敗（1回はタイムアウト）。**「新規なし」ではなく「未確認」として残す。**リリースノート側は開けているので、9/9付の2件は取りこぼしていない
+
+### Gemini / Google
+
+- **【差分なし】**[Gemini API 変更履歴](https://ai.google.dev/gemini-api/docs/changelog)＝最新は**9/3の`Lyria 3.5 in public preview`**のままで、9/4以降0件（**7日連続で0件**）
+- **【差分なし】**[Gemini Apps リリースノート](https://gemini.google/release-notes/)＝最新は**`2026.08.19`**（学生向けハブ）のままで、**8/20以降22日間0件**（本日CCがブラウザで直接開いて確認）
+
+### 国産AIライティングツール
+
+- **本日は巡回対象外**（月・金12:00のフル版の担当。デイリーでは触らない）
 
 ---
 

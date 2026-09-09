@@ -1,6 +1,49 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-09
+最終更新: 2026-09-10
+
+---
+
+## [2026-09-10] 調査結果（デイリー）
+
+**①に差分あり。巡回8面のうち1面が動いた**（CHANGELOG／npm＝`2.1.266`と`2.1.267`の2版が公開）。**ただし軸②の採用基準には届かない**（理由は下記）。**あわせて9/9に「未確認」として残した宿題を1件つぶした**（VS Code拡張の有無）。
+
+### Claude Code / Anthropic
+
+- **【差分あり・記録／Xは採らない】Claude Code `2.1.266`・`2.1.267` の2版が公開された**（一次情報2点＝[npmレジストリ](https://registry.npmjs.org/@anthropic-ai/claude-code)の`time`実測 ／ [CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)）
+  - **公開時刻（npm実測）**：`2.1.266` ＝ `2026-09-08T23:32:32.880Z` ＝ **日本時間 9/9 08:32** ／ `2.1.267` ＝ `2026-09-09T18:25:42.820Z` ＝ **日本時間 9/10 03:25**
+  - ⚠️ **`2.1.266`は昨日のデイリー実行（9/9 08:04）の28分後に公開されている。**昨日の記録が`2.1.265`止まりだったのは見落としではなく、**実行時点で存在していなかった**ため。**毎朝8時台の実行では、その日の朝に出た版を取りこぼす時間帯がある**（記録として残す）
+  - **`2.1.266`は1項目だけのホットフィックス（verbatim）**：`Fixed a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY environment variable, previously ignored unless ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN were both set, began forcing Cloud-gateway sign-in on its own in 2.1.265, so configurations that set it alongside an API key, apiKeyHelper, or custom auth headers failed every request with "Not signed in to the Cloud gateway". The variable on its own is ignored again; no configuration change is needed`
+    - **Xに採らない理由**：**ゲートウェイ／プロキシ経由で使っている人だけの話**で、このMacはサブスクリプション認証（`ANTHROPIC_API_KEY`もゲートウェイ設定もなし）。**手元では何も起きていない**
+  - **`2.1.267`は約60項目の大型リリース。追加は2件だけで、残りはほぼ`Fixed`／`Improved`**
+    - `Added maxEffortLevel setting (top-level or per model under modelSettings): caps the effort level on every provider, including Bedrock, Vertex and Foundry; users can still pick a lower level`（**effort（思考の力の入れ方）に上限を設定できるようになった**）
+    - `Added --system-prompt-snapshot off to render the system prompt fresh on every request instead of reusing the conversation's recorded prompt (for iterating on prompt text)`
+    - `Fixed effort: frontmatter on custom commands, skills, and subagents being ignored on models whose default effort is still pinned (Opus 4.7, Opus 4.8, Fable 5)`
+    - `Fixed claude remote-control exiting and dropping every attached session when its server credential expires (about 30 days after start); the host now re-registers and keeps going`
+    - `Fixed /context and other local command output rendering blank on mobile clients`
+    - **プロンプトキャッシュ関連の`Fixed`が10項目以上**（モデル切り替え・セッション再開・MCP再接続でキャッシュが外れていた件）
+  - **Xに採らない理由（3点）**
+    - `maxEffortLevel`は**既定が変わる話ではなく、自分で設定したときだけ効く上限**。**この環境では設定していない**ので、手元で何も変わっていない。**在庫36本＝理想10本の3.6倍で「基準を上げる（自分の使い方が変わるものだけ）」に該当**しており、未設定のまま速報として出せば「ニュースの要約」になる
+    - `effort:`フロントマターの修正は**対象が`Opus 4.7 / Opus 4.8 / Fable 5`**で、この環境の常用モデル（Opus 5）は対象外。⚠️ なお`effort:`を書いたファイルは**`~/.claude/plugins/`配下のclaude-securityプラグインに8件ある**が、上記のとおりモデルが対象外なので挙動は変わらない（**本日CCが実機で`grep`して確認**）
+    - `claude remote-control`の30日問題は、**8/25の`RC-気`で「閉じると切れるので自分は使わない気がする」と投稿済み**＝そもそも常用していない
+  - ⚠️ **auto modeの自動承認に関する新しい変更は`2.1.266`・`2.1.267`のどちらにも無い。**キュー`PERM-01`の「4回目」は**2日連続で出ていない**。差し替え材料は`v2.1.261`の3回目のまま
+- **【✅ 宿題を1件つぶした】9/9に「未確認」として保留した VS Code拡張の件は、この環境では該当しないと確定した**
+  - 9/9に記録した`2.1.265`の`[VSCode] Added automatic archiving of sessions inactive for a set period (new "Archive inactive sessions" setting, default 14 days)`は、**「既定が変わる話なので採用基準には該当するが、この制作環境でClaude CodeのVS Code拡張を使っているかが未確認」**として保留していた
+  - **本日CCが実機で確認した結果、Claude CodeのVS Code拡張は入っていない。**`~/.vscode/extensions`の中身は**`github.copilot-chat-0.48.1`と`mechatroner.rainbow-csv-3.24.1`の2つだけ**（`extensions.json`を除く）。VS Code本体（`/Applications/Visual Studio Code.app`）とCursor（`/Applications/Cursor.app`）はインストールされているが、**拡張としてのClaude Codeはどちらにも無い**
+  - **→ 14日自動アーカイブはこの環境に影響しない。採らないで確定**（保留を1件消化）
+- **【差分なし】@ClaudeDevs**：最新は**9/8の3投稿**（CIオンコール／Managed Agents導入3社インタビュー／コスト最適化ブログ）のままで、**9/9・9/10の新規投稿は0件**（本日CCがブラウザで直接開いて確認）
+- **【差分なし】Claude Platform リリースノート**：最新は**9/3の`ant CLI 1.30.0`／`ant apply`**のままで、9/4〜9/10のエントリは0件
+- **【差分なし】Claude Apps リリースノート**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)）：最新は**9/1（Claude Fable 5.1／Claude Mythos 5.1）**のままで、9/2以降は0件
+- **【差分なし】Anthropic Newsroom**（[anthropic.com/news](https://www.anthropic.com/news)）：最新は**9/1**のままで、9/2以降の新規は0件
+- **【差分なし】公式Pricing／プラン別ヘルプ**：[Pro・Maxプランでのclaude code利用](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)の更新表示は**`Updated over 3 weeks ago`**（9/8・9/9は`over 2 weeks ago`）で、**日付入りの変更は無い**。[claude.com/pricing](https://claude.com/pricing)も本日ブラウザで開いて確認し、**Pro＝年払い月額$18／月払い$22・Max＝$110から**で変化なし。**9/14の週次上限25%増（`LIMIT-気`で投稿済み）に関する追記も、どちらのページにも今日も無い**（上限・価格はこのページの外に出る、を5回連続で確認）
+- **【差分なし・ただし表示の違いを1点記録】Claude Academy**（[academy.claude.com](https://academy.claude.com/)を本日CCがブラウザで直接開いて確認）：コースは**3本のままで変化なし**（`AI活用力：フレームワーク&基礎`14レッスン・4時間／`AIの能力と限界`13レッスン・3.5時間／`Building Effective Human Agent Teams (Beta)`5レッスン・45分）
+  - ⚠️ **ウェビナー欄の表示が9/8の記録と違う。**9/8は日付つきのライブウェビナー3件（9/10・9/15）が並んでいたが、**本日は「注目のウェビナー」に`定期開催`の3件**（`Claude Code: Foundations`／`Claude Code: Advanced`／`Building your first workflow with Cowork`）が並んでいる。**9/10のウェビナーは本日開催なので、日付つきの枠から定期枠へ表示が入れ替わったと見るのが自然だが、公式が何かを終了・変更したという記載は無い。「無くなった」とは書かない**
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**（①からは0件。②から1件を追記＝`research-20260910-01`は`research/ai-tools.md`側）
+- **`queue.md`への投入：0本。**在庫36本＝理想10本の3.6倍で「基準を上げる」に該当し続けている
+- **巡回チェック（8チャネル）**：①CHANGELOG ✅ ②npm`time` ✅ ③@ClaudeDevs ✅ ④Claude Apps ✅ ⑤Claude Platform ✅ ⑥Newsroom ✅ ⑦Pricing／プラン別ヘルプ ✅ ⑧Claude Academy ✅ ＝**8面すべて開いた**
 
 ---
 

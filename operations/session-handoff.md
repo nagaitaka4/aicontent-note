@@ -96,17 +96,18 @@ no.64の結びは「品質と事実の確認は、今も人が入らないと成
 
 ---
 
-## ⚠️ 作業ブランチの注意（次のセッションで最初に見る）
+## リポジトリの状態（2026-09-09 12:20時点）
 
-このセッションはクラウド環境で動いており、**成果物は`main`ではなく`claude/continuation-guj69o`にある。**
+**このセッションの成果物は`main`にマージ済み。**`git pull --rebase origin main`だけで全部揃う。
 
-```
-git fetch origin claude/continuation-guj69o
-git log --oneline origin/main..origin/claude/continuation-guj69o
-```
+| コミット | 内容 |
+|---|---|
+| `e613084` | この引き継ぎの更新 |
+| `febf387` | no.66の構成案 |
+| `5265d7f` | Dynamic Workflowsの実測ログ |
+| `034aacd` | `__pycache__`を.gitignoreに追加 |
 
-未反映のコミットは3本（`febf387` 構成案／`5265d7f` 実測ログ／`034aacd` .gitignore）。
-**`git pull --rebase origin main`だけではこのセッションの成果物が入らない。**先にブランチを取り込む。
+作業ブランチ`claude/continuation-guj69o`は`main`と同一内容。**追いかける必要はない。**
 
 ---
 

@@ -6,7 +6,7 @@ series: なし（単発）
 準メインKW: Dynamic Workflows 使ってみた / AI 記事チェック
 検索意図: Dynamic Workflowsが何なのか、実務（記事チェック）に使うと何が起きるのかを知りたい
 category: AIコンテンツ運用検証
-状態: 構成案（第6稿・執筆済み）
+状態: 構成案（第7稿・執筆済み）
 ---
 
 # 構成案：Claude Code Dynamic Workflows（no.66）
@@ -228,6 +228,9 @@ AIに記事チェックを任せると、指摘はどこまで当たるのか。
 # Claude Code Dynamic Workflowsを使ってみた
 
 → H1直下リード（3文・150字以内／1文目40字以内）※下は実測済みの確定案・合計109字
+→ ⚠️【第7稿】**リードに「22件返ってきて、直したのは1件」を入れた。**
+　 レビューを重ねた結果、持ち帰りがすべてスコープを絞られて消えていた。
+　 **この記事で唯一、読者が自分の作業に当てはめられるのが「22対1」という比率**なので、リード・H2⑥・H2⑦の3箇所に置く
 → 1文目（40字）：Dynamic Workflowsは、AIが書いた台本で複数のAIを動かします。
 　 ⚠️【第4稿】**「AIを何体も同時に動かす機能」だけにしない。**それだとエージェントチームと区別がつかない。
 　 核は「**AIが段取りの台本を先に書く**」ところ（公式：`a JavaScript script that orchestrates many subagents at once. Claude writes the script`）

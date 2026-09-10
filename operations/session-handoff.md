@@ -6,19 +6,23 @@
 
 ## 次のセッションでまず行うこと
 
-**TOP10 #1「Dynamic Workflowsで記事チェックを10体に任せた」（no.66）。構成案の確認から始める。**
+**no.66「Claude Code Dynamic Workflowsを使ってみた」は初稿が完成している。次はユーザーの通し読み → WP入稿。**
 
-⚠️ **手順1（実際に回す）と手順2（no.64との距離）は2026-09-09に完了している。**やり直さない。
+| 工程 | 状態 |
+|---|---|
+| 構成案（第4稿） | ✅ 確定 |
+| アイキャッチ | ✅ `images/eyecatch_0066.png`（1200×630・色補正済み） |
+| 執筆 | ✅ `articles/claude-code-dynamic-workflows-article-check.md`（**NG 0件**・本文4,766字） |
+| ユーザーの通し読み | ⏳ 未 |
+| WP入稿 | ⏳ 未（`rules/article-flow.md` 7章の手順。**Chrome拡張ごしにCCが下書きまで作る**） |
 
-**次の1アクション：`operations/structure-drafts/claude-code-dynamic-workflows-article-check.md` をユーザーに提示して確認を取る。**
+⚠️ **本文4,766字は構成案の目安3,800〜4,200を超えている。**H2 7本＋表3つ＋H3 4本の構成で、
+冗長は`article-self-check.py`の類似度チェックで潰し済み。**数値を理由にした削減はしない**（原則2）。
 
-そのあとは`rules/article-flow.md` §2の順に進む。
-
-1. 構成案の確認（ユーザー）
-2. アイキャッチ（参考画像の添付を待つ／なしならプロンプト1案を出して執筆と並行可）
-3. 執筆 → `article-self-check.py`でNG 0件 → 通し読み
-
-**⚠️ 着手前に`article-precheck.py`をもう一度回さない。**2026-09-09に実行済みで、その結果は構成案に反映してある。
+⚠️ **入稿時の注意3点**
+1. `md-to-wp.py`は`wp:list`を作れない。**番号付きリストは使っていない**ので今回は影響しない
+2. 各H2直前・CTA直前・記事末尾に`wp:separator`を入れる（no.55が基準）
+3. ディスカッションを「受け付けません」にする（`comment_status`と`ping_status`の両方）
 
 ---
 

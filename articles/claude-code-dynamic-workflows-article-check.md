@@ -3,10 +3,10 @@ no: 66
 series:
 series_no:
 title: Claude Code Dynamic Workflowsを使ってみた
-date:
+date: 2026-09-10
 url: https://aicontent-note.com/claude-code-dynamic-workflows-article-check/
 slug: claude-code-dynamic-workflows-article-check
-status: draft
+status: published
 description: AIに記事チェックを任せると、指摘はどこまで当たるのか。Claude CodeのDynamic Workflowsで10項目を10体に分けたら、22件が返ってきて、実際に直したのは1件でした。人の指摘と突き合わせた5点の結果と、指摘の読み方まで書きます。
 eyecatch_alt: Claude Code Dynamic Workflowsで記事チェックの10項目を10体のAIに分けて渡した実測を解説した記事のアイキャッチ画像
 eyecatch: eyecatch_0066.png

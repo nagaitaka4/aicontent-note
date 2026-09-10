@@ -1,6 +1,46 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-10
+最終更新: 2026-09-11
+
+---
+
+## [2026-09-11] 調査結果（デイリー）
+
+**②に差分あり。3日連続で動いた。**ChatGPTのリリースノートに**9/10付で2件**（Dataプラグイン／ライブラリにBox・Dropbox・SharePoint）が入り、**9/9付に昨日の記録に無かった1件**（Work・CodexでのDeep Research）があった。**Geminiはアプリ側が22日ぶりに動いた**（Windowsアプリ）。**採用は0件。**
+
+### ChatGPT / OpenAI
+
+- **【差分あり・記録／Xは採らない】ChatGPT Work・CodexにDataプラグイン**（一次情報＝[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)の**September 10, 2026**エントリ・更新表示は`Updated: 4 時間前`。**本日CCがアプリ内ブラウザで直接開いて確認**〔WebFetchは403〕）
+  - **verbatim**：`The Data plugin helps you analyze connected business data in ChatGPT Work and Codex. Ask a business question, investigate changes, or create an interactive dashboard or report.` ／ `To get started, install Data from the plugin directory, then start a conversation with @Data. Connected sources may require setup or authorization, and queries use your connected account's existing permissions.`
+  - **Xに採らない理由**：**接続した業務データ（社内のデータベース等）を分析する機能**で、このメディアにはつなぐ業務データが無い。手元は何も変わらない
+- **【差分あり・記録／Xは採らない】ChatGPTのライブラリにBox・Dropbox・SharePointが追加された**（同じ9/10付エントリ）
+  - **verbatim**：`Box, Dropbox, and SharePoint now join Google Drive in ChatGPT Library. Once connected, you can browse and search available files and folders, then add the files you need to a conversation through Add from Library or @mentions—without uploading them again.`
+  - ⚠️ **提供範囲の記述が同じエントリ内で2通りある（verbatim）**：`Box, Dropbox, and Sharepoint integrations are now rolling out to Go, Plus, Pro, Business, Edu, Healthcare and Enterprise users on the web in both Chat and Work.` ／ `Rolling out to Plus, Pro, Enterprise, Edu, Healthcare and Business users on the web in both the Chat and Work toggles.`＝**前者にはGoが入り、後者には入っていない。**「Goでも使える」とは書かない。**どちらも「Webのみ・モバイルは後日」**（verbatim：`Mobile support will follow.`）は共通
+  - **Xに採らない理由**：**このメディアのファイルはGitHubとローカルに置いている。**本日CCが実機で確認した範囲では`/Applications`にBox・Dropboxのアプリは無い（入っているのは`OneDrive.app`で、今回の対象名には含まれない）。**使える範囲は変わったが、使う側の手元が変わらない**
+- **【差分あり・昨日の記録に無かった1件／Xは採らない】ChatGPT Work・CodexでDeep Researchが使えるようになった**（同リリースノートの**September 9, 2026**エントリ）
+  - ⚠️ **9/10の記録は9/9付を2件（Voice・ライブラリ共有）としていたが、本日開いたページでは9/9付が3件ある。**昨日の実行時点でこの項目がページに載っていたかは確認できないので、**見落としだったかどうかは書かない**
+  - **verbatim**：`Deep research is now available in ChatGPT Work and Codex. Research complex questions across the web, your files, and supported connected apps, then turn the findings into an editable document with citations.` ／ `Available to Plus, Pro, Business, Enterprise, and Edu users with Work access on web, desktop, iOS, and Android. It uses your existing Work/Codex allowance or credits; deep research limits in Chat are unchanged.`
+  - **Xに採らない理由**：**Work側に機能が足されただけで、Chat側のDeep Researchの上限は変わらない**（verbatim：`deep research limits in Chat are unchanged`）。PlusでChatを使う手元は変わらない
+  - **📝 記事の更新材料として記録**：[no.56 ChatGPT WorkとClaude Codeの違いと選び方](articles/chatgpt-work-claude-code-comparison.md)で比べている「Workでできること」が1つ増えた。**リライト時に確認する**
+- **⚠️ OpenAIニュース面（[openai.com/news](https://openai.com/news/)）は本日も確認できなかった。**アプリ内ブラウザでの遷移がタイムアウト（2日連続）。**「新規なし」ではなく「未確認」として残す。**リリースノート側は開けているので、製品の変更は取りこぼしていない
+
+### Gemini / Google
+
+- **【差分なし】**[Gemini API 変更履歴](https://ai.google.dev/gemini-api/docs/changelog)＝最新は**9/3の`Lyria 3.5 in public preview`**のままで、9/4以降0件（**8日連続で0件**）
+- **【差分あり・記録／Xは採らない】Gemini アプリのWindows版が出た**（一次情報2点＝[Gemini Apps リリースノート](https://gemini.google/release-notes/)の**2026年9月10日**エントリ「Google Gemini を PC で利用できる Windows アプリケーションが登場」・WebFetchで確認〔アプリ内ブラウザは遷移に失敗〕／[Google公式ブログ](https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/)〔公開日September 10, 2026〕）
+  - **8/20以降22日間0件だったアプリ側のリリースノートが動いた**
+  - **verbatim（提供範囲）**：`The app is available today globally for Windows 10 and 11.` ／ **ショートカット**：`Press Alt + Space on your PC at any time to open Gemini over your active work.`
+  - ⚠️ **ブログには一部の機能にGoogle AIのサブスクリプションが要るとの注記と18歳以上の条件がある。**アプリ自体の料金・プラン条件は書かれていないので、「無料で全部使える」とは書かない
+  - **Xに採らない理由**：**このメディアの制作環境はMac**（macOS版は7/29に既出）。手元は何も変わらない
+
+### 国産AIライティングツール
+
+- **本日は巡回対象外**（月・金12:00のフル版の担当。デイリーでは触らない）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**（②から。①の1件は`research/trends.md`側）
+- **巡回チェック**：ChatGPTリリースノート ✅（ブラウザ）／OpenAIニュース面 ❌（タイムアウト・未確認）／Gemini API変更履歴 ✅／Gemini Appsリリースノート ✅（WebFetch＋公式ブログ）
 
 ---
 

@@ -1,6 +1,49 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-10
+最終更新: 2026-09-11
+
+---
+
+## [2026-09-11] 調査結果（デイリー）
+
+**①に差分あり。巡回8面のうち3面が動いた**（CHANGELOG／npm＝`2.1.268`が公開・Claude Appsリリースノート＝9/10付1件・Claude Platformリリースノート＝9/10付1件）。**`2.1.268`から1件を採用**（`research-20260911-01`）。**auto modeに関する変更も1件あるが、`PERM-01`の「4回目」ではなく逆向きの変更**（下記）。
+
+### Claude Code / Anthropic
+
+- **【差分あり・1件採用】Claude Code `2.1.268` が公開された**（一次情報2点＝[npmレジストリ](https://registry.npmjs.org/@anthropic-ai/claude-code)の`time`実測 ／ [CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)）
+  - **公開時刻（npm実測）**：`2026-09-10T18:41:11.770Z` ＝ **日本時間 9/11 03:41**。`dist-tags`は`latest`・`next`とも`2.1.268`（`stable`は`2.1.236`のまま）
+  - **約80項目の大型リリース。**`Added` 7件／`Fixed` 約45件／`Improved` 10件／`Changed` 7件＋`[VSCode]` 13件
+  - **【採用】タスク管理ツールを渡すモデルが絞られた（verbatim）**：`Changed the task-tracking tools (TaskCreate/Get/Update/List, TodoWrite) to be offered only on Claude 3.x, Opus 4.0–4.7, Sonnet 4.0–4.6, Haiku 4.5; set CLAUDE_CODE_ENABLE_TODO_TOOLS=1 elsewhere`
+    - **使う側の何が変わるか**：一覧に**Opus 4.8・Opus 5・Sonnet 5・Fable 5系が入っていない**。このメディアの常用モデル（記事制作＝Opus 5／開発＝Fable）は**どちらも既定ではTodoWrite等を渡されなくなる**。戻すなら環境変数`CLAUDE_CODE_ENABLE_TODO_TOOLS=1`
+    - ⚠️ **公式に書かれているのは「ツールを渡すモデルの範囲」だけ。**画面のチェックリスト表示がどうなるか・代わりの仕組みがあるかは**書かれていない**。「チェックリストが消えた」とは書かない
+    - ⚠️ **この環境はまだ`2.1.268`未満**（本日CCが実機で確認＝CLI `claude --version`が`2.1.243`／デスクトップアプリ同梱の`~/Library/Application Support/Claude/claude-code`は最新が`2.1.260`）。**手元ではまだ何も起きていない**
+  - **【記録・Xは採らない／`PERM-01`の材料】auto modeで止められたときの動きが変わった（verbatim）**：`Improved auto mode denials: the message Claude receives now names the rule that blocked the action and asks Claude to try a safer method and finish unrelated work before stopping to ask you`
+    - **中身**：自動承認されなかったとき、**Claudeは止まってすぐ聞きに来るのではなく、①別の安全な方法を試す ②関係ない作業を先に終わらせる、その後に聞く**
+    - ⚠️ **自動承認の対象を狭める変更ではない**＝`PERM-01`（「確認を減らす設定のはずが1週間で2回増えた」）の**「4回目」ではない。**むしろ**止まって聞く回数を減らす向き**の変更で、「4回目」は**3日連続で起きていない**
+    - **Xに単独で採らない理由**：体感できるかは実機で止められた場面を見るまで分からない（③決断・感情が書けない）。**`PERM-01`に角度を足す材料としてキューの表に注記した**（改稿の判断はX編集部）
+  - **【記録・手元に影響なし】許可ルールの抜け穴の修正2件（verbatim）**：`Fixed deny and ask permission rules on symlinked directories (/etc, /tmp, /var on macOS; /bin on Linux) not applying when a path was given by its real location, and Bash commands ignoring deny rules written on a symlinked path spelling` ／ `Fixed a case where a Read or Edit deny rule did not apply when an env -C, eval or similar command the permission checker cannot analyze was on the same line`
+    - **この環境は`deny`ルールを1件も書いていない**（本日CCが実機で確認＝`~/.claude/settings.json`の`permissions.deny`は無し・`defaultMode`は`auto`／`.claude/settings.local.json`にも`deny`無し）。**直る対象がそもそも無い**
+  - **【記録・対象外】**`Fixed long-context 429s on Fable models showing the usage-credits consent prompt instead of the 1M-context message on Pro and Team plans`＝**Pro・Teamの話で、このアカウントはMax**
+  - **【記録のみ】**`Fixed sustained high CPU usage: a busy loop in long-running idle sessions no longer pins a CPU core`（長時間放置したセッションでCPUが張り付く件の修正）／`Improved /plugin: installing, enabling or disabling a plugin now takes effect when you close the menu; /reload-plugins is no longer needed afterwards`／`Added browser-tab icons for published artifacts, chosen by Claude to match each page`
+- **【差分あり・記録／Xは採らない】Claude Apps リリースノートに9/10付で「Smart reports (beta)」**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)・本日WebFetchで確認）
+  - チームのClaudeの使い方・かかったコスト・作業の詰まり・スキル化できる繰り返しを分析してレポートにする機能。**verbatim（提供範囲）**：`Smart reports are available in beta on Claude Enterprise plans.`
+  - **Xに採らない理由**：**Enterpriseプランだけ**。このアカウント（Max・1人運用）は対象外
+- **【差分あり・記録／Xは採らない】Claude Platform リリースノートに9/10付で1件**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)・本日WebFetchで確認）
+  - **verbatim**：`Claude Managed Agents permission policies now include auto: the server evaluates each agent or MCP tool call and runs it, denies it, or pauses for your approval.`
+  - **Xに採らない理由**：**API経由でエージェントを組む開発者向け。**Claude Codeのauto modeと同じ考え方がManaged Agentsにも入った、という記録にとどめる
+- **【未確認】@ClaudeDevs**：アプリ内ブラウザで`x.com/ClaudeDevs`を開く操作が**5分でタイムアウト**（ログインを持たないブラウザのため）。**「新規なし」ではなく「未確認」として残す**
+- **【差分なし】Anthropic Newsroom**（[anthropic.com/news](https://www.anthropic.com/news)）：最新は**9/1**のままで、9/2以降の新規は0件
+- **【差分なし・ただし表示の違いの理由が分かった】公式Pricing／プラン別ヘルプ**
+  - [Pro・Maxプランでのclaude code利用](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)は**`Updated over 3 weeks ago`**のままで日付入りの変更なし。**9/14の週次上限25%増（`LIMIT-気`で投稿済み）の追記はどちらのページにも今日も無い**（6回連続）
+  - [claude.com/pricing](https://claude.com/pricing)は本日**WebFetch（米国から取得）とアプリ内ブラウザ（日本語表示）の2面**で開き、**2面とも Pro＝年払い月額$17（$200一括）／月払い$20・Max＝$100から**。ページには`表示価格には該当する税金は含まれていません`とある
+  - ⚠️ **9/10までの記録は「Pro＝年払い月額$18／月払い$22・Max＝$110から」。**これは**$20×1.1＝$22／$100×1.1＝$110／$200×1.1÷12≈$18.3**と一致し、**消費税10%込みの表示を記録していた**と見るのが自然（これまではログイン済みのChromeで開いていた）。**価格改定とは書かない。**⚠️ ただし税込で表示される条件を公式が書いているわけではないので、**あくまで推定**
+- **【差分なし】Claude Academy**（[academy.claude.com](https://academy.claude.com/)・本日WebFetchで確認）：コースは**3本のままで変化なし**（`AI Fluency: Framework & Foundations`14レッスン・4時間／`AI Capabilities and Limitations`13レッスン・3.5時間／`Building Effective Human Agent Teams (Beta)`5レッスン・45分）。⚠️ **ウェビナー欄はWebFetchでは取得できなかった**（9/10はブラウザで定期開催3件を確認）。「無くなった」とは書かない
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：1件**（`research-20260911-01`＝`2.1.268`でOpus 5・Fable 5系などにタスク管理ツールが既定で渡されなくなった）。②からは0件（`research/ai-tools.md`側）
+- **`queue.md`への投入：0本。**①消費側ゲート「**期限つき2本以上→投入停止**」に該当（`DW66-リ`＝記事公開週の枠〜9/13／`PERM-01`＝〜9/4で超過7日） ②本件は3条件が①今出す理由◯／②具体物◯の2個だが、**③決断・感情は`2.1.268`に上がって実際の変化を見るまで書けない**
+- **巡回チェック（8チャネル）**：①CHANGELOG ✅ ②npm`time` ✅ ③@ClaudeDevs ❌（タイムアウト・未確認） ④Claude Apps ✅ ⑤Claude Platform ✅ ⑥Newsroom ✅ ⑦Pricing／プラン別ヘルプ ✅ ⑧Claude Academy ✅（WebFetch） ＝**8面中7面を開いた**
 
 ---
 

@@ -764,6 +764,71 @@ GSCの「ページのインデックス登録」を確認（最終更新2026/08/
 | 8 | no.56への追記判断（Coworkが一度も出てこない） | ✅ 2026-09-02（FAQに1件追加しno.58へリンク） |
 
 
+## 2026-09-10（臨時：TOP10の「1行テスト」の根拠として取得）
+
+- 取得方法：実Chrome（claude-in-chrome）でGSCを直接操作
+- 期間：直近3か月／ページ表68行・クエリ表84行（GSCが開示する分のみ）
+- 目的：no.66の反省（`operations/lessons.md` 2026-09-10）で決めた「この記事で得をするのは誰で、いつ・どうやって来るか」をTOP10にかけるため。**「どうやって来るか」を推測で書かないために実数を取った**
+
+### 判定に使ったページ（クリック／表示／平均掲載順位）
+
+| ページ | クリック | 表示 | 順位 |
+|---|---|---|---|
+| claude-code-compatible-jobs（no.14） | 32 | 599 | 6.3 |
+| search-console-crawled-not-indexed（no.57） | 0 | 346 | 70.5 |
+| swell-seo-settings | 5 | 263 | 15.3 |
+| claude-subscription-change-june-2026 | 6 | 218 | 11.4 |
+| internal-link-guide（no.46） | 2 | 214 | 15.8 |
+| chatgpt-work-claude-code-comparison（no.56） | 24 | 213 | 6.7 |
+| blog-outsource-pricing-guide（no.40） | 2 | 141 | 12.7 |
+| rule-file-basics（no.55） | 3 | 59 | 7.0 |
+| service | 0 | 41 | 26.3 |
+| claude-cowork-usage-data（no.58） | 1 | 29 | 8.4 |
+| geo-ai-citation-difference（no.54） | 1 | 20 | 34.7 |
+| llms-txt-geo-effect（no.60） | 1 | 14 | 4.5 |
+| claude-code-task-fit（no.48） | 0 | 14 | 9.1 |
+| geo-ng-practices | 2 | 5 | 4.8 |
+| ai-overview-check-method（no.65） | 0 | 5 | 22.2 |
+| chatgpt-ads-ai-search-geo（no.63） | 0 | 3 | 5.7 |
+| ai-article-quality-check（no.13） | 0 | 2 | 6.5 |
+| claude-code-glossary-beginners | 0 | 1 | 8.0 |
+| claude-code-introduction（no.9） | — | 表示なし | — |
+| blog-operation-automation-limit（no.64） | — | 表示なし | — |
+
+### テーマ別のクエリ（表示のあったものは全件）
+
+| クエリ | クリック | 表示 | 順位 |
+|---|---|---|---|
+| 被リンク 貼り方 | 0 | 83 | 15.4 |
+| ai時代 内部リンク | 0 | 37 | 18.1 |
+| claude 担当職種 | 3 | 27 | 4.7 |
+| ブログアフィリエイト 初心者 内部リンク 貼り方 | 0 | 19 | 18.5 |
+| ブログ 代行 相場 | 0 | 13 | 16.0 |
+| ブログ代行 相場 | 0 | 10 | 7.4 |
+| chatgpt work claude code | 2 | 9 | 3.6 |
+| chatgpt work claude | 0 | 4 | 8.2 |
+| ブログ 作成 代行 料金 | 0 | 3 | 18.3 |
+| chatgpt work vs claude code | 0 | 2 | 5.5 |
+| ブログ更新代行 | 0 | 2 | 27.5 |
+| aiに引用される記事 | 0 | 2 | 49.0 |
+| ai検索 引用 | 0 | 2 | 50.0 |
+| claude code 仕事 | 1 | 2 | 45.0 |
+| rules file | 0 | 1 | 9.0 |
+| ブログ 内部リンク | 0 | 1 | 11.0 |
+| claude code 業務利用 | 0 | 1 | 25.0 |
+| ai overview チェック | 0 | 1 | 29.0 |
+| cowork 使い方 | 0 | 1 | 30.0 |
+| ブログ 被リンク 増やす | 0 | 1 | 49.0 |
+| ブログ記事 代行 | 0 | 1 | 57.0 |
+| aiによる概要 出し方 | 0 | 1 | 72.0 |
+| コンテンツ マーケティング 運用 代行 | 0 | 1 | 73.0 |
+
+**表示0件だったテーマ**：`補助金`／`持続化`／`講座`／`academy`／`学習`／`中小企業`／`AI活用`／`分担`／`workflow`／`dynamic`
+
+**⚠️ ページ表に無い＝表示ゼロとは限らないが、クエリ表に語が1件も無いテーマは「このサイトに検索から来た実績がない」と読む。**
+
+---
+
 ## 更新ルール（2026-08-05改訂：CCがブラウザで直接取得する方式に変更）
 
 **旧方式（ユーザーがCSVをダウンロードして共有）は廃止。**CCがアプリ内ブラウザでGSCを直接操作して取得できることを2026-08-05に確認したため、ユーザーの作業はログインのみとなった。

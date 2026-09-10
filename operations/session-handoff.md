@@ -6,23 +6,30 @@
 
 ## 次のセッションでまず行うこと
 
-**no.66「Claude Code Dynamic Workflowsを使ってみた」は初稿が完成している。次はユーザーの通し読み → WP入稿。**
+**no.66は下書きまで完成している。残っているのは公開ボタンだけ。**
 
-| 工程 | 状態 |
+| 項目 | 状態 |
 |---|---|
-| 構成案（第4稿） | ✅ 確定 |
-| アイキャッチ | ✅ `images/eyecatch_0066.png`（1200×630・色補正済み） |
-| 執筆 | ✅ `articles/claude-code-dynamic-workflows-article-check.md`（**NG 0件**・本文4,766字） |
-| ユーザーの通し読み | ⏳ 未 |
-| WP入稿 | ⏳ 未（`rules/article-flow.md` 7章の手順。**Chrome拡張ごしにCCが下書きまで作る**） |
+| 記事 | `articles/claude-code-dynamic-workflows-article-check.md`（NG 0件・本文4,664字） |
+| アイキャッチ | `images/eyecatch_0066.png`（1200×630） |
+| **WP下書き** | **post ID 926**（2026-09-10 14:4x入稿・本文のSHA-256一致を確認） |
+| 公開 | ⏳ **人が押す**（2026-08-27決定・CCは押さない） |
 
-⚠️ **本文4,766字は構成案の目安3,800〜4,200を超えている。**H2 7本＋表3つ＋H3 4本の構成で、
-冗長は`article-self-check.py`の類似度チェックで潰し済み。**数値を理由にした削減はしない**（原則2）。
+編集画面：`https://aicontent-note.com/wp-admin/post.php?post=926&action=edit`
 
-⚠️ **入稿時の注意3点**
-1. `md-to-wp.py`は`wp:list`を作れない。**番号付きリストは使っていない**ので今回は影響しない
-2. 各H2直前・CTA直前・記事末尾に`wp:separator`を入れる（no.55が基準）
-3. ディスカッションを「受け付けません」にする（`comment_status`と`ping_status`の両方）
+**公開後にやること**（`rules/article-flow.md` 8章・「入稿しました」の一言で自動実行）
+
+1. MD：`status: published`／`date:`記入
+2. `operations/article-md-workflow.md`に追記
+3. `operations/article-backlog.md`：`[x]`＋次回確定マーク移動
+4. GitHub issue #2 更新
+5. `~/Documents/GitHub/tasks/README.md`のTOP10を繰り上げ（**昇格候補を必ず見てから埋める**）
+6. WP同期（WPを正としてMDを合わせる）
+7. X投稿キューへネタ抽出3本
+8. GSCインデックス登録リクエストの案内
+
+⚠️ **この記事は検索流入の期待値をゼロで置いている。**流入はXと回遊から来る前提。
+効果検証を「表示回数が伸びたか」で見ない。
 
 ---
 

@@ -261,7 +261,7 @@ CCはMDのマーカー4個のまま全文差し替えを繰り返しており、
 2. `operations/article-md-workflow.md`に追記
 3. `operations/article-backlog.md`：`[x]`＋次回確定マーク移動
 4. GitHub issue #2 更新
-5. `~/Documents/GitHub/tasks/README.md`更新。**TOP10で空いた枠は、待機列（TOP11〜20）の上から入れる**（2026-09-11変更。旧：「TOP10昇格候補」を見る）。待機列から選ばない場合は、選ばなかった理由を1行書く。**入れたあと待機列の◯が5本を切ったら、その週のうちに補充する**（`rules/task-management.md` 0番「補充の手順」）
+5. `~/Documents/GitHub/tasks/README.md`更新。**TOP10で空いた枠は、待機列（TOP11〜20）の上から入れる**（2026-09-11変更。旧：「TOP10昇格候補」を見る）。待機列から選ばない場合は、選ばなかった理由を1行書く。**入れたあと待機列の◯が5本を切ったら、その週のうちに補充する**（`rules/task-management.md` 0番「補充の手順」）。**◯が足りないときは基準を下げず、週次の編集会議で補充する**（2026-09-11〜）
 6. WP同期（WPを正としてMDを合わせる。ズレ指摘時はユーザーに確認）
 7. X投稿キューへネタ抽出3本（`rules/x-post-flow.md` 3.5章）
 8. GSCインデックス登録リクエストを案内し、`tasks/README.md`常時掲載に確認タスクを追加

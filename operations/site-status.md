@@ -841,6 +841,7 @@ GSCの「ページのインデックス登録」を確認（最終更新2026/08/
 ### 外部の需要（Googleサジェストの件数・2026-09-10 21:50ごろ取得）
 
 **GSCは自サイトに記事があるテーマしか表示を持たないので、まだ記事が無いテーマの需要はサジェストで確かめた。**件数は最大10件（「9」は上限いっぱい）。
+**⚠️ 2026-09-11追記：**`claude in chrome`・`claude code hooks`・`claude.md`・`claude code スキル`・`claude code skill`・`ロングテールキーワード`・`claude code スケジュール`・`claude code 定期実行`の8語は、9/10の同じ作業で取得してD-番号の根拠に使っていたが、この表に書き漏れていた。会話ログに残っていた取得結果から転記した。
 
 | 語 | 件数 | 主な候補 |
 |---|---|---|
@@ -851,6 +852,12 @@ GSCの「ページのインデックス登録」を確認（最終更新2026/08/
 | 被リンク | 9 | とは／チェッカー／調べ方／獲得方法 |
 | claude computer use | 9 | windows／使い方／料金／設定／mac |
 | claude code excel | 9 | 読み込み／編集／操作 |
+| claude in chrome | 9 | 拡張機能／インストール／使い方／料金 |
+| claude code hooks | 9 | おすすめ／使い方／とは／通知 |
+| claude.md | 9 | とは／ベストプラクティス／場所／書き方 |
+| claude code スキル | 9 | とは／おすすめ／使い方／作成 |
+| claude code skill | 9 | skills／skills 一覧／skills おすすめ／skills 使い方 |
+| ロングテールキーワード | 9 | とは／調べ方／例／検索ボリューム |
 | claude code 事務 | 7 | 事務作業／事務職／事務処理／会計事務所 |
 | chatgpt claude どっち | 6 | どっちがいい／課金 どっち／claude code chatgpt どっち |
 | ページにリダイレクトがあります | 6 | とは／対処法／wordpress |
@@ -861,12 +868,14 @@ GSCの「ページのインデックス登録」を確認（最終更新2026/08/
 | claude code codex 違い | 4 | codex cli claude code 違い ほか |
 | 被リンク 確認 | 4 | サーチコンソール 被リンク 確認／wordpress 被リンク 確認 |
 | ブログ 続かない | 4 | 理由／割合 |
+| claude code スケジュール | 4 | 実行／管理／タスク／機能 |
 | 検出 インデックス未登録 | 3 | 原因／対策 |
 | swell アナリティクス | 3 | 設定／google アナリティクス 設定 |
 | claude code 税理士 | 3 | 税理士事務所／セミナー |
 | 被リンク 増やす | 2 | 方法／ブログ 被リンク 増やす |
 | claude code 議事録 | 2 | 作成／teams |
 | インデックス登録 されない | 2 | google／blogger |
+| claude code 定期実行 | 2 | claude code スキル 定期実行／claude code skills 定期実行 |
 | noindexタグによって除外されました | 1 | — |
 | 代替ページ 適切なcanonicalタグあり | 1 | — |
 | サーチコンソール 見つかりませんでした | 1 | — |

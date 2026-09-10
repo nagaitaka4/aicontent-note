@@ -390,7 +390,7 @@ GSCで需要が見えているクラスタ（インデックス未登録326表�
 | D-07 | Claudeの5時間制限・使用制限の仕組み | ◯ | `claude 5時間`9件・`claude 使用制限`9件／課金記事218表示の隣 | Proで制限に頻繁に当たった | 待機列11 |
 | D-08 | Claude Codeのフック（hooks）で「毎回言う」をなくす | ◯ | `claude code hooks`9件 | 日時を毎回差し込むフックを運用中 | 待機列12 |
 | D-09 | Claude in ChromeでWordPressの入稿まで任せた | ◯ | `claude in chrome`9件 | no.63〜66の入稿 | 待機列13 |
-| D-10 | Claude Codeのスキルを業務に使う | ◯/△ | `claude code スキル`9件・`skill`9件 | `eyecatch-ref`スキル（定義ファイルの場所は要確認） | 待機列14 |
+| D-10 | Claude Codeのスキルを業務に使う | ◯ | `claude code スキル`9件・`skill`9件 | `eyecatch-ref`スキルを運用中（`.claude/commands/eyecatch-ref.md`） | 待機列14 |
 | D-11 | Claude CodeのComputer Use（画面操作）を実際の作業で使った | ◯ | `claude computer use`9件 | 9/7のX投稿`CU-気`（旧271） | 待機列15 |
 | D-12 | ロングテールキーワードの調べ方（GSCの実データで） | ◯ | `ロングテールキーワード`9件 | 自サイトのGSC（旧S-05） | 待機列16 |
 | D-13 | SWELLの目次設定 | ◯ | `swell 目次`5件／SWELLクラスタの隣 | このサイトで使用中 | 待機列17 |

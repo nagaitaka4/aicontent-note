@@ -67,7 +67,9 @@ def load(path):
 
 
 def fm_value(frontmatter, key):
-    m = re.search(rf"^{key}:\s*(.*)$", frontmatter, re.M)
+    # 2026-09-10修正：`\s*` は改行も食うため、値が空のキー（下書きの`url:`など）で
+    # 次の行を値として拾っていた。行内の空白だけを飛ばす。
+    m = re.search(rf"^{key}:[^\S\n]*(.*)$", frontmatter, re.M)
     return m.group(1).strip() if m else ""
 
 
@@ -113,6 +115,42 @@ def main(path):
 
     blank_sep = re.findall(r"^・.*$\n\n^・.*$", body, re.M)
     if not report("`・`箇条書きが空行区切りになっていない（<br>を使う）", not blank_sep, f"{len(blank_sep)}件"):
+        failures += 1
+
+    # --- リンク記法（2026-09-10追加）---
+    # 記事本文をチャットへ貼り付けたレビューが「リンク記法が崩れている」を繰り返し報告するが、
+    # 実ファイルは4回とも正常だった（no.57で2回・no.66で2回。経緯はoperations/lessons.md）。
+    # 原因は貼り付け時のエスケープ。毎回の出力に実測を残し、指摘が来た時点で証拠が揃う状態にする。
+    # 画像は `![alt](url "title")` の形を取るため、URLの後ろの `"title"` を正常として許す。
+    URL_PART = r'https?://[^\s()\[\]]+(?:\s+"[^"]*")?'
+    # インラインコード（`[タイトル](URL)` のような記法の説明）は判定対象から外す
+    text_nocode = re.sub(r"`[^`\n]*`", "", text)
+    md_links = re.findall(rf"\[([^\]\[]+)\]\(({URL_PART})\)", text_nocode)
+    broken = [
+        m.group(0)[:70]
+        for m in re.finditer(r"\]\(([^)]*)\)", text_nocode)
+        if not re.fullmatch(URL_PART, m.group(1))
+    ]
+    # `\[` `\]` `\(` `\)` のエスケープが混入していないか（貼り付け由来の典型）
+    escaped = [
+        i + 1
+        for i, l in enumerate(text.split("\n"))
+        if re.search(r"\\[\[\]()]", re.sub(r"`[^`\n]*`", "", l))
+    ]
+    if not report(
+        "リンク記法が崩れていない",
+        not broken and not escaped,
+        f"正常なリンク{len(md_links)}本／崩れ{len(broken)}件{broken[:3] if broken else ''}"
+        f"／リンク記号のエスケープがある行{escaped if escaped else 'なし'}",
+    ):
+        failures += 1
+
+    fm_url = fm_value(frontmatter, "url")
+    if not report(
+        "frontmatterの`url`が生のURL（Markdownリンクにしない）",
+        bool(re.fullmatch(r"https?://\S+", fm_url)) if fm_url else True,
+        fm_url if fm_url else "url未記入",
+    ):
         failures += 1
 
     # 2026-08-06：文頭の接続語・主題の「〜は」のあとに読点がないと読みづらいという

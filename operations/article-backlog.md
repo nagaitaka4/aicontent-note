@@ -392,13 +392,14 @@
 GSCで需要が見えているクラスタ（インデックス未登録326表示／SWELL263表示／Claude課金218表示／被リンク83表示／ChatGPTとClaudeの比較）と、このリポジトリで実際に回している仕組みから派生させ、**まだ記事が無いテーマはGoogleサジェストで需要を確かめた**（数字は`operations/site-status.md` 2026-09-10）。
 **順位の正は`~/Documents/GitHub/tasks/README.md`のTOP10と待機列。**
 **⚠️ 2026-09-11：④（この記事でしか渡せない実体験・実データが主役になるか）を足して再判定した。**✗5本・統合3本・△に下げた1本を外し、Claude in Chromeの入稿（D-09）をTOP10 #6に上げた。
+**2026-09-11 15時：編集方針（`operations/editorial-strategy.md`）から、勝ち筋のハブとしてD-20〜D-26を追加した。**需要はサジェスト（`operations/site-status.md` 2026-09-11 15時）、材料はリポジトリの実物の件数で確かめた。
 
 | ID | タイトル案 | 判定 | 根拠（GSC・サジェスト） | 実体験・実データ | 置き場所 |
 |---|---|---|---|---|---|
 | D-01 | Claude ProとMaxの違い。ProからMaxにしたら別物になった | ◯ | `claude max`9件・`claude pro max 違い`5件／課金記事218表示の隣 | ProでSonnet→不安定・制限→MaxでOpusにして好転（旧261） | TOP10 #2（9/11：D-07を統合） |
 | D-02 | AIツールの「どれをいつ使うか」を用途別に整理する | ◯ | `chatgpt claude どっち`6件・`使い分け`4件／no.56が24クリック | ユーザーの実感（旧263）。V-04を統合 | TOP10 #3（⚠️ 着手前に編集会議のQ2を聞く） |
 | D-03 | 被リンクとは。個人ブログで被リンクを確認して、増やす現実的な方法 | ✗ | 自サイト`被リンク 貼り方`83表示／`被リンク`9件・`被リンク 確認`4件 | Search Consoleのリンクレポートで自サイトを実測できる | バックログ（9/11にTOP10から外した。④✗：自サイトの実測は確認手順の1例にとどまり、主役は一般的な手順の説明） |
-| D-04 | Claude Codeで事務作業はどこまでできるか（経費精算・Excel） | ◯ | `claude code excel`9件・`事務`7件・`経費`1件／no.14が599表示の隣 | `business-ops`でfreeeの経費管理を運用 | TOP10 #4 |
+| D-04 | Claude Codeで事務作業はどこまでできるか（経費精算・Excel） | △ | `claude code excel`9件・`事務`7件・`経費`1件／no.14が599表示の隣 | `business-ops`でfreeeの経費管理を運用 | 待機列19（9/11 15時：ユーザー判断「経費は進んでいない・それだけでは薄い」。`business-ops`は台帳70行・最終更新8/20） |
 | D-05 | CLAUDE.mdの書き方。実際に回しているルールファイルを見せる | ◯ | `claude.md`9件／no.55が59表示の隣 | このリポジトリのCLAUDE.md・rules/の運用（V-02・旧313を統合） | TOP10 #5（9/11：D-08・D-10を1節として統合） |
 | D-06 | 「検出 - インデックス未登録」の原因と対処 | ✗ | 自サイト約100表示／`検出 インデックス未登録`3件 | 自サイト5件（すべてカテゴリページ） | バックログ（9/11にTOP10から外した。④✗：実データはカテゴリページ5件だけで、主役は一般的な原因と対処の説明） |
 | D-07 | Claudeの5時間制限・使用制限の仕組み | 統合 | `claude 5時間`9件・`claude 使用制限`9件／課金記事218表示の隣 | Proで制限に頻繁に当たった | D-01に統合（9/11：仕組みの説明が主役になるため、制限に当たった体験の節にする） |
@@ -409,8 +410,15 @@ GSCで需要が見えているクラスタ（インデックス未登録326表�
 | D-12 | ロングテールキーワードの調べ方（GSCの実データで） | ✗ | `ロングテールキーワード`9件 | 自サイトのGSC（旧S-05） | バックログ（9/11：④✗。主役は一般的な調べ方の説明） |
 | D-13 | SWELLの目次設定 | ✗ | `swell 目次`5件／SWELLクラスタの隣 | このサイトで使用中 | バックログ（9/11：④✗。主役は設定手順の説明） |
 | D-14 | SWELL × Googleアナリティクス（Site Kit）の設定 | ✗ | `swell アナリティクス`3件 | Site Kit導入済み | バックログ（9/11：④✗。主役は設定手順の説明） |
-| D-15 | Claude Codeの定期実行で毎朝リサーチを回す | △ | `claude code スケジュール`4件・`定期実行`2件 | `ai-trends-daily` | 待機列11 |
-| D-16 | Claude Codeの許可設定。確認を全部「許可」で押していたので、auto modeと許可リストに変えた | ◯ | `claude code 許可`10件（めんどくさい／許可不要／自動／許可リスト）・`claude code auto`10件（auto mode 設定／使い方）・`claude code 権限`5件／Claude Codeのクラスタ（no.14が606表示・33クリック）の隣 | 2026-08-12に手動許可からautoへ切り替え（`knowledge/x/ideas.md` research-20260812-01の記録）→8/14投稿`AUTO-気`「全部『許可』を押してただけでした」→**現在の設定は許可リスト80件・ask 6件・deny 0件・defaultMode auto（2026-09-11にCCが実機で確認）**→auto modeの確認が1週間で3回増えた（`knowledge/x/queue.md` `PERM-01`・v2.1.251／257／261） | 待機列11（2026-09-11の週次補充）。⚠️ 公開記事にauto mode・許可プロンプトを扱ったものは無い（grepで0件） |
-| D-17 | Claude Codeのセッション引き継ぎ。長い作業をファイルで次のセッションに渡す | ◯ | `claude code セッション`10件（再開／一覧／引き継ぎ／保存）・`claude code 引き継ぎ`9件（セッション／会話／コンテキスト 引き継ぎ）・`claude code コンテキスト`10件／Claude Codeのクラスタ（no.14）とトークン・コンテキスト（token-design-basics 51表示）の隣 | `operations/session-handoff.md`を80コミット更新して運用／CLAUDE.mdに終了・開始トリガー／`rules/session-handoff.md`のテンプレート／会話記録は30日で消える（`knowledge/x/queue.md` `KEEP-01`） | 待機列12（2026-09-11の週次補充）。⚠️ `ai-writing-tool-comparison`のH2「なぜChatGPTから始めて、Claude Codeに移行したのか」がChatGPT側の引き継ぎの苦労に触れている。こちらはClaude Code内の手順と運用に絞る |
+| D-15 | Claude Codeの定期実行で毎朝リサーチを回す | ◯ | `claude code cron`10件・`スケジュール`4件・`定期実行`2件（9/11 15時に`cron`を追加取得） | 定期実行6本・51回（2026-07-06〜）・`operations/automation-log.md` | 待機列14 |
+| D-16 | Claude Codeの許可設定。確認を全部「許可」で押していたので、auto modeと許可リストに変えた | ◯ | `claude code 許可`10件（めんどくさい／許可不要／自動／許可リスト）・`claude code auto`10件（auto mode 設定／使い方）・`claude code 権限`5件／Claude Codeのクラスタ（no.14が606表示・33クリック）の隣 | 2026-08-12に手動許可からautoへ切り替え（`knowledge/x/ideas.md` research-20260812-01の記録）→8/14投稿`AUTO-気`「全部『許可』を押してただけでした」→**現在の設定は許可リスト80件・ask 6件・deny 0件・defaultMode auto（2026-09-11にCCが実機で確認）**→auto modeの確認が1週間で3回増えた（`knowledge/x/queue.md` `PERM-01`・v2.1.251／257／261） | TOP10 #8（9/11 15時に待機列11から上げた） |
+| D-17 | Claude Codeのセッション引き継ぎ。長い作業をファイルで次のセッションに渡す | ◯ | `claude code セッション`10件（再開／一覧／引き継ぎ／保存）・`claude code 引き継ぎ`9件（セッション／会話／コンテキスト 引き継ぎ）・`claude code コンテキスト`10件／Claude Codeのクラスタ（no.14）とトークン・コンテキスト（token-design-basics 51表示）の隣 | `operations/session-handoff.md`を80コミット更新して運用／CLAUDE.mdに終了・開始トリガー／`rules/session-handoff.md`のテンプレート／会話記録は30日で消える（`knowledge/x/queue.md` `KEEP-01`） | 待機列12 |
 | D-18 | サーチコンソールの数字をClaudeに読ませて、書く記事を決め直した | △ | 意図が合うのは`サーチコンソール 分析`3件のみ（`サーチコンソール ai`6件はAI Overview系でno.65の領域／`search console claude`10件は英語でconnector・MCP）／インデックス未登録クラスタの隣 | 2026-09-10にGSCのクエリ84件を束ねてTOP10を組み替え、no.66が需要ゼロだったと実測（`operations/site-status.md`・`operations/lessons.md` 9/10〜9/11） | バックログ（日本語の需要が3件で薄い） |
 | D-19 | ChatGPTでブログのアイキャッチを作る。参考画像から1パターンで出す | △ | `chatgpt アイキャッチ`1件（アイキャッチ画像）／自サイトに近いクラスタなし | `knowledge/eyecatch-rules.md`・`eyecatch-ref`スキルで運用／9/10のno.66でロゴの形・縦横比を指摘して作り直し（`operations/editorial-meeting.md` Q4の記録） | バックログ（サジェスト1件。編集会議Q4の回答で④が強まれば再判定） |
+| D-20 | 非エンジニアがClaude Codeでできること。7か月で実際にやった全部（ハブA） | ◯ | `非エンジニア claude code`10件・`claude code できること`10件（できること 非エンジニア）・`claude code 事例`9件・`初心者`7件／no.14の隣 | リポジトリで実際に回している一覧（記事64本・WP入稿・X運用・定期実行51回・GSC分析・経費台帳・請求書・営業リスト・メルカリ出品） | TOP10 #4 |
+| D-21 | Claude Codeのメモリ機能。86件を5か月使って、効いたこと・効かなかったこと（ハブC） | ◯ | `claude code memory`10件・`claude code メモリ`10件 | メモリ86件（2026-04-13〜）・同じ指摘を3回受けた記録（lessons 2026-09-03） | TOP10 #7 |
+| D-22 | Claude Codeでブログを回す。64本を作っている工程の全部（ハブB） | ◯ | `claude code 記事`10件・`文章`9件・`ブログ`5件・`wordpress`10件・`seo`10件・`運用`10件 | この環境そのもの（precheck・self-check・constraints・md-to-wp・Chrome入稿・GSC確認） | 待機列13 |
+| D-23 | AIで書いた64本、半年の実数。当たった記事と当たらなかった記事の差（ハブF） | ◯ | `ブログ 半年`9件・`ブログ 100記事`5件／`ai ブログ`系0〜3件 | GSC全実測（125クリック・2,667表示・製品名で5倍・内部リンク逆相関） | 待機列15（競合は一般ブロガー・順位は読めない） |
+| D-24 | Claude CodeでX運用を回す仕組み | △ | `claude code sns`10件 | queue・x-count.py・x-firstline.py・57本の実測（87%対41%）。フォロワー1桁の扱いは未決 | 待機列16 |
+| D-25 | Claude Codeで営業リストを作る（ハローワーク求人の抽出とスコア） | △ | `claude code 営業`8件（リスト作成） | `sales/`スコア済み7件・成約なし（浅い） | 待機列17 |
+| D-26 | no.66のタイトルと冒頭を「サブエージェント・並列」に寄せる（リライト） | △ | `claude code サブエージェント`10件・`並列`6件／Dynamic Workflows 0件 | no.66そのもの | 待機列20（9/17以降に判断） |

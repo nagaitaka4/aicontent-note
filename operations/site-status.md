@@ -959,6 +959,81 @@ GSCの「ページのインデックス登録」を確認（最終更新2026/08/
 
 ---
 
+## 2026-09-11 15時（臨時：編集方針の根拠として取得）
+
+- 目的：`operations/editorial-strategy.md`（編集方針）のハブごとに、需要をGoogleサジェストで確かめた（実Chrome・robots.txtページからfetch・`TextDecoder('utf-8')`）。107語。
+- 読み方：件数は最大10件。**件数が多くても意図が合わない語がある**（`claude code 失敗`10件は決済・認証の失敗／`claude code twitter`10件はMCP・API連携／`claude code 学習`10件は「学習させない」）。
+
+### ハブ別の需要（件数5以上は候補も記録）
+
+| ハブ | 語 | 件数 | 主な候補 |
+|---|---|---|---|
+| A できること | 非エンジニア claude code | 10 | 本／使い方／できること／始め方／活用事例 |
+| A | claude code できること | 10 | できないこと／非エンジニア／一覧 |
+| A | claude code 事例 | 9 | 活用 事例／導入 事例／活用 事例 非エンジニア |
+| A | claude code 初心者 | 7 | 始め方／使い方／向け／本 |
+| A | claude code 非エンジニア | 5 | 使い方／活用／本／向け |
+| A | claude code 導入 | 10 | 方法／windows／支援／手順／企業 |
+| A | claude code 仕事 | 7 | 効率化／で使う／以外／術 |
+| A | claude code 一人 | 5 | 会社／社長／起業 |
+| A | claude code 副業 | 5 | 自動化／note |
+| B ブログを回す | claude code 記事 | 10 | 作成／執筆／生成／を書く |
+| B | claude code 文章 | 9 | 作成／校正／執筆／生成 |
+| B | claude code ブログ | 5 | 執筆／作成／自動化／運営 |
+| B | claude code wordpress | 10 | 連携／mcp／開発／theme |
+| B | claude code seo | 10 | 対策／skill／plugin |
+| B | claude code 運用 | 10 | 方法／ベストプラクティス／保守／sns 運用／x 運用 |
+| B | claude code チェック | 9 | チェックポイント／チェックリスト／ファクト チェック |
+| B | claude code レビュー | 7 | させる／スキル／プロンプト |
+| C 環境 | claude code 設定 | 10 | おすすめ／ファイル／セキュリティ／方法 |
+| C | claude code ルール | 10 | 設定／ファイル／**忘れる**／追加 |
+| C | claude code memory | 10 | memory.md／コマンド／使い方／off／整理 |
+| C | claude code メモリ | 10 | 使用量／不足／機能／削除 |
+| C | claude code 指示 | 5 | の出し方／書／ファイル |
+| C | claude code サブエージェント | 10 | おすすめ／作り方／使い方／並列 |
+| C | claude code 並列 | 6 | 実行／開発／エージェント／作業 |
+| D 決める | claude 課金 | 10 | **すべき**／メリット／プラン／いくら／方法 |
+| D | claude pro 制限 | 9 | 早い／どれくらい／トークン数／確認／きつい |
+| D | claude code 制限 | 10 | 確認／再開／早い／解除 |
+| D | claude code 使用量 | 10 | 確認／表示／vscode／可視化 |
+| D | claude code トークン | 10 | 節約／使用量／確認／数 |
+| D | claude code コスト | 6 | 確認／削減／最適化／表示 |
+| D | claude code max | 10 | 料金／プラン／5x／20x |
+| D | claude code プラン | 10 | 比較／モード／変更 |
+| D | claude code 料金 | 10 | プラン／日本円／確認／体系 |
+| D | claude opus sonnet | 10 | 違い／haiku 違い／比較／**使い分け** |
+| D | claude 使い分け | 10 | chatgpt gemini claude／chatgpt claude／gemini claude／codex claude |
+| D | chatgpt plus work | 10 | 制限／上限／とは／違い |
+| D | claude code 遅い | 10 | 応答 遅い／起動 遅い／pro 遅い |
+| E 仕事別 | claude code 業務 | 10 | 効率化／自動化／利用／改善 |
+| E | claude code pdf | 10 | 読み込み／skill／作成／読めない／ocr |
+| E | claude code スプレッドシート | 8 | 連携／編集／mcp／操作 |
+| E | claude code 画像 | 10 | 生成／貼り付け／認識 |
+| E | claude code 営業 | 8 | 職／活用／**リスト作成**／資料／自動化 |
+| E | claude code sns | 10 | 運用／自動化／分析／投稿 |
+| E | claude code 自動 投稿 | 8 | x／threads／instagram |
+| E | claude code cron | 10 | 実行／job／jobs／tool |
+| E | claude code 領収書 | 5 | 日本円／宛名（⚠️ Claude Codeの領収書の意味も混じる） |
+| E | claude code カレンダー | 5 | 連携／google カレンダー |
+| E | claude code 分析 | 10 | ダッシュボード／ツール／pdf 分析 |
+| E | claude code リサーチ | 10 | プレビュー／機能／業務／自動化 |
+| E | claude code ブラウザ | 6 | 操作／版／テスト／操作 mcp |
+| E | claude code デスクトップ | 10 | アプリ／版／使い方／違い |
+| E | claude code アプリ | 10 | 開発／作成／開発 手順 |
+| F 実数 | ブログ 半年 | 9 | アクセス 0／収益／稼げない／pv 数 |
+| F | ブログ 100記事 | 5 | 収益／書いたけど／pv／稼げない |
+| F | ai ブログ 収益 | 3 | 収益化 |
+| F | サーチコンソール 見方 | 3 | 順位 見方 |
+| （意図が合わない） | claude code 失敗 | 10 | 決済／認証／ツール呼び出し／リクエスト |
+| （意図が合わない） | claude code twitter | 10 | account／mcp／検索／plugin |
+| （意図が合わない） | claude code 学習 | 10 | させない／させない 設定／される |
+
+### 0〜4件だった語（記事ネタにしない）
+
+ai ブログ アクセス 0／ai 記事 検索順位 0／ブログ 順位 上がらない 0／claude max 元 0／claude code 同じ 間違い 0／覚えない 0／守らない 0／半年 0／サーチコンソール 0／ai ブログ 稼げない 1／自動化 1／運営 2／ai記事 seo 2／ブログ クリックされない 2／表示回数 1／ブログ 自動化 ai 1／chatgpt work 使い方 1／claude モデル 選び方 1／ai 記事 評価 1／claude code ライティング 1／嘘 1／間違い 1／記事作成 1／ファイル整理 1／効率化 1／データ分析 1／フリーランス 1／個人事業主 1／使ってみた 1／感想 1／業務効率化 1／実務 1／生産性 2／活用 事例 2／導入 事例 2／中小企業 2／ライター 2／経営者 2／請求書 3／経理 3／x 運用 3／マーケティング 3／自動化 4／品質 4／体験 4
+
+---
+
 ## 更新ルール（2026-08-05改訂：CCがブラウザで直接取得する方式に変更）
 
 **旧方式（ユーザーがCSVをダウンロードして共有）は廃止。**CCがアプリ内ブラウザでGSCを直接操作して取得できることを2026-08-05に確認したため、ユーザーの作業はログインのみとなった。

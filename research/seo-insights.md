@@ -1,6 +1,43 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-09-07
+最終更新: 2026-09-11
+
+---
+
+## [2026-09-11] 調査結果（定期リサーチ・12:00のフル版）
+
+**③はGoogle側の順位変動なし。新しく記録するのは3件：①ファビコンの対応形式が公式に明記された（このサイトはPNGで影響なし）②GSCのデータ異常（生成AIレポート8/13〜8/17）の公式記録 ③プログラマティックSEOへの再警告。**
+
+### Google / Search Console
+
+- **【差分なし】コアアップデート・スパムアップデートの新規アナウンスなし**（[Google Search Status Dashboard](https://status.search.google.com/summary)を本日取得）。直近は**8/18開始の2026年8月スパムアップデート（2日16時間）**のままで、9月の新規は0件
+- **【実質差分なし】Search Central Blog**：9月の新規は1件で`Search Central Live is coming to Bogota and Ciudad de México`（イベント告知）。採らない
+- **【新規・影響なし】検索結果のファビコンの対応形式が明記された**（[Google公式ドキュメント](https://developers.google.com/search/docs/appearance/favicon-in-search)・`Last updated 2026-08-28 UTC`）
+  - **verbatim**：`Google Search supports the following favicon file formats: BMP, GIF, ICO, PNG, JPEG, PPM, and TIFF.` ／ `Your favicon must be a square (1:1 aspect ratio) that's at least 8x8px.`
+  - [鈴木謙一氏・9/8](https://www.suzukikenichi.com/blog/google-clarifies-7-supported-image-formats-for-favicons-in-search-results-svg-and-webp-are-not-supported/)の解説：**SVG・WebPは画像検索では使えるが、検索結果のファビコンとしては対象外**
+  - **このサイトへの影響：なし。**本日`curl`でトップページの`<link rel="icon">`を確認し、**`cropped-icon-32x32.png`／`192x192.png`／`apple-touch-icon` 180x180のPNG**だった
+- **【新規・数字の読み方に影響】GSCの公式「データ異常」に8月の記録が入っている**（[Data anomalies in Search Console](https://support.google.com/webmasters/answer/6211453?hl=en)）
+  - **verbatim**：`A logging error caused a decrease in clicks and impressions on the Discover performance report for data on August 13, 2026.` ／ `A logging error caused a decrease in impressions on the Generative AI performance report in Search for data from August 13 - August 17, 2026.` ／ `Missing data for this period has been restored. The Performance report now shows complete metrics.`
+  - ⚠️ **公式の記録は「Discover」と「生成AIパフォーマンスレポート」だけで、検索パフォーマンス（ウェブ）の記載は無い。**[Search Engine Roundtable](https://www.seroundtable.com/google-search-console-performance-reports-drop-41884.html)は「8/12ごろから検索でもクリック・表示が落ちた」という報告を集めているが、**公式に載っていない部分は未確認として扱う**
+  - **このメディアでの使いどころ**：9/17のno.57・no.46・SWELLの判定で8月中旬の段差を見るときは、**生成AIレポートの谷（復元済み）とウェブの数字を分けて読む**。no.65（AI Overviewの確認方法）の追記候補
+- **【新規・記録】Googleがプログラマティック SEOに再び警鐘**（[鈴木謙一氏・9/9](https://www.suzukikenichi.com/blog/google-warns-again-about-programmatic-seo-mass-producing-low-quality-pages-can-hurt-your-entire-site/)・原典は[John Mueller氏のBluesky](https://bsky.app/profile/johnmu.com/post/3muwiaq3mws22)）。自動生成した薄いページの大量公開がサイト全体の評価を下げる、という回答。**⚠️ 本日は原典を開いておらず、解説記事経由の要約。**このメディアは記事を1本ずつ人が判断して出しているので、**手元でやることは増えない**。単独記事にしない
+- **【記録】Googleトレンドのカテゴリ細分化**（鈴木謙一氏・9/10）：採らない
+
+### 調査会社のブログ
+
+- **Semrush**（[semrush.com/blog](https://www.semrush.com/blog/)）：9/4以降の新着4件
+  - 9/10 `How to do keyword research with Claude and Semrush`（Chris Hanna・ガイド）
+  - 9/10 `Internal links: ultimate guide + strategies`（Alex Lindley・ガイド）
+  - 9/9 `We rebuilt SEOquake, Semrush's free SEO Chrome extension`（製品）
+  - 9/8 `AI search & manufacturing SEO: What the data shows [Study]`（Luke Harsel・調査）
+  - **判定：採らない。**調査は製造業のデータで読者から遠く、残りは製品前提のガイド。`Internal links`は**no.46リライト（9/17判定）で参考にする候補**としてだけ持つ
+- **Ahrefs**（[ahrefs.com/blog](https://ahrefs.com/blog/)）：**8/28以降の新着0件（3回連続）**
+- **ランキング要因の専門家アンケート**（Cyrus Shepherd氏・SEO専門家131人・[原典](https://signal.zyppy.com/p/google-ranking-factors-expert-survey)／[鈴木謙一氏・9/11](https://www.suzukikenichi.com/blog/2026-google-ranking-factors-survey-relevance-backlinks-and-content-quality-take-the-top-3-spots/)）：「最も重要な3要素」の上位は関連性57.1%・被リンク54.8%・コンテンツの質47.6%。**実データではなく意見調査で、AI検索機能は対象外。**採らない
+
+### 記事側への影響
+
+- **no.65**：訂正は不要。**生成AIレポートの8/13〜8/17が一時欠けて8/21に復元された、は追記候補**
+- **M-12の保留は継続**（Peec AI・Nectivの原典は本日も未特定）。関連する`ideas.md`の`research-20260821-03`は期限切れで閉じた
 
 ---
 

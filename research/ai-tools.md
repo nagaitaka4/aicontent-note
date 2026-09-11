@@ -4,6 +4,50 @@
 
 ---
 
+## [2026-09-11] 調査結果（定期リサーチ・12:00のフル版）
+
+**②の最大の収穫：デイリーが2日続けて開けなかったOpenAIのニュース面を実Chromeで開き、9/9付でGPT-6 Astraの提供範囲が変わっていたことを拾った。ChatGPT Plusでも、WorkとCodexではAstraが使える（Chatでは使えない）。**ChatGPTのリリースノートには載っていない。
+
+### ChatGPT / OpenAI
+
+- **【最大の収穫・採用】GPT-6 AstraがChatGPT Work・Codex・APIで使えるようになり、PlusはWork・Codexで使える**（一次情報2点。**どちらも本日CCが実Chromeで直接開いて確認**）
+  - [OpenAI「GPT-6 Astra: The next generation in intelligence for work」（ニュース面・2026年9月9日・製品）](https://openai.com/index/gpt-6-astra-next-generation-work/)・verbatim：`Last week we introduced GPT‑6 Astra, the world’s most intelligent and aligned model, now available in ChatGPT Work, Codex, and the API.` ／ `Pricing starts at $10 per million input tokens and $50 per million output tokens.` ／ `Enterprise access is off by default at launch.`
+  - [ヘルプ「Managing usage with GPT-6 Astra in Work and Codex」](https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex)（本日時点の更新表示`Updated: 一昨日`）・verbatim：`Plus includes Astra in Work and Codex, but not GPT-6 Pro in Chat.` ／ `In Chat, GPT-6 Pro is powered by Astra and is available on eligible Pro, Business and Enterprise plans.` ／ `Work and Codex share the usage allowance included with your plan.` ／ `Depending on your plan, usage limits may apply over a five-hour window and a weekly window.` ／ `Credits pay for usage; they do not add model access.`
+  - **⚠️ 面によって書いてあることが違う（今日いちばん重要な注意）**：[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)は本日（`Updated: 3 時間前`）も**9/3付の`Access is rolling out to a limited set of organizations. Astra is not yet generally available. Broader availability is planned over the coming days.`のまま**で、提供拡大のエントリが無い。**9/4〜9/10のデイリーが「Plusで使えるとは書かない」としていた根拠はこの面で、当時は正しかった。****8/28の恒久ルール（提供地域・プランは発表記事1本で判断しない）と、8/21の「事業側の変更はニュース面に出る」が同時に当てはまった例**
+  - ⚠️ **ローンチ時のリセット**（verbatim）：`On Sep 3, 2026 and Sep 4, 2026, eligible existing Plus, Pro and Business subscribers in good standing received a banked reset on each day.` ／ `On Sep 7, 2026, an automatic reset refreshed eligible Plus, Pro and Business usage limits.` ／ `The daily reset offers covered the broader Astra launch delay.`＝**提供が遅れた埋め合わせ**
+  - ⚠️ 二次情報（見出しのみ確認）：Notebookcheck「GPT-6 Astra is on ChatGPT Plus, but only in Work and Codex」／OpenAI Developer Communityに「Plus全員と告知されたのにWork/Codex限定」というスレッド。**中身は開いていない**
+  - **なぜ採るか（軸②の採用基準）**：**使える範囲が変わる。**しかも**このメディアはChatGPT Plus**（8/21`Plus3-気`）で、**執筆をGPT Workに渡す分担を実施している**（`operations/article-backlog.md` V-04）＝手元のWorkで選べるモデルが変わる → `knowledge/x/ideas.md`に`research-20260911-02`として追記
+  - **ただしキューには入れない**（消費側ゲート＋③が書けない。詳細は`ideas.md`の該当行）
+  - **📝 記事の更新材料**：[no.56 ChatGPT WorkとClaude Codeの違いと選び方](articles/chatgpt-work-claude-code-comparison.md)（219表示・24クリック）／TOP10 #3（D-02 AIツールの使い分け）
+- **【差分あり・記録／Xは採らない】ニュース面の9/9〜9/10（上記以外）**
+  | 日付 | 見出し | 判断 |
+  |---|---|---|
+  | 9/10 | `Now everyone can put data to work`（ChatGPT WorkのData agent） | **デイリーが9/10付リリースノートで記録したDataプラグインの発表記事。**接続先はAmazon Redshift・BigQuery・Snowflake等の業務データで、このメディアにつなぐデータが無い |
+  | 9/10 | `Introducing ChatGPT for Financial Services` | 金融業界向け。採らない |
+  | 9/10 | `API に GPT-Live-1 が登場` | 開発者向け。採らない |
+  | 9/10 | `Introducing the Agents API` | 開発者向け。採らない |
+  | 9/10 | `How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules` | 応用事例。採らない |
+  | 9/9 | `ポール・クリスティアーノ氏、OpenAI Foundation 理事に就任` | 企業。採らない |
+
+### Gemini / Google
+
+- **【記録済みの補足】Gemini 3.8 FlashがAI Modeに（Google AI Pro・Ultraの加入者・世界）**：9/7のフル版で記録済み。[鈴木謙一氏・9/7](https://www.suzukikenichi.com/blog/google-brings-gemini-3-8-flash-to-ai-mode-for-pro-and-ultra-subscribers/)の日本語解説が出た（出典はRobby Stein氏のX投稿・9/2）。**無料で使う人の手元は変わらない**ので採らない
+
+### 国産AIライティングツール（フル版の担当）
+
+- **EmmaTools**（[emma.tools](https://emma.tools/)）：お知らせ欄に**9/10「EmmaToolsユーザーコミュニティ 開催レポート vol.1」**が新規。機能・料金の変更ではない。最新の機能リリースは8/17「AI Overviewチェック」のまま
+- **SAKUBUN**（[sakubun.ai/price](https://sakubun.ai/price)を**9/7の宿題どおり実Chromeで直読み**）：**金額は掲載されていない**（Lite・Standard・Enterpriseとも「お問い合わせ」）。Trialは**5日間・スタンダードプランを試せる・カード登録不要**、verbatim `※ 原則、個人利用の方のトライアルは承っておりません。`。記事数目安はTrial 25記事／月・Lite 10記事／月・Standard 25記事／月。**「未確認」を解消**（数字が無いことを確認した）
+- **Catchy**（[lp.ai-copywriter.jp](https://lp.ai-copywriter.jp/)）：Free ¥0／Starter ¥3,000〜（100クレジット）・¥5,700（200）・¥8,100（300）／Pro ¥9,800／Enterprise要問い合わせ、「会員数 90,000人突破」。**日付つきのお知らせ欄は無い**（8/28の記録どおり）。**料金をこの形で記録するのは初めて**なので、次回以降の比較の基準にする
+- **Transcope**（[transcope.io](https://transcope.io/)）：トップにお知らせ欄なし。**本日は料金を取得できなかった＝未確認**（8/31の記録はFree ¥0／Basic ¥11,000／Pro ¥38,500／Enterprise ¥66,000）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：1件**（`research-20260911-02`）
+- **`queue.md`への投入：0本**（消費側ゲート「期限つき2本以上→投入停止」）
+- **巡回チェック**：OpenAIニュース面 ✅（実Chrome・**デイリーの2日連続「未確認」を解消**）／ChatGPTリリースノート ✅（実Chrome）／OpenAIヘルプ ✅（実Chrome）／Gemini ✅（二次情報経由・公式の記録は9/7）／国産4社 ✅（Transcopeの料金のみ未確認）
+
+---
+
 ## [2026-09-11] 調査結果（デイリー）
 
 **②に差分あり。3日連続で動いた。**ChatGPTのリリースノートに**9/10付で2件**（Dataプラグイン／ライブラリにBox・Dropbox・SharePoint）が入り、**9/9付に昨日の記録に無かった1件**（Work・CodexでのDeep Research）があった。**Geminiはアプリ側が22日ぶりに動いた**（Windowsアプリ）。**採用は0件。**

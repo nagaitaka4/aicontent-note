@@ -895,6 +895,70 @@ GSCの「ページのインデックス登録」を確認（最終更新2026/08/
 
 ---
 
+## 2026-09-11（定期リサーチ：記事ネタの週次補充の根拠として取得）
+
+- 取得方法：実Chrome（claude-in-chrome）でGSCを直接操作。**クエリ表85件・ページ表68行**（見出し行を除く。ページ表はアンカー付きURLを含む）を、それぞれ2回に分けて読んだ
+- 期間：直近3か月
+- 目的：金曜の週次補充（待機列の◯が0本＝5本未満のため実行）
+- ⚠️ **公式の「データ異常」**：生成AIパフォーマンスレポート（検索）の**8/13〜8/17の表示回数が一時欠け、8/21に復元済み**／Discoverは8/13。**検索パフォーマンス（ウェブ）についての記載は無い**（[Data anomalies in Search Console](https://support.google.com/webmasters/answer/6211453?hl=en)）
+
+### ページ（9/10からの変化・クリック／表示／順位）
+
+| ページ | 9/10 | 9/11 |
+|---|---|---|
+| claude-code-compatible-jobs（no.14） | 32／599／6.3 | **33／606／6.3** |
+| chatgpt-work-claude-code-comparison（no.56） | 24／213／6.7 | 24／219／6.9 |
+| search-console-crawled-not-indexed（no.57） | 0／346／70.5 | 0／359／70.2 |
+| swell-seo-settings | 5／263／15.3 | 5／264／15.3 |
+| claude-subscription-change-june-2026 | 6／218／11.4 | 6／222／11.4 |
+| internal-link-guide（no.46） | 2／214／15.8 | 2／214／15.8 |
+| blog-outsource-pricing-guide（no.40） | 2／141／12.7 | 2／141／12.7 |
+| rule-file-basics（no.55） | 3／59／7.0 | 3／59／7.0 |
+
+**9/10の表に載せていなかった、クリックのあるページ**（今回全行を読んで拾った）：readme-basics 8／145／8.0・mercari-ai-listing 8／65／6.8・directory-structure-basics 7／98／7.5・claude-code-lawyer-case-management 5／28／8.5・claude-code-labor-consultant-rules-agreement 5／23／9.1・claude-code-writing-rewrite 3／41／6.9・claude-code-entry-publish 3／26／6.3・ai-content-operation-experience 3／23／11.3・chatgpt-free-paid-difference 2／69／12.1。**クリックは少ないが表示の多いページ**：markdown-basics 1／90・service 0／42・template-basics 0／41・token-design-basics 0／51
+
+### クエリ（9/10からの主な変化）
+
+| クエリ | 9/10 | 9/11 |
+|---|---|---|
+| インデックス未登録 | 105・79.0位 | 109・78.6位 |
+| クロール済み – インデックス未登録 | 100・68.3位 | 105・67.7位 |
+| 検出 - インデックス未登録 | 95・70.1位 | 98・69.8位 |
+| 被リンク 貼り方 | 83・15.4位 | 83・15.4位 |
+| claude 担当職種 | 27（3クリック）・4.7位 | 27（3クリック）・4.7位 |
+
+**Claude Codeそのものの操作（許可・セッション・設定）に当たるクエリは、自サイトに1件も無い。**近いのは`claude code 仕事`2・`claude code ビジネス職`1・`claude code 業務利用`1（no.14の読者）と、コンテキスト・トークン系4件（各1表示・token-design-basics／context-design-basicsの読者）。
+
+### 外部の需要（Googleサジェストの件数・2026-09-11 12時台取得）
+
+| 語 | 件数 | 主な候補 |
+|---|---|---|
+| claude code 許可 | 10 | めんどくさい／許可不要／バイパス／設定／自動／コマンド／許可リスト |
+| claude code auto | 10 | auto mode／auto mode 設定／auto モード／使い方／auto compact |
+| claude code セッション | 10 | 再開／一覧／引き継ぎ／削除／保存／制限／管理 |
+| claude code コンテキスト | 10 | コンテキストウィンドウ／圧縮／リセット／確認／節約 |
+| search console claude | 10 | connector／skill／mcp（英語の候補のみ） |
+| claude code 引き継ぎ | 9 | セッション 引き継ぎ／会話 引き継ぎ／チャット 引き継ぎ／コンテキスト 引き継ぎ |
+| サーチコンソール ai | 6 | aio／ai overview／aiモード（AI Overview系） |
+| claude code 権限 | 5 | 権限設定／権限モード／権限付与／権限確認をスキップ |
+| サーチコンソール 分析 | 3 | 分析情報／分析方法 |
+| x フォロワー 増えない | 2 | イラスト |
+| chatgpt アイキャッチ | 1 | アイキャッチ画像 |
+
+**⚠️ 取り方の注意（2026-09-11）**：`fetch`の応答を`shift_jis`で読むと文字化けする。**`TextDecoder('utf-8')`で読む**（件数は化けても変わらない）。
+
+### 週次補充の判定（0番テスト・④含む）
+
+| ID | テーマ | 判定 | 決め手 |
+|---|---|---|---|
+| D-16 | Claude Codeの許可設定（auto mode・許可リスト） | ◯ | サジェスト10件＋Claude Codeクラスタ（no.14）の隣＋実体験（手動→auto・許可リスト80件） |
+| D-17 | Claude Codeのセッション引き継ぎ | ◯ | サジェスト9〜10件＋Claude Code／コンテキストのクラスタの隣＋実体験（`session-handoff.md`を80コミット運用） |
+| D-18 | GSCの数字をClaudeに読ませて記事を決め直した | △ | 日本語で意図が合うのは3件のみ |
+| D-19 | ChatGPTでアイキャッチを作る | △ | サジェスト1件 |
+| — | Xのフォロワーが増えない | 追加しない | サジェスト2件。加えてフォロワー1桁を記事で出すと受注導線の信頼に響く（`rules/x-post-flow.md`「自虐に使ってはいけない題材」と同じ考え方） |
+
+---
+
 ## 更新ルール（2026-08-05改訂：CCがブラウザで直接取得する方式に変更）
 
 **旧方式（ユーザーがCSVをダウンロードして共有）は廃止。**CCがアプリ内ブラウザでGSCを直接操作して取得できることを2026-08-05に確認したため、ユーザーの作業はログインのみとなった。

@@ -4,6 +4,30 @@
 
 ---
 
+## [2026-09-11] 調査結果（定期リサーチ・12:00のフル版）
+
+**①はデイリー（08:04）が開けなかった@ClaudeDevsを実Chromeで開き、新規3投稿を拾った。採用は0件。**CHANGELOG・npmは08:04以降の追加なし（`latest`・`next`とも`2.1.268`のまま・`modified`は`2026-09-10T20:35:00Z`）。
+
+### Claude Code / Anthropic
+
+- **【差分あり・記録／Xは採らない】Claude Codeのデスクトップアプリで、ペインを別ウィンドウに出せる**（[@ClaudeDevs・日本時間 2026-09-11 01:47](https://x.com/ClaudeDevs/status/2098090911137972271)・**本日CCが実Chromeで直接開いて確認**）
+  - **verbatim**：`You can pop out any pane in the Claude Code desktop app into its own window.` ／ `Drag the diff or terminal to a second screen while Claude keeps working in the main window, then dock it back whenever you want. You can also run sessions side-by-side or stacked.`
+  - **Xに採らない理由**：採用基準の「料金・制限・既定モデル・提供終了」に当たらない**画面の使い勝手の追加**。在庫37本で「自分の使い方が変わるものだけ」に上げているが、**このメディアが2画面で作業しているかはリポジトリの記録で確かめられない**（③決断・感情が書けない）。⚠️ **対象バージョン・提供範囲はこの投稿に書かれていない**
+- **【差分あり・記録／Xは採らない】Claude Managed Agentsに2件**（[@ClaudeDevs・日本時間 2026-09-11 03:43](https://x.com/ClaudeDevs/status/2098120133549895978)）
+  - ①ant CLIにセッションビューア（`ant beta:sessions connect`で実行中のセッションにターミナルをつなぎ、`--web`でlocalhostのWeb画面を開く） ②Managed Agentsにauto（verbatim：`Claude reviews each tool call based on your intent in user.message events and decides whether to run the tool call, deny it, or ask you for input.`）
+  - **②はデイリーがClaude Platformリリースノート（9/10付）で記録済みの件と同じ。**①は新規記録。**どちらもAPIでエージェントを組む開発者向け**で採らない
+- **【✅ デイリーの「未確認」を埋めた】@ClaudeDevsは9/8の3投稿のあと、9/9〜9/10は0件、9/11に上の3投稿**
+- **【差分なし】CHANGELOG・npm**：`2.1.268`（`2026-09-10T18:41:11Z`）より新しい版は無い（本日12時台に`registry.npmjs.org`で再確認）
+- **【差分なし・ただし表示の違いを記録】Claude Academy**（[academy.claude.com](https://academy.claude.com/)を実Chromeで直接開いた）：コース3本のまま（`AI Fluency: Framework & Foundations`14レッスン・4時間／`AI Capabilities and Limitations`13レッスン・3.5時間／`Building Effective Human Agent Teams (Beta)`5レッスン・45分）
+  - ⚠️ **本日の本文にはウェビナー欄が出てこなかった**（9/10は「注目のウェビナー」に定期開催3件）。ページ上部に製品別の入口（Claude.ai／Cowork／Code／Tag／Platform）が並ぶ構成。**取得したのは`main`要素の本文だけなので「ウェビナー欄が無くなった」とは書かない**
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**（①から。②から1件＝`research-20260911-02`は`research/ai-tools.md`側）
+- **巡回チェック（フル版で開いた面）**：@ClaudeDevs ✅（実Chrome）／npm`time` ✅／Claude Academy ✅（実Chrome）。CHANGELOG・Claude Apps・Claude Platform・Newsroom・Pricingは本日08:04のデイリーの記録を採用
+
+---
+
 ## [2026-09-11] 調査結果（デイリー）
 
 **①に差分あり。巡回8面のうち3面が動いた**（CHANGELOG／npm＝`2.1.268`が公開・Claude Appsリリースノート＝9/10付1件・Claude Platformリリースノート＝9/10付1件）。**`2.1.268`から1件を採用**（`research-20260911-01`）。**auto modeに関する変更も1件あるが、`PERM-01`の「4回目」ではなく逆向きの変更**（下記）。

@@ -1,6 +1,40 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-12
+最終更新: 2026-09-13
+
+---
+
+## [2026-09-13] 調査結果（デイリー）
+
+**①に差分あり（`2.1.270`が公開）だが、Xに採るものは0件。**あわせて、**9/11に採用した`research-20260911-01`（TodoWrite）の前提の誤りを見つけて訂正した。**
+
+### Claude Code / Anthropic
+
+- **【差分あり・記録／Xは採らない】Claude Code `2.1.270` が公開された**（一次情報2点＝[npmレジストリ](https://registry.npmjs.org/@anthropic-ai/claude-code)の`time`実測 ／ [CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)の`## 2.1.270`。**本日CCが直接取得して確認**）
+  - **公開時刻（npm実測）**：`2026-09-12T18:52:44.937Z` ＝ **日本時間 9/13 03:52**
+  - **項目は1件だけ（verbatim）**：`Fixed read-only git commands in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)`
+  - **採らない理由**：`2.1.269`で入った不具合の修正。**この環境は`2.1.243`**（本日`claude --version`で確認）で`2.1.269`を踏んでいない＝手元では何も起きていない
+  - **`PERM-01`との関係**：確認が増えたのは**不具合で、仕様変更ではない。**auto modeの自動承認の対象を狭める変更ではなく「4回目」ではない（5日連続で確認）
+- **【訂正・重要】9/11の`research-20260911-01`（TodoWrite）の前提が誤っていた**
+  - 9/11の記録は「`2.1.268`でOpus 5・Fable等にタスク管理ツールが渡されなくなる」「この環境は`2.1.268`未満で手元ではまだ何も起きていない」としていた
+  - **本日CHANGELOGを全文検索したところ、同じ変更は`2.1.233`で先に入っていた（verbatim）**：`Todo/task-tracking tools (TaskCreate/Get/Update/List, TodoWrite) are no longer available on Opus 4.8, Sonnet 5, Fable 5, Mythos 5, and newer models; set CLAUDE_CODE_ENABLE_TODO_TOOLS=1 to bring them back`
+  - **`2.1.233`の公開時刻（npm実測）**：`2026-08-14T18:50:44.102Z` ＝ **日本時間 8/15 03:50**。この環境の`2.1.243`（`2026-08-24T23:10:45.498Z`＝日本時間 8/25 08:10公開）はそれより新しい
+  - **＝この環境のOpus 5・Fableは、すでにタスク管理ツールを既定で渡されていない。**`~/.claude/settings.json`・`.claude/settings*.json`に`CLAUDE_CODE_ENABLE_TODO_TOOLS`の設定は無い（本日確認）。**本日このセッション（Opus 5）に渡されているツールにも`TodoWrite`・`TaskCreate`は無い**
+  - **`2.1.268`がしたのは書き方の変更**：「外すモデルを並べる」→「渡すモデルを並べる」。公式ドキュメント（[tools-reference](https://code.claude.com/docs/en/tools-reference)）もverbatim `available by default only on Claude 3.x models, Opus 4 through 4.7, Sonnet 4 through 4.6, and Haiku 4.5`。環境変数は[env-vars](https://code.claude.com/docs/en/env-vars)にverbatim `Requires Claude Code v2.1.233 or later`
+  - ⚠️ **8/15〜8/17のデイリーは`2.1.233`のこの項目を記録していない（見落とし）**
+  - **Xへの影響**：「9/11に変わった」という今出す理由が消えた。**`ideas.md`の行は前提が崩れたため閉じた**
+- **【再確認】`claude plugin eval`（`research-20260912-01`）で測れる対象**（[Test plugins with evals](https://code.claude.com/docs/en/plugin-evals)・本日CCが直接取得）
+  - 対象は**プラグインとスキル**（verbatim `This page is for plugin and skill authors who have a working plugin` ／ `A plugin directory with a plugin.json or .claude-plugin/plugin.json manifest, or a skills-directory plugin`）
+  - **`CLAUDE.md`や`rules/`のようなルールファイルを、そのまま測る仕組みではない。**9/12の記録の「自分が書いたルール・スキル」は「**スキル（とプラグイン）**」に直す
+  - 要件はverbatim `Claude Code v2.1.269 or later`。この環境は`2.1.243`で**未実行のまま**
+- **【差分なし】Anthropic Newsroom**（[anthropic.com/news](https://www.anthropic.com/news)・本日curlで日付を抽出）：最新は9/10付のまま
+- **本日は未確認**：@ClaudeDevs／Claude Apps リリースノート／Claude Platform リリースノート／Pricing・プラン別ヘルプ／Claude Academy（**次のフル版9/14(月) 12:00で確認**。⚠️ 9/14は週次上限25%増の予定日）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**
+- **`queue.md`への投入：0本。**消費側ゲートは**開いていた**（🔒の`PERM-01`を除くと期限つきは`DW66-リ`の1本）。止めた理由は**「在庫10本超→基準を上げる」**：`research-20260911-01`は前提の誤りで閉じた／`research-20260912-01`は手元が未実行で、測れる対象もスキルとプラグインだけ
+- **巡回チェック**：①CHANGELOG ✅ ②npm`time` ✅ ⑥Newsroom ✅（curl）＋公式ドキュメント3面（plugin-evals・tools-reference・env-vars）✅ ／ ③@ClaudeDevs ④Claude Apps ⑤Claude Platform ⑦Pricing ⑧Academy ⏭（本日未確認）
 
 ---
 
@@ -87,6 +121,7 @@
     - **使う側の何が変わるか**：一覧に**Opus 4.8・Opus 5・Sonnet 5・Fable 5系が入っていない**。このメディアの常用モデル（記事制作＝Opus 5／開発＝Fable）は**どちらも既定ではTodoWrite等を渡されなくなる**。戻すなら環境変数`CLAUDE_CODE_ENABLE_TODO_TOOLS=1`
     - ⚠️ **公式に書かれているのは「ツールを渡すモデルの範囲」だけ。**画面のチェックリスト表示がどうなるか・代わりの仕組みがあるかは**書かれていない**。「チェックリストが消えた」とは書かない
     - ⚠️ **この環境はまだ`2.1.268`未満**（本日CCが実機で確認＝CLI `claude --version`が`2.1.243`／デスクトップアプリ同梱の`~/Library/Application Support/Claude/claude-code`は最新が`2.1.260`）。**手元ではまだ何も起きていない**
+    - 🔧 **2026-09-13訂正：この前提は誤り。**同じ変更は**`2.1.233`（日本時間 8/15 03:50公開）で先に入っており**、この環境の`2.1.243`ではすでにタスク管理ツールは既定で渡されていない。`2.1.268`は対象の書き方を変えただけ（詳細は2026-09-13のデイリー）
   - **【記録・Xは採らない／`PERM-01`の材料】auto modeで止められたときの動きが変わった（verbatim）**：`Improved auto mode denials: the message Claude receives now names the rule that blocked the action and asks Claude to try a safer method and finish unrelated work before stopping to ask you`
     - **中身**：自動承認されなかったとき、**Claudeは止まってすぐ聞きに来るのではなく、①別の安全な方法を試す ②関係ない作業を先に終わらせる、その後に聞く**
     - ⚠️ **自動承認の対象を狭める変更ではない**＝`PERM-01`（「確認を減らす設定のはずが1週間で2回増えた」）の**「4回目」ではない。**むしろ**止まって聞く回数を減らす向き**の変更で、「4回目」は**3日連続で起きていない**

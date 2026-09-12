@@ -1,6 +1,32 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-12
+最終更新: 2026-09-13
+
+---
+
+## [2026-09-13] 調査結果（デイリー）
+
+**②は差分なし。**ChatGPT・OpenAI・Geminiの3面とも、9/12のデイリーの記録から新規エントリは無かった。
+
+### ChatGPT / OpenAI
+
+- **【差分なし】ChatGPT リリースノート**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・**本日CCがアプリ内ブラウザで直接開いて確認**・更新表示は`Updated: 一昨日`）：最新は**September 10, 2026**の2件（Dataプラグイン／ライブラリにBox・Dropbox・SharePoint）のまま。9/3付のGPT-6 Astraのエントリも`Astra is not yet generally available.`のまま
+- **【差分なし】OpenAIニュース面**（[openai.com/news](https://openai.com/news/)・アプリ内ブラウザで確認）：最新は**9/11付**`Rapidly scaling online storage to serve over 1 billion ChatGPT users`のまま
+
+### Gemini / Google
+
+- **【差分なし】Geminiアプリ リリースノート**（[gemini.google/release-notes](https://gemini.google/release-notes/)・アプリ内ブラウザで確認）：最新は**2026.09.10**のWindowsアプリのまま（記録済み・制作環境はMacなので採らない）
+- **【未確認・記録のみ】**WebSearchでGoogle Workspaceの週次まとめ（[9/11付](https://workspaceupdates.googleblog.com/2026/09/weekly-recap-09-11-2026.html)）がヒットしたが、**本文は開いていない。**検索結果の要約だけなので中身を事実として書かない
+
+### 国産AIライティングツール
+
+- **本日は未確認**（デイリーは2領域のみ・国産4社はフル版の担当）。**次のフル版は9/14(月) 12:00**
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**
+- **`queue.md`への投入：0本**（②からの候補なし）
+- **巡回チェック**：ChatGPTリリースノート ✅（アプリ内ブラウザ）／OpenAIニュース面 ✅（アプリ内ブラウザ）／Geminiリリースノート ✅（アプリ内ブラウザ）／OpenAIヘルプ（Astraの使用量）⏭／国産4社 ⏭（フル版の担当）
 
 ---
 

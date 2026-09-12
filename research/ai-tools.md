@@ -1,6 +1,37 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-11
+最終更新: 2026-09-12
+
+---
+
+## [2026-09-12] 調査結果（デイリー）
+
+**②はほぼ差分なし。**ChatGPTのリリースノートは**9/10付のまま新規0件**（3日続いた更新が止まった）。OpenAIのニュース面に**9/11付1件**が出たがエンジニアリング記事で採らない。Geminiも**9/10付（Windowsアプリ）のままで新規0件**。**採用は0件。**
+
+### ChatGPT / OpenAI
+
+- **【差分なし】ChatGPT リリースノート**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・更新表示は`Updated: 昨日`。**本日CCがアプリ内ブラウザで直接開いて確認**〔WebFetchは403〕）
+  - 最新は**September 10, 2026**の2件（Dataプラグイン／ライブラリにBox・Dropbox・SharePoint）で、**9/11・9/12付のエントリは無い。**どちらも9/11のデイリーが記録済み
+  - ⚠️ **9/3付のGPT-6 Astraのエントリは今日も`Access is rolling out to a limited set of organizations. Astra is not yet generally available.`のまま。**ニュース面・ヘルプでは提供が広がっているのに、**この面だけ3日間更新されていない**（9/11のフル版で拾った`research-20260911-02`の根拠関係は変わらない）
+- **【差分あり・記録／Xは採らない】OpenAIニュース面に9/11付で1件**（[openai.com/news](https://openai.com/news/)・**本日CCがアプリ内ブラウザで直接開いて確認**〔WebFetchは403〕）
+  - `Rapidly scaling online storage to serve over 1 billion ChatGPT users`（エンジニアリング・2026年9月11日）
+  - **Xに採らない理由**：**OpenAI社内のインフラの話。**料金・制限・使える範囲は変わらず、使う側の手元は何も動かない。⚠️ ただし`over 1 billion ChatGPT users`という規模の数字が公式の見出しに入った点は記録しておく（規模の話をするときの一次情報になる）
+  - 9/10付以前（Data agent・金融業界向け・GPT-Live-1 API・Agents API・抗菌分子の事例）は**9/11のフル版が記録済み**で新規ではない
+- **【差分なし】OpenAIヘルプ（Astraの使用量）**：[Managing usage with GPT-6 Astra in Work and Codex](https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex)は9/11のフル版の記録から変化なし（`Plus includes Astra in Work and Codex, but not GPT-6 Pro in Chat.`）
+
+### Gemini / Google
+
+- **【差分なし】Geminiアプリ リリースノート**（`https://gemini.google.com/updates`を開き、`https://gemini.google`（ページ名「Gemini アプリのリリース最新情報と改善点」）へリダイレクトされた面・**本日CCがアプリ内ブラウザで直接開いて確認**〔WebFetchは`Parse Error: Header overflow`で失敗〕）：最新は**2026.09.10「Google Gemini を PC で利用できる Windows アプリケーションが登場」**のままで新規0件。その前は2026.08.19（学生向けハブ）。**Windowsアプリは9/11のデイリーが記録済み**で、このメディアはMacのため手元は変わらない
+
+### 国産AIライティングツール
+
+- **本日は未確認**（デイリーは2領域のみ・国産4社はフル版の担当）。**次のフル版は9/14(月) 12:00。**9/11時点の記録＝EmmaTools（お知らせ9/10・機能変更なし）／SAKUBUN（金額非掲載を確認）／Catchy（Free ¥0〜Pro ¥9,800）／Transcope（料金未取得）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**（②から。①から1件＝`research-20260912-01`は`research/trends.md`側）
+- **`queue.md`への投入：0本**（消費側ゲート「期限つき2本以上→投入停止」＝`DW66-リ`〜9/13・`PERM-01`超過8日）
+- **巡回チェック**：ChatGPTリリースノート ✅（アプリ内ブラウザ）／OpenAIニュース面 ✅（アプリ内ブラウザ・**2日連続で開けた**）／OpenAIヘルプ ✅／Geminiリリースノート ✅（アプリ内ブラウザ・**WebFetchが通らない面をブラウザで代替できた**）／国産4社 ⏭（フル版の担当）
 
 ---
 

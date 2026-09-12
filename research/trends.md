@@ -1,6 +1,52 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-11
+最終更新: 2026-09-12
+
+---
+
+## [2026-09-12] 調査結果（デイリー）
+
+**①に差分あり。巡回8面のうち3面が動いた**（CHANGELOG／npm＝`2.1.269`が公開・@ClaudeDevs＝3投稿・Newsroom＝9/10付1件）。**`2.1.269`から1件を採用**（`research-20260912-01`＝`claude plugin eval`）。**`PERM-01`の「4回目」は4日連続で起きていない。**
+
+### Claude Code / Anthropic
+
+- **【差分あり・1件採用】Claude Code `2.1.269` が公開された**（一次情報2点＝[npmレジストリ](https://registry.npmjs.org/@anthropic-ai/claude-code)の`time`実測 ／ [CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)）
+  - **公開時刻（npm実測）**：`2026-09-11T18:12:49.253Z` ＝ **日本時間 9/12 03:12**。`dist-tags`は`latest`が`2.1.269`
+  - **98項目の大型リリース**（本日CCがCHANGELOGを機械的に数えた＝`Added` 7件／`Fixed` 41件／`Improved` 6件／`Changed` 3件／`Windows:` 1件＋`[VSCode]` 23件＋`[Claude Code on the web]` 7件＋`[Claude Tag]` 10件）
+  - **【採用】プラグイン・スキルが「効いているか」を測るコマンドが入った（verbatim）**：`Added `claude plugin eval`: run a plugin's eval suite against Claude Code and get scored, reproducible results (JSON + HTML report); see `claude plugin eval --help``
+    - **使う側の何が変わるか**：公式ドキュメント（[Test plugins with evals](https://code.claude.com/docs/en/plugin-evals)）に、**入れた場合と入れない場合を両方走らせて差を出す仕組み**が明記されている。verbatim：`each case's runs are repeated with no plugin loaded by default, and you get two scores, `WITH` and `W/OUT`. Their difference, `Δ`, is what the plugin contributed. If a case scores 1.0 both with and without the plugin, the plugin isn't what made it pass.`
+    - verbatim（実行回数）：`One run of a non-deterministic agent tells you little, so each case runs three times by default.`
+    - verbatim（対象）：`A plugin directory with a `plugin.json` or `.claude-plugin/plugin.json` manifest, or a [skills-directory plugin]`／`This page is for plugin and skill authors who have a working plugin and want to test its behavior`＝**スキルだけを束ねたプラグインでも測れる**
+    - **このメディアに直結する理由**：`rules/`・`knowledge/`・`CLAUDE.md`に大量のルールを書き、スキル（`eyecatch-ref`）も作っているが、**「そのルールが無かった場合」と比べたことは一度もない。**`Δ`はその比較を数字にする
+    - ⚠️ **`evals/evals.json`（skill-creatorプラグインが使う形式）とは別の形式**（verbatim：`Its case format is separate from the `evals/evals.json` file the skill-creator plugin uses.`）。混同しない
+    - ⚠️ **この環境はまだ`2.1.269`未満**（本日CCが実機で確認＝CLI `claude --version`が`2.1.243`／デスクトップアプリ同梱の`~/Library/Application Support/Claude/claude-code`は最新が`2.1.266`）。**手元ではまだ実行できない**
+  - **【記録・Xは採らない】`PERM-01`に関係する確認を4日連続で済ませた**：`2.1.269`に**auto modeの自動承認の対象を狭める変更は無い。「4回目」は起きていない。**許可まわりの変更は2件あるが、どちらも**この環境に`deny`／`ask`ルールが1件も無いため対象外**
+    - verbatim：`Fixed a deny or ask permission rule starting with `!` applying beyond the settings source that wrote it; such a rule now applies only within its own source, and a bare `!` negation is ignored`
+    - verbatim：`Fixed `Edit()` deny rules and the write-path check not applying to the file a Bash `tee` command writes; a `Bash(tee:*)` allow rule no longer covers destinations outside the working directories`
+  - **【記録・Xは採らない／判断を保留せず理由を書く】日本語のプロンプト候補が落ちていたのが直った**（2項目）
+    - verbatim：`Fixed prompt suggestions being dropped for text in Japanese, Chinese, Thai and other languages written without spaces between words`
+    - verbatim：`Improved prompt suggestion filtering for Japanese, Chinese and Korean text: mixed-script and single-word suggestions are kept, and meta or evaluative text is dropped as it is for English`
+    - **「日本語だけ損をしていた」は軸として強いが、採らない理由は1つ**：**この環境でプロンプト候補が出ているかを確認できていない。**CHANGELOGの過去項目に`CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION=true`（既定オフの可能性）と`/config`のトグルがあり、**`~/.claude/settings.json`にも`.claude/settings*.json`にも該当の設定は無い**（本日CCが実機で確認）。**出ていない機能の改善を「自分の手元が変わった」とは書けない**
+    - **再利用条件**：`2.1.269`に上げたあと、`/config`でプロンプト候補がオンかを確認し、日本語で候補が出るようになったら★★★★★の材料になる（「日本語だから効いていなかった」は発見ではなく実測になる）
+  - **【記録・Xは採らない】Bashがファイルを編集したときに差分が出るようになった（verbatim）**：`Added a diff of the files a Bash command changed to the Bash tool result when the Bash tool handles file edits (setting `bashEditDiffEnabled`)`
+    - **このセッションはauto modeでBash経由の編集をしている**ので手元に関係はあるが、**設定名が出ているだけで既定値が書かれていない。**「出るようになった」と断定できない
+  - **【記録のみ】**`Added `/output-style [name]` to list and switch output styles, including over Remote Control and in cloud and other headless sessions`／`Added `CLAUDE_CODE_WORKFLOW_MAX_CONCURRENT_AGENTS` (1–256) to raise the Workflow tool's per-run concurrent agent limit for inference-bound fan-outs`（**no.66の「10体に分けてチェック」の上限を上げる設定。記事の追記材料**）／`Fixed the attribution reminder overriding a CLAUDE.md or memory rule against commit and pull request attribution`／`Changed `/ultrareview --post` to post the PR comment directly when the findings arrive`
+- **【差分あり・記録／Xは採らない】@ClaudeDevsに3投稿**（本日CCがアプリ内ブラウザで直接開いて確認。**9/11のデイリーが「未確認」としていた面を解消**）
+  - **日本時間 9/12 02:30頃**：`New in Claude Code: claude plugin eval` ／ `See what value your plugin is adding, or if it needs more work.` ／ `You can create test cases, run your plugin or skill against those test cases, score those runs, then run each case again without the plugin to see the differences.`（**49万ビュー・上の採用分と同じ件**）
+  - **同 03:30頃**：Claude Tagをオンコール対応に使っている社内事例（Slackのアラート→メトリクス取得→デプロイ差分→フラグ確認→修正案）。**Enterprise前提の使い方**で採らない
+  - **同 03:30頃**：`Fable 5.1 Build Days`（9/11〜9/25に世界各都市でビルダソン・[@claudeai 9/10](https://x.com/claudeai)のリポスト）。**イベント告知**で採らない
+- **【差分あり・記録／Xは採らない】Anthropic Newsroomに9/10付で1件**（[anthropic.com/news](https://www.anthropic.com/news)・本日WebFetchで確認）：`Detecting and countering misuse of AI: September 2026`（8か月分の悪用検知・遮断の報告）。**使う側の料金・制限・使える範囲は変わらない**ので採らない。⚠️ **9/11のデイリーは「最新は9/1のまま」と記録していた**が、本日は9/10付が出ている（取得タイミングの差）
+- **【差分なし】Claude Apps リリースノート**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)・本日WebFetchで確認）：最新は**9/10付`Smart reports (beta)`**のままで新規なし（Enterprise限定のため引き続き対象外）
+- **【差分なし】Claude Platform リリースノート**（[platform.claude.com](https://platform.claude.com/docs/en/release-notes/overview)・本日WebFetchで確認）：最新は**9/10付2件**（Managed Agentsの`auto`／`ant beta:sessions connect`）のままで新規なし
+- **【差分なし】公式Pricing**（[claude.com/pricing](https://claude.com/pricing)・本日WebFetchで確認）：**Pro＝年払い月額$17（$200一括）／月払い$20・Max＝$100から・Team標準$20（年払い）／$25（月払い）・Team上位$100／$125・Enterprise $20/席＋API課金。**9/11に訂正した税抜表示のままで変化なし
+- **【差分なし】Pro・Maxプラン別ヘルプ**（[use claude code with your pro or max plan](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)・本日WebFetchで確認）：`Updated over 3 weeks ago`のまま。**9/14の週次上限25%増（`LIMIT-気`で投稿済み）の追記は今日も無い（7回連続）。⚠️ 予定日は明後日9/14**
+- **【差分なし】Claude Academy**（[academy.claude.com](https://academy.claude.com/)・本日WebFetchで確認）：コース3本のまま（`AI Fluency: Framework & Foundations`14レッスン・4時間／`AI Capabilities and Limitations`13レッスン・3.5時間／`Building Effective Human Agent Teams (Beta)`5レッスン・45分）。ウェビナー欄はWebFetchでは取得できず（「無くなった」とは書かない）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：1件**（`research-20260912-01`＝`claude plugin eval`でプラグイン・スキルの効き目を「入れない場合との差（Δ）」で測れるようになった）。②からは0件
+- **`queue.md`への投入：0本。**①消費側ゲート「**期限つき2本以上→投入停止**」に該当（`DW66-リ`＝記事公開週の枠〜9/13／`PERM-01`＝〜9/4で超過8日） ②本件は3条件が①今出す理由◯／②具体物◯の2個で、**③決断・感情は手元で実行するまで書けない**（この環境は`2.1.243`で未実行）
+- **巡回チェック（8チャネル）**：①CHANGELOG ✅ ②npm`time` ✅ ③@ClaudeDevs ✅（アプリ内ブラウザ・**9/11の「未確認」を解消**） ④Claude Apps ✅ ⑤Claude Platform ✅ ⑥Newsroom ✅ ⑦Pricing／プラン別ヘルプ ✅ ⑧Claude Academy ✅ ＝**8面すべてを開いた**
 
 ---
 

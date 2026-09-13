@@ -1,6 +1,33 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-13
+最終更新: 2026-09-14
+
+---
+
+## [2026-09-14] 調査結果（デイリー）
+
+**②は差分なし（2日連続）。**ChatGPT・OpenAI・Gemini（アプリ／API）の4面とも、9/13のデイリーの記録から新規エントリは無かった。
+
+### ChatGPT / OpenAI
+
+- **【差分なし】ChatGPT リリースノート**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・**本日CCがアプリ内ブラウザで直接開いて確認**・更新表示は`Updated: 3 日前`）：最新は**September 10, 2026**の2件（Dataプラグイン／ライブラリにBox・Dropbox・SharePoint）のまま
+- **【差分なし】OpenAIニュース面**（[openai.com/news](https://openai.com/news/)・アプリ内ブラウザで確認）：最新は**9/11付**`Rapidly scaling online storage to serve over 1 billion ChatGPT users`のまま
+
+### Gemini / Google
+
+- **【差分なし】Geminiアプリ リリースノート**（[gemini.google/release-notes](https://gemini.google/release-notes/)・アプリ内ブラウザで確認）：最新は**2026.09.10**のWindowsアプリのまま
+- **【差分なし】Gemini API 変更履歴**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)・curl）：最新は**September 3, 2026**（`lyria-3.5`パブリックプレビュー）のまま
+- **【未確認・記録のみ】**WebSearchの要約に「Gemini 3.5 TranscribeがGA」「Android 9月のドロップ（Find Hubの記憶・Guided vision）」が出たが、**本文・日付を一次情報で開いていない。**Gemini API変更履歴の9月分（9/1〜9/3）には該当が無いため、事実として書かない。Android機能は**制作環境（Mac）で使わない**ためどのみち採らない
+
+### 国産AIライティングツール
+
+- **本日は未確認**（デイリーは2領域のみ・国産4社は本日12:00のフル版の担当）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**
+- **`queue.md`への投入：0本**（②からの候補なし）
+- **巡回チェック**：ChatGPTリリースノート ✅（アプリ内ブラウザ）／OpenAIニュース面 ✅（アプリ内ブラウザ）／Geminiアプリ リリースノート ✅（アプリ内ブラウザ）／Gemini API変更履歴 ✅（curl）／国産4社 ⏭（フル版の担当）
 
 ---
 

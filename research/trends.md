@@ -1,6 +1,33 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-13
+最終更新: 2026-09-14
+
+---
+
+## [2026-09-14] 調査結果（デイリー）
+
+**①は差分なし。**`2.1.270`（9/13記録済み）以降の新しい版は出ていない。**Xに採るものは0件。**本日9/14は**週次上限の変更が効き始める日**だが、発表（8/30）は記録済みで、Xでも9/1の`LIMIT-気`と9/12のリプライ（@k_matsumaru）で使い済み。
+
+### Claude Code / Anthropic
+
+- **【差分なし】Claude Code**（[npmレジストリ](https://registry.npmjs.org/@anthropic-ai/claude-code)の`time`・[CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)。**本日CCがcurlで直接取得**）
+  - `dist-tags`は`latest: 2.1.270`／`next: 2.1.270`／`stable: 2.1.236`。最新の公開は`2.1.270`＝`2026-09-12T18:52:44.937Z`（日本時間 9/13 03:52）のまま。CHANGELOGの先頭も`## 2.1.270`のまま
+  - **この環境は`2.1.243`のまま**（本日`claude --version`で確認）。デスクトップアプリ同梱の最新も`2.1.266`のまま＝**`claude plugin eval`（要`2.1.269`以上）はまだ実行できない**
+  - **`PERM-01`の「4回目」は6日連続で起きていない**（新しい版が無いため）
+- **【差分なし】Anthropic Newsroom**（[anthropic.com/news](https://www.anthropic.com/news)・curlで日付を抽出）：最新は**9/10付**のまま
+- **【差分なし】Claude Platform リリースノート**（[docs.claude.com/en/release-notes/overview](https://docs.claude.com/en/release-notes/overview)・curl）：最新は**September 10, 2026**（Managed Agentsの権限ポリシーに`auto`追加など。API利用者向けで手元は変わらない）のまま
+- **【差分なし】Claude Apps リリースノート**（[support.claude.com Release notes](https://support.claude.com/en/articles/12138966-release-notes)・curl）：最新は**September 10, 2026**の`Smart reports (beta)`（**Enterpriseプランのみ**）のまま
+- **【記録のみ・Xは採らない】本日9/14から週次上限の変更が効く**
+  - 根拠は2026-08-30記録済みの@ClaudeDevs告知（verbatim `Starting September 14, we're permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans. Until then, the current 50% increase will be in place.`）。**本日時点で公式から追加の告知は見つけていない**（Newsroom・Apps／Platformリリースノートとも9/10付が最新）
+  - ⚠️ 検索結果に「9/14に17%減る」という見出しの二次情報（digitalapplied.com）があるが、**17%は+50%→+25%の比から出る計算で、公式の表現ではない。**公式の数字として書かない
+  - **採らない理由**：9/1に`LIMIT-気`（今より約17%減る）で投稿済み、9/12のリプライでも同じ計算を使った＝**重複**。**再利用条件**：ユーザーが今週、実際に週次上限に当たった／当たらなかったという手元の実測が出た日（③決断・感情が立つ）
+- **本日は未確認**：@ClaudeDevs／Pricing・プラン別ヘルプ／Claude Academy（**本日12:00のフル版の担当**）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**
+- **`queue.md`への投入：0本。**消費側ゲートは**開いている**（🔒`PERM-01`を除く期限つきは`DW66-リ`＝期限超過1日の1本）。止めた理由は**「在庫10本超→基準を上げる」**：唯一の期限3日以内の候補`research-20260912-01`（〜9/15）は、手元が`2.1.243`のままで**使い方がまだ変わっていない**
+- **巡回チェック**：①CHANGELOG ✅ ②npm`time` ✅ ⑤Claude Platform ✅（curl）④Claude Apps ✅（curl）⑥Newsroom ✅（curl）／ ③@ClaudeDevs ⑦Pricing ⑧Academy ⏭（本日未確認）
 
 ---
 

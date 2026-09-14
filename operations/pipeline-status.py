@@ -96,6 +96,8 @@ def parse_tasks():
         rows[n] = {
             "n": n, "title": title, "cat": cat, "judge": sym,
             "ids": ids_in(l), "slugs": slugs_in(l), "type": classify(title, cat),
+            # 対応づけに使うのは題名欄だけ（判定欄の「T-1と重なる」等の参照IDを拾わないため）
+            "title_ids": ids_in(cells[2]), "title_slugs": slugs_in(cells[2]),
         }
         want += 1
         if want > 20:
@@ -126,14 +128,14 @@ def parse_sheets():
 
 
 def match_sheet(row, sheets, used=None):
-    """行→シートの対応づけ。1行目の#N → D-番号 → スラッグ → T-番号 の順。1シートは1行にしか付けない。"""
+    """行→シートの対応づけ。行の題名欄にある D-番号 → スラッグ → T-番号 の順。1シートは1行にしか付けない。
+    シート1行目の「TOP10 #N」は使わない（TOP10が組み替わると古くなる。9/14に旧番号のシートを拾った）。"""
     used = used if used is not None else set()
     cands = [s for s in sheets if s["file"] not in used]
     for key in (
-        lambda s: s["hint"] == row["n"],
-        lambda s: bool(row["ids"] & s["d_ids"]),
-        lambda s: s["slug"] in row["slugs"],
-        lambda s: bool(row["ids"] & s["ids"]),
+        lambda s: bool(row["title_ids"] & s["d_ids"]),
+        lambda s: s["slug"] in row["title_slugs"],
+        lambda s: bool(row["title_ids"] & s["ids"]),
     ):
         for s in cands:
             if key(s):

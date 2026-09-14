@@ -277,6 +277,8 @@
 
 ---
 
+- [2026-09-14 X編集部から（`ASTRA-気`・投稿済み）] **ChatGPT Plusでも、最上位のGPT-6 AstraはWorkとCodexでしか選べず、Chatでは選べない**（9/14にユーザーの画面で確認・**本人は未使用**）。OpenAIは発表でClaude Fable 5.1と並べて比較し、API料金も同じ価格帯（入力$10／出力$50）。**→ D-02（TOP10の使い分けテーマ）とno.56（ChatGPT WorkとClaude Code）の更新材料。**出典verbatimと画面の実測は`sns/posts-stock.md`の`ASTRA-気`。**続報の条件**：ユーザーがWorkでAstraを使い、利用枠の減り方を見た日
+
 ## リサーチ由来の記事ネタ（随時追加）
 
 - [2026-05-01 リサーチ由来] GEOとは何か？AI検索時代に自分の記事を参照させる方法 | GEO / Generative Engine Optimization / AI Overview 対策

@@ -251,6 +251,7 @@ CCはMDのマーカー4個のまま全文差し替えを繰り返しており、
 12. **公開ボタンは押さない。**公開判断は人に残す（2026-08-27決定・成否に関わらず自動化しない）
 
 ⚠️ **`media-new.php`ではREST nonceが取れない**（`wpApiSettings`が別物で403）。`upload.php`かエディターで取る。
+⚠️ **`upload.php`でも`wpApiSettings`が無く、nonceが取れないことがある**（2026-09-14 no.67で発生・全リクエストが`rest_cookie_invalid_nonce` 403）。**`fetch('/wp-admin/admin-ajax.php?action=rest-nonce')`の応答がそのままnonceになる**ので、ページを問わずこれで取る。403で失敗したPOST（タグ作成など）は作られていないが、GETで確かめてから作り直す
 ⚠️ **REST APIの`meta`に無い項目は、POSTしても201が返って黙って無視される。**返り値の`meta`を必ず見る。
 
 **経緯**：2026-08-28にno.63で検証（V-05）。全11項目のうち10項目をCCが実行できた。詳細は`operations/automation-log.md`。

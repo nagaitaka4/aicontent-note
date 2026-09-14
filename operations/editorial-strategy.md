@@ -102,6 +102,7 @@
 
 ## 9. 更新の手順
 
+- **2026-09-14〜（編集会議で承認）**：供給5本（読者の問い／実験の仕込み／計測の答え合わせ／公式の変更／問い箱）・在庫3段（空欄≥5／待機◯≥5／材料シート完成≥5）・`python3 operations/pipeline-status.py`。手順の正は`marketing-research-mon-fri/SKILL.md`「月曜の編集会議準備」、ルールの正は`rules/task-management.md` 0番「ネタの供給（5本）」
 - **毎週月曜**：定期リサーチ`marketing-research-mon-fri`が1（表）・2（クエリ）・5（ハブの状態）を更新し、7（提案）と`operations/editorial-meeting.md`を作り直す
 - **月次のGSC（次回9/17）**：3・4（勝ち筋・負け筋）を見直す。条件が変わったら理由を書いて直す
 - **記事を公開したら**：5の「いまある記事」を更新する

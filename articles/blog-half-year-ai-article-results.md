@@ -3,10 +3,10 @@ no: 67
 series:
 series_no:
 title: ブログの直近半年、検索の実数。AIで書いた64本のクリックの内訳
-date:
-url:
+date: 2026-09-15
+url: https://aicontent-note.com/blog-half-year-ai-article-results/
 slug: blog-half-year-ai-article-results
-status: draft
+status: published
 description: ブログを始めて7か月のこのサイトの、直近半年のSearch Consoleの実数を公開します。AIで書いた64本の検索クリックのうち、上位2本が44%でした。公開90日以上と未満の記事を分けて、クリックされた記事と、表示0や表示されてもクリックされない記事を比べます。
 eyecatch_alt: AIで書いたブログ記事64本の、直近半年のSearch Consoleの数字とクリックの内訳を解説した記事のアイキャッチ画像
 category: AIコンテンツ運用検証
@@ -18,12 +18,12 @@ eyecatch: eyecatch_0067.png
 
 AIで書いた64本の記事は、直近半年で==検索から144クリック==でした。
 そのうち44%を、上位2本の記事が占めています。
-公開からの日数で分けて、クリックがあった記事と0だった記事を比べました。
+公開からの日数で分けて、クリックがあった記事と「0」だった記事を比べました。
 
 ## ブログの直近半年の検索の実数：AIで書いた64本のSearch Console
 
 このサイトは、2月に始めて7か月になります。
-数字はSearch Consoleの直近6か月で、一般的な目安ではなく、このサイト1つの実数です。
+数字はGoogle Search Consoleの直近6か月で、一般的な目安ではなく、**このサイト1つの実数**です。
 
 | 項目 | 直近6か月（2026年3月12日〜9月11日） |
 |---|---|

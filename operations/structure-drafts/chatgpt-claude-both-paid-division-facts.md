@@ -41,6 +41,7 @@
 | 3-1 | AstraがPlusのWork・Codexで使える（`research/ai-tools.md` 2026-09-11に記録・**執筆前に原文を開き直す**） | OpenAI 9/9「GPT-6 Astra: The next generation in intelligence for work」verbatim：`Last week we introduced GPT‑6 Astra, the world's most intelligent and aligned model, now available in ChatGPT Work, Codex, and the API.`／ヘルプ「Managing usage with GPT-6 Astra in Work and Codex」verbatim：`Plus includes Astra in Work and Codex, but not GPT-6 Pro in Chat.`／⚠️ ChatGPTのリリースノートは9/3付「not yet generally available」のまま（面によって記載が違う） | ◯（記録済み） |
 | 3-2 | ChatGPT Plusの料金（日本）・Workの公式定義 | 未取得（no.56の材料と重なる。原文で） | 未 |
 | 3-3 | Claude Max 5xの料金 | #5の材料シート（$110税込・月払い・画面） | ◯ |
+| 3-4 | **AstraはWebサイト制作が「抜群にいい」と言えるか**（ユーザーの問い・2026-09-14 15:20に実Chromeで原文を読んだ） | 出典：[OpenAI「GPT-6 Astra: A new generation of intelligence」（9/3・日本語ページ）](https://openai.com/ja-JP/index/gpt-6-astra/)と[9/9「The next generation in intelligence for work」](https://openai.com/index/gpt-6-astra-next-generation-work/)。**Webサイト制作そのものの数字は無い。**あるのは①定性の主張 verbatim「GPT‑6 Astra は、構築する Web サイト、ゲーム、アプリケーション、レンダリングにも、より優れた視覚的判断力を発揮します。ChatGPT の Sites を使えば、Astra はプロンプトから直接、ウェブサイト、ウェブアプリ、ゲームを作成、ホスト、共有できます。」②コーディングの評価（OpenAI自身の計測・Claudeは脚注の条件つき）：Terminal-Bench 4.0 Astra 57.9%／Claude Fable 5.1 55.8%／Claude Opus 5 52.6%、DeepSWE v1.1 74.1%／67.4%／73.7%、FrontierCode 1.1 Extended 64.5%／63.6%／63.6%（Fable 5は64.9%）、FrontierCode 1.1 Main 53.3%／50.9%／**53.4%**、Artificial Analysis Coding Agent Index v1.4 67.0／—／**68.1**（Fable 5は67.2）、Artificial Analysis Intelligence Index v4.1.1 61.2／**65.7**／63.1 ③Webサイト制作ツールの声はLovable CTO「GPT 5.6 Sol を大きく上回った」＝**比較相手はSolでClaudeではない**。**結論：Astraがサイト制作で抜群と言える一次情報は無い。コーディングの数字はClaudeの上位モデルと数ポイント差で、指標によってはClaudeが上。**⚠️ すべてOpenAIの自社ページの数字（第三者の測定ではない） | ◯ |
 
 ## 4. X編集部の在庫（2026-09-14）
 
@@ -58,6 +59,6 @@
 ## 7. まだ無いもの（執筆で埋めない）
 
 1. **Astraの実測**：**実験は承認済み（9/14 15:09・次に着手する記事で実施）。結論を先に置かない（変わらない、も結果）。**Plusのまま追加料金なしでWorkのAstraを使える（3-1・執筆前に原文を開き直す）。設計＝Claude Codeの構成案を、GPT Work（Astra）とClaude Codeの両方に執筆させ、`article-self-check.py`のNG件数・修正回数・所要時間を並べる（8/13のV-04も参照）。入稿はCC・レビューはGPT。**Workの操作は本人**。結果はこの2節へ
-2. サイト制作のGPT vs Claude Code（未決）：別の実験候補（OK MADEの自社サイト工程・待機17と接続）
+2. サイト制作のGPT vs Claude Code（未決）：**9/14 15:20判断：一次情報に「抜群」の根拠が無いので、いまは試さない**（3-4）。実験は記事執筆だけ。抜群と言える情報が出たら再検討
 3. 9:1の計測（体感のまま書くなら「体感」と明記）
 4. 3-2の一次情報

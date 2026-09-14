@@ -1196,6 +1196,112 @@ claude 学習 させない 4／claude 使い方 初心者 4／claude 使い方 �
 
 ---
 
+## 2026-09-14 17時（TOP10 #1 no.67の執筆用：直近6か月のページ表）
+
+- 取得方法：実Chrome（claude-in-chrome）でGSCを操作。ページ表75行（10行×8ページをスクリプトで読み取り）。クリック・表示・CTR・掲載順位の4列
+- 期間：**過去6か月＝2026-03-12〜2026-09-11**（最終更新9.5時間前）
+- サイト全体：145クリック・3,580表示・CTR 4.1%・平均16.6位
+
+### 64本の記事ページに絞った集計（no.67の本文に使った数字）
+
+- **記事以外の行は除外**：`/contact/`（1クリック・11表示）・`/service/`・トップ・`/page/3/`・`/2026/02/`・`/privacy-policy/`・`/page/7/`
+- **見出しへのリンク（`#`付きの行）も合計に入れない**：クリックは全行0。表示を足すと記事ページの表示の合計がサイト全体を超える（3,714 > 3,580）ため、記事本体の行だけを数えた
+- 64本の合計：**144クリック・3,516表示**／クリックがあった記事28本／表示0の記事6本（no.4・9・19・50・64・66）
+- 上位2本：no.14 38クリック＋no.56 26クリック＝64＝**44.4%**（分母は64本のクリック合計144）
+- 公開からの日数（期間の終わり9/11から）：90日以上＝6/13以前の36本（no.1〜36）／未満28本
+  - 90日以上でクリック0は24本：表示0 3本（no.4・9・19）／表示あり・平均順位10.0超 7本（no.5・13・26・29・30・31・36）／10.0以下 14本（no.1・2・3・6・7・8・15・20・21・23・24・25・32・33。表示は1〜17回）
+  - 60日（7/13以前45本）：クリック0は26本＝3／7／16。120日（5/14以前23本）：15本＝3／2／10。**どの区切りでも10.0以下が最多**
+  - 90日未満でクリック0は12本（no.38・44・47・48・50・51・57・62・63・64・65・66）
+- クリック3以上（10位と同数を含む）14本を**題で**分けた：Claude Codeを仕事に使う記事6本（no.14・42・49・53・17・18）／「〜とは」4本（no.45・41・55・28）／比較と課金2本（no.56・27）／運用の体験1本（no.34）／SEOの手順1本（no.10）。公開90日未満が7本。**最多でも6／14で過半数なし**
+  - ⚠️ `operations/editorial-strategy.md` §1はno.14を「実体験×Claude Code×仕事」に入れているが、no.14のリードは「業務効率化の視点で整理しました」で、自分で動かした記録ではない。確かめられる題で分けた
+- 検算：記事本体の行58行＝144クリック・3,516表示／`#`付き10行＝0クリック・198表示／表示0＝64−58＝6本
+- 公開90日以上でクリック0の24本を題で分けた種類：表示0＝Claude Codeの記事2（no.9・19）・副業検証1（no.4）／10.0超＝「〜とは」2（no.30・31）・Claudeのモデル2（no.29・36）・AIでの記事づくり2（no.5・13）・外注1（no.26）／10.0以下＝副業検証6（no.2・3・6・8・15・33）・ブログ運用と外注の考え方6（no.1・7・20・23・24・32）・Claude Code 2（no.21・25）
+- 製品名の比較（公開90日以上36本・1日あたり表示＝表示÷期間内の公開日数・中央値）：あり16本（no.4・9・10・11・12・14・16・17・18・19・21・22・25・27・29・36）0.191回／なし20本 0.036回。製品名＝題に入ったツール・サービスの名前（Markdown・プロンプトなど記法や用語は含めない）
+
+<details><summary>ページ表75行（原データ・アンカーURLは#以降を省略）</summary>
+
+| ページ | クリック | 表示 | CTR | 掲載順位 |
+|---|---|---|---|---|
+| https://aicontent-note.com/claude-code-compatible-jobs/ | 38 | 687 | 5.5% | 6.3 |
+| https://aicontent-note.com/chatgpt-work-claude-code-comparison/ | 26 | 235 | 11.1% | 6.7 |
+| https://aicontent-note.com/readme-basics/ | 8 | 154 | 5.2% | 7.9 |
+| https://aicontent-note.com/mercari-ai-listing/ | 8 | 67 | 11.9% | 6.8 |
+| https://aicontent-note.com/directory-structure-basics/ | 7 | 101 | 6.9% | 7.5 |
+| https://aicontent-note.com/swell-seo-settings/ | 6 | 326 | 1.8% | 14.5 |
+| https://aicontent-note.com/claude-subscription-change-june-2026/ | 6 | 226 | 2.7% | 11.3 |
+| https://aicontent-note.com/claude-code-lawyer-case-management/ | 5 | 28 | 17.9% | 8.5 |
+| https://aicontent-note.com/claude-code-labor-consultant-rules-agreement/ | 5 | 26 | 19.2% | 10.0 |
+| https://aicontent-note.com/claude-code-writing-rewrite/ | 3 | 64 | 4.7% | 7.9 |
+| https://aicontent-note.com/rule-file-basics/ | 3 | 59 | 5.1% | 7.0 |
+| https://aicontent-note.com/claude-code-entry-publish/ | 3 | 31 | 9.7% | 6.0 |
+| https://aicontent-note.com/ai-content-operation-experience/ | 3 | 23 | 13% | 11.3 |
+| https://aicontent-note.com/prompt-design-basics/ | 3 | 16 | 18.8% | 4.9 |
+| https://aicontent-note.com/internal-link-guide/ | 2 | 215 | 0.9% | 15.8 |
+| https://aicontent-note.com/blog-outsource-pricing-guide/ | 2 | 144 | 1.4% | 12.6 |
+| https://aicontent-note.com/chatgpt-free-paid-difference/ | 2 | 89 | 2.2% | 11.7 |
+| https://aicontent-note.com/claude-code-rate-limit-update/ | 2 | 65 | 3.1% | 8.7 |
+| https://aicontent-note.com/claude-code-article-structure/ | 2 | 18 | 11.1% | 9.7 |
+| https://aicontent-note.com/geo-ng-practices/ | 2 | 5 | 40% | 4.8 |
+| https://aicontent-note.com/markdown-basics/ | 1 | 96 | 1% | 9.5 |
+| https://aicontent-note.com/claude-cowork-usage-data/ | 1 | 37 | 2.7% | 11.2 |
+| https://aicontent-note.com/ai-webwriting-verification-06/ | 1 | 30 | 3.3% | 11.5 |
+| https://aicontent-note.com/ai-writing-tool-comparison/ | 1 | 27 | 3.7% | 7.4 |
+| https://aicontent-note.com/geo-ai-citation-difference/ | 1 | 22 | 4.5% | 35.4 |
+| https://aicontent-note.com/llms-txt-geo-effect/ | 1 | 16 | 6.2% | 4.5 |
+| https://aicontent-note.com/contact/ | 1 | 11 | 9.1% | 4.9 |
+| https://aicontent-note.com/ai-information-organization/ | 1 | 9 | 11.1% | 3.8 |
+| https://aicontent-note.com/ai-article-structure-h1/ | 1 | 8 | 12.5% | 9.2 |
+| https://aicontent-note.com/search-console-crawled-not-indexed/ | 0 | 401 | 0% | 68.8 |
+| https://aicontent-note.com/token-design-basics/ | 0 | 51 | 0% | 11.7 |
+| https://aicontent-note.com/service/ | 0 | 46 | 0% | 27.7 |
+| https://aicontent-note.com/template-basics/ | 0 | 41 | 0% | 7.0 |
+| https://aicontent-note.com/chatgpt-work-claude-code-comparison/#index_id0 | 0 | 40 | 0% | 4.7 |
+| https://aicontent-note.com/chatgpt-work-claude-code-comparison/#index_id3 | 0 | 40 | 0% | 4.7 |
+| https://aicontent-note.com/chatgpt-work-claude-code-comparison/#index_id7 | 0 | 40 | 0% | 4.7 |
+| https://aicontent-note.com/ | 0 | 22 | 0% | 2.2 |
+| https://aicontent-note.com/claude-code-compatible-jobs/#a1 | 0 | 22 | 0% | 4.7 |
+| https://aicontent-note.com/context-design-basics/ | 0 | 21 | 0% | 14.6 |
+| https://aicontent-note.com/chatgpt-work-claude-code-comparison/#index_id6 | 0 | 20 | 0% | 5.0 |
+| https://aicontent-note.com/ai-work-environment-setup/ | 0 | 19 | 0% | 8.1 |
+| https://aicontent-note.com/claude-fable-5/ | 0 | 19 | 0% | 19.9 |
+| https://aicontent-note.com/ai-content-cost-effectiveness/ | 0 | 17 | 0% | 2.1 |
+| https://aicontent-note.com/claude-code-compatible-jobs/#a2 | 0 | 17 | 0% | 4.2 |
+| https://aicontent-note.com/claude-opus-4-8-honesty/ | 0 | 16 | 0% | 19.6 |
+| https://aicontent-note.com/claude-code-task-fit/ | 0 | 14 | 0% | 9.1 |
+| https://aicontent-note.com/claude-code-compatible-jobs/#a3 | 0 | 11 | 0% | 5.5 |
+| https://aicontent-note.com/git-basics/ | 0 | 10 | 0% | 6.4 |
+| https://aicontent-note.com/claude-code-glossary-beginners/ | 0 | 10 | 0% | 8.1 |
+| https://aicontent-note.com/ai-content-operation-results-timeline/ | 0 | 10 | 0% | 8.7 |
+| https://aicontent-note.com/claude-code-desktop-renewal/ | 0 | 7 | 0% | 7.4 |
+| https://aicontent-note.com/blog-update-outsource-timing/ | 0 | 7 | 0% | 8.4 |
+| https://aicontent-note.com/claude-code-compatible-jobs/#a4 | 0 | 6 | 0% | 4.8 |
+| https://aicontent-note.com/content-operation-system/ | 0 | 6 | 0% | 6.7 |
+| https://aicontent-note.com/ai-webwriting-verification-01/ | 0 | 6 | 0% | 8.8 |
+| https://aicontent-note.com/chatgpt-ads-ai-search-geo/ | 0 | 5 | 0% | 4.4 |
+| https://aicontent-note.com/page/3/ | 0 | 5 | 0% | 8.2 |
+| https://aicontent-note.com/ai-overview-check-method/ | 0 | 5 | 0% | 22.2 |
+| https://aicontent-note.com/ai-article-quality-check/ | 0 | 5 | 0% | 22.8 |
+| https://aicontent-note.com/ai-webwriting-verification-08/ | 0 | 4 | 0% | 9.2 |
+| https://aicontent-note.com/2026/02/ | 0 | 4 | 0% | 12.2 |
+| https://aicontent-note.com/blog-not-needed-message/ | 0 | 3 | 0% | 7.3 |
+| https://aicontent-note.com/ai-webwriting-verification-04/ | 0 | 3 | 0% | 8.7 |
+| https://aicontent-note.com/in-house-vs-outsource-cost/ | 0 | 2 | 0% | 7.5 |
+| https://aicontent-note.com/privacy-policy/ | 0 | 2 | 0% | 7.5 |
+| https://aicontent-note.com/ai-webwriting-verification-07/ | 0 | 2 | 0% | 8.5 |
+| https://aicontent-note.com/ai-webwriting-verification-02/ | 0 | 2 | 0% | 9.0 |
+| https://aicontent-note.com/content-operation-outsource-what-is/ | 0 | 2 | 0% | 46.0 |
+| https://aicontent-note.com/ai-content-operation-experience/#index_id0 | 0 | 1 | 0% | 4.0 |
+| https://aicontent-note.com/ai-content-operation-experience/#index_id11 | 0 | 1 | 0% | 4.0 |
+| https://aicontent-note.com/page/7/ | 0 | 1 | 0% | 4.0 |
+| https://aicontent-note.com/ai-webwriting-50-honest-review/ | 0 | 1 | 0% | 8.0 |
+| https://aicontent-note.com/ai-webwriting-verification-05/ | 0 | 1 | 0% | 8.0 |
+| https://aicontent-note.com/ai-composition-operation-flow/ | 0 | 1 | 0% | 9.0 |
+| https://aicontent-note.com/ai-writing-claude-setup/ | 0 | 1 | 0% | 11.0 |
+
+</details>
+
+---
+
 ## 更新ルール（2026-08-05改訂：CCがブラウザで直接取得する方式に変更）
 
 **旧方式（ユーザーがCSVをダウンロードして共有）は廃止。**CCがアプリ内ブラウザでGSCを直接操作して取得できることを2026-08-05に確認したため、ユーザーの作業はログインのみとなった。

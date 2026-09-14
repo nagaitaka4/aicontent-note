@@ -110,20 +110,35 @@ def parse_sheets():
         head = "\n".join(text.split("\n")[:4])
         heads = [h for h in text.split("\n") if h.startswith("#")]
         present = [k for k in SHEET_SECTIONS if any(k in h for h in heads)]
+        first = text.split("\n")[0]
+        m = re.search(r"TOP10 #(\d+)|待機列?(\d+)", first)
+        hint = int(next(g for g in m.groups() if g)) if m else None
         sheets.append({
             "file": os.path.basename(p),
             "slug": os.path.basename(p)[:-len("-facts.md")],
             "ids": ids_in(head),
+            "d_ids": {i for i in ids_in(head) if i.startswith("D-")},
+            "hint": hint,  # 1行目の「TOP10 #N」「待機列N」（最優先の対応づけ）
             "present": present,
             "missing": [k for k in SHEET_SECTIONS if k not in present],
         })
     return sheets
 
 
-def match_sheet(row, sheets):
-    for s in sheets:
-        if row["ids"] & s["ids"] or s["slug"] in row["slugs"]:
-            return s
+def match_sheet(row, sheets, used=None):
+    """行→シートの対応づけ。1行目の#N → D-番号 → スラッグ → T-番号 の順。1シートは1行にしか付けない。"""
+    used = used if used is not None else set()
+    cands = [s for s in sheets if s["file"] not in used]
+    for key in (
+        lambda s: s["hint"] == row["n"],
+        lambda s: bool(row["ids"] & s["d_ids"]),
+        lambda s: s["slug"] in row["slugs"],
+        lambda s: bool(row["ids"] & s["ids"]),
+    ):
+        for s in cands:
+            if key(s):
+                used.add(s["file"])
+                return s
     return None
 
 
@@ -179,9 +194,9 @@ def main():
     wait = [rows[n] for n in range(11, 21) if n in rows]
     wait_ok = [r for r in wait if r["judge"] == "◯"]
 
-    ready, lines_rows = [], []
+    ready, lines_rows, used = [], [], set()
     for r in top + wait:
-        s = match_sheet(r, sheets)
+        s = match_sheet(r, sheets, used)
         if s and not s["missing"]:
             ready.append(r)
         lines_rows.append((r, s))
@@ -192,7 +207,7 @@ def main():
     total = len(top) + len(wait)
 
     due_soon = [c for c in cal if c["days"] is not None and c["days"] <= DUE_WINDOW_DAYS and "済" not in c["state"]]
-    unmatched_sheets = [s for s in sheets if not any(match_sheet(r, [s]) for r in top + wait)]
+    unmatched_sheets = [s for s in sheets if s["file"] not in used]
 
     result = {
         "date": str(today),

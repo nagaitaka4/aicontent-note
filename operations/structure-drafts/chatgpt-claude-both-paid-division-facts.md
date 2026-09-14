@@ -21,7 +21,7 @@
 
 | 項目 | 実物 | 使い方 |
 |---|---|---|
-| 分担の表 | 画像＝GPT／記事の構成・執筆・入稿・チェック＝Claude Code／レビュー＝GPT／企画・設計・方向性の相談＝GPT／普段のチャット＝GPT／サイト制作＝未決 | 記事の骨組み |
+| 分担の表 | 画像＝GPT／記事の構成・執筆・入稿・チェック＝Claude Code（**2026-09-14：「今は全部CC」。入稿はどちらにしてもCC——安定しているのでGPTでやる必要がない**）／レビュー＝GPT／企画・設計・方向性の相談＝GPT／普段のチャット＝GPT／サイト制作＝未決 | 記事の骨組み |
 | 開いている比率 | Claude Code 9：GPT 1（本人の体感。計測なし） | 数字として書くなら「体感」と明記 |
 | 記事制作の分担の実験 | V-04（2026-08-13・no.57）：構成をClaude Code、執筆をGPT Workに渡した実測（`operations/article-backlog.md` V-04） | Astra再実験の比較対象（同じ設計で再現できる） |
 | レビューをGPTに | `operations/gpt-workflow-review-prompt.md`（2026-08-17・工程の見直し）／no.66の「人の指摘」はGPTレビューだった（2026-09-14判明・X `DW66-リ`保留） | 「レビューはGPT」の実物 |
@@ -54,7 +54,7 @@
 
 ## 7. まだ無いもの（執筆で埋めない）
 
-1. **Astraの実測**：今週の実験として提案（`operations/editorial-meeting.md` B節）。V-04と同じ設計＝Claude Codeの構成案を、GPT WorkでAstraを選んで執筆させ、`article-self-check.py`のNG件数と修正回数を8/13の結果と並べる
+1. **Astraの実測**：**実験は承認済み（9/14 15:09・次に着手する記事で実施）**。設計＝Claude Codeの構成案を、GPT Work（Astra）とClaude Codeの両方に執筆させ、`article-self-check.py`のNG件数・修正回数・所要時間を並べる（8/13のV-04も参照）。入稿はCC・レビューはGPT。**Workの操作は本人**。結果はこの2節へ
 2. サイト制作のGPT vs Claude Code（未決）：別の実験候補（OK MADEの自社サイト工程・待機17と接続）
 3. 9:1の計測（体感のまま書くなら「体感」と明記）
 4. 3-2の一次情報

@@ -172,6 +172,7 @@ Rシリーズ・cc-writerシリーズ・実務系記事のリンク型を優先�
 | CU-気 | Claude Codeの画面操作中はウィンドウが全部隠れていたが9/3から裏で動くように／Pro・MaxのMacのみベータ／地味だがかなり助かる（AI動向） | 2026-09-07 |
 | GSC-リ | サーチコンソールの「インデックス未登録135件」の内訳は121件が自分のnoindex／中身を見た記事は2本／表示された数字とやることの量は違う（no.57リンク型） | 2026-09-09 |
 | PERM-01 | Claude Codeの許可設定は許可80件・確認6件・拒否0件／8/29・9/2・9/5の更新で自動の操作が3つ確認に戻っていた／どこまで自動で通すかは向こうが決めている（AI動向） | 2026-09-10 |
+| ASTRA-気 | ChatGPTの最上位モデルGPT-6 AstraはPlusでも使えるがChatでは選べずWorkとCodexだけ／OpenAIはClaude Fable 5.1と並べて比較・API料金も同じ価格帯／Plusだがまだ一度も使っていない・使用制限を気にする必要がありそう（AI動向） | 2026-09-14 |
 
 ---
 
@@ -1458,6 +1459,27 @@ Claude Codeの許可設定、自分は許可80件・確認6件・拒否0件で�
 > **出典**：[anthropics/claude-code CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) `2.1.251`（8/29）・`2.1.257`（9/2）・`2.1.261`（9/5）。
 > ⚠️ **記事#8（Claude Codeの確認、どこまで自動にしていいか）の材料と重なる。**「公開前に単独で出さない」（3.6-2）は9/11新設で、この投稿（9/10）の後にできたルール。**記事公開時のリンク型は`PERM-01`以外の角度で組む。**
 > **実測**：9/14午前に24ビュー（投稿4日後。評価は9/17(木)のX投稿分析で行う）
+
+
+### ASTRA-気｜ChatGPTの最上位GPT-6 Astra、Plusでも使えるがChatでは選べない｜2026-09-14
+
+```
+ChatGPTの最上位モデル「GPT-6 Astra」、Plusでも使えます。
+ただ、Chatでは選べず、WorkとCodexだけ。
+
+OpenAIは発表でClaude Fable 5.1と並べて比べていて、API料金も同じ価格帯。
+
+私はPlusに入ってますが、まだ一度も使ってません。
+Fableと同等なら、使用制限を気にする必要がありそうですね。
+```
+
+> **投稿は2026-09-14 13:26**（[X](https://x.com/aicontent_note/status/2099354090166010223)）。**キューの下書きではなく、その場で作った1本。**素材＝`knowledge/x/ideas.md`の`research-20260911-02`（9/11のフル版が拾い、9/14 12:22に期限超過で閉じていたもの）。
+> **3条件**：具体物◯（GPT-6 Astra・Plus・Chat／Work／Codex・Claude Fable 5.1・API料金）／告白◯（まだ一度も使っていない）／感情◯（使用制限を気にする必要がありそう）＝**★★★★★**。**1行目の固有名詞**：ChatGPT・GPT-6 Astra。
+> **出典（一次）**：[OpenAI 9/9](https://openai.com/index/gpt-6-astra-next-generation-work/) verbatim `Our most capable model, built for all the work businesses need to get done.` ／ `GPT‑6 Astra reaches a new high at 57.9%, compared with 37.3% for GPT‑5.6 Sol and 55.8% for Claude Fable 5.1` ／ `Pricing starts at $10 per million input tokens and $50 per million output tokens.`　[公式ヘルプ](https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex) verbatim `Plus includes Astra in Work and Codex, but not GPT-6 Pro in Chat.` ／ `In Chat, GPT-6 Pro is powered by Astra and is available on eligible Pro, Business and Enterprise plans.`　Claude Fable 5.1は入力$10／出力$50（CHANGELOG `2.1.257`・Pricing docs）。
+> **画面の実測（9/14 13時ごろ・CCがユーザーのChromeで確認・メッセージ送信なし）**：プロフィール表示「Plus」／Chatはモデル選択なし（「思考量」のみ）／Workの「モデルを選択」にGPT-6 Astra・GPT-5.6 Sol・Terra・Luna・GPT-5.5（開いた時点の選択はGPT-5.6 Sol 軽）。
+> **経緯（CCの失敗3つ＋ユーザーの仕上げ）**：①CCが「今日出せるHR級ネタが無い」と投稿なしを提案→**ユーザー指摘「ネタは無限に転がっている。今日は投稿する月曜日」**（同日朝に「下書きは出すときに考える。重要なのはネタ・HR化・投稿済み把握・投稿順」と言われた直後だった） ②CCの初稿はAstraが何かを書かず★★★★★と付けていた（数え直すと具体物の1個だけ）→ユーザーの「Solの上位？」で発覚 ③CC案の3行目「重い作業だけWorkで使います」は事実と違った（ユーザーは未使用） ④**締めはユーザーが自分の言葉で書いた**（「使用制限を気にする必要がありそう」）。投稿時にユーザーが「ただ、」「私は」に変えた。ChatではPro等だけという一文は字数のためCCが削除。**ユーザーの比喩「ClaudeでいうFable」を2行目の比較にした**のが、このアカウントの読者に位置を一瞬で伝える形になった。
+> **続報の種**：ユーザーが実際にWorkでAstraを1回使い、利用枠の減り方を見れば、**締めの「使用制限」に答える続報**になる（鮮度と無関係に★★★★★）。
+> **記事側の材料**：no.56（ChatGPT WorkとClaude Codeの違い）・TOP10の使い分けテーマ。
 
 ---
 

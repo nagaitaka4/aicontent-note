@@ -1,6 +1,6 @@
 # 材料シート：AIでロゴを作る時代、どこまで任せていいか。任せられない所と法律の線（TOP10 #2・D-30）
 
-作成：2026-09-12 20:10／一次情報の取得：2026-09-14 11:20・**2026-09-15 07時台に3-1補足・3-2原文・3-3e・3-3f・3-5・3-6と3-7〜3-9を取得**（構成案 `logo-plagiarism-how-far-ai-copyright-font.md` 第1稿で使用）。**9/15 08時台に英語の一次情報（法律・確かめ方・AI）を3E節に取得**。英語のフォント・AIツール規約・業界団体・コンペは取得中。**執筆可能：◯（3-1・3-4cも2026-09-14に取得。残るのは3-5業界慣行のみで、無ければ「見つからなかった」と書く）。構成案はユーザー指示で待機中。**確認事項C-2（自分が引いている線）は2026-09-14 14:16に回答済み → 1・2・3・7節に反映。**
+作成：2026-09-12 20:10／一次情報の取得：2026-09-14 11:20・**2026-09-15 07時台に3-1補足・3-2原文・3-3e・3-3f・3-5・3-6と3-7〜3-9を取得**（構成案 `logo-plagiarism-how-far-ai-copyright-font.md` 第1稿で使用）。**9/15 08時台に英語の一次情報（法律・確かめ方・AI）を3E節に取得**。**同日、英語のフォント許諾・AIツール規約・業界団体・コンペを3F節に取得**（企業・団体の文書は要約と場所だけ。記事で引くときは原文から短く）。**執筆可能：◯（3-1・3-4cも2026-09-14に取得。残るのは3-5業界慣行のみで、無ければ「見つからなかった」と書く）。構成案はユーザー指示で待機中。**確認事項C-2（自分が引いている線）は2026-09-14 14:16に回答済み → 1・2・3・7節に反映。**
 > **執筆側はこのシートの事実だけを使う。ここに無い数字・仕様・判例は書かない。**法律の話は「一次情報が言っていること」と「自分が決めた線」を分け、法律相談の形にしない。
 
 ## 1. 記事の芯（2026-09-14 14:16・C-2の回答で置き直した。9/12の言葉は下に残す）
@@ -102,6 +102,64 @@
 ・商標（EU）：全体の印象で比べ、図形どうしは画像として比べる。1つの要素の一致や輪郭の類似で外観類似が認められやすい。不完全な記憶を考慮（EUIPO）<br>
 ・確かめ方：USPTOは「すべての衝突を見つける確実な方法は無い」と書く。登録データベース（USPTOは図形コード、WIPO・EUIPOは画像検索）に加え、州の登録とインターネットでの未登録の使用も調べる。WIPOは検索結果を法的見解ではないとしている
 ・日本の資料との対応：著作権の「独自創作なら侵害にならない／顕著に似ていればコピーが推認されうる」は文化庁（3-7の③と概要版p.12）と同じ形。商標の「意図は要件ではない」は特許庁 商標制度小委員会の資料（3-6）と同じ形
+
+### 3F. 英語の一次情報：フォント許諾・AIツール規約・業界団体・コンペ（2026-09-15 08時台取得・閲覧日9/15）
+
+> 企業の規約・業界団体の文書は著作物なので、ここは**要約と場所（条項・見出し）**だけ。**記事で引くときはURLを開き、原文から短く引用する**（要約を引用符に入れない）。
+
+#### F-1 英語のフォント許諾：ロゴ・ロゴの商標登録・クライアントのロゴ
+
+| 販売元・製品 | ロゴに使う | ロゴを商標登録 | クライアントのロゴ | 出典・更新日 |
+|---|---|---|---|---|
+| Monotype Desktop EULA | 明記なし（第2条の一般的な制作の許諾） | 記載なし（「Trademarks」の項はMonotypeのフォント名の話） | 記載なし | [MyFonts eula_2275](https://www.myfonts.com/pages/license-agreement?id=eula_2275&eula_lang=eula_en)・v250903 |
+| MyFonts FAQ（Monotype傘下） | ロゴ専用のライセンスは無く、最低限Desktopライセンスが必要。販売元のEULAを確認 | 記載なし | 記載なし | [FAQ](https://www.myfonts.com/pages/faq/)・2026-06-18 |
+| Adobe Fonts（英語版FAQ） | 可 | ロゴは可（ロゴに使ったフォント・書体デザインそのものは不可）。アウトライン化した文字を改変した画像も商標登録可 | 画像で渡すならクライアントのライセンス不要。クライアントがフォントで編集するならクライアントもライセンスが必要 | [FAQ](https://helpx.adobe.com/fonts/using/font-licensing.html)・2026-03-27 |
+| Google Fonts | 可 | 記載なし（本文にtrademark 0件） | 記載なし | [FAQ](https://fonts.google.com/faq) |
+| Fontspring Desktop EULA 1.7.0 | 可（1.a：固定サイズ画像とアウトライン化した静的ベクター） | 記載なし | 自社のために働く第三者への一時提供だけ（3.） | [Font Squirrel掲載版](https://www.fontsquirrel.com/license/global)・2017-02-26／[Worry-Free](https://www.fontspring.com/worry-free)＝ロゴを作れないライセンスもある |
+| Hoefler&Co. | EULAに記載なし（FAQ：クライアントに渡すならアウトライン化） | H&Coの商標を侵害しうる商標を登録しない、の制限だけ | クライアント自身がフォントを使うならクライアントが購入（FAQ） | [EULA](https://www.typography.com/policies/eula)・[FAQ](https://www.typography.com/faq/100) |
+| Klim Type Foundry | 可（Authorised Useにlogos and logotypesと明記） | 利用者が作った商標用のオリジナル作品には知的財産条項を適用しない（4.） | 代理店がクライアントのために購入可・規約を守らせる義務（5.） | [Desktop licence](https://klim.co.nz/licences/desktop-fonts/)・2024-12-09／[FAQ](https://klim.co.nz/faqs/) |
+| Grilli Type | 可（3.1にロゴ制作を含む。特別なライセンス不要） | 記載なし | ライセンスをクライアントと共有・移転できない | [EULA](https://www.grillitype.com/eula)・Edition October 2020／[Information](https://www.grillitype.com/information) |
+| Pangram Pangram | 別途 Logo License（2.8：企業ごと・ロゴデザインごと、上限は従業員数） | 記載なし | クライアントのために作るならクライアントが購入（FAQ） | [EULA](https://pangrampangram.com/pages/eula)・[FAQ](https://pangrampangram.com/pages/faq) |
+| Commercial Type | 明記なし（ロゴタイプが主な図柄の販売商品はMerchandise License） | 記載なし | クライアントにフォントのコピーを渡すのは禁止 | [EULA](https://commercialtype.com/eula)・©2023（生成AIサービスでの使用も禁止） |
+| Creative Market | 可（Desktop EULA「Logos」。ディングバットをロゴマークにするのは禁止） | **資料で食い違う**：Desktop EULA（2022-11-14）は記載なし／ヘルプ（2024-05-10）はフォントを商標の一部に使えない／Enterprise EULA（2021-11-15）は主な要素でなければ可・その部分はdisclaimが必要 | 記載なし | [Terms](https://creativemarket.com/licenses/terms/fonts)・[Desktop Font Uses](https://support.creativemarket.com/hc/en-us/articles/360025743894-Desktop-Font-Uses) |
+| Envato Elements | 可（Envatoの素材をそのまま載せた商品化は不可） | 素材そのものへの商標権は主張できないが、素材（フォント含む）で作った文字・デザインへの主張は妨げない（Things you can't do の f.） | **フォントは購読者本人だけ。クライアントに使わせられない**（Fonts and Add-ons の a.）。購読中に作ったロゴは解約後も商用ライセンスが続く（同 f.） | [License](https://help.elements.envato.com/hc/en-us/articles/360000628966-Envato-Elements-License)・2026-09-10 |
+| DaFont | 記載なし（ボタン上のライセンス表示は目安。readmeや作者サイトで確認） | 記載なし | 記載なし | [FAQ](https://www.dafont.com/faq.php)（「100% Free」「Free for personal use」の定義文は無い） |
+| Font Squirrel | 可（「私たちの知る限り」・保証なし・各フォントのライセンスを読む） | 記載なし | 記載なし | [FAQ](https://www.fontsquirrel.com/faq) |
+
+#### F-2 AIの画像・ロゴ生成ツールの規約（英語）
+
+| ツール | 生成物の権利 | 他のユーザーが似た生成物を得るか | ロゴ・商標・第三者の権利 | 出典・更新日 |
+|---|---|---|---|---|
+| OpenAI（英語版） | 出力は利用者のもの（Ownership of content） | **得ることがある**と明記（Similarity of content）。譲渡は他人の出力に及ばない | logo 0件。他人の権利を侵害する使い方は禁止。事業者は第三者の請求についてOpenAIを補償（Indemnity） | [Terms of Use](https://openai.com/policies/terms-of-use/)・Effective January 1, 2026／[Usage Policies](https://openai.com/policies/usage-policies/)・October 29, 2025 |
+| Midjourney | 法律の許す範囲で利用者のもの。年間売上100万ドル超の会社はPro/Megaでないと所有できない。Midjourneyにも入力と生成物の永続ライセンスを与える | 記載なし。生成物は標準で公開され、他人がリミックスできる（Stealthは公開しないよう最善を尽くす） | 他人の著作権・商標を侵害しようとする利用の禁止。利用者がMidjourneyを補償（10.） | [Terms of Service](https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service)・May 27, 2026 |
+| Adobe Firefly | 所有の記載はガイドラインに無い（Adobe General Termsは未取得） | 記載なし | 第三者の著作権・商標を侵害するコンテンツの作成を禁止。例に**商標を生成させるプロンプト**と**他人の著作物を含む参照画像のアップロード**。IP補償は対象の企業プラン（条件あり・beta等は除外） | [Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)・May 15, 2026／[Firefly for business](https://business.adobe.com/products/firefly-business/firefly-ai-approach.html)／[Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-firefly.html)・27 August 2026 |
+| Canva | 出力は利用者のもの。ただしCanvaの素材を改変・組み込んだ出力は除く | **得ることがある**と明記 | Content License Agreement 9.＝素材を商標・ロゴの一部に使うのは禁止（**フォントは除外**）。**ヘルプ：ロゴテンプレートは誰でも使えるので商標登録できない。**登録できるのは、無料の単純な線・図形と全フォントでゼロから作ったロゴか、自作ロゴをアップロードした場合 | [AI Product Terms](https://www.canva.com/policies/ai-product-terms/)・26 June 2026／[Content License Agreement](https://www.canva.com/policies/content-license-agreement/)／[Trademarking logos created on Canva](https://www.canva.com/help/trademarks-logo/) |
+| Looka（AIロゴメーカー） | 購入したロゴは所有できるが、著作権はロゴ全体だけで個々の要素には及ばない | アイコン・フォントは購入後もデータベースから削除しない（他の人も使う） | 商標登録は弁護士に相談するよう案内。ロゴの請求について利用者がLookaを補償 | [Terms](https://looka.com/terms/)・2019-03-29／[所有のヘルプ](https://help.looka.com/en/articles/484949-do-i-own-the-full-copyright-to-my-purchased-logo)・[商標のヘルプ](https://help.looka.com/en/articles/485303-can-i-trademark-my-logo)・2021-09 |
+
+#### F-3 デザイナーの業界団体（英語）：「どこまで似たらだめ」の具体的な基準は、どの団体にも無い
+
+| 団体 | 書かれていること（要約・場所） | 具体的な基準 | 出典・版 |
+|---|---|---|---|
+| AIGA | 他人の財産権を侵害する指示を受けない（2.5・7.4）。copy / plagiar / original の語は0件／AIの声明：AIの役割を開示し、AIで作った派生物が原作者の権利を侵害しないようにする | 無い | [Standards of Professional Practice](https://www.aiga.org/resources/aiga-standards-of-professional-practice)・2010年11月改正／[Statement on AI](https://www.aiga.org/aiga-statement-on-ai) |
+| International Council of Design（ICoD） | 用語集にAPPROPRIATION・PLAGIARISM。他者の知的財産の使い方。AIの倫理的影響に触れる | 無い（大きく改変すれば許容されることが多い、という程度） | [Professional Code of Conduct](https://www.theicod.org/storage/app/media/resources/ICO_Professional_Code_of_Conduct.pdf)・REV 01 SEP 2020 |
+| RGD／GDC／SDGQ（カナダ） | 同意なく他のデザイナーの作品をコピーしない、ライセンスなしで著作物をクライアントに渡さない（7.1） | 無い | [共通の綱領PDF（ICoD掲載）](https://www.theicod.org/storage/app/media/resources/RGD_GDC_SDGQ_Code_of_Ethics.pdf)・2019-11-11（GDC公式サイト版は証明書エラーで未取得） |
+| Chartered Society of Designers（英国） | 他のデザイナーの作品を故意にコピーしない（3.5） | 無い | [Code of Conduct](https://www.csd.org.uk/about/code-of-conduct/) |
+| Graphic Artists Guild | AIの利用で他人の権利を侵害しない・作風や肖像を模倣しない・AI生成を明示してクライアントに伝える | 無い | [Generative AI Ethical Use Guidelines](https://graphicartistsguild.org/general-ai-ethical-use-guidelines/)・2025-10-09公開 |
+
+#### F-4 ロゴのコンペ・受発注サイト
+
+| サイト | 書かれていること（要約・場所） | 出典 |
+|---|---|---|
+| **99designs** | **Originality Policy：参考にするのはよいが結果は独自でなければならず、似たデザインは侵害扱い。ありがちなモチーフ（歯医者に歯）は禁止ではないが、似すぎると複製扱い**（今回の資料で最も具体的な例示）。AI素材を使う場合も同じ／Third-Party Material Policy：ロゴのコンテストでは第三者素材（AIを含む）を使えない。**改変していないフォントをワードマークに使うのは不可、既存の書体を土台にするならライセンスを確認して十分に改変**。AIで作った素材は類似チェックをする／Generative AI in Design Contests：ロゴではAI不可。商標・著作権を望むならAIを許可しないよう推奨 | [Originality Policy](https://support.99designs.com/hc/en-us/articles/204109569-Originality-Policy)／[Third-Party Material Policy](https://support.99designs.com/hc/en-us/articles/204109579-Third-Party-Material-Policy)／[Generative AI in Design Contests](https://support.99designs.com/hc/en-us/articles/29341768376212-Generative-AI-in-Design-Contests)／[1-to-1 Projects](https://support.99designs.com/hc/en-us/articles/29344300999444-Generative-AI-in-1-to-1-Projects) |
+| DesignCrowd | ロゴ・アイコンなどではAI生成は不可／ロゴはユニークなデザインが必要だが、ユニークな書体までは不要。採用前に似た既存デザインが無いか確認を依頼できる | [AIのヘルプ](https://www.designcrowd.com/help/article/can-i-use-ai-generated-designs-in-my-submissions)／[独自性のヘルプ](https://www.designcrowd.com/help/article/are-my-designs-original-and-unique)／[Terms of Use](https://www.designcrowd.com/terms-of-use) |
+| Fiverr | 全カテゴリでAI可（ロゴも例に挙がる）。最終成果物の責任は出品者、手を加えないAI出力はだめ、クライアントが「AIなし」を求めたら従う | [Using AI on Fiverr](https://help.fiverr.com/hc/en-us/articles/34998793899665-Using-AI-on-Fiverr-Guidelines-for-freelancers-and-clients)／[AI services guidelines](https://help.fiverr.com/hc/en-us/articles/17240598194321-AI-services-guidelines) |
+| クラウドワークス | 利用規約（2026年7月14日改定）第18条：第三者の知的財産を使うならワーカーが事前に許可を取り、侵害しないことを保証／第15条第12項：コンペの成果物はサービス内で公開／AI活用ポリシー：AIの利用は禁止せず、発注者と受注者の取り決めに任せる。**AIや「似たデザイン」の記載は規約に無い**（コンペ専用ガイドラインは未特定） | [利用規約](https://crowdworks.jp/pages/agreement)／[AI活用に関するポリシー](https://crowdworks.jp/static/lp/ai_policy/) |
+
+**3Fで言えること（9/15・結論の推測は含めない）**
+・「どこまで似たらだめ」の数値の基準は、英語の業界団体（AIGA・ICoD・カナダ3団体・CSD・Graphic Artists Guild）にも無い。いちばん具体的なのは99designsの「ありがちなモチーフは可、似すぎると複製」<br>
+・英語のフォントも「ロゴに使う」「商標登録」「クライアント」が製品ごとにばらばら。**クライアントのロゴ**の扱いは、Envato＝フォントをクライアントに使わせられない／Grilli Type＝共有不可／Pangram Pangram・Hoefler&Co.＝クライアントが購入／Adobe＝画像で渡すなら不要<br>
+・AIツールは、OpenAIとCanvaが「他のユーザーも似た出力を得ることがある」と明記。Canvaはロゴテンプレートで作ったロゴを商標登録できないと書く。Adobeは他人の作品を参照画像として上げることを禁止の例に挙げる<br>
+・コンペは、99designsとDesignCrowdがロゴでのAIを禁止、Fiverrは許可、クラウドワークスは取り決めに任せる
 
 **ここまでで書けること（9/14更新）**：商標の類否は「外観・称呼・観念で需要者に与える印象を総合し、出所混同のおそれで判断」（特許庁）。AI生成物の侵害は「類似性＋依拠性」で判断し、参考ロゴを渡す方式は依拠性が前提になる。AI生成物が自分の著作物になるかは「創作意図」と「創作的寄与」——詳細な指示や、確認して直しながら試行を重ねることで認められる場合がある（文化庁）。**「一発では出ない・最後は人が詰める」という制作実感が、法律の側でも「創作的寄与」の話として意味を持つ。**
 

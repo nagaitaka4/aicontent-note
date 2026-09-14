@@ -1,6 +1,38 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-14
+最終更新: 2026-09-15
+
+---
+
+## [2026-09-15] 調査結果（デイリー）
+
+**①はClaude Code `2.1.271`が1件出た。Xに採るものは0件。**料金・上限・デフォルトのモデル・提供終了のどれも変わっておらず、手元の環境もまだ`2.1.243`のため。
+
+### Claude Code / Anthropic
+
+- **【新規・記録のみ】Claude Code `2.1.271`**（[npmレジストリ](https://registry.npmjs.org/@anthropic-ai/claude-code)の`time`・[CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)。**本日CCがcurlで直接取得**）
+  - 公開＝`2026-09-14T19:45:19.456Z`（**日本時間 9/15 04:45**）。`dist-tags`は`latest: 2.1.271`／`next: 2.1.271`／`stable: 2.1.236`。**`2.1.270`（9/13 03:52）から約2日ぶり**
+  - 主な追加（verbatim抜粋）：
+    - `Added fast mode in Claude Code Remote sessions (cloud and self-hosted runners)`（**組織が許可している場合のみ**）
+    - `Added per-command ``allowed_domains`` to Bash, PowerShell and Monitor in auto mode with sandboxing`（**サンドボックス有効時のauto modeが対象**）
+    - `Added ``omitClaudeMd`` to agent frontmatter and ``--agents`` JSON, letting custom and plugin subagents run without user, project and local CLAUDE.md files`
+    - `Improved dynamic workflows to pause when you hit your usage limit and continue automatically when it resets, instead of dropping the affected agents`
+  - 主な修正：Bashの許可チェックの抜け3件（`fmt`・`column`が読むファイル／ワイルドカード展開／変数宣言フラグ）、`permissions.blockReadsOutsideWorkingDirectories`設定時に`cd`+`git`などが確認を飛ばしていた件、`--resume`で`[1m]`（100万トークンのコンテキスト）が外れる件、`/resume`・`/teleport`が前の会話のファイル読み取り記録を持ち越す件
+  - **使う側への影響**：自動モードに関わる変更は**「サンドボックス有効時」「`blockReadsOutsideWorkingDirectories`設定時」の条件つき**。この環境で確認が増えるか・減るかは**未確認**（手元が`2.1.243`＝本日`claude --version`で確認）
+  - **採らない理由**：採用基準の「使う側の何かが変わる（料金・制限・既定モデル・提供終了・使える範囲）」に当たる項目が無い。修正と組織向けの追加が中心。**`PERM-01`（許可設定）は9/10に投稿済み**で、今回の許可チェック修正で手元の件数が変わったという実測も無い
+  - **再利用条件**：手元を`2.1.271`以上に上げ、自分の許可設定で確認の回数が変わった（または「使用量の上限でワークフローが止まらず再開した」）実測が出た日
+- **`research-20260912-01`（`claude plugin eval`）は本日9/15が期限の最終日**。手元が`2.1.243`のままで未実行（要`2.1.269`以上）
+- **【差分なし】Anthropic Newsroom**（[anthropic.com/news](https://www.anthropic.com/news)・curl）：最新は**9/10付**のまま
+- **【差分なし】Claude Apps リリースノート**（[support.claude.com Release notes](https://support.claude.com/en/articles/12138966-release-notes)・curl）：最新は**September 10, 2026**のまま
+- **【差分なし】Claude Platform リリースノート**（[docs.claude.com/en/release-notes/overview](https://docs.claude.com/en/release-notes/overview)・curl）：最新は**September 10, 2026**のまま
+- WebSearch（9/15のAnthropic発表）：公式の新規発表は見つからなかった。検索結果の「週次上限が9/14に17%減」は9/14記録済みの二次情報の計算で、公式の表現ではない
+- **本日は未確認**：@ClaudeDevs／Pricing・プラン別ヘルプ／Claude Academy（次のフル版は9/18(金) 12:00）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**
+- **`queue.md`への投入：0本**（①からの候補なし）
+- **巡回チェック**：①CHANGELOG ✅ ②npm`time` ✅ ④Claude Apps ✅（curl）⑤Claude Platform ✅（curl）⑥Newsroom ✅（curl）／ ③@ClaudeDevs ⑦Pricing ⑧Academy ⏭（本日未確認）
 
 ---
 

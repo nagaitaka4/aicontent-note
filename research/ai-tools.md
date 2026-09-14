@@ -1,6 +1,38 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-14
+最終更新: 2026-09-15
+
+---
+
+## [2026-09-15] 調査結果（デイリー）
+
+**②はChatGPTリリースノートに9/14付が1件。Xに採るものは0件。**
+
+### ChatGPT / OpenAI
+
+- **【新規・記録のみ】ChatGPTのHealth（健康データの連携）の許可のデフォルトが変わった**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・**本日CCが実Chromeで直接開いて確認**・表示は`Updated: 5 時間前`）
+  - 見出し：**September 14, 2026**`Updated permissions for new Health connections`
+  - verbatim：`For new Health plugin connections, ChatGPT will now default to each user’s global plugins permissions setting.` ／ `If you make no changes to your Plugins settings, the default permission setting is “Allow low-risk actions.”` ／ `more than 70% of Health users already choose to allow ChatGPT to use data connected in Health without asking for permission each time.`
+  - 対象は**新しくHealthを接続する場合**。変更場所は`Settings → Plugins → Health`
+  - ⚠️ **日本でHealthが使えるかは確認していない**（リリースノートに地域の記載なし・他のページは開いていない）
+  - **採らない理由**：健康データの連携はこのメディアのコンテンツ運用で使わず、手元で何も変わらない。「許可を毎回聞かない人が7割」は`research-20260814-01`（Claude Codeの許可プロンプト97%承認）と似た形だが、**題材が健康データで読者の実務に落ちない**
+- **【差分なし】OpenAIニュース面**（[openai.com/news](https://openai.com/news/)・実Chrome）：最新は**2026年9月11日**`Rapidly scaling online storage to serve over 1 billion ChatGPT users`のまま
+
+### Gemini / Google
+
+- **【差分なし】Geminiアプリ リリースノート**（[gemini.google/release-notes](https://gemini.google/release-notes/)・curl）：最新は**2026.09.10**のまま
+- **【差分なし】Gemini API 変更履歴**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)・curl）：最新は**September 3, 2026**のまま
+- WebSearch（ChatGPT・Geminiの料金・機能の変更）：出てきたのは記録済みの内容（無料の無制限化・Gemini 3.8 Flashの料金など）だけ
+
+### 国産AIライティングツール
+
+- **本日は未確認**（デイリーは2領域のみ・国産4社は9/18(金) 12:00のフル版の担当）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**
+- **`queue.md`への投入：0本**（②からの候補なし）
+- **巡回チェック**：ChatGPTリリースノート ✅（実Chrome）／OpenAIニュース面 ✅（実Chrome）／Geminiアプリ ✅（curl）／Gemini API ✅（curl）／国産4社 ⏭（フル版の担当）
 
 ---
 

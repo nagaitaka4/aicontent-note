@@ -1,6 +1,34 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-09-11
+最終更新: 2026-09-14
+
+---
+
+## [2026-09-14] 調査結果（定期リサーチ・12:00のフル版）
+
+**③はGoogle側の順位変動なし。新しく記録するものは無い。**自サイトのGSC（直近3か月）は`operations/site-status.md` 2026-09-14に記録した。
+
+### Google / Search Console
+
+- **【差分なし】コアアップデート・スパムアップデートの新規アナウンスなし**（[Google Search Status Dashboard](https://status.search.google.com/summary)・WebFetchの要約）：直近は**8/18開始の2026年8月スパムアップデート（2日16時間）**のまま、9月の新規は0件
+- **【差分なし】Search Central Blog**（[developers.google.com/search/blog](https://developers.google.com/search/blog)）：9月は`Search Central Live is coming to Bogota and Ciudad de México`の1件のまま
+- **【記録のみ】鈴木謙一氏のSEO Weekly Update（9/14）**（[原文](https://www.suzukikenichi.com/blog/seo-weekly-update-september-2026-week2/)・WebFetchの要約）：ランキング要因の専門家アンケート（9/11に記録済み）／プログラマティックSEOへの再警告（9/11に記録済み）／**「従来の検索順位1〜10位は把握しにくい」というGoogleの発言**。⚠️ **最後の1件は原典を開いておらず、発言者・文脈とも未確認**。事実として書かない
+- **【記録のみ・採らない】Googleアナリティクスの新ダッシュボード機能**（[鈴木謙一氏・9/14](https://www.suzukikenichi.com/blog/see-key-metrics-at-a-glance-with-the-new-google-analytics-dashboards/)）：このメディアの判断はGSCの数字で行っており、手元の作業は変わらない
+
+### 調査会社のブログ
+
+- **Semrush**（[semrush.com/blog](https://www.semrush.com/blog/)・WebFetchの要約）：9/11以降の新着は**9/11 `What is zero-click marketing? How to execute and measure it`**（Carlos Silva・ガイド）の1件。**採らない**（製品前提のガイドで一次データではない）
+- **Ahrefs**（[ahrefs.com/blog](https://ahrefs.com/blog/)）：**8/28以降の新着0件（4回連続）**
+
+### 自サイトのGSC（直近3か月・実Chromeで全件取得）
+
+- **インデックス未登録系のクエリが増え続けている**：`インデックス未登録`109→**123**・`クロール済み – インデックス未登録`105→**114**・`検出 - インデックス未登録`98→**113**（9/11→9/14）。受け皿のno.57は0クリック／**401表示**／68.8位。**9/17の判定材料**
+- **no.56が24→26クリック**（235表示・6.7位）。`chatgpt work claude code`は10表示・2クリック・3.5位
+
+### 記事側への影響
+
+- **訂正が必要な記事：なし**
+- **M-12の保留は継続**（Peec AI・Nectivの原典は本日も未特定）
 
 ---
 

@@ -4,6 +4,30 @@
 
 ---
 
+## [2026-09-14] 調査結果（定期リサーチ・12:00のフル版）
+
+**①は差分なし。デイリー（08時台）が「未確認」で残した3面（@ClaudeDevs・Pricing／プラン別ヘルプ・Claude Academy）をフル版で開いて埋めた。採用は0件。**
+
+### Claude Code / Anthropic
+
+- **【✅ デイリーの「未確認」を埋めた・差分なし】@ClaudeDevs**（[x.com/ClaudeDevs](https://x.com/ClaudeDevs)・**本日CCが実Chromeで直接開いて確認**）
+  - 最新は**日本時間 9/12 06:11**（`2026-09-11T21:11:43Z`）の`Join a Fable 5.1 Build Day near you!`（@claudeaiの引用。コミュニティ主催のビルドイベントが9/11〜9/25に各都市で開催）。その前が9/12 05:28のClaude Tagのオンコール活用例、9/12 04:56の`New in Claude Code: claude plugin eval`（9/12のデイリーがCHANGELOGで記録済み）
+  - **9/12 06:11以降〜9/14昼まで新規0件。**本日9/14から効く週次上限の変更（標準+25%）について、追加の告知は無い
+  - **採らない理由**：イベント告知と他社向けの活用例。使う側の何も変わらない
+- **【差分なし】CHANGELOG・npm**（12時台にcurlで再確認）：`latest`・`next`とも`2.1.270`（`2026-09-12T18:52:44.937Z`）、`modified`は`2026-09-12T19:45:49Z`。この環境は`2.1.243`のまま（`claude --version`）
+- **【差分なし】Claude Apps リリースノート**（curl）：最新は**September 10, 2026**の`Smart reports (beta)`のまま
+- **【差分なし】Claude Platform リリースノート**（curl）：最新は**September 10, 2026**のまま
+- **【差分なし】Anthropic Newsroom**（curl）：最新は9/10付のまま
+- **【確認・記録のみ】Pricing／プラン別ヘルプ**（[Use Claude Code with your Pro or Max plan](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)・WebFetch）：表示は`Updated over 3 weeks ago`。**要約を読んだ範囲では、週次上限・25%・9/14の記述は無かった**（⚠️ 原文の全文検索はしていない）。**9/14からの変更の出典は、引き続き@ClaudeDevsの8/30告知だけ**
+- **【差分なし】Claude Academy**（[academy.claude.com](https://academy.claude.com/)・WebFetch）：コース3本のまま（`AI Fluency: Framework & Foundations`14レッスン・4時間／`AI Capabilities and Limitations`13レッスン・3.5時間／`Building Effective Human Agent Teams (Beta)`5レッスン・45分）。取得した本文にウェビナー欄は出てこない（9/11と同じ）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**
+- **巡回チェック（8面）**：①CHANGELOG ✅ ②npm`time` ✅ ③@ClaudeDevs ✅（実Chrome） ④Claude Apps ✅ ⑤Claude Platform ✅ ⑥Newsroom ✅ ⑦Pricing ✅（WebFetch） ⑧Academy ✅（WebFetch）
+
+---
+
 ## [2026-09-14] 調査結果（デイリー）
 
 **①は差分なし。**`2.1.270`（9/13記録済み）以降の新しい版は出ていない。**Xに採るものは0件。**本日9/14は**週次上限の変更が効き始める日**だが、発表（8/30）は記録済みで、Xでも9/1の`LIMIT-気`と9/12のリプライ（@k_matsumaru）で使い済み。

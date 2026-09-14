@@ -4,6 +4,39 @@
 
 ---
 
+## [2026-09-14] 調査結果（定期リサーチ・12:00のフル版）
+
+**②は差分なし（3日連続）。**OpenAIのニュース面とChatGPTリリースノートは実Chromeで開き直した。国産4社も価格・お知らせに変化なし。**採用は0件。**
+
+### ChatGPT / OpenAI
+
+- **【差分なし】OpenAIニュース面**（[openai.com/news](https://openai.com/news/)・**本日CCが実Chromeで直接開いて確認**）：最新は**2026年9月11日**`Rapidly scaling online storage to serve over 1 billion ChatGPT users`のまま。9/8〜9/11の9件はすべて記録済み
+- **【差分なし】ChatGPT リリースノート**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome）：表示は`Updated: 3 日前`、最新は**September 10, 2026**（Dataプラグイン／ライブラリにBox・Dropbox・SharePoint）のまま
+- **【記録のみ・Xは採らない】ヘルプセンター上部に障害のお知らせが出ていた**（9/14 12時台に実Chromeで表示を確認）：verbatim `Elevated error rates for Codex and ChatGPT Work` ／ `We are investigating an issue affecting our services.`
+  - ⚠️ **開始時刻・影響範囲・復旧はステータスページを開いていないので未確認**
+  - **採らない理由**：このメディアで本日ChatGPT Workを使った作業の記録が無く、手元で何が止まったかを書けない（③が立たない）。一時的な障害で、翌日には前提が変わる
+
+### Gemini / Google
+
+- **【差分なし】Gemini API 変更履歴**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)・curl）：最新は**September 3, 2026**（`lyria-3.5`パブリックプレビュー）のまま
+- **Geminiアプリ リリースノート**：本日08時台のデイリーの記録（2026.09.10のWindowsアプリが最新）を採用
+
+### 国産AIライティングツール
+
+- **EmmaTools**（[emma.tools](https://emma.tools/)・curlで日付を抽出）：お知らせの最新は**2026年9月10日**（9/11に記録したユーザーコミュニティの開催レポート）のまま。機能リリースの最新も8/17の「AI Overviewチェック」のまま
+- **Transcope**（[transcope.io](https://transcope.io/)・curl）：**Free ¥0／Basic ¥11,000／Pro ¥38,500／Enterprise ¥66,000**で8/31・9/4の記録と一致。**9/11に「料金未取得」だった分を埋めた**
+- **Catchy**（[lp.ai-copywriter.jp](https://lp.ai-copywriter.jp/)・WebFetchの要約）：Free ¥0／Starter ¥3,000〜¥8,100／Pro ¥9,800／Enterprise要問い合わせ、`会員数 90,000人突破`。9/11の記録と一致
+- **SAKUBUN**：本日は開いていない（9/11に「金額は掲載されていない」を確認済み。料金ページの数字が変わったときだけ拾う方式）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**
+- **`ideas.md`の期限切れ3件を閉じた**（`research-20260911-02` Astra／`-20260910-01` Voice／`-20260909-01` Images 2.5。再利用条件は各行に記載）
+- **🔔 `research-20260831-03`（OpenAIがCursorへの提供を11/12で打ち切る）**：解除条件「直近5投稿のChatGPT／OpenAI題材が2本以下」は**成立したまま**（直近5投稿のChatGPT／OpenAI題材は0本）。在庫36本で基準を上げているため下書きにしない。判断はX編集部
+- **巡回チェック**：OpenAIニュース面 ✅（実Chrome）／ChatGPTリリースノート ✅（実Chrome）／Gemini API ✅（curl）／Geminiアプリ ⏭（デイリーの記録を採用）／国産4社 ✅（SAKUBUNのみ未開封）
+
+---
+
 ## [2026-09-14] 調査結果（デイリー）
 
 **②は差分なし（2日連続）。**ChatGPT・OpenAI・Gemini（アプリ／API）の4面とも、9/13のデイリーの記録から新規エントリは無かった。

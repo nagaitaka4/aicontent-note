@@ -135,7 +135,7 @@ precheck: `python3 operations/article-precheck.py logo-plagiarism-how-far-ai-cop
 → このH2の後に末尾CTA
 ```
 
-見出しの字数（実測）：H2①38字（「所」に変えて36字）・H2②33字・H2③25字・H2④24字・H2⑤23字
+見出しの字数（実測）：H2①35字・H2②33字・H2③25字・H2④24字・H2⑤23字
 
 ## H2②の当てはめ表（見本Aと比べて・作例の画像を9/15にCCが確認）
 

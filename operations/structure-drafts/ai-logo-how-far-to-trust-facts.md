@@ -223,6 +223,59 @@
 ・有名ブランド：famous markは、混同も競合も無くても希釈化（dilution）を理由に差止めを求められる。商標の審査・判断でも、有名さは業種の近さと別に重く見られる<br>
 ・見る機会（access）：作品がウェブサイトに載っているだけでは広く流通したことにならず、SNSの投稿も「そのアルゴリズムで相手が見た合理的な可能性」まで示す必要がある（2025年の第9巡回区判決）
 
+### 3S. 規模と頻度の統計（2026-09-15 13時台取得・閲覧日9/15）
+
+> 読者の疑問リスト 第2版の V3・V5〜V8・V15〜V18・V22・V41・V47 に答える材料（ユーザー 13:13「ほとんどないのか、よくあることなのかの程度を一番知りたい」）。**確率そのものの公的統計は無い。**同じ年でそろえた件数を並べて規模だけ示す（割り算して確率にしない）。日本の統計は取得中（S-J）。
+
+#### 米国（FY2025＝2024年10月1日〜2025年9月30日）
+
+| # | 項目 | 数字 | 定義 | 出典 |
+|---|---|---|---|---|
+| SU-1 | 有効な登録の総数 | **3,532,267** | Total Active Certificates of Registration（年度末・登録の件数で区分数ではない） | [USPTO FY2025 Workload Tables](https://www.uspto.gov/sites/default/files/documents/USPTOFY25WorkloadTables.xlsx) Table 15 |
+| SU-2 | 年間の出願 | **622,905件**（区分で数えると824,192） | Applications Filed ／ Applications Including Additional Classes。注1：`There are, however, 47 different classes of items in which a trademark may be registered.` | 同 Table 15・[FY2025 AFR](https://www.uspto.gov/sites/default/files/documents/USPTOFY2025AFR.pdf) PDF p.27 |
+| SU-3 | 出願から一次審査まで | **平均5.6か月**（総審査期間11.7か月・中断等を除く） | Between Filing and Examiner's First Action | 同 Table 15・AFR PDF p.2 |
+| SU-4 | 審査待ちの出願 | 904,714件（年度末） | Table 17 | 同 |
+| SU-5 | 連邦地裁に起こされた商標訴訟 | **4,217件**（前年3,363） | その年に新しく起こされた民事事件で、種類がTrademarkのもの（侵害訴訟に限らない） | [U.S. Courts Judicial Business 2025 Table C-2](https://www.uscourts.gov/data-news/data-tables/2025/09/30/judicial-business/c-2)（2025年9月30日までの12か月） |
+| SU-6 | 連邦地裁に起こされた著作権訴訟 | **7,933件**（前年7,250） | 同上・Copyright（ロゴに限らない） | 同 |
+| SU-7 | TTABの異議の申立 | **7,650件** | Oppositions filed | [USPTO TTAB Incoming Filings](https://www.uspto.gov/trademarks/ttab/ttab-incoming-filings-and-performance)（2026-07-08更新）・Table 23 |
+| SU-8 | TTABの取消の申立 | **2,897件** | Cancellations filed | 同 |
+| SU-9 | 異議のうち、口頭審理や書面提出の前に終わったもの | 処理7,298件のうち7,167件 | Table 23 | Workload Tables Table 23 |
+
+・解説ページ（Judicial Business 2025）の商標訴訟4,211件は「連邦問題」の列の数字で、C-2の合計4,217とは違う。記事ではC-2の4,217にそろえる
+
+#### 警告（cease-and-desist letter）の頻度：公的な件数は無い
+
+[USPTO「Report to Congress: Trademark Litigation Tactics and Federal Government Services to Protect Trademarks and Prevent Counterfeiting」](https://www.uspto.gov/sites/default/files/trademarks/notices/TrademarkLitigationStudy.pdf)（2011年4月・米国連邦政府の文書なので原文）
+
+・PDF p.19：`the number of trademark-related cease-and-desist letters sent by mark owners is not publicly available. Nor are there reliable statistics on the size of the entities sending and receiving such letters or the number or percent that result in termination of use of the challenged mark.`<br>
+・同：`Given the limited data available, it is extremely difficult to determine the extent to which trademark owners may be purposefully overreaching when enforcing their rights`<br>
+・同：`historically only approximately 1.5% of all trademark cases filed ever reach trial and the majority are disposed of before a case reaches the pretrial phase.`（脚注49：U.S. Courts Table C-4・2001〜2010年）<br>
+・PDF p.22：`With respect to cease-and-desist letters, many of the comments acknowledged regular use of these letters in the trademark field.`（意見募集79件の内容。同ページ：`the comments may be better viewed as anecdotal.`）<br>
+・PDF p.23：`most are sent in good faith, and only a small percentage result from overzealous protection of a mark.`（**意見を寄せた人の見方で、USPTOの結論ではない**）<br>
+・PDF p.30：`it is unclear whether small businesses are disproportionately harmed by enforcement tactics that are based on an unreasonable interpretation of the scope of an owner's rights.`<br>
+・ほかの米国機関（FTCなど）で件数・頻度に触れた文は見つからなかった
+
+#### 世界・EU（WIPO・EUIPOは要約）
+
+| # | 項目 | 数字 | 出典 |
+|---|---|---|---|
+| SW-1 | 世界の有効な商標登録の総数（2024年） | **約9,320万件**（155の知財庁・WIPOの推計・件数） | [WIPO World Intellectual Property Indicators 2025](https://www.wipo.int/edocs/pubdocs/en/wipo-pub-941-17-2025-en-world-intellectual-property-indicators-2025.pdf) PDF p.81・図B34 |
+| SW-2 | 世界の商標出願（2024年） | 約1,170万件（区分で数えると15,228,300） | 同 PDF p.71・p.9 |
+| SW-3 | 日本特許庁の有効な登録の総数（2024年） | **2,274,229件**（前年から+49,864） | 同 図B35（PDF p.99）・表B45 |
+| SW-4 | 日本特許庁の出願（区分で数える・2024年） | 313,678 | 同 表B44（PDF p.104） |
+| SW-5 | 日本特許庁の第三者からの異議（2024年） | **268件** | 同 図B42（PDF p.102） |
+| SW-6 | 米国の有効な登録の総数・異議（WIPOの2024年の数字） | 3,578,850件・7,533件（USPTOの年度の数字と期間・定義が違うので混ぜない） | 同 図B35・図B42 |
+| SW-7 | 2000年に登録された商標のうち、2024年も有効なもの | 24.5%（86の知財庁の集計・中国と日本の内訳は含まない） | 同 図B36（PDF p.100） |
+| SW-8 | WIPO Global Brand Database の収録件数 | 2023年11月末で約6,300万件・70の知財庁（現在の件数は収録範囲のページがボット判定で取れず）。有効な登録の数とは別物 | [CWS/11 発表資料](https://www.wipo.int/edocs/mdocs/cws/en/cws_11/cws_11_9a_ib_cm.pdf) PDF p.3 |
+| SE-1 | EU商標の出願・登録・異議（2025年） | 出願196,991／登録172,060／異議の受付18,822／異議の終了18,647のうち庁の判断7,513・判断に至らず終了11,134（2026年8月までの統計PDF） | [EUIPO Statistics for EUTMs](https://euipo.europa.eu/tunnel-web/secure/webdav/guest/document_library/contentPdfs/about_euipo/the_office/statistics-of-european-union-trade-marks_en.pdf) 2.1・4.1・4.2・5.1節 |
+| SE-2 | EU商標の異議の割合 | 公式ページに `1 in 5 applications for EU trade marks are opposed.`（年・計算の元の記載なし） | [EUIPO Opposition](https://www.euipo.europa.eu/en/trade-marks/after-applying/opposition) |
+
+**3S（米国・世界）で言えること（割り算はしない）**
+・米国は有効な登録が約353万件あり、1年に約62万件の出願がある。同じ年度に連邦地裁に起こされた商標訴訟は4,217件、異議の申立は7,650件<br>
+・警告の件数は、米国の公的機関も持っていない（USPTO 2011年報告書）。「どのくらいの割合のロゴが警告を受けるか」を示す公的統計は無い<br>
+・訴訟になっても、裁判（trial）まで進むのは約1.5%で、多くはその前に終わる（同報告書・2001〜2010年のデータ）<br>
+・日本特許庁の有効な登録は約227万件（2024年）、第三者からの異議は268件（WIPOの集計）
+
 **ここまでで書けること（9/14更新）**：商標の類否は「外観・称呼・観念で需要者に与える印象を総合し、出所混同のおそれで判断」（特許庁）。AI生成物の侵害は「類似性＋依拠性」で判断し、参考ロゴを渡す方式は依拠性が前提になる。AI生成物が自分の著作物になるかは「創作意図」と「創作的寄与」——詳細な指示や、確認して直しながら試行を重ねることで認められる場合がある（文化庁）。**「一発では出ない・最後は人が詰める」という制作実感が、法律の側でも「創作的寄与」の話として意味を持つ。**
 
 **9/12時点の整理**：フォントは「ロゴに使える」がほぼ共通、「商標登録できるか」はメーカー・製品・プランで違う（Adobe・Google・Morisawa Fontsは可、タイプバンク製品は不可）。書体そのものは原則著作物でない（ゴナU）。AIの出力は「自分のもの」だが「他人も同じものを受け取り得る」（OpenAI）。**残る2つ（商標の類否・文化庁の考え方）が「似ている」の線に直結する**ので、執筆前に取る。

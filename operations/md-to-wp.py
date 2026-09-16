@@ -218,8 +218,11 @@ def image_block(alt, url, caption=None):
         return None
     if not caption:
         print("  ⚠️ 画像にキャプションがない: %s（何の画面か分からない）" % url, file=sys.stderr)
+    # キャプションは左揃え（2026-09-16・no.68でユーザー指示）。
+    # SWELLの既定は中央寄せで、2行以上のキャプションが読みにくい。
     cap = (
-        '<figcaption class="wp-element-caption">%s</figcaption>' % inline(caption)
+        '<figcaption class="wp-element-caption" style="text-align:left">%s</figcaption>'
+        % inline(caption)
         if caption
         else ""
     )

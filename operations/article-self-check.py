@@ -13,7 +13,7 @@ import re
 import sys
 import itertools
 import difflib
-from constraints import T
+from constraints import T, VAGUE_NOUN_RE
 from collections import Counter
 
 # 2026-08-19追加：動作を抽象名詞に畳む構文（no.59でユーザー指摘）。
@@ -383,6 +383,21 @@ def main(path):
         "／".join(intro_reasons) if intro_reasons else f"{intro_sents}文/{len(intro_plain)}字/1文目{len(first_sent)}字",
     ):
         print(f"   1文目: {first_sent}")
+        failures += 1
+
+    # --- 「何の◯◯か」が抜けた抽象名詞（2026-09-16新設）---
+    # 「明確なライン」のように、な形容動詞＋抽象名詞だけで書くと何の線か伝わらない。
+    # 目立つ場所（タイトル・説明文・リード1文目・見出し）だけを見る。公開65本ではヒット0件。
+    print("\n--- 「何の◯◯か」が抜けた抽象名詞チェック（タイトル・説明文・リード1文目・見出し） ---")
+    vague_targets = [("タイトル", title), ("説明文", desc), ("リード1文目", first_sent)]
+    vague_targets += [("見出し", h) for h in re.findall(r"^#{2,3} .*$", body, re.M)]
+    vague_hits = []
+    for kind, text in vague_targets:
+        plain = strip_decoration(re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text or ""))
+        for m in re.finditer(VAGUE_NOUN_RE, plain):
+            vague_hits.append(f"{kind}「{plain[max(0, m.start() - 6):m.end() + 4]}」")
+    if not report("「何の◯◯か」が抜けた抽象名詞がない", not vague_hits, "／".join(vague_hits)):
+        print("   → 何の線・何の基準かを付ける（例：どこまで似たらパクリかの線）")
         failures += 1
 
     # --- 段落の長さチェック（リード文だけでなく本文中の全段落が対象。2026-07-31〜）---

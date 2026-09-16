@@ -233,6 +233,11 @@ CCはMDのマーカー4個のまま全文差し替えを繰り返しており、
 2. **同スラッグの記事がすでにないか確認する**（`/wp-json/wp/v2/posts?slug=...&status=any`）。二重作成の防止
 3. タグを解決する（`/wp-json/wp/v2/tags?search=`）。無ければ`POST /wp/v2/tags`で作る
 4. 本文をbase64にして2回に分けて`window`変数へ積み、ページ側で復元する（1回のJS呼び出しに入りきらない）
+   ⚠️ **本文の切り出しは「入稿情報の段落ブロックの直後」から取る**（2026-09-16・no.68で事故）。
+   `md-to-wp.py`の出力は〈入稿情報の段落 → **H1直下のリード段落** → 区切り線 → 最初のH2〉の順。
+   **最初の`wp:separator`で切ると、リードが丸ごと落ちて、アイキャッチの下がいきなりH2になる。**
+   リードにはマーカーが入るので、**マーカーの数（MDの`==`の数）を数えれば検知できる**。
+   送ったあとは、`getBlocks()`の先頭が`core/paragraph`であることも見る
 5. `POST /wp-json/wp/v2/posts`で**`status:'draft'`**として作る（タイトル・スラッグ・本文・カテゴリー・タグ）
 6. アイキャッチを`media-new.php`のfile inputへ流し込む → `POST /wp/v2/media/<id>`でalt → `POST /wp/v2/posts/<id> {featured_media}`
 7. **SEO SIMPLE PACKの説明文はRESTでは入らない。**エディターを開き、

@@ -65,8 +65,8 @@ eyecatch: eyecatch_0068.png
 ・AIで作った部分。人の創作意図と創作的寄与があれば著作物になりうる<br>
 ・ただしアイデアを示すだけの指示は、創作的寄与にならない（文化庁）
 
-AIで作ったロゴも、商標登録を受けられます。
-AIで作ったこと自体は、登録を妨げる理由になりません（[特許庁の審議会資料](https://www.jpo.go.jp/resources/shingikai/sangyo-kouzou/shousai/shohyo_shoi/document/t_mark_paper12new/02.pdf)）。
+特許庁の[審議会資料](https://www.jpo.go.jp/resources/shingikai/sangyo-kouzou/shousai/shohyo_shoi/document/t_mark_paper12new/02.pdf)は、AIで作ったかどうかを区別していません。
+拒絶理由に当たらなければ登録を受けられる、という整理です。
 これは議論用の資料で、確定した審査基準ではありません。
 
 ## 商標で「問われる」と何が起きる？出願の審査・警告・有名ブランド
@@ -182,7 +182,7 @@ AIで作ったこと自体は、登録を妨げる理由になりません（[�
 ・⑤ 登録していないロゴも、同じか関連する商品やサービスでの使用をネットで探す
 
 ⑤を見るのは、周知な表示と紛らわしい使い方が、不正競争防止法で止められるためです（第2条第1項第1号）。
-先使用権も、実際に使われているかで決まります。
+先使用権が関わるのも、実際に使われているロゴです（要件は前の見出しのとおり）。
 
 画像そのもので探したいときは、[WIPOのGlobal Brand Database](https://www.wipo.int/en/web/global-brand-database)が無料で使えます。
 ロゴ画像を上げて、形やカラーで探せます。
@@ -204,7 +204,7 @@ J-PlatPatの検索結果も、登録を保証するものではありません�
 ・見つかったロゴと自分のロゴを、商標の4つの見方で並べる<br>
 ・調べ方や結果の見方は、[知財総合支援窓口](https://chizai-portal.inpit.go.jp/about/)に相談できる（全国47都道府県、無料）
 
-### 出願して、拒絶されたとき
+### 出願して、似た登録商標を理由に拒絶されたとき
 
 ・先の権利者の承諾があり、混同のおそれが無ければ登録できる（コンセント制度、2024年4月から）<br>
 ・同じ商標で、商品やサービスも同じ場合には使えない（[特許庁](https://www.jpo.go.jp/system/trademark/gaiyo/consent/consent_qa.html)）
@@ -242,7 +242,7 @@ J-PlatPatの検索結果も、登録を保証するものではありません�
 ・ロゴでのAIは、[99designs](https://support.99designs.com/hc/en-us/articles/29341768376212-Generative-AI-in-Design-Contests)が禁止、[Fiverr](https://help.fiverr.com/hc/en-us/articles/34998793899665-Using-AI-on-Fiverr-Guidelines-for-freelancers-and-clients)は許可、[クラウドワークス](https://crowdworks.jp/static/lp/ai_policy/)は取り決めに任せる
 
 規約で生成物の権利を受け取っても、他人の似た生成物には及びません（OpenAI）。
-独占して使いたいなら商標登録ですが、守られるのは登録した商品・サービスの範囲です。
+商標登録で専有できるのは、登録した商品やサービスの範囲です（商標法 第25条）。
 
 ---
 

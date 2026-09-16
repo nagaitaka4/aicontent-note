@@ -218,11 +218,11 @@ def image_block(alt, url, caption=None):
         return None
     if not caption:
         print("  ⚠️ 画像にキャプションがない: %s（何の画面か分からない）" % url, file=sys.stderr)
-    # キャプションは左揃え（2026-09-16・no.68でユーザー指示）。
-    # SWELLの既定は中央寄せで、2行以上のキャプションが読みにくい。
+    # ⚠️ figcaptionに属性を足すとブロックが「無効なコンテンツ」になる（2026-09-16・no.68で発生）。
+    # 画像ブロックのcaptionはfigcaptionのinnerHTMLだけを見るため、styleやclassの追加で検証が落ちる。
+    # キャプションの左揃えはCSS側（投稿ごとのカスタムCSS）で行う。
     cap = (
-        '<figcaption class="wp-element-caption" style="text-align:left">%s</figcaption>'
-        % inline(caption)
+        '<figcaption class="wp-element-caption">%s</figcaption>' % inline(caption)
         if caption
         else ""
     )

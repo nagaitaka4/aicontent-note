@@ -13,7 +13,7 @@ import re
 import sys
 import itertools
 import difflib
-from constraints import T, VAGUE_NOUN_RE
+from constraints import T, VAGUE_NOUN_RE, SOURCE_ONLY_RE
 from collections import Counter
 
 # 2026-08-19追加：動作を抽象名詞に畳む構文（no.59でユーザー指摘）。
@@ -399,6 +399,25 @@ def main(path):
     if not report("「何の◯◯か」が抜けた抽象名詞がない", not vague_hits, "／".join(vague_hits)):
         print("   → 何の線・何の基準かを付ける（例：どこまで似たらパクリかの線）")
         failures += 1
+
+    # --- 資料の紹介で終わっている行（2026-09-16追加）---
+    # no.68のH2⑥で「OpenAIとCanvaは〜と書いている」のように、資料が何と言ったかだけで終わる行が並び、
+    # 「それで自分は何を気にすればいいのか」が読み取れないと指摘された。NGにはしない（要確認）。
+    print("\n--- 資料の紹介で終わっていないかチェック（要確認・NGにはしない） ---")
+    source_only = []
+    for line in body.split("\n"):
+        text = strip_decoration(re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line)).strip()
+        text = re.sub(r"<br>$", "", text).strip()
+        if not text or text.startswith(("|", "#", "!")):
+            continue
+        if re.search(SOURCE_ONLY_RE, text.rstrip("。")):
+            source_only.append(text[:48])
+    if source_only:
+        print(f"[要確認] 資料の紹介で終わる行が{len(source_only)}件（読み手に何が起きるかまで書く）")
+        for t in source_only:
+            print(f"   {t}")
+    else:
+        print("[OK] 資料の紹介で終わる行がない")
 
     # --- 段落の長さチェック（リード文だけでなく本文中の全段落が対象。2026-07-31〜）---
     # 従来のリード文チェックは「最初のブロック/箇条書きが出るまで」しか見ておらず、

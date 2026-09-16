@@ -23,8 +23,8 @@ eyecatch: eyecatch_0068.png
 ## ロゴのパクリはどこまで？数値の線は無く、著作権と商標で見る所が違う
 
 **「何％似たらアウト」という数値の基準はありません**。
-[特許庁の審査基準](https://www.jpo.go.jp/system/laws/rule/guideline/trademark/kijun/document/index/20_4-1-11.pdf)は、見た目・読み・イメージをまとめて見る、としています。
-[文化庁](https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/pdf/94037901_01.pdf)も、最後は裁判所が1件ずつ判断するもの、としています。
+商標は、見た目・読み・イメージをまとめて見て判断します（[特許庁の審査基準](https://www.jpo.go.jp/system/laws/rule/guideline/trademark/kijun/document/index/20_4-1-11.pdf)）。
+著作権は、最後は裁判所が1件ずつ判断します（[文化庁](https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/pdf/94037901_01.pdf)）。
 
 ### ぱっと見：ケースごとに関係するルールと、起こりうること
 
@@ -258,12 +258,15 @@ J-PlatPatの検索結果も、登録を保証するものではありません�
 
 ### AIツールとコンペのルール
 
-・[OpenAI](https://openai.com/policies/terms-of-use/)と[Canva](https://www.canva.com/policies/ai-product-terms/)は、ほかのユーザーも似た出力を得ることがあると書いている<br>
-・[Canvaのテンプレート](https://www.canva.com/help/trademarks-logo/)で作ったロゴは、商標登録できない<br>
-・[Adobe Firefly](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)は、商標を出させる指示や、他人の作品を参照画像に上げることを禁止の例に挙げる<br>
-・ロゴでのAIは、[99designs](https://support.99designs.com/hc/en-us/articles/29341768376212-Generative-AI-in-Design-Contests)が禁止、[Fiverr](https://help.fiverr.com/hc/en-us/articles/34998793899665-Using-AI-on-Fiverr-Guidelines-for-freelancers-and-clients)は許可、[クラウドワークス](https://crowdworks.jp/static/lp/ai_policy/)は取り決めに任せる
+ここから先は法律ではなく、ツールやサイトとの約束です。
+著作権や商標に引っかからなくても、規約には引っかかります。
 
-規約で生成物の権利をもらっても、他の人が作った似た画像にまでは届きません（OpenAI）。
+・同じような指示なら、他の人にも似たロゴが出る。自分だけのロゴになるとは限らない（[OpenAI](https://openai.com/policies/terms-of-use/)と[Canva](https://www.canva.com/policies/ai-product-terms/)の規約）<br>
+・[Canvaのテンプレートや素材](https://www.canva.com/help/trademarks-logo/)で作ったロゴは、商標登録に使えない。誰でも使える素材なので、権利が独占にならないため<br>
+・[Adobe Firefly](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)は、他人の作品を参照画像に上げること自体を禁止。出たロゴが似ていなくても違反で、アカウントを止めることがある<br>
+・ロゴの案をAIで作って出せるかは、サイトで違う。[99designs](https://support.99designs.com/hc/en-us/articles/29341768376212-Generative-AI-in-Design-Contests)のコンペは不可、[Fiverr](https://help.fiverr.com/hc/en-us/articles/34998793899665-Using-AI-on-Fiverr-Guidelines-for-freelancers-and-clients)は可、[クラウドワークス](https://crowdworks.jp/static/lp/ai_policy/)は発注者との取り決め
+
+AIツールの規約で出力が自分のものになっても、他の人が作った似た画像には何も言えません（OpenAI）。
 商標登録で独占できるのは、登録した商品やサービスの範囲だけです（商標法 第25条）。
 
 ### 調べるかどうかを決めるのも、作る側
@@ -273,7 +276,7 @@ J-PlatPatの検索結果も、登録を保証するものではありません�
 
 ・[クラウドワークス](https://crowdworks.jp/pages/agreement.html)は、侵害していないことをワーカーがクライアントに保証すると定めている（利用規約 第18条第2項）<br>
 ・保証に反していたら、ワーカーが損害賠償その他の責任を負うとも書いてある（同）<br>
-・[99designs](https://support.99designs.com/hc/en-us/articles/204109569-Originality-Policy)は、参考にするのはよいが、似すぎれば複製として扱うとしている
+・[99designs](https://support.99designs.com/hc/en-us/articles/204109569-Originality-Policy)のコンペは、参考にするのはよいが、似すぎたものは複製として扱う
 
 ==調べないと決めるのも判断で、その責任は作った側に残ります==。
 

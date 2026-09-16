@@ -258,13 +258,16 @@ J-PlatPatの検索結果も、登録を保証するものではありません�
 
 ### AIツールとコンペのルール
 
-ここから先は法律ではなく、ツールやサイトとの約束です。
-著作権や商標に引っかからなくても、規約には引っかかります。
+ここから先は著作権や商標とは別で、使うときに同意した規約で決まります。
+規約は、同意して使えば契約の内容になります（[民法](https://laws.e-gov.go.jp/law/129AC0000000089) 第548条の2）。
 
 ・同じような指示なら、他の人にも似たロゴが出る。自分だけのロゴになるとは限らない（[OpenAI](https://openai.com/policies/terms-of-use/)と[Canva](https://www.canva.com/policies/ai-product-terms/)の規約）<br>
-・[Canvaのテンプレートや素材](https://www.canva.com/help/trademarks-logo/)で作ったロゴは、商標登録に使えない。誰でも使える素材なので、権利が独占にならないため<br>
+・[Canvaのテンプレートや素材](https://www.canva.com/help/trademarks-logo/)を使ったロゴは、Canvaの規約では商標に使えない。誰でも使える素材で、権利が独占にならないため<br>
 ・[Adobe Firefly](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)は、他人の作品を参照画像に上げること自体を禁止。出たロゴが似ていなくても違反で、アカウントを止めることがある<br>
 ・ロゴの案をAIで作って出せるかは、サイトで違う。[99designs](https://support.99designs.com/hc/en-us/articles/29341768376212-Generative-AI-in-Design-Contests)のコンペは不可、[Fiverr](https://help.fiverr.com/hc/en-us/articles/34998793899665-Using-AI-on-Fiverr-Guidelines-for-freelancers-and-clients)は可、[クラウドワークス](https://crowdworks.jp/static/lp/ai_policy/)は発注者との取り決め
+
+特許庁は商標法の条件で審査するので、規約に反していても、条件を満たせば登録されます。
+==登録されても、ツールとの契約に反した状態は残ります==。
 
 AIツールの規約で出力が自分のものになっても、他の人が作った似た画像には何も言えません（OpenAI）。
 商標登録で独占できるのは、登録した商品やサービスの範囲だけです（商標法 第25条）。
@@ -276,7 +279,8 @@ AIツールの規約で出力が自分のものになっても、他の人が作
 
 ・[クラウドワークス](https://crowdworks.jp/pages/agreement.html)は、侵害していないことをワーカーがクライアントに保証すると定めている（利用規約 第18条第2項）<br>
 ・保証に反していたら、ワーカーが損害賠償その他の責任を負うとも書いてある（同）<br>
-・[99designs](https://support.99designs.com/hc/en-us/articles/204109569-Originality-Policy)のコンペは、参考にするのはよいが、似すぎたものは複製として扱う
+・[99designs](https://support.99designs.com/hc/en-us/articles/204109569-Originality-Policy)のコンペは、参考にするのはよいが、似すぎたものは複製として扱う<br>
+・保証の範囲を著作権だけに絞る書き方もある（[伊藤海法律事務所](https://kai-law.jp/agreement/design-and-production-outsourcing-agreement/)）。商標や意匠は、知らずに似ても侵害になるため
 
 ==調べないと決めるのも判断で、その責任は作った側に残ります==。
 

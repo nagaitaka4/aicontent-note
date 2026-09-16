@@ -53,7 +53,18 @@ frontmatterから転記されている。**これも段落ブロックなので�
 
 ⚠️ **figcaptionに属性を足さない**（2026-09-16・no.68で事故）。画像ブロックのcaptionはfigcaptionの中身だけを見るため、
 `style`や`class`を足すとエディターで「想定されていないか無効なコンテンツが含まれています」になる。
-**キャプションの左揃えは、投稿ごとのカスタムCSS（SWELLの「カスタムCSS & JS」）で行う**：`.wp-element-caption{text-align:left;}`
+**キャプションの左揃えは、投稿ごとのカスタムCSS（SWELLの「カスタムCSS & JS」）で行う。**
+SWELLが`.wp-block-image figcaption`で中央寄せしているので、**同じ強さのセレクタ＋`!important`**が要る：
+
+```
+.wp-block-image figcaption,
+.wp-element-caption {
+  text-align: left !important;
+}
+```
+
+⚠️ **投稿ごとのCSSは編集画面には効かない**（テーマのeditor_style.cssが中央寄せのまま）。
+左揃えになったかは**プレビュー（フロント側）で確認する**。編集画面でもそろえたい場合は、サイト全体のカスタムCSSに入れる（ユーザーの判断）
 
 **変換しないもの**（記事ごとに人が判断して付ける装飾）：`is-style-stitch` などの段落装飾、
 画像・キャプションボックス。

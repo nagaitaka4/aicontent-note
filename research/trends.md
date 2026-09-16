@@ -1,6 +1,34 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-15
+最終更新: 2026-09-17
+
+---
+
+## [2026-09-17] 調査結果（デイリー）
+
+**①はClaude Codeが3版（`2.1.272`〜`2.1.274`）出た。Xに採るものは0件。**料金・上限・デフォルトのモデル・提供終了のどれも変わっていない。⚠️ **9/16のデイリーは実行記録が無い**（`research/`・コミットとも無し）ので、本日は9/15 08時台以降の差分をまとめて見た。
+
+### Claude Code / Anthropic
+
+- **【新規・記録のみ】Claude Code `2.1.272`・`2.1.273`・`2.1.274`**（[npmレジストリ](https://registry.npmjs.org/@anthropic-ai/claude-code)の`time`・[CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)。**本日CCがcurlで直接取得**）
+  - 公開：`2.1.272`＝`2026-09-14T23:34:13Z`（日本時間 9/15 08:34）／`2.1.273`＝`2026-09-15T18:06:34Z`（9/16 03:06）／`2.1.274`＝`2026-09-16T22:36:09Z`（9/17 07:36）
+  - `dist-tags`は`latest: 2.1.273`／`next: 2.1.274`／**`stable: 2.1.267`（9/15時点の`2.1.236`から上がった）**
+  - `2.1.272`のCHANGELOGは`Bug fixes and reliability improvements`の1行だけ。**`2.1.274`は本日08時台の時点でCHANGELOGに見出しが無い**（中身は未確認）
+  - `2.1.273`の主な項目（verbatim抜粋）：
+    - `Reverted a 2.1.268 change that checked Read and Edit deny rules on Bash lines the permission checker can't analyze (``eval``, ``env -C``); commands like ``time -p make build`` prompt again instead of being denied`
+    - `Fixed the context meter and auto-compact counting advisor-tool turns at roughly twice their real context size, which made auto-compact fire at about half the real window`
+    - `Fixed Read on macOS refusing a dragged-in screenshot, or any file the system reports under a second path, with "symlink resolution changed after permission was checked"`
+    - `Changed sign-in with a Claude account to also request access to your claude.ai plugins`
+  - **採らない理由**：修正が中心で、採用基準の「使う側の何かが変わる（料金・制限・既定モデル・提供終了・使える範囲）」に当たる項目が無い。**手元は本日も`2.1.243`**（`claude --version`）で、どの修正も手元では起きていない。許可まわりの変更（`2.1.268`の取り消し）は、拒否されていたものが確認に戻る向きで、`PERM-01`（9/10投稿済み）の続きにするには手元の実測が要る
+- **【新規・記録のみ】Claude Apps リリースノート**（[support.claude.com Release notes](https://support.claude.com/en/articles/12138966-release-notes)・curl）：**September 15, 2026**`Launching Salesforce in Claude (beta)`。verbatim `It's now available in beta on all paid plans for organizations Salesforce approves through its beta sign-up.` **Salesforceを使う組織向けで、手元は変わらない**
+- **【新規・記録のみ】Claude Platform リリースノート**（[docs.claude.com/en/release-notes/overview](https://docs.claude.com/en/release-notes/overview)・curl）：**September 14, 2026**＝Messages APIで会話の要約（compaction）を好きなときに実行できるベータ（`compact-2026-09-04`ヘッダー）。**API利用者向けで、手元は変わらない**
+- **【差分なし】Anthropic Newsroom**（[anthropic.com/news](https://www.anthropic.com/news)・curl）：最新は**9/10付**のまま
+- **本日は未確認**：@ClaudeDevs／Pricing・プラン別ヘルプ／Claude Academy（次のフル版は9/18(金) 12:00）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：①からは0件**（②から2件。`research/ai-tools.md`の9/17を参照）
+- **巡回チェック**：①CHANGELOG ✅ ②npm`time` ✅ ④Claude Apps ✅（curl）⑤Claude Platform ✅（curl）⑥Newsroom ✅（curl）／ ③@ClaudeDevs ⑦Pricing ⑧Academy ⏭（本日未確認）
 
 ---
 

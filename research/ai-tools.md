@@ -1,6 +1,46 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-15
+最終更新: 2026-09-17
+
+---
+
+## [2026-09-17] 調査結果（デイリー）
+
+**②はChatGPTに記録漏れが2件あった。1件をXに採った（カスタムGPTの提供終了）。**どちらもリリースノートの日付は9/11・9/14だが、**9/14のフル版と9/15のデイリーが読んだ時点のページには載っていなかった／拾えていなかった**（9/14フル版は「最新はSeptember 10」、9/15デイリーは9/14付をHealthの1件だけ記録）。**あとからエントリが足される面は、見出しの日付だけで差分を判定できない。**
+
+### ChatGPT / OpenAI
+
+- **【新規・Xに採用】カスタムGPT（マイGPT）の提供終了を予定。プラグインへ移行**（**本日CCが実Chromeで直接開いて確認**）
+  - [ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) **September 11, 2026**`Planned custom GPT retirement and migration to plugins`。verbatim `We're planning to retire custom GPTs across ChatGPT plans and provide a migration path to plugins, which can combine reusable instructions with connected apps.` ／ `Timing and availability may vary by plan and workspace`
+  - [Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq)（英語版・表示は`Updated: 1 時間前`。日本語版も同内容を確認）
+    - 対象：verbatim `The transition affects all ChatGPT plans. The detailed dates and admin guidance below describe the Enterprise transition; plan-specific availability and exceptions may vary.`
+    - 日程（**Enterpriseの予定**）：`Sep 11, 2026: Admin notice` ／ `Sep 17, 2026: Target for the migration experience and user banner` ／ `Sep 25, 2026 (planned): Creation of new custom GPTs ends.` ／ `Dec 11, 2026: Scheduled retirement. Custom GPTs stop running.`
+    - 他のプラン：verbatim `The other plans may follow the same transition timeline, with in-product announcements coordinated with Enterprise.` ⚠️ **Plus等の個人プランの日付は確定していない。**「12/11に止まる」を全プランの確定日として書かない
+    - 移るもの：`the GPT's instructions become a skill within the new plugin. Connected apps are added to the plugin as apps.` ／ 移らないもの：`GPT custom actions do not transfer through the migration workflow.` ／ `The GPT's selected model does not carry over` ／ `Conversation starters and previous chats may not copy.`
+  - **使う側への影響**：マイGPTを作っている人は、作成が止まる前に下書きを公開しておく必要がある（下書きは移行できない）。**このメディアはマイGPTを使っていた実績がある**（7/16`rule-file-気`「マイGPTの知識ファイル」／8/21`Plus3-気`「無料プランにしても、作ったマイGPTは使えるようです」／構成確認にカスタムGPTを使う手順＝`articles/S-22_composition.md`）
+  - → `knowledge/x/ideas.md` `research-20260917-01`／`queue.md` `GPTEND-01`
+- **【新規・ideas.mdのみ】PlusとProで、Instantから考える（Thinking）への自動切り替えが終わった**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) **September 14, 2026**`Changes to automatic switching to thinking in ChatGPT (Plus and Pro)`・実Chrome）
+  - verbatim `We're retiring automatic switching from Instant to Thinking (reasoning) for ChatGPT Plus and Pro users globally. You can still select an available option in the model picker to give ChatGPT more time to think or reason.` ／ `We're also removing the Higher intelligence setting from ChatGPT on the web for these plans. ChatGPT can still switch automatically for safety purposes.`
+  - [GPT-5.6とGPT-6 Pro（日本語版ヘルプ）](https://help.openai.com/ja-jp/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt)：`Plus および Pro プランでは、複雑なリクエストでも即時モードから上位の思考レベルへ自動的に切り替わりません。ChatGPT に「もっとよく考えて」または「深く考えて」と依頼しても、別の思考レベルへ自動的に切り替わることはありません。`
+  - **使う側への影響**：Plusで難しい質問をするときは、思考量を自分で選ぶ必要がある。**ユーザーはPlus**（9/14の画面実測）で、X下書きのGPTレビューにChatGPTを使っている。**ただし自動切り替えに頼っていたかは未確認**
+  - → `knowledge/x/ideas.md` `research-20260917-02`（キューには入れない。理由は同行）
+- **【新規・記録のみ】OpenAIニュース面**（[openai.com/news](https://openai.com/news/)・実Chrome）：**2026年9月16日**付が3件＝`Reimagining advertising with AI`（製品）／`How to connect AI usage to business value`（製品）／`Our framework for reporting model misalignment`（研究）。**本文は開いていない。**広告の件は`ADS-気`・`ADS63-訂`（投稿済み）と題材が近いので、次のフル版で本文を確認する
+- 9/14付のHealthの許可変更は9/15に記録済み
+
+### Gemini / Google
+
+- **【新規・記録のみ】Gemini API 変更履歴**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)・curl）：**September 15, 2026**`Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking generally available (GA)`（Live APIの音声モデル）。**API利用者向けで、手元は変わらない**
+- **【差分なし】Geminiアプリ リリースノート**（[gemini.google/release-notes](https://gemini.google/release-notes/)・curl）：最新は**2026.09.10**のまま
+
+### 国産AIライティングツール
+
+- **本日は未確認**（デイリーは2領域のみ・国産4社は9/18(金) 12:00のフル版の担当）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：2件**（`research-20260917-01`カスタムGPT終了／`-02`自動切り替え終了）
+- **`queue.md`への投入：1本**（`GPTEND-01`）
+- **巡回チェック**：ChatGPTリリースノート ✅（実Chrome）／OpenAIニュース面 ✅（実Chrome・見出しのみ）／Geminiアプリ ✅（curl）／Gemini API ✅（curl）／国産4社 ⏭（フル版の担当）
 
 ---
 

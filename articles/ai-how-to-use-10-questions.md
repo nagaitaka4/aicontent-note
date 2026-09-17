@@ -170,8 +170,8 @@ Q7は、同じ課題で30本書かせて試しました。
 性格を説明しているのはChatGPT、Claude、Grokです。
 Gemini、Perplexity、Microsoft 365 Copilotは、つながる先や検索が特徴です。
 
-6つのうち、記事作りで開いているのはChatGPTとClaudeです。
-記事の執筆、ルールの運用、WordPressへの入稿はClaudeが担当しています。
+記事作りで開いているのは、この6つのうち2つです。
+執筆、ルールの運用、WordPressへの入稿はClaudeに任せています。
 方針や企画の相談、構成案とX投稿のレビュー、アイキャッチの画像はChatGPTです。
 
 【メモ】<br>

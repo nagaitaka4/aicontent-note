@@ -140,9 +140,8 @@ Q4とQ5は、指示やルールをどこまで書き込むかの話です。
 一方、ルールを渡した側では、どの記事にも、ルールへ書いていない「似た文の繰り返し」が出ました。
 
 書きすぎて守られなくなった記録もあります。
-
-・2026-08-05：記事のルールが357行、「省略禁止」が33か所まで膨らみ、守られなくなりました。いまは3か所です<br>
-・2026-09-03：同じ指摘が3回目になったので、文章のルールを足すのをやめ、機械のチェックに変えました
+記事のルールは357行、「省略禁止」は33か所まで増えました（2026-08-05）。
+同じ指摘が3回目になったときは、ルールを足すのをやめ、機械のチェックに変えました。
 
 ==3回言っても直らないことは、ルールを足さずに機械で止めます==。
 ルールファイルの考え方そのものは、[ルールファイルとは？AIを安定運用する指示書の考え方](https://aicontent-note.com/rule-file-basics/)にまとめています。
@@ -164,13 +163,11 @@ Q7は、同じ課題で30本書かせて試しました。
 | [Claude](https://www.anthropic.com/research/claude-character) | 好奇心、偏らない見方、思慮深さを持つように性格を設計した（2024年） |
 | [Gemini](https://support.google.com/gemini/answer/15229592?hl=ja) | Gmail、ドキュメント、ドライブ、カレンダーとつなぎ、中身を探して要約できる |
 | [Perplexity](https://www.perplexity.ai/help-center/en/articles/10354917-what-is-an-answer-engine-and-how-does-perplexity-work-as-one) | ネットをその場で検索し、出典つきで答えるアンサーエンジン |
-| [Microsoft 365 Copilot](https://learn.microsoft.com/ja-jp/microsoft-365/copilot/microsoft-365-copilot-overview) | Word、Excel、PowerPoint、Outlook、Teamsに組み込まれ、仕事のデータとあわせて答える |
-| [Grok](https://x.ai/news/grok-bot-and-x) | Xとつながり、投稿の検索、タイムライン、メンションを扱える（2026年8月）。[2023年の初代の発表](https://x.ai/news/grok)では、ウィットと反骨精神を持つよう設計したと説明していた |
 
-性格を説明しているのはChatGPT、Claude、Grokです。
-Gemini、Perplexity、Microsoft 365 Copilotは、つながる先や検索が特徴です。
+性格を説明しているのはChatGPTとClaudeです。
+GeminiとPerplexityは、つながる先や検索が特徴になります。
 
-記事作りで開いているのは、この6つのうち2つです。
+記事作りで開いているのは、このうち2つです。
 執筆、ルールの運用、WordPressへの入稿はClaudeに任せています。
 方針や企画の相談、構成案とX投稿のレビュー、アイキャッチの画像はChatGPTです。
 
@@ -234,10 +231,8 @@ AIが書いた記事をどう確かめるかは、[AIで作ったブログ記事
 **書く、数える、確かめるはAIに。何を決めたいかと、最後の確認は人に残りました。**
 
 工程は次々に任せられましたが、人の時間は「確認」に集まりました。
-いまこのサイトで人が持っているのは、2つだけです。
-何を書くか（何を決めたいか）と、公開していいかの確認です。
-
-どこまで任せられたかの実測は、[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)にまとめています。
+いま人が持っているのは、何を書くかと、公開していいかの確認の2つです。
+実測は[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)にまとめています。
 
 ==AIに任せるほど、人の仕事は「決めること」と「確かめること」に寄っていきます==。
 

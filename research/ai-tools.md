@@ -1,8 +1,22 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-17
+最終更新: 2026-09-18
 
 ---
+
+## [2026-09-18] 調査結果（デイリー・`x-morning-brief`に統合後の初回）
+
+**②はChatGPTのリリースノートに9/17付で2件。1件を`ideas.md`へ（Wordの中でChatGPTが使える）。**あわせて、ヘルプ全体に出ている**Pro $200プランの新規登録停止**の告知を記録する。
+
+### ChatGPT / OpenAI
+
+- **【新規・ideas.mdへ】ChatGPT for Word（9/17付）**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・本日CCがブラウザで直接確認）
+  - verbatim：`ChatGPT is now available in Microsoft Word. You can draft from notes, summarize a document, revise selected text, and adjust headings and formatting from the ChatGPT sidebar. Word joins Excel and PowerPoint through the same Microsoft add-in.` ／ `ChatGPT for Word is available on all ChatGPT plans, including Free. Your plan's token limits apply, and Word draws from the shared usage allowance for Codex and other premium features on plans that include it.`
+  - **使う側の変化**：原稿をWordでやり取りする仕事（クライアント入稿・社内文書）で、**貼り直さずにWordの中で下書き・要約・書き直し・見出し調整ができる**。**無料プランも対象**だが、使った分はプランの枠（Codexなどと共用）から引かれる。導入はMicrosoft Marketplaceのアドイン
+- **【新規・記録のみ】プラグインに複数アカウントを接続できる（9/17付）**：verbatim `You can now connect multiple accounts to plugins in ChatGPT, expanding support beyond Gmail, Google Calendar, and Google Contacts.`・全プラン。**個人と仕事のアカウントを同じ会話で扱える。**採らない理由＝このアカウントはGmail等のプラグイン連携を運用に使っておらず、自分の使い方が変わらない（在庫41本で基準を上げている）
+- **【記録のみ・9/10付】ChatGPT Pro $200（Pro 20X）の新規登録・アップグレードを一時停止**（[ChatGPT Proプランの概要](https://help.openai.com/ja-jp/articles/9793128-about-chatgpt-pro-tiers)・日本語版ヘルプの注記を本日確認）
+  - verbatim（日本語版）：`2026年9月10日現在、ChatGPT Pro の $200 プラン（Pro 20X）への新規登録およびアップグレードを一時的に停止しています。これには、Free、Go、Plus、または Pro $100 からの新規登録およびアップグレードが含まれます。` ／ `既存の ChatGPT Pro $200 サブスクリプション、および新規または既存の ChatGPT Pro $100 サブスクリプションは、この一時停止の影響を受けません。` ／ `Pro の $200 サブスクリプションが終了すると、一時停止が解除されるまで再度購入することはできません。`
+  - **採らない理由**：9/10付で**すでに8日経っている**（鮮度期限切れ）。このアカウントはPlusで、Proへ上げる予定も書いていない。**ただし「上位プランに入れない状態が続いている」ことは、上限や課金の話を書くときの前提になる**ので記録は残す
 
 ## [2026-09-17] 調査結果（デイリー）
 

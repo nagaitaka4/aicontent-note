@@ -1,6 +1,22 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-17
+最終更新: 2026-09-18
+
+
+---
+
+## [2026-09-18] 調査結果（デイリー・`x-morning-brief`に統合後の初回）
+
+**①はClaude Codeが2版（`2.1.274`・`2.1.275`）出たが、Xに採るものは0件。**料金・上限・既定モデル・提供終了のどれも変わっていない。
+
+### Claude Code / Anthropic
+
+- **【新規・記録のみ】Claude Code `2.1.275`**（[npmレジストリ](https://registry.npmjs.org/@anthropic-ai/claude-code)の`time`・本日CCがcurlで取得）：公開＝`2026-09-17T20:20:31Z`（日本時間 9/18 05:20）。`dist-tags`は`latest: 2.1.274`／`next: 2.1.275`／`stable: 2.1.267`。**`2.1.275`はCHANGELOGにまだ見出しが無い**
+- **`2.1.274`のCHANGELOG**（[CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)）：追加は`Added a visible warning when memory usage is critical`／`CLAUDE_CODE_MCP_STARTUP_WAIT_MS`／OpenTelemetryの属性・イベント／Claude appsゲートウェイの設定など。残りはMCP接続・`/goal`・`claude agents`のフラグ喪失などの**修正**
+  - **採らない理由**：採用基準の「使う側の何かが変わる（料金・制限・既定モデル・提供終了・使える範囲）」に当たる項目が無い。運用者向けの計測・接続まわりの修正が中心
+- **【差分なし】Claude Apps リリースノート**（[support.claude.com](https://support.claude.com/en/articles/12138966-release-notes)・本日ブラウザで確認）：最新は**9/15付のSalesforce in Claude（beta）**のまま（9/17記録済み）
+- **【記録のみ】Anthropic Newsroom**（[anthropic.com/news](https://www.anthropic.com/news)）：**9/17付で2件**。うち1件は`Measurements for understanding the pace of AI development inside frontier labs`＝**社内のAI開発ペースを測る研究**で、読者の手元では何も変わらない
+- **本日は未確認**：@ClaudeDevs／Pricing・プラン別ヘルプ（次のフル版は本日9/18(金) 12:00の`marketing-research-mon-fri`）
 
 ---
 

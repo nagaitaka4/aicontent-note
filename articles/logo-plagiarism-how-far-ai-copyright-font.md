@@ -3,10 +3,10 @@ no: 68
 series:
 series_no:
 title: ロゴのパクリはどこまで？AIで作るときの著作権・商標と類似チェック
-date:
-url:
+date: 2026-09-17
+url: https://aicontent-note.com/logo-plagiarism-how-far-ai-copyright-font/
 slug: logo-plagiarism-how-far-ai-copyright-font
-status: draft
+status: published
 description: ロゴのパクリはどこまでか。どこまで似たらアウトかの線は無く、著作権は「参考にしたか」、商標は「紛らわしいか」を見ます。AIで作った作例のロゴで似ている所を比べ、たまたま似た場合の扱い、公開前のチェック、フォントとAIツールの規約を公式の資料でまとめました。
 eyecatch_alt: ロゴのパクリはどこまでかを、著作権・商標と類似チェックの観点で解説した記事のアイキャッチ画像
 category: AIとコンテンツの実務

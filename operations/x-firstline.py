@@ -25,6 +25,8 @@ NOUNS = [
     "Plus","Pro","Max","Git","GitHub","llms.txt","cats.txt",
     # カタカナ表記（2026-09-08追加：「サーチコンソール」を拾えず誤検知した）
     "サーチコンソール","グーグル","クロード","チャットGPT","ワードプレス","メルカリ",
+    # デザインツール（2026-09-17追加：no.68の下書きで「Canva」を拾えず誤検知した）
+    "Canva","Adobe","Firefly","Illustrator","Photoshop","Figma",
 ]
 
 def check(text):

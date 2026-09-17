@@ -1,4 +1,4 @@
-# 材料シート：AIの使い方で普段悩む10の問い。プロンプトの書き方からルールまで（TOP10 #3・D-29）
+# 材料シート：AIの使い方で普段悩む10の問い。記事66本をAIで作った記録で答える（TOP10 #3・D-29）
 
 作成：2026-09-14 11:50。**執筆可能：◯（実験1件を先に済ませる）。構成案はユーザー指示で待機中。**
 > **執筆側はこのシートの事実だけを使う。**ユーザーの11の問い（2026-09-14）を、非エンジニア向けに1本で答える記事。3本に分けずに1本にまとめる（ユーザー判断 9/14）。
@@ -25,6 +25,8 @@
 | 9 | しろくま理論（白熊効果）は、AIにも当てはまる？ |
 | 10 | 心理学から、AIへの伝え方を学べる？ |
 
+> **2026-09-17 11:44 差別化の方針（ユーザー承認）**：「プロンプト 書き方 コツ」の上位はソフトバンク・日立ソリューションズ・富士フイルムなど大企業の型の説明（指示・背景・入力・出力など）で、長く使い続けた記録から答える記事は上位9件に無い。①題の後半を「記事66本をAIで作った記録で答える」にする（「プロンプトの書き方」は見出しと本文で使う）②**1問ずつ「よく言われる答え → 実際にやったらこうだった」の2段で答える** ③構成案の前に、しろくま理論の実験を済ませる ④6と7は、他の8問の記録から導く結論として答える
+
 **以下は9/14時点の対応表（11件を7行にまとめたもの）。答えの材料はこのまま使う。**
 
 | 問い（2026-09-14） | 記事で答える形 | 材料 |
@@ -36,6 +38,19 @@
 | AIの良さを最大限引き出す／最大限活用／どう使うべきか | 記事の結論（節にしない）：測れる形にする・自分の求めるものを言語化する・繰り返す指摘は機械に渡す | 上と同じ |
 | AIツールによって性格はあるのか | 実測：Codexの初稿NG6件 vs Claude Code 10件（同じ環境・同じルール）／Pro＋Sonnetの不安定→Max＋Opusで好転／Fableは体感1.5倍待つ | `operations/codex-test-plan.md`（2026-08-18）・バックログ旧274・X `SL-気` |
 | しろくま理論は本当にあるか／AI対策を心理学から学ぶ | **人間については本当**（Wegner 1987・皮肉過程理論）。AIで逆をやるかは別の仕組みなので**この環境で実験してから書く**（下の4節） | 一次情報：Wegner, Schneider, Carter & White (1987)。LLMの否定文の扱いの研究は執筆前に探す |
+
+## 3-0. 測り直し（2026-09-17 11時台）
+
+| 項目 | 9/14 | 9/17 |
+|---|---|---|
+| `CLAUDE.md` | 122行 | 122行 |
+| `rules/` 4ファイル | 1,917行 | **2,092行**（article-flow 327・x-post-flow 1,505・task-management 227・session-handoff 33） |
+| 「省略禁止」 | CLAUDE.md 3・article-flow 3 | 同じ |
+| `constraints.py`の`CONSTRAINTS` | 39項目 | **41項目**（うち執筆用37） |
+| メモリ | 87件 | **93件** |
+| 公開記事 | — | **66本**（`status: published`） |
+
+⚠️ **ルールは3日で175行増えた**（no.68の制作中に足したもの）。記事では「書いた時点の行数」と日付をセットで書く。
 
 ## 3. この環境の実物（2026-09-14実測）
 
@@ -86,8 +101,14 @@
 
 `プロンプト 書き方`10・`ai 質問 仕方`10・`ai 使いこなす`10・`claude code プロンプト`10・`ai 思い通り`7（にならない）・`プロンプト コツ`5・`白熊効果`10・`プロンプト 心理学`6／ユーザーの言い方そのもの（期待と違う・引き出す・最大限活用・ルールどこまで）は0件 → 題は需要語で立てる
 
+## 6-2. 一次情報：否定形の指示（2026-09-17取得）
+
+・**Anthropic「Prompting best practices」**（[原文](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)・Claude Opus 5／Fable 5.1など現行モデル向け）の「Control the format of responses」verbatim：`Tell Claude what to do instead of what not to do` → `Instead of: "Do not use markdown in your response"` / `Try: "Your response should be composed of smoothly flowing prose paragraphs."`<br>
+・同ページ「Add context to improve performance」verbatim：`Providing context or motivation behind your instructions, such as explaining to Claude why such behavior is important, can help Claude better understand your goals and deliver more targeted responses.` 例は `Less effective: NEVER use ellipses` → `More effective: Your response will be read aloud by a text-to-speech engine, so never use ellipses since the text-to-speech engine will not know how to pronounce them.`<br>
+・**読み方の注意**：「良い例」にも`never use ellipses`（否定形）が残っている。**公式は否定形そのものを禁じてはいない。**理由を添えること、できるなら何をするかで書くことを勧めている。「否定形は逆効果」と言い切らない
+
 ## 7. まだ無いもの
 
 - 4節の実験（未実施）
-- LLMの否定文の扱いに関する一次情報（未探索）
+- ~~LLMの否定文の扱いに関する一次情報（未探索）~~ → 6-2でAnthropic公式を取得（2026-09-17）。研究論文は未探索
 - 「性格」の実測は3点だけ。増やさない（一般化しない）

@@ -55,6 +55,9 @@ BLOCKS = {
 # （point: 素10/太字3、info: 太字8/素1、check: 太字2/素0、memo: 素4/太字0、caution: 素4/太字1）。
 # 手作業だったためで、意図的な使い分けではない。**素**に統一する。
 BLOCK_STRONG = False
+# 例外：【グッド】は「対処法」の箱として使い、中を太字にする（2026-09-18・no.69）。
+# ユーザーがWPでQ1の対処法を is-style-icon_good ＋ <strong> に直し、「このスタイルにしてください」と指定した。
+BLOCK_STRONG_NAMES = {"グッド"}
 
 # 地の文の `・` 箇条書きに付ける装飾。実測118件のうち93件（79%）がbg_grid系で、
 # 最多は `has-border -border03 is-style-bg_grid`（65件・55%）。これを既定にする。
@@ -340,7 +343,9 @@ def convert(md):
                 % (
                     BLOCKS[m.group(1)],
                     BLOCKS[m.group(1)],
-                    "<strong>%s</strong>" % inner if BLOCK_STRONG else inner,
+                    "<strong>%s</strong>" % inner
+                    if BLOCK_STRONG or m.group(1) in BLOCK_STRONG_NAMES
+                    else inner,
                 )
             )
             continue

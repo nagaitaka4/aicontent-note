@@ -1,7 +1,25 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-18
+最終更新: 2026-09-19
 
+
+---
+
+## [2026-09-19] 調査結果（デイリー・土曜の短縮版）
+
+**①はClaude Code `2.1.277`が出た。AGENTS.mdを読むようになったのを`ideas.md`へ（キュー投入なし）。**ほかの面は差分なし。
+
+### Claude Code / Anthropic
+
+- **【新規・ideas.mdのみ】Claude Code `2.1.277`：AGENTS.mdに対応**（[npm](https://registry.npmjs.org/@anthropic-ai/claude-code)・[CHANGELOG](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)・本日CCがcurlで取得）：公開＝`2026-09-18T16:22:26Z`（日本時間 9/19 01:22）。`dist-tags`は`latest`・`next`とも`2.1.277`／`stable: 2.1.267`
+  - verbatim：`Added AGENTS.md support: in a project with no CLAUDE.md, Claude Code reads AGENTS.md instead; change it under "Project instructions" in /config (not yet on Bedrock, Vertex or Foundry)`
+  - ほかは修正が中心（例：`Fixed being unexpectedly logged out when an older Claude Code build (for example an IDE extension's bundled CLI) runs on the same machine as the current one`）
+  - **採らない理由（キュー）**：このリポジトリはCLAUDE.mdとAGENTS.md（101行）を両方持ち、CLAUDE.mdがあるので挙動は変わらない。手元は`2.1.243`。③が立たない → `knowledge/x/ideas.md` `research-20260919-01`
+- **【記録のみ】Anthropic Newsroom**（WebFetch）：**Sep 18** `Partnering with Accenture on embedded evaluation`＝企業向けの提携で、読者の手元は変わらない
+- **【差分なし】claude.com/blog**（WebFetch）：最新は9/17（Balyasny事例・Projects redesigned）で記録済み
+- **【差分なし】@ClaudeDevs**（実Chrome）：最新は9/18のProjects（記録済み）
+- **【差分なし】Claude Apps リリースノート**（WebFetch）：最新は**September 15, 2026**（Salesforce）のまま
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅
 
 ---
 

@@ -150,11 +150,22 @@ def paragraph(text, class_name=None, align_center=False, strong=False):
 
 
 def heading(text, level=2):
+    """見出し。末尾に `{#q1}` と書くと、ページ内リンク用のidを付ける（2026-09-18・no.69）。
+
+    表の「問い」から各Qの見出しへ飛ぶために使う（MD側は `[問い](#q1)`）。
+    Gutenbergの見出しのアンカーはブロックコメントではなく、HTMLの `id` 属性に入る。
+    """
     tag = "h%d" % level
     attrs = "" if level == 2 else ' {"level":%d}' % level
-    return '<!-- wp:heading%s -->\n<%s class="wp-block-heading">%s</%s>\n<!-- /wp:heading -->' % (
+    anchor = ""
+    m = re.search(r"\s*\{#([A-Za-z][\w-]*)\}\s*$", text)
+    if m:
+        anchor = ' id="%s"' % m.group(1)
+        text = text[: m.start()]
+    return '<!-- wp:heading%s -->\n<%s class="wp-block-heading"%s>%s</%s>\n<!-- /wp:heading -->' % (
         attrs,
         tag,
+        anchor,
         inline(text),
         tag,
     )

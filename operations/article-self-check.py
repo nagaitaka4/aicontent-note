@@ -126,10 +126,16 @@ def main(path):
     # インラインコード（`[タイトル](URL)` のような記法の説明）は判定対象から外す
     text_nocode = re.sub(r"`[^`\n]*`", "", text)
     md_links = re.findall(rf"\[([^\]\[]+)\]\(({URL_PART})\)", text_nocode)
+    # ページ内リンク `[問い](#q1)` は、見出し末尾の `{#q1}` とセットで使う（2026-09-18・no.69）。
+    # 飛び先の見出しが無いリンクは、崩れたリンクとして数える。
+    ANCHOR_PART = r"#[A-Za-z][\w-]*"
+    anchors = set(re.findall(r"^#{2,3} .*\{#([A-Za-z][\w-]*)\}\s*$", text, re.M))
+    md_links += re.findall(rf"\[([^\]\[]+)\]\(({ANCHOR_PART})\)", text_nocode)
     broken = [
         m.group(0)[:70]
         for m in re.finditer(r"\]\(([^)]*)\)", text_nocode)
         if not re.fullmatch(URL_PART, m.group(1))
+        and not (re.fullmatch(ANCHOR_PART, m.group(1)) and m.group(1)[1:] in anchors)
     ]
     # `\[` `\]` `\(` `\)` のエスケープが混入していないか（貼り付け由来の典型）
     escaped = [

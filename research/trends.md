@@ -5,6 +5,44 @@
 
 ---
 
+## [2026-09-18] 調査結果（定期リサーチ・12:00のフル版）
+
+**①は大きな変更が3件あった。どれも9/17・9/18のデイリーが拾えていなかった。**①**ClaudeのチャットとCoworkが1つに統合**（9/16付・公式ブログ）②**Claude Docs・Claude Slidesの提供開始、Claude Designも会話の中で使える**（同日）③**Claude Codeの「Projects」＝並列のクラウドセッションを1つの会話で束ねる機能のベータ**（9/17付）。**Xには①を採用（`CWMERGE-01`）。**
+
+> ⚠️ **拾えなかった理由**：デイリーの巡回面（CHANGELOG・npm・Claude Appsリリースノート・Newsroom）に**どれも載っていない**。Claude Appsのリリースノートは本日12時台も最新が9/15（Salesforce）のまま、Newsroomは9/17の`Life Sciences Verification Program`のみ。**載っていたのは`claude.com/blog`と@ClaudeDevs**。→ `operations/automation-log.md`に巡回面の追加を記録
+
+### Claude Code / Anthropic
+
+- **【新規・Xに採用】ClaudeのチャットとCoworkが1つに統合**（[公式ブログ Claude Cowork and chat are now one Claude・2026-09-16](https://claude.com/blog/cowork-is-now-claude)／[ヘルプ Claude Cowork and chat are one Claude](https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude)・**本日CCがWebFetchで確認**）
+  - verbatim：`Claude Cowork and chat are merging into one Claude.` ／ `rolling out on Pro and Max plans over the next few weeks, with more plans to follow` ／ `Ask Claude for what you need, and it can decide which tool to use.` ／ `Your chats, tasks, projects, and settings come with you when your account moves over.` ／ **`Once your account has the new experience, you can't switch back to separate "Chat" and "Cowork" options.`** ／ `Everything you do with Claude counts toward your plan's usage limits.`
+  - Enterpriseは`at least 30 days`前に通知。スケジュールタスクは`can run in the cloud, so they keep going when your computer is off`
+  - [料金ページ](https://claude.com/pricing)（WebFetchの要約）にも`Claude Cowork is now just Claude`の記載。Pro $17（年払い）／$20（月払い）・Max $100〜は変わらず
+  - **使う側の変化**：入力欄の「チャット／Cowork」の切り替えがなくなる。**このアカウントは8/19に`Cowork-気`でその切り替えを投稿**しており、[no.58](https://aicontent-note.com/claude-cowork-usage-data/)のdescription・本文（「入力欄で『チャット』から『Cowork』へ切り替える」）も切り替えを前提に書いている
+  - ⚠️ **このアカウントの画面が移ったかは未確認**（段階的な展開）
+  - → `knowledge/x/ideas.md` `research-20260918-02`／`queue.md` `CWMERGE-01`
+- **【新規・ideas.mdのみ】Claude Docs・Claude Slidesの提供開始／Claude Designが会話の中で使える**（同ブログ／[ヘルプ Get started with Claude Docs](https://support.claude.com/en/articles/16923645-get-started-with-claude-docs)／[@ClaudeDevs 9/17 02:09](https://x.com/ClaudeDevs)）
+  - verbatim：`Claude Docs and Claude Slides are new today, and Claude Design now works inside your conversations too.` ／ `All three are in beta on paid plans` ／ Docsは`available in beta on Pro, Max, Team, and Enterprise plans. It isn't available on the Free plan.`（Pro・Max・Teamは既定でオン）／書き出しはWord・PDF・Markdown・Googleドキュメント、Slidesは`download as PowerPoint or PDF`
+  - @ClaudeDevs：`Claude Design, Claude Slides and Claude Docs also work inside Claude Code now.`
+  - **採らない理由（キュー）**：ユーザーが使った記録が無く③が立たない。**`CWMERGE-01`と同じ発表で、2本並べると同じ話に見える**
+- **【新規・ideas.mdのみ】Claude Codeの「Projects」（ベータ）**（[@ClaudeDevs 2026-09-17T17:10:45Z＝日本時間 9/18 02:10](https://x.com/ClaudeDevs/status/2100633571543367691)・**本日CCが実Chromeで確認**／[公式ブログ Projects redesigned・2026-09-17](https://claude.com/blog/projects-redesigned)）
+  - verbatim：`Today we're rolling out Projects in Claude Code on desktop and web. A project is one conversation with Claude. It splits the work into threads itself, runs them as parallel cloud sessions, passes context between them, and keeps going when you leave. In beta for select users.` ／ `Available today for Pro and Max users who already run cloud sessions and haven't used Claude Projects yet.`
+  - ブログ（WebFetchの要約）：CLIは対象外・順番にチャットとCoworkへも広げる／既存のclaude.aiのProjectsはそのまま動く／**`projects can reach usage limits faster`**（スレッドごとに1つのClaude Codeセッション）
+  - **採らない理由（キュー）**：対象は「クラウドセッションを使っている人」で、この環境はローカルのデスクトップアプリ中心。手元に届いたかも未確認
+- **【新規・記録のみ】Claude Code `2.1.275`・`2.1.276`**（[npm](https://registry.npmjs.org/@anthropic-ai/claude-code)・[CHANGELOG](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)・curl）：`2.1.276`＝`2026-09-18T01:39:31Z`（日本時間 9/18 10:39）。`dist-tags`は`latest`・`next`とも`2.1.276`／`stable: 2.1.267`。`2.1.276`は`2.1.275`で入った不具合（プロキシ経由で400エラー）の修正1行
+  - `2.1.275`の主な追加（verbatim）：`Added syncing of the skills and plugins enabled on your claude.ai account to terminal sessions signed in with it; opt out with syncClaudeAiSkills: false or syncClaudeAiPlugins: false` ／ `Added a send-now key (ctrl+enter, or ctrl+x ctrl+s) that interrupts the current turn and sends all queued messages at once`
+  - **採らない理由**：claude.aiのスキルの同期は**既定でオン**で「使える範囲」に近いが、**手元は`2.1.243`のまま**（`claude --version`）で何も起きていない
+- **【記録のみ】Anthropic Newsroom**（WebFetch）：最新は**Sep 17** `Introducing the Life Sciences Verification Program`（9/18のデイリーが記録済みの2件の1つ）
+- **【差分なし】Claude Apps リリースノート**（WebFetch）：最新は**September 15, 2026**（Salesforce）のまま。**統合・Docs・Projectsはここに載っていない**
+- **本日も未確認**：Claude Academy
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：3件**（`research-20260918-02`統合／`-03` Docs・Slides／`-04` Projects）
+- **`queue.md`への投入：1本**（`CWMERGE-01`）
+- **巡回チェック**：①CHANGELOG ✅ ②npm ✅ ③@ClaudeDevs ✅（実Chrome） ④Claude Apps ✅ ⑤Claude Platform ⏭ ⑥Newsroom ✅ ⑦Pricing ✅（WebFetch） ⑧Academy ⏭ ⑨**claude.com/blog ✅（本日から追加）**
+
+---
+
 ## [2026-09-18] 調査結果（デイリー・`x-morning-brief`に統合後の初回）
 
 **①はClaude Codeが2版（`2.1.274`・`2.1.275`）出たが、Xに採るものは0件。**料金・上限・既定モデル・提供終了のどれも変わっていない。

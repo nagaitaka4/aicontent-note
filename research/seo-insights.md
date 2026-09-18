@@ -1,6 +1,34 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-09-14
+最終更新: 2026-09-18
+
+---
+
+## [2026-09-18] 調査結果（定期リサーチ・12:00のフル版）
+
+**③はGoogle側の順位変動なし。記録するのは1件：Ahrefsがフランスの「AI OverviewでCTRが23.1%下がった」調査を出した（日本版は`research-20260731-01`で記録済み）。**
+
+### Google / Search Console
+
+- **【差分なし】コアアップデート・スパムアップデートの新規アナウンスなし**（[Google Search Status Dashboard](https://status.search.google.com/summary)・WebFetchの要約）：直近は**8/18開始の2026年8月スパムアップデート（2日16時間）**のまま、9月は0件
+- **【記録のみ】Search Central Blog**（[developers.google.com/search/blog](https://developers.google.com/search/blog)・WebFetchの要約）：9月の新着が2件増えた＝`Search Central Live Deep Dive Europe 2026: Meet the community speakers`／`Search Central Live India 2026: Bengaluru, We're Coming (For Real This Time)`。**どちらもイベント告知で、手元は変わらない**
+
+### 調査会社のブログ
+
+- **【記録のみ】Ahrefs**（[ahrefs.com/blog](https://ahrefs.com/blog/)・WebFetchの要約）：**8/28以降の新着0件が5回目で止まり、9/16付で2本**
+  - `AI Overviews Cut CTR by 23.1% in France`（Juliette Begue・Data & Studies）。⚠️ **本文は開いていない**。数字は見出しのみで、条件（期間・母数・順位）は未確認
+  - `8 AI Marketing Trends I've Seen Firsthand in 2026 (Backed by Data)`（Ryan Law）
+  - **採らない理由**：フランスの数字で、このメディアの読者（日本）には日本の調査（`research-20260731-01`・同じAhrefsの日本市場30万キーワード）のほうが近い。**日本の数字を使う記事を書くときに、国ごとの差の比較として本文を読む**
+- **Semrush**：本日は開いていない
+
+### 自サイトのGSC
+
+- **本日は取得していない**（金曜は待機列の◯が5本で週次補充③を実行しない。**9/17期日のGSC月次・リライト判定は未実施のまま＝`pipeline-status.py`で🔴超過1日**）
+
+### 記事側への影響
+
+- **訂正が必要な記事：なし**（③の範囲では）
+- **M-12の保留は継続**
 
 ---
 

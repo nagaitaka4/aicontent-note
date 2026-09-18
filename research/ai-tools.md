@@ -4,6 +4,34 @@
 
 ---
 
+## [2026-09-18] 調査結果（定期リサーチ・12:00のフル版）
+
+**②は差分なし（08時台のデイリー以降）。**ChatGPTリリースノートは実Chromeで開き直し、9/17付（Word・複数アカウント）より新しい見出しは無かった。国産4社も変化なし。**採用は0件。**
+
+### ChatGPT / OpenAI
+
+- **【差分なし】ChatGPT リリースノート**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・**本日CCが実Chromeで直接確認**・WebFetchは403）：表示は`Updated: 5 時間前`。9/10以降の見出しは**9/17（ChatGPT for Word／複数アカウント）・9/14（Health）・9/11（カスタムGPT終了）**の3日分で、**すべて記録済み**。ページ上部の`New sign-ups and upgrades to the ChatGPT Pro $200 plan are temporarily paused.`も9/18デイリーの記録どおり
+- **OpenAIニュース面の9/16`Reimagining advertising with AI`**：本文はWebFetchが403で**開けていない**（9/17デイリーの申し送り）。**引き続き未確認**
+
+### Gemini / Google
+
+- **【新規・記録のみ】Gemini API 変更履歴**（[ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog)・curl）：**September 17, 2026** `Antigravity Agent 09-2026`＝`antigravity-preview-09-2026`が`05-2026`を置き換え、ツールの引数名や編集方式が変わる。**API利用者向けで、手元は変わらない**
+- **【差分なし】Geminiアプリ リリースノート**（[gemini.google/release-notes](https://gemini.google/release-notes/)・curl）：最新は**2026.09.10**のまま
+
+### 国産AIライティングツール
+
+- **EmmaTools**（[emma.tools](https://emma.tools/)・curlで日付を抽出）：最新の日付は**2026年9月10日**のまま
+- **Transcope**（[transcope.io](https://transcope.io/)・curl）：¥0／¥11,000／¥38,500が9/14と同じく表示（¥66,000は今回の抽出に出ず。⚠️ ページの一部だけ取れた可能性があり、値下げとは判断しない）
+- **Catchy・SAKUBUN**：本日は開いていない（価格が変わったときだけ拾う方式）
+
+### 本日の判断（記録）
+
+- **`ideas.md`への追記：0件**
+- **`ideas.md`の期限切れ2件を閉じた**（`research-20260917-02` 自動切り替え終了／`research-20260912-01` `claude plugin eval`）
+- **巡回チェック**：ChatGPTリリースノート ✅（実Chrome）／OpenAIニュース面 ⚠️（本文403）／Gemini API ✅／Geminiアプリ ✅／国産4社 ✅（2社）
+
+---
+
 ## [2026-09-18] 調査結果（デイリー・`x-morning-brief`に統合後の初回）
 
 **②はChatGPTのリリースノートに9/17付で2件。1件を`ideas.md`へ（Wordの中でChatGPTが使える）。**あわせて、ヘルプ全体に出ている**Pro $200プランの新規登録停止**の告知を記録する。

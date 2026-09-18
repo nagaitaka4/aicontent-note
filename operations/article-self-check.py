@@ -13,7 +13,7 @@ import re
 import sys
 import itertools
 import difflib
-from constraints import T, VAGUE_NOUN_RE, SOURCE_ONLY_RE
+from constraints import T, VAGUE_NOUN_RE, SOURCE_ONLY_RE, ISO_DATE_RE
 from collections import Counter
 
 # 2026-08-19追加：動作を抽象名詞に畳む構文（no.59でユーザー指摘）。
@@ -418,6 +418,16 @@ def main(path):
             print(f"   {t}")
     else:
         print("[OK] 資料の紹介で終わる行がない")
+
+    # --- 制作の記録の日付が本文に残っていないか（2026-09-18追加・NG）---
+    # 「2026-08-14：〜」のような作業メモの書き方は、読み手には意味が届かない（no.69）。
+    iso_lines = []
+    for line in body.split("\n"):
+        text = re.sub(r"\]\([^)]*\)", "]", line)  # リンクのURL内の日付は対象外
+        if re.search(ISO_DATE_RE, text):
+            iso_lines.append(strip_decoration(text).strip()[:48])
+    if not report("本文に制作の記録の日付（YYYY-MM-DD）がない", not iso_lines, iso_lines or ""):
+        failures += 1
 
     # --- 段落の長さチェック（リード文だけでなく本文中の全段落が対象。2026-07-31〜）---
     # 従来のリード文チェックは「最初のブロック/箇条書きが出るまで」しか見ておらず、

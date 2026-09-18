@@ -153,19 +153,22 @@ def heading(text, level=2):
     """見出し。末尾に `{#q1}` と書くと、ページ内リンク用のidを付ける（2026-09-18・no.69）。
 
     表の「問い」から各Qの見出しへ飛ぶために使う（MD側は `[問い](#q1)`）。
-    Gutenbergの見出しのアンカーはブロックコメントではなく、HTMLの `id` 属性に入る。
+    WPのエディターは `<!-- wp:heading {"level":3,"anchor":"q1"} -->` ＋ `<h3 id="q1" class=...>` の形で保存する。
+    同じ形で出しておくと、ユーザーがWPで保存しても本文の差分が出ない（2026-09-18に実測）。
     """
     tag = "h%d" % level
-    attrs = "" if level == 2 else ' {"level":%d}' % level
-    anchor = ""
+    opts = [] if level == 2 else ['"level":%d' % level]
+    id_attr = ""
     m = re.search(r"\s*\{#([A-Za-z][\w-]*)\}\s*$", text)
     if m:
-        anchor = ' id="%s"' % m.group(1)
+        opts.append('"anchor":"%s"' % m.group(1))
+        id_attr = ' id="%s"' % m.group(1)
         text = text[: m.start()]
-    return '<!-- wp:heading%s -->\n<%s class="wp-block-heading"%s>%s</%s>\n<!-- /wp:heading -->' % (
+    attrs = " {%s}" % ",".join(opts) if opts else ""
+    return '<!-- wp:heading%s -->\n<%s%s class="wp-block-heading">%s</%s>\n<!-- /wp:heading -->' % (
         attrs,
         tag,
-        anchor,
+        id_attr,
         inline(text),
         tag,
     )

@@ -1,7 +1,27 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-19
+最終更新: 2026-09-20
 
+
+---
+
+## [2026-09-20] 調査結果（デイリー・日曜の短縮版）
+
+**①はClaude Code `2.1.278`が出た。auto modeの判定（classifier）にかかっていた課金が、API・Enterprise・Bedrock／Vertex／Foundry・ゲートウェイ経由の利用で無くなる。サブスクで使う読者の手元は変わらないので、キューには入れない。**ほかの面は差分なし。②も差分なし。
+
+### Claude Code / Anthropic
+
+- **【記録のみ】Claude Code `2.1.278`：auto modeのclassifier課金をサーバー側に寄せた**（[npm](https://registry.npmjs.org/@anthropic-ai/claude-code)・[CHANGELOG](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)・本日CCがcurlで取得）：公開＝`2026-09-19T01:48:59.758Z`（日本時間 9/19 10:48）。手元は`2.1.243`のまま
+  - verbatim：`Changed auto mode for Claude API and Enterprise users, and on Bedrock, Vertex, Foundry and gateways, to default to the server-side classifier, which does not charge for classifier overhead (CLAUDE_CODE_AUTO_MODE_SERVER=0 opts out on Bedrock, Vertex, Foundry and gateways); warns on billed fallback`
+  - verbatim（2件目）：`Added an Auto mode server row to /status showing whether this session's auto mode classifier runs on the server`
+  - 公式ドキュメント [Auto mode classifier request charges](https://code.claude.com/docs/en/auto-mode-classifier-billing)（本日CCがcurlで本文確認）verbatim：`In auto mode, a classifier runs safety checks on actions such as shell commands and network requests before they run.` ／ `Wherever server-side checks are on, Claude Code v2.1.278 or later asks the server to perform those checks as part of the session's own model requests, and doesn't charge for them when the server performs them.` ／ `When the server's checks can't reach your session, Claude Code keeps using its own classifier requests instead, and those requests are billed as they were before.`
+  - **採らない理由（キュー・ideas.mdにも入れない）**：対象が**APIキー利用・Enterprise・Bedrock／Vertex／Foundry・ゲートウェイ経由**で、**Pro／Maxのサブスクで使う読者には請求の変化が起きない。**「使う側の何かが変わる」に当たらず、③（決断・感情）も立たない
+  - ⚠️ **この記録から先に進んで書かないこと**：「サブスクでも週の上限を食っていた／食わなくなる」は**一次情報に書かれていない。**ドキュメントが言っているのは課金（billed）の話だけ
+- **【差分なし】claude.com/blog**（curlでHTML取得・日付つきで一覧化）：最新は**9/17**（Balyasny事例）。9/16の`Projects redesigned`・`Claude managed agents memory`まで記録済みで、9/18・9/19の新規なし
+- **【差分なし】@ClaudeDevs**（実Chrome）：最新は**9/18**のProjects（`research-20260918-04`で記録済み）
+- **【差分なし】Claude Apps リリースノート**（curl）：最新は**September 15, 2026**（Salesforce）のまま
+- **【差分なし】Anthropic Newsroom**（curl）：最新は**Sep 17**（フロンティア開発の可視化指標の提案）。読者の手元は変わらない
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅
 
 ---
 

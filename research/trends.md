@@ -1,9 +1,23 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-20
+最終更新: 2026-09-21
 
 
 ---
+
+## [2026-09-21] 調査結果（デイリー・月曜／敬老の日の短縮版＋フル版）
+
+**①②とも差分なし。**巡回6面すべてを開いて、前回（9/20）以降の新規は0件だった。**キュー投入0本・`ideas.md`への追記0件。**
+
+### Claude Code / Anthropic
+
+- **【差分なし】npm `@anthropic-ai/claude-code`**（本日CCがcurlで取得）：最新は**`2.1.278`**（公開`2026-09-19T01:48:59.758Z`＝日本時間 9/19 10:48）のままで、9/20・9/21の新版なし。`dist-tags`は`latest`・`next`とも`2.1.278`／`stable: 2.1.267`。レジストリの`modified`は`2026-09-19T03:10:16.949Z`。手元は`2.1.243`
+- **【差分なし】CHANGELOG.md**（curl）：先頭は`## 2.1.278`（auto modeのclassifier課金・9/20に記録済み）。その上に新しい節なし
+- **【差分なし】Claude Apps リリースノート**（curl）：最新は**September 15, 2026**（Salesforce in Claude・ベータ）のまま。**あとから足されたエントリも無し**（9/10 Smart reports・9/1 Fable 5.1／Mythos 5.1・8/25 Memoryまで既記録と一致）
+- **【差分なし】Anthropic Newsroom**（curl・記事ページで日付を個別確認）：最新は**Sep 18**（`accenture-embedded-evaluation`＝9/19記録済み）。その次は**Sep 17**（`life-sciences-verification-program`）。一覧の先頭にある`improving-alignment-security-efforts`は**Aug 31**の記事で、新規ではない
+- **【差分なし】claude.com/blog**（curl・記事ページで`datePublished`を個別確認）：最新は**9/17**（Balyasny事例）のまま。**一覧の上部9件は特集枠で、日付順ではない**——`claude-in-chrome-generally-available`（Aug 26）・`cowork-built-in-browser`（Aug 26）・`artifacts-in-claude-code`（**Jun 18**）・`claude-for-foundation-models`（Jun 08）・`claude-managed-agents-updates`（May 19）・`new-in-claude-managed-agents`（May 19）・`connectors-for-everyday-life`（Apr 23）は全部過去記事だった。**⚠️ 次回以降、この面は「一覧の並び順」で新旧を判定しない。記事ページの`datePublished`で確認する**
+- **【差分なし】@ClaudeDevs**（実Chrome）：最新は**9/18**のProjects（`research-20260918-04`で記録済み・200万表示／1.1万いいね）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅
 
 ## [2026-09-20] 調査結果（デイリー・日曜の短縮版）
 

@@ -1,8 +1,16 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-20
+最終更新: 2026-09-21
 
 ---
+
+## [2026-09-21] 調査結果（デイリー・月曜／敬老の日の短縮版）
+
+**②は差分なし。**採用0件。
+
+- **【差分なし】ChatGPT リリースノート**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chromeで本文まで確認。curlはCloudflareに阻まれる）：表示は`Updated: 昨日`。**9月の見出しを最後まで読み直しても最新は9/17**（ChatGPT for Word／プラグインの複数アカウント接続）。**あとから足されたエントリも無し**（9/14 Health・自動切り替え終了／9/11 カスタムGPT終了／9/10 Data・Library／9/9 Voice／9/8 Images 2.5／9/3 Astra／9/1まで既記録と一致）
+- **【差分なし】Geminiアプリ リリースノート**（curl）：最新は**2026.09.10**（Windows版アプリ）のまま
+- **【差分なし】OpenAI Newsroom**：curlでは本文が取れず（JS描画）。ChatGPTリリースノート側で9/17以降の新規が無いことを確認済み
 
 ## [2026-09-20] 調査結果（デイリー・日曜の短縮版）
 

@@ -1,8 +1,37 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-09-18
+最終更新: 2026-09-21
 
 ---
+
+## [2026-09-21] 調査結果（定期リサーチ・月曜のフル版）
+
+**③はGoogle側の順位変動なし。新しく記録するのは2件（どちらも米国限定・手元は変わらない）。**9/18のフル版が鈴木謙一氏の面を開いていなかったため、9/15〜9/19の5本を読み直した。
+
+### Google / Search Console
+
+- **【差分なし】コアアップデート・スパムアップデートの新規アナウンスなし**（[Google Search Status Dashboard](https://status.search.google.com/summary)・WebFetchの要約）：直近は**8/18開始の2026年8月スパムアップデート（2日16時間）**のまま、**9月は0件**
+- **【差分なし】Search Central Blog**（[developers.google.com/search/blog](https://developers.google.com/search/blog)・WebFetchの要約）：9月は3件（Deep Dive Europe／India Bengaluru／Bogota・Ciudad de México）で、**9/18から増えていない**。すべてイベント告知
+
+### 調査会社・SEOメディア
+
+- **【新規・記録のみ】Googleが「AI contribution pilot」をテスト中**——**AI回答（Gemini アプリ・AI Overviews・AI Mode）の生成に自分のページが実質的に寄与したとき、サイト側に報酬を払う**実験。Search Console の中に月次の金額が出る（[鈴木謙一氏 2026-09-15](https://www.suzukikenichi.com/blog/)の見出し／[9to5Google 2026-09-17](https://9to5google.com/2026/09/17/google-ai-contribution-pilot-tests-paying-websites-when-theyre-used-in-ai-results/)／[Search Engine Roundtable](https://www.seroundtable.com/google-al-contribution-pilot-42076.html)・**本日CCがWebSearchの要約で確認**）
+  - **招待制**で、声がかかったのは「少なくとも数十社」。ニュース媒体に限らない。**回答が出たあとのリンクやファクトチェックは対象外**で、生成に寄与した分だけ積み上がる
+  - 初期の支払額は**広告収入に比べると小さい**と参加側が話している／**どのページで・何回・どう計算されたかは参加者にも見えない**
+  - **⚠️ 一次情報（Googleの公式発表・ヘルプ）はまだ開けていない。**現時点で確認できたのは海外メディアの報道と鈴木謙一氏の見出しのみ。**記事に書くなら一次情報を先に探す**
+  - **採らない理由（Xネタ）**：招待制で、このメディアも読者も**申し込む先が無い＝手元が変わらない**（軸②の採用基準に当たらない）。**GEO記事群（no.54・no.63・no.65）の更新材料としてだけ持つ**——「AI回答に使われても報われない」という前提が将来変わりうる、という話の裏づけになる
+- **【新規・記録のみ】Googleの「検索プロフィール」が3点更新（米国）**（[鈴木謙一氏 2026-09-18](https://www.suzukikenichi.com/blog/google-improves-search-profiles-updates-to-brand-management-article-display-and-eligibility/)・**本日CCがWebSearchの要約で確認**）：①1つのGoogleアカウントで**最大10個**のプロフィールを管理できる ②記事・コンテンツの表示デザインを更新 ③**登録条件の緩和＝どこかのプラットフォームでフォロワー1万人以上**
+  - **採らない理由**：**米国での展開**で日本への時期は未公表。条件のフォロワー1万人も、このアカウント（**9人**）には遠い。**8/17に記録した「フォロワー要件を約3分の1に緩和」の続報**として置く
+- **【記録のみ】Ahrefs**：9/16付の2本（フランスのAI Overview CTR −23.1%／AIマーケ8トレンド）から**新着なし**。本文は引き続き未読
+
+### 自サイトのGSC
+
+- **本日は取得していない**（③の週次補充の中で取る。**9/17期日のGSC月次・リライト判定は4日超過**＝`pipeline-status.py`で🔴）
+
+### 記事側への影響
+
+- **訂正が必要な記事：なし**
+- **更新材料に入れたもの**：AI contribution pilot → GEO記事群（no.54・no.63・no.65）の材料候補。**一次情報が取れるまで本文には書かない**
 
 ## [2026-09-18] 調査結果（定期リサーチ・12:00のフル版）
 

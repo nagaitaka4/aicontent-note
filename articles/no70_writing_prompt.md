@@ -4,7 +4,7 @@
 **実行環境（2択・2026-09-21）**
 - **A：Codex（リポジトリ `aicontent-note` を接続）**。新しいスレッドで、次の1行だけを貼る（「執筆してください」だけでは不足。他のルールファイルを読みに行って指示が薄まる）：
   `articles/no70_writing_prompt.md の指示だけを根拠に記事の初稿を書いてください。文体見本は articles/ai-how-to-use-10-questions.md を読んでください。それ以外のファイル（rules/・knowledge/・operations/・他の記事）は読まないでください。出力は articles/no70_astra_draft.md に保存し、コミットはしないでください。`
-  モデルは GPT-6 Astra を選ぶ（選べなければ使ったモデル名をここに記録する）。
+  **モデル**：Codexの一覧にAstraは無い（2026-09-21実測：5.6 Sol〔既定〕／5.6 Terra／5.6 Luna／5.5）。**既定の 5.6 Sol を使う**。思考量は「高」があればそれを選ぶ。使ったモデル名と思考量をここに記録する：＿＿＿
 - **B：ChatGPT Work（GPT-6 Astra）**。新しいスレッド・リポジトリは接続しない（`operations/gpt-writing-prompt.md`）。①下の「---」以降を全部貼る ②文体見本として `articles/ai-how-to-use-10-questions.md`（no.69）をファイル添付する（本文はペーストしない）。
 **記録**：Astraの出力は `articles/no70_astra_draft.md` に保存し、CCの初稿 `articles/claude-company-data-training.md` と並べて判定する。開始時刻・終了時刻をここに追記する。
 

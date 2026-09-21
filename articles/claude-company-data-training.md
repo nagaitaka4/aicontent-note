@@ -22,7 +22,7 @@ Claudeでは、==通常のチャットが学習に使われるかは設定で変
 
 ## 通常のチャットが学習に使われるかは、プランと設定で決まる
 
-==答えは、プランの名前ではなく設定の状態で決まる==、です。
+==答えは、プランと、モデル改善の設定がオンかオフかで決まります==。
 公式の条件を先に表にします。
 Claude Codeも、そのアカウントで使う分は同じ扱いです。
 
@@ -35,7 +35,6 @@ Claude Codeも、そのアカウントで使う分は同じ扱いです。
 ※Claude.aiのIncognitoチャットは例外で、設定がオンでも学習には使われません（[プライバシーセンター](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training)）。
 
 公式の原文は「when this setting is on」、つまり設定がオンのときに使う、です。
-有料のPro・Maxでも、オンなら使われます。
 「Claudeだから危ない」でも「有料だから安全」でもなく、どの設定で使っているかで答えが変わります。
 
 ただし、学習に使われない設定なら何でも入力してよい、という意味ではありません。
@@ -43,7 +42,7 @@ Anthropicの[Consumer Terms](https://www.anthropic.com/legal/consumer-terms)は�
 原文では「all rights, licenses, and permissions」を持つと利用者が保証します。
 
 【ポイント】<br>
-プランの名前ではなく、モデル改善の設定がオンかオフかで決まる
+有料のPro・Maxでも、設定がオンなら学習に使われる
 
 ## オンかオフか、どこで確かめるか
 

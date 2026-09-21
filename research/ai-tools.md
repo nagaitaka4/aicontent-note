@@ -1,8 +1,24 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-21
+最終更新: 2026-09-22
 
 ---
+
+## [2026-09-22] 調査結果（デイリー・火曜）
+
+**②に新規2件（どちらも9/21付）。採用1件＝ChatGPTの「Privacy Center」。**
+
+- **【新規・採用】ChatGPTに「Privacy Center」が出た**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) September 21, 2026・**本日CCが実Chromeで本文まで確認**。curlはCloudflareに阻まれる）
+  - verbatim：`Privacy Center is rolling out to signed-in ChatGPT Free, Go, Plus, and Pro users. It brings together information about chat privacy, memory, personalization, data use, connected apps, and account security, with links to the settings that manage them.`
+  - verbatim（2件目）：`Your privacy controls remain in ChatGPT Settings.`
+  - verbatim（3件目）：`On the web, open your account menu, select Help, then select Privacy Center. On mobile, open Settings, then select Privacy Center on iOS or Privacy center on Android. Available options depend on your plan, region, and workspace settings.`
+  - **使う側の変化**：自分のチャットが学習に使われるか・記憶に何が残っているか・どのアプリと繋がっているかを、**無料プランを含めて1つの入口から見られるようになった**
+  - ⚠️ **この記録から先に進んで書かないこと**：**設定そのものはSettingsのままで、変わっていない**（`Your privacy controls remain in ChatGPT Settings.`）。集まったのは情報と入口。「設定が1か所になった」と書くと事実に反する。また`rolling out`＋`depend on your plan, region, and workspace settings`なので「全員が今すぐ見られる」とも書かない
+  - → `knowledge/x/ideas.md` `research-20260922-01`（鮮度期限〜9/24）
+- **【記録のみ・採らない】Finances に信用スコア**（同じ9/21のエントリ）：Experianの信用レポートとVantageScore 3.0を繋いでChatGPT内で信用スコアを追える。verbatim `This feature is rolling out in Finances to Plus and Pro users in the U.S. on web, iOS, and Android.`。**採らない理由：米国のPlus・Pro限定で、日本の読者の手元は変わらない**
+- **【差分なし】Geminiアプリ リリースノート**（curl）：最新は**2026.09.10**（Windows版アプリ）のまま
+- **【差分なし】Gemini API 変更履歴**（curl）：最新は**September 17, 2026**（Antigravity Agent 09-2026・9/18記録済み）
+- **巡回チェック**：ChatGPTリリースノート ✅（実Chrome）／Geminiアプリ ✅／Gemini API ✅
 
 ## [2026-09-21] 調査結果（デイリー・月曜／敬老の日の短縮版）
 

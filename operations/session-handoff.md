@@ -1,6 +1,6 @@
 # セッション引き継ぎ
 
-最終更新：2026-09-21 15:00（**TOP10 #1 no.70の構成確定**（ユーザー確認で4点修正）。Astra実験をno.70で開始＝執筆プロンプト作成済み。**次はアイキャッチ（参考画像待ち）→ CC初稿。Astra初稿はユーザーがChatGPT Workで生成**）
+最終更新：2026-09-21 15:00（**TOP10 #1 no.70の構成確定**（ユーザー確認で4点修正）。Astra実験はCodexにAstraが無く持ち越し。**次はアイキャッチ（参考画像あり・プロンプト第2案提示済み）→ CC初稿**）
 
 ---
 
@@ -14,7 +14,7 @@
 2. 構成案 `operations/structure-drafts/claude-company-data-training.md`（✅ 構成確定・「書かないこと」5項目が9/21の指摘）と材料シート `claude-company-data-training-facts.md`（3-2訂正・3-7 Incognito・3-8 権利を9/21追加）を読む
 3. **アイキャッチ**：`knowledge/eyecatch-rules.md`を読み直す → **ユーザーの参考画像添付を待ってからプロンプト1案**（参考画像なしの先行は、ユーザーがそう決めた場合だけ）→ 生成・アップ → `ls -lt images/` → リサイズ・リネーム `eyecatch_0070.png`（保存前に `ls images/eyecatch_0070.png` で未存在を確認）
 4. **執筆（CC初稿）**：アイキャッチ完了後。`rules/article-flow.md` 4原則と5章を読み直し、`articles/claude-company-data-training.md` に書く。CTAはno.69からコピー。`article-self-check.py` NG 0件＋リードを声に出して読む
-5. **Astra実験（並行）**：ユーザーが `articles/no70_writing_prompt.md` をChatGPT Work（GPT-6 Astra）の新スレッドに貼り、no.69のMDを添付して生成 → 出力を `articles/no70_astra_draft.md` に保存 → CC初稿と比べる（NG件数・「絶対に外さないこと」10項目への違反数・修正回数・所要時間）→ 良いほうを公開。判定は `operations/measurement-calendar.md` と#7の材料シート2節へ
+5. ~~Astra実験（並行）~~ → **9/21 15:32 持ち越し（ユーザー判断：CodexのモデルにAstraが無い。Astraでないと意味がない。no.70は記事だけに集中）**。プロンプト `articles/no70_writing_prompt.md` は残す。Astraが選べる状態になった次の記事で実施
 
 ### 9/21のユーザー指摘で直した4点＋追加2文（執筆時に必ず守る・構成案「書かないこと」）
 
@@ -36,7 +36,7 @@
 | **no.69 AIの使い方で迷う10の問い。記事66本をAIで作った記録で答える** | **2026-09-18 22:22公開**（post 991・GSCインデックス登録リクエスト済み）。公開後の作業は完了（MD同期2件・記事一覧・バックログ・issue #2・TOP10繰り上げ・X下書き3本`TOI69-*`・GSC確認タスク） | GSCインデックス確認（`tasks/README.md`常時掲載） |
 | **待機列の補充（GPT相談2回）** | 1回目＝整理（`operations/editorial-meeting-gpt-answer-2026-09-19.md`）、2回目＝新規20本（`-b.md`）。**サジェスト60語を実測**して◯6本＋引き継ぎ1本を待機12〜18に。C-6〜C-10は16:40に推奨どおり承認 | 待機列は11本（11〜21）・◯11本。20本を超えているが△が無いので外す行が無い。10/15（no.14の着手条件）でリライト3本の行き先が決まったら20本へ |
 | **実験5件（承認済み・未開始）** | 順番：①PDF→②Excel→③スクショ→④CSV→⑤日本語（各2日・正解表を先に作る）。`operations/measurement-calendar.md` | **着手はTOP10 #1の構成案の後**。1件ずつCCが実施し、材料シート（新規に作る）2節へ。実験①のPDFはno.68で使った特許庁・文化庁のPDFを含める |
-| **no.70 Claudeに会社の情報を渡して大丈夫か（TOP10 #1）** | **構成確定（9/21）**。Astra用の執筆プロンプト `articles/no70_writing_prompt.md` 作成済み | アイキャッチの参考画像（ユーザー）→ プロンプト → 執筆。Astra初稿はユーザーがChatGPT Workで生成 |
+| **no.70 Claudeに会社の情報を渡して大丈夫か（TOP10 #1）** | **構成確定（9/21）**。Astra用の執筆プロンプト `articles/no70_writing_prompt.md` 作成済み | アイキャッチ生成（プロンプト第2案＝`operations/structure-drafts/claude-company-data-training-eyecatch-prompt.md`）→ 画像アップ → リサイズ・リネーム → CC執筆。Astra実験は持ち越し |
 | TOP10 #2〜#4 | 材料シート完成（課金・許可設定・Astra×分担）。#4はAstraの実測が無い | 構成案はTOP10の順に |
 | TOP10 #5 | ⚠️ 9/16にチャットとCoworkが統合され前提が変わった（`tasks/README.md` #5の行） | 着手前にユーザーの画面が移ったかを確認し、題の「Cowork」を残すか決める |
 | 材料シート | 完成4本（下限5）🔴・テーママップの空欄3本（下限5）🔴（`python3 operations/pipeline-status.py` 9/19） | 月曜9/21の定期リサーチで補充。待機12〜18のシートは実験時に作る |

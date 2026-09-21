@@ -60,6 +60,27 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 **基準に満たないものはここに入れない**（research/配下への記録だけで止める）。
 
+> **📮 2026-09-22 07時台（ユーザーのスクリーンショットで確定）：`research-20260922-02`の③が立った。完成版はこちら。**
+> **ユーザーの実測＝「モデル改善に協力する」はオンのままだった**（`chatgpt.com/settings/data-controls`の画面・所在地とWorkのネットワークアクセスもオン）。**これで3条件が3つそろった**（①自分に起きた出来事◯／②具体物◯／③告白◯＝★★★★★）。
+>
+> ```
+> ChatGPTの「モデル改善に協力する」、自分はオンのままでした。
+>
+> 設定 → データコントロールにあります。オンだと、自分の会話がモデルの学習に使われることがあります。
+>
+> しかもオフにしても、👍か👎を押すとその会話が丸ごと学習に使われることがあると公式に書いてありました。
+> ```
+>
+> **重み260／280・1行目[OK]・`x-hook.py`[OK]（A・Bとも）。**
+> **⚠️ 2件の訂正**：①ラベルは日本語UIの**「モデル改善に協力する」**（英語の`Improve the model for everyone`ではない）②`may be used`なので**「使われることがある」**と書く（「使われる」と断定しない）。
+> **追加で確認した一次情報**（[How your data is used to improve model performance](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance)・本日CCが実Chromeで確認）：
+> - verbatim `When enabled, OpenAI may use eligible content to improve the performance and safety of its models.`
+> - verbatim `Conversations with OpenAI Support may be used to improve OpenAI services, including our models, if Improve the model for everyone is enabled in Settings.`（**サポートとのやり取りも対象**）
+> - verbatim `Even if you have opted out of training, you can still choose to provide feedback... If you choose to provide feedback, the entire conversation associated with that feedback may be used to train our models.`
+> - verbatim `Codex has a separate Include environments setting in Codex settings... Changing your settings in ChatGPT or the Privacy Portal does not change that setting.`
+> - ⚠️ **公式のどこにも「オンにすると自分の回答が良くなる」とは書かれていない。**メモリ・パーソナライズは**別設定**（`These are separate settings`）。**「オンのほうが自分に得」と書かない。**
+> - ⚠️ **過去に学習へ使われた分がどうなるかは書かれていない。**`After you opt out, we won't use your new conversations`＝**新しい会話**の話。**遡って消えるとは書かない。**
+
 > **🛑 2026-09-22 07時台（ユーザー指摘で投稿を取り下げ）：`research-20260922-01`（Privacy Center）は本日出さない。**
 > **指摘**：「増えたのは設定じゃなくて、説明でした。って何のこと？」「`Privacy Center`が自分のGPTにはどこにもないですが、どこから確認できますか？」「この投稿内容意味がぜんぜん私はわかってません」。
 > **取り下げの理由は3つ。**
@@ -257,7 +278,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 | ID | 動向・ネタ | 出典ファイル | リサーチ日 | 鮮度期限 | 軸 |
 |---|---|---|---|---|---|
-| research-20260922-02 | **ChatGPTの学習オフは「設定 → データコントロール →『Improve the model for everyone』」で切れる。ただしオフにしても、👍👎のフィードバックを押すとその会話全体が学習に使われることがある**（[Data controls in ChatGPT](https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt)・**2026-09-22にCCが実Chromeで本文確認**）。verbatim `Open Settings and select Data controls to manage the options available to your account.` ／ `When Improve the model for everyone is off, your new conversations won't be used to train OpenAI models.` ／ `If you choose to provide feedback, such as selecting thumbs up or thumbs down on a response, the entire conversation associated with that feedback may be used to train OpenAI models.` ／ `The privacy center explains your privacy options and helps you find the settings that manage them. You can still manage those settings from the Settings menu in ChatGPT.`。**使う側の変化**：オフにしただけで安心にはならない。**`research-20260922-01`（Privacy Center）の差し替え。本人の画面で今すぐ確かめられるのが採用理由**。**③はユーザーが自分の設定を開いた日に立つ。**⚠️ no.70（Claudeの学習設定）と同じ「オフなら何でも入力してよい、ではない」の構造＝**記事側の材料にもなる**（3.6-1） | `research/ai-tools.md` | 2026-09-22 | 条件付き（設定の場所は変わらないので鮮度が落ちない） | ② |
+| research-20260922-02 | **ChatGPTの学習オフは「設定 → データコントロール →『モデル改善に協力する』」で切れる**（⚠️ **日本語UIのラベルは「モデル改善に協力する」。**公式ヘルプの英語表記`Improve the model for everyone`をそのまま投稿に書かない＝読者の画面と一致しない。2026-09-22にユーザーのスクリーンショットで判明）。ただしオフにしても、👍👎のフィードバックを押すとその会話全体が学習に使われることがある**（[Data controls in ChatGPT](https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt)・**2026-09-22にCCが実Chromeで本文確認**）。verbatim `Open Settings and select Data controls to manage the options available to your account.` ／ `When Improve the model for everyone is off, your new conversations won't be used to train OpenAI models.` ／ `If you choose to provide feedback, such as selecting thumbs up or thumbs down on a response, the entire conversation associated with that feedback may be used to train OpenAI models.` ／ `The privacy center explains your privacy options and helps you find the settings that manage them. You can still manage those settings from the Settings menu in ChatGPT.`。**使う側の変化**：オフにしただけで安心にはならない。**`research-20260922-01`（Privacy Center）の差し替え。本人の画面で今すぐ確かめられるのが採用理由**。**③はユーザーが自分の設定を開いた日に立つ。**⚠️ no.70（Claudeの学習設定）と同じ「オフなら何でも入力してよい、ではない」の構造＝**記事側の材料にもなる**（3.6-1） | `research/ai-tools.md` | 2026-09-22 | 条件付き（設定の場所は変わらないので鮮度が落ちない） | ② |
 | research-20260922-01 | **ChatGPTに「Privacy Center」が出た。チャットが学習に使われるか・記憶に何が残っているか・どのアプリと繋がっているかを、無料プランを含めて1つの入口から見られる**（[ChatGPT — Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) September 21, 2026・**本日CCが実Chromeで確認**）。verbatim `Privacy Center is rolling out to signed-in ChatGPT Free, Go, Plus, and Pro users. It brings together information about chat privacy, memory, personalization, data use, connected apps, and account security, with links to the settings that manage them.` ／ `Your privacy controls remain in ChatGPT Settings.`。**使う側の変化**：自分のデータの扱いを確かめに行く入口ができた。⚠️ **設定そのものはSettingsのままで変わっていない**ので「設定が1か所になった」と書かない。`rolling out`かつ`depend on your plan, region, and workspace settings`なので「全員が今すぐ」とも書かない。**3条件は①今出す理由◯／②具体物◯の2個＝★★★★★。③（決断・感情）は無い＝弱点**（ユーザーがまだ開いていない）。**キューには入れず、本日の投稿候補として完成版を出した** | `research/ai-tools.md` | 2026-09-22 | 〜9/24（発表9/21から3日） | ② |
 | research-20260919-01 | **Claude CodeがAGENTS.mdを読むようになった（`2.1.277`・npm公開 日本時間9/19 01:22）。CLAUDE.mdが無いプロジェクトでは、代わりにAGENTS.md（CodexなどAI各社で共通のルールファイル）を読む**（[CHANGELOG](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)・[npm](https://registry.npmjs.org/@anthropic-ai/claude-code)・本日CCがcurlで確認）。verbatim `Added AGENTS.md support: in a project with no CLAUDE.md, Claude Code reads AGENTS.md instead; change it under "Project instructions" in /config (not yet on Bedrock, Vertex or Foundry)`。**使う側の変化**：ChatGPT（Codex）用にAGENTS.mdを書いた人が、書き直さずにClaude Codeへ持ち込める。**下書きにしない理由**：このリポジトリはCLAUDE.mdとAGENTS.md（101行・CLAUDE.mdの写し）を両方持っていて、CLAUDE.mdがあるので何も変わらない。手元は`2.1.243`のまま。③（決断・感情）が立たず★★★★☆止まり。**再利用条件：ユーザーがAGENTS.mdの扱いを決めた（片方に寄せた／消した）日、またはAGENTS.mdだけの環境で試した日** | `research/trends.md` | 2026-09-19 | 〜9/22 | ② |
 | ~~research-20260918-02~~ | ✅ **2026-09-18に下書き化（消化先＝`queue.md`の`CWMERGE-01`）。** **ClaudeのチャットとCoworkが1つに統合される。Pro・Maxから数週間かけて展開、一度移ると元の「チャット」「Cowork」の2つには戻せない**（[公式ブログ 2026-09-16](https://claude.com/blog/cowork-is-now-claude)／[ヘルプ](https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude)・**本日CCがWebFetchで確認**）。verbatim `Claude Cowork and chat are merging into one Claude.` ／ `Ask Claude for what you need, and it can decide which tool to use.` ／ `Once your account has the new experience, you can't switch back to separate "Chat" and "Cowork" options.`。**使う側の変化**：入力欄の切り替えがなくなり、Claudeが道具を選ぶ。**このアカウントは8/19に`Cowork-気`で「チャットとCowork／Codeを切り替えられるようになってました」と投稿している**。⚠️ ユーザーの画面が移ったかは未確認 | `research/trends.md` | 2026-09-18 | 〜9/20（発表9/16〔日本時間9/17〕から3日） | ② |

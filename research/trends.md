@@ -1,9 +1,29 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-22
+最終更新: 2026-09-23
 
 
 ---
+
+## [2026-09-23] 調査結果（デイリー・水曜／秋分の日）
+
+**①に新規あり：9/22にClaude Opus 5.5が公開された。**Claude Codeも`2.1.280`で既定のOpusがOpus 5.5に替わった。→ `knowledge/x/ideas.md` `research-20260923-01`（**本日の投稿候補の2本目として完成版を提示・キュー投入0本**）
+
+### Claude Code / Anthropic
+
+- **【新規・採用】Claude Opus 5.5**（[Anthropic Newsroom](https://www.anthropic.com/news/claude-opus-5-5)・September 22, 2026・本日CCがcurlで本文確認）
+  - verbatim：`We're introducing Claude Opus 5.5, the first model in our new Claude 5.5 family. It performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5.`
+  - verbatim（料金）：`Input and output tokens are $4 and $20 per million, 20% less than Opus 5. Cache reads (...) are $0.20 per million tokens, 60% less than Opus 5. Opus 5.5 also generates output more than 30% faster than Opus 5.`
+  - verbatim（上限）：`we're increasing five-hour usage limits on Pro, Max, Team, and seat-based Enterprise plans. We're also providing subscription users a rate limit reset, which you can now save and use whenever you choose.`
+  - verbatim（今後）：`Claude Sonnet 5.5 and Claude Haiku 5.5 will follow in the coming weeks`
+  - 提供：`Claude Opus 5.5 is now available on all platforms`（`rolling out`の記載なし）
+- **【新規】@ClaudeDevs**（実Chrome）：[9/22 16:44Z](https://x.com/ClaudeDevs/status/2102438800836489554) `In Claude Code: - 5-hour session limits increase 20% today - Opus 5.5 is priced lower, so it goes 25% further within limits - Pro, Max, and Team users get a reset to use anytime`／[続き](https://x.com/ClaudeDevs/status/2102438803013333469) `your reset is available today in Settings → Usage. Apply it any time until Oct 22.` `Opus 5.5 is the default for paid plans.`／[9/22 20:14Z](https://x.com/ClaudeDevs/status/2102491840612380934) 使い方のコツ（`Drop "think carefully". It always thinks first.`）
+- **【実画面で確認】`claude.ai/settings/usage`（ユーザーのMax (5x)・CCが読むだけで開いた・何も押していない）**：「プランの使用量上限」の下に**「リセット」**欄＝`Opus 5.5をさらにじっくり試せる余裕を手に入れましょう。有効期限：10月23日。`＋ボタン**`無料でリセット`**。今週の`すべてのモデル 7% 使用済み`。モデル選択の表示は`Opus 5.5`。**⚠️ 日本語UIの項目名は「使用量」、期限は画面では10月23日**（@ClaudeDevsの`Oct 22`は米国時間）
+- **【新規】npm `@anthropic-ai/claude-code`**：`latest`・`next`とも**`2.1.280`**（公開`2026-09-22T15:44:39Z`＝日本時間 9/23 00:44）／`stable: 2.1.267`。`2.1.279`はnpmに無い
+- **【新規】CHANGELOG.md `## 2.1.280`**：verbatim `Added Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads`。ほかはauto modeの再試行の修正（`the action is now denied once`／`retries now back off, and the turn stops with a message after ten in a row`）、シンボリックリンク経由の書き込みの判定修正、ダイアログで`y`/`n`の1文字が確定・キャンセルにならないよう変更（`Enter and Esc accept and cancel`）など
+- **【新規】Claude Apps リリースノート**：**September 22, 2026「Claude Opus 5.5 launch」**（Newsroomと同じ内容）。それより前の日付の追加は無し（9/15 Salesforceまで既記録と一致）
+- **【新規】claude.com/blog**：**9/22 `what-a-task-costs-on-opus-5-5`**（1タスクあたりの費用の考え方。ターン数が費用を決める・努力量を下げると再試行で逆に高くつく、という解説）。記録のみ（読者の手元の操作は変わらない）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅
 
 ## [2026-09-22] 調査結果（デイリー・火曜）
 

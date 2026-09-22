@@ -1,8 +1,21 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-22
+最終更新: 2026-09-23
 
 ---
+
+## [2026-09-23] 調査結果（デイリー・水曜／秋分の日）
+
+**②に新規1件＝OpenAIの「GPT-6 Sol」「GPT-6 Luna」（9/22）。**`knowledge/x/ideas.md` `research-20260923-02`に記録。**本人の画面で未確認のため投稿候補にしない。**
+
+- **【新規・ideasのみ】GPT-6 Sol／GPT-6 Luna**（[Introducing GPT-6 Sol and Luna](https://openai.com/index/introducing-gpt-6-sol-and-luna/)・2026年9月22日・本日CCが実Chromeで本文確認）
+  - verbatim：`GPT‑6 Sol and GPT‑6 Luna are available in ChatGPT Work and Codex starting today for all Plus, Pro, Business, Enterprise, and Edu users. Free and Go users can access GPT‑6 Luna in the desktop app. These models are not yet available in Chat. In the OpenAI API, they are available as gpt-6-sol and gpt-6-luna.`
+  - verbatim：`we plan to roll out these models in ChatGPT gradually throughout the day.`
+  - 同日に`Better prompt caching for GPT-6`（openai.com/news・記録のみ）
+  - ⚠️ **ChatGPTのリリースノート本体（help.openai.com）は最新が9/21のまま**で、Sol／Lunaはまだ載っていない。**Model Release Notesも最新はAugust 18**。一次情報はopenai.com/indexだけ
+- **【差分なし】ChatGPT リリースノート**（実Chrome）：9月の見出しは21・17・14・11・10・9・8・3・1で、**あとから足された日付も無し**（すべて既記録）
+- **【記録のみ・採らない】Gemini API 変更履歴 September 18, 2026（あとから足された日付）**：verbatim `we are limiting access to the 2.5 models to users who have actively used them in the past. These models are not deprecated`。**採らない理由：API開発者向けで、読者の手元は変わらない**
+- **【差分なし】Geminiアプリ リリースノート**：最新は**2026.09.10**のまま
 
 ## [2026-09-22] 調査結果（デイリー・火曜）
 

@@ -7,7 +7,7 @@ date:
 url: https://aicontent-note.com/claude-company-data-training/
 slug: claude-company-data-training
 status: draft
-description: Claudeのデータは学習に使われるのか。Free・Pro・Maxでは「AIモデルの改善にご協力ください」の設定で、通常のチャットやClaude Codeをモデル改善に使うか選べます。私は気づかずオンのまま取引先名や領収書を入れていたので、公式の条件と自分の運用を分けて書きます。
+description: Claudeのデータは学習に使われるのか。Free・Pro・Maxでは「AIモデルの改善に協力する」の設定で、通常のチャットやClaude Codeをモデル改善に使うか選べます。私は気づかずオンのまま取引先名や領収書を入れていたので、公式の条件と自分の運用を分けて書きます。
 eyecatch_alt: Claudeに会社の情報を渡して大丈夫か、データが学習に使われる条件と自分の設定を確かめた記事のアイキャッチ画像
 category: Claude Code活用
 tags: Claude,Claude Code,データ学習,プライバシー設定,非エンジニア
@@ -53,12 +53,14 @@ Anthropicの[Consumer Terms](https://www.anthropic.com/legal/consumer-terms)は�
 
 1. Claudeの画面で、自分の名前を押す<br>
 2. 「設定」→「プライバシー」を開く<br>
-3. **AIモデルの改善にご協力ください**のスイッチを見る
+3. **AIモデルの改善に協力する**のスイッチを見る
 
 URLで直接開くなら、[claude.ai/settings/data-privacy-controls](https://claude.ai/settings/data-privacy-controls)です。
-英語表示では「Help Improve our AI models」という名前です（[プライバシーセンターの手順](https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings)）。
+英語表示での名前は「Help Improve our AI models」です（[プライバシーセンターの手順](https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings)）。
 
-![Claudeの設定画面。プライバシーの項目にある「AIモデルの改善にご協力ください」のスイッチがオフになっている](https://aicontent-note.com/wp-content/uploads/2026/09/img_0070_01.png "設定 → プライバシーの画面。モデル改善の設定をオフにした状態")
+説明文は「チャットやコーディングセッションのデータを……トレーニングと改善に使用することを許可します」です。
+
+![Claudeの設定画面。プライバシーの環境設定にある「AIモデルの改善に協力する」のスイッチがオフになっている](https://aicontent-note.com/wp-content/uploads/2026/09/img_0070_01.png "設定 → プライバシーの画面。「AIモデルの改善に協力する」をオフにした状態")
 
 ### 既定でオンなのか、と聞かれると
 
@@ -123,7 +125,7 @@ Claude Codeに渡した記録から、そのまま並べます。
 | すでに始まっている学習・作られたモデル | 外れない |
 | 安全性レビュー対象の会話 | オフでも、安全性の検出・ポリシー適用・安全性研究などに使われる場合がある |
 | 自分から送ったフィードバック | オフでもモデル改善に使われる場合がある |
-| 「ロケーションメタデータ」 | 別の設定。連動しない |
+| 「位置情報メタデータ」 | 別の設定。連動しない |
 
 過去のチャットも「previous or new chats」として、今後の学習には使われなくなります。
 すでに始まった学習からは外れません（[プライバシーセンター](https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data)）。

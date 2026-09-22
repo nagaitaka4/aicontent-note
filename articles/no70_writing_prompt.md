@@ -33,7 +33,7 @@ date:
 url: https://aicontent-note.com/claude-company-data-training/
 slug: claude-company-data-training
 status: draft
-description: Claudeのデータは学習に使われるのか。Free・Pro・Maxでは「AIモデルの改善にご協力ください」の設定で、通常のチャットやClaude Codeをモデル改善に使うか選べます。私は気づかずオンのまま取引先名や領収書を入れていたので、公式の条件と自分の運用を分けて書きます。
+description: Claudeのデータは学習に使われるのか。Free・Pro・Maxでは「AIモデルの改善に協力する」の設定で、通常のチャットやClaude Codeをモデル改善に使うか選べます。私は気づかずオンのまま取引先名や領収書を入れていたので、公式の条件と自分の運用を分けて書きます。
 eyecatch_alt: Claudeに会社の情報を渡して大丈夫か、データが学習に使われる条件と自分の設定を確かめた記事のアイキャッチ画像
 category: Claude Code活用
 tags: Claude,Claude Code,データ学習,プライバシー設定,非エンジニア
@@ -82,14 +82,14 @@ eyecatch: eyecatch_0070.png
 - 安全性の分類器に引っかかった会話（出典：事実3の12109829）：「If our safety classifiers flag your conversations, they may still be used to improve our internal trust and safety models, detect harmful content, enforce our policies, or advance our safety research.」
 - フィードバック（出典：Consumer Terms）：「Even if you opt out, we will use Materials for model training when: (1) you provide Feedback to us regarding any Materials, or (2) your Materials are flagged for safety review to improve our ability to detect harmful content, enforce our policies, or advance our safety research.」
 - Incognitoチャット（出典：プライバシーセンター「Is my data used for model training?」 https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training ）：「Your Incognito chats are not used to improve Claude, even if you have enabled Model Improvement in your Privacy Settings.」**Incognitoの保持日数は書かない（消費者向けページに記述が無い）。脚注1行で触れるだけ。主役にしない**
-- 「ロケーションメタデータ」は同じ画面にある別の設定。モデル改善の設定と連動しない（筆者の画面で確認）
+- 「位置情報メタデータ」は同じ画面にある別の設定。モデル改善の設定と連動しない（筆者の画面で確認）
 
 ### 事実5〔全体〕設定の場所と名前（出典：事実3の12109829 ＋ 筆者の画面）
 
 - 英語UI：「Under Help Improve our AI models, click the button to toggle it off/on」。手順：Select your name from your settings menu → Settings → Privacy
-- 日本語UI：設定 → プライバシー →「AIモデルの改善にご協力ください」。説明文「チャットやコーディングセッションのデータをAnthropic AIモデルの訓練と改善に使用することを許可します。」
+- 日本語UI：設定 → プライバシー →「AIモデルの改善に協力する」。説明文「チャットやコーディングセッションのデータをAnthropic AIモデルの訓練と改善に使用することを許可します。」
 - URL：claude.ai/settings/data-privacy-controls
-- 同じ画面にあるもの：「ロケーションメタデータ」「データをエクスポート」「アップロード済みファイル」「記憶設定」
+- 同じ画面にあるもの：「位置情報メタデータ」「データをエクスポート」「アップロード済みファイル」「記憶設定」
 
 ### 事実6〔全体〕誰がいつ選ぶか（出典：Anthropic発表「Updates to Consumer Terms and Privacy Policy」2025-08-28 https://www.anthropic.com/news/updates-to-our-consumer-terms ）
 
@@ -123,8 +123,8 @@ eyecatch: eyecatch_0070.png
 ### 事実10〔本人〕筆者の実物
 
 - 使っているプラン：Max。Claude Codeを毎日使い、Claude.aiのチャットも使う
-- 設定「AIモデルの改善にご協力ください」は**オンだった**。選んだ記憶がない（「後で」を押したか、読まずに通したかは分からない。分からないと書く）
-- 確認した後、**オフに切り替えた**。切り替え時に確認ダイアログは出なかった。使える機能は変わらなかった。「ロケーションメタデータ」はオンのまま
+- 設定「AIモデルの改善に協力する」は**オンだった**。選んだ記憶がない（「後で」を押したか、読まずに通したかは分からない。分からないと書く）
+- 確認した後、**オフに切り替えた**。切り替え時に確認ダイアログは出なかった。使える機能は変わらなかった。「位置情報メタデータ」はオンのまま
 - オフにした理由：取引先の会社名・領収書・案件のデータなど、自分以外の情報を日常的に入れているから。オフにしても、すでに始まっている学習からは外れないと分かったうえで決めた
 - 渡しているもの・渡していないもの（この6項目だけ。足さない）：
 
@@ -223,11 +223,11 @@ eyecatch: eyecatch_0070.png
 
 （リード3文・116字。1文目41字＝40字以内。「設定ひとつで決まる」と言い切らない＝例外〔Incognito・安全性レビュー・フィードバック〕と矛盾させない）
 Free・Pro・Maxでは、通常のチャットが学習に使われるかは設定で変わります。
-Claude Codeも対象で、設定名は「AIモデルの改善にご協力ください」です。
+Claude Codeも対象で、設定名は「AIモデルの改善に協力する」です。
 私はこの設定が気づかずオンのまま、取引先名や領収書を入れていました。
 
 ## 通常のチャットが学習に使われるかは、プランと設定で決まる
-→ 答えを最初の1行に置く（マーカー候補：==通常のチャットが学習に使われるかは、プランと「AIモデルの改善にご協力ください」の設定で決まる==）
+→ 答えを最初の1行に置く（マーカー候補：==通常のチャットが学習に使われるかは、プランと「AIモデルの改善に協力する」の設定で決まる==）
 → 表1：プラン ／ 学習に使われるか ／ 保持期間 ／ 根拠（公式リンク）
    ・Free・Pro・Max（Claude Codeをこのアカウントで使う場合も含む）＋設定オン → 使われる ／ 5年
    ・Free・Pro・Max＋設定オフ → 新しいチャット・セッションは使われない ／ 30日
@@ -241,7 +241,7 @@ Claude Codeも対象で、設定名は「AIモデルの改善にご協力くだ�
 
 ## オンかオフか、どこで確かめるか
 → リード（3文・100字以内）：設定の場所と名前。1分で確かめられる
-→ 手順（1. 2. 3.）：右上の自分の名前 → 設定 → プライバシー →「AIモデルの改善にご協力ください」（英語UIは Help Improve our AI models）。URL直接 claude.ai/settings/data-privacy-controls
+→ 手順（1. 2. 3.）：右上の自分の名前 → 設定 → プライバシー →「AIモデルの改善に協力する」（英語UIは Help Improve our AI models）。URL直接 claude.ai/settings/data-privacy-controls
 → 画像1枚：設定画面（ユーザーが撮る）。キャプションに「オフの状態」
 → 「既定でオンか」への答え（読者の次の疑問）：公式は「既定はオン」とは書いていない。新規ユーザーはサインアップ時に選ぶ。既存ユーザーは2025年10月8日までにポップアップで選び、以後は選ばないと使い続けられない（発表記事のverbatim）。**私は選んだ記憶がないままオンになっていた**（「後で」を押したか、読まずに通したかは分からない。分からないと書く）
 → 【チェック】自分のアカウントの設定を、今この場で見る（80字以内）
@@ -270,7 +270,7 @@ Claude Codeも対象で、設定名は「AIモデルの改善にご協力くだ�
    ・すでに始まっている学習・作られたモデル ／ 外れない（公式verbatim）
    ・保存済みの過去のチャット・セッション ／ 今後のモデル学習には使われない（プライバシーセンターverbatim「we will not use your previous or new chats or coding sessions for future model training」。⚠️ 2025年発表記事の「new or resumed」は**オンにしたときにどの会話から適用されるか**の話。オフ後の説明に使わない）
    ・安全性の分類器に引っかかった会話・自分から送ったフィードバック ／ オフでも使われる（例外）
-   ・「ロケーションメタデータ」 ／ 別の設定。連動しない
+   ・「位置情報メタデータ」 ／ 別の設定。連動しない
 → 【アラート】オフにしても、すでに始まった学習からは外れない（80字以内）
 → 私の決定と理由を2〜3文：自分以外の情報を日常的に入れているのでオフにした。オフにしても使える機能は変わらなかった（確認ダイアログも出なかった）
 → ⚠️ 「オフにしたから安全」と書かない。学習に使われるかと、情報が漏れるかは別の話（この記事は前者だけを扱うと明示）

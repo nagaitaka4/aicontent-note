@@ -46,6 +46,17 @@ HOOK_SIGNALS = [
     "だけ", "しか", "ません", "ないです", "より", "はずが", "と思ったら",
 ]
 
+# A：告白の語（2026-09-22追加）。
+# 「〜と思ってました」「〜知りませんでした」は**報告ではなく告白**で、
+# このスクリプト自身が「先頭に置くのは告白」と言っている型。
+# `ました`で終わるため REPORT_TAIL に誤ってかかっていた（`試さず-気`で発覚）。
+CONFESSION = [
+    "と思ってました", "と思ってた", "と思いこんで", "と思い込んで",
+    "知りませんでした", "知らなかった", "気づきませんでした", "気づいてませんでした",
+    "てませんでした", "ていませんでした", "できませんでした", "のままでした",
+    "見てませんでした", "やってませんでした", "読んでませんでした",
+]
+
 # B：一人称（`rules/x-post-flow.md`「一人称は『自分』」）
 FIRST_PERSON = ["自分", "私", "うち"]
 
@@ -70,6 +81,7 @@ def check_first_line(text):
             tail = t
             break
     signals = [s for s in HOOK_SIGNALS if s in first]
+    signals += [c for c in CONFESSION if c in first]
     has_num = bool(re.search(r"[0-9０-９]", first))
     return first, tail, signals, has_num
 
@@ -107,7 +119,7 @@ def main():
     else:
         why = []
         if not tail:  why.append("報告型の語尾でない")
-        if signals:   why.append("落差の語＝" + "・".join(signals))
+        if signals:   why.append("落差・告白の語＝" + "・".join(signals))
         if has_num:   why.append("数字あり")
         print("A判定 : [OK]（%s）" % "／".join(why))
 

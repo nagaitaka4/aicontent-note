@@ -30,6 +30,10 @@ NOUNS = [
     "サーチコンソール","グーグル","クロード","チャットGPT","ワードプレス","メルカリ",
     # デザインツール（2026-09-17追加：no.68の下書きで「Canva」を拾えず誤検知した）
     "Canva","Adobe","Firefly","Illustrator","Photoshop","Figma",
+    # WordPressまわり（2026-09-22追加：`試さず-気`の1行目「SWELL」を拾えず要目視になった）
+    "SWELL","Gutenberg","Cocoon","Elementor",
+    # 設定・機能名（2026-09-22追加）
+    "データコントロール","モデル改善に協力する","Privacy Center","Data controls",
 ]
 
 def check(text):

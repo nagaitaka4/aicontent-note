@@ -1,33 +1,31 @@
 # セッション引き継ぎ
 
-最終更新：2026-09-22 11:00（**no.70 本文確定**（レビュー2回・計8点を反映してNG 0件・4,691字）。アイキャッチ`eyecatch_0070.png`完成。**残るは設定画面のスクショ1枚（ユーザーが撮る）→ CCが切って`img_0070_01.png`→ md-to-wp.py → WP入稿**）
+最終更新：2026-09-22 11:20（**no.70 WP下書き完成（post 1015）。残るは公開ボタンだけ。**本文画像・アイキャッチ・説明文・カテゴリー・タグ・アイキャッチaltまで投入済み。ブロックの警告0件・プレビュー確認済み）
 
 ---
 
 ## 次のセッションでまず行うこと
 
-**TOP10 #1 no.70「Claudeに会社の情報を渡して大丈夫か。データが学習に使われる条件」は本文確定（2026-09-22 11:00・NG 0件・4,691字・表4個）。アイキャッチも完成。残る作業は、本文画像1枚（設定 → プライバシーでモデル改善オフの画面。ユーザーが撮る → CCが切って`img_0070_01.png`）→ `md-to-wp.py` → WP入稿（Chrome拡張ごし）。**
+**TOP10 #1 no.70「Claudeに会社の情報を渡して大丈夫か。データが学習に使われる条件」は、WPの下書きまで完成（2026-09-22 11:20・post 1015）。次はユーザーが公開ボタンを押すだけ。**
 
-**9/22のレビュー2回で直した8点**（同種の誤りを次の規約系記事でも見る）：①守備範囲をリード2文目と1章リードで明示 ②表1は「標準の保持期間」＋例外の脚注3行（Team・Enterprise・APIも標準30日） ③表3は安全性レビューとフィードバックを分ける ④「ローカルの」Claude Codeに限定 ⑤規約の適用は地域で変わるので公式の区分（consumer／commercial users）で書く ⑥表3の保持期間は「5年 → 30日」と書かない（オン期間に学習パイプラインへ入った分の短縮は公式に無い） ⑦リードの助詞とマーカー範囲 ⑧Business DomainsはMaterialsへのアクセスまで書く
+下書き：`https://aicontent-note.com/wp-admin/post.php?post=1015&action=edit`／プレビュー：`https://aicontent-note.com/?p=1015&preview=true`
 
-### 現在地と手順（この順で・省略禁止）
+### 投入済み（9/22 実測で確認）
 
-1. `git pull --rebase origin main`（aicontent-note と `~/Documents/GitHub/tasks` の両方）
-2. 構成案 `operations/structure-drafts/claude-company-data-training.md`（✅ 構成確定・「書かないこと」5項目が9/21の指摘）と材料シート `claude-company-data-training-facts.md`（3-2訂正・3-7 Incognito・3-8 権利を9/21追加）を読む
-3. **アイキャッチ**：`knowledge/eyecatch-rules.md`を読み直す → **ユーザーの参考画像添付を待ってからプロンプト1案**（参考画像なしの先行は、ユーザーがそう決めた場合だけ）→ 生成・アップ → `ls -lt images/` → リサイズ・リネーム `eyecatch_0070.png`（保存前に `ls images/eyecatch_0070.png` で未存在を確認）
-4. **執筆（CC初稿）**：アイキャッチ完了後。`rules/article-flow.md` 4原則と5章を読み直し、`articles/claude-company-data-training.md` に書く。CTAはno.69からコピー。`article-self-check.py` NG 0件＋リードを声に出して読む
-5. ~~Astra実験（並行）~~ → **9/21 15:32 持ち越し（ユーザー判断：CodexのモデルにAstraが無い。Astraでないと意味がない。no.70は記事だけに集中）**。プロンプト `articles/no70_writing_prompt.md` は残す。Astraが選べる状態になった次の記事で実施
+| 項目 | 値 |
+|---|---|
+| 本文 | 11,865字のブロックHTML（H2 6・H3 1・表 4・区切り線 9・画像 1・CTAボタン 2・関連記事 3・マーカー 4・SWELLブロック 5） |
+| アイキャッチ | メディア1012（`eyecatch_0070.png`）・alt入り |
+| 本文画像 | メディア1011（`img_0070_01.png`）・alt入り・キャプション「設定 → プライバシーの画面。「AIモデルの改善に協力する」をオフにした状態」 |
+| 説明文 | SEO SIMPLE PACKの`ssp_meta_description`に137字（excerptは空。公開済み5本と同じ形） |
+| カテゴリー | Claude Code活用（35） |
+| タグ | Claude(27)・Claude Code(16)・データ学習(153)・プライバシー設定(154)・非エンジニア(17) |
+| スラッグ | claude-company-data-training |
+| ブロックの警告 | 0件（エディターで実測） |
 
-### 9/21のユーザー指摘で直した4点＋追加2文（執筆時に必ず守る・構成案「書かないこと」）
+### 公開後にCCがやること（`rules/article-flow.md` 8章・確認不要）
 
-- 「設定ひとつで決まる」と言い切らない（Incognito・安全性レビュー・フィードバックの例外）
-- 「オフ後に過去のチャットを再開すると対象になる」は誤り → オフにすると保存済みの過去チャットも今後の学習に使わない（現行のプライバシーセンター優先。「new or resumed」はオン時の適用範囲の話）
-- 「実際に学習に使われた」と断定しない → 「オンの状態で送っていた」
-- H2は「会社で使うと、Pro・MaxとTeamは何が違うか」。「仕事に使うことは禁止されていない」の法的結論とTeamの推奨は書かない
-- 追加：表1の直後に「オフなら何でも入力してよい、ではない」の権利の2文（Consumer Terms「rights, licenses, and permissions」）
-- 表2は6項目で確定・追加しない。会社名・金額・案件名・ロゴ画像は出さない
-
-教訓はメモリ`feedback_terms_clause_scope`と`operations/lessons.md` 2026-09-21。
+1. MDを`status: published`＋`date:`／2. `article-md-workflow.md`／3. `article-backlog.md`／4. issue #2／5. `tasks/README.md`のTOP10繰り上げ（待機列の上から）／6. WP→MD同期／7. X投稿キューへネタ3本／8. GSCインデックス登録の案内と常時掲載タスク
 
 ---
 

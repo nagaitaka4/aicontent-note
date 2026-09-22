@@ -144,8 +144,8 @@ Claude Codeに渡した記録から、そのまま並べます。
 
 | | Pro・Max | Team |
 |---|---|---|
-| 規約 | Consumer Terms | Commercial Terms |
-| モデル学習 | オプトアウト方式（設定で選ぶ） | 既定で使わない |
+| 公式の区分 | consumer users | commercial users |
+| モデル学習 | 設定で選ぶ | 既定で使わない |
 | 人数 | 1人 | 2〜150名 |
 
 Claude Code公式は、Free・Pro・Maxを「consumer users」と呼びます。

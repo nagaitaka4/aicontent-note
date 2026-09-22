@@ -326,6 +326,10 @@ WP編集画面の「パターン」タブから呼び出せる雛形。
 5. `POST /wp/v2/posts`で下書きを作る（`content`に本文・`status:'draft'`）
 6. **運び役のPNGは`DELETE /wp-json/wp/v2/media/<id>?force=true`で必ず消す**
 
+**⚠️ RESTで本文を送ったあとに、エディターで`savePost()`を呼ばない**（2026-09-22・no.70で本文が巻き戻った）。
+エディターは前のセッションのローカル自動保存を復元することがあり、その状態で保存すると古い本文が書き戻される。
+**順番はSSPの説明文 → 本文のREST送信 → RESTとリビジョンで検証**。検証でエディターを開かない。
+
 **REST APIのnonce**：`media-new.php`には`wpApiSettings`が無い。
 `/wp-admin/admin-ajax.php?action=rest-nonce`で取れる（どの管理画面でも可）。
 

@@ -3,10 +3,10 @@ no: 70
 series:
 series_no:
 title: Claudeに会社の情報を渡して大丈夫か。データが学習に使われる条件
-date:
+date: 2026-09-22
 url: https://aicontent-note.com/claude-company-data-training/
 slug: claude-company-data-training
-status: draft
+status: published
 description: Claudeのデータは学習に使われるのか。Free・Pro・Maxでは「AIモデルの改善に協力する」の設定で、通常のチャットやClaude Codeをモデル改善に使うか選べます。私は気づかずオンのまま取引先名や領収書を入れていたので、公式の条件と自分の運用を分けて書きます。
 eyecatch_alt: Claudeに会社の情報を渡して大丈夫か、データが学習に使われる条件と自分の設定を確かめた記事のアイキャッチ画像
 category: Claude Code活用
@@ -212,8 +212,8 @@ Teamは会社側の契約で、既定ではモデル学習に使わない
 Claude Codeの設定ファイルに、読み取りを断る指定を書けます。
 
 【ペン】<br>
-~/.claude/settings.json の permissions に deny を足す。<br>
-公式の例は Read(./.env) と Read(./.env.*) の2行
+**~/.claude/settings.json の permissions に deny を足す。**<br>
+**公式の例は Read(./.env) と Read(./.env.*) の2行**
 
 私の設定には、この指定が入っていませんでした。
 気づいた時点で、.envと鍵ファイルを読み取り拒否に追加しました。

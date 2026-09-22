@@ -53,8 +53,10 @@ def strip_decoration(text):
     `==text==`（最重要・太字＋黄色マーカー）を導入したので、記法の記号が
     一文の長さ・段落の長さに乗らないようにする。`**` も同じ扱いにする。
     """
-    text = re.sub(r"==([^=]+)==", r"\1", text)
-    return re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+    text = re.sub(r"==(.+?)==", r"\1", text, flags=re.S)
+    # 強調の中に `*` が入ることがある（例：Read(./.env.*)）。
+    # `[^*]+` だと剥がせず、記号4文字ぶん字数が増えて誤検知になる（2026-09-22・no.70）。
+    return re.sub(r"\*\*(.+?)\*\*", r"\1", text, flags=re.S)
 
 
 def load(path):

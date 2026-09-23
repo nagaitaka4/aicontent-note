@@ -43,6 +43,7 @@
 |---|---|---|---|
 | 3-1 | Pro／Max 5x／Max 20xの料金と「Proの5倍・20倍」の公式表現（日本の税込表示を含む） | claude.aiの料金ページ（原文・取得日） | **2026-09-23取得（要約経由）**：Pro $20（年払い月$17）・Max 5x $100〜「5x more usage than Pro per 5-hour session」・Max 20x $200〜・税別。Maxは月払いのみ |
 | 3-2 | 使用制限の仕組み（5時間ごとのリセット・週次上限・モデルによる消費の違い） | 公式ヘルプ（Usage limits）・verbatim | **2026-09-23取得（要約経由）**：5時間ごとリセット・週次上限は全モデル共通でリセット時刻はアカウントごと・Opusは「uses meaningfully more of your quota」・チャットとClaude Codeで上限を共有。**9/22 @ClaudeDevs：5時間制限+20%・Opus 5.5が既定・リセット1回（〜10/22）**。Fableの消費量は未確認 |
+| 3-2b | **Fableの消費（2026-09-24追加・ユーザーに届いたClaude Teamのメールのスクリーンショット）** | メール「New in Claude Code: Opus 5.5 and a limit reset」の表 | **Fable 5.1＝`Up to half your weekly limit`**（Sonnet 5・Opus 5.5は`Included in your plan`）／`5-hour limits are 20% higher on every model. Weekly limits aren't changing.`／リセットは`refills your 5-hour and weekly limits`・9/22 9:00 PT以前の個人Pro/Maxのみ・解約/ダウングレードで失効。**⚠️ メールが出典なので、記事では公式ヘルプかブログの同じ記述を探してリンクする** |
 | 3-3 | 週次上限+25%（9/14〜）の一次情報 | @ClaudeDevs 8/30の投稿を実Chromeで開く（`research/trends.md`に記録があれば日付を照合） | **済**：`research/trends.md` 245行目にverbatim |
 | 3-4 | no.27本文の棚卸し（6月の課金変更の記述のうち、いま古いもの） | `articles/claude-subscription-change-june-2026.md`を読み、古い節を一覧に | **済**：**6月15日の変更は一時停止された**（公式ヘルプ 6/16更新）。現行本文は全章が「変わる」前提＝全部古い。構成案`articles/no27_rewrite_composition.md` |
 

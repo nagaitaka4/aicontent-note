@@ -1,8 +1,15 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-23
+最終更新: 2026-09-24
 
 ---
+
+## [2026-09-24] 調査結果（デイリー・木曜）
+
+**②は新規1件（記録のみ）。**
+
+- **【新規・記録のみ】ChatGPT リリースノート September 23, 2026「Use plugins in Voice and get work done by speaking」**（実Chrome）：verbatim `Live now supports plugins on web, iOS, and Android.`／`Voice is also available in Work on web and mobile.`／`Free and Go users can use Voice in Chat with the plugins their plan supports.` **採らない理由：音声で操作する機能で、このメディアの読者（文章の制作）の手元の作業は変わらない。本人も音声を使っていない**
+- 9/22のGPT-6 Sol／Lunaはリリースノート本体にも載った（`These models are separate from the models available in Chat.`）。`research-20260923-02`の記録どおり
 
 ## [2026-09-23] 調査結果（デイリー・水曜／秋分の日）
 

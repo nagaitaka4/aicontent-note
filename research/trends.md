@@ -1,9 +1,25 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-23
+最終更新: 2026-09-24
 
 
 ---
+
+## [2026-09-24] 調査結果（デイリー・木曜）
+
+**①に新規あり：Claude Codeの「クラウドセッション」が正式版に（日本時間 9/24 06:23・@ClaudeDevs）。既存の有料ユーザーに1回限りのクレジット（Pro 100ドル／Max 250ドル）。**CCが実Chromeで`claude.ai/settings/usage`を読むだけで開き、**ユーザーのMax (5x)の画面に「250ドル分のクラウドセッションクレジットを受け取る」＋ボタン「クレジットを受け取る」を確認**（押していない）。→ `knowledge/x/ideas.md` `research-20260924-01`（**本日の投稿候補として完成版を提示・キュー投入0本**）
+
+### Claude Code / Anthropic
+
+- **【新規・採用】@ClaudeDevs**（実Chrome）：[9/24 06:23 JST](https://x.com/ClaudeDevs/status/2102871550974427462) verbatim `Cloud sessions are officially available and out of research preview! They let you keep Claude Code working, even when your laptop is closed. Existing subscribers get a one-time credit to try them: $100 on Pro, $250 on Max.`／[続き](https://x.com/ClaudeDevs/status/2102871552849322082) `Cloud sessions run on Anthropic-hosted infrastructure, so the work keeps going even without your computer running. Start one at https://claude.ai/code, from the Code tab in the Claude mobile app, from the desktop app, or with claude --cloud in the CLI.`／同日 [claude.aiを2週間で3倍速く](https://x.com/ClaudeDevs/status/2102839691154427983)（記録のみ）
+  - ⚠️ **クレジットの有効期限・対象外の条件はこのスレッドに書かれていない。**書くときは「期限は未確認」のまま。ヘルプ・リリースノートにはまだ載っていない（9/24 06時台）
+  - **実画面（ユーザーのMax (5x)・読むだけ）**：「250ドル分のクラウドセッションクレジットを受け取る」／ボタン「クレジットを受け取る」。同じ画面に9/22の「無料でリセット」（有効期限：10月23日）が**未使用のまま**残っている。今週の使用量は`すべてのモデル 17% 使用済み`・`Fable 14%`
+- **【新規】npm `@anthropic-ai/claude-code`**：`latest`・`next`とも**`2.1.281`**（公開`2026-09-23T17:01:17Z`＝日本時間 9/24 02:01）／`stable: 2.1.273`
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.281`**：`settings.json`の`"attribution": false`でコミット・PRの署名を全部隠せる／`/insights`がauto modeで減らせた許可確認の数を推定／セッション再開まわりの修正多数／Claude apps gatewayの管理者向け設定。**読者の手元の操作が変わる項目は無い**
+- **【差分なし】Claude Apps リリースノート**：最新は**September 22, 2026**（Opus 5.5）のまま
+- **【新規・記録のみ】Anthropic Newsroom**：**Sep 23** `claude-discovers-novel-enzyme-system`（ライフサイエンス研究チームの新設・Claudeが新しい酵素系を発見）。読者の手元は変わらない
+- **【新規・記録のみ】claude.com/blog**：**9/23** `claude-marketplace`（プラグイン・コネクタ2,000以上／エージェント製品の購入はAnthropicとの契約額の一部で＝法人向け）・`how-to-prepare-for-ai-driven-code-modernization-projects`・`how-coderabbit-...-claude-marketplace`。**個人の読者の手元は変わらない**
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅
 
 ## [2026-09-23] 調査結果（デイリー・水曜／秋分の日）
 

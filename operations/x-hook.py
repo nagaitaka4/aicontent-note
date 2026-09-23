@@ -57,6 +57,16 @@ CONFESSION = [
     "見てませんでした", "やってませんでした", "読んでませんでした",
 ]
 
+# C：前を知らないと通じない言い回し（2026-09-24追加）
+# `昨日の「無料でリセット」も、まだ押してません。`がユーザーに差し戻された。
+# 書き手は前の投稿・前日の出来事を知っているが、初見の読者は知らない。
+CONTEXT_LEAK = [
+    r"(一昨日|昨日|先日|前回|この前|さっき|先週)の",
+    r"例の",
+    r"前の投稿",
+    r"[0-9０-９]{1,2}/[0-9０-９]{1,2}に「",
+]
+
 # B：一人称（`rules/x-post-flow.md`「一人称は『自分』」）
 FIRST_PERSON = ["自分", "私", "うち"]
 
@@ -141,7 +151,16 @@ def main():
     else:
         print("B判定 : [OK]")
 
+    leaks = sorted({m.group(0) for p in CONTEXT_LEAK for m in re.finditer(p, text)})
+    if leaks:
+        warn += 1
+        print("C判定 : [要書き直し] 前を知らないと通じない言い回し＝" + "・".join(leaks))
+        print("      初見の読者は前の投稿も前日の出来事も知りません。中身をその場で説明するか消す。")
+    else:
+        print("C判定 : [OK]")
+
     print("判定  : %s" % ("[要書き直し] %d件" % warn if warn else "[OK]"))
+    print("次    : operations/x-blind-review.md の盲検レビューへ（スクリプトは形しか見ない）")
 
 if __name__ == "__main__":
     main()

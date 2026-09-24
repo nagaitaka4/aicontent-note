@@ -34,7 +34,7 @@ Claudeに課金するか、ProとMaxのどちらにするかは、使うモデ�
 | 課金すべきか | ①・⑦ | 使うモデルで決まる。Sonnetで足りるならPro、Opusを標準にして止まるならMax 5x、Fableを普段使いするならMax |
 | 料金 | ② | Max 5xは量あたりProと同じ料金。安くなるのはMax 20xと年払いのPro |
 | 制限 | ③・④ | 5時間制限と週次上限。モデルと長いセッションで減り方が変わる |
-| より先にモデルで決める | ①・③ | Opusは使用量を多く使う／FableはProでは別料金／9/22から有料プランの標準はOpus 5.5 |
+| より先にモデルで決める | ①・③ | 減り方はHaiku→Sonnet→Opus→Fableの順（公式）／無料はHaikuとSonnetだけ／FableはProでは別料金／9/22からClaude Codeの有料プランの標準はOpus 5.5 |
 
 ---
 
@@ -54,7 +54,8 @@ Max 5xはProの5倍の料金で5倍の量なので、量だけで見ると割安
 
 ## Claudeに課金すべきか：先に、どのモデルで作業するかを決める
 → 答えの表。列：主に使うモデル／合うプラン／理由（公式の条件）
-  ・Sonnetで足りる／たまに使う → 無料かPro／Sonnetは使用量が少なめ
+  ・HaikuやSonnetで足りる → 無料（使えるのはHaikuとSonnet）。量が足りなければPro
+  ・Opusを使いたい → Pro以上（OpusとFableはPro以上）
   ・Opusを標準で使う → Pro。上限によく当たるならMax 5x／OpusはSonnetより使用量を多く使う
   ・Fableを日常的に使う → Max／Proでは最初から使用クレジット。Maxは週次上限の50%まで追加料金なし
   ・量だけが足りない（長いセッション） → まずセッションの見直し。たまになら使用クレジット／Max 5xは量あたりの料金がProと同じ
@@ -71,6 +72,8 @@ Max 5xはProの5倍の料金で5倍の量なので、量だけで見ると割安
 → 無料からProで増えるもの：Claude Code・より多くのClaudeモデル・プロジェクトほか（料金ページの原文。箇条書きは絞る）
 
 ## モデルで、上限への当たり方が変わる
+→ **使用量の減り方は、軽い順にHaiku → Sonnet → Opus → Fable**（Claude Academy：`Haiku is the lightest, Sonnet is moderate, Opus is heavy, and Fable uses the most.`）
+→ 無料で使えるのはHaikuとSonnet。OpusとFableはPro以上（同：`Free includes Haiku and Sonnet; Pro and Max add Opus, Fable, and more headroom.`）
 → OpusはSonnetより使用量を多く使う（Claude Code公式ヘルプ）
 → 9/22から、Claude Codeの有料プランの標準はOpus 5.5（Proも含む）。何もしなければOpusで動く
    Opus 5.5は前のOpusより安く、同じ上限で長く使える（公式は25%）。それでもSonnetと同じ減り方ではない（倍率は公式に無いので数字は書かない）
@@ -115,7 +118,7 @@ Max 5xはProの5倍の料金で5倍の量なので、量だけで見ると割安
 
 | # | 何 | 状態 |
 |---|---|---|
-| 1 | Freeで使えるモデル（Sonnetのみか） | 未確認。表の「無料かPro」の行に関わる。確認できなければ「Sonnetで足りる → Pro」と書き、無料の行は線引きから外す |
+| 1 | Freeで使えるモデル | ✅ 2026-09-24確認：HaikuとSonnet。OpusとFableはPro以上（[Claude Academy](https://academy.claude.com/tutorials/choosing-the-right-claude-model)） |
 | 2 | 9/22の「Opus 5.5 is the default for paid plans」がClaude Codeの話か、チャットも含むか | 告知は「In Claude Code」の続き。**Claude Codeの話として書く** |
 
 ---

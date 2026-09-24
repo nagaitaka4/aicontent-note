@@ -1,8 +1,31 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-09-21
+最終更新: 2026-09-25
 
 ---
+
+## [2026-09-25] 調査結果（定期リサーチ・金曜のフル版／朝ブリーフに統合後）
+
+**③に新規2件：①Googleが「2026年9月スパムアップデート」を開始（9/24 PT）②Search Consoleに「ウェブのマルチモーダル検索」の掲載結果レポート（9/24）。**どちらも読者の手元の操作は変わらず、X・記事ネタにはしない。
+
+### Google / Search Console
+
+- **【新規・記録のみ】September 2026 spam update**（[Google Search Status Dashboard](https://status.search.google.com/incidents/XhUDXP7A67iHCD2kmbVu)・本日curlで本文確認）：`Incident began at 2026-09-24 09:15`（US/Pacific＝**日本時間 9/25 01:15**）。verbatim `Released the September 2026 spam update, which applies globally and to all languages. The rollout may take up to two weeks to complete.` → **〜10/8ごろまで展開。**自サイトのGSCで10/1の月次（`operations/measurement-calendar.md`）に順位の変動が出たら、この期間と重なることを添えて読む（**原因と決めつけない**）
+- **【新規・記録のみ】Search Console のマルチモーダル検索レポート**（[Search Central Blog 2026-09-24](https://developers.google.com/search/blog/2026/09/web-multimodal-in-sc)）：verbatim `The data reported here includes searches with Lens, Circle to Search on Android, image uploads to Google Search, and the Chrome right-click "Search this image" feature.`／`The integration of multimodal search data is rolling out globally starting today.`／`You will start seeing these metrics in your Performance report if your site is receiving traffic from these queries.` **採らない理由：画像から来る検索の流入があるサイト向けで、このメディアの流入はテキスト検索が主。`rolling out`**。10/1のGSC月次で自サイトに項目が出ているかだけ見る
+- **【差分なし】Search Central Blog**：9月は上の1件を足して4件（ほか3件はイベント告知・既記録）
+
+### 調査会社・SEOメディア
+
+- **【差分なし】鈴木謙一氏**（[海外SEO情報ブログ](https://www.suzukikenichi.com/blog/)・WebFetchの要約）：最新は9/19の週次まとめ。**9/24〜9/28は更新休止**（9/18の告知）。9/16・9/17の2本（AI Modeの掲載順位は上から下・左から右／AI検索で引用される要因を130人超の専門家が評価）は見出しのみ・本文未読
+- AI contribution pilot（9/21記録）の**Googleの一次情報は今回も見つけていない**
+
+### 自サイトのGSC
+
+- **本日は取得していない**（金曜のBは⓪のみ・待機列の◯が5本以上なら③を回さない）
+
+### 記事側への影響
+
+- **訂正が必要な記事：なし**
 
 ## [2026-09-21] 調査結果（定期リサーチ・月曜のフル版）
 

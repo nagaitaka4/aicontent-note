@@ -65,6 +65,7 @@ CLAUDE.mdのgit履歴から再構成したフロー改善のタイムライン�
 
 ## 運用ログ（随時追記）
 
+- 2026-09-25（朝ブリーフ＋フル版）：**`claude.com/blog`の新着2件（9/24）は、一覧をcurlで取っても日付が出ず、スラッグを`research/`とgrepで突き合わせて「未記録」を洗い出してから各記事の日付を開いて確かめた。**一覧の先頭だけ見る方法だと9/24の2本（Opus 5.5とキャッシュ／Claude Tagの個人コネクタ）を落とす。**盲検レビューは同じ候補でも読者役ごとに順位が揺れた**（クラウドセッションの候補が2回目2位・3回目6位）。1回の順位で決めず、3回のうち上位に残り続けた型（告白＋公式を読んでいない）を採った。**9/21に403で開けなかった中小企業庁の公募ページは実Chromeで開けた**
 - 2026-09-21（朝ブリーフ＋フル版）：**`claude.com/blog`の一覧は日付順ではなかった。**先頭9件のうち7件（`claude-in-chrome-generally-available`＝Aug 26／`cowork-built-in-browser`＝Aug 26／`artifacts-in-claude-code`＝**Jun 18**／`claude-for-foundation-models`＝Jun 08／`claude-managed-agents-updates`＝May 19／`new-in-claude-managed-agents`＝May 19／`connectors-for-everyday-life`＝Apr 23）が**特集枠の過去記事**で、並び順で新旧を判定すると「新規7件」と読み違える。**→ この面は記事ページの`datePublished`で1件ずつ確認する**（本日はそれで「最新は9/17のBalyasny＝差分なし」と確定）。9/7の「欄を数える」・8/28の「日付だけで閉じない」と同じ、**面の構造を確かめずに閉じると間違える**系統
 - 2026-09-21（フル版・2件目）：**9/18のフル版は鈴木謙一氏の面を開いていなかった。**そのため9/15の**AI contribution pilot**（Googleがサイトに報酬を払うテスト）を3日間拾えていなかった。**→ ③の巡回先に「鈴木謙一氏のブログ（週次まとめだけでなく個別記事も）」を毎回入れる。**Search Status Dashboard・Search Central Blog・Ahrefsの3面だけでは、日本語圏で先に出る話が落ちる
 

@@ -1,0 +1,8 @@
+AIが書いた間違いを、別のAIが見つけました。自分は気づいてません。
+
+Claudeの記事の原稿に「学習に使わない設定でも、昔のチャットは使われる」。公式は逆でした。
+
+毎回ChatGPTに読ませてて、そこで捕まりました。
+
+Claudeに会社の情報、渡していいかの記事です。
+https://aicontent-note.com/claude-company-data-training/

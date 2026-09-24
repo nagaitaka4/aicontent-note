@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B"
+  },
+  {
+    "kind": "candidate",
+    "id": "review70-final",
+    "text": "AIに書かせた記事の原稿、Claudeの学習の説明が真逆でした。\n\n「学習に使わない設定でも、昔のチャットを開き直すと使われる」\n公式は逆で、使われません。\n\n見つけたのは自分じゃなくてChatGPT。公式は正直ほぼ読んでません。\n\n会社の情報、渡していいかの記事です。\nhttps://aicontent-note.com/claude-company-data-training/",
+    "hash": "2c29f9c69cb9b0ac",
+    "label": "C"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D"
+  },
+  {
+    "kind": "candidate",
+    "id": "review70-e2",
+    "text": "Claudeで学習をオフにすると、昔のチャットも今後の学習には使われません。\n\nこれ、AIに書かせた記事の最初の原稿では逆に書かれてました。\n見つけたのはGPTで、自分じゃないです。\n\n会社の情報を渡していいか、プランと設定ごとにまとめました。\nhttps://aicontent-note.com/claude-company-data-training/",
+    "hash": "a5f850e418949d25",
+    "label": "E"
+  },
+  {
+    "kind": "candidate",
+    "id": "review70-h3",
+    "text": "AIが書いた間違いを、別のAIが見つけました。自分は気づいてません。\n\nClaudeの記事の原稿に「学習に使わない設定でも、昔のチャットは使われる」。公式は逆でした。\n\n毎回ChatGPTに読ませてて、そこで捕まりました。\n\nClaudeに会社の情報、渡していいかの記事です。\nhttps://aicontent-note.com/claude-company-data-training/",
+    "hash": "be22c48fe3fb2b18",
+    "label": "F"
+  }
+]

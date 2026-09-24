@@ -3,7 +3,7 @@
 
 使い方:
   python3 operations/x-gate.py 本文.txt
-  python3 operations/x-gate.py 本文.txt --reply   # リプライ（盲検は求めない）
+  python3 operations/x-gate.py 本文.txt --reply   # リプライ（別エージェントのリプライレビュー合格を求める）
 
 見るもの（全部 [OK] で「出してよい」）:
   1. 重み：280以下かつ残り5以上（x-count.py の数え方）
@@ -67,13 +67,15 @@ def main():
     if leaks:
         ng.append("文脈漏れ")
 
+    h = pack.text_hash(text)
+    days = [date.today(), date.today() - timedelta(days=1)]
+    prefix = "reply-pass" if reply else "pass"
+    hits = [p for d in days for p in (RUNS / d.isoformat()).glob(f"*/{prefix}-{h}.txt")]
+    label = "リプライレビュー" if reply else "盲検"
+    print(f"5 {label}: {'[OK] ' + str(hits[0].relative_to(HERE.parent)) if hits else '[NG] この本文は' + label + 'に合格していない（hash=' + h + '）'}")
+    if not hits:
+        ng.append(label)
     if not reply:
-        h = pack.text_hash(text)
-        days = [date.today(), date.today() - timedelta(days=1)]
-        hits = [p for d in days for p in (RUNS / d.isoformat()).glob(f"*/pass-{h}.txt")]
-        print(f"5 盲検   : {'[OK] ' + str(hits[0].relative_to(HERE.parent)) if hits else '[NG] この本文は盲検に合格していない（hash=' + h + '）'}")
-        if not hits:
-            ng.append("盲検")
         _, nouns, _ = first.check(text)
         print(f"  参考   : 1行目の固有名詞 {'・'.join(nouns) if nouns else 'なし（1行目だけで何の話か分かるか目で見る）'}")
 

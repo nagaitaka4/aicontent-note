@@ -18,7 +18,7 @@ CCは下書きの元ネタを全部知っているので、**読者に通じな�
 | 4 | **合否をスクリプトが出す**（CCが点数を読んで決めない） | `python3 operations/x-review-judge.py operations/x-review-runs/<日付>/<run>` |
 | 5 | 不合格ならコメントで3本とも書き直して2〜4。同じ題材で3回不合格なら**題材を捨てて次の材料へ**。**合格が1本出るまで上限なしで続ける。未合格の1本を出す・基準を下げる、はしない**（2026-09-25ユーザー指摘「どうやってもちゃんとHR級以上のポスト内容を1本つくるのがこのブリーフです」） | — |
 | 6 | **出す本文はゲートで[出してよい]のものだけ**。レビュー後に1文字でも直したら盲検からやり直し | `python3 operations/x-gate.py 本文ファイル` |
-| 7 | リプライはゲートの`--reply`（重みと文脈漏れだけ） | `python3 operations/x-gate.py 本文ファイル --reply` |
+| 7 | **リプライも別エージェント3人のレビューを通す**（本人・フォロワー・通りすがり）。合否は`x-reply-review-judge.py`、出すのはゲートの`--reply`で[出してよい]のものだけ（`rules/x-post-flow.md`「リプライも別エージェントのレビューを通す」） | `python3 operations/x-reply-review-pack.py 親投稿.txt 案1 案2 --link 要旨.txt` → Agent3並列 → `python3 operations/x-reply-review-judge.py <run>` → `python3 operations/x-gate.py 本文ファイル --reply` |
 
 **読者像の3人**（`x-review-pack.py`の`PERSONAS`）：①ChatGPTを少し使う会社員 ②有料プランに入るか迷っている個人事業主（ブログ・SNS）③外注か社内でAIかで迷う中小企業のWeb担当。**このメディアの読者像から取っている**。
 

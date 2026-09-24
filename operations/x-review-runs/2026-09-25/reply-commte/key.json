@@ -1,0 +1,18 @@
+{
+  "type": "reply",
+  "parent": "Claude Code × Opus 5.5 節約チートシート\n\n（画像：2列の表）\neffort は普段 medium ｜ 詰まったら high\n単純作業は low ｜ 先にテストを用意\nhigh で2回詰まれば Fable ｜ 解決したら Opus に戻す\n検索は Sonnet・Haiku ｜ 編集は Opus のまま\nAPI は5分空けると割高 ｜ サブスクは1時間で枠を消費\nモデル・effort は区切りで ｜ MCP を抜き差ししない\n別件は /clear ｜ 区切りで /compact\nCLAUDE.md は200行 ｜ 詳細は別ファイルへ\n/usage で実測 ｜ prompt-audit で点検",
+  "items": [
+    {
+      "id": "reply-commte-a",
+      "text": "「/usageで実測」、今朝見たらMaxで今週もう4割使ってました。\n\n昨日1日だけで2割以上増えてて、リセットは火曜です…。",
+      "hash": "f88b039c994d6134",
+      "label": "A"
+    },
+    {
+      "id": "reply-commte-b",
+      "text": "「CLAUDE.mdは200行・詳細は別ファイルへ」、自分もこれでCLAUDE.mdは130行くらいです。\n\nただ、別ファイルに逃がしたXのルールだけ、とんでもない長さになってます…。",
+      "hash": "1ef9b359ca9799a7",
+      "label": "B"
+    }
+  ]
+}

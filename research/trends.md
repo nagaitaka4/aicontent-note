@@ -1,9 +1,24 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-24
+最終更新: 2026-09-25
 
 
 ---
+
+## [2026-09-25] 調査結果（デイリー・金曜）
+
+**①は採用0件（記録のみ5件）。**読者の手元の操作が今日から変わるものは無い。
+
+### Claude Code / Anthropic
+
+- **【新規・記録のみ】claude.com/blog 9/24 [Coding sessions are longer and use more context. Claude Opus 5.5 is built with that in mind.](https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context)**：3〜9月のClaude Codeの利用の集計。verbatim `Claude works 3.3x longer on each prompt with more than 40% more model calls per prompt. There are 68% fewer interruptions.`／`Context per request has grown 2.6x.`／`Input that misses the cache decreased by more than 50%.`／`For newer models like Opus 5.5 and Fable 5.1, you can now change effort levels during your sessions without resetting your cache.`／勧め `Run /usage in Claude Code to see how much of your usage is cached reads.`・`Pick your model at the start of a session rather than switching midway`・`Compact before you step away rather than after`。**採らない理由：本人の実話（途中でモデルを替えているか等）が無く、解説になる。no.27（課金）の「当たりやすい使い方と/usage」の一次情報として使える**
+- **【新規・記録のみ】claude.com/blog 9/24 [Claude Tag now supports personal connectors in channels](https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels)**：verbatim `Personal connectors in Claude Tag are rolling out now on Team plans, with Enterprise to follow.` **採らない理由：SlackのTeam/Enterprise向け・rolling out**
+- **【新規・記録のみ】@ClaudeDevs**（実Chrome）：[9/24 10:57 JST](https://x.com/ClaudeDevs/status/2102940480736821610) クラウドセッションのクレジットの補足 `Cloud sessions run on your Pro or Max plan, like the rest of Claude Code. This promo is an optional one-time credit that your cloud sessions spend first, before falling back onto your normal plan usage.`／[9/24 07:49 JST](https://x.com/ClaudeDevs/status/2102893178273874102) `We've just added local support to Projects in Claude Code, so threads can now run on your own machine.`＋[続き](https://x.com/ClaudeDevs/status/2102893179662106684) `We're working through the waitlist, and are giving access to Projects to more Pro and Max users.`（**待機リスト制＝本人の画面に来ているか未確認なので採らない**）／[9/25 02:11 JST](https://x.com/ClaudeDevs/status/2103170368794185758) `Today, we'll resume charging for requests our safeguards block before Claude responds. This only applies in categories with low false positive rates: biology, distillation attacks, and frontier LLM development.`（API向け・読者は変わらない）
+- **【新規・記録のみ】npm `@anthropic-ai/claude-code`**：`latest`・`next`とも**`2.1.282`**（公開`2026-09-24T15:56:22Z`＝日本時間 9/25 00:56）／`stable: 2.1.274`
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.282`**：`maxProseWidth`設定（広い端末で文章の幅を抑える）／テレメトリ変数の起動時通知／`--continue`・`--resume`の再開まわりの修正多数／Fableの使用クレジット確認に答えないとモデルが切り替わる不具合の修正（Claude Desktop等）。**読者の手元の操作が変わる項目は無い**
+- **【差分なし】Claude Apps リリースノート**：最新は**September 22, 2026**（Opus 5.5）のまま。ページは「Updated in the last hour」だが9月の見出しは22・16・15・10・1で既記録と一致
+- **【差分なし】Anthropic Newsroom**：最新は`claude-discovers-novel-enzyme-system`（9/23・既記録）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅
 
 ## [2026-09-24] 調査結果（デイリー・木曜）
 

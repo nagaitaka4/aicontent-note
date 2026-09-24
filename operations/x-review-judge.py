@@ -100,8 +100,9 @@ def main():
         print(f"判定: [合格] {best['id']}（{len(passed)}本合格）")
         print(f"次  : python3 operations/x-gate.py 本文ファイル  ※1文字でも変えたら再レビュー")
     else:
-        print("判定: [不合格] 合格0本。読者役のコメントで3本とも書き直して再実行（上限3回）。")
-        print("      3回とも不合格なら、同じ題材を捨てて次の材料へ（SKILL.md 手順5-00の掘る順番）")
+        print("判定: [不合格] 合格0本。読者役のコメントで3本とも書き直して再実行する。")
+        print("      同じ題材で3回不合格なら、題材を捨てて次の材料へ（SKILL.md 手順5-00の掘る順番）。")
+        print("      合格が1本出るまで続ける。未合格の1本を出さない・基準を下げない。")
         for r in rows:
             if r["kind"] == "candidate":
                 for c in r["comments"]:

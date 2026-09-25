@@ -1,9 +1,20 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-25
+最終更新: 2026-09-26
 
 
 ---
+
+## [2026-09-26] 調査結果（デイリー・土曜）
+
+**①は採用0件（記録のみ2件）。**読者の手元の操作が今日から変わるものは無い。
+
+### Claude Code / Anthropic
+
+- **【新規・記録のみ】claude.com/blog 9/25 [Build plugins for Claude](https://claude.com/blog/build-plugins-for-claude)**（Claude Appsリリースノート September 25, 2026 にも同じ項目）：verbatim `You can now submit plugins to the Claude directory through a new developer portal, track them through review, and see usage analytics once they're live.`／@ClaudeDevs [9/26 05:06 JST](https://x.com/ClaudeDevs/status/2103577007938228300) `MCP usage across Claude products is up 110x this year!` **採らない理由：プラグインを作って出す開発者向け。読者の手元は変わらない**
+- **【新規・記録のみ】npm `@anthropic-ai/claude-code`**：`next`＝**`2.1.283`**（公開`2026-09-25T18:46:11Z`＝日本時間 9/26 03:46）／`latest: 2.1.282`／`stable: 2.1.274`。CHANGELOG.mdの最新は`2.1.282`のまま（2.1.283の項目はまだ無い）
+- **【差分なし】Anthropic Newsroom**：最新は`claude-discovers-novel-enzyme-system`（9/23・既記録）。一覧にある`enterprise-frontier-safeguards`は9/1付・法人向け
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅
 
 ## [2026-09-25] 調査結果（デイリー・金曜）
 

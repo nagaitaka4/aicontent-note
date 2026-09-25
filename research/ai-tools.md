@@ -1,8 +1,15 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-25
+最終更新: 2026-09-26
 
 ---
+
+## [2026-09-26] 調査結果（デイリー・土曜）
+
+**②は新規1件（記録のみ）。**
+
+- **【新規・記録のみ】ChatGPT リリースノート September 25, 2026「Security history in ChatGPT」**（実Chrome）：verbatim `We're introducing security history, a new way to review recent security activity for your OpenAI account. You can see sign-ins, sign-outs, and changes to multi-factor authentication (MFA), passkeys, and other security settings.`／`To view your history in ChatGPT on the web, go to Settings > Security and login, then select Security history.` **採らない理由：アカウントのログイン履歴を見る画面で、料金・制限・モデル・使える範囲は変わらない（軸②の採用基準に当たらない）。本人の画面・日本語UIの表記も未確認**
+- **【差分なし】Geminiアプリ リリースノート**：最新は**2026.09.10**のまま
 
 ## [2026-09-25] 調査結果（デイリー・金曜）
 

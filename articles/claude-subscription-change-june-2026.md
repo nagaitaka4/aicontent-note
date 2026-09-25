@@ -88,7 +88,7 @@ Fableの枠を使い切った後も、別のモデルならプランの上限の
 ・Opus 5.5は前のOpusより安く、同じ上限で25%長く使える（[9月22日の告知](https://x.com/ClaudeDevs/status/2102438800836489554)）。それでもSonnetよりは重い<br>
 ・Fableは、Proでは最初から使用クレジット。Maxは週次上限の最大50%まで追加料金なし（[Fableの公式ヘルプ](https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan)）
 
-**最新版でモデルの設定を変えていなければ、ProでもClaude Codeは重いOpusで動きます**。
+==最新版でモデルの設定を変えていなければ、ProでもClaude Codeは重いOpusで動きます。==
 下げるのは、Sonnetで足りる作業だけです。
 精度が要る作業まで下げると、品質も下がります。
 

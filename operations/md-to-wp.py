@@ -89,11 +89,14 @@ def inline(text):
     - `[text](url)` … リンクは**アンカーテキストを太字にする**（実測61件中53件＝87%がstrong付き）
     - `==text==`   … 最重要。太字＋黄色マーカー
     - `**text**`   … 重要。太字
+    - `` `code` ``   … <code>（2026-09-25追加）
     """
     # 先に「太字にしたリンク」をまとめて処理する（strongが二重に入るのを避ける）
     text = re.sub(
         r"\*\*\[([^\]]+)\]\(([^)]+)\)\*\*", r'<a href="\2"><strong>\1</strong></a>', text
     )
+    # `code` … コードの表示にする（2026-09-25追加。変換しておらず、公開ページに記号付きで出ていた：no.27の/model・/usage、dynamic-workflowsの/config）
+    text = re.sub(r"`([^`]+)`", r"<code>\1</code>", text)
     text = re.sub(r"==([^=]+)==", MARKER.replace("%s", r"\1"), text)
     text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2"><strong>\1</strong></a>', text)
     text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", text)

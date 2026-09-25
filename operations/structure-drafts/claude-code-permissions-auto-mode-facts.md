@@ -80,3 +80,11 @@ URL：https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md
 ## 6. 需要（2026-09-11 サジェスト実測）
 
 `claude code 許可`10件（めんどくさい／許可不要／バイパス／設定／自動／コマンド／許可リスト）・`claude code auto`10件（auto mode／auto mode 設定／auto モード／使い方）・`claude code 権限`5件（権限設定／権限モード／権限確認をスキップ）。GSCの自サイトには該当クエリ0件（まだ記事が無いため）。
+
+## 7. 2026-09-25の取り直し（構成案 `claude-code-permission-auto-mode.md` 用）
+
+- **公式ブログを原文で開き直した**：13.6%・89%は本文に件数つきで載っている（`The testers caught the dangerous command just 13.6% of the time (143 of 1,053), while auto mode blocked 89% of the same commands (937 of 1,053)`）。条件：研究用の環境・途中の確認1回だけを差し替え・参加者は評価されていると知っていた。同じ実験で約17%→約5%（50回以上確認した後）。6.3%／2.4%は2026年5〜6月・データ利用に同意したアカウント・安全チェックが要確認としたセッション・深刻度7以上。**3-1の⚠️（原文に無い）は9/25時点では当たらない**（`operations/lessons.md` 8/14に追記済み）
+- **公式ドキュメント**（permission-modes・permissions）：分類器が既定で止める／通す一覧、判定の順番（自分のルール→作業フォルダ内→分類器）、auto modeで外れる許可、askとdenyは書いた形にしか当たらない（「security boundaryではない」）、Readの拒否はcat等に効きgrep -r・スクリプトには効かない
+- **手元の設定**：全体 allow 80／ask 6／**deny 6**（.env・鍵ファイルの読み取り。9/11時点の「deny 0件」から増えている）。ローカル `.claude/settings.local.json` の allow 331件は今も効いている（Bash(git *) 2件・git push/stash/reset/restore など）
+- **確認の記録**（`~/.claude/permission-log.jsonl`・9/15〜9/25 14:39・43件）：Bash 23（確認20＝全件rm -rf〔会話の記録から全文を引いて確認〕／分類器が止めた2＝[Auto-Mode Bypass]・[Logging/Audit Tampering]／分類器が答えを返せず1）・定期実行9・ターミナル送信8・Claudeからの質問2・ブラウザ1（答えを返せず）
+- **CHANGELOGの取り直しはできなかった**：`curl`でのダウンロードを分類器が[Auto-Mode Bypass]で止めた（上の記録の1件）

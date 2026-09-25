@@ -258,7 +258,7 @@ Fableを使うときは、右下のゲージをこまめに見る
 
 | 項目 | 当初の予定 | いま |
 |---|---|---|
-| Agent SDK・`claude -p`・他社アプリ | 別のクレジットから引く | これまでどおりプランの上限から引く |
+| Agent SDK・claude -p・他社アプリ | 別のクレジットから引く | これまでどおりプランの上限から引く |
 | 月ごとのクレジット（Pro 20ドル／Max 5x 100ドル／Max 20x 200ドル） | 配られる | 配られない |
 
 出典は[Agent SDKの公式ヘルプ](https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan)です。

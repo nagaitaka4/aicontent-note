@@ -11,9 +11,9 @@
 
 依頼文を本文と別のファイルに置くのは、CCの見立てを提示前の別エージェントのレビューに混ぜないため。
 保存先：operations/review-packs/<ファイル名>.txt（.gitignore）。別セッションにクリップボードを上書きされたら
-`pbcopy < operations/review-packs/<ファイル名>.txt` で入れ直せる。
+`bash cb.sh` で入れ直せる。
 """
-import re, subprocess, sys, pathlib
+import os, re, subprocess, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -21,6 +21,16 @@ def common_request():
     t = (ROOT / "operations/gpt-article-review-prompt.md").read_text()
     m = re.search(r"```\n(.*?)```", t, re.S)
     return m.group(1).strip() if m else ""
+
+def copy_to_clipboard(text):
+    """LANGが空だと pbcopy は日本語を黙って0字にする（2026-09-25に発覚）。UTF-8を指定し、読み戻して確かめる。"""
+    env = {**os.environ, "LANG": "ja_JP.UTF-8", "LC_CTYPE": "UTF-8"}
+    subprocess.run("pbcopy", input=text.encode(), check=True, env=env)
+    got = subprocess.run("pbpaste", capture_output=True, env=env).stdout.decode("utf-8", "replace")
+    if got != text:
+        print(f"★クリップボードに入っていません（{len(text)}字中{len(got)}字）")
+        sys.exit(3)
+
 
 def main():
     if len(sys.argv) < 2:
@@ -43,11 +53,11 @@ def main():
     packs.mkdir(exist_ok=True)
     dest = packs / (path.stem + ".txt")
     dest.write_text(out)
-    subprocess.run("pbcopy", input=out.encode(), check=True)
+    copy_to_clipboard(out)
     rel = dest.relative_to(ROOT)
     print(f"クリップボードに入れました：{len(out)}字（依頼文＋{stage}）")
     print(f"保存先：{rel}")
-    print(f"入れ直すコマンド：pbcopy < {ROOT}/{rel}")
+    print("入れ直すコマンド：bash cb.sh")
 
 if __name__ == "__main__":
     main()

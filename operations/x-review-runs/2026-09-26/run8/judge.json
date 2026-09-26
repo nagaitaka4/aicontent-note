@@ -1,0 +1,166 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 2,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.67,
+    "comments": [
+      "モデル名が並び関係ない話に見えた",
+      "Fableが何か分からない",
+      "発表の報告に見える"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "w3",
+    "text": "Claudeに月100ドル払っても、作業は2〜3回止まりました。\n\n原因は、いちばん上のモデルを選んだまま戻し忘れてたこと。量の減りが早くなるんです。戻したら、月200ドルのプランにしなくても止まらなくなりました。\n\n課金してる人、上限で止まったことありますか？\nhttps://aicontent-note.com/claude-subscription-change-june-2026/",
+    "hash": "80bec2d39e329bd3",
+    "label": "B",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.67,
+      "follow": 3.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.33,
+    "comments": [
+      "「量の減りが早くなる」の量が何の量か一瞬分からない。最後の質問はClaudeに課金していない自分には答えようがない",
+      "月100ドルで止まる話と戻し忘れの失敗が身近で刺さった。最後の質問は少し取ってつけた感じ",
+      "失敗談で課金を迷う自分に刺さる。最後の質問で終わるので結局どうすればいいかは記事を開かないと分からない"
+    ],
+    "pass": false,
+    "why": [
+      "平均4.0未満：fun=3.67・follow=3.67"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT",
+      "＞＜"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "真ん中は発表の要約",
+      "前半は終了のお知らせのまとめ",
+      "前半は公式発表の要約"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "w1",
+    "text": "Claudeに月100ドル払っても、作業は2〜3回止まりました。\n\n原因は、いちばん上のモデルを選んだまま戻し忘れてたこと。戻したら、月200ドルのプランにしなくても止まらなくなりました。\n\n課金するか迷ってる人は、プランより先にモデルを見てみてください。\nhttps://aicontent-note.com/claude-subscription-change-june-2026/",
+    "hash": "3989f707f3b050e6",
+    "label": "D",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.33,
+    "comments": [
+      "締めがアドバイス調で失敗談の面白さはBより弱い",
+      "Bに比べるとなぜ止まったのかの説明が薄い",
+      "締めがアドバイス口調でBより人柄が薄れる"
+    ],
+    "pass": false,
+    "why": [
+      "平均4.0未満：fun=3.0・follow=3.67"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "w2",
+    "text": "月200ドルのプランにしなくて済みました。\n\nClaudeに月100ドル払っても作業が2〜3回止まってて、原因はいちばん上のモデルを選んだまま戻し忘れてたこと。戻したら止まらなくなりました。\n\nプランより先にモデルを見る順番、記事にしました。\nhttps://aicontent-note.com/claude-subscription-change-june-2026/",
+    "hash": "c917f6dec3ee3752",
+    "label": "E",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.67,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 4.0,
+    "comments": [
+      "1行目だけでは何の話か分からず宣伝に見えた",
+      "1行目だけでは何の話か分からない。宣伝色",
+      "1行目だけだと何の話か分からない"
+    ],
+    "pass": false,
+    "why": [
+      "平均4.0未満：stop=3.0・fun=2.67・follow=3.0"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "F",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.33,
+      "follow": 3.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.67,
+    "comments": [
+      "迷った過程が見え共感",
+      "結論をはっきり書いてほしい",
+      "続けたのかはっきりしない"
+    ]
+  }
+]

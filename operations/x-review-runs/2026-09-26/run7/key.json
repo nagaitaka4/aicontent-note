@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A"
+  },
+  {
+    "kind": "candidate",
+    "id": "v1",
+    "text": "Claudeに月100ドル払っても、作業は2〜3回止まりました。\n\n原因はプランじゃなくて、自分がいちばん上のモデルを選んだまま戻し忘れてたこと。上のモデルほど、量の減りが早いんです。\n\n課金する前にモデルを見る順番を記事にしました。\nhttps://aicontent-note.com/claude-subscription-change-june-2026/",
+    "hash": "9dc64030e41d2ff9",
+    "label": "B"
+  },
+  {
+    "kind": "candidate",
+    "id": "v3",
+    "text": "Claudeに月100ドル払って、いちばん上のモデルを使ってたら、作業が2〜3回止まりました。\n\n量の減りが早いモデルに切り替えたまま、戻し忘れてただけでした。戻したら止まりません。\n\n課金するか迷ってる人向けに、先にモデルで決める順番を記事にしました。\nhttps://aicontent-note.com/claude-subscription-change-june-2026/",
+    "hash": "2091277cd681bbbc",
+    "label": "C"
+  },
+  {
+    "kind": "candidate",
+    "id": "v2",
+    "text": "Claudeに月100ドル払っても、作業は2〜3回止まりました。\n\n原因は、いちばん上のモデルを選んだまま戻し忘れてたこと。戻したら、上のプランにしなくても止まらなくなりました。\n\n課金する前に、どのモデルを使うかで決める順番を記事にしました。\nhttps://aicontent-note.com/claude-subscription-change-june-2026/",
+    "hash": "447518764f9fea22",
+    "label": "D"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "F"
+  }
+]

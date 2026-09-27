@@ -1,9 +1,24 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-26
+最終更新: 2026-09-28
 
 
 ---
+
+## [2026-09-28] 調査結果（デイリー・月曜／9/27分の巡回を含む）
+
+**①は新規1件（ネタ化・下書きなし）＋記録のみ2件。**9/26の巡回で@ClaudeDevsの2件を拾い漏らしていた（タイムラインの先頭2件だけ読んでいた）。
+
+### Claude Code / Anthropic
+
+- **【拾い漏れ・ネタ化】@ClaudeDevs [9/26 04:04 JST](https://x.com/ClaudeDevs/status/2103561342057943314)**（実Chrome）：verbatim `Claude Code will now try to find a graceful stopping point when you hit your 5-hour limit mid-task, instead of cutting off mid-edit. It gets a small, fixed allowance pulled from your weekly limit to wrap up what it can.`／[続き](https://x.com/ClaudeDevs/status/2103561343391735842) `As we roll this out, it's available for: - Pro plans once a week - Max and Team Premium plans each time a 5-hour session limit is hit.` `If you need to keep going past the wrap-up, you can continue with extra usage.` → `knowledge/x/ideas.md` `research-20260928-01`。⚠️ **`As we roll this out`＝本人の手元に来たかは、次に5時間制限に当たるまで分からない**（手順5-0の条件1で投稿候補にしない）。CHANGELOG `2.1.283`には該当の項目なし（サーバー側の変更とみられる。推測）
+- **【拾い漏れ・記録のみ】@ClaudeDevs [9/26 03:13 JST](https://x.com/ClaudeDevs/status/2103548467729887677)**：verbatim `Opus 5.5 is 20% cheaper per input and output token than Opus 5, and 60% cheaper on cache reads.` `We ran the numbers, and built a calculator so you can run yours from /usage` **採らない理由：API単価の話。サブスクの読者の手元は変わらない**
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.283`**（npm公開 9/26 03:46 JST・9/26に記録した版の中身が出た）：`/doctor prompt-audit`（CLAUDE.md・スキル等を古いモデル向けの書き方で監査）／`/context`がMCPサーバーの指示を数えるように／**`Fixed the weekly Fable limit not appearing in /usage ... when telemetry is disabled`**。読者の手元の操作は変わらない（`prompt-audit`はユーザーが実行した日に③が立つ）
+- **【差分なし】npm**：`2.1.283`が最新のまま（9/27・9/28の公開なし）
+- **【差分なし】claude.com/blog**：最新は9/25「Build plugins for Claude」（既記録）
+- **【差分なし】Claude Apps リリースノート**：9月の見出しは既記録と一致
+- **【差分なし】Anthropic Newsroom**：最新は9/23 `claude-discovers-novel-enzyme-system`（既記録）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅（**先頭2件で止めず、前回の記録以降を全部読む**）
 
 ## [2026-09-26] 調査結果（デイリー・土曜）
 

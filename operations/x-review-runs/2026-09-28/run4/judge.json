@@ -1,0 +1,184 @@
+[
+  {
+    "kind": "candidate",
+    "id": "k3",
+    "text": "Maxプランに250ドル分のお試しが配られたのに、非エンジニアの自分は使い道が決まりません。パソコンを閉じても動く、Claude Codeのクラウド版です。\n\n毎朝のXのネタ探しを任せられないか考えたけど、Xのログインが要るので無理そうでした。\n\n同じ立場の人、何を任せてますか？",
+    "hash": "f64e57959a3d26b8",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "Claude Codeのクラウド版",
+      "Maxプラン",
+      "クラウド版"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "Maxプランで止まりにくい",
+      "Maxプランが縁遠い",
+      "Maxプランでつまずいた"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・Claude Codeのクラウド版・Maxプラン・クラウド版",
+      "平均4.0未満：stop=3.0・fun=3.0・follow=2.67",
+      "平均順位4.0が基準の2本目（3.0）より上でない"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "k1",
+    "text": "250ドル分もらったのに、非エンジニアの自分は使い道が決まりません。パソコンを閉じても動くClaude Codeのクラウド版が正式になり、Maxプランに配られたお試しです。\n\n毎朝のXのネタ探しを任せられないか考えたけど、Xのログインが要るので無理そうでした。\n\n同じ立場の人、何を任せてますか？",
+    "hash": "57e8a4abee3711b4",
+    "label": "B",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Claude Code",
+      "Claude Codeのクラウド版",
+      "Maxプラン",
+      "クラウド版"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.0,
+    "comments": [
+      "2文目が説明の詰め込み",
+      "2文目の説明が長い",
+      "2文目が詰め込み"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Claude Code・Claude Codeのクラウド版・Maxプラン・クラウド版",
+      "平均4.0未満：fun=3.0・follow=3.0"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "C",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "news_votes": 1,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "結論が分かりにくい",
+      "決め手を具体的に",
+      "中身が薄い"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "k2",
+    "text": "パソコンを閉じても動くClaude Codeのクラウド版。正式版になって、Maxプランの自分にも250ドル分のお試しが来ました。でも非エンジニアだと使い道が決まりません。\n\n毎朝のXのネタ探しを任せられないか考えたけど、Xのログインが要るので無理そうでした。\n\n同じ立場の人、何を任せてますか？",
+    "hash": "588307804ad8420c",
+    "label": "D",
+    "avg": {
+      "stop": 2.0,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Claude Code",
+      "Claude Codeのクラウド版",
+      "Maxプラン",
+      "クラウド版"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "1行目が製品説明",
+      "ニュースに見える",
+      "ニュースの紹介に見える"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Claude Code・Claude Codeのクラウド版・Maxプラン・クラウド版",
+      "平均4.0未満：stop=2.0・fun=3.0・follow=2.67",
+      "ニュースの紹介に見える3人",
+      "平均順位5.0が基準の2本目（3.0）より上でない"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 2,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "入ってこない",
+      "関係ない",
+      "分からない"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "F",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "人柄",
+      "人柄",
+      "人柄"
+    ]
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "news_votes": 2,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "結論をはっきり",
+      "何を選んだのかぼやけている",
+      "判断を言い切って"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "f2",
+    "text": "250ドル分のお試しを受け取ったのに、使い道が決まりません。Claude Codeのクラウド版です。\n\n自分は一度試して即やめてます。手元のMacじゃなく別の場所で動くので、Macのファイルもログインも無いんです。\n\n非エンジニアでクラウド版を使ってる人、何に使ってますか？",
+    "hash": "9268596cd47b5c0f",
+    "label": "B",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "Claude Codeのクラウド版",
+      "クラウド版",
+      "クラウド版（普通のClaude Codeと何が違うのか）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.33,
+    "comments": [
+      "Macのファイルもログインも無いのがなぜ困るのかがピンとこない",
+      "Macのファイルが無いと何が困るのか想像しにくい",
+      "一度試したときに何をやろうとしたのか書いてあれば"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・Claude Codeのクラウド版・クラウド版・クラウド版（普通のClaude Codeと何が違うのか）",
+      "平均4.0未満：stop=3.67・fun=3.0・follow=2.67"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "f3",
+    "text": "非エンジニアの自分、Claude Codeのクラウド版で250ドル分のお試しを受け取って、使い道に迷ってます。\n\n一度試したときは即やめてるんです。手元のMacじゃなく別の場所で動くので、Macのファイルもログインも無い。いつもの感覚だと戸惑う。\n\n同じところで迷ってる人、多いと思うんですよね。",
+    "hash": "11cbca5f8c309f37",
+    "label": "C",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "Claude Codeのクラウド版",
+      "クラウド版",
+      "ログインが無い（何のログインなのか）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "文が長く締めが弱い",
+      "決めつけに聞こえる",
+      "締めが弱い"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・Claude Codeのクラウド版・クラウド版・ログインが無い（何のログインなのか）",
+      "平均4.0未満：stop=2.67・fun=2.33・follow=2.33",
+      "平均順位5.33が基準の2本目（4.0）より上でない"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "D",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "人柄が見えて面白い",
+      "失敗談で人柄",
+      "顔が見えて笑えた"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 2,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "自分向けではない",
+      "話が遠い",
+      "関係ない話"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "f1",
+    "text": "Claude Codeのクラウド版、250ドル分のお試しを受け取りました。でも自分、使い道が決まってません。\n\n一度試したときは即やめてます。手元のMacじゃなく別の場所で動くので、Macのファイルもブラウザのログインも無いんです。\n\n非エンジニアだと、何に使えばいいんだろう。",
+    "hash": "2396f1b860a0cb97",
+    "label": "F",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "Claude Codeのクラウド版",
+      "クラウド版",
+      "ブラウザのログインが無い（何が困るのか）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "ログインが無いと何が困るのか具体例が1つあると伝わる",
+      "試してみた小さな一歩があると良い",
+      "やろうとして止まった作業を1つ具体的に"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・Claude Codeのクラウド版・クラウド版・ブラウザのログインが無い（何が困るのか）",
+      "平均4.0未満：stop=3.0・fun=3.0・follow=3.0"
+    ]
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "kind": "candidate",
+    "id": "d1",
+    "text": "Claude Codeのクラウド版、実は一度試して即やめてます。いつものセッションみたいに使えなくて。\n\nクラウドは自分のMacじゃなく別の場所で動くので、手元のファイルもログイン中のブラウザも無いんです。そりゃ勝手が違う。\n\nクラウド版を使ってる人、何に使ってますか？",
+    "hash": "f5e0494112433961",
+    "label": "A",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code",
+      "クラウド版",
+      "セッション"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "何が困ったのかピンとこない。最後の質問は答えようがない",
+      "何をしたかったのかが見えない。最後の質問も丸投げ",
+      "やめた後に自分がどうしたのかの一言があれば良くなる"
+    ],
+    "pass": false,
+    "why": [
+      "平均4.0未満：stop=3.33・fun=3.0・follow=2.67",
+      "平均順位3.33が基準の2本目（1.67）より上でない"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "d2",
+    "text": "Claude Codeのクラウド版に250ドル分のお試し。でも自分、一度使ってすぐやめてるんです。\n\n使いにくかった理由、いま分かりました。クラウドは手元のMacじゃなく別の場所で動くので、Macのファイルもブラウザのログインも無いんです。\n\nクラウド版、何に使ってますか？",
+    "hash": "c85f2094dd93133b",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "250ドル分のお試し",
+      "250ドル分のお試し（誰向けで、どこで受け取れるのか）",
+      "250ドル分のお試し（誰向けで何の特典か説明が無い）",
+      "Claude Code",
+      "クラウド版"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.67,
+    "comments": [
+      "誰がもらえるのか分からない",
+      "条件が書かれていない。いま分かりましたの気づきは良い",
+      "いま分かりましたを1行目に"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：250ドル分のお試し・250ドル分のお試し（誰向けで、どこで受け取れるのか）・250ドル分のお試し（誰向けで何の特典か説明が無い）・Claude Code・クラウド版",
+      "平均4.0未満：stop=3.33・fun=3.0・follow=2.67",
+      "平均順位3.67が基準の2本目（1.67）より上でない"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "C",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 2,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "何の話か分からない",
+      "遠い話",
+      "置いていかれた"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "D",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "スキル（ChatGPTの機能としてのスキル）"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.67,
+    "comments": [
+      "失敗談に人柄",
+      "失敗談で人柄",
+      "失敗が人間味"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.67,
+      "follow": 3.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 1.33,
+    "comments": [
+      "結論が物足りない",
+      "刺さる",
+      "共感できた"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "d3",
+    "text": "Claude Codeのクラウド版、いつもの感覚だと戸惑います。自分は一度試して、すぐやめてます。\n\n手元のMacじゃなく別の場所で動くので、Macのファイルもログイン中のブラウザも使えません。向いてるのは、Macを閉じたままコードの作業を任せる使い方です。\n\nMaxなら今、250ドル分のお試し付き。",
+    "hash": "911dbf730438667d",
+    "label": "F",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.0,
+      "follow": 2.33
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Claude Code",
+      "Max",
+      "クラウド版"
+    ],
+    "news_votes": 1,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.67,
+    "comments": [
+      "案内文に見える",
+      "宣伝っぽい",
+      "広告に見えて冷めた"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Claude Code・Max・クラウド版",
+      "平均4.0未満：stop=2.33・fun=2.0・follow=2.33",
+      "平均順位5.67が基準の2本目（1.67）より上でない"
+    ]
+  }
+]

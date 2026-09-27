@@ -88,3 +88,10 @@ URL：https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md
 - **手元の設定**：全体 allow 80／ask 6／**deny 6**（.env・鍵ファイルの読み取り。9/11時点の「deny 0件」から増えている）。ローカル `.claude/settings.local.json` の allow 331件は今も効いている（Bash(git *) 2件・git push/stash/reset/restore など）
 - **確認の記録**（`~/.claude/permission-log.jsonl`・9/15〜9/25 14:39・43件）：Bash 23（確認20＝全件rm -rf〔会話の記録から全文を引いて確認〕／分類器が止めた2＝[Auto-Mode Bypass]・[Logging/Audit Tampering]／分類器が答えを返せず1）・定期実行9・ターミナル送信8・Claudeからの質問2・ブラウザ1（答えを返せず）
 - **CHANGELOGの取り直しはできなかった**：`curl`でのダウンロードを分類器が[Auto-Mode Bypass]で止めた（上の記録の1件）
+
+## 8. 2026-09-28（構成を組み直し・C-2とC-3）
+
+- **画面の表記**（ユーザーのスクリーンショット）：モード＝自動（デフォルト）「Claudeが権限の決定を処理します」／手動「変更前に常に確認する」／編集を受け入れる「すべてのファイル編集を自動的に承認」／プラン「変更を加える前に計画を作成」／権限をバイパス「有効にする」。auto modeという表記はもう無い
+- **公式 desktop（Choose a permission mode）**：編集を受け入れる＝ファイル編集と mkdir・touch・mv などは自動、ほかの端末コマンドは聞く／権限をバイパス＝--dangerously-skip-permissions と同じ。Pro・Maxは設定「Claude Code」の「Allow bypass permissions mode」、Team・Enterpriseは組織のポリシー。コンテナやVMの中だけ。クラウドでは選べない／以前の表記は Ask permissions・Auto accept edits・Plan mode
+- **C-2（実施）**：`~/.claude/settings.json` に `autoMode.classifyAllShell: true` を追加し、ask の `Bash(rm -rf:*)` を外した（元の設定は9/28のセッションの作業用フォルダにバックアップ）
+- **C-3（実施）**：使い捨てのリポジトリで `git -C … push origin main --force` を実行。条件A（classifyAllShellなし）は確認・停止なしで通った＝Bash(git *) の許可が分類器より先に効いた（公式どおり）。条件B（あり）も通ったが、設定が実行中のセッションに効いているか・ユーザーの了承で分類器が通したかは切り分けられない → 新しいセッションで、頼まずに条件Bを試し直す

@@ -4,6 +4,19 @@
 
 ---
 
+## [2026-09-28] 調査結果（定期リサーチ・月曜のフル版／朝ブリーフに統合後）
+
+**③は差分なし。**9/25から続く「2026年9月スパムアップデート」は展開中のまま（完了の告知なし）。
+
+### Google / Search Console
+
+- **【継続・展開中】September 2026 spam update**（[Google Search Status Dashboard](https://status.search.google.com/incidents/XhUDXP7A67iHCD2kmbVu)・本日curlで確認）：履歴は`24 Sep 2026 09:15 PDT Released the September 2026 spam update`の1行のみ＝**完了の告知はまだ無い**（最長2週間＝〜10/8ごろ）。10/1のGSC月次では展開中の期間を含む点を注記する
+- **【差分なし】Search Central Blog**：9月の記事は4件のまま（`web-multimodal-in-sc`＋イベント告知3件・既記録）
+
+### 記事側への影響
+
+- **訂正が必要な記事：なし**
+
 ## [2026-09-25] 調査結果（定期リサーチ・金曜のフル版／朝ブリーフに統合後）
 
 **③に新規2件：①Googleが「2026年9月スパムアップデート」を開始（9/24 PT）②Search Consoleに「ウェブのマルチモーダル検索」の掲載結果レポート（9/24）。**どちらも読者の手元の操作は変わらず、X・記事ネタにはしない。

@@ -220,7 +220,7 @@ Claude Codeの許可は、非エンジニアなら「自動」のままでよい
 
 ## アイキャッチ
 
-`images/eyecatch_0071.png`（2026-09-28・参考画像を添付しただけ・GPTの1回目をそのまま採用。プロンプト：`operations/structure-drafts/claude-code-permission-modes-eyecatch-prompt.md`）。記事の no. は71
+`images/eyecatch_0071.png`（2026-09-28・参考画像を添付しただけのプロンプトから生成。確定版はユーザーがCodexでタイトルを太くして作り直したもの〔15:54〕。プロンプト：`operations/structure-drafts/claude-code-permission-modes-eyecatch-prompt.md`）。記事の no. は71
 
 ## 画像
 

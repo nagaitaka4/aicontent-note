@@ -218,6 +218,10 @@ Claude Codeの許可は、非エンジニアなら「自動」のままでよい
 
 4つ（②モードの違い／③自動と編集を受け入れる／⑥公式の数字／⑦記録の中身）＋④と⑥の小見出しは箇条書き。**`constraints.py`の表の上限を執筆前に確かめ、超えるなら⑥の表を箇条書きにする**
 
+## アイキャッチ
+
+`images/eyecatch_0071.png`（2026-09-28・参考画像を添付しただけ・GPTの1回目をそのまま採用。プロンプト：`operations/structure-drafts/claude-code-permission-modes-eyecatch-prompt.md`）。記事の no. は71
+
 ## 画像
 
 - ②：モード選択を開いた画面（9/28のユーザーのスクリーンショット。`images/img_XXXX_01.png`）

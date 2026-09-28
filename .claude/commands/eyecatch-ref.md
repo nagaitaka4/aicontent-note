@@ -23,3 +23,5 @@ argument-hint: [任意：対象記事のslugやタイトル。省略時はセッ
 6. 出力サイズ1200×630pxを指定する（「16:9」の語はプロンプトに書かない）
 7. 「画像内に指定した文言以外の日本語テキストを入れない」を必ず含める
 8. 提案は1パターンのみ（複数案を並べない）。プロンプト本文だけを提示し、それ以外の前置き説明は最小限にする
+9. **🔒 プロンプトは`knowledge/eyecatch-rules.md`「凍結したフロー」の型で書く**（■取り入れるもの／■変えるもの／■文字／■配色＋最初と最後の1行。見本は`operations/structure-drafts/claude-code-permission-modes-eyecatch-prompt.md`）。型を変えるときはユーザーの了承を取る（2026-09-28 no.71で、指示なし・1回の生成で採用できた型）
+10. プロンプトを`operations/structure-drafts/<slug>-eyecatch-prompt.md`に保存してコミットする

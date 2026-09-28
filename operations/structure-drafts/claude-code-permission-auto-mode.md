@@ -231,7 +231,7 @@ Claude Codeの許可は、非エンジニアなら「自動」のままでよい
 - [Desktop application — Choose a permission mode](https://code.claude.com/docs/en/desktop)（2026-09-28取得。4つのモードと権限をバイパス・設定の項目・クラウドでの扱い・以前の表記）
 - [Choose a permission mode](https://code.claude.com/docs/en/permission-modes)（編集を受け入れるで自動承認されるコマンド・どのモードでも自動にならない操作・分類器が既定で止める操作・広い許可が外れる）
 - [Configure auto mode](https://code.claude.com/docs/en/auto-mode-config)（classifyAllShell）
-- [Auto mode is now the default in Claude Code for Pro, Max, and Team plans](https://claude.com/blog/auto-mode-default-in-claude-code)（2026-08-07・⑤の数字）
+- [Auto mode is now the default in Claude Code for Pro, Max, and Team plans](https://claude.com/blog/auto-mode-default-in-claude-code)（2026-08-07・⑥の数字と実例）
 - 本人の環境：`~/.claude/settings.json`（9/28にC-2を反映）・`~/.claude/permission-log.jsonl`（9/15〜9/25・43件）
 
 ## 確認事項

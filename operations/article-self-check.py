@@ -563,7 +563,10 @@ def main(path):
     # 画像行のaltとキャプションは、本文と同じ画面名を指すので「」が重なる。除外する。
     body_no_img = re.sub(r"^!\[[^\]]*\]\([^)]*\)$", "", body, flags=re.M)
     quotes = re.findall(r"「[^」]{2,20}」", body_no_img)
-    dup_quotes = {k: v for k, v in Counter(quotes).items() if v > 1}
+    # 2026-09-28：画面の表記（モード名・ボタン名など）は毎回「」で囲むのが正しい書き方なので数えない。
+    # 記事のfrontmatterに `ui_labels: 自動,手動,…` と書いた語だけを除く（no.71でモード名を囲むとNGになった誤検知）
+    ui_labels = {f"「{w.strip()}」" for w in fm_value(frontmatter, "ui_labels").split(",") if w.strip()}
+    dup_quotes = {k: v for k, v in Counter(quotes).items() if v > 1 and k not in ui_labels}
     if not report("同じ引用フレーズの使い回しがない", not dup_quotes, f"{dup_quotes}"):
         failures += 1  # 2026-09-03修正：[NG]を表示しながら件数に加算していなかった
 

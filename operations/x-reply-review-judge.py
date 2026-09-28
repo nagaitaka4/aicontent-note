@@ -6,6 +6,7 @@
 
 合格＝全部満たす（CCが目で判定しない）:
   1. 親投稿の本題に返している（on_core）と3人全員が答えた
+  1b. 親投稿の話題の物そのものについて話している（same_subject）と3人全員が答えた（2026-09-29追加）
   2. 分からない言葉・前提を挙げた読者が1人以下
   3. 教える・訂正・持論に見えると答えた読者が0人
   4. 決まり文句・AIっぽいと答えた読者が1人以下
@@ -15,6 +16,8 @@
 経緯（2026-09-25）：朝ブリーフのリプライ案が、相手の投稿の本題（AIの言う通りに500部刷った収支報告）ではなく、
 リンク先noteの途中の細部（「PDF不可」の訂正）に寄せていた。手元のネタ（その日の投稿と同じ話）に合わせたため。
 ユーザー指摘「リプライ先の内容とコメント内容あってますか？」で発覚。
+経緯（2026-09-29）：@shiba_program（公式スキル集の紹介）へのリプライが、自作スキルの話のまま本題3/3で合格した。
+読者役は親投稿の言葉を引用しているだけで on_core を付ける。似た別の物への置き換えを same_subject で落とす。
 """
 import json
 import re
@@ -50,6 +53,8 @@ def main():
         rs = [r["replies"][lab] for r in results]
         row = dict(it)
         row["on_core"] = sum(1 for x in rs if x.get("on_core"))
+        # 2026-09-29追加：親投稿の話題の物そのものについて話しているか（古い結果には無いので欠けていれば不合格）
+        row["same_subject"] = sum(1 for x in rs if x.get("same_subject"))
         row["unknown_readers"] = sum(1 for x in rs if x.get("unknown"))
         row["unknown_terms"] = sorted({t for x in rs for t in x.get("unknown", [])})
         row["lecture"] = sum(1 for x in rs if x.get("lecture"))
@@ -61,6 +66,8 @@ def main():
         why = []
         if row["on_core"] < 3:
             why.append(f"本題に返していると答えたのが{row['on_core']}/3人（全員必要）")
+        if row["same_subject"] < 3:
+            why.append(f"親投稿の話題の物そのものについて話していると答えたのが{row['same_subject']}/3人（全員必要・似た別の物への置き換えは不可）")
         if row["unknown_readers"] > 1:
             why.append(f"分からない言葉を挙げた読者{row['unknown_readers']}人：" + "・".join(row["unknown_terms"]))
         if row["lecture"] > 0:
@@ -79,7 +86,7 @@ def main():
     (d / "judge.json").write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
 
     for r in rows:
-        print(f"{'✅合格' if r['pass'] else '❌'} {r['id']}  本題{r['on_core']}/3  本人のうれしさ{r['glad_author']}"
+        print(f"{'✅合格' if r['pass'] else '❌'} {r['id']}  本題{r['on_core']}/3  同じ物{r.get('same_subject',0)}/3  本人のうれしさ{r['glad_author']}"
               f"（平均{r['glad_avg']}）  プロフ{r['profile']}/3  hash={r['hash']}")
         for w in r["why"]:
             print(f"     - {w}")

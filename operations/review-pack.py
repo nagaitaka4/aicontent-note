@@ -11,7 +11,7 @@
 
 依頼文を本文と別のファイルに置くのは、CCの見立てを提示前の別エージェントのレビューに混ぜないため。
 保存先：operations/review-packs/<ファイル名>.txt（.gitignore）。別セッションにクリップボードを上書きされたら
-`bash cb.sh` で入れ直せる。
+`cb <名前の一部>`（~/.local/bin/cb・どのフォルダからでも動く）で入れ直せる。
 """
 import os, re, subprocess, sys, pathlib
 
@@ -57,7 +57,7 @@ def main():
     rel = dest.relative_to(ROOT)
     print(f"クリップボードに入れました：{len(out)}字（依頼文＋{stage}）")
     print(f"保存先：{rel}")
-    print("入れ直すコマンド：bash cb.sh")
+    print(f"入れ直すコマンド：cb {path.stem}")
 
 if __name__ == "__main__":
     main()

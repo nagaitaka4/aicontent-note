@@ -57,7 +57,7 @@ def main():
     rel = dest.relative_to(ROOT)
     print(f"クリップボードに入れました：{len(out)}字（依頼文＋{stage}）")
     print(f"保存先：{rel}")
-    print(f"入れ直すコマンド：~/.local/bin/cb {path.stem}")
+    print(f"入れ直し：チャットで「CBに入れて」→ CCが ~/.local/bin/cb {path.stem} を実行")
 
 if __name__ == "__main__":
     main()

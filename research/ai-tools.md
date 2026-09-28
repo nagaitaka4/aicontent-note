@@ -1,8 +1,16 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-28
+最終更新: 2026-09-29
 
 ---
+
+## [2026-09-29] 調査結果（デイリー・火曜）
+
+**②は新規1件（記録のみ）。**
+
+- **【新規・記録のみ】ChatGPT リリースノート September 28, 2026「Explore your health data with personalized summaries」**（実Chrome）：verbatim `You can now select a chart, metric, or record in the Health tab to get personalized explanations and insights based on your connected health information.` **採らない理由：ヘルスケア連携の話で、このメディアの読者の仕事の手元は変わらない。**あとから足された過去日付のエントリは無し
+- **【差分なし】Geminiアプリ リリースノート**：最新は2026.09.10のまま
+- 予定：OpenAI DevDay（日本時間9/30 2:00・`research-20260925-02`）。**明日9/30の朝に確認する**
 
 ## [2026-09-28] 調査結果（デイリー・月曜／9/27分を含む）
 

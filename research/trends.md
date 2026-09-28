@@ -1,9 +1,21 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-28
+最終更新: 2026-09-29
 
 
 ---
+
+## [2026-09-29] 調査結果（デイリー・火曜）
+
+**①は新規1件（ネタ化・下書き1本）＋記録のみ1件。**
+
+### Claude Code / Anthropic
+
+- **【新規・ネタ化】Claude Sonnet 5.5 公開（日本時間 9/29 03:36）**：[@ClaudeDevs](https://x.com/ClaudeDevs/status/2104641318555353400) verbatim `Sonnet 5.5 is smarter, more efficient, and 30% faster than Sonnet 5. It costs up to 30% less for most work, so your Claude Code usage goes further too.`／`Use it for well-scoped everyday tasks like fixing bugs and quickly iterating on features.`／Claude Appsリリースノート September 28, 2026「Claude Sonnet 5.5 launch」`We just launched Claude Sonnet 5.5, the second model in our Claude 5.5 family. Sonnet 5.5 is a faster, lower-cost complement to Claude Opus 5.5.`／[claude.dev のガイド](https://claude.dev/blog/building-with-claude-sonnet-5-5/)（Addy Osmani・9/28）`The default model stays Opus 5.5, so switch with /model sonnet for well-scoped tasks.`・`From Claude Code v2.1.284 ... the sonnet alias resolves to Sonnet 5.5`・Claude Codeの既定effortは`medium`・`Claude Haiku 5.5 will join the family in the coming weeks`。**実画面（ユーザーのMax・claude.ai/new・9/29 06:48にCCが読むだけで確認）**：モデル表示は「Opus 5.5 中」のまま、モデル欄に吹き出し「**NEW　Sonnet 5.5が登場しました。素早い回答と高速な初稿作成に最適です。Opus 5.5よりも使用量が少なくなっています。**」→ `knowledge/x/ideas.md` `research-20260929-01`・`queue.md` `SONNET55-01`
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.284`**（npm公開 9/29 02:11 JST）：Sonnet 5.5追加／auto modeの作業フォルダ外の読み取り確認に`Yes, but ask again next time`を追加／`/rate-limit-options`を`/help`に表示／`/mcp reconnect all`／圧縮後も「Prompt is too long」が続く不具合の修正 ほか。**手元のClaude Codeは`2.1.283`**（更新前）。auto modeの選択肢追加はno.71（許可の記事）に関係するが、ユーザーが画面で見た日に③が立つ
+- **【差分なし】Anthropic Newsroom**：最新は9/23のまま
+- **【新規・記録のみ】claude.com/blog**：9/28「Giving companies more control over their AI agents, with NVIDIA」（企業向け・読者の手元は変わらない）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅（9/26以降を全部読んだ：Sonnet 5.5×3件・eval設計の記事1件）
 
 ## [2026-09-28] 調査結果（デイリー・月曜／9/27分の巡回を含む）
 

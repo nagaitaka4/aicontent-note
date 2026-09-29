@@ -1,9 +1,22 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-29
+最終更新: 2026-09-30
 
 
 ---
+
+## [2026-09-30] 調査結果（デイリー・水曜）
+
+**①は記録のみ1件（ネタ化なし）。**
+
+### Claude Code / Anthropic
+
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.285`**（npm公開 9/30 02:32 JST）：`Added claude --desktop to open the Claude desktop app on the current directory, or on a session with --continue / --resume <id>`／`Added CLAUDE_CODE_DISABLE_WEB_FETCH`／`Added allowedProviders managed setting`／`Fixed sandbox auto-allow asking for approval on every run of many inline scripts (python3 -c, node -e) just because they contain =`／`Fixed background subagents in auto mode prompting a second, redundant reply after each report` ほか修正多数。**採らない理由**：ターミナルからデスクトップアプリを開く機能は、デスクトップ版から入ってターミナルをほとんど開かないこのメディアの使い方では手元が変わらない。auto modeの修正はno.71（許可）に関係するが、本人が体感した日でないと③が立たない
+- **【差分なし】Claude Apps リリースノート**：最新は September 28, 2026「Claude Sonnet 5.5 launch」のまま
+- **【差分なし】Anthropic Newsroom**：最新は9/23のまま
+- **【新規・記録のみ】claude.com/blog**：9/29「Agents you can coach: how Asana builds human-agent teams with Claude」（企業事例・読者の手元は変わらない）
+- **【差分なし】@ClaudeDevs**：9/29のSonnet 5.5関連（ガイド・eval設計）以降の新規なし
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅
 
 ## [2026-09-29] 調査結果（デイリー・火曜）
 

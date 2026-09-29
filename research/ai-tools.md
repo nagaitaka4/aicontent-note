@@ -10,6 +10,7 @@
 
 - **【新規・記録のみ】OpenAI DevDay 2026（日本時間9/30 2:00・[DevDay 2026 の振り返り](https://openai.com/ja-JP/index/devday-2026-recap/)・実Chromeで確認）**：20超の発表。読者の手元に近いものだけ抜粋（verbatim・日本語版）
   - `月額 500 ドルの Pro プランを導入します。最も高い利用上限に加え、OpenAI 最速のフロンティアモデル Astra Ultrafast を限定で利用できます。`→ **料金ページ（chatgpt.com/pricing・ユーザーのアカウントで読むだけで確認）ではProが「100／200／500」の3段階。ユーザーは「ご利用中のプラン」＝Plus $20**
+  - **08:35追記（ヘルプで確認）**：[About ChatGPT Pro tiers](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers)（更新「7時間前」）verbatim `ChatGPT Pro now offers Pro 500, a new $500/month plan that includes Astra Ultrafast. Pro 200 is also available for new subscriptions again. New subscriptions that aren’t eligible for grandfathering include a lower usage allowance.`／`Among Pro plans, Ultrafast is available only on Pro 500.`／既存のPro 200は`through Oct 29, 2026`まで旧い利用枠。**地域の制限の記載なし。ユーザーのアカウント（日本・日本語UI）の料金画面でProの「500」を選ぶと「最大限のパワー」「$500/月」「アップグレード」が表示された（購入はしていない）**
   - `GPT‑6.1 Sol`（`入力・出力トークンの料金は Astra の標準料金の 4 分の 1`・提供状況は「[提供状況を追加]」のまま未記載）
   - `dots`（常時稼働のエージェント・`Pro、Business Premium、Enterprise で利用できます`）
   - `プラグイン拡張機能`・`MCP イベント`＝`すべてのプランで利用できます`

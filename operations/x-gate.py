@@ -2,7 +2,7 @@
 """X投稿を「出してよいか」を1回で判定する最終ゲート（2026-09-25新設）。
 
 使い方:
-  python3 operations/x-gate.py 本文.txt
+  python3 operations/x-gate.py 本文.txt --model <型ID> [--overlap "続き物として出す理由"]
   python3 operations/x-gate.py 本文.txt --reply   # リプライ（別エージェントのリプライレビュー合格を求める）
 
 見るもの（全部 [OK] で「出してよい」）:
@@ -12,6 +12,10 @@
   4. 文脈漏れ：x-hook.py のC（「昨日の」など前を知らないと通じない言い回しがない）
   5. 盲検：この本文と一字一句同じものが、今日か昨日の x-review-judge.py で合格している
      → レビューのあとで1文字でも直したら、ここで落ちる（2026-09-25：最後の2語修正が未レビューのまま出た）
+  6. 型（2026-09-30新設）：--model の型IDが knowledge/x/model-posts.md の型一覧にある
+     → 伸びた実物のどの型を真似たかが言えない候補は出さない
+  7. カニバリ（2026-09-30新設）：x-cannibal.py で直近14日の投稿・キューと重なっていない。
+     重なる場合は --overlap に「続き物として出す理由」を書けば通す（出力にその1行を載せる）
 
 x-firstline.py（1行目の固有名詞）は[要目視]を返すだけなので、ここでは参考表示にとどめる。
 """
@@ -33,8 +37,18 @@ def load(name):
 
 
 def main():
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    reply = "--reply" in sys.argv
+    argv = sys.argv[1:]
+    def opt(name):
+        if name in argv:
+            i = argv.index(name)
+            v = argv[i + 1] if i + 1 < len(argv) else ""
+            del argv[i:i + 2]
+            return v
+        return None
+    model = opt("--model")
+    overlap = opt("--overlap")
+    reply = "--reply" in argv
+    args = [a for a in argv if not a.startswith("--")]
     if len(args) != 1:
         sys.exit(__doc__)
     count, hook, first, pack = load("x-count"), load("x-hook"), load("x-firstline"), load("x-review-pack")
@@ -76,6 +90,26 @@ def main():
     if not hits:
         ng.append(label)
     if not reply:
+        lib = (HERE.parent / "knowledge" / "x" / "model-posts.md").read_text(encoding="utf-8")
+        ok_model = bool(model) and f"| {model} |" in lib
+        print(f"6 型     : {'[OK] ' + model if ok_model else '[NG] --model の型IDが model-posts.md の型一覧にない（' + str(model) + '）'}")
+        if not ok_model:
+            ng.append("型")
+        import subprocess
+        cp = subprocess.run([sys.executable, str(HERE / "x-cannibal.py"), args[0]], capture_output=True, text=True)
+        over = "[要確認]" in cp.stdout
+        lines = [l.strip() for l in cp.stdout.splitlines() if l.startswith("  ")]
+        if over and overlap:
+            print(f"7 カニバリ: [OK] 重なりあり・続き物として出す：{overlap}")
+            for l in lines:
+                print(f"           {l}")
+        elif over:
+            print("7 カニバリ: [NG] 直近の投稿・キューと重なる（--overlap に理由を書くか、題材・数字を替える）")
+            for l in lines:
+                print(f"           {l}")
+            ng.append("カニバリ")
+        else:
+            print("7 カニバリ: [OK] 重なりなし")
         _, nouns, _ = first.check(text)
         print(f"  参考   : 1行目の固有名詞 {'・'.join(nouns) if nouns else 'なし（1行目だけで何の話か分かるか目で見る）'}")
 

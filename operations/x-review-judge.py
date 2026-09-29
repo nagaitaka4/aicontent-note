@@ -8,12 +8,13 @@
 書くもの: judge.json（全候補の点数と合否）。合格した候補は pass-<ハッシュ>.txt に本文を保存する
           → x-gate.py はこの pass ファイルがある本文だけを「出してよい」にする
 
-合格（HR級）の条件＝全部満たす。CCが目で判定しない:
+合格の条件（2026-09-30改訂：盲検は「通じるか」だけを見る）:
   1. 分からない言葉・前提を挙げた読者が1人以下
-  2. 止まる・面白い・フォローの平均がすべて4.0以上
-  3. ニュースの紹介に見えると答えた読者が1人以下
-  4. 書き手本人の決断・感情・失敗が入っていると答えた読者が2人以上（3条件の③）
-  5. フォローしたくなる順の平均順位で、基準の3本のうち2本より上
+  2. ニュースの紹介に見えると答えた読者が1人以下
+止まる・面白い・フォロー・順位は**参考表示だけ**で合否に使わない。
+理由：2026-09-30、AIの読者役は1,494いいねの実物に「いいねしない」と答え、ユーザーが
+「全然おもしろくない」と却下した投稿を1位にした。面白さの判定は、knowledge/x/model-posts.md
+の型（伸びた実物）を真似ているかと、ユーザーの判断・投稿後の実数で行う。
 """
 import json
 import re
@@ -67,15 +68,8 @@ def main():
         why = []
         if r["unknown_readers"] > 1:
             why.append(f"分からない言葉を挙げた読者{r['unknown_readers']}人：" + "・".join(r["unknown_terms"]))
-        low = [k for k in KEYS if r["avg"][k] < MIN_SCORE]
-        if low:
-            why.append("平均4.0未満：" + "・".join(f"{k}={r['avg'][k]}" for k in low))
         if r["news_votes"] > 1:
             why.append(f"ニュースの紹介に見える{r['news_votes']}人")
-        if r["person_votes"] < 2:
-            why.append(f"本人の決断・感情が見える{r['person_votes']}人（③が弱い）")
-        if not r["avg_rank"] < second_best_base:
-            why.append(f"平均順位{r['avg_rank']}が基準の2本目（{second_best_base}）より上でない")
         r["pass"] = not why
         r["why"] = why
 
@@ -97,12 +91,10 @@ def main():
     print()
     if passed:
         best = passed[0]
-        print(f"判定: [合格] {best['id']}（{len(passed)}本合格）")
+        print(f"判定: [合格] {best['id']}（{len(passed)}本合格・通じるかの確認のみ。面白さの保証ではない）")
         print(f"次  : python3 operations/x-gate.py 本文ファイル  ※1文字でも変えたら再レビュー")
     else:
-        print("判定: [不合格] 合格0本。読者役のコメントで3本とも書き直して再実行する。")
-        print("      同じ題材で3回不合格なら、題材を捨てて次の材料へ（SKILL.md 手順5-00の掘る順番）。")
-        print("      合格が1本出るまで続ける。未合格の1本を出さない・基準を下げない。")
+        print("判定: [不合格] 合格0本。分からない言葉を言い換えるか、ニュース紹介に見える形を直して再実行する。")
         for r in rows:
             if r["kind"] == "candidate":
                 for c in r["comments"]:

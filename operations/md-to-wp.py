@@ -352,9 +352,17 @@ def convert(md):
         # 【ブロック名】<br> ＋ 内容
         m = re.match(r"^【([^】]+)】(<br>)?\s*\n?([\s\S]*)$", c)
         if m and m.group(1) in BLOCKS:
+            body = m.group(3).strip()
+            # 2026-09-29：ブロックの中身をまるごと **…** で囲んだとき（ユーザーがWPで全体を太字にした記録）、
+            # 行をまたぐ ** は inline() が拾えず記号のまま残っていた（no.71）。まるごと <strong> にする
+            whole_bold = body.startswith("**") and body.endswith("**") and body.count("**") == 2
+            if whole_bold:
+                body = body[2:-2]
             inner = "<br>".join(
-                inline(l) for l in m.group(3).split("<br>") if l.strip()
+                inline(l) for l in body.split("<br>") if l.strip()
             )
+            if whole_bold:
+                inner = "<strong>%s</strong>" % inner
             out.append(
                 "<!-- wp:paragraph {\"className\":\"%s\"} -->\n<p class=\"%s\">%s</p>\n<!-- /wp:paragraph -->"
                 % (

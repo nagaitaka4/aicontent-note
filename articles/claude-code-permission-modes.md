@@ -67,8 +67,9 @@ ui_labels: 自動,手動,編集を受け入れる,プラン,権限をバイパ�
 
 【ポイント】<br>
 足す場所：~/.claude/settings.json<br>
-足す設定：autoMode.classifyAllShell を true<br>
-Claude Codeに、この2つを伝えて頼めば入ります。
+足す設定：autoMode.classifyAllShell を true
+
+Claude Codeに、この2つを伝えれば足してくれます。
 
 ---
 

@@ -1,8 +1,15 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-09-30
+最終更新: 2026-10-01
 
 ---
+
+## [2026-10-01] 調査結果（デイリー・木曜）
+
+**②は新規1件（Gemini・記録のみ）＋取得失敗1面。**
+
+- **【新規・記録のみ】Geminiアプリ リリースノート 2026.09.30「Let skills in Gemini tackle your most repetitive tasks」**（[出典](https://gemini.google/release-notes/)）：verbatim `Today we're rolling out skills directly into the Gemini chat globally. Skills are a reusable set of instructions that tell Gemini how to handle specific tasks.`／`Skills will soon replace Gems as the tool for tailoring instructions for specific tasks. … we will automatically migrate your Gems into skills when Gems go away.`／注記`currently available to 18+ and coming to more users soon`（rolling out・料金プランの条件は記載なし）。**採らない理由**：本人はGeminiを常用しておらず画面で開けない（合格ライン条件1）。**再利用条件**：ChatGPTのマイGPT終了（`GPTEND-01`）と並べて「各社が“専用の指示”をスキルに寄せている」話を本人がした日
+- **【取得失敗】ChatGPT リリースノート**：help.openai.com が WebFetch・curl とも HTTP 403。非公式まとめ（Releasebot）では9/25「Security history」（Settings > Security and login でログイン・MFA等の履歴）があるが、日付が9/25と9/28で食い違い、公式で未確認＝記録しない。**明日、実Chromeで公式を確認する**
 
 ## [2026-09-30] 調査結果（デイリー・水曜）
 

@@ -1,0 +1,183 @@
+[
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "A",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "s2",
+    "text": "Claudeに作業を任せていて、自分は「実行していい？」を一度も拒否してません。\n面倒で、確認をオフにしたかった。\n\nオフだと、ファイル一括削除も素通り。\n確認をAIに任せる設定なら、危ない操作の約9割を止めます（公式の実験）。手間は同じ。\n\nオフにしなくてよかった。\nhttps://aicontent-note.com/claude-code-permission-modes/",
+    "hash": "19c5ae660acb095c",
+    "label": "B",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude（何をするツールなのか）",
+      "「実行していい？」（何の確認画面かわからない）",
+      "公式の実験",
+      "確認をAIに任せる設定",
+      "確認をAIに任せる設定（何という設定なのか）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude（何をするツールなのか）・「実行していい？」（何の確認画面かわからない）・公式の実験・確認をAIに任せる設定・確認をAIに任せる設定（何という設定なのか）"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "s1",
+    "text": "「全部許可するなら、確認はオフでいい」\nClaudeの「実行していい？」に拒否0回の自分も、そう思ってました。\n\nオフだと、ファイル一括削除も素通り。\n確認をAIに任せる設定なら、危ない操作の約9割を止めます（公式の実験）。手間は同じ。\n\nオフにしなくてよかった。\nhttps://aicontent-note.com/claude-code-permission-modes/",
+    "hash": "e0a650d946398f2e",
+    "label": "C",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude（何をするツールなのか）",
+      "「実行していい？」（どの画面の確認かわからない）",
+      "公式の実験",
+      "確認をAIに任せる設定",
+      "確認をAIに任せる設定（何という設定なのか）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude（何をするツールなのか）・「実行していい？」（どの画面の確認かわからない）・公式の実験・確認をAIに任せる設定・確認をAIに任せる設定（何という設定なのか）"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "s3",
+    "text": "「実行していい？」と聞いてくるClaude。自分は一度も拒否してません。\nだから確認はオフでいいと思ってました。\n\nオフだと、ファイル一括削除も素通り。\n確認をAIに任せる設定なら、危ない操作の約9割を止めます（公式の実験）。手間は同じ。\n\nオフにしなくてよかった。\nhttps://aicontent-note.com/claude-code-permission-modes/",
+    "hash": "a14fa18c6abd4bd3",
+    "label": "D",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude（何をするツールなのか）",
+      "「実行していい？」（Claudeのどの機能の確認か）",
+      "公式の実験",
+      "確認をAIに任せる設定",
+      "確認をAIに任せる設定（何という設定なのか）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude（何をするツールなのか）・「実行していい？」（Claudeのどの機能の確認か）・公式の実験・確認をAIに任せる設定・確認をAIに任せる設定（何という設定なのか）"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.67,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 2,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "F",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.67,
+      "follow": 3.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  }
+]

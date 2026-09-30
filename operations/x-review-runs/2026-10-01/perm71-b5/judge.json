@@ -1,0 +1,164 @@
+[
+  {
+    "kind": "candidate",
+    "id": "u1",
+    "text": "「これ実行していい？」と毎回聞くAI（Claude Code）。\n自分は「いいえ」を押したことがなく、確認ごとオフにしたかった。\n\nオフだと、ファイル一括削除も聞かずに実行。\n「自動」モードなら、危ない操作の約9割を別のAIが止めます。\n\nオフにしなくてよかった。\nhttps://aicontent-note.com/claude-code-permission-modes/",
+    "hash": "978a1f39dbb52448",
+    "label": "A",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "「いいえを押したことがない」は共感。3段目から設定の説明になって読む気が落ちた。「別のAIが止める」も分かりにくい。オフにして困った体験があれば読みたくなる。",
+      "「いいえを押したことがない」は共感できて止まった。後半は数字の説明、最後の「よかった」も淡白。",
+      "「いいえを押したことがない」は共感。「別のAIが止める」の中身が分からず、後半は記事の宣伝に見えた。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "u2",
+    "text": "「これ実行していい？」と毎回聞くAI（Claude Code）。\n自分は「いいえ」を一度も押してないので、オフでいいと思ってました。\n\nオフだと、ファイル一括削除も聞かずに実行。\n別のAIが危ない操作を止める「自動」モードなら、約9割止まる。\n\nオフにしなくてよかった。\nhttps://aicontent-note.com/claude-code-permission-modes/",
+    "hash": "b4cfba811db88209",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 2.67,
+    "comments": [
+      "「オフでいいと思ってました」で本音が見えてAより人柄を感じる。中盤は仕様の話。",
+      "「オフでいいと思ってました」は本音っぽくてAより親しみやすい。4行目は少し読みにくい。",
+      "「オフでいいと思ってました」は本音っぽくてAより人柄が見える。「約9割止まる」が何の9割か一瞬分からない。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "u3",
+    "text": "AI（Claude Code）が毎回「これ実行していい？」と聞いてきます。\n自分は「いいえ」を一度も押してないので、オフにしたかった。\n\nオフだと、ファイル一括削除も聞かずに実行。\n「自動」モードなら、危ない操作の約9割を別のAIが止めます。\n\nオフにしなくてよかった。\nhttps://aicontent-note.com/claude-code-permission-modes/",
+    "hash": "273b5b46485b22f6",
+    "label": "C",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "1行目が説明から入るので止まりにくい。",
+      "1行目が説明から入るので止まりにくい。",
+      "1行目がふつうの説明文で引っかかりが弱い。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いたばかり",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "F",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "candidate",
+    "id": "t3",
+    "text": "「これ実行していい？」と毎回聞いてくるAI。\n自分は「いいえ」を一度も押してないので、この確認はオフでいいと思ってました。\n\nオフだと、ファイル一括削除も聞かずに実行。\n危ない操作だけ別のAIが止める設定なら、約9割止まります。\n\nオフにしなくてよかった。\nhttps://aicontent-note.com/claude-code-permission-modes/",
+    "hash": "f25a5108196b7bb4",
+    "label": "A"
+  },
+  {
+    "kind": "candidate",
+    "id": "t1",
+    "text": "AIにパソコン作業を任せると「これ実行していい？」と聞かれます。\n自分は「いいえ」を押したことがなく、確認ごとオフにしたかった。\n\nオフだと、ファイル一括削除も聞かずに実行。\n危ない操作だけ別のAIが止める設定なら、約9割止まります。\n\nオフにしなくてよかった。\nhttps://aicontent-note.com/claude-code-permission-modes/",
+    "hash": "edcb688bb21779b8",
+    "label": "B"
+  },
+  {
+    "kind": "candidate",
+    "id": "t2",
+    "text": "AIにパソコン作業を任せていて、「これ実行していい？」に自分は一度も「いいえ」を押してません。\n面倒で、確認をオフにしかけました。\n\nオフだと、ファイル一括削除も聞かずに実行。\n危ない操作だけ別のAIが止める設定なら、約9割止まります。\n\nオフにしなくてよかった。\nhttps://aicontent-note.com/claude-code-permission-modes/",
+    "hash": "9a6d1b44557d67e1",
+    "label": "C"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "F"
+  }
+]

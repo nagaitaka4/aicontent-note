@@ -1,9 +1,22 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-09-30
+最終更新: 2026-10-01
 
 
 ---
+
+## [2026-10-01] 調査結果（デイリー・木曜）
+
+**①は記録のみ2件（ネタ化なし）。**
+
+### Claude Code / Anthropic
+
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.286`**（npm公開 10/1 02:14 JST・`latest`／`next`は2.1.286、`stable`は2.1.285のまま）：`Added a count such as "2 of 5" to the permission prompt when several permission requests stack up`／`Fixed claude --resume and --continue sometimes losing every turn after a batch of parallel tool calls when the earlier session crashed or was killed`／`Fixed every turn failing when the Anthropic API refuses the model your default or a model alias resolves to`／[VSCode] `Added bookmarks` ほか。**採らない理由**：許可の確認に「2 of 5」の残り数が出るのはno.71（許可）に関係するが、本人が画面で見た日でないと③が立たない。**再利用条件**：本人の画面で「2 of 5」を見た日
+- **【新規・記録のみ】claude.com/blog**：9/30「Claude for Government is now generally available」（`delivers Claude's coding and agentic work capabilities through a FedRAMP High authorized environment`＝米国の連邦・州の政府機関向け。日本の個人は対象外）／9/30「How Anthropic's sales team rebuilt inbound with Claude Managed Agents」（事例の読み物・新機能なし）
+- **【差分なし】Claude Apps リリースノート**：最新は September 28, 2026「Claude Sonnet 5.5 launch」のまま
+- **【差分なし】Anthropic Newsroom**：最新は9/23のまま
+- **【差分なし】@ClaudeDevs**：実Chromeの検索で9/30以降の新規発表なし（`Claude Code`の話題は@claudecode84のSonnet 5.5ガイド紹介＝9/28公開済みのガイドで新規ではない）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs △（X検索で代替）
 
 ## [2026-09-30] 調査結果（デイリー・水曜）
 

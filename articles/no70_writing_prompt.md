@@ -6,6 +6,7 @@
   `articles/no70_writing_prompt.md の指示だけを根拠に記事の初稿を書いてください。文体見本は articles/ai-how-to-use-10-questions.md を読んでください。それ以外のファイル（rules/・knowledge/・operations/・他の記事）は読まないでください。出力は articles/no70_astra_draft.md に保存し、コミットはしないでください。`
   **モデル**：Codexの一覧にAstraは無い（2026-09-21実測：5.6 Sol〔既定〕／5.6 Terra／5.6 Luna／5.5）。**既定の 5.6 Sol を使う**。思考量は「高」があればそれを選ぶ。使ったモデル名と思考量をここに記録する：＿＿＿
 - **B：ChatGPT Work（GPT-6 Astra）**。新しいスレッド・リポジトリは接続しない（`operations/gpt-writing-prompt.md`）。①下の「---」以降を全部貼る ②文体見本として `articles/ai-how-to-use-10-questions.md`（no.69）をファイル添付する（本文はペーストしない）。
+**2026-09-30 10時台：T-4（ChatGPTとClaudeの分担・新規）の材料としてBで実施開始**（ユーザー指示「実験から進めてください」）。比べる相手はCCの初稿＝コミット`07858d2`の`articles/claude-company-data-training.md`（NG 0件・73文・平均30.9字・50字超16.4%）。貼る文は`operations/review-packs/astra-no70-prompt.txt`（`~/.local/bin/cb astra-no70`）。
 **記録**：Astraの出力は `articles/no70_astra_draft.md` に保存し、CCの初稿 `articles/claude-company-data-training.md` と並べて判定する。開始時刻・終了時刻をここに追記する。
 
 ---

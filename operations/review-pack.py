@@ -13,7 +13,8 @@
 保存先：operations/review-packs/<ファイル名>.txt（.gitignore）。別セッションにクリップボードを上書きされたら
 `cb <名前の一部>`（~/.local/bin/cb・どのフォルダからでも動く）で入れ直せる。
 """
-import os, re, subprocess, sys, pathlib
+import json, os, re, subprocess, sys, pathlib
+from datetime import datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -55,9 +56,27 @@ def main():
     dest.write_text(out)
     copy_to_clipboard(out)
     rel = dest.relative_to(ROOT)
+    to = send_to(packs / (path.stem + ".history.json"), stage, "--new" in sys.argv)
+    (packs / (path.stem + ".to")).write_text(to + "\n")
     print(f"クリップボードに入れました：{len(out)}字（依頼文＋{stage}）")
+    print(f"送り先：{to}")
     print(f"保存先：{rel}")
     print(f"入れ直し：チャットで「CBに入れて」→ CCが ~/.local/bin/cb {path.stem} を実行")
+
+
+def send_to(hist_path, stage, force_new):
+    """どのGPTのチャットに貼るかを決める（2026-09-30 ユーザー指示「CBに入れたときに、どのチャットで送るかも教えて」）。
+    同じ記事（ファイル名）の2回目以降は、前回と同じチャットの続き。前回の指摘を覚えているチャットのほうが、
+    直した所が入っているかまで見てくれるため。--new を付けたときだけ新しいチャットにする。"""
+    hist = json.loads(hist_path.read_text()) if hist_path.exists() else []
+    if force_new or not hist:
+        to = f"新しいチャット（この記事の{stage}のレビューは初回）" if not force_new else "新しいチャット（--new 指定）"
+    else:
+        last = hist[-1]
+        to = f"前回（{last['stage']}・{last['at']}）に貼ったチャットの続き"
+    hist.append({"stage": stage, "at": datetime.now().strftime("%m/%d %H:%M"), "to": to})
+    hist_path.write_text(json.dumps(hist, ensure_ascii=False, indent=1))
+    return to
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,176 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c2",
+    "text": "AIにサッカーくじの予想を手伝わせる仕組みを、50ドルで作りました。\nClaude Codeのお試しクレジット250ドル分、使い道が分からなかったので。\n\nデータ集めと天気はClaude、予想はChatGPT。\n自分は通知を見て、買うかどうか決めるだけ。\n\n使い道を考えるより、自分の面倒を1つ任せればよかった。",
+    "hash": "eada7272afaf6c45",
+    "label": "C",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Claude Code",
+      "お試しクレジット"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Claude Code・お試しクレジット"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "user2",
+    "text": "250ドル分もらって、使い道が分からなかったClaude Codeのお試し。\n任せたい作業がなくて、\nサッカーくじの予想の仕組みにしました。\n\n使ったのは約50ドル。\n\nClaudeがデータを集めて、ChatGPTが予想して、自動入力。\n自分は買うだけ。\n\n残りは、もっと実用的なことに使おうと思ってます。",
+    "hash": "bc52da4af349bdb5",
+    "label": "D",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "お試し",
+      "自動入力",
+      "自動入力（何に入力するのか）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "1行目が長く主語が後ろ。「もっと実用的なこと」がサッカーくじを遊び扱いしているようで締まらない。",
+      "1行目がお試しの話なのでサッカーくじまで読まないと引っかからない。締めの「実用的なことに」はありきたり。",
+      "1行目が長い。締めの「もっと実用的なことに」が弱い。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・お試し・自動入力・自動入力（何に入力するのか）"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 1,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c3",
+    "text": "250ドル分もらって、使い道が分からなかったClaude Codeのお試し。\n結局、サッカーくじの予想を手伝う仕組みになりました。使ったのは50ドル。\n\nClaudeがデータと天気を集めて、ChatGPTが予想して、自分は買うだけ。\n\n便利な使い方を探すより、自分の面倒を1つ任せるのが早かった。",
+    "hash": "842175c54974dbc1",
+    "label": "F",
+    "avg": {
+      "stop": 3.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Claude Code",
+      "お試し"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Claude Code・お試し"
+    ]
+  }
+]

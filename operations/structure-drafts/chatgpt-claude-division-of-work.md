@@ -17,6 +17,7 @@ ChatGPTとClaudeを両方使うなら、画像・相談・見直しはChatGPT、
 **サブKW**：`gpt-6 astra`（10件）・`chatgpt plus work`（10件）
 
 **書き方（🔒 恒久ルール・`rules/article-flow.md` 5章）**
+・前提：見やすく、誰が見てもわかりやすく、読んで為になること。AIが書いたような堅い表現は使わない
 ・言いたいことは下の1文だけ。リードの1文目と見出しで言い切る
 ・読者はH2-1の表だけ見れば答えが分かる形にする。各H2は表1つか、短い箇条書き・数行で終える
 ・但し書きを積まない。読者の判断に要らない条件（回数の目安・細かい数値・制作の経緯）は書かない
@@ -58,10 +59,11 @@ GPT-6 Astraに同じ記事を書かせて比べても、この分担は変えま
 → 答えの表を最初に置く。読者はここだけ見れば自分の答えが分かる
 → 表1：作業の種類 ／ どちら ／ 理由（1行）　※例は括弧で添える程度
    ・画像を作る（アイキャッチ・イラスト） ／ ChatGPT ／ Claudeは写真やイラストを生成しない（図やグラフは作れる）＝公式「Can Claude produce images?」
-   ・考えを広げる相談（企画・方向性） ／ ChatGPT ／ 決まっていないことを話しながら広げる
+   ・考えを広げる相談（企画・方向性） ／ ChatGPT ／ 話していて、考えが広がる感じがある（✅ 9/30 本人の回答A）
    ・調べもの・ちょっとした質問 ／ ChatGPT ／ アプリを開けばすぐ聞ける
    ・手元のファイルを読んで直し、仕上げる（例：記事なら構成・執筆・チェック・入稿） ／ Claude Code ／ フォルダのファイル・決めたルール・チェックの仕組みを読みながら作業できる
    ・仕上げた物の見直し ／ ChatGPT ／ 作ったのとは別のAIに見せる
+→ 表の直後に1文（相談の弱点・本人の実感 9/30）：ただ、話が広がりすぎて、本題が何だったのか、結論をどうまとめるかに迷うことも多い（⚠️ 対処法は本人の答えが無いので書かない）
 → 表の直後に1文（読者1の「Claudeのチャットは？」）：Claudeはチャットではなく、Pro・Maxに含まれるClaude Codeで使う。チャットはChatGPTに寄せる（公式「Use Claude Code with your Pro or Max plan」）
 → 両方に払う意味を1文：作る側（Claude Code）と見直す側（ChatGPT）を別のAIに分けられる
 → 片方だけの人へ1文：画像を作るか、ファイルを動かす作業があるかで選ぶ。選び方は no.56・no.27
@@ -111,6 +113,6 @@ GPT-6 Astraに同じ記事を書かせて比べても、この分担は変えま
 
 - H2-2の公式の条件：ヘルプの原文を執筆直前に開き直す（9/30 11時に確認済み・更新が「9時間前」だった）
 - 画像の行：support.claude.com「Can Claude produce images?」（9/30 11時に確認済み：`Claude doesn't generate photos or illustrations the way image-generation tools do.`）
-- 表1の「理由」のうち本人の実感の行（相談・調べもの）は、執筆前にユーザーに一言で確かめる
+- ✅ 表1の相談の行：9/30 取材で回答A「話していて、考えが広がる感じがある」＋弱点「広がりすぎて本題・結論のまとめ方に迷うことが結構ある」
 - Pro・MaxにClaude Codeが含まれる：support.claude.com「Use Claude Code with your Pro or Max plan」（9/30 11時に確認済み：`With Pro and Max plans, you now have access to both Claude on the web, desktop, and mobile apps and Claude Code in your terminal with one unified subscription.`）
 - 思考量「高」の日本語UI表記：ユーザーの画面の言い方（9/30「Astra高」）。執筆前に画面で確かめる

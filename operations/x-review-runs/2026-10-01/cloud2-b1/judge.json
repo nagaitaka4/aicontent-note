@@ -1,0 +1,164 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 2,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 2,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c3",
+    "text": "250ドル分もらって、使い道が分からなかったClaude Codeのお試し。\n結局、サッカーくじの予想を手伝う仕組みになりました。使ったのは50ドル。\n\nClaudeがデータと天気を集めて、ChatGPTが予想して、自分は買うだけ。\n\n便利な使い方を探すより、自分の面倒を1つ任せるのが早かった。",
+    "hash": "842175c54974dbc1",
+    "label": "C",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "「250ドル分もらって使い道が分からない」に共感して止まった。サッカーくじという意外な使い道が面白く、最後の一言も自分ごとにできた。",
+      "「250ドルもらって使い道が分からない」は覚えがあり、サッカーくじという意外な着地で最後まで読んだ。当たったかどうかがあればもっと良い。",
+      "「250ドル分もらって使い道が分からなかった」が自分の迷いと重なって止まった。サッカーくじは意外で面白い。締めの一言は自社ブログにも使えそう。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "c2",
+    "text": "AIにサッカーくじの予想を手伝わせる仕組みを、50ドルで作りました。\nClaude Codeのお試しクレジット250ドル分、使い道が分からなかったので。\n\nデータ集めと天気はClaude、予想はChatGPT。\n自分は通知を見て、買うかどうか決めるだけ。\n\n使い道を考えるより、自分の面倒を1つ任せればよかった。",
+    "hash": "eada7272afaf6c45",
+    "label": "D",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.67,
+      "follow": 3.33
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 3.0,
+    "comments": [
+      "1行目が「作りました」の報告でAI自慢に見えた。",
+      "サッカーくじが先に来るので止まる。Cより成果報告っぽい。",
+      "1行目が「作りました」の報告なので少し弱い。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "c1",
+    "text": "Claude Codeのお試しクレジット250ドル分、使い道が分からなかった件。\n50ドル使って、サッカーくじの予想を手伝う仕組みを作りました。\n\nデータ集めと天気の確認はClaude、予想はChatGPT。\n自分は届いた通知を見て、一言頼んで買うだけです。\n\n迷うより、自分の面倒を1つ任せればよかった。",
+    "hash": "fc9187080fa7c68a",
+    "label": "E",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "「〜件。」の1行目がやや説明っぽい。",
+      "「〜件。」は回りくどい。",
+      "「一言頼んで買う」が何を頼むのか分からない。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "F",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  }
+]

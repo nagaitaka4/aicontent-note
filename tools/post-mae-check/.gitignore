@@ -1,0 +1,4 @@
+node_modules/
+tests/out/
+# リポジトリ全体の .gitignore が dist を無視しているが、dist/wp-block.txt はWPに貼る本体なので入れる
+!dist/

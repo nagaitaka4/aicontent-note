@@ -37,6 +37,7 @@ aicontent-note/
 ├── archive/           # 役目を終えた戦略ドキュメント（履歴として保管）
 ├── seo/               # SEO検証サマリー
 ├── side-business/     # 副業検証・ツールメモ
+├── tools/             # 公開するWebツール（投稿まえチェック＝X投稿チェッカー）
 └── CLAUDE.md          # AI編集エージェント向け指示書（rules/knowledgeへの索引）
 ```
 

@@ -1,0 +1,17 @@
+{
+  "name": "post-mae-check-tests",
+  "private": true,
+  "description": "投稿まえチェックの開発用。テストは公式の twitter-text を「正解の見本」にして突き合わせる。ビルドは esbuild（本番のHTMLには入らない）",
+  "scripts": {
+    "build": "node build.js",
+    "gen-vendor": "node tests/gen-vendor.js",
+    "gen-fixtures": "node tests/gen-fixtures.js",
+    "test": "node tests/unit.js && node tests/run.js && python3 tests/parity.py && node tests/parity.js"
+  },
+  "devDependencies": {
+    "emojibase-data": "^17.0.0",
+    "esbuild": "^0.28.2",
+    "js-yaml": "4.1.0",
+    "twitter-text": "3.1.0"
+  }
+}

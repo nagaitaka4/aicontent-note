@@ -16,7 +16,7 @@ tags: ChatGPT,Claude,Claude Code,使い分け,GPT-6 Astra
 
 # ChatGPTとClaudeの使い分け。両方に課金して決めた分担
 
-==記事はClaude Code、画像とチャットはChatGPT==で使い分けています。
+==記事は、Claude Code、画像とチャットはChatGPT==で使い分けています。
 ただ、私がやっている記事制作の範囲では、できることの多くが重なっています。
 私の場合、決め手は性能の差ではなく、先に環境を作って慣れていたことでした。
 
@@ -24,8 +24,8 @@ tags: ChatGPT,Claude,Claude Code,使い分け,GPT-6 Astra
 
 ## ChatGPTとClaudeの使い分け。4つの作業の分担
 
-契約は、ChatGPT PlusとClaudeのMaxです。
-私は、Claudeのチャットは使わず、Claude側はClaude Codeにまとめています。
+**契約は、ChatGPT PlusとClaudeのMax**です。
+私は、ほとんどClaudeのチャットは使わず、Claude側はClaude Codeにまとめています。
 
 【メモ】<br>
 **Claude Codeは、手元のファイルを読んで作業を進める道具。ClaudeのPro・Maxの契約に含まれます**（[公式](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)）。
@@ -89,9 +89,9 @@ Claudeをやめるなら、記事づくりの環境をChatGPT側に作り直す�
 
 ---
 
-## ChatGPTの課金を続ける決め手は、画像
+## ChatGPTの課金を続ける決め手は、画像生成
 
-==課金の決め手は画像==です。
+==課金の決め手は画像生成==です。
 ChatGPTは3つの用途で使っていますが、3つ全部が課金の理由ではありません。
 
 | 用途 | やめたら代わりはあるか | 無料プランでも足りるか |
@@ -102,7 +102,7 @@ ChatGPTは3つの用途で使っていますが、3つ全部が課金の理由�
 
 無料と有料の違いは、[ChatGPTの無料と有料の違い｜無制限化しても課金する理由](https://aicontent-note.com/chatgpt-free-paid-difference/)にまとめています。
 
-ふだんのチャットをChatGPTに回すのは、Claude Code側の使用量を減らさないためです。
+普段のチャットをChatGPTに回すのは、Claude Code側の使用量を減らさないためです。
 Claudeは、チャットとClaude Codeで使用量の枠が共通です（[公式](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)）。
 Maxでも、重い作業が続くと上限に当たることがあります。
 

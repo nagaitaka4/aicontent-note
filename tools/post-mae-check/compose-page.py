@@ -24,6 +24,7 @@ TOOL = ROOT / "tools" / "post-mae-check" / "dist" / "wp-block.txt"
 MD_TO_WP = ROOT / "operations" / "md-to-wp.py"
 WP_OUT = ROOT / "operations" / "wp-output" / (PAGE_MD.stem + ".wp.txt")
 DEST = ROOT / "tools" / "post-mae-check" / "dist" / "page.wp.txt"
+DEST_BODY = ROOT / "tools" / "post-mae-check" / "dist" / "page.body.wp.txt"   # 入稿情報を除いた本文だけ（RESTで送る用）
 MARKER = "【ツールをここに表示】"
 LATEST_ARTICLE = ROOT / "articles" / "claude-code-permission-modes.md"   # CTAの元（最新の公開記事）。CTAを書き換えるときは最新の公開記事に合わせる
 
@@ -61,6 +62,7 @@ def main():
     tool = TOOL.read_text(encoding="utf-8").strip()
 
     # 先頭の入稿情報（記事用）を固定ページ用に差し替え
+    info_re_any = re.compile(r"<!-- wp:paragraph -->\n<p>【WPの入力欄に写す情報】.*?</p>\n<!-- /wp:paragraph -->\n*", re.S)
     info_re = re.compile(r"<!-- wp:paragraph -->\n<p>【WPの入力欄に写す情報】.*?</p>\n<!-- /wp:paragraph -->", re.S)
     assert len(info_re.findall(wp)) == 1, "入稿情報のブロックが1つではない"
     wp = info_re.sub(lambda m: info_block(fm), wp, count=1)
@@ -88,9 +90,18 @@ def main():
     assert wp.count("wp:loos/button") == 2, "CTAボタンが1つではない"
 
     DEST.write_text(wp, encoding="utf-8")
+
+    # 本文だけ（入稿情報の段落を除いたもの）。RESTで送るときに「どこで切るか」を間違えないための出力
+    # （2026-09-16 no.68：最初の区切り線で切ってリードが落ちた事故の再発防止）
+    body = info_re_any.sub("", wp, count=1).lstrip()
+    assert body.startswith("<!-- wp:paragraph -->"), "本文の先頭がリード段落ではない"
+    assert body.split("<!-- /wp:paragraph -->", 1)[0].count("swl-marker") == 1, "リードのマーカーが入っていない"
+    assert "【WPの入力欄に写す情報】" not in body, "入稿情報が残っている"
+    DEST_BODY.write_text(body, encoding="utf-8")
     print(f"書き出し: {DEST.relative_to(ROOT)}（{len(wp) / 1024:.1f} KB）")
     outside = wp.replace(tool, "")      # ツール本体の中の文字列（<h2 など）は数えない
     print(f"  H2 {outside.count('<h2 ')}／表 {outside.count('<!-- /wp:table -->')}／CTAボタン {outside.count('<!-- /wp:loos/button -->')}／ツール 1／区切り線 {outside.count('<!-- wp:separator -->')}")
+    print(f"  本文だけ：{DEST_BODY.relative_to(ROOT)}（{len(body) / 1024:.1f} KB）。入稿後に数えて合わせる値：H2 {outside.count('<h2 ')}／表 {outside.count('<!-- /wp:table -->')}／マーカー {body.count('swl-marker')}／CTAボタン {outside.count('<!-- /wp:loos/button -->')}／script 1")
     print("  検査：ブロックの対応・CTA文言（最新の公開記事と一致）・ツールが1つだけ・MD記法の残りなし → OK")
 
 

@@ -16,6 +16,23 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 
 作り直すとき：ツール（`src/`）を直したら `node build.js` → 原稿（`pages/x-post-checker.md`）を直したら `python3 tools/post-mae-check/compose-page.py`。後者が、ブロックの対応・CTA文言（最新の公開記事と一致）・ツールが1つだけ・MD記法の残りを検査してから `dist/page.wp.txt` を書く。
 
+### CCにWordPressへ下書きを作らせる（Macのセッション・Chrome。固定ページでは未検証）
+
+記事の入稿（`rules/article-flow.md` 7.6章）と同じく、**ログイン済みのChromeを操作できるMacのClaude Codeセッション**なら、下書き保存まで任せられる。クラウドのセッションでは**できない**（本番サイトへの通信が遮断されていて、ログインもできない）。公開ボタンは押さない（公開は人が判断する）。
+
+固定ページは記事と違い、CCが入稿した前例がない。7.6章の手順を、次のように読み替える（**★は固定ページで未確認**）：
+
+1. `git pull` して `python3 tools/post-mae-check/compose-page.py` を実行する。入稿に使うのは **`dist/page.body.wp.txt`**（入稿情報を除いた本文だけ。先頭は `core/paragraph` のリード）
+2. Chromeで wp-admin を開き、ログイン済みか確認する。同じスラッグが無いことを確認する：`GET /wp-json/wp/v2/pages?slug=x-post-checker&status=any`
+3. `POST /wp-json/wp/v2/pages` に `status:'draft'`・`title`・`slug`・`content`（page.body.wp.txt）を送る。**記事の `posts` ではなく `pages`**。カテゴリー・タグ・アイキャッチは無し
+4. ★ツール本体の `<script>` が残っているか確認する（`GET …/pages/<id>?context=edit` の `content.raw`）。管理者アカウントなら残る。消えていたら、貼り付けでの入稿に切り替える
+5. ★説明文（SEO SIMPLE PACK）はRESTでは入らない。エディターで `textarea[name="ssp_meta_description"]` に入れて保存する。**固定ページの編集画面にこの欄があるか未確認**
+6. コメント・ピンバックを閉じる：`POST …/pages/<id> {comment_status:'closed', ping_status:'closed'}`（レスポンスで両方 `closed` を確認）
+7. 数えて確認する。`compose-page.py` が出す値と合わせる：H2 5／表 5／`swl-marker` 1／CTAボタン 1／script 1。公開ページ（プレビュー）にMDの記法（`` ` ``・`**`・`==`）が残っていないかも見る
+8. 開いているエディターは `location.reload()` で読み直す。**RESTで送ったあとに `savePost()` を呼ばない**（古い自動保存で上書きされる）
+
+★SWELLの固定ページ設定（タイトルの表示・サイドバー・ツールを幅広に見せるテンプレート）はRESTで送れない可能性が高い。入稿後にあなたの画面で見る。
+
 CTAは**最新の公開記事（2026-10-01時点はno.71 `claude-code-permission-modes`）の末尾からそのままコピー**してある（直近4本の公開記事で同一・`article-self-check.py` の標準文言とも一致）。新しい記事が公開されたら、`compose-page.py` の `LATEST_ARTICLE` と原稿のCTAを合わせ直す。
 
 公開前の確認（この環境からは本番サイトに触れないため、**あなたの画面で1回**確かめる）：
@@ -103,7 +120,7 @@ THIRD-PARTY-NOTICES.md  上のライセンス全文（自動生成）。dist/ �
 build.js             1つのHTMLに束ねる
 compose-page.py      固定ページ（説明文＋ツール＋CTA）を1本に組み立てる。検査つき
 ../../pages/x-post-checker.md   固定ページの原稿（説明文・CTA）
-dist/                出力（page.wp.txt＝固定ページ丸ごと／wp-block.txt＝ツールだけ／post-mae-check.html＝単独版）
+dist/                出力（page.wp.txt＝固定ページ丸ごと／page.body.wp.txt＝入稿情報を除いた本文だけ（REST用）／wp-block.txt＝ツールだけ／post-mae-check.html＝単独版）
 tests/               テストと「保存した正解」（xcount.py＝operations/x-count.py の検証／fuzz.js＝乱数の文章／gen-*.js＝正解や正規表現の生成）
 ../../operations/x-count-data.json   x-count.py が読む公式の正規表現（tests/gen-vendor.js が自動生成。手で直さない）
 x-count-diff.md      operations/x-count.py が公式とどこで食い違っていたかの一覧（修正前の記録）

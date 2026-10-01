@@ -1,0 +1,176 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.67,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "news_votes": 1,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B",
+    "avg": {
+      "stop": 1.67,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 1,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "z2",
+    "text": "使い道がわからなかった、Claude Codeクラウド版のお試し250ドル分。\nわざわざ頼みたいことも思いつかず、サッカーくじの予想の仕組みにしました。使ったのは約50ドル。\n\nClaudeがデータを集め、ChatGPTが予想し、購入画面まで自動入力。自分は買うだけ。\n\n残り200ドルは、使い道を探してます。",
+    "hash": "c423df093ef867cc",
+    "label": "C",
+    "avg": {
+      "stop": 3.0,
+      "fun": 4.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Codeクラウド版",
+      "お試し250ドル分"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.67,
+    "comments": [
+      "最後が「探してます」で終わるので次を読む理由が弱い。",
+      "「探してます」で終わるので次に何が読めるのか分からない。",
+      "「使い道を探してます」で終わるので次に何が読めるか分からない。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Codeクラウド版・お試し250ドル分"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "z3",
+    "text": "使い道がわからなかった、Claude Codeクラウド版のお試し250ドル分。\nわざわざ頼みたいことも思いつかず、サッカーくじの予想の仕組みにしました。使ったのは約50ドル。\n\nClaudeがデータを集め、ChatGPTが予想し、購入画面まで自動入力。自分は買うだけ。\n\n次は、仕事の面倒を1つ任せてみます。",
+    "hash": "e30c7e482639b044",
+    "label": "D",
+    "avg": {
+      "stop": 3.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Codeクラウド版",
+      "お試し250ドル分"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "くじの話で笑って、最後の「仕事の面倒を1つ任せてみます」で続きが気になった。",
+      "「仕事の面倒を1つ任せてみます」で続きが気になった。",
+      "「次は、仕事の面倒を1つ任せてみます」で続きが気になり、自分の仕事にも関係しそう。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Codeクラウド版・お試し250ドル分"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E",
+    "avg": {
+      "stop": 3.33,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いたばかり",
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT",
+      "会社向け"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "z1",
+    "text": "使い道がわからなかった、Claude Codeクラウド版のお試し250ドル分。\nわざわざ頼みたいことも思いつかず、サッカーくじの予想の仕組みにしました。使ったのは約50ドル。\n\nClaudeがデータを集め、ChatGPTが予想し、購入画面まで自動入力。自分は買うだけ。\n\n残り200ドルは、仕事のほうに使います。",
+    "hash": "bf27fa7d67bb29a9",
+    "label": "F",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.33,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Codeクラウド版",
+      "お試し250ドル分"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.0,
+    "comments": [
+      "「仕事のほうに使います」が事務的でオチがない。",
+      "締めがぼんやりしていて余韻が無い。",
+      "締めが漠然としていてDほど次を読みたくならない。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Codeクラウド版・お試し250ドル分"
+    ]
+  }
+]

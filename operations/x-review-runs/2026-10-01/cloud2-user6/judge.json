@@ -1,0 +1,178 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いたばかり",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "x2",
+    "text": "Claude Codeで使える無料枠250ドル分、使い道が分からない。\nわざわざ頼みたい作業も思いつかず、サッカーくじの予想の仕組みにしました。使ったのは約50ドル。\n\nClaudeがデータを集めて、ChatGPTが予想して、購入画面まで自動入力。自分は買うだけ。\n\n結果は今週末。当たったら報告します。",
+    "hash": "9479415fe91ab4c9",
+    "label": "C",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.67,
+      "follow": 4.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "無料枠250ドル",
+      "無料枠250ドル分（どこでもらえるのか）",
+      "無料枠250ドル分（何の枠か）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・無料枠250ドル・無料枠250ドル分（どこでもらえるのか）・無料枠250ドル分（何の枠か）"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "x1",
+    "text": "Claude Codeの無料クレジット250ドル分、使い道が分からない。\nわざわざ頼みたい作業も思いつかず、サッカーくじの予想の仕組みにしました。使ったのは約50ドル。\n\nClaudeがデータを集めて、ChatGPTが予想して、購入画面まで自動入力。自分は買うだけ。\n\n結果は今週末。当たったら報告します。",
+    "hash": "ad4f89cc437a4a53",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.67,
+      "follow": 4.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "無料クレジット",
+      "無料クレジット250ドル分（どうやってもらえるのか）",
+      "無料クレジット250ドル分（どこでもらえるのか）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.67,
+    "comments": [
+      "「クレジット」の方がもらったポイント感があって分かりやすい。",
+      "",
+      "「無料クレジット」の方がお金としてもらった感じが伝わる。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・無料クレジット・無料クレジット250ドル分（どうやってもらえるのか）・無料クレジット250ドル分（どこでもらえるのか）"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "x3",
+    "text": "250ドル分もらって、使い道が分からないClaude Codeのお試し。\nわざわざ頼みたい作業も思いつかず、サッカーくじの予想の仕組みにしました。使ったのは約50ドル。\n\nClaudeがデータを集めて、ChatGPTが予想して、購入画面まで自動入力。自分は買うだけ。\n\n結果は今週末。当たったら報告します。",
+    "hash": "92c12a533ced7a24",
+    "label": "F",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.67,
+      "follow": 4.0
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Claude Code",
+      "Claude Codeのお試し（何のお試しなのか）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.67,
+    "comments": [
+      "「250ドル分もらって」から始まるので一番スッと入る。",
+      "「250ドル分もらって」から始まるので何の話かすぐ入ってきて止まった。",
+      "1行目の語順が回りくどい。「Claude Code」が先に来た方が止まりやすい。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Claude Code・Claude Codeのお試し（何のお試しなのか）"
+    ]
+  }
+]

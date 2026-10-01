@@ -1,5 +1,5 @@
 {
- "_comment": "自動生成（tools/post-mae-check/tests/gen-vendor.js）。手で直さない。operations/x-count.py が読む。twitter-text 3.1.0 (c) Twitter, Inc. Apache License 2.0 の正規表現／twemoji-parser 11.0.2 (c) Twitter, Inc. MIT License の絵文字表。",
+ "_comment": "自動生成（tools/post-mae-check/tests/gen-vendor.js）。手で直さない。operations/x-count.py が読む。twitter-text 3.1.0 (c) Twitter, Inc. Apache License 2.0 の正規表現／twemoji-parser 11.0.2 (c) Twitter, Inc. MIT License の絵文字表。ライセンス全文：tools/post-mae-check/THIRD-PARTY-NOTICES.md",
  "versions": {
   "twitterText": "3.1.0",
   "twemojiParser": "11.0.2"

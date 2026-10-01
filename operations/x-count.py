@@ -33,6 +33,7 @@ Xの上限は「280の重み付き文字数」。数え方は、X公式ライブ
               テスト：tools/post-mae-check/tests/xcount.py（公式ライブラリと乱数・全絵文字・全コードポイントで突き合わせ）
 
 正規表現のデータ x-count-data.json は自動生成（tools/post-mae-check/tests/gen-vendor.js）。手で直さない。
+（公式の twitter-text は Apache License 2.0、twemoji-parser は MIT License。全文：tools/post-mae-check/THIRD-PARTY-NOTICES.md）
 
 使い方:
     python3 operations/x-count.py "投稿本文"

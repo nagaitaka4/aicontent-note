@@ -168,6 +168,7 @@ var SKELETON = [
   '<p class="small">このツールは、運営者が毎日の投稿前に見ている項目を、そのまま機械にしたものです。採点も添削もしません。引っかかった所を示すだけで、直すかどうかは自分で決めてください。</p>',
   '<p class="small">機械では見られないこと：内容がおもしろいか、刺さるか、1行目だけで話が通じるか。</p>',
   '<p class="small">Xの仕様が変わった場合は、追従できていないことがあります。</p>',
+  '<p class="small">文字数の数え方・URLと絵文字の見つけ方は、Twitter, Inc. の twitter-text（Apache License 2.0）と twemoji-parser（MIT License）を元にしています。</p>',
   '</div>'
 ].join('');
 

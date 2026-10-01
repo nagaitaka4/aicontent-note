@@ -21,12 +21,27 @@ for (const [k, f] of Object.entries(need)) {
 if (/\(\?<[=!]/.test(twemojiRe.source)) throw new Error('絵文字の正規表現に後ろ向き先読みがある');
 if (twemojiRe.flags !== 'g') throw new Error('絵文字の正規表現のフラグが想定と違う: ' + twemojiRe.flags);
 
-const out = `/* 自動生成（tests/gen-vendor.js）。手で直さない。
+// ライセンス文面は、パッケージ同梱のファイルからそのまま引き写す（要約や言い換えをしない）
+const ttLicense = fs.readFileSync(require.resolve('twitter-text/LICENSE'), 'utf8');
+const twemojiLicense = fs.readFileSync(path.join(path.dirname(twemojiPath), '..', '..', 'LICENSE.md'), 'utf8').trim();
+const apacheNotice = ttLicense.split('\n').slice(0, 13).join('\n').trim();      // 「Copyright 2011 Twitter, Inc. ... limitations under the License.」まで
+if (!/limitations under the License\.$/.test(apacheNotice)) throw new Error('Apacheの告知文の範囲が想定と違う');
+const comment = (txt) => txt.split('\n').map((l) => (' * ' + l).replace(/\s+$/, '')).join('\n');
+if (/\*\//.test(apacheNotice + twemojiLicense + ttLicense)) throw new Error('ライセンス文面に */ が含まれている');
+
+const out = `/*!
+ * 投稿まえチェックが使っている第三者の成果物。tests/gen-vendor.js が自動生成（手で直さない）。全文は THIRD-PARTY-NOTICES.md。
  *
- * twitter-text ${ttVersion}  (c) Twitter, Inc.  Apache License 2.0  http://www.apache.org/licenses/LICENSE-2.0
- *   URLの見つけ方の正規表現（公式がそのまま使っているもの）
- * twemoji-parser ${twemojiVersion}  (c) Twitter, Inc.  MIT License  https://github.com/twitter/twemoji-parser/blob/master/LICENSE.md
- *   絵文字の見つけ方の正規表現（twitter-text ${ttVersion} が依存している版）
+ * ■ twitter-text ${ttVersion}  https://github.com/twitter/twitter-text
+ *   URLの見つけ方の正規表現（公式がそのまま使っているもの）を取り出して使っている。
+ *   数え方の手順（parseTweet・extractUrlsWithIndices）は、公式の実装を見て JavaScript で書き直したもの（変更あり）。
+ *
+${comment(apacheNotice)}
+ *
+ * ■ twemoji-parser ${twemojiVersion}  https://github.com/twitter/twemoji-parser
+ *   絵文字の見つけ方の正規表現（twitter-text ${ttVersion} が依存している版）を取り出して使っている。
+ *
+${comment(twemojiLicense)}
  */
 var TT = {
   extractUrl: ${JSON.stringify(r.extractUrl.source)},
@@ -38,6 +53,13 @@ var TT = {
   versions: { twitterText: ${JSON.stringify(ttVersion)}, twemojiParser: ${JSON.stringify(twemojiVersion)} }
 };
 `;
+// 配布物に同梱する第三者ライセンスの全文（Apache License 2.0 は全文の写しを渡すことが条件）
+fs.writeFileSync(path.join(__dirname, '..', 'THIRD-PARTY-NOTICES.md'),
+  '# 第三者のライセンス\n\n自動生成（tests/gen-vendor.js）。パッケージ同梱の文面をそのまま写している。\n\n' +
+  '投稿まえチェックと operations/x-count.py は、X公式の次の成果物から、正規表現（URLと絵文字の見つけ方）を取り出して使っている。' +
+  '数え方の手順は公式の実装を見て書き直したもの（変更あり）。\n\n' +
+  '---\n\n## twitter-text ' + ttVersion + '（Apache License 2.0）\nhttps://github.com/twitter/twitter-text\n\n```\n' + ttLicense.trim() + '\n```\n\n' +
+  '---\n\n## twemoji-parser ' + twemojiVersion + '（MIT License）\nhttps://github.com/twitter/twemoji-parser\n\n```\n' + twemojiLicense + '\n```\n');
 const dest = path.join(__dirname, '..', 'src', 'vendor', 'twitter-text-regex.js');
 fs.writeFileSync(dest, out);
 console.log('書き出し:', dest, out.length, 'bytes / twitter-text', ttVersion, '/ twemoji-parser', twemojiVersion);
@@ -97,7 +119,7 @@ const pict = [];
 
 const pyData = {
   _comment: '自動生成（tools/post-mae-check/tests/gen-vendor.js）。手で直さない。operations/x-count.py が読む。' +
-    'twitter-text ' + ttVersion + ' (c) Twitter, Inc. Apache License 2.0 の正規表現／twemoji-parser ' + twemojiVersion + ' (c) Twitter, Inc. MIT License の絵文字表。',
+    'twitter-text ' + ttVersion + ' (c) Twitter, Inc. Apache License 2.0 の正規表現／twemoji-parser ' + twemojiVersion + ' (c) Twitter, Inc. MIT License の絵文字表。ライセンス全文：tools/post-mae-check/THIRD-PARTY-NOTICES.md',
   versions: { twitterText: ttVersion, twemojiParser: twemojiVersion },
   extractUrl: toPy(r.extractUrl.source),
   validAsciiDomain: toPy(r.validAsciiDomain.source),

@@ -37,8 +37,8 @@ const check = (name, cond, detail) => { if (cond) pass++; else { fail++; console
       return kids;
     });
     check(`[${name}] 先頭はリード文・次がツール`, order[0].startsWith('P') && order[1].includes('pmc-host'), order.slice(0, 3));
-    check(`[${name}] H2が5つ（ツール内部は別）`, (await p.locator('article > h2').count()) === 5, await p.locator('article > h2').allTextContents());
-    check(`[${name}] 表が5つ（ページ本体の表。ツール内部の表は別）`, (await p.locator('article > figure table').count()) === 5, await p.locator('article > figure table').count());
+    check(`[${name}] H2が4つ（ツール内部は別）`, (await p.locator('article > h2').count()) === 4, await p.locator('article > h2').allTextContents());
+    check(`[${name}] 表が3つ（ページ本体の表。ツール内部の表は別）`, (await p.locator('article > figure table').count()) === 3, await p.locator('article > figure table').count());
     check(`[${name}] CTAのリンクがお問い合わせフォーム`, (await p.locator('a.swell-block-button__link').getAttribute('href')) === 'https://aicontent-note.com/contact/');
     const cta = await p.locator('article > p', { hasText: 'ブログ更新が止まっている' }).textContent();
     check(`[${name}] CTA文言`, cta.includes('企画から執筆・公開まで、まるごとお任せください。お気軽にご相談を。'), cta);

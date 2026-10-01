@@ -7,7 +7,7 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 
 ## 公開のしかた（WordPressに埋め込む）
 
-固定ページの原稿は `pages/x-post-checker.md`（説明文・表・CTA）。**説明文＋ツール＋CTAを1本にした `dist/page.wp.txt` を貼る。**
+固定ページの原稿は `pages/x-post-checker.md`（説明文・表・CTA）。スラッグは `x-post-checker`（2026-10-01 ユーザー確定）。**説明文＋ツール＋CTAを1本にした `dist/page.wp.txt` を貼る。**
 
 1. `git pull` して、`tools/post-mae-check/dist/page.wp.txt` を開き、**全文をコピー**する
 2. WordPressで**固定ページ**を新規作成 → 右上「⋮」→「コードエディター」に**全文を貼り付ける**（`md-to-wp.py` の出力を貼るときと同じ手順）
@@ -28,7 +28,7 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 4. ★ツール本体の `<script>` が残っているか確認する（`GET …/pages/<id>?context=edit` の `content.raw`）。管理者アカウントなら残る。消えていたら、貼り付けでの入稿に切り替える
 5. ★説明文（SEO SIMPLE PACK）はRESTでは入らない。エディターで `textarea[name="ssp_meta_description"]` に入れて保存する。**固定ページの編集画面にこの欄があるか未確認**
 6. コメント・ピンバックを閉じる：`POST …/pages/<id> {comment_status:'closed', ping_status:'closed'}`（レスポンスで両方 `closed` を確認）
-7. 数えて確認する。`compose-page.py` が出す値と合わせる：H2 5／表 5／`swl-marker` 1／CTAボタン 1／script 1。公開ページ（プレビュー）にMDの記法（`` ` ``・`**`・`==`）が残っていないかも見る
+7. 数えて確認する。`compose-page.py` が出す値と合わせる：H2 4／表 3／`swl-marker` 1／CTAボタン 1／script 1。公開ページ（プレビュー）にMDの記法（`` ` ``・`**`・`==`）が残っていないかも見る
 8. 開いているエディターは `location.reload()` で読み直す。**RESTで送ったあとに `savePost()` を呼ばない**（古い自動保存で上書きされる）
 
 ★SWELLの固定ページ設定（タイトルの表示・サイドバー・ツールを幅広に見せるテンプレート）はRESTで送れない可能性が高い。入稿後にあなたの画面で見る。

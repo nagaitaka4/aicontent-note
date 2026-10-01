@@ -1,9 +1,9 @@
 <!-- wp:paragraph -->
-<p>【WPの入力欄に写す情報】※各欄に写したら、このブロックを削除する<br><br>■ タイトル（18字）<br>投稿まえチェック（X投稿チェッカー）<br><br>■ SEOタイトル（30字）<br>X投稿チェッカー｜文字数と、伝わりにくい言い回しを無料で確認<br><br>■ スラッグ<br>x-post-checker<br><br>■ URL<br>https://aicontent-note.com/x-post-checker/<br><br>■ 説明文・SEO（136字）<br>X投稿の文字数をXの数え方で確認し、前の投稿を知らないと伝わりにくい言い回しや、直近の投稿との重なりも見つけられる無料ツールです。数え方はXが公開している計算プログラムに合わせています。ブラウザだけで動き、入力した文章は外部に送りません。AIも使わず、スマホでも使えます。<br><br>■ ページの種類<br>固定ページ（記事ではない）<br><br>■ アイキャッチ<br>未作成（参考画像 → プロンプト1案 → 生成・アップ。knowledge/eyecatch-rules.md）</p>
+<p>【WPの入力欄に写す情報】※各欄に写したら、このブロックを削除する<br><br>■ タイトル（18字）<br>投稿まえチェック（X投稿チェッカー）<br><br>■ SEOタイトル（30字）<br>X投稿チェッカー｜文字数と、伝わりにくい言い回しを無料で確認<br><br>■ スラッグ<br>x-post-checker<br><br>■ URL<br>https://aicontent-note.com/x-post-checker/<br><br>■ 説明文・SEO（140字）<br>X投稿の文字数と、前の投稿を知らないと伝わりにくい言い回し、直近の投稿との重なりを確認できる無料ツールです。数え方は、旧Twitter公開の計算ライブラリ（twitter-text）が基準です。ブラウザだけで動き、入力した文章は外部に送りません。AIも使わず、スマホでも使えます。<br><br>■ ページの種類<br>固定ページ（記事ではない）<br><br>■ アイキャッチ<br>未作成（参考画像 → プロンプト1案 → 生成・アップ。knowledge/eyecatch-rules.md）</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Xに投稿する前の確認に使える、無料のブラウザツールです。<br><strong><span class="swl-marker mark_yellow">文字数に加えて、前の投稿を知らないと伝わりにくい言い回しと、直近の投稿との重なりも確認できます</span></strong>。<br>Xの文字数は、日本語だけなら140文字、半角英数字だけなら280文字までです。</p>
+<p>Xに投稿する前に、文章を外部に送らず確認できる、無料のブラウザツールです。<br><strong><span class="swl-marker mark_yellow">文字数に加えて、前の投稿を知らないと伝わりにくい言い回しと、直近の投稿との重なりも確認できます</span></strong>。<br>Xの文字数は、日本語だけなら140文字、半角英数字だけなら280文字までです。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
@@ -65,6 +65,22 @@
 <!-- /wp:separator -->
 
 <!-- wp:heading -->
+<h2 class="wp-block-heading">使い方</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"has-border -border03 is-style-bg_grid"} -->
+<p class="has-border -border03 is-style-bg_grid"><strong>・<strong>貼り付ける</strong>：下書きを入力欄に貼ると、その場で文字数が出ます<br>・<strong>表示された所を見る</strong>：「要注意表現」と「直近の投稿との重なり」に表示された所を見て、直すか決めます<br>・<strong>投稿したら保存する</strong>：「投稿した → 保存」を押すと、次の下書きから比べられます<br>・<strong>過去の投稿を入れる</strong>：「まとめて追加」で、直近の投稿を一度に入れられます。最初は保存した投稿がないので、重なりは出ません<br>・<strong>設定を変える</strong>：「見る項目を選ぶ」でチェックの項目を、「比べ方の設定」で比べる期間を変えられます</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>スマホでも、同じ画面で使えます。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
 <h2 class="wp-block-heading">何を確認できるか</h2>
 <!-- /wp:heading -->
 
@@ -73,43 +89,7 @@
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>文字数の数え方は、次のとおりです。</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>文字の種類</th><th>数え方</th></tr></thead><tbody><tr><td>日本語・全角の文字・半角カタカナ・絵文字、→や★のような記号</td><td>1つで2</td></tr><tr><td>半角の英数字・記号（!?@など）・スペース</td><td>1つで1</td></tr><tr><td>URL</td><td>長さに関係なく23</td></tr></tbody></table></figure>
-<!-- /wp:table -->
-
-<!-- wp:paragraph -->
-<p>要注意表現と重なりは、「NG」ではなく「確認してほしい所」として出します。<br>直すかどうかは、あなたが決めます。</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>初めて読む人は、前の投稿を知りません。<br>昨日の続きです のような言い方や、報告だけで始まる1行目は、読む気が起きにくいと考えています。</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>たとえば、次のように出ます。</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>入れた文章</th><th>出る表示</th></tr></thead><tbody><tr><td>昨日の続きです。やっと完成しました</td><td>要注意表現に2件（昨日の／1行目が報告で終わっている）</td></tr><tr><td>下書き：100ドルのプランを1か月使った感想です ／ 保存済みの投稿：月100ドルのプランに課金しました。使い道を書きます</td><td>直近の投稿との重なりに1件（数字つきの語が同じ：100ドル）</td></tr></tbody></table></figure>
-<!-- /wp:table -->
-
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading">使い方</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"has-border -border03 is-style-bg_grid"} -->
-<p class="has-border -border03 is-style-bg_grid"><strong>・<strong>貼り付ける</strong>：下書きを入力欄に貼ると、その場で文字数が出ます<br>・<strong>出た所を見る</strong>：「要注意表現」と「直近の投稿との重なり」に出た所を見て、直すか決めます<br>・<strong>投稿したら保存する</strong>：「投稿した → 保存」を押すと、次の下書きから比べられます<br>・<strong>過去の投稿を入れる</strong>：「まとめて追加」で、直近の投稿を一度に入れられます。最初は保存した投稿がないので、重なりは出ません<br>・<strong>設定を変える</strong>：「見る項目を選ぶ」でチェックの項目を、「比べ方の設定」で比べる期間を変えられます</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>スマホでも、同じ画面で使えます。</p>
+<p>要注意表現と重なりは、「NG」ではなく「確認してほしい所」として出します。<br>出たからといって、直す必要はありません。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:separator -->
@@ -132,25 +112,17 @@
 <h2 class="wp-block-heading">使う前に知っておくこと</h2>
 <!-- /wp:heading -->
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>対象</td><td>通常のポスト用（上限280）です。Premiumの長文ポストには対応していません</td></tr><tr><td>文字数の数え方</td><td>Xが公開している文字数の計算プログラム（<a href="https://github.com/twitter/twitter-text/blob/master/config/v3.json"><strong>twitter-text</strong></a>）と同じ数え方にしています。2026年9月30日に確認しました。Xの仕様が変わると、ずれることがあります</td></tr><tr><td>ずれるかもしれないもの（新しい絵文字）</td><td>2019年以降に追加された絵文字のうち、複数の絵文字をつないだものや、肌の色がついたものです。ハートに炎がついた絵文字は、ツールでは5と出ます</td></tr><tr><td>ずれるかもしれないもの（ファイル名）</td><td>「CLAUDE.md」「README.md」「main.py」のように、「.md」「.py」で終わる言葉です。計算プログラムはURLと見て、23と数えます</td></tr><tr><td>ずれるかもしれないもの（日本語のURL）</td><td>パスに日本語が入るURLです。例：https://ja.wikipedia.org/wiki/日本 は、日本語の分が上乗せされて27と出ます</td></tr><tr><td>迷うとき</td><td>3つとも、実際のXと違うかもしれません。ツールの数字は、たいてい大きめに出ます。迷うときは、Xの投稿画面の表示が正解です</td></tr><tr><td>要注意表現</td><td>日本語の投稿向けです。文字数のほうは、日本語以外の投稿でも使えます</td></tr><tr><td>ツールでは分からないこと</td><td>内容がおもしろいか、1行目だけで話が通じるか。1行目はツールが要注意表現の欄の上の方に出すので、自分で読んで確かめてください</td></tr></tbody></table></figure>
-<!-- /wp:table -->
-
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading">このツールについて</h2>
-<!-- /wp:heading -->
-
 <!-- wp:paragraph -->
-<p>毎日のX投稿の前に、伝わりにくい言い回しがないか、最近の投稿とかぶっていないかを自分で見ていました。<br>毎回やるならツールにしようと思い、AIのコード作成ツール「Claude Code」で作りました。</p>
+<p>文字の数え方は、次のとおりです。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"has-border -border03 is-style-bg_grid"} -->
-<p class="has-border -border03 is-style-bg_grid"><strong>・作るときにAIを使っただけで、ツールが動くときにAIは使っていません<br>・入れたのは、自分が投稿前に見ている項目です。基準は自分で決めたので、合わないこともあります</strong></p>
+<p class="has-border -border03 is-style-bg_grid"><strong>・日本語、全角の文字、半角カタカナ、絵文字、→や★のような記号は、1つで2<br>・半角の英数字、記号（!?@など）、スペースは、1つで1<br>・URLは、長さに関係なく23</strong></p>
 <!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>対象</td><td>通常のポスト用（上限280）です。Premiumの長文ポストには対応していません</td></tr><tr><td>数え方の基準</td><td>旧Twitterが公開した文字数計算ライブラリ「<a href="https://github.com/twitter/twitter-text/blob/master/config/v3.json"><strong>twitter-text</strong></a>」のv3を基準にしています。2026年9月30日に確認しました。現在のXの表示と、ずれることがあります</td></tr><tr><td>ずれるかもしれないもの（新しい絵文字）</td><td>新しい絵文字の一部です。たとえば、ハートに炎がついた絵文字は、ツールでは5と出ます</td></tr><tr><td>ずれるかもしれないもの（ファイル名）</td><td>「CLAUDE.md」「README.md」「main.py」のように、「.md」「.py」で終わる言葉です。twitter-textはURLと見て、23と数えます</td></tr><tr><td>ずれるかもしれないもの（日本語のURL）</td><td>パスに日本語が入るURLです。例：https://ja.wikipedia.org/wiki/日本 は、日本語部分も別に数えるため、27と出ます</td></tr><tr><td>迷うとき</td><td>この3つでは、Xの投稿画面とずれる場合があります。迷うときは、Xの投稿画面の表示を優先してください</td></tr><tr><td>要注意表現</td><td>日本語の投稿向けです。文字数のほうは、日本語以外の投稿でも使えます</td></tr><tr><td>ツールでは分からないこと</td><td>内容がおもしろいか、1行目だけで話が通じるかは、ツールでは分かりません。1行目は要注意表現の欄の上の方に出るので、自分で読んで確かめてください</td></tr><tr><td>チェック項目について</td><td>チェック項目は、自分が普段の投稿前に見ているものです。Xの公式な基準ではないので、合わない項目は無視してかまいません</td></tr></tbody></table></figure>
+<!-- /wp:table -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity"/>

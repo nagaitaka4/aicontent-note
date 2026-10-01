@@ -3,10 +3,10 @@ no: 72
 series:
 series_no:
 title: ChatGPTとClaudeの使い分け。両方に課金して決めた分担
-date:
+date: 2026-10-01
 url: https://aicontent-note.com/chatgpt-claude-division-of-work/
 slug: chatgpt-claude-division-of-work
-status: draft
+status: published
 description: ChatGPTとClaudeは、できることの多くが重なります。私は記事づくりをClaude Code、画像とふだんのチャット、レビューをChatGPTに分けています。決め手は性能の差ではなく、先に環境を作ったのがどちらかでした。両方に課金している理由を書きます。
 eyecatch: eyecatch_0072.png
 eyecatch_alt: ChatGPTとClaudeの使い分けを、吹き出しを抱えた男性と書類を持つ女性、チャット画面と文書画面のイラストで表したアイキャッチ画像

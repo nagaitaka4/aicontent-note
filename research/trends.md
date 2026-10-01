@@ -1,9 +1,22 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-01
+最終更新: 2026-10-02
 
 
 ---
+
+## [2026-10-02] 調査結果（デイリー・金曜）
+
+**①は新規1件（Claude Codeのmods＝ネタ化）＋記録のみ2件。**
+
+### Claude Code / Anthropic
+
+- **【新規・ネタ化→`research-20261002-01`】claude.com/blog 10/1「[Customize Claude Code with mods](https://claude.com/blog/claude-code-mods)」＋CHANGELOG.md `## 2.1.287`**（npm公開 10/2 01:59 JST・`latest`／`next`は2.1.287、`stable`は2.1.285のまま）：verbatim（CHANGELOG）`Added Claude Mods: plugins may now modify deeper behavior`／`Added You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn it on with /plugin enable cc-plugin-you-should-know@builtin (for first-party sessions with telemetry on)`。ブログ（WebFetchの要約で確認・原文の全文は未取得）：modsは`Small TypeScript functions that change how Claude Code works`／`aren't sandboxed`／`Available today in the Claude Code CLI and desktop app`／`You should only install mods from sources you trust`。料金・使用量への影響の記載なし。**このMacのCLIは2.1.283（`claude --version`）＝本人の画面ではまだ使えない可能性が高い（デスクトップアプリ側の版は未確認）**。**採った理由**：「見落としを別のAIに見つけさせる」は、このメディアが別エージェントのレビューとして自作してきた仕組みと同じ役割＝自分の立場から一言言える。**条件**：「使った」とは書かない（画面で開けていない）
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.287` のほかの項目**：`Fixed a folder's CLAUDE.md being attached a second time after resuming a session or after a compaction`／`Fixed a dangerous rm (such as one on / or the home directory) losing its always-ask safeguard when the same command also redirected output to a ~ or wildcard path`／`Fixed Bash permission prompts showing internal parser names such as "Contains simple_expansion" instead of a plain explanation`／`Fixed messages sent from the Claude apps with 17 to 20 attached files delivering only the first 16` ほか修正多数。**採らない理由**：不具合修正で、本人が体感した日でないと③が立たない。`rm`の確認が外れる不具合の修正はno.71（許可）の更新材料
+- **【新規・記録のみ】@ClaudeDevs**：10/2 03:08 JST「[Token Weather adds a forecast of your context window: how full it is, plus a sparkline of your last 12 turns.](https://x.com/ClaudeDevs/status/2105721436270993609)」（modsの1つの紹介と読めるが、前後の投稿は未取得）／10/1 05:17 JST「Claude.dev is our new home for developers building with Claude」（開発者向けサイトの案内）
+- **【新規・記録のみ】Anthropic Newsroom**：10/1「Barclays scales Claude to upgrade operations and improve client experience」（企業事例・読者の手元は変わらない）
+- **【差分なし】Claude Apps リリースノート**：最新は September 28, 2026「Claude Sonnet 5.5 launch」のまま
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅（実Chromeでプロフィールを読むだけ）
 
 ## [2026-10-01] 調査結果（デイリー・木曜）
 

@@ -1,8 +1,16 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-01
+最終更新: 2026-10-02
 
 ---
+
+## [2026-10-02] 調査結果（デイリー・金曜）
+
+**②は新規2件（どちらも記録のみ）。10/1に取得失敗だったChatGPTリリースノートは実Chromeで読めた。**
+
+- **【新規・記録のみ】ChatGPT リリースノート October 1, 2026**（[出典](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chromeで確認）：「New ways to shop in ChatGPT」verbatim `A "Try on" button will appear on product listings for clothes and accessories in ChatGPT. Select it, then take or upload a selfie to generate a virtual try-on with ChatGPT Images.`／`Available in ChatGPT on mobile and web.`／「Scan notes and documents more easily with ChatGPT camera」`Capture multiple pages in a row, and ChatGPT automatically combines them into a single PDF` `Rolling out on iOS.`。**採らない理由**：買い物の試着とスマホのスキャンで、コンテンツ運用の手元は変わらない。**再利用条件**：本人がiPhoneで紙の資料をスキャンしてChatGPTに渡した日
+- **【確認】ChatGPT リリースノート September 29, 2026「A new Pro plan with Astra Ultrafast」**：`We're introducing Pro 500, a new $500/month plan`＝9/30に`PRO500-01`で投稿済みの内容と一致（10/1の「Security history」の日付の食い違いは、このページの10/1・9/29の欄には無く未解決のまま）
+- **【新規・記録のみ・公式は未確認】Googleの「Gemini 4 Argon」**：Xの検索で10/1に話題（PC Watch「コーディングも法務もGPT-6 Astra超え。Google『Gemini 4 Argon』」・Google社員の投稿「ようやく公表されました…一般公開はもうすぐです」）。**blog.googleの一次情報は今朝は開いていない＝提供範囲・料金は未確認**。Geminiアプリのリリースノートは9/30の「skills」が最新のまま。**採らない理由**：新モデルの発表の報告だけ（採用基準の「採らない」）で、本人はGeminiを常用していない
 
 ## [2026-10-01] 調査結果（デイリー・木曜）
 

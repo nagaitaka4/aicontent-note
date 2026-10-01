@@ -6,7 +6,9 @@
     "build": "node build.js",
     "gen-vendor": "node tests/gen-vendor.js",
     "gen-fixtures": "node tests/gen-fixtures.js",
-    "test": "node tests/unit.js && node tests/run.js && python3 tests/parity.py && node tests/parity.js"
+    "test": "node tests/unit.js && node tests/run.js && python3 tests/parity.py && node tests/parity.js",
+    "test:xcount": "node tests/gen-xcount-expected.js && python3 tests/xcount.py",
+    "compare-x-count": "node tests/compare-x-count.js"
   },
   "devDependencies": {
     "emojibase-data": "^17.0.0",

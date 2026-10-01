@@ -15,9 +15,16 @@ eq('URLは長さに関係なく23', PMC.weigh('https://example.com/' + 'a'.repea
 eq('URLが2つなら46', PMC.weigh('https://a.com https://b.com').weight, 23 + 1 + 23);
 eq('絵文字1つは2（家族）', PMC.weigh('👨‍👩‍👧‍👦').weight, 2);
 eq('空文字は0・残り280', [PMC.weigh('').weight, PMC.weigh('').remaining], [0, 280]);
+const cps = (...a) => String.fromCodePoint(...a);
+const heartOnFire = cps(0x2764, 0xfe0f, 0x200d, 0x1f525);   // ❤️‍🔥（公式の表に無い並び）
+eq('絵文字注意：新しい絵文字（❤️‍🔥）は部品ごとに数えるので注意', PMC.weigh(heartOnFire).uncertain.map((u) => u.text), [heartOnFire]);
+eq('絵文字注意：❤️‍🔥は重み5', PMC.weigh(heartOnFire).weight, 5);
+eq('絵文字注意：家族の絵文字は1つで2なので注意しない', PMC.weigh(cps(0x1f468, 0x200d, 0x1f469, 0x200d, 0x1f467, 0x200d, 0x1f466)).uncertain, []);
+eq('絵文字注意：ヒンディー語のZWJだけの並びは絵文字ではない', PMC.weigh(cps(0x915, 0x94d, 0x200d, 0x937)).uncertain, []);
+eq('絵文字注意：数字の後ろのFE0Fだけは絵文字ではない', PMC.weigh('1' + cps(0xfe0f)).uncertain, []);
 eq('素の文字数は絵文字を1と数える', PMC.weigh('👨‍👩‍👧‍👦').chars, 7);
 eq('README.md はURL扱い', PMC.weigh('README.md').urls.map((u) => u.url), ['README.md']);
-eq('投稿できない文字（U+FEFF）', PMC.weigh('a﻿b').invalid, true);
+eq('投稿できない文字（U+FEFF）', PMC.weigh('a\ufeffb').invalid, true);
 
 // --- 要注意表現 ---
 const ph = (t, en) => PMC.checkPhrases(t, en).items.map((i) => i.kind + ':' + i.match);

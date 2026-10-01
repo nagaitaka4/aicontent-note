@@ -28,32 +28,7 @@ console.log(`保存した正解: ${pass} 件一致 / ${fail} 件不一致`);
 // 2. 乱数での突き合わせ
 const argN = process.argv.indexOf('--fuzz');
 const N = argN >= 0 ? +process.argv[argN + 1] : 30000;
-function rng(seed) { return () => { seed |= 0; seed = (seed + 0x6D2B79F5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
-const rand = rng(20260930);
-const pick = (a) => a[Math.floor(rand() * a.length)];
-const chars = (s) => Array.from(s);
-const pools = [
-  chars('あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞっゃゅょー'),
-  chars('日本語文字数検証投稿記事運用実測確認公式仕様読者前提昨日今日'),
-  chars('アイウエオカキクケコサシスセソタチツテトナニヌネノ'),
-  chars('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'),
-  chars(' .,:;!?-_/()@#$%&*+=~|\'"<>[]{}'),
-  chars('→←↑↓…・※①②③★☆♪♫✅❤❗‼⁉™©®℃°±×÷—–―‐“”‘’「」『』（）【】〜～、。，．'),
-  ['😀', '😷', '👾', '🔥', '💩', '🙋🏽', '👨‍🎤', '👨‍👩‍👧‍👦', '🇯🇵', '🇺🇸', '🏴󠁧󠁢󠁥󠁮󠁧󠁿', '❤️', '❤', '✅', '1️⃣', '#️⃣', '*️⃣', '0️⃣', '©️', '®️', '™️', '☺️', '☺', '🧑‍🦰', '🫶', '🐦‍🔥', '🤝🏻', '👍', '👍🏿', '🎉', '⭐', '✨', '⚠️', '⚠', '▶️', '▶', '🅰️', '🈁', '🧑‍💻', '👩‍🔬', '🏃‍♀️', '🤷‍♂️'],
-  ['https://example.com', 'http://t.co/abc123', 'https://t.co/abc123?x=1', 'example.com/path', 'foo.tokyo', 'README.md', 'index.js', 'main.py', 'a.b', 'v2.1.283', '1.5.0', 'x.com/aicontent_note', 'claude.ai', 'user@example.com', 'https://example.com/日本語/パス?q=1#frag', 'www.google.co.jp', 'github.com/nagaitaka4/aicontent-note', 'bit.ly/3xYz', 'localhost:3000', '192.168.0.1', 'ftp://x.com', 'https://例え.jp/テスト', 'foo.bar.baz.com', 'Node.js', 'pages.dev', 'example.com:8080/a', '(https://example.com/a_(b))', 'https://example.com/a.', 'xn--eckwd4c7c.jp', 'test.co.jp。', 'ABC.COM', 'ai.tools'],
-  [' ', ' ', '\n', '\n\n', '　', '‍', '️', '​', ' ', '\t', '﻿', '‪'],
-  ['が', 'é', 'ｱｲｳ', 'ｶﾞ', '㌔', 'ﬁ', 'Ⅳ', '①', ' '],
-];
-function rndText() {
-  const n = 1 + Math.floor(rand() * 14);
-  let s = '';
-  for (let i = 0; i < n; i++) {
-    const p = pick(pools);
-    s += pick(p);
-    if (rand() < 0.15) s += ' ';
-  }
-  return s;
-}
+const rndText = require('./fuzz').makeRandText(20260930);
 let fz = 0, fzNg = 0;
 for (let i = 0; i < N; i++) {
   const t = rndText();

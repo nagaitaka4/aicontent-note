@@ -218,7 +218,10 @@ var PMC = (function () {
   try {
     EMOJI_RUN = new RegExp('[\\p{Extended_Pictographic}\\u200d\\ufe0f\\u20e3\\u{1F3FB}-\\u{1F3FF}\\u{1F1E6}-\\u{1F1FF}]+', 'gu');
   } catch (e) { EMOJI_RUN = null; }
-  var EMOJI_SEQ_PART = /[‍️⃣]|\ud83c[\udffb-\udfff]|\ud83c[\udde6-\uddff]/;
+  var EMOJI_SEQ_PART = /[\u200d\ufe0f\u20e3]|\ud83c[\udffb-\udfff]|\ud83c[\udde6-\uddff]/;
+  // 絵柄そのもの（Extended_Pictographic・肌色・国旗の文字）を1つも含まない並び（ヒンディー語のZWJだけ、数字の後ろのFE0Fだけ）は絵文字ではない
+  var HAS_PICT = null;
+  try { HAS_PICT = new RegExp('[\\p{Extended_Pictographic}\\u{1F3FB}-\\u{1F3FF}\\u{1F1E6}-\\u{1F1FF}]', 'u'); } catch (e) { HAS_PICT = null; }
 
   /**
    * 公式ライブラリが「1つの絵文字」と認識できず、部品ごとに数えた並びを探す。
@@ -236,7 +239,7 @@ var PMC = (function () {
     var m;
     while ((m = r.exec(norm)) !== null) {
       var run = m[0];
-      if (!EMOJI_SEQ_PART.test(run)) continue;            // 並びの特徴が無い（ふつうの記号や単独の絵文字）は対象外
+      if (!EMOJI_SEQ_PART.test(run) || !HAS_PICT || !HAS_PICT.test(run)) continue;   // 並びの特徴が無い、または絵柄が無いものは対象外
       var all = true;
       for (var i = m.index; i < m.index + run.length; i++) { if (!covered[i]) { all = false; break; } }
       // 公式の表は、単独の異体字セレクタ(U+FE0F)も「絵文字1つ」として2で数える（😐️ が 4 になる）。これも部品ごとの数え方

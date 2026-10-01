@@ -50,7 +50,8 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 | Unicodeの全絵文字との一致、注意書きの過不足 | 3,979個 | 同上 |
 | 要注意表現が `x-hook.py` と同じ判定か（リポジトリの実際の投稿・下書き＋手書き） | 175本 | `python3 tests/parity.py && node tests/parity.js` |
 | 重なりが `x-cannibal.py` と同じ判定か（総当たり） | 174本（該当1,110組） | 同上 |
-| 画面まわり（日付の範囲・まとめて追加・指示語など） | 43件 | `node tests/unit.js` |
+| 画面まわり（日付の範囲・まとめて追加・指示語・絵文字注意など） | 48件 | `node tests/unit.js` |
+| **`operations/x-count.py` が公式と同じか**（適合テスト・手書き例53、乱数60,000、全絵文字3,979、全コードポイント×6型777,216。重み・URL・絵文字注意）＋CLIの出力4行・終了コード。約1分 | 841,248本 | `npm run test:xcount`（= `node tests/gen-xcount-expected.js && python3 tests/xcount.py`） |
 | 実ブラウザ（Chromium）：スマホ幅・外部通信ゼロ・WPふうの強いCSSの中・保存不可の環境・Shadow DOMなし | 48件 | `NODE_PATH=/opt/node-tools/node_modules node tests/e2e.js` |
 
 まとめて：`npm test`（e2e以外）。わざとcoreを壊して、テストが落ちることも確認済み（重みの範囲・URLの重み・要注意語・重なりの基準）。
@@ -80,10 +81,17 @@ src/style.css        スタイル（Shadow DOMの中だけで効く＝SWELLのCS
 src/vendor/          公式の正規表現（twitter-text 3.1.0 Apache-2.0／twemoji-parser 11.0.2 MIT）。自動生成
 build.js             1つのHTMLに束ねる
 dist/                出力（wp-block.txt＝WP貼り付け用／post-mae-check.html＝単独版）
-tests/               テストと「保存した正解」
-x-count-diff.md      operations/x-count.py が公式とどこで食い違うかの一覧（自動生成・全件）
+tests/               テストと「保存した正解」（xcount.py＝operations/x-count.py の検証／fuzz.js＝乱数の文章／gen-*.js＝正解や正規表現の生成）
+../../operations/x-count-data.json   x-count.py が読む公式の正規表現（tests/gen-vendor.js が自動生成。手で直さない）
+x-count-diff.md      operations/x-count.py が公式とどこで食い違っていたかの一覧（修正前の記録）
 ```
 
-## 関連：`operations/x-count.py` の食い違い（未修正）
+## 関連：`operations/x-count.py`（2026-10-01に公式準拠へ修正済み）
 
-毎日の文字数判定に使っている `x-count.py` は、公式の数え方と食い違う（矢印・三点リーダ・✅を1と数える／絵文字を部品で足す／URLの直後の「。」まで吸う／`.md`・`.py`・`.tokyo` など）。**280を超えているのに[OK]と出るケースがある。** 全件の一覧と原因は `x-count-diff.md`。直すかどうかは別作業として保留中。
+毎日の文字数判定に使っている `x-count.py` は、修正前は公式の数え方と食い違っていた（矢印・三点リーダ・✅を1と数える／絵文字を部品で足す／URLの直後の「。」まで吸う／`.md`・`.py`・`.tokyo` など。280を超えているのに[OK]と出るケースがあった）。修正前の一覧と原因は `x-count-diff.md`（記録）。
+
+- いまの `x-count.py` は、公式の正規表現を `operations/x-count-data.json`（`node tests/gen-vendor.js` が自動生成）から読み込み、公式と同じ手順で数える。`weight(text)`・`MAX_WEIGHT`・CLIの出力4行と終了コードは変えていない（`x-gate.py` はそのまま動く）
+- CLIの出力に、URLとして23で数えたもの（`URL換算`）と、公式の表にない絵文字（`絵文字注意`）の行を足した
+- 検証は上の表の `test:xcount`。数え方を直したら必ず通す
+- 実データでの確認（2026-10-01）：投稿済み85本は新しい数え方でもすべて280以下。全154本（投稿済み85・キュー69）のうち22本の重みが変わり、キューの `閾値-気` だけが280→282で超過になる（→を2回使っているため）
+- 「絵文字注意」の判定は、投稿まえチェック（`src/core.js`）と同じ。両方を `tests/xcount.py` が突き合わせている

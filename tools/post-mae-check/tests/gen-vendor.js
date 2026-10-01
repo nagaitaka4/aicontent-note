@@ -1,6 +1,7 @@
 // 公式の twitter-text 3.1.0 が実際に使っている正規表現を、そのまま書き出す（手で写さない）。
-//   node gen-vendor.js
-// 出力: ../src/vendor/twitter-text-regex.js
+//   node tests/gen-vendor.js
+// 出力: src/vendor/twitter-text-regex.js           （投稿まえチェック用・JS）
+//       ../../operations/x-count-data.json         （operations/x-count.py 用・Python用に変換済み）
 const fs = require('fs');
 const path = require('path');
 const tt = require('twitter-text');
@@ -40,3 +41,73 @@ var TT = {
 const dest = path.join(__dirname, '..', 'src', 'vendor', 'twitter-text-regex.js');
 fs.writeFileSync(dest, out);
 console.log('書き出し:', dest, out.length, 'bytes / twitter-text', ttVersion, '/ twemoji-parser', twemojiVersion);
+
+// ---------- Python 用（operations/x-count.py が読む） ----------
+// Python の正規表現はコードポイント単位で、JS のようなサロゲートペア表記（👨）は使えない。
+// 絵文字の正規表現だけ、サロゲートペアをコードポイントに直す。変換が正しいかは tests/xcount.py が公式との一致で確かめる。
+function surrogatesToCodePoints(src) {
+  const hiRe = /^\\u(d[89ab][0-9a-f]{2})/i;
+  const loRe = /^\\u(d[c-f][0-9a-f]{2})/i;
+  const cp = (hi, lo) => 0x10000 + ((parseInt(hi, 16) - 0xd800) << 10) + (parseInt(lo, 16) - 0xdc00);
+  const esc = (n) => '\\U' + n.toString(16).padStart(8, '0');
+  let out = '';
+  for (let i = 0; i < src.length;) {
+    const rest = src.slice(i);
+    const h = hiRe.exec(rest);
+    if (h) {
+      const after = rest.slice(6);
+      const l = loRe.exec(after);
+      if (l) { out += esc(cp(h[1], l[1])); i += 12; continue; }
+      if (after[0] === '[') {
+        const end = after.indexOf(']');
+        const body = after.slice(1, end);
+        let conv = '';
+        for (const m of body.matchAll(/\\u(d[c-f][0-9a-f]{2})(?:-\\u(d[c-f][0-9a-f]{2}))?/gi)) {
+          conv += esc(cp(h[1], m[1])) + (m[2] ? '-' + esc(cp(h[1], m[2])) : '');
+        }
+        // クラスの中身が低位サロゲートだけであること（それ以外が混ざっていたら変換できない）
+        if (body.replace(/\\u(d[c-f][0-9a-f]{2})(?:-\\u(d[c-f][0-9a-f]{2}))?/gi, '') !== '') throw new Error('サロゲートのクラスに別の文字が混ざっている: ' + body);
+        out += '[' + conv + ']';
+        i += 6 + end + 1;
+        continue;
+      }
+      throw new Error('高位サロゲートの後ろが想定外: ' + rest.slice(0, 20));
+    }
+    out += src[i];
+    i++;
+  }
+  if (/\\u(d[89a-f][0-9a-f]{2})/i.test(out)) throw new Error('サロゲートが残っている');
+  return out;
+}
+// JS の $（文字列の終わり）は、Python では「末尾の改行の手前」にも当たるので \Z にする
+const toPy = (s) => s.replace(/\|\$\)/g, '|\\Z)');
+
+// Extended_Pictographic（絵柄）の範囲。Python の re には \p{...} が無いので、範囲の表を渡す（x-count.py の「絵文字注意」用）
+const pict = [];
+{
+  const re = /\p{Extended_Pictographic}/u;
+  let start = -1;
+  for (let c = 0; c <= 0x10ffff; c++) {
+    const hit = !(c >= 0xd800 && c <= 0xdfff) && re.test(String.fromCodePoint(c));
+    if (hit && start < 0) start = c;
+    if (!hit && start >= 0) { pict.push([start, c - 1]); start = -1; }
+  }
+  if (start >= 0) pict.push([start, 0x10ffff]);
+}
+
+const pyData = {
+  _comment: '自動生成（tools/post-mae-check/tests/gen-vendor.js）。手で直さない。operations/x-count.py が読む。' +
+    'twitter-text ' + ttVersion + ' (c) Twitter, Inc. Apache License 2.0 の正規表現／twemoji-parser ' + twemojiVersion + ' (c) Twitter, Inc. MIT License の絵文字表。',
+  versions: { twitterText: ttVersion, twemojiParser: twemojiVersion },
+  extractUrl: toPy(r.extractUrl.source),
+  validAsciiDomain: toPy(r.validAsciiDomain.source),
+  validTcoUrl: toPy(r.validTcoUrl.source),
+  invalidUrlWithoutProtocolPrecedingChars: r.invalidUrlWithoutProtocolPrecedingChars.source,
+  invalidChars: r.invalidChars.source,
+  emoji: surrogatesToCodePoints(twemojiRe.source),
+  pictographic: pict,
+  pictographicNote: 'Extended_Pictographic の範囲（Node ' + process.versions.node + ' / Unicode ' + process.versions.unicode + '）',
+};
+const pyDest = path.join(__dirname, '..', '..', '..', 'operations', 'x-count-data.json');
+fs.writeFileSync(pyDest, JSON.stringify(pyData, null, 1) + '\n');
+console.log('書き出し:', pyDest, fs.statSync(pyDest).size, 'bytes');

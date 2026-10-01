@@ -7,9 +7,16 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 
 ## 公開のしかた（WordPressに埋め込む）
 
-1. `git pull` して、`tools/post-mae-check/dist/wp-block.txt` を開き、**全文をコピー**する
-2. WordPressで固定ページを新規作成（または開く）→ 右上「⋮」→「コードエディター」に**全文を貼り付ける**（`md-to-wp.py` の出力を貼るときと同じ手順）
-3. 「ビジュアルエディター」に戻す → プレビューで動作確認 → 公開
+固定ページの原稿は `pages/x-post-checker.md`（説明文・表・CTA）。**説明文＋ツール＋CTAを1本にした `dist/page.wp.txt` を貼る。**
+
+1. `git pull` して、`tools/post-mae-check/dist/page.wp.txt` を開き、**全文をコピー**する
+2. WordPressで**固定ページ**を新規作成 → 右上「⋮」→「コードエディター」に**全文を貼り付ける**（`md-to-wp.py` の出力を貼るときと同じ手順）
+3. 先頭の段落ブロック「WPの入力欄に写す情報」を見て、タイトル・SEOタイトル・スラッグ・説明文を各欄に写し、**そのブロックは削除する**
+4. 「ビジュアルエディター」に戻す → プレビューで動作確認 → 公開（アイキャッチは未作成。`knowledge/eyecatch-rules.md` の手順で）
+
+作り直すとき：ツール（`src/`）を直したら `node build.js` → 原稿（`pages/x-post-checker.md`）を直したら `python3 tools/post-mae-check/compose-page.py`。後者が、ブロックの対応・CTA文言（最新の公開記事と一致）・ツールが1つだけ・MD記法の残りを検査してから `dist/page.wp.txt` を書く。
+
+CTAは**最新の公開記事（2026-10-01時点はno.71 `claude-code-permission-modes`）の末尾からそのままコピー**してある（直近4本の公開記事で同一・`article-self-check.py` の標準文言とも一致）。新しい記事が公開されたら、`compose-page.py` の `LATEST_ARTICLE` と原稿のCTAを合わせ直す。
 
 公開前の確認（この環境からは本番サイトに触れないため、**あなたの画面で1回**確かめる）：
 
@@ -30,7 +37,7 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 | ⏳ 未公開 | まだWordPressに貼っていない。貼る作業と、本番サイトでの動作確認（上の「公開のしかた」）は運営者の作業 |
 | ⚠️ 確認できていない | iPhone実機のSafari（確認はChromiumのスマホ設定だけ）／Xの現在の数え方（新しい絵文字・ファイル名風のURL・日本語を含むURL）／サイトに入力を録画する計測が入っていないか |
 | 他の人には合わない所 | 要注意表現は**日本語の投稿向け**（文字数は言語を問わない）／直近の重なりは、**使う人が自分の投稿を自分で保存する**必要がある（Xのアカウントとは連携しない）／「よく出る語」の初期値は運営者の題材（Claude など）なので、画面で変えてもらう前提／Premiumの長文ポストは対象外 |
-| 📌 まだ入れていない | 記事・問い合わせへの導線（CTA）。ページの前後に置くなら、`CLAUDE.md` のルールどおり最新の公開記事から文言をコピーする |
+| ✅ 説明文とCTA | `pages/x-post-checker.md` に作成済み（CTAは最新の公開記事からコピー）。**関連記事カードは入れていない**（記事IDを本番サイトの公開APIから取る必要があり、クラウド環境から届かないため。入れるならMacで `md-to-wp.py` を実行する） |
 
 ## 機能（初版）
 
@@ -47,7 +54,7 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 ## 分からないこと・限界（画面にも書いてある）
 
 - **公式ドキュメント本体（docs.x.com）は、作った環境から読めなかった。** 内容の元である公式OSS（twitter-text。npm最新は2020年3月の3.1.0）で確認した。**「X仕様確認日」は 2026-09-30**（`src/app.js` の `SPEC_CHECKED`）。Xの最新の数え方と違っていたら、ここが古い
-- 公式ライブラリの絵文字表は2020年版。いまのUnicodeの絵文字3,979個のうち**1,077個（新しい並び・余計な異体字セレクタつき）は、公式ライブラリでは部品ごとに数えられ、2を超える**（例：❤️‍🔥＝5、😐️＝4）。実際のXが2で数えるかは**確認できていない**。画面は公式どおりに数え、該当の絵文字に「重めの見積もり」と注意書きを出す
+- 公式ライブラリの絵文字表は古く、Emoji 11（2018年）までのもの。いまのUnicodeの絵文字3,979個のうち**1,077個（新しい並び・余計な異体字セレクタつき）は、公式ライブラリでは部品ごとに数えられ、2を超える**（例：❤️‍🔥＝5、😐️＝4）。実際のXが2で数えるかは**確認できていない**。画面は公式どおりに数え、該当の絵文字に「重めの見積もり」と注意書きを出す
 - 日本語を含むURLは、公式ライブラリでは日本語の手前でURLが終わると数える。実際のXが全体を23で数えるかは確認できていない（そうなら画面の重みは実際より大きく出る＝安全側）
 - 「1行目だけで何の話か分かるか」「おもしろいか」は、AIなしでは判定できない。見せるだけ
 
@@ -64,6 +71,7 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 | 重なりが `x-cannibal.py` と同じ判定か（総当たり） | 174本（該当1,110組） | 同上 |
 | 画面まわり（日付の範囲・まとめて追加・指示語・絵文字注意など） | 48件 | `node tests/unit.js` |
 | **`operations/x-count.py` が公式と同じか**（適合テスト・手書き例53、乱数60,000、全絵文字3,979、全コードポイント×6型777,216。重み・URL・絵文字注意）＋CLIの出力4行・終了コード。約1分 | 841,248本 | `npm run test:xcount`（= `node tests/gen-xcount-expected.js && python3 tests/xcount.py`） |
+| 組み立てた固定ページ（`dist/page.wp.txt`）を実ブラウザで表示：構造・CTAの文言とリンク・ページに組み込んでもツールが動く・スマホ幅・外部通信なし | 24件 | `NODE_PATH=/opt/node-tools/node_modules node tests/e2e-page.js` |
 | 実ブラウザ（Chromium）：スマホ幅・外部通信ゼロ・WPふうの強いCSSの中・保存不可の環境・Shadow DOMなし | 48件 | `NODE_PATH=/opt/node-tools/node_modules node tests/e2e.js` |
 
 まとめて：`npm test`（e2e以外）。わざとcoreを壊して、テストが落ちることも確認済み（重みの範囲・URLの重み・要注意語・重なりの基準）。
@@ -93,7 +101,9 @@ src/style.css        スタイル（Shadow DOMの中だけで効く＝SWELLのCS
 src/vendor/          公式の正規表現（twitter-text 3.1.0 Apache-2.0／twemoji-parser 11.0.2 MIT）。自動生成
 THIRD-PARTY-NOTICES.md  上のライセンス全文（自動生成）。dist/ のHTMLにも告知文を同梱している
 build.js             1つのHTMLに束ねる
-dist/                出力（wp-block.txt＝WP貼り付け用／post-mae-check.html＝単独版）
+compose-page.py      固定ページ（説明文＋ツール＋CTA）を1本に組み立てる。検査つき
+../../pages/x-post-checker.md   固定ページの原稿（説明文・CTA）
+dist/                出力（page.wp.txt＝固定ページ丸ごと／wp-block.txt＝ツールだけ／post-mae-check.html＝単独版）
 tests/               テストと「保存した正解」（xcount.py＝operations/x-count.py の検証／fuzz.js＝乱数の文章／gen-*.js＝正解や正規表現の生成）
 ../../operations/x-count-data.json   x-count.py が読む公式の正規表現（tests/gen-vendor.js が自動生成。手で直さない）
 x-count-diff.md      operations/x-count.py が公式とどこで食い違っていたかの一覧（修正前の記録）

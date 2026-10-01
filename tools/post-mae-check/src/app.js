@@ -101,8 +101,8 @@ function newId() { return Date.now().toString(36) + Math.random().toString(36).s
 
 var SKELETON = [
   '<h2 class="title">投稿まえチェック</h2>',
-  '<p class="lead">X投稿の文字数・前提語・直近の重なりを、投稿する前に確認します。</p>',
-  '<p class="privacy">入力した文章はどこにも送りません。この端末のブラウザの中だけで処理します（AIも使っていません）。</p>',
+  '<p class="lead">X投稿の文字数・伝わりにくい言い回し・直近の投稿との重なりを、投稿する前に確認します。</p>',
+  '<p class="privacy">入力した文章は、このツールが外部に送ることはありません。ブラウザの中だけで処理します（AIも使っていません）。</p>',
 
   '<div class="field">',
   '<div class="field-top"><label for="pmc-t">投稿の下書き</label><button type="button" class="link" id="pmc-clear">クリア</button></div>',
@@ -131,7 +131,7 @@ var SKELETON = [
   '<p class="sub" id="pmc-find-foot"></p>',
   '<details><summary>見る項目を選ぶ</summary>',
   '<div class="toggles">',
-  '<label><input type="checkbox" id="pmc-on-leak">前提を知らないと通じない言い回し（昨日の・前回の・例の など）</label>',
+  '<label><input type="checkbox" id="pmc-on-leak">前の投稿を知らないと伝わりにくい言い回し（昨日の・前回の・例の など）</label>',
   '<label><input type="checkbox" id="pmc-on-report">1行目が「〜しました」の報告で終わっている</label>',
   '<label><input type="checkbox" id="pmc-on-deixis">1行目の「これ・それ・あれ」</label>',
   '</div></details>',
@@ -205,7 +205,7 @@ function mount(host) {
     var pct = Math.min(100, r.weight / r.max * 100);
     $('fill').style.width = pct + '%';
     meter.className = 'meter' + (r.over ? ' over' : (r.remaining <= 28 && hasText ? ' near' : ''));
-    if (!hasText) $('msg').textContent = '入力すると、ここに重みが出ます';
+    if (!hasText) $('msg').textContent = '入力すると、ここに文字数（Xの数え方）が出ます';
     else if (r.over) $('msg').textContent = (r.weight - r.max) + ' 超過（削る必要があります）';
     else $('msg').textContent = 'あと ' + r.remaining;
 
@@ -229,7 +229,7 @@ function mount(host) {
       tbl.appendChild(tr);
     });
     var sum = el('tr', 'sum');
-    sum.appendChild(el('td', null, '合計（重み）'));
+    sum.appendChild(el('td', null, '合計（Xの数え方）'));
     sum.appendChild(el('td', null, ''));
     sum.appendChild(el('td', null, String(r.weight)));
     tbl.appendChild(sum);
@@ -266,7 +266,7 @@ function mount(host) {
 
   /* --- ② 要注意表現 --- */
   var LABELS = {
-    leak: { tag: '前提語', what: '前を知らないと通じないかもしれない言い回し', msg: '書き手は前の出来事を知っていても、初めて読む人は知りません。その場で一言説明するか、消すかを確認してください。' },
+    leak: { tag: '言い回し', what: '前の投稿を知らないと伝わりにくいかもしれない言い回し', msg: '書き手は前の出来事を知っていても、初めて読む人は知りません。その場で一言説明するか、消すかを確認してください。' },
     report: { tag: '1行目', what: '1行目が「〜しました」の報告で終わっています', msg: '何をしたかの報告で始まると、読む理由が見えにくくなります。数字・意外な点・「実は〜してませんでした」のような一言が1行目にあれば、この表示は出ません。' },
     deixis: { tag: '1行目', what: '1行目に「これ・それ・あれ」があります', msg: '1行目は前後の文脈なしで読まれます。何を指すか、初めて読む人にも通じるか確認してください。' }
   };

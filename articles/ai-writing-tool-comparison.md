@@ -205,6 +205,9 @@ Claudeは日常チャット的な使い方をしていて、ChatGPTと似た使�
 
 この使い分けをしてから、1記事あたりの作業時間が大きく短縮されました。
 
+この分担は2026年4月時点のものです。
+いまの使い分けは、[ChatGPTとClaudeの使い分け。両方に課金して決めた分担](https://aicontent-note.com/chatgpt-claude-division-of-work/)に書いています。
+
 ---
 
 ## その他のAIツールについて

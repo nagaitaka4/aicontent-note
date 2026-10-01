@@ -7,7 +7,7 @@ date:
 url: https://aicontent-note.com/chatgpt-claude-division-of-work/
 slug: chatgpt-claude-division-of-work
 status: draft
-description: ChatGPTとClaudeを両方使うなら、画像・相談・見直しはChatGPT、記事を書いて入稿まで進める作業はClaude Codeに分けています。GPT-6 Astraに同じ記事を書かせて比べても、私の分担を変えるほどの差は出ませんでした。
+description: ChatGPTとClaudeは、できることの多くが重なります。私は記事づくりをClaude Code、画像とふだんのチャット、レビューをChatGPTに分けています。決め手は性能の差ではなく、先に環境を作ったのがどちらかでした。両方に課金している理由を書きます。
 eyecatch: eyecatch_0072.png
 eyecatch_alt: ChatGPTとClaudeの使い分けを、吹き出しを抱えた男性と書類を持つ女性、チャット画面と文書画面のイラストで表したアイキャッチ画像
 category: AIとコンテンツの実務
@@ -16,70 +16,102 @@ tags: ChatGPT,Claude,Claude Code,使い分け,GPT-6 Astra
 
 # ChatGPTとClaudeの使い分け。両方に課金して決めた分担
 
-==話して考える作業はChatGPT、仕上げる作業はClaude Code==です。
-画像づくりや相談、見直しはChatGPTに頼み、記事を書いて入稿するまではClaude Codeで進めます。
-GPT-6 Astraにも同じ記事を書かせましたが、私はこの分担を変えませんでした。
+==記事はClaude Code、画像とチャットはChatGPT==で使い分けています。
+ただ、できることの多くは重なっていて、Claude Codeでしかできない作業はほとんど無いと思っています。
+決め手は性能の差ではなく、先に環境を作って慣れているのがどちらか、でした。
 
 ---
 
-## ChatGPTとClaudeの使い分け
+## ChatGPTとClaudeの使い分け。4つの作業の分担
 
-私はClaudeのチャットは使わず、Claude側はClaude Codeにまとめています。
-Claude Codeは、ClaudeのPro・Maxの契約に含まれます（[公式](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)）。
-
-| 作業 | どちら | 理由 |
-|---|---|---|
-| 画像を作る（アイキャッチ・イラスト） | ChatGPT | Claudeは写真やイラストを生成しない（図やグラフは作れる） |
-| 考えを広げる相談（企画・方向性） | ChatGPT | 話していて、考えが広がる感じがある |
-| 記事を書いて入稿まで（構成・執筆・チェック） | Claude Code | 記事用のルールやチェックの仕組みを、こちらに作り込んでいる |
-| Claude Codeで仕上げた物の見直し | ChatGPT | 作ったのとは別のAIに見せる |
-
-画像の行は、[Claudeの公式ヘルプ](https://support.claude.com/en/articles/9002504-can-claude-produce-images)が根拠です。
-ただ、ChatGPTとの相談は、話が広がりすぎて本題や結論のまとめ方に迷うこともよくあります。
-
-私の場合、片方をやめると次のように困ります。
-
-| やめる方 | 困ること |
-|---|---|
-| ChatGPT | 画像づくりと、作ったのとは別のAIでの見直しができなくなる |
-| Claude | Claude Codeに作り込んだ今の記事制作の環境を、移す手間が出る |
-
-これから環境を作るなら、Claude CodeだけでなくCodexも候補になります。
-CodexはChatGPTのプランで使えるコーディングエージェントで、手元のフォルダやファイルを扱えます。
-どちらか1つを選ぶ話は、[ChatGPT WorkとClaude Codeの違いと選び方](https://aicontent-note.com/chatgpt-work-claude-code-comparison/)にまとめています。
-
-【ポイント】<br>
-迷ったら「話して考えるか、ファイルを動かして仕上げるか」で振り分ける。
-
----
-
-## GPT-6 Astraでも試したが、私は分担を変えなかった
-
-GPT-6 Astraは、ChatGPT PlusでもWorkとCodexで使えます。
-乗り換えるほどの差があるか、同じ指示で記事を1本書かせて比べました。
+契約は、ChatGPT PlusとClaudeのMaxです。
+私は、Claudeのチャットは使わず、Claude側はClaude Codeにまとめています。
 
 【メモ】<br>
-Chatで使うGPT-6 Proは、Plusには含まれません（[OpenAI](https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex)）。
+**Claude Codeは、手元のファイルを読んで作業を進める道具。ClaudeのPro・Maxの契約に含まれます**（[公式](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)）。
+
+| 作業 | 使っているほう | もう片方でもできるか |
+|---|---|---|
+| 記事を書いて入稿まで（構成・執筆・チェック） | Claude Code | できる部分は多い（ChatGPTにも、ファイルを読んで作業するCodexがある）。入稿まで同じように回せるかは、試していない |
+| 画像を作る（アイキャッチ） | ChatGPT | できない（Claudeは写真やイラストの画像生成はしない） |
+| ふだんのチャット・相談 | ChatGPT | できる（Claudeのチャット） |
+| 書いた記事のレビュー | ChatGPT | できる（Claude Codeの中に、別のレビュー役を立てられる） |
+
+画像の行は、[Claudeの公式ヘルプ](https://support.claude.com/en/articles/9002504-can-claude-produce-images)が根拠です。
+画像のほかは、もう片方でもできるか、できる部分が多い作業です。
+それでもこう分けている理由を、順に書きます。
+
+---
+
+## Claude Codeがメインなのは、先に環境を作ったから
+
+==最初に環境を作ったのがClaude Codeだった==、というだけです。
+環境というのは、次の3つです。
+
+・記事の書き方を決めた、ルールのファイル<br>
+・書いた記事を自動で調べる、チェックの仕組み（文の長さや、禁止した表現）<br>
+・WordPressの下書きまで入れる、入稿の手順
+
+これに慣れていて、毎日これで回っています。
+それ以上の理由はありません。
+
+### ChatGPT側に移したほうがいいのか、Astraで比べた
+
+GPT-6 Astraは、OpenAIの新しいモデルです。
+**2026年10月時点で、ChatGPT PlusでもWorkとCodexで使えます**（[OpenAI](https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex)）。
+新しいモデルなら移す理由になるかを見たくて、同じ記事を1本ずつ書かせました。
 
 ・渡したもの：同じ構成案と、事実のメモ<br>
-・Astra：ChatGPT Workで、思考量は「高」<br>
+・Astra：ChatGPT Workで、思考量は「高」。指示の文章だけを貼って渡した<br>
+・Claude Code：ふだんの環境のまま。チェックを通したあとの初稿<br>
 ・回数：初稿を1回ずつ
+
+これは、モデルどうしの性能比べではありません。
+今のClaude Codeの環境から移す理由があるかを見るための比較です。
 
 | 項目 | Astra | Claude Code |
 |---|---|---|
 | 事実と違うことを書いた数 | 0件 | 0件 |
 | 長さ（指定した字数の上限の何倍か） | 約1.5倍 | 約1.2倍 |
-| 50字を超える長い文の割合 | 0.9% | 16.4% |
+| 長い文の割合（50字を超える文。読みやすさの目安） | 0.9% | 16.4% |
 
-50字を超える文はAstraのほうが少なく、長さの指定にはClaude Codeのほうが近い結果でした。
-この1回だけで、モデルの優劣は決めません。
-
-私は、作り込んだ環境を移すほどの差ではないと考えて、Claude Codeのままにしました。
-まだどちらにも環境が無いなら、まずPlusのままWorkのAstraやCodexを試せます。
-Claude Codeを加えるかは、そのあとで決めても遅くありません。
+長い文は、Astraのほうがずっと少なかったです。
+ただ、文の長さは指示やチェックの基準を変えれば直せます。
+**環境を移すほどの理由にはなりませんでした。**
 
 【チェック】<br>
-新しいモデルが出たら、自分の作業1本に同じ指示を渡して比べてから決める。
+**環境がまだ無いなら、同じ作業を両方で1本ずつ試す。あとから直せない差が無ければ、使いやすかったほうに寄せる。**
+
+すでに環境がある人は、移すほどの差があるかだけ見れば十分です。
+
+Claudeの課金を続けている理由は、このClaude Codeです。
+やめるなら、記事づくりの環境をChatGPT側に作り直すことになります。
+
+---
+
+## ChatGPTの課金を続ける決め手は、画像
+
+==課金の決め手は画像==です。
+ChatGPTは3つの用途で使っていますが、3つ全部が課金の理由ではありません。
+
+| 用途 | やめたら代わりはあるか | 無料プランでも足りるか |
+|---|---|---|
+| 画像（アイキャッチ） | ほかのAIでも作れる。ただ、質はChatGPTが一番いいと思っている | 足りない（無料だと画像生成に上限がある） |
+| ふだんのチャット・相談 | Claudeのチャットでもできる | 足りる（ふつうのテキストのチャットは、無料でも回数無制限） |
+| 書いた記事のレビュー | Claude Codeの中でもできる | 足りる（記事を貼って読んでもらうだけ） |
+
+無料と有料の違いは、[ChatGPTの無料と有料の違い｜無制限化しても課金する理由](https://aicontent-note.com/chatgpt-free-paid-difference/)にまとめています。
+
+チャットをChatGPTに回しているのには、もう1つ理由があります。
+Claudeは、チャットとClaude Codeで使用量の枠が共通です（[公式](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)）。
+Maxでも重い作業が続くと上限に当たることがあるので、チャットはChatGPTで使用量を気にせず使っています。
+
+正直に言うと、名残りに近い部分もあります。
+使い始めたのはChatGPTが先で、記事づくりの環境を作ったのはClaude Codeが先でした。
+レビューも、せっかく契約しているので別のAIに見てもらっている、というくらいです。
+
+【ポイント】<br>
+**性能の差が小さいなら、慣れた環境があるほうをメインに。もう片方は、無料で足りないことがあるかで決める。**
 
 ---
 

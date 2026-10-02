@@ -1,6 +1,6 @@
 # セッション引き継ぎ
 
-最終更新：2026-10-02 15:00（**TOP10 #1（no.32改稿）の本文を執筆・提示済み。**`articles/in-house-vs-outsource-cost.md`を全面書き換え（セルフチェックNG 0件・別のレビュー役の必須3件を反映）。アイキャッチは`images/eyecatch_0032.png`に差し替え済み。**次：ユーザーの確認とGPTの本文レビュー（`cb in-house-vs-outsource-cost`・構成案をレビューしたチャットの続き）→ OKなら`md-to-wp.py` → WPの既存記事（no.32・公開済み）を差し替え**。⚠️ no.32は6月に手作業で入稿した記事なので、全文差し替えの前にWP側のブロックを確かめる（`rules/article-flow.md` 7.6）。Xは朝ブリーフがメインで動く＝確定枠なし）
+最終更新：2026-10-02 16:55（**TOP10 #1（no.32改稿）：GPTの本文レビュー「4か所直せば公開GO」を反映済み（セルフチェックNG 0件・コミット`00a0d5b`）。**残りは、ユーザーの「WPを差し替えてよい」のOK → `python3 operations/md-to-wp.py articles/in-house-vs-outsource-cost.md` → **公開中のpost 432を差し替え**（題・本文・SSPの説明文・アイキャッチ`eyecatch_0032.png`の再アップとalt・タグ・ピンバックを閉じる〔いま`ping_status: open`〕）→ `operations/rewrite-log.md`・`article-md-workflow.md`・`tasks/README.md`（TOP10繰り上げ）・GSCの再クロール依頼・Xへ3本。公開中の本文は旧記事のまま（H2 6・表1・マーカー7）で、全面改稿なので全文差し替えでよい。Xは朝ブリーフがメインで動く＝確定枠なし）
 
 ---
 

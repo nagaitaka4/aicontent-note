@@ -83,7 +83,7 @@ eyecatch: eyecatch_0040.png
 【ポイント】<br>
 価格の安さより、自社の工数がどれだけ減るかを先に試算する。それが費用対効果を判断する起点です。
 
-社内で回す場合との比較は「[社内更新と外注、どちらが本当にコスパがいいのか](https://aicontent-note.com/in-house-vs-outsource-cost/)」にあります。
+社内で回す場合との比較は、**「[ブログは外注か内製か。AIで書く実費と代行の相場を並べた](https://aicontent-note.com/in-house-vs-outsource-cost/)」**にあります。
 
 ---
 

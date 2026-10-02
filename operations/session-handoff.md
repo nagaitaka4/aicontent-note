@@ -1,6 +1,8 @@
 # セッション引き継ぎ
 
-最終更新：2026-10-02 16:55（**TOP10 #1（no.32改稿）：GPTの本文レビュー「4か所直せば公開GO」を反映済み（セルフチェックNG 0件・コミット`00a0d5b`）。**残りは、ユーザーの「WPを差し替えてよい」のOK → `python3 operations/md-to-wp.py articles/in-house-vs-outsource-cost.md` → **公開中のpost 432を差し替え**（題・本文・SSPの説明文・アイキャッチ`eyecatch_0032.png`の再アップとalt・タグ・ピンバックを閉じる〔いま`ping_status: open`〕）→ `operations/rewrite-log.md`・`article-md-workflow.md`・`tasks/README.md`（TOP10繰り上げ）・GSCの再クロール依頼・Xへ3本。公開中の本文は旧記事のまま（H2 6・表1・マーカー7）で、全面改稿なので全文差し替えでよい。Xは朝ブリーフがメインで動く＝確定枠なし）
+最終更新：2026-10-02 17:10（**⚠️ no.32のWP差し替えが途中で止まっている（post 432）。**ユーザーのOK（16:55「OK、差し替えてください」）のあと、①新しいアイキャッチをアップ（メディアID 1088・alt設定済み・**まだ記事に付けていない**）②SSPの説明文を新しい文に保存（**公開中のページに反映済み**）まで実行。③本文を運ぶ段階で、自動モードの安全チェックが止まり、このセッションではそれ以降の操作ができなくなった。**いま公開中のページは「説明文だけ新・題と本文とアイキャッチは旧」の状態。**残り：`POST /wp/v2/posts/432`で title・content（`operations/wp-output/in-house-vs-outsource-cost.wp.txt`の入稿情報ブロックより後ろ・SHA-256 `b44cd78f…79dd71`・マーカー4・H2 4・表3）・tags `[53,81,96,71,16]`（外注・内製・ブログ運用代行・料金相場・Claude Code＝既存タグを使う。「ブログ外注」「ブログ代行」は存在しないので作らない→MDのtagsも合わせて直す）・featured_media 1088・comment_status/ping_status closed → 公開ページで検証 → エディターを開いていたらリロード。**本文を画像に詰めて運ぶ方法（wp-block-guide「本文HTMLをWPへ運ぶ方法」）は、自動モードの安全チェックに「データの持ち出し」と判定されて止められた＝この方法は使わない。**scratchpadに`carrier_no32.png`が残っている（未アップ・消してよい）。以下は止まる前の記録）
+
+（16:55時点）（**TOP10 #1（no.32改稿）：GPTの本文レビュー「4か所直せば公開GO」を反映済み（セルフチェックNG 0件・コミット`00a0d5b`）。**残りは、ユーザーの「WPを差し替えてよい」のOK → `python3 operations/md-to-wp.py articles/in-house-vs-outsource-cost.md` → **公開中のpost 432を差し替え**（題・本文・SSPの説明文・アイキャッチ`eyecatch_0032.png`の再アップとalt・タグ・ピンバックを閉じる〔いま`ping_status: open`〕）→ `operations/rewrite-log.md`・`article-md-workflow.md`・`tasks/README.md`（TOP10繰り上げ）・GSCの再クロール依頼・Xへ3本。公開中の本文は旧記事のまま（H2 6・表1・マーカー7）で、全面改稿なので全文差し替えでよい。Xは朝ブリーフがメインで動く＝確定枠なし）
 
 ---
 

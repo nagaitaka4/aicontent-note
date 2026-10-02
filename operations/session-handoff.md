@@ -1,6 +1,6 @@
 # セッション引き継ぎ
 
-最終更新：2026-10-02 17:45（**no.32（post 432）のWP差し替え・公開後の作業・no.40の旧題リンクの修正まで完了。**残りはGSCの再クロール依頼（ユーザー作業）だけ。次の記事はTOP10 #1「Claude.ai・デスクトップ・Cowork・Claude Code」。Xは朝ブリーフがメインで動く＝確定枠なし）
+最終更新：2026-10-02 17:45（**no.32（post 432）のリライトは全部完了**＝WP差し替え・公開後の作業・no.40の旧題リンクの修正・GSCの再リクエスト。次の記事はTOP10 #1「Claude.ai・デスクトップ・Cowork・Claude Code」。Xは朝ブリーフがメインで動く＝確定枠なし）
 
 ---
 
@@ -9,11 +9,11 @@
 **TOP10 #1「Claude.ai・デスクトップ・Cowork・Claude Code。非エンジニアはどれを使えばいいか」（T-2・D-28）の構成案から。**
 着手前に、**チャットとCoworkの統合（9/16公式）がユーザーの画面に届いたか**を確認して題を決める（`tasks/README.md` #1の行）。`python3 operations/article-precheck.py <slug> "KW"` → `rules/article-flow.md`の4原則 → 材料シート。
 
-### no.32の残り（ユーザー作業待ち）
+### no.32の残り（無し＝全部完了）
 
 | 項目 | 状態 |
 |---|---|
-| GSCの再クロール | ユーザーに案内済み（URL検査 → インデックス登録をリクエスト）。済んだら`tasks/README.md`常時掲載の行を「リクエスト済み」に直す |
+| ✅ GSCの再クロール | **10/2 17:44にユーザーがインデックス登録を再リクエスト済み**（`tasks/README.md`常時掲載の行も更新済み）。次は新しい題・説明文が検索結果に出たかを見る |
 | ✅ no.40（post 524）の本文リンク文言 | **10/2 17:41に修正済み**（ユーザーOK「no.40も修正してください」）。該当の段落1ブロックだけ新題に置き換え、ほかの64ブロックは変えていない（`is-style-`16・H2 5・H3 7・表3・マーカー5のまま）。公開ページの旧題は0。MD 86行はWPの形（読点・太字つき）に合わせた。⚠️ 保存したのでno.40の表示上の更新日が2026年10月2日になった（MDの`updated:`は2026-08-05のまま＝リライトではないので変えていない） |
 | 関連記事カード（post 524・647・656） | 表示は記事IDから題を引くので新題に変わっている（対応不要）。ブロックの中の`linkData.title`だけ旧題のまま |
 
@@ -42,7 +42,7 @@
 
 | 記事・作業 | 現在地 | 次に要ること |
 |---|---|---|
-| no.32 ブログは外注か内製か。AIで書く実費と代行の相場を並べた（リライト・URL維持） | **10/2 17:08にWPへ反映・公開後の作業まで完了**（post 432）。ファイル：構成案`articles/no32_rewrite_composition.md`／材料シート`operations/structure-drafts/in-house-vs-outsource-cost-facts.md`／記録`operations/rewrite-log.md` | GSCの再クロール（ユーザー作業）／効果の確認は2026-11のGSC。no.40の本文リンク文言は10/2 17:41に修正済み |
+| no.32 ブログは外注か内製か。AIで書く実費と代行の相場を並べた（リライト・URL維持） | **10/2 17:08にWPへ反映・公開後の作業まで完了**（post 432）。ファイル：構成案`articles/no32_rewrite_composition.md`／材料シート`operations/structure-drafts/in-house-vs-outsource-cost-facts.md`／記録`operations/rewrite-log.md` | 効果の確認は2026-11のGSC（GSCの再リクエストは10/2 17:44に済み・no.40の本文リンク文言は10/2 17:41に修正済み） |
 | no.72 ChatGPTとClaudeの使い分け | **10/1 13:15公開・公開後の作業まで完了**（post 1078・MD同期・workflow・backlog・issue #2・TOP10繰り上げ・GSC確認の追加・Xへ3本・no.11からリンク1行） | GSCインデックス確認（`tasks/README.md`常時掲載） |
 | no.71 Claude Codeの許可、どこまで自動でいいか | **9/30 08:51公開・公開後の作業まで完了**（post 1059） | 同上 |
 | Astra実験（執筆をWorkのAstraに渡す） | **9/30実施・no.72で記事化＝完了**。結果は`operations/structure-drafts/chatgpt-claude-both-paid-division-facts.md` 2-2節・Astraの初稿は`articles/no70_astra_draft.md` | 使わなかった数字（長さ・長い文の割合）は、Xで9/14`ASTRA-気`の続報にできる（朝ブリーフの判断） |

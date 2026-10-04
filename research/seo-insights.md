@@ -1,8 +1,18 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-10-02
+最終更新: 2026-10-05
 
 ---
+
+## [2026-10-05] 調査結果（定期リサーチ・月曜のフル版／③のみ）
+
+**③は一次情報の新着なし。**スパムアップデートは展開中のまま（開始から11日目）。
+
+- **【継続・展開中】September 2026 spam update**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：`end`は空のまま＝完了の告知なし。履歴は開始の1行だけ（`The rollout may take up to two weeks to complete.`＝〜10/8ごろ）
+- **【確認】Search Central のドキュメント更新履歴**（[Latest updates](https://developers.google.com/search/updates)・WebFetch）：最新は10/1「生成AIコンテンツ利用に関するガイド」の更新（10/4に`FACTG-01`で使用済み）。それ以降の更新なし
+- **【差分なし】Search Central Blog**（フィード・本日curl）：最新は9/24「web multimodal Search performance reporting」のまま
+- **【新規・記録のみ・二次情報】鈴木謙一氏のブログ**（フィード・本日curl・**本文は未読**）：10/1 22:05 UTC「Google、約100社にAI回答への貢献度に応じた報酬を支払いか」（9/21記録の「AI contribution pilot」と同じ話題と見られる。**見出しが「〜か」の推測形で、Googleの一次情報は今回も見つけていない**）／10/2 22:00 UTC「AI時代のコンテンツマーケ！ 現場の『一次情報』『独自の経験』から最高のコンテンツを作る方法」（Web担当者Forumの週次まとめ）。**採らない理由**：一次情報が無い（前者）・新しい方針ではない（後者）
+
 
 ## [2026-10-02] 調査結果（定期リサーチ・金曜のフル版／③のみ）
 

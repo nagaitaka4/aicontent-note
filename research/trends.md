@@ -1,9 +1,19 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-04
+最終更新: 2026-10-05
 
 
 ---
+
+## [2026-10-05] 調査結果（デイリー・月曜）
+
+**①は差分なし。**
+
+- **【差分なし】npm `@anthropic-ai/claude-code`**：`latest`／`next`は2.1.289（10/4 05:12 JST）のまま・`stable`は2.1.285。CHANGELOG.mdの先頭も`## 2.1.289`のまま
+- **【差分なし】Claude Apps リリースノート**：最新はSeptember 28, 2026「Claude Sonnet 5.5 launch」のまま／**Newsroom**：最新は10/2「Anthropic invests $100 million to train 10,000 engineers…」のまま／**claude.com/blog**：最新は10/1「Customize Claude Code with mods」のまま
+- **【差分なし】@ClaudeDevs**：最新は10/3 05:25 JST「We're adding a new plugin to Claude Code: You should Know」（10/2記録の`research-20261002-01`と同じ）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅（WebFetch）／Newsroom ✅（WebFetch）／claude.com/blog ✅（WebFetch）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-04] 調査結果（デイリー・日曜／10/3分を含む）
 

@@ -1,9 +1,26 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-02
+最終更新: 2026-10-04
 
 
 ---
+
+## [2026-10-04] 調査結果（デイリー・日曜／10/3分を含む）
+
+**①は新規1件（Googleのガイド更新＝ネタ化）＋記録のみ3件。10/3の朝ブリーフは途中で止まり記録が無いため、10/2以降の差分をまとめて見た。**
+
+### Claude Code / Anthropic
+
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.288`**（npm公開 10/3 03:30 JST）：verbatim `Added recovery for a prompt cleared with Ctrl+C: pressing Up on the empty prompt brings the draft back, including pasted text and images`／`Fixed long conversations failing with "Prompt is too long" instead of auto-compacting when the last reply reported zero token usage`／`Added --max-findings <n>|all to /code-review` ほか修正多数。**採らない理由**：Ctrl+Cで消した入力を↑で戻せるのは身近だが、本人がその場面に遭った日でないと③が立たない（ターミナル版の話で、デスクトップのCodeタブで同じかは未確認）
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.289`**（npm公開 10/4 05:12 JST）：modsまわりの修正（`Fixed installed mods not loading in the first session after an upgrade` ほか）と許可ルールの修正（`Fixed Bash deny and ask rules missing a command behind an environment variable prefix … when the sandbox auto-allows commands`）。読者の手元が変わる新機能なし
+- **【新規・記録のみ】Anthropic Newsroom** 10/2「Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap」（企業向けの育成投資・読者の手元は変わらない）
+- **【確認】@ClaudeDevs** 10/2「You can now mod Claude Code」（423万ビュー）＝10/2記録のmods（`research-20261002-01`）と同じ。本人の画面で未確認のまま
+- **【差分なし】Claude Apps リリースノート**：最新は September 28, 2026「Claude Sonnet 5.5 launch」のまま／**claude.com/blog**：最新は10/1「Customize Claude Code with mods」のまま
+
+### SEO（Xで話題・このメディアの軸に直結するため①で扱う）
+
+- **【新規・ネタ化→`research-20261004-01`→`FACTG-01`】Google「生成AIコンテンツ利用に関するガイド」更新**（[一次情報](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content)・Last updated 2026-10-01 UTC）：verbatim `It is critical to manually factcheck and review all AI-generated content for accuracy and trustworthiness before publishing.` 対象は`<title>`・meta description・構造化データ・画像の代替テキスト。新しいペナルティ・順位の要素の発表は無い（[Search Engine Journal](https://www.searchenginejournal.com/google-fact-check-ai-content-before-publishing/591782/)・[Search Engine Roundtable](https://www.seroundtable.com/google-updates-ai-content-guidelines-factcheck-review-42217.html)）。日本語版は未反映との指摘あり（@seolabo85 10/2）。X上：@rito_travel 3.6万ビュー・@seolabo85 2.5万ビュー
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅（実Chromeで読むだけ）
 
 ## [2026-10-02] 調査結果（デイリー・金曜）
 

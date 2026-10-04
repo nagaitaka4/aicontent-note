@@ -1,8 +1,15 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-02
+最終更新: 2026-10-04
 
 ---
+
+## [2026-10-04] 調査結果（デイリー・日曜／10/3分を含む）
+
+**②は新規1件（記録のみ）。**
+
+- **【新規・記録のみ】ChatGPT リリースノート October 2, 2026「Finances expands to Free and Go users」**（[出典](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chromeで確認）：verbatim `Finances in ChatGPT is rolling out to Free and Go users in the U.S. on web, iOS, and Android.` **採らない理由**：米国のみ
+- **【差分なし】Geminiアプリ リリースノート**：最新は2026.09.30「skills」のまま。10/2記録の「Gemini 4 Argon」は公式未確認のまま
 
 ## [2026-10-02] 調査結果（デイリー・金曜）
 

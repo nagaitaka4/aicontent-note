@@ -50,7 +50,7 @@
 | 固定ページ原稿 `pages/x-post-checker.md` | ✅ 作成・GPTレビュー2回反映（status draft）。**10/5：`eyecatch`・`eyecatch_alt`を追加**／CTAは最新の公開記事no.72と同文で一致（`compose-page.py`の`LATEST_ARTICLE`もno.72に更新） |
 | アイキャッチ | ✅ **`images/pages/x-post-checker-eyecatch.png`（1200×630）**。参考画像（SmartHR）の第4案を採用。経緯は`operations/structure-drafts/x-post-checker-eyecatch-prompt.md`・`operations/lessons.md`（10/5）。⚠️ **保存名は仮**（下の保留事項） |
 | プライバシーポリシー | ✅ MD（`pages/privacy-policy.md`）に節「ブラウザに保存される情報について」を追加。**WPへは未反映**（公開済みのページ・固定ページ公開の後に5ブロックだけ足す） |
-| **WPへの入稿（固定ページ）** | 🟡 **下書きまで済み（2026-10-05・page 1094・`?page_id=1094&preview=true`）**。本文はローカルとSHA一致・H2 4／表 3／マーカー 1／CTA 1／script 1・アイキャッチ1096（alt入り・本文の上には出ない／og:imageには入る）・コメントとピンバック closed。プレビューで入力すると重みが変わる（x-count.pyと一致）。**残り：SSPのSEOタイトル・説明文はユーザーの画面で入れる（CCの保存が自動モードで止められた）→ 公開はユーザー** |
+| **WPへの入稿（固定ページ）** | 🟡 **下書きまで済み（2026-10-05・page 1094・`?page_id=1094&preview=true`）**。本文はローカルとSHA一致・H2 4／表 3／マーカー 1／CTA 1／script 1・アイキャッチ1096（alt入り・SWELL設定「アイキャッチ画像＝表示」で投稿ページと同じくタイトル下に表示＝10/5 14:44）・コメントとピンバック closed。プレビューで入力すると重みが変わる（x-count.pyと一致）。SSPのSEOタイトル・説明文はユーザーが入力済み（10/5）。**残り：公開はユーザー** |
 | 確認が残っている | iPhone実機のSafari／Xの現在の数え方（新しい絵文字・ファイル名風のURL・日本語を含むURL。公式ドキュメントは読めていない）。入力を録画する計測は**入っていない**ことを10/5に確認（GA4だけ） |
 
 ---

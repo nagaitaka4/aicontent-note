@@ -48,13 +48,16 @@ js = js.slice(0, noticeEnd) + js.slice(noticeEnd).replace(SAFE, (c) => '\\u' + c
 if (SAFE.test(js.slice(noticeEnd))) throw new Error('日本語以外の非ASCII文字がscriptに残っています（WordPressが書き換える）');
 
 // --- 検査2：<script> の中に置くと壊れる並びが無いこと ---
-for (const bad of ['</script', '<!--', '<script']) {
+for (const bad of ['</script', '<!--', '<script', '-->']) {
   if (js.toLowerCase().includes(bad)) throw new Error('script内に置けない文字列: ' + bad);
 }
 if (/\n\s*\n/.test(js)) throw new Error('空行が入っている（WordPressの自動整形で崩れる）');
 
 const fallback = '<p>「投稿まえチェック」を表示するには、ブラウザのJavaScriptが必要です。しばらく待っても表示されない場合は、ページを読み込み直してください。</p>';
-const snippet = '<div id="pmc-host">' + fallback + '</div>\n<script>' + js + '</script>';
+// scriptの中身を <!-- と //--> で包む。WordPressは表示時の整形（wptexturize）で、コード中の `<=1&&a>` のような並びを
+// タグと誤認し、&& を &#038;&#038; に変える（2026-10-05 固定ページ1094のプレビューで53か所・ツールが動かなかった）。
+// HTMLコメントの中は整形されない。ブラウザは <!-- を1行コメントとして読むので、コードの意味は変わらない
+const snippet = '<div id="pmc-host">' + fallback + '</div>\n<script><!--\n' + js + '\n//--></script>';
 
 const dist = path.join(__dirname, 'dist');
 fs.mkdirSync(dist, { recursive: true });

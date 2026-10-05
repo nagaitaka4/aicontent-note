@@ -1,9 +1,20 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-05
+最終更新: 2026-10-06
 
 
 ---
+
+## [2026-10-06] 調査結果（デイリー・火曜）
+
+**①は差分なし。**
+
+- **【記録のみ】npm `@anthropic-ai/claude-code`**：`next`が2.1.290（10/6 03:12 JST公開）。`latest`は2.1.289・`stable`は2.1.285のまま。CHANGELOG.mdとGitHubのリリースはまだ`2.1.289`が先頭で、2.1.290の中身は未公開＝**判断材料なし**
+- **【差分なし】Claude Apps リリースノート**：最新はSeptember 28, 2026「Claude Sonnet 5.5 launch」のまま／**Newsroom**：最新は10/2「Anthropic invests $100 million…」のまま
+- **【新規・記録のみ】claude.com/blog**：October 5, 2026「How Cresta turned CX expertise into an agent builder on the Claude Agent SDK」。**採らない理由**：企業の導入事例で、使う側の手元は変わらない
+- **【差分なし】@ClaudeDevs**：最新は10/3 05:25 JST「You should Know」のまま
+- **巡回チェック**：CHANGELOG ✅／npm ✅／GitHub releases ✅／Claude Apps ✅（WebFetch）／Newsroom ✅（WebFetch）／claude.com/blog ✅（WebFetch）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-05] 調査結果（デイリー・月曜）
 

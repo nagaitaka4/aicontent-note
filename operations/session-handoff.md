@@ -59,7 +59,7 @@
 
 | 記事・作業 | 現在地 | 次に要ること |
 |---|---|---|
-| **投稿まえチェック（X投稿チェッカー）の公開** | **WPの下書きまで済み（page 1094）**・ブランチはmainに取り込み済み | ユーザーがSSPの2欄を入れて公開 → プライバシーポリシーに5ブロック追加（文面はユーザーOK待ち）→ 公開後の作業（`tools/post-mae-check/README.md`の「⏳ 未公開」・GSC・MD同期） |
+| **投稿まえチェック（X投稿チェッカー）の公開** | **WPの下書きまで済み（page 1094）**・ブランチはmainに取り込み済み | ユーザーがSSPの2欄を入れて公開 → プライバシーポリシーに5ブロック追加（**文面は10/5 13:52にユーザーOK**＝`pages/privacy-policy.md`の新しい節そのまま・文の区切りに`<br>`・「まとめて追加」を追記済み。固定ページの公開後に反映し、最終更新日を反映日にそろえる）→ 公開後の作業（`tools/post-mae-check/README.md`の「⏳ 未公開」・GSC・MD同期） |
 | no.32 ブログは外注か内製か。AIで書く実費と代行の相場を並べた（リライト・URL維持） | **10/2 17:08にWPへ反映・公開後の作業まで完了**（post 432）。ファイル：構成案`articles/no32_rewrite_composition.md`／材料シート`operations/structure-drafts/in-house-vs-outsource-cost-facts.md`／記録`operations/rewrite-log.md` | 効果の確認は2026-11のGSC（GSCの再リクエストは10/2 17:44に済み・no.40の本文リンク文言は10/2 17:41に修正済み） |
 | no.72 ChatGPTとClaudeの使い分け | **10/1 13:15公開・公開後の作業まで完了**（post 1078・MD同期・workflow・backlog・issue #2・TOP10繰り上げ・GSC確認の追加・Xへ3本・no.11からリンク1行） | GSCインデックス確認（`tasks/README.md`常時掲載） |
 | no.71 Claude Codeの許可、どこまで自動でいいか | **9/30 08:51公開・公開後の作業まで完了**（post 1059） | 同上 |

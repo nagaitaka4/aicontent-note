@@ -5,7 +5,9 @@ seo_title: X投稿チェッカー｜文字数と、伝わりにくい言い回�
 url: https://aicontent-note.com/x-post-checker/
 slug: x-post-checker
 status: draft
-last_updated: 2026-10-01
+last_updated: 2026-10-05
+eyecatch: images/pages/x-post-checker-eyecatch.png
+eyecatch_alt: X投稿チェッカー「投稿まえチェック」｜投稿前に文字数と言い回しを確認する無料ツール
 description: X投稿の文字数と、前の投稿を知らないと伝わりにくい言い回し、直近の投稿との重なりを確認できる無料ツールです。数え方は、旧Twitter公開の計算ライブラリ（twitter-text）が基準です。ブラウザだけで動き、入力した文章は外部に送りません。AIも使わず、スマホでも使えます。
 ---
 

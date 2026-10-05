@@ -12,7 +12,7 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 1. `git pull` して、`tools/post-mae-check/dist/page.wp.txt` を開き、**全文をコピー**する
 2. WordPressで**固定ページ**を新規作成 → 右上「⋮」→「コードエディター」に**全文を貼り付ける**（`md-to-wp.py` の出力を貼るときと同じ手順）
 3. 先頭の段落ブロック「WPの入力欄に写す情報」を見て、タイトル・SEOタイトル・スラッグ・説明文を各欄に写し、**そのブロックは削除する**
-4. 「ビジュアルエディター」に戻す → プレビューで動作確認 → 公開（アイキャッチは未作成。`knowledge/eyecatch-rules.md` の手順で）
+4. 「ビジュアルエディター」に戻す → 右の設定で「アイキャッチ画像」に `images/pages/x-post-checker-eyecatch.png`（1200×630・作成済み）を設定し、代替テキストを `pages/x-post-checker.md` の `eyecatch_alt` にする → プレビューで動作確認 → 公開
 
 作り直すとき：ツール（`src/`）を直したら `node build.js` → 原稿（`pages/x-post-checker.md`）を直したら `python3 tools/post-mae-check/compose-page.py`。後者が、ブロックの対応・CTA文言（最新の公開記事と一致）・ツールが1つだけ・MD記法の残りを検査してから `dist/page.wp.txt` を書く。
 
@@ -24,16 +24,17 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 
 1. `git pull` して `python3 tools/post-mae-check/compose-page.py` を実行する。入稿に使うのは **`dist/page.body.wp.txt`**（入稿情報を除いた本文だけ。先頭は `core/paragraph` のリード）
 2. Chromeで wp-admin を開き、ログイン済みか確認する。同じスラッグが無いことを確認する：`GET /wp-json/wp/v2/pages?slug=x-post-checker&status=any`
-3. `POST /wp-json/wp/v2/pages` に `status:'draft'`・`title`・`slug`・`content`（page.body.wp.txt）を送る。**記事の `posts` ではなく `pages`**。カテゴリー・タグ・アイキャッチは無し
+3. `POST /wp-json/wp/v2/pages` に `status:'draft'`・`title`・`slug`・`content`（page.body.wp.txt）を送る。**記事の `posts` ではなく `pages`**。カテゴリー・タグは無し
 4. ★ツール本体の `<script>` が残っているか確認する（`GET …/pages/<id>?context=edit` の `content.raw`）。管理者アカウントなら残る。消えていたら、貼り付けでの入稿に切り替える
 5. ★説明文（SEO SIMPLE PACK）はRESTでは入らない。エディターで `textarea[name="ssp_meta_description"]` に入れて保存する。**固定ページの編集画面にこの欄があるか未確認**
-6. コメント・ピンバックを閉じる：`POST …/pages/<id> {comment_status:'closed', ping_status:'closed'}`（レスポンスで両方 `closed` を確認）
-7. 数えて確認する。`compose-page.py` が出す値と合わせる：H2 4／表 3／`swl-marker` 1／CTAボタン 1／script 1。公開ページ（プレビュー）にMDの記法（`` ` ``・`**`・`==`）が残っていないかも見る
-8. 開いているエディターは `location.reload()` で読み直す。**RESTで送ったあとに `savePost()` を呼ばない**（古い自動保存で上書きされる）
+6. アイキャッチ：`images/pages/x-post-checker-eyecatch.png` を `media-new.php` のfile inputへ流し込む → `POST /wp/v2/media/<id>` でalt（`pages/x-post-checker.md` の `eyecatch_alt`）→ `POST /wp/v2/pages/<id> {featured_media}`（7.6章の手順6と同じ。**記事の `posts` ではなく `pages`**）。★固定ページでSWELLがアイキャッチを表示するかは未確認（ページ設定で出ない場合は、あなたの画面で見る）
+7. コメント・ピンバックを閉じる：`POST …/pages/<id> {comment_status:'closed', ping_status:'closed'}`（レスポンスで両方 `closed` を確認）
+8. 数えて確認する。`compose-page.py` が出す値と合わせる：H2 4／表 3／`swl-marker` 1／CTAボタン 1／script 1。公開ページ（プレビュー）にMDの記法（`` ` ``・`**`・`==`）が残っていないかも見る
+9. 開いているエディターは `location.reload()` で読み直す。**RESTで送ったあとに `savePost()` を呼ばない**（古い自動保存で上書きされる）
 
 ★SWELLの固定ページ設定（タイトルの表示・サイドバー・ツールを幅広に見せるテンプレート）はRESTで送れない可能性が高い。入稿後にあなたの画面で見る。
 
-CTAは**最新の公開記事（2026-10-01時点はno.71 `claude-code-permission-modes`）の末尾からそのままコピー**してある（直近4本の公開記事で同一・`article-self-check.py` の標準文言とも一致）。新しい記事が公開されたら、`compose-page.py` の `LATEST_ARTICLE` と原稿のCTAを合わせ直す。
+CTAは**最新の公開記事（2026-10-05時点はno.72 `chatgpt-claude-division-of-work`。no.71と同文）の末尾からそのままコピー**してある（直近の公開記事で同一・`article-self-check.py` の標準文言とも一致）。新しい記事が公開されたら、`compose-page.py` の `LATEST_ARTICLE` と原稿のCTAを合わせ直す。
 
 公開前の確認（この環境からは本番サイトに触れないため、**あなたの画面で1回**確かめる）：
 

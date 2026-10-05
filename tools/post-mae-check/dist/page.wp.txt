@@ -1,5 +1,5 @@
 <!-- wp:paragraph -->
-<p>【WPの入力欄に写す情報】※各欄に写したら、このブロックを削除する<br><br>■ タイトル（18字）<br>投稿まえチェック（X投稿チェッカー）<br><br>■ SEOタイトル（30字）<br>X投稿チェッカー｜文字数と、伝わりにくい言い回しを無料で確認<br><br>■ スラッグ<br>x-post-checker<br><br>■ URL<br>https://aicontent-note.com/x-post-checker/<br><br>■ 説明文・SEO（140字）<br>X投稿の文字数と、前の投稿を知らないと伝わりにくい言い回し、直近の投稿との重なりを確認できる無料ツールです。数え方は、旧Twitter公開の計算ライブラリ（twitter-text）が基準です。ブラウザだけで動き、入力した文章は外部に送りません。AIも使わず、スマホでも使えます。<br><br>■ ページの種類<br>固定ページ（記事ではない）<br><br>■ アイキャッチ<br>未作成（参考画像 → プロンプト1案 → 生成・アップ。knowledge/eyecatch-rules.md）</p>
+<p>【WPの入力欄に写す情報】※各欄に写したら、このブロックを削除する<br><br>■ タイトル（18字）<br>投稿まえチェック（X投稿チェッカー）<br><br>■ SEOタイトル（30字）<br>X投稿チェッカー｜文字数と、伝わりにくい言い回しを無料で確認<br><br>■ スラッグ<br>x-post-checker<br><br>■ URL<br>https://aicontent-note.com/x-post-checker/<br><br>■ 説明文・SEO（140字）<br>X投稿の文字数と、前の投稿を知らないと伝わりにくい言い回し、直近の投稿との重なりを確認できる無料ツールです。数え方は、旧Twitter公開の計算ライブラリ（twitter-text）が基準です。ブラウザだけで動き、入力した文章は外部に送りません。AIも使わず、スマホでも使えます。<br><br>■ ページの種類<br>固定ページ（記事ではない）<br><br>■ アイキャッチ（ファイル）<br>images/pages/x-post-checker-eyecatch.png（1200×630・作成済み。WPのアイキャッチに設定する）<br><br>■ アイキャッチのalt<br>X投稿チェッカー「投稿まえチェック」｜投稿前に文字数と言い回しを確認する無料ツール</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

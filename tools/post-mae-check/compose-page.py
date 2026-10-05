@@ -26,7 +26,7 @@ WP_OUT = ROOT / "operations" / "wp-output" / (PAGE_MD.stem + ".wp.txt")
 DEST = ROOT / "tools" / "post-mae-check" / "dist" / "page.wp.txt"
 DEST_BODY = ROOT / "tools" / "post-mae-check" / "dist" / "page.body.wp.txt"   # 入稿情報を除いた本文だけ（RESTで送る用）
 MARKER = "【ツールをここに表示】"
-LATEST_ARTICLE = ROOT / "articles" / "claude-code-permission-modes.md"   # CTAの元（最新の公開記事）。CTAを書き換えるときは最新の公開記事に合わせる
+LATEST_ARTICLE = ROOT / "articles" / "chatgpt-claude-division-of-work.md"   # CTAの元（最新の公開記事）。CTAを書き換えるときは最新の公開記事に合わせる
 
 
 def frontmatter(md):
@@ -46,7 +46,8 @@ def info_block(fm):
         ("URL", fm["url"]),
         (f"説明文・SEO（{len(fm['description'])}字）", fm["description"]),
         ("ページの種類", "固定ページ（記事ではない）"),
-        ("アイキャッチ", "未作成（参考画像 → プロンプト1案 → 生成・アップ。knowledge/eyecatch-rules.md）"),
+        ("アイキャッチ（ファイル）", fm["eyecatch"] + "（1200×630・作成済み。WPのアイキャッチに設定する）"),
+        ("アイキャッチのalt", fm["eyecatch_alt"]),
     ]
     lines = ["【WPの入力欄に写す情報】※各欄に写したら、このブロックを削除する", ""]
     for label, value in rows:

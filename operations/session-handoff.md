@@ -1,6 +1,6 @@
 # セッション引き継ぎ
 
-最終更新：2026-10-05 07:45（X：`GAICHU32-リ`投稿・@tokkyo宛リプライ完了・月曜の定期リサーチ）／2026-10-04 09:35（X：`FACTG-01`投稿・@rito_travel宛リプライ完了）／2026-10-02 17:45（**no.32（post 432）のリライトは全部完了**＝WP差し替え・公開後の作業・no.40の旧題リンクの修正・GSCの再リクエスト。次の記事はTOP10 #1「Claude.ai・デスクトップ・Cowork・Claude Code」。Xは朝ブリーフがメインで動く＝確定枠なし）
+最終更新：2026-10-05 夜（**投稿まえチェック（X投稿チェッカー）：ツール・固定ページ原稿・アイキャッチ・プライバシーポリシー追記まで完了＝WPへの入稿は未＝Macのセッション用プロンプトを作成**）／2026-10-05 07:45（X：`GAICHU32-リ`投稿・@tokkyo宛リプライ完了・月曜の定期リサーチ）／2026-10-04 09:35（X：`FACTG-01`投稿・@rito_travel宛リプライ完了）／2026-10-02 17:45（**no.32（post 432）のリライトは全部完了**＝WP差し替え・公開後の作業・no.40の旧題リンクの修正・GSCの再リクエスト。次の記事はTOP10 #1「Claude.ai・デスクトップ・Cowork・Claude Code」。Xは朝ブリーフがメインで動く＝確定枠なし）
 
 ---
 
@@ -8,6 +8,8 @@
 
 **TOP10 #1「Claude.ai・デスクトップ・Cowork・Claude Code。非エンジニアはどれを使えばいいか」（T-2・D-28）の構成案から。**
 着手前に、**チャットとCoworkの統合（9/16公式）がユーザーの画面に届いたか**を確認して題を決める（`tasks/README.md` #1の行）。`python3 operations/article-precheck.py <slug> "KW"` → `rules/article-flow.md`の4原則 → 材料シート。
+
+> **別の作業（記事のTOP10 #1とは別セッション）**：投稿まえチェック（X投稿チェッカー）をWordPressに載せる作業は、**Macのセッション**で`operations/session-prompts/x-post-checker-publish.md`の枠の中を貼って始める（下の「投稿まえチェック」の節）。
 
 ### no.32の残り（無し＝全部完了）
 
@@ -38,10 +40,26 @@
 
 ---
 
+## 投稿まえチェック（X投稿チェッカー）の公開作業（2026-10-05・別セッション用）
+
+作業ブランチ：**`claude/x-post-checker-v1-dzvj9w`**（mainに**未マージ**・PRなし。次のセッションで、コミット一覧を見せてからマージしてよいか確認する）。
+
+| 項目 | 状態 |
+|---|---|
+| ツール本体 `tools/post-mae-check/` | ✅ 完成・ビルド済み・テスト通過（単体48・画面48・固定ページ24・公式ライブラリとの突き合わせ約84万本）。`operations/x-count.py`も公式の数え方に直した（`operations/lessons.md` 10/1） |
+| 固定ページ原稿 `pages/x-post-checker.md` | ✅ 作成・GPTレビュー2回反映（status draft）。**10/5：`eyecatch`・`eyecatch_alt`を追加**／CTAは最新の公開記事no.72と同文で一致（`compose-page.py`の`LATEST_ARTICLE`もno.72に更新） |
+| アイキャッチ | ✅ **`images/pages/x-post-checker-eyecatch.png`（1200×630）**。参考画像（SmartHR）の第4案を採用。経緯は`operations/structure-drafts/x-post-checker-eyecatch-prompt.md`・`operations/lessons.md`（10/5）。⚠️ **保存名は仮**（下の保留事項） |
+| プライバシーポリシー | ✅ MD（`pages/privacy-policy.md`）に節「ブラウザに保存される情報について」を追加。**WPへは未反映**（公開済みのページ・固定ページ公開の後に5ブロックだけ足す） |
+| **WPへの入稿（固定ページ）** | ❌ **未**。Macのセッションで、`operations/session-prompts/x-post-checker-publish.md`のプロンプトを貼る。固定ページでは前例が無い（★）：`<script>`が残るか／SSPの欄があるか／SWELLの固定ページ設定／アイキャッチの表示 |
+| 確認が残っている | iPhone実機のSafari／Xの現在の数え方（新しい絵文字・ファイル名風のURL・日本語を含むURL。公式ドキュメントは読めていない）／サイトに入力を録画する計測（Clarity・Hotjar）が入っていないか |
+
+---
+
 ## 進行中の作業
 
 | 記事・作業 | 現在地 | 次に要ること |
 |---|---|---|
+| **投稿まえチェック（X投稿チェッカー）の公開** | クラウドでの作業は完了（上の節）。**WPへの入稿は未** | Macのセッションで`operations/session-prompts/x-post-checker-publish.md`を貼る |
 | no.32 ブログは外注か内製か。AIで書く実費と代行の相場を並べた（リライト・URL維持） | **10/2 17:08にWPへ反映・公開後の作業まで完了**（post 432）。ファイル：構成案`articles/no32_rewrite_composition.md`／材料シート`operations/structure-drafts/in-house-vs-outsource-cost-facts.md`／記録`operations/rewrite-log.md` | 効果の確認は2026-11のGSC（GSCの再リクエストは10/2 17:44に済み・no.40の本文リンク文言は10/2 17:41に修正済み） |
 | no.72 ChatGPTとClaudeの使い分け | **10/1 13:15公開・公開後の作業まで完了**（post 1078・MD同期・workflow・backlog・issue #2・TOP10繰り上げ・GSC確認の追加・Xへ3本・no.11からリンク1行） | GSCインデックス確認（`tasks/README.md`常時掲載） |
 | no.71 Claude Codeの許可、どこまで自動でいいか | **9/30 08:51公開・公開後の作業まで完了**（post 1059） | 同上 |
@@ -74,6 +92,9 @@
 
 ### まだ決まっていないこと
 
+- **固定ページのアイキャッチの保存名**：ルールは`knowledge/eyecatch-rules.md`の`eyecatch_XXXX.png`（記事の`no`・4桁）。固定ページには`no`が無く、no.73は記事に使用済み（`eyecatch_0073.png`にすると上書き事故）。現状は`images/pages/x-post-checker-eyecatch.png`（`service-banner.png`の前例）＝仮。**ルールに「固定ページは`images/pages/<slug>-eyecatch.png`」と追記してよいか、ユーザーの了承待ち**
+- プライバシーポリシーの「最終更新日」：MDは2026-10-01。WPに反映した日に、WPとMDの両方を合わせる
+- Xの`閾値-気`（`knowledge/x/queue.md`）：あと2字削る・盲検・`x-gate.py`が未実施（投稿前に必要）
 - no.27の料金表（税別20ドル・100ドル）を、日本向けの税込み表示（22ドル・110ドル）に合わせて直すか
 - `wp-block-guide.md`の「本文HTMLをWPへ運ぶ方法」（PNGに詰める方法）を、使わない方法として書き直すか（10/2に安全チェックで拒否された）。分けて積む方法（7.6の手順4）は10/2 17時台の新しいセッションで通った
 - no.72の表・説明文に残る「ふだん」を「普段」にそろえるか（ユーザーは1か所だけ「普段」に直した）

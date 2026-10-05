@@ -96,43 +96,25 @@ const check = (name, cond, detail) => { if (cond) pass++; else { fail++; console
     check('超過のチップ', (await page.textContent('#pmc-chip1')).includes('超過'));
     await page.screenshot({ path: path.join(shots, '02-phone-over.png'), fullPage: true });
 
-    // 保存 → 重なり
-    await page.fill('#pmc-t', '月100ドルのMaxプランに課金して、Sonnet 5.5で記事を10本書いた話です。');
-    await page.click('#pmc-save');
-    check('保存できた', (await page.textContent('#pmc-toast')).includes('保存しました'), await page.textContent('#pmc-toast'));
-    check('保存した直後は同じ文章なので重なりなし', (await page.textContent('#pmc-chip3')).includes('重なりなし'), await page.textContent('#pmc-chip3'));
-    await page.click('#pmc-save');
-    check('同じ文章は二重に保存しない', (await page.textContent('#pmc-toast')).includes('すでに保存'), await page.textContent('#pmc-toast'));
+    // ③（直近の投稿との重なり）と保存の仕組みは公開版から外した（2026-10-05）
+    check('③の欄が無い', (await page.locator('#pmc-h3, #pmc-save, #pmc-bulk, #pmc-saved').count()) === 0);
+    check('画面に「重なり」「保存した投稿」の文言が無い', !/重なり|保存した投稿|まとめて追加/.test(await page.evaluate(() => document.querySelector('#pmc-host').shadowRoot.textContent)));
 
-    await page.fill('#pmc-t', '今日は月100ドルのプランの話をもう一度。別の角度から書いてみました。');
-    check('数字つきの語（100ドル）が同じなら重なり', (await page.textContent('#pmc-chip3')).includes('重なり 1件'), await page.textContent('#pmc-chip3'));
-    check('理由に「100ドル」が出る', (await page.textContent('#pmc-hits')).includes('100ドル'), await page.textContent('#pmc-hits'));
-    await page.screenshot({ path: path.join(shots, '03-phone-findings.png'), fullPage: true });
-
-    await page.fill('#pmc-t', '全然ちがう話です。今日は散歩をしました。');
-    check('関係ない文章は重なりなし', (await page.textContent('#pmc-chip3')).includes('重なりなし'), await page.textContent('#pmc-chip3'));
-
-    // 再読み込みしても残る
+    // 何も保存しない：入力して再読み込みすると消え、ブラウザの保存領域に何も無い
+    await page.fill('#pmc-t', '月100ドルのMaxプランに課金して、記事を10本書いた話です。');
+    await page.click('summary:has-text("見る項目を選ぶ")');
+    await page.uncheck('#pmc-on-report');
+    const stored = await page.evaluate(() => ({ local: localStorage.length, session: sessionStorage.length, cookie: document.cookie }));
+    check('localStorage・sessionStorage・Cookieに何も入らない', stored.local === 0 && stored.session === 0 && stored.cookie === '', stored);
     await page.reload();
     await page.waitForSelector('#pmc-t');
-    check('再読み込み後も保存が残る', (await page.textContent('#pmc-saved-sum')).includes('1件'), await page.textContent('#pmc-saved-sum'));
-    await page.fill('#pmc-t', '今日は月100ドルのプランの話をもう一度。');
-    check('再読み込み後も重なりを見つける', (await page.textContent('#pmc-chip3')).includes('重なり'), await page.textContent('#pmc-chip3'));
+    check('再読み込みすると入力は消える', (await page.inputValue('#pmc-t')) === '');
+    check('再読み込みすると見る項目は全部ONに戻る', await page.evaluate(() => document.querySelector('#pmc-host').shadowRoot.querySelector('#pmc-on-report').checked));
 
-    // まとめて追加
-    await page.click('summary:has-text("まとめて追加")');
-    await page.fill('#pmc-bulk', '2026-09-20\nAAA\n---\n2026-09-21\nBBB\n---\nCCC');
-    await page.click('#pmc-bulk-add');
-    check('まとめて追加（3件）', (await page.textContent('#pmc-toast')).includes('3件を追加'), await page.textContent('#pmc-toast'));
-    check('保存数が4件になる', (await page.textContent('#pmc-saved-sum')).includes('4件'), await page.textContent('#pmc-saved-sum'));
-
-    // 個別削除・全削除
-    await page.click('summary:has-text("保存した投稿")');
-    await page.locator('#pmc-saved button:has-text("削除")').first().click();
-    check('1件削除で3件', (await page.textContent('#pmc-saved-sum')).includes('3件'), await page.textContent('#pmc-saved-sum'));
-    page.once('dialog', (d) => d.accept());
-    await page.click('#pmc-del-all');
-    check('全削除で0件', (await page.textContent('#pmc-saved-sum')).includes('0件'), await page.textContent('#pmc-saved-sum'));
+    // クリア
+    await page.fill('#pmc-t', 'あいう');
+    await page.click('#pmc-clear');
+    check('クリアで入力が空になり、重みが0', (await page.inputValue('#pmc-t')) === '' && (await page.textContent('#pmc-w')) === '0');
 
     // 項目のOFF
     await page.fill('#pmc-t', '昨日の話');
@@ -148,14 +130,11 @@ const check = (name, cond, detail) => { if (cond) pass++; else { fail++; console
       const r = document.querySelector('#pmc-host').shadowRoot;
       const t = r.querySelector('#pmc-t').getBoundingClientRect();
       const card = r.querySelector('.card').getBoundingClientRect();
-      const btn = getComputedStyle(r.querySelector('#pmc-save'));
-      const sub = getComputedStyle(r.querySelector('#pmc-bulk-add'));
-      return { textareaW: t.width, cardW: card.width, btnColor: btn.color, btnBg: btn.backgroundColor, subColor: sub.color };
+      const link = getComputedStyle(r.querySelector('#pmc-clear'));
+      return { textareaW: t.width, cardW: card.width, linkColor: link.color };
     });
     check('入力欄がカードと同じ幅まで広がる', Math.abs(geo.textareaW - geo.cardW) < 2, geo);
-    check('主ボタンの文字が白（読める）', geo.btnColor === 'rgb(255, 255, 255)' && geo.btnBg === 'rgb(11, 107, 99)', geo);
-    check('副ボタンの文字がアクセント色', geo.subColor === 'rgb(11, 107, 99)', geo);
-    check('前の操作のメッセージは、入力し直すと消える', (await page.textContent('#pmc-toast')) === '', await page.textContent('#pmc-toast'));
+    check('「クリア」の文字がアクセント色', geo.linkColor === 'rgb(11, 107, 99)', geo);
     check('スマホ幅のtextareaが16px以上（iPhoneで拡大されない）', (await page.evaluate(() => parseFloat(getComputedStyle(document.querySelector('#pmc-host').shadowRoot.querySelector('#pmc-t')).fontSize))) >= 16);
 
     check('通信：自分のページ以外へのリクエストなし', blocked.length === 0, blocked);
@@ -182,18 +161,18 @@ const check = (name, cond, detail) => { if (cond) pass++; else { fail++; console
     const vis = await page.evaluate(() => {
       const r = document.querySelector('#pmc-host').shadowRoot;
       const t = r.querySelector('#pmc-t');
-      const b = r.querySelector('#pmc-save');
+      const b = r.querySelector('#pmc-clear');
       const h = r.querySelector('h2.title');
       const cs = (e) => getComputedStyle(e);
       return {
         textareaShown: cs(t).display !== 'none' && t.getBoundingClientRect().height > 100,
-        btnBg: cs(b).backgroundColor, btnHeight: b.getBoundingClientRect().height,
+        btnColor: cs(b).color, btnBg: cs(b).backgroundColor, btnHeight: b.getBoundingClientRect().height,
         titleSize: cs(h).fontSize, titleBg: cs(h).backgroundColor,
       };
     });
     check('ページ側のCSSがあっても入力欄が見える', vis.textareaShown, vis);
-    check('ボタンの色がページ側のCSSに上書きされない', vis.btnBg === 'rgb(11, 107, 99)', vis.btnBg);
-    check('ボタンの高さが44px以上', vis.btnHeight >= 44, vis.btnHeight);
+    check('ボタンの色がページ側のCSSに上書きされない', vis.btnColor === 'rgb(11, 107, 99)' && vis.btnBg === 'rgba(0, 0, 0, 0)', vis);
+    check('ボタンの高さが36px以上（ページ側の height:10px に負けない）', vis.btnHeight >= 36, vis.btnHeight);
     check('見出しがページ側のCSSに上書きされない', vis.titleSize === '20px' && vis.titleBg === 'rgba(0, 0, 0, 0)', vis);
     await page.fill('#pmc-t', '先日の話。');
     check('ページに埋め込んでも動く', (await page.textContent('#pmc-chip2')).includes('確認'), await page.textContent('#pmc-chip2'));
@@ -203,19 +182,20 @@ const check = (name, cond, detail) => { if (cond) pass++; else { fail++; console
     await ctx.close();
   }
 
-  // ===== 4. ブラウザに保存できない環境（プライベートブラウズなど） =====
+  // ===== 4. ブラウザの保存領域に一度も触らない（プライベートブラウズなどでも同じに動く） =====
   {
     const { ctx, page, errors } = await newPage(PHONE, () => {
-      Storage.prototype.setItem = function () { throw new Error('QuotaExceededError'); };
+      window.__touched = 0;
+      ['getItem', 'setItem', 'removeItem', 'clear', 'key'].forEach((m) => {
+        Storage.prototype[m] = function () { window.__touched++; throw new Error('blocked'); };
+      });
     });
     await page.goto(base + '/');
     await page.waitForSelector('#pmc-t');
-    check('保存できない環境では注意書きが出る', (await page.textContent('#pmc-store-note')).includes('保存できません'), await page.textContent('#pmc-store-note'));
-    await page.fill('#pmc-t', '保存できない環境のテスト。月100ドル');
-    await page.click('#pmc-save');
-    await page.fill('#pmc-t', '月100ドルの話をもう一度');
-    check('保存できなくても、開いている間は重なりを見つける', (await page.textContent('#pmc-chip3')).includes('重なり'), await page.textContent('#pmc-chip3'));
-    check('保存できない環境でもエラーなし', errors.length === 0, errors);
+    await page.fill('#pmc-t', '保存できない環境のテスト。昨日の話');
+    check('保存領域が使えない環境でも動く', (await page.textContent('#pmc-chip2')).includes('確認'), await page.textContent('#pmc-chip2'));
+    check('localStorage・sessionStorageを一度も呼ばない', (await page.evaluate(() => window.__touched)) === 0, await page.evaluate(() => window.__touched));
+    check('保存領域が使えない環境でもエラーなし', errors.length === 0, errors);
     await ctx.close();
   }
 

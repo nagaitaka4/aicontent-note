@@ -18,6 +18,8 @@ const forbidden = [
   [/WebSocket/, 'WebSocket'], [/EventSource/, 'EventSource'], [/importScripts/, 'importScripts'],
   [/\bimport\s*\(/, 'import('], [/\beval\s*\(/, 'eval('], [/new\s+Function/, 'new Function'],
   [/document\.cookie/, 'document.cookie'], [/\.src\s*=/, '.src ='], [/\.href\s*=/, '.href ='],
+  // 何も保存しない（2026-10-05〜。プライバシーポリシーに「保存しません」と書いている）
+  [/localStorage/, 'localStorage'], [/sessionStorage/, 'sessionStorage'], [/indexedDB/i, 'indexedDB'], [/caches\./, 'Cache API'],
   [/createElement\(\s*['"](?:script|img|link|iframe|object|embed)['"]/, '外部を読む要素の生成'],
   [/el\(\s*['"](?:script|img|link|iframe|object|embed)['"]/, '外部を読む要素の生成'],
   [/<\s*(?:script|img|link|iframe|object|embed)\b/i, 'HTMLに外部要素'], [/url\(/i, 'CSSのurl('], [/@import/i, 'CSSの@import'],

@@ -1,67 +1,12 @@
 /* 投稿まえチェック：画面の動き
  *
  * 外部と通信しない（fetch・XMLHttpRequest・外部スクリプト・画像・フォントを使わない）。
- * 保存するのは「投稿した文章」と設定だけで、この端末のブラウザ（localStorage）の中にしか置かない。
+ * 何も保存しない（localStorage・Cookie などを使わない）。入力した文章は、ページを閉じれば消える。
+ * 2026-10-05：③直近の投稿との重なり（と投稿の保存）は公開版から外した。判定の中身は core.js に残してある（x-cannibal.py との突き合わせテスト用）。
  * PMC（core.js）と PMC_CSS（style.css）は、ビルド時に同じスコープへ並べて入れる。
  */
 
 var SPEC_CHECKED = '2026-09-30';     // Xの仕様（文字数の数え方）を確かめた日。確かめ直したら更新する
-var KEY_POSTS = 'pmc:v1:posts';
-var KEY_SETTINGS = 'pmc:v1:settings';
-var MAX_POSTS = 200;
-
-/* ---------- 保存（localStorage。使えない環境ではページを開いている間だけメモリに持つ） ---------- */
-
-function makeStore() {
-  var mem = {};
-  var ok = true;
-  try {
-    window.localStorage.setItem('pmc:probe', '1');
-    window.localStorage.removeItem('pmc:probe');
-  } catch (e) { ok = false; }
-  return {
-    get ok() { return ok; },
-    get: function (key) {
-      if (ok) {
-        try {
-          var v = window.localStorage.getItem(key);
-          return v === null ? null : JSON.parse(v);
-        } catch (e) { /* 壊れた値は無かったことにする */ }
-      }
-      return mem[key] === undefined ? null : mem[key];
-    },
-    set: function (key, val) {
-      mem[key] = val;
-      if (ok) {
-        try { window.localStorage.setItem(key, JSON.stringify(val)); } catch (e) { ok = false; }
-      }
-    }
-  };
-}
-
-function defaultSettings() {
-  return { days: 14, common: PMC.DEFAULT_COMMON.slice(), enabled: { leak: true, report: true, deixis: true } };
-}
-
-function loadSettings(store) {
-  var d = defaultSettings();
-  var s = store.get(KEY_SETTINGS);
-  if (!s || typeof s !== 'object') return d;
-  if (s.days === 7 || s.days === 14 || s.days === 30) d.days = s.days;
-  if (Array.isArray(s.common)) d.common = s.common.filter(function (w) { return typeof w === 'string' && w.trim(); }).slice(0, 60);
-  if (s.enabled && typeof s.enabled === 'object') {
-    ['leak', 'report', 'deixis'].forEach(function (k) { if (typeof s.enabled[k] === 'boolean') d.enabled[k] = s.enabled[k]; });
-  }
-  return d;
-}
-
-function loadPosts(store) {
-  var p = store.get(KEY_POSTS);
-  if (!Array.isArray(p)) return [];
-  return p.filter(function (x) {
-    return x && typeof x.id === 'string' && typeof x.text === 'string' && x.text.trim() && PMC.parseDate(x.date);
-  });
-}
 
 /* ---------- 小さな道具 ---------- */
 
@@ -73,7 +18,6 @@ function el(tag, cls, text) {
 }
 function clear(node) { while (node.firstChild) node.removeChild(node.firstChild); }
 function oneLine(s) { return String(s).replace(/\s*\n\s*/g, ' ↵ '); }
-function mmdd(date) { return date.slice(5).replace('-', '/'); }
 function isLow(code) { return code >= 0xdc00 && code <= 0xdfff; }
 
 // 該当箇所を前後の文脈つきで切り出し、該当部分に <mark> をつける
@@ -90,19 +34,12 @@ function context(text, index, length) {
   return frag;
 }
 
-function head(text) {
-  var chars = Array.from(oneLine(text.trim()));
-  return chars.length > 40 ? chars.slice(0, 40).join('') + '…' : chars.join('');
-}
-
-function newId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
-
 /* ---------- 画面の骨組み（ユーザーの文章は入れない静的な部分だけ） ---------- */
 
 var SKELETON = [
   '<h2 class="title">投稿まえチェック</h2>',
-  '<p class="lead">X投稿の文字数・伝わりにくい言い回し・直近の投稿との重なりを、投稿する前に確認します。</p>',
-  '<p class="privacy">入力した文章は、このツールが外部に送ることはありません。ブラウザの中だけで処理します（AIも使っていません）。</p>',
+  '<p class="lead">X投稿の文字数と、伝わりにくい言い回しを、投稿する前に確認します。</p>',
+  '<p class="privacy">入力した文章は、外部に送らず、保存もしません。ブラウザの中だけで処理し、ページを閉じれば消えます（AIも使っていません）。</p>',
 
   '<div class="field">',
   '<div class="field-top"><label for="pmc-t">投稿の下書き</label><button type="button" class="link" id="pmc-clear">クリア</button></div>',
@@ -137,34 +74,7 @@ var SKELETON = [
   '</div></details>',
   '</section>',
 
-  // ③ 直近の重なり
-  '<section class="card" aria-labelledby="pmc-h3">',
-  '<div class="card-head"><h3 class="card-title" id="pmc-h3">③ 直近の投稿との重なり</h3><span class="chip" id="pmc-chip3"></span></div>',
-  '<p class="sub" id="pmc-ov-sum"></p>',
-  '<div id="pmc-hits"></div>',
-  '<div class="actions"><button type="button" class="btn" id="pmc-save">投稿した → 保存</button>',
-  '<span class="row"><label for="pmc-date">日付</label><input type="date" id="pmc-date"></span></div>',
-  '<div class="toast" id="pmc-toast" role="status" aria-live="polite"></div>',
-  '<p class="small" id="pmc-store-note"></p>',
-  '<details><summary>まとめて追加</summary>',
-  '<p class="small">1件ずつ「---」だけの行で区切って貼り付けます。各件の最初の行が「2026-09-28」のような日付なら、その日付で保存します（なければ上の日付）。</p>',
-  '<textarea class="bulk" id="pmc-bulk" rows="5" spellcheck="false" placeholder="2026-09-28&#10;1件目の文章&#10;---&#10;2026-09-29&#10;2件目の文章"></textarea>',
-  '<div class="actions"><button type="button" class="btn sub-btn" id="pmc-bulk-add">まとめて追加</button></div>',
-  '</details>',
-  '<details><summary id="pmc-saved-sum">保存した投稿</summary>',
-  '<div id="pmc-saved"></div>',
-  '<div class="actions"><button type="button" class="btn danger" id="pmc-del-all">すべて削除</button></div>',
-  '</details>',
-  '<details><summary>比べ方の設定</summary>',
-  '<div class="row" style="margin-top:8px"><label for="pmc-days">比べる期間</label><select id="pmc-days"><option value="7">直近7日</option><option value="14">直近14日</option><option value="30">直近30日</option></select></div>',
-  '<p class="small" style="margin-top:10px">よく出る語（「Claude」のように、どの投稿にも出る名前は重なりの目印に数えません。読点「、」かカンマで区切ります）</p>',
-  '<input type="text" class="txt" id="pmc-common" autocomplete="off" spellcheck="false">',
-  '<div class="actions"><button type="button" class="btn sub-btn" id="pmc-common-reset">初期値に戻す</button></div>',
-  '</details>',
-  '<p class="small" style="margin-top:10px">「重なり」は、同じ数字・同じ目印の語・似た文章が続いていないかの目安です。禁止ではありません。続き物として出すか、題材や数字を替えるかを決めるための確認です。保存先はこの端末のこのブラウザだけで、スマホとパソコンでは共有されません。ブラウザのサイトデータを消すと消えます。</p>',
-  '</section>',
-
-  '<div class="foot">',
+'<div class="foot">',
   '<p class="small">このツールは、運営者が毎日の投稿前に見ている項目を、そのまま機械にしたものです。採点も添削もしません。引っかかった所を示すだけで、直すかどうかは自分で決めてください。</p>',
   '<p class="small">機械では見られないこと：内容がおもしろいか、刺さるか、1行目だけで話が通じるか。</p>',
   '<p class="small">Xの仕様が変わった場合は、追従できていないことがあります。</p>',
@@ -175,9 +85,7 @@ var SKELETON = [
 /* ---------- 本体 ---------- */
 
 function mount(host) {
-  var store = makeStore();
-  var settings = loadSettings(store);
-  var posts = loadPosts(store);
+  var settings = { enabled: { leak: true, report: true, deixis: true } };   // 見る項目のON/OFF。保存しない（開き直すと全部ON）
 
   var root = host.attachShadow ? host.attachShadow({ mode: 'open' }) : host;   // attachShadow が無い古い端末ではそのまま入れる
   if (root === host) host.textContent = '';
@@ -192,9 +100,6 @@ function mount(host) {
 
   var ta = $('t');
   $('spec').textContent = SPEC_CHECKED;
-
-  var today = function () { return PMC.dateToString(new Date()); };
-  $('date').value = today();
 
   function setChip(node, cls, text) { node.className = 'chip' + (cls ? ' ' + cls : ''); node.textContent = text; }
 
@@ -241,7 +146,7 @@ function mount(host) {
       notes.appendChild(el('div', 'note over', '投稿できない文字（U+FEFF など）が含まれています。貼り付け元から混ざった見えない文字の可能性があります。'));
     }
     if (r.urls.length) {
-      var box = el('div', 'sub', 'URLとして23で数えたもの（スキームなしの example.com やファイル名の README.md も、Xは URL と見なします）');
+      var box = el('div', 'sub', 'URLとして23で数えたもの（スキームなしの example.com や、README.md のようなファイル名も、公式ライブラリは URL と見なします）');
       var ul = el('ul', 'list');
       r.urls.slice(0, 8).forEach(function (u) {
         var li = el('li');
@@ -305,60 +210,7 @@ function mount(host) {
       : '';
   }
 
-  /* --- ③ 直近の重なり --- */
-  function renderOverlap(text, hasText) {
-    var recent = PMC.recentPosts(posts, settings.days, today());
-    $('ov-sum').textContent = '比べる投稿：直近' + settings.days + '日の' + recent.length + '件（保存してあるのは' + posts.length + '件）';
-    var hitsBox = $('hits');
-    clear(hitsBox);
-    var hits = hasText ? PMC.findOverlaps(text, recent, { common: settings.common }) : [];
-    hits.slice(0, 6).forEach(function (h) {
-      var box = el('div', 'hit');
-      box.appendChild(el('div', 'what', mmdd(h.post.date) + ' の投稿と重なっています'));
-      var why = [];
-      why.push('文章の重なり ' + h.jaccard.toFixed(2) + (h.jaccard >= PMC.JACCARD ? '（' + PMC.JACCARD + ' 以上）' : ''));
-      if (h.nums.length) why.push('数字つきの語が同じ：' + h.nums.join('・'));
-      var others = h.shared.filter(function (s) { return h.nums.indexOf(s) < 0; });
-      if (others.length) why.push('目印の語が同じ：' + others.join('・'));
-      box.appendChild(el('div', 'why', why.join(' ／ ')));
-      box.appendChild(el('div', 'ctx', '「' + head(h.post.text) + '」'));
-      hitsBox.appendChild(box);
-    });
-    if (hits.length > 6) hitsBox.appendChild(el('p', 'small', 'ほか ' + (hits.length - 6) + ' 件'));
-    if (hits.length) hitsBox.appendChild(el('p', 'sub', '禁止ではありません。続き物として出すか、題材・数字を替えるかを決めてください。'));
-
-    if (!posts.length) setChip($('chip3'), '', '比べる投稿なし');
-    else if (!hasText) setChip($('chip3'), '', '入力待ち');
-    else if (hits.length) setChip($('chip3'), 'warn', '重なり ' + hits.length + '件');
-    else setChip($('chip3'), 'ok', '重なりなし');
-
-    if (!posts.length) hitsBox.appendChild(el('p', 'sub', 'まだ比べる投稿がありません。投稿したら「投稿した → 保存」を押すと、次の下書きから比べられます。'));
-  }
-
-  function renderSaved() {
-    var box = $('saved');
-    clear(box);
-    var sorted = posts.slice().sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
-    $('saved-sum').textContent = '保存した投稿（' + posts.length + '件）';
-    sorted.forEach(function (p) {
-      var row = el('div', 'saved-row');
-      row.appendChild(el('span', 'd', mmdd(p.date)));
-      row.appendChild(el('span', 't', head(p.text)));
-      var del = el('button', 'link', '削除');
-      del.type = 'button';
-      del.setAttribute('data-id', p.id);
-      del.setAttribute('aria-label', mmdd(p.date) + ' の投稿を削除');
-      row.appendChild(del);
-      box.appendChild(row);
-    });
-    if (!posts.length) box.appendChild(el('p', 'small', '保存した投稿はありません。'));
-    $('del-all').disabled = !posts.length;
-    $('store-note').textContent = store.ok ? '' : 'この環境ではブラウザに保存できません（プライベートブラウズなど）。保存した投稿は、このページを開いている間だけ使えます。';
-  }
-
   function renderSettings() {
-    $('days').value = String(settings.days);
-    $('common').value = settings.common.join('、');
     $('on-leak').checked = settings.enabled.leak;
     $('on-report').checked = settings.enabled.report;
     $('on-deixis').checked = settings.enabled.deixis;
@@ -369,100 +221,20 @@ function mount(host) {
     var hasText = text.trim() !== '';
     renderCount(PMC.weigh(text), hasText);
     renderPhrases(text, hasText);
-    renderOverlap(text, hasText);
-  }
-
-  function toast(msg, isErr) {
-    var t = $('toast');
-    t.textContent = msg;
-    t.className = 'toast' + (isErr ? ' err' : '');
-  }
-
-  function persistPosts() {
-    posts.sort(function (a, b) { return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
-    if (posts.length > MAX_POSTS) posts = posts.slice(0, MAX_POSTS);
-    store.set(KEY_POSTS, posts);
-  }
-
-  function addPosts(list) {
-    var added = 0, skipped = 0;
-    list.forEach(function (x) {
-      var key = x.text.replace(/\s+/g, '');
-      var dup = posts.some(function (p) { return p.text.replace(/\s+/g, '') === key; });
-      if (dup) { skipped++; return; }
-      posts.push({ id: newId(), date: x.date, text: x.text });
-      added++;
-    });
-    if (added) persistPosts();
-    return { added: added, skipped: skipped };
   }
 
   /* --- 操作 --- */
-  ta.addEventListener('input', function () { toast(''); render(); });
-  $('clear').addEventListener('click', function () { ta.value = ''; toast(''); render(); ta.focus(); });
+  ta.addEventListener('input', render);
+  $('clear').addEventListener('click', function () { ta.value = ''; render(); ta.focus(); });
 
-  $('save').addEventListener('click', function () {
-    var t = ta.value.replace(/\r\n?/g, '\n').replace(/^\s+|\s+$/g, '');
-    if (!t) { toast('下書きが空です。', true); return; }
-    var date = $('date').value || today();
-    if (!PMC.parseDate(date)) { toast('日付を選んでください。', true); return; }
-    var r = addPosts([{ date: date, text: t }]);
-    if (r.added) { toast('保存しました（' + mmdd(date) + '）。次の下書きから比べます。'); } else { toast('同じ文章がすでに保存されています。', true); }
-    renderSaved();
-    render();
-  });
-
-  $('bulk-add').addEventListener('click', function () {
-    var list = PMC.parseBulk($('bulk').value, $('date').value || today());
-    if (!list.length) { toast('追加する文章がありません。', true); return; }
-    var r = addPosts(list);
-    toast(r.added + '件を追加しました' + (r.skipped ? '（' + r.skipped + '件は同じ文章があるため追加しませんでした）' : '。'), r.added === 0);
-    if (r.added) $('bulk').value = '';
-    renderSaved();
-    render();
-  });
-
-  $('saved').addEventListener('click', function (ev) {
-    var id = ev.target && ev.target.getAttribute && ev.target.getAttribute('data-id');
-    if (!id) return;
-    posts = posts.filter(function (p) { return p.id !== id; });
-    store.set(KEY_POSTS, posts);
-    renderSaved();
-    render();
-  });
-
-  $('del-all').addEventListener('click', function () {
-    if (!posts.length) return;
-    if (!window.confirm('保存した投稿をすべて削除します。よろしいですか？')) return;
-    posts = [];
-    store.set(KEY_POSTS, posts);
-    toast('すべて削除しました。');
-    renderSaved();
-    render();
-  });
-
-  $('days').addEventListener('change', function () { settings.days = +$('days').value; store.set(KEY_SETTINGS, settings); render(); });
-  $('common').addEventListener('change', function () {
-    settings.common = $('common').value.split(/[,，、\n]+/).map(function (s) { return s.trim(); }).filter(Boolean).slice(0, 60);
-    store.set(KEY_SETTINGS, settings);
-    render();
-  });
-  $('common-reset').addEventListener('click', function () {
-    settings.common = PMC.DEFAULT_COMMON.slice();
-    store.set(KEY_SETTINGS, settings);
-    renderSettings();
-    render();
-  });
   ['leak', 'report', 'deixis'].forEach(function (k) {
     $('on-' + k).addEventListener('change', function () {
       settings.enabled[k] = $('on-' + k).checked;
-      store.set(KEY_SETTINGS, settings);
       render();
     });
   });
 
   renderSettings();
-  renderSaved();
   render();
 }
 

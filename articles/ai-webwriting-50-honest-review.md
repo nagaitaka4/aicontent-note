@@ -126,5 +126,5 @@ AIは実行役、人は判断役。頭では分かっていたつもりでした
 
 **関連記事**
 ・[コンテンツ運用代行とは？料金・内容・依頼する前に知っておくこと](https://aicontent-note.com/content-operation-outsource-what-is/)
-・[社内更新と外注、どちらが本当にコスパがいいのか](https://aicontent-note.com/in-house-vs-outsource-cost/)
+・[ブログは外注か内製か。AIで書く実費と代行の相場を並べた](https://aicontent-note.com/in-house-vs-outsource-cost/)
 ・[コンテンツ運用代行の単価が二極化している理由](https://aicontent-note.com/content-outsource-price-polarization/)

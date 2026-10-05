@@ -83,7 +83,7 @@ eyecatch: eyecatch_0040.png
 【ポイント】<br>
 価格の安さより、自社の工数がどれだけ減るかを先に試算する。それが費用対効果を判断する起点です。
 
-社内で回す場合との比較は「[社内更新と外注、どちらが本当にコスパがいいのか](https://aicontent-note.com/in-house-vs-outsource-cost/)」にあります。
+社内で回す場合との比較は、**「[ブログは外注か内製か。AIで書く実費と代行の相場を並べた](https://aicontent-note.com/in-house-vs-outsource-cost/)」**にあります。
 
 ---
 
@@ -167,4 +167,4 @@ eyecatch: eyecatch_0040.png
 **関連記事**
 ・[コンテンツ運用代行とは？料金・内容・依頼する前に知っておくこと](https://aicontent-note.com/content-operation-outsource-what-is/)
 ・[ブログ更新が止まる理由と、外注を検討するタイミングの見極め方](https://aicontent-note.com/blog-update-outsource-timing/)
-・[社内更新と外注、どちらが本当にコスパがいいのか](https://aicontent-note.com/in-house-vs-outsource-cost/)
+・[ブログは外注か内製か。AIで書く実費と代行の相場を並べた](https://aicontent-note.com/in-house-vs-outsource-cost/)

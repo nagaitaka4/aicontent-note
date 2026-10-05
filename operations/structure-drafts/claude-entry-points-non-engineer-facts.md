@@ -21,11 +21,17 @@
 
 **⚠️ 無いもの**：Claude.ai（素のチャット）を仕事で使った実測。統合後の画面を見た記録（**ユーザーのMaxにはまだ来ていない**＝X `CWMERGE-01` 9/19投稿の最終行）。Coworkの枠の消費倍率（未実測）。
 
+**2026-10-05 ユーザーのスクリーンショット（デスクトップアプリ・Max）**：**統合はまだ届いていない。**
+- 左上に切り替えが2つ：吹き出しのアイコン＝「チャットと Cowork」（ショートカット`⌥⌘←`）／`</>`＝Claude Code
+- 「チャットと Cowork」側：入力欄の下に**「チャット｜Cowork」の切り替えが残っている**。サイドバーは「チャットとタスク」「スケジュール済みタスク」「プロジェクト」「Artifacts」「カスタマイズ」
+- Claude Code側：サイドバーに「ルーティン」「プロジェクト（ベータ）」「Artifacts」「カスタマイズ」とセッション一覧
+- 公式の新しい画面は`no mode to choose`・`you can't switch back to separate "Chat" and "Cowork" options`（3節#1・ヘルプ）＝**切り替えが見えている間は、統合前の画面**
+
 ## 3. 公式の一次情報
 
 | # | 事実 | 出典（verbatim） | 取得日 |
 |---|---|---|---|
-| 1 | **チャットとCoworkが1つに統合される。**Pro・Maxから数週間かけて展開。**一度移ると戻せない** | [claude.com/blog/cowork-is-now-claude](https://claude.com/blog/cowork-is-now-claude)：`Claude Cowork and chat are merging into one Claude.` ／ `Ask Claude for what you need, and it can decide which tool to use.` ／ `Once your account has the new experience, you can't switch back to separate "Chat" and "Cowork" options.` | 2026-09-18 |
+| 1 | **チャットとCoworkが1つに統合される。**Pro・Maxから数週間かけて展開。**一度移ると戻せない**。**10/5再取得**：ヘルプ`The new Claude experience is rolling out gradually, starting with Pro and Max plans on web, desktop, and mobile.`／`even accounts on the same plan will see the changes at different times. You don't need to do anything to enable`。ブログ`If you mostly use chat, you don't have to do anything different.`（[ヘルプ](https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude)） | [claude.com/blog/cowork-is-now-claude](https://claude.com/blog/cowork-is-now-claude)：`Claude Cowork and chat are merging into one Claude.` ／ `Ask Claude for what you need, and it can decide which tool to use.` ／ `Once your account has the new experience, you can't switch back to separate "Chat" and "Cowork" options.` | 2026-09-18 |
 | 2 | **Claude Docs・Claude Slidesがベータで開始。**Freeは対象外 | [ヘルプ Get started with Claude Docs](https://support.claude.com/en/articles/16923645-get-started-with-claude-docs)：`available in beta on Pro, Max, Team, and Enterprise plans. It isn't available on the Free plan.` | 2026-09-18 |
 | 3 | **Claude Codeに「Projects」（ベータ）。**Claudeが仕事を分けて並列に走らせる。**いまはクラウドで動く。手元で動かせるのは「もうすぐ」** | [claude.com/blog/projects-redesigned](https://claude.com/blog/projects-redesigned)：`Claude scopes the request, delegates the work, coordinates parallel threads, reviews the outputs, and assembles the finished result.` ／ `Starting today, updated projects are available in beta to select Claude Pro and Max subscribers who use cloud sessions in Claude Code.` ／ `Threads run in the cloud today; running on your machine alongside your local tools and code and behind your network is coming very soon.` | 2026-09-21 |
 | 4 | Claude in Chrome が一般提供 | [claude.com/blog/claude-in-chrome-generally-available](https://claude.com/blog/claude-in-chrome-generally-available)（`datePublished` **2026-08-26**・本日CCが確認） | 2026-09-21（**本文は未読**） |
@@ -48,7 +54,7 @@
 
 | 記事 | 重なる所 | 扱い |
 |---|---|---|
-| no.58 `claude-cowork-usage-data` | H2①「Claude Coworkとは？Claude Codeとの違いと、どこから使えるか」が**正面で重なる** | **この記事は「選び方」で立てる。**no.58は「Coworkの使われ方のデータ」。⚠️ **統合でno.58のH2①は前提が変わる＝リライト候補**（バックログへ） |
+| no.58 `claude-cowork-usage-data` | H2①「Claude Coworkとは？Claude Codeとの違いと、どこから使えるか」が**一部で重なる**（記事全体の問いは「Coworkが実際に何に使われているか」で別）。**10/5判定：新規**（読者の問い「どれを開けばいいか」に答える記事がアーカイブに無い） | **この記事は「選び方」で立てる。**no.58は「Coworkの使われ方のデータ」。⚠️ **統合でno.58のH2①は前提が変わる＝リライト候補**（バックログへ） |
 | no.56 `chatgpt-work-claude-code-comparison` | ChatGPT Work と Claude Code の選び方 | **別社の比較**。こちらはClaude内の入口。隣 |
 | `claude-code-desktop-renewal` | デスクトップアプリの刷新 | 隣（機能の話） |
 | `claude-code-introduction` | Claude Codeとは | 隣（入口1つの説明） |
@@ -63,6 +69,13 @@
 ## 7. まだ無いもの（本人にしか答えられないこと・未計測）
 
 1. **統合後の画面が来たか。**来たら、入力欄がどう変わったかを1枚見せたい（X `CWMERGE-01`の続き）
+   → **2026-10-05：まだ来ていない**（2節のスクリーンショット）。同じプランでも届く時期は人によって違う（ヘルプ）
 2. **Claude.ai（素のチャット）を仕事で使っているか。**「普段のチャットはGPT」なら、この記事では「Claudeのチャットは使っていない」と書けるか
 3. **Coworkをもう一度使うか。**統合後に「Coworkの枠の消費が速い」がどうなったかは実測の価値がある（`daily-20260819-01`が1か月「要実測」のまま）
 4. **Projectsが手元に来たか／待機リストに登録するか**（来れば③の実測が書ける）
+
+## 8. 本人の回答（2026-10-05 10:31・no.73の確認1・2）
+
+- 確認1（Coworkはいま使っているか）＝**A**：まだ使っていない。記事も仕組みもClaude Codeのフォルダにあるので、Coworkに持っていく仕事が無い（→ 7節3「Coworkをもう一度使うか」は「使っていない」）
+- 確認2（Claudeのチャットはどんなときに使うか）＝**A**：作業中に関係ない調べものを分けて聞くとき。本人の補足（原文）：「チャットはなぜかすべてGPTです。GPTってチャットはすべて無料でしたよね？でもそれとは関係なく、最初使いはじめたAIがGPTで、チャットはGPT、作業はclaudeという感じの使い分けをしている感じです。」（→ 7節2「Claude.ai（素のチャット）を仕事で使っているか」は「ほぼ使っていない」）
+- ⚠️ no.72では、チャットをChatGPTに回す理由に「容量を気にせず使える」（10/01の本人の言葉）を書いている。10/05の回答は「最初に使い始めたのがGPTだから」で、無料かどうかとは関係ないという。no.73では10/05の言い方で書く（no.72とは矛盾しない＝理由が2つある）

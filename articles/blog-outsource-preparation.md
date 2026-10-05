@@ -157,5 +157,5 @@ eyecatch: eyecatch_0039.png
 
 **関連記事**
 ・[コンテンツ運用代行とは？料金・内容・依頼する前に知っておくこと](https://aicontent-note.com/content-operation-outsource-what-is/)
-・[社内更新と外注、どちらが本当にコスパがいいのか](https://aicontent-note.com/in-house-vs-outsource-cost/)
+・[ブログは外注か内製か。AIで書く実費と代行の相場を並べた](https://aicontent-note.com/in-house-vs-outsource-cost/)
 ・[ブログ更新が止まる理由と、外注を検討するタイミングの見極め方](https://aicontent-note.com/blog-update-outsource-timing/)

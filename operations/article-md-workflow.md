@@ -217,3 +217,4 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 69 | - | - | ai-how-to-use-10-questions.md | 2026-09-18 |
 | 70 | - | - | claude-company-data-training.md | 2026-09-22 |
 | 71 | - | - | claude-code-permission-modes.md | 2026-09-30 |
+| 72 | - | - | chatgpt-claude-division-of-work.md | 2026-10-01 |

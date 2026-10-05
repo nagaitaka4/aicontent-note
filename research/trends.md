@@ -1,9 +1,49 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-01
+最終更新: 2026-10-05
 
 
 ---
+
+## [2026-10-05] 調査結果（デイリー・月曜）
+
+**①は差分なし。**
+
+- **【差分なし】npm `@anthropic-ai/claude-code`**：`latest`／`next`は2.1.289（10/4 05:12 JST）のまま・`stable`は2.1.285。CHANGELOG.mdの先頭も`## 2.1.289`のまま
+- **【差分なし】Claude Apps リリースノート**：最新はSeptember 28, 2026「Claude Sonnet 5.5 launch」のまま／**Newsroom**：最新は10/2「Anthropic invests $100 million to train 10,000 engineers…」のまま／**claude.com/blog**：最新は10/1「Customize Claude Code with mods」のまま
+- **【差分なし】@ClaudeDevs**：最新は10/3 05:25 JST「We're adding a new plugin to Claude Code: You should Know」（10/2記録の`research-20261002-01`と同じ）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅（WebFetch）／Newsroom ✅（WebFetch）／claude.com/blog ✅（WebFetch）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
+
+## [2026-10-04] 調査結果（デイリー・日曜／10/3分を含む）
+
+**①は新規1件（Googleのガイド更新＝ネタ化）＋記録のみ3件。10/3の朝ブリーフは途中で止まり記録が無いため、10/2以降の差分をまとめて見た。**
+
+### Claude Code / Anthropic
+
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.288`**（npm公開 10/3 03:30 JST）：verbatim `Added recovery for a prompt cleared with Ctrl+C: pressing Up on the empty prompt brings the draft back, including pasted text and images`／`Fixed long conversations failing with "Prompt is too long" instead of auto-compacting when the last reply reported zero token usage`／`Added --max-findings <n>|all to /code-review` ほか修正多数。**採らない理由**：Ctrl+Cで消した入力を↑で戻せるのは身近だが、本人がその場面に遭った日でないと③が立たない（ターミナル版の話で、デスクトップのCodeタブで同じかは未確認）
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.289`**（npm公開 10/4 05:12 JST）：modsまわりの修正（`Fixed installed mods not loading in the first session after an upgrade` ほか）と許可ルールの修正（`Fixed Bash deny and ask rules missing a command behind an environment variable prefix … when the sandbox auto-allows commands`）。読者の手元が変わる新機能なし
+- **【新規・記録のみ】Anthropic Newsroom** 10/2「Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap」（企業向けの育成投資・読者の手元は変わらない）
+- **【確認】@ClaudeDevs** 10/2「You can now mod Claude Code」（423万ビュー）＝10/2記録のmods（`research-20261002-01`）と同じ。本人の画面で未確認のまま
+- **【差分なし】Claude Apps リリースノート**：最新は September 28, 2026「Claude Sonnet 5.5 launch」のまま／**claude.com/blog**：最新は10/1「Customize Claude Code with mods」のまま
+
+### SEO（Xで話題・このメディアの軸に直結するため①で扱う）
+
+- **【新規・ネタ化→`research-20261004-01`→`FACTG-01`】Google「生成AIコンテンツ利用に関するガイド」更新**（[一次情報](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content)・Last updated 2026-10-01 UTC）：verbatim `It is critical to manually factcheck and review all AI-generated content for accuracy and trustworthiness before publishing.` 対象は`<title>`・meta description・構造化データ・画像の代替テキスト。新しいペナルティ・順位の要素の発表は無い（[Search Engine Journal](https://www.searchenginejournal.com/google-fact-check-ai-content-before-publishing/591782/)・[Search Engine Roundtable](https://www.seroundtable.com/google-updates-ai-content-guidelines-factcheck-review-42217.html)）。日本語版は未反映との指摘あり（@seolabo85 10/2）。X上：@rito_travel 3.6万ビュー・@seolabo85 2.5万ビュー
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅（実Chromeで読むだけ）
+
+## [2026-10-02] 調査結果（デイリー・金曜）
+
+**①は新規1件（Claude Codeのmods＝ネタ化）＋記録のみ2件。**
+
+### Claude Code / Anthropic
+
+- **【新規・ネタ化→`research-20261002-01`】claude.com/blog 10/1「[Customize Claude Code with mods](https://claude.com/blog/claude-code-mods)」＋CHANGELOG.md `## 2.1.287`**（npm公開 10/2 01:59 JST・`latest`／`next`は2.1.287、`stable`は2.1.285のまま）：verbatim（CHANGELOG）`Added Claude Mods: plugins may now modify deeper behavior`／`Added You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn it on with /plugin enable cc-plugin-you-should-know@builtin (for first-party sessions with telemetry on)`。ブログ（WebFetchの要約で確認・原文の全文は未取得）：modsは`Small TypeScript functions that change how Claude Code works`／`aren't sandboxed`／`Available today in the Claude Code CLI and desktop app`／`You should only install mods from sources you trust`。料金・使用量への影響の記載なし。**このMacのCLIは2.1.283（`claude --version`）＝本人の画面ではまだ使えない可能性が高い（デスクトップアプリ側の版は未確認）**。**採った理由**：「見落としを別のAIに見つけさせる」は、このメディアが別エージェントのレビューとして自作してきた仕組みと同じ役割＝自分の立場から一言言える。**条件**：「使った」とは書かない（画面で開けていない）
+- **【新規・記録のみ】CHANGELOG.md `## 2.1.287` のほかの項目**：`Fixed a folder's CLAUDE.md being attached a second time after resuming a session or after a compaction`／`Fixed a dangerous rm (such as one on / or the home directory) losing its always-ask safeguard when the same command also redirected output to a ~ or wildcard path`／`Fixed Bash permission prompts showing internal parser names such as "Contains simple_expansion" instead of a plain explanation`／`Fixed messages sent from the Claude apps with 17 to 20 attached files delivering only the first 16` ほか修正多数。**採らない理由**：不具合修正で、本人が体感した日でないと③が立たない。`rm`の確認が外れる不具合の修正はno.71（許可）の更新材料
+- **【新規・記録のみ】@ClaudeDevs**：10/2 03:08 JST「[Token Weather adds a forecast of your context window: how full it is, plus a sparkline of your last 12 turns.](https://x.com/ClaudeDevs/status/2105721436270993609)」（modsの1つの紹介と読めるが、前後の投稿は未取得）／10/1 05:17 JST「Claude.dev is our new home for developers building with Claude」（開発者向けサイトの案内）
+- **【新規・記録のみ】Anthropic Newsroom**：10/1「Barclays scales Claude to upgrade operations and improve client experience」（企業事例・読者の手元は変わらない）
+- **【差分なし】Claude Apps リリースノート**：最新は September 28, 2026「Claude Sonnet 5.5 launch」のまま
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅（実Chromeでプロフィールを読むだけ）
 
 ## [2026-10-01] 調査結果（デイリー・木曜）
 

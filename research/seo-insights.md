@@ -1,8 +1,50 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-09-25
+最終更新: 2026-10-05
 
 ---
+
+## [2026-10-05] 調査結果（定期リサーチ・月曜のフル版／③のみ）
+
+**③は一次情報の新着なし。**スパムアップデートは展開中のまま（開始から11日目）。
+
+- **【継続・展開中】September 2026 spam update**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：`end`は空のまま＝完了の告知なし。履歴は開始の1行だけ（`The rollout may take up to two weeks to complete.`＝〜10/8ごろ）
+- **【確認】Search Central のドキュメント更新履歴**（[Latest updates](https://developers.google.com/search/updates)・WebFetch）：最新は10/1「生成AIコンテンツ利用に関するガイド」の更新（10/4に`FACTG-01`で使用済み）。それ以降の更新なし
+- **【差分なし】Search Central Blog**（フィード・本日curl）：最新は9/24「web multimodal Search performance reporting」のまま
+- **【新規・記録のみ・二次情報】鈴木謙一氏のブログ**（フィード・本日curl・**本文は未読**）：10/1 22:05 UTC「Google、約100社にAI回答への貢献度に応じた報酬を支払いか」（9/21記録の「AI contribution pilot」と同じ話題と見られる。**見出しが「〜か」の推測形で、Googleの一次情報は今回も見つけていない**）／10/2 22:00 UTC「AI時代のコンテンツマーケ！ 現場の『一次情報』『独自の経験』から最高のコンテンツを作る方法」（Web担当者Forumの週次まとめ）。**採らない理由**：一次情報が無い（前者）・新しい方針ではない（後者）
+
+
+## [2026-10-02] 調査結果（定期リサーチ・金曜のフル版／③のみ）
+
+**③に新規1件＝AI Modeの「情報モニタリング」が有料プラン限定から全ユーザーへ（9/28 PT・Google検索のプロダクト担当VPのX投稿）。**スパムアップデートは展開中のまま。Search Central Blogは新着なし。
+
+### Google / Search Console
+
+- **【継続・展開中】September 2026 spam update**（[Google Search Status Dashboard](https://status.search.google.com/incidents/XhUDXP7A67iHCD2kmbVu)・本日curlで本文と[incidents.json](https://status.search.google.com/incidents.json)を確認）：履歴は`24 Sep 2026 09:15 PDT Released the September 2026 spam update, which applies globally and to all languages. The rollout may take up to two weeks to complete.`の1行のまま。incidents.jsonの`end`も空＝**完了の告知はまだ無い**（開始から8日目・最長2週間＝〜10/8ごろ）。9/24以降に新しいインシデントは0件。**10/1のGSC月次を読むときは、全期間がこの展開と重なる点を注記する**（原因と決めつけない）
+- **【新規・要手元確認】AI Modeの情報モニタリングを全ユーザーへ展開**（[Robby Stein氏〔Google検索 プロダクト担当VP〕のX投稿](https://x.com/rmstein/status/2104720139971404016)・投稿時刻`2026-09-28T23:49:19Z`＝**日本時間 9/29 08:49**・本日curlでXの埋め込み用データから本文を取得）
+  - verbatim：`Our Ultra and Pro subs have been using info monitoring capabilities in AI Mode in Search, and now we’re rolling it out to everyone globally.`／`Just tell AI Mode exactly what to look for & Search will continuously check across changing info on the web like sites, forums and social`（**取得できた本文はここで切れている。続きは未確認**）
+  - 何が変わるか：AI Modeに「この話題を追って」と頼むと、検索が裏で見張り続けて、変化があれば知らせる。これまでは Google AI Ultra／Pro の契約者だけだった
+  - 経緯（一次情報）：同氏の6/12の投稿 `Information agents in Search are now available in all AI Mode languages & markets for Google AI Ultra subscribers.`（[X](https://x.com/rmstein/status/2065487390920303050)・`2026-06-12T17:32:23Z`）→ 今回が無料ユーザーへの拡大
+  - **⚠️ 未確認が3点**：①**日本のアカウント・日本語で実際に出るか**（`rolling it out`＝順次。手元の画面は見ていない）②使える面（[Search Engine Journal 9/28](https://www.searchenginejournal.com/google-ai-mode-info-monitoring-global-rollout/591312/)は「Googleアプリ」と書くが、一次情報の本文では確認できていない）③**blog.google・Googleヘルプに同じ内容の告知は見つけていない**（[blog.googleの検索フィード](https://blog.google/products/search/rss/)の9/28以降は生活ネタ1本のみ／[AI Modeのヘルプ](https://support.google.com/websearch/answer/16011537?hl=en)に agent の記載なし）
+  - **⚠️ 二次情報の食い違い**：[鈴木謙一氏 9/30](https://www.suzukikenichi.com/blog/ai-tracks-topics-for-you-google-expands-ai-modes-information-agents-to-all-users/)は「全ユーザーに拡大」と書きつつ、埋め込みの投稿は**6/12のUltra向け**（上の経緯の投稿）。全ユーザー拡大の根拠は9/28の投稿のほう。**引用するときは9/28の投稿を出典にする**
+  - 使い道：**Xネタ候補**（無料の人の手元が変わる＝軸②の基準に当たる。**ただし手元の画面で出ることを見てから**）。記事は`operations/article-backlog.md`の既存ネタ「Googleが検索に『エージェント』を実装…」（2026-07-01 リサーチ由来）の更新材料
+- **【差分なし】Search Central Blog**（[フィード](https://developers.google.com/static/search/blog/feed.xml)・本日curl）：最新は9/24の`web-multimodal-in-sc`のまま。**10月の記事は0件**
+
+### 調査会社・SEOメディア
+
+- **鈴木謙一氏**（[フィード](https://www.suzukikenichi.com/blog/feed/)・本日curl）：9/28以降は4本。①9/29「Search Consoleにマルチモーダルフィルタ」＝9/25に一次情報で記録済み ②9/30「AI Modeの情報エージェントを全ユーザーに拡大」＝上に記録 ③9/30 アレイダ・ソリス氏インタビュー＝**見出しのみ・本文未読** ④10/1「2030年の『ググる』はどうなる？」＝Google幹部（記事中「フォックス氏」）のインタビューの紹介
+  - ④は**二次情報のみ・元のインタビューは開いていない**。鈴木氏の要約では、作り手への助言は「従来のガイドラインに沿った最適化を続ける」「動画」「掘り下げた独自の人間的視点（インタビュー・独自調査・オリジナルレポート）」。**新しい方針ではなく、記事の根拠には使わない**
+  - 同氏は9/30の記事で、スパムアップデートについて「そこそこ大きなランキング変動が発生しているようです」と書いている（リンク先はSearch Engine Roundtable＝**外部ツールの観測で、Googleの発表ではない**）
+- AI contribution pilot（9/21記録）の**Googleの一次情報は今回も見つけていない**
+
+### 自サイトのGSC
+
+- **本日は取得していない**（このリサーチの範囲外）
+
+### 記事側への影響
+
+- **訂正が必要な記事：なし**
+- **更新材料に入れたもの**：AI Modeの情報モニタリングの全ユーザー展開 → GEO記事群（no.54・no.63・no.65）と、バックログの「検索エージェント」ネタの材料候補。**日本の手元で確認できるまで本文には書かない**
 
 ## [2026-09-28] 調査結果（定期リサーチ・月曜のフル版／朝ブリーフに統合後）
 

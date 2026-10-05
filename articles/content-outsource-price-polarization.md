@@ -100,4 +100,4 @@ AIに任せすぎて後から人の確認に戻した工程もあれば、逆に
 **関連記事**
 ・[コンテンツ運用代行とは？料金・内容・依頼する前に知っておくこと](https://aicontent-note.com/content-operation-outsource-what-is/)
 ・[ブログ運用代行の相場はいくら？料金の目安と失敗しない選び方](https://aicontent-note.com/blog-outsource-pricing-guide/)
-・[社内更新と外注、どちらが本当にコスパがいいのか](https://aicontent-note.com/in-house-vs-outsource-cost/)
+・[ブログは外注か内製か。AIで書く実費と代行の相場を並べた](https://aicontent-note.com/in-house-vs-outsource-cost/)

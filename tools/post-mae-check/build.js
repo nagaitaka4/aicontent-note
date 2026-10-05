@@ -33,10 +33,19 @@ if (/\(\?<[=!]/.test(own + vendor)) throw new Error('後ろ向き先読み (?<= 
 if (/\?\.[A-Za-z_$(\[]|\?\?/.test((core + app).replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '').replace(/'(?:[^'\\\n]|\\.)*'/g, "''"))) throw new Error('?. か ?? が入っています');
 
 const banner = '(function(){"use strict";\n';
-const js = esbuild.transformSync(
+let js = esbuild.transformSync(
   banner + vendor + '\n' + core + '\nvar PMC_CSS=' + JSON.stringify(css) + ';\n' + app + '\n})();',
   { minify: true, target: 'es2017', charset: 'utf8' }
 ).code.trim();
+
+// --- 日本語以外の非ASCII文字は \uXXXX に戻す（ライセンス告知のコメントより後ろ＝コードだけ） ---
+// charset:'utf8' は '️' のようなエスケープも生の文字にする。WordPressは保存時に絵文字の部品（U+FE0F など）を
+// &#xfe0f; に置き換え、<script> の中ではそれが文字に戻らない（2026-10-05 固定ページ1094で発生）。
+// 非ASCIIはコード中では文字列・正規表現の中にしか無いので、エスケープしても意味は変わらない
+const SAFE = /[^\x00-\x7e　-ヿ一-鿿＀-￯]/g;
+const noticeEnd = js.indexOf('*/') + 2;
+js = js.slice(0, noticeEnd) + js.slice(noticeEnd).replace(SAFE, (c) => '\\u' + c.charCodeAt(0).toString(16).padStart(4, '0'));
+if (SAFE.test(js.slice(noticeEnd))) throw new Error('日本語以外の非ASCII文字がscriptに残っています（WordPressが書き換える）');
 
 // --- 検査2：<script> の中に置くと壊れる並びが無いこと ---
 for (const bad of ['</script', '<!--', '<script']) {

@@ -16,23 +16,26 @@ X（Twitter）に投稿する前に、**文字数・要注意表現・直近の�
 
 作り直すとき：ツール（`src/`）を直したら `node build.js` → 原稿（`pages/x-post-checker.md`）を直したら `python3 tools/post-mae-check/compose-page.py`。後者が、ブロックの対応・CTA文言（最新の公開記事と一致）・ツールが1つだけ・MD記法の残りを検査してから `dist/page.wp.txt` を書く。
 
-### CCにWordPressへ下書きを作らせる（Macのセッション・Chrome。固定ページでは未検証）
+### CCにWordPressへ下書きを作らせる（Macのセッション・Chrome。2026-10-05に固定ページ1094で実施）
 
 記事の入稿（`rules/article-flow.md` 7.6章）と同じく、**ログイン済みのChromeを操作できるMacのClaude Codeセッション**なら、下書き保存まで任せられる。クラウドのセッションでは**できない**（本番サイトへの通信が遮断されていて、ログインもできない）。公開ボタンは押さない（公開は人が判断する）。
 
-固定ページは記事と違い、CCが入稿した前例がない。7.6章の手順を、次のように読み替える（**★は固定ページで未確認**）：
+7.6章の手順を、次のように読み替える（**★は2026-10-05に固定ページ1094で分かったこと**）：
 
 1. `git pull` して `python3 tools/post-mae-check/compose-page.py` を実行する。入稿に使うのは **`dist/page.body.wp.txt`**（入稿情報を除いた本文だけ。先頭は `core/paragraph` のリード）
 2. Chromeで wp-admin を開き、ログイン済みか確認する。同じスラッグが無いことを確認する：`GET /wp-json/wp/v2/pages?slug=x-post-checker&status=any`
 3. `POST /wp-json/wp/v2/pages` に `status:'draft'`・`title`・`slug`・`content`（page.body.wp.txt）を送る。**記事の `posts` ではなく `pages`**。カテゴリー・タグは無し
-4. ★ツール本体の `<script>` が残っているか確認する（`GET …/pages/<id>?context=edit` の `content.raw`）。管理者アカウントなら残る。消えていたら、貼り付けでの入稿に切り替える
-5. ★説明文（SEO SIMPLE PACK）はRESTでは入らない。エディターで `textarea[name="ssp_meta_description"]` に入れて保存する。**固定ページの編集画面にこの欄があるか未確認**
-6. アイキャッチ：`images/pages/x-post-checker-eyecatch.png` を `media-new.php` のfile inputへ流し込む → `POST /wp/v2/media/<id>` でalt（`pages/x-post-checker.md` の `eyecatch_alt`）→ `POST /wp/v2/pages/<id> {featured_media}`（7.6章の手順6と同じ。**記事の `posts` ではなく `pages`**）。★固定ページでSWELLがアイキャッチを表示するかは未確認（ページ設定で出ない場合は、あなたの画面で見る）
+4. ★ツール本体の `<script>` が残っているか確認する（`GET …/pages/<id>?context=edit` の `content.raw`）。**管理者（`unfiltered_html` あり）なら残った**。`content.raw` が送った本文と**完全一致**することまで見る（SHA-256）
+   - ⚠️ WPは保存時に、script内の生の絵文字の部品（U+FE0F）を `&#xfe0f;` に置き換える → `build.js` が日本語以外の非ASCIIを `\uXXXX` に戻すようにした（直す前は不一致1か所）
+   - ⚠️ WPは**表示時**に、script内の `<=…&&…>` をタグと誤認して `&&` を `&#038;&#038;` に変える（wptexturize・53か所・ツールが動かなかった）→ `build.js` がscriptの中身を `<!--` と `//-->` で包むようにした。**保存された本文が一致していても、プレビューで動くかは別に見る**
+   - 本文の運び方：分けて積む代わりに、**push済みのコミットを指定して** `raw.githubusercontent.com` から取得し、ページ側でSHA-256をローカルの値と突き合わせてから送った（公開リポジトリなので取れる）
+5. ★説明文（SEO SIMPLE PACK）はRESTでは入らない。**固定ページの編集画面にも `input[name="ssp_meta_title"]`・`textarea[name="ssp_meta_description"]` がある**（`/service/` はSEOタイトル欄に `seo_title` をそのまま入れている）。⚠️ 2026-10-05は、CCがこの2欄に入れて `savePost()` する操作が自動モードの安全チェックで止められた → あなたの画面で入れる
+6. アイキャッチ：`images/pages/x-post-checker-eyecatch.png` を `media-new.php` のfile inputへ流し込む → `POST /wp/v2/media/<id>` でalt（`pages/x-post-checker.md` の `eyecatch_alt`）→ `POST /wp/v2/pages/<id> {featured_media}`（7.6章の手順6と同じ。**記事の `posts` ではなく `pages`**）。★固定ページでは、SWELLの既定の設定で**本文の上にアイキャッチは表示されない**（`og:image` には入る＝SNSで共有したときの画像になる）
 7. コメント・ピンバックを閉じる：`POST …/pages/<id> {comment_status:'closed', ping_status:'closed'}`（レスポンスで両方 `closed` を確認）
 8. 数えて確認する。`compose-page.py` が出す値と合わせる：H2 4／表 3／`swl-marker` 1／CTAボタン 1／script 1。公開ページ（プレビュー）にMDの記法（`` ` ``・`**`・`==`）が残っていないかも見る
 9. 開いているエディターは `location.reload()` で読み直す。**RESTで送ったあとに `savePost()` を呼ばない**（古い自動保存で上書きされる）
 
-★SWELLの固定ページ設定（タイトルの表示・サイドバー・ツールを幅広に見せるテンプレート）はRESTで送れない可能性が高い。入稿後にあなたの画面で見る。
+★SWELLの固定ページ設定（`swell_meta_*`）は、入稿直後はすべて空＝カスタマイザーの既定に従う。既定では、タイトル（h1）が本文の上に出て、PCでは右にサイドバーが出る（ツールの幅は812px）。スマホ幅（390px）ではサイドバーは下に回り、ツールは359pxで横スクロールなし。変えるならあなたの画面で。
 
 CTAは**最新の公開記事（2026-10-05時点はno.72 `chatgpt-claude-division-of-work`。no.71と同文）の末尾からそのままコピー**してある（直近の公開記事で同一・`article-self-check.py` の標準文言とも一致）。新しい記事が公開されたら、`compose-page.py` の `LATEST_ARTICLE` と原稿のCTAを合わせ直す。
 
@@ -41,6 +44,7 @@ CTAは**最新の公開記事（2026-10-05時点はno.72 `chatgpt-claude-divisio
 - プレビューで、入力欄に文章を打つと重みが変わる（「JavaScriptが必要です」のままなら、スクリプトが除去されている。管理者アカウントで貼っているか確認）
 - スマホ実機で入力できる・横スクロールが出ない
 - サイトに入力内容を録画するタイプの計測（Clarity・Hotjar など）が入っていないか。入っていると、「送らない」と書いた文章が録画され得る。入っているなら、このページだけ除外する
+  - **2026-10-05確認：入っていない**。`/`・`/service/`・このページのプレビューのHTMLと、実際に読み込まれた通信先を見た。あるのはGoogleのタグ（GA4）だけ（`clarity.ms`・`hotjar` 等は0件、`window.clarity`・`window.hj` も無し）。HTMLにある `data-clarity-region` はSWELLのテーマが付ける属性で、Clarityの読み込みではない。計測を足したら見直す
 - このツールには問い合わせへの導線（CTA）を入れていない。ページの前後に置くなら、`CLAUDE.md` のルールどおり、最新の公開記事からCTA文言をコピーして書く
 
 単独ページとして出すなら `dist/post-mae-check.html`（同じ中身をHTML1枚にしたもの）。
@@ -53,7 +57,7 @@ CTAは**最新の公開記事（2026-10-05時点はno.72 `chatgpt-claude-divisio
 |---|---|
 | ✅ できている | スマホ幅で使える（Chromiumのスマホ設定で確認）／サイトのCSSと混ざらない（Shadow DOM）／保存はその人のブラウザだけ／文字数は公式ライブラリと一致／「採点しない・添削しない」「運営者の見ている項目」と画面に明記／第三者ライセンス（Apache 2.0・MIT）の表記を配布物に同梱（THIRD-PARTY-NOTICES.md） |
 | ⏳ 未公開 | まだWordPressに貼っていない。貼る作業と、本番サイトでの動作確認（上の「公開のしかた」）は運営者の作業 |
-| ⚠️ 確認できていない | iPhone実機のSafari（確認はChromiumのスマホ設定だけ）／Xの現在の数え方（新しい絵文字・ファイル名風のURL・日本語を含むURL）／サイトに入力を録画する計測が入っていないか |
+| ⚠️ 確認できていない | iPhone実機のSafari（確認はChromiumのスマホ設定と、WPのプレビューを幅390pxで開いた所まで）／Xの現在の数え方（新しい絵文字・ファイル名風のURL・日本語を含むURL）。入力を録画する計測は、2026-10-05に入っていないことを確認済み |
 | 他の人には合わない所 | 要注意表現は**日本語の投稿向け**（文字数は言語を問わない）／直近の重なりは、**使う人が自分の投稿を自分で保存する**必要がある（Xのアカウントとは連携しない）／「よく出る語」の初期値は運営者の題材（Claude など）なので、画面で変えてもらう前提／Premiumの長文ポストは対象外 |
 | ✅ 説明文とCTA | `pages/x-post-checker.md` に作成済み（CTAは最新の公開記事からコピー）。**関連記事カードは入れていない**（記事IDを本番サイトの公開APIから取る必要があり、クラウド環境から届かないため。入れるならMacで `md-to-wp.py` を実行する） |
 

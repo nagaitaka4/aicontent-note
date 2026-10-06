@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B"
+  },
+  {
+    "kind": "candidate",
+    "id": "d3",
+    "text": "X投稿の文字数を数えるツールを、AIと作ってみたんですが、\n「これ使う人いますか？」と聞いたら、「今の形では多くないと思います」と。\n\n作った本人に言われるとは。\n\n結局、文章のどこがAIっぽいかを拾うツールに作り替えました。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "d4a5db11945adf0f",
+    "label": "C"
+  },
+  {
+    "kind": "candidate",
+    "id": "d2",
+    "text": "AIと作った文字数チェッカーのこと、「これ使う人いますか？」とAIに聞いたんです。\n返事は「多くないと思います」。\n\n作った本人に言われるとは。\n\nなので作り替えました。\n貼った文章の「また、」が続く所や、同じ文末が続く所に印が付きます。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "d6911dec31686cac",
+    "label": "D"
+  },
+  {
+    "kind": "candidate",
+    "id": "d1",
+    "text": "AIと一緒に作った、X投稿の文字数を数えるツール。\n「これ、ほんとに使う人いますか？」と聞いたら、AIに「今の形では多くないと思います」と返されました。\n\n作った本人に言われるとは。\n\nなので、文章のどこがAIっぽいかを拾うツールに作り替えました。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "0a1e409e4c0de550",
+    "label": "E"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "F"
+  }
+]

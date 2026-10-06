@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "A"
+  },
+  {
+    "kind": "candidate",
+    "id": "c2",
+    "text": "AIっぽい文章を見つけるツール、中身にAIは使っていません。\n\n拾うのは「また、」「さらに、」が続く所や、「〜と言えるでしょう」みたいな文の形だけ。\n自分のブログで、実際に直してきた形をそのまま入れました。\n\n貼った文章はどこにも送りません。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "6647f1b35caa8a0e",
+    "label": "B"
+  },
+  {
+    "kind": "candidate",
+    "id": "c3",
+    "text": "ChatGPTで書いた文章、どこがAIっぽいのか自分では分からなかったんですよね。\n\nなので、引っかかる所に印が付くツールを作りました。\n「また、」が3回続く、同じ文末が4文続く、みたいな所を拾って、直し方も出します。\n\n無料で、文章は外に送りません。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "edcd8a186f4bbc04",
+    "label": "C"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E"
+  },
+  {
+    "kind": "candidate",
+    "id": "c1",
+    "text": "Claude Codeと作ったX投稿のチェッカー。\n「これ、ほんとに使う人いますか？」と聞いたら、「今の形では多くないと思います」と返ってきました。\n\n作った本人に言われるとは。\n\nなので、文章のどこがAIっぽいかを拾うツールに作り替えました。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "2316fe9db3ee66e4",
+    "label": "F"
+  }
+]

@@ -35,6 +35,7 @@ X（Twitter）に投稿する前に、**文字数と要注意表現**を確認�
 6. アイキャッチ：`images/pages/x-post-checker-eyecatch.png` を `media-new.php` のfile inputへ流し込む → `POST /wp/v2/media/<id>` でalt（`pages/x-post-checker.md` の `eyecatch_alt`）→ `POST /wp/v2/pages/<id> {featured_media}`（7.6章の手順6と同じ。**記事の `posts` ではなく `pages`**）。★固定ページでは、SWELLの既定の設定で**本文の上にアイキャッチは表示されない**（`og:image` には入る）。**投稿ページと同じくタイトルの下に出すには、編集画面の「SWELL設定」→「表示の上書き設定」→「アイキャッチ画像」を「表示」にして保存する**（`swell_meta_show_thumb=show`。`parts/page_head.php` が `is_show_thumb()` で判定）。2026-10-05、1回目の保存では値が残らず「----」のままだった（原因不明）。保存後に編集画面を読み直し、値が「表示」で残っていることと、プレビューに `.p-articleThumb` が出ることを確かめる。⚠️ 固定ページではタイトルの下線と画像のすき間が0pxになる（投稿ページは32px）→ SWELLの「カスタムCSS」欄（`swell_meta_css`）に `.p-articleThumb{margin-top:2em}` を入れた（2026-10-05・すき間32pxを実測）
 7. コメント・ピンバックを閉じる：`POST …/pages/<id> {comment_status:'closed', ping_status:'closed'}`（レスポンスで両方 `closed` を確認）
 8. 数えて確認する。`compose-page.py` が出す値と合わせる：H2 4／表 3／`swl-marker` 1／CTAボタン 1／script 1。公開ページ（プレビュー）にMDの記法（`` ` ``・`**`・`==`）が残っていないかも見る
+10. **2回目以降の更新は、`wp:html` ブロック（ツール本体）だけを入れ替える**（2026-10-06〜）。ユーザーがWPでリードを直した（空行・マーカー位置）ため、全文差し替えはその直しを消す。差し替え前に、WPの本文が前回送ったものと同じかSHA-256で確かめ、違えば差分を見てWPを正とする。入れ替え後は「`wp:html` の外が1文字も変わっていない」ことを確かめる
 9. 開いているエディターは `location.reload()` で読み直す。**RESTで送ったあとに `savePost()` を呼ばない**（古い自動保存で上書きされる）
 
 ★SWELLの固定ページ設定（`swell_meta_*`）は、入稿直後はすべて空＝カスタマイザーの既定に従う。既定では、タイトル（h1）が本文の上に出て、PCでは右にサイドバーが出る（ツールの幅は812px）。スマホ幅（390px）ではサイドバーは下に回り、ツールは359pxで横スクロールなし。変えるならあなたの画面で。

@@ -1,9 +1,23 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-06
+最終更新: 2026-10-07
 
 
 ---
+
+## [2026-10-07] 調査結果（デイリー・水曜）
+
+**①に差分あり（採用1件・記録のみ3件）。**
+
+- **【新規・採用】claude.com/blog 10/6「Claude now works with Google Docs, Sheets, and Slides」**（[記事](https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides)）verbatim `Claude for Google Workspace™ is now in public beta on all paid Claude plans. It adds Claude to Google Docs, Sheets, and Slides, so that you can work with Claude directly in your open files.`（Google Workspace Marketplaceから入れ、Extensions > Claude > Open Claude）。**使う側の変化**：有料プランなら追加料金なしで、開いているDocs・Sheets・Slidesの中からClaudeを使える（ベータ）。Xの「本日のニュース」にも速報（1,257件のポスト）→ `knowledge/x/ideas.md` `research-20261007-01`
+  - ⚠️ 本人はClaudeのチャットを使っておらず、Google Docsの利用も未確認＝「使った」とは書けない。投稿にするなら本人の立場（使うか・使わないか）を確かめてから
+- **【採用・期限つき】クラウドセッションのクレジット（9/24記録の`research-20260924-01`の続き）**：Xで「受け取りは10/8 15:59（日本時間）まで」が22万ビュー超で拡散中（@so_ainsight 10/6）。**公式ヘルプでは受け取り期限を確認できず**（第三者の解説：[it-connect](https://www.it-connect.tech/claude-code-anthropic-offers-up-to-250-in-credit-for-cloud-sessions-only/)・[minnano-rakuraku](https://minnano-rakuraku.com/contents/?p=25845)＝10/7 23:59 PT＝10/8 15:59 JST）。**ユーザーの実画面（claude.ai 設定→使用量・CCが読むだけで確認・10/7 06:50）**：`クラウドセッションクレジット`／`11月5日16:59 JSTに期限切れ`／`$250中$137が残っています`（＝113ドル使用）→ `research-20261007-02`
+- **【記録のみ】npm `@anthropic-ai/claude-code`**：`latest`／`next`＝2.1.292（10/7 02:10 JST）・`stable`は2.1.285。CHANGELOG 2.1.290〜2.1.292は修正が中心（Coworkのクラウドセッションの応答が終わらない不具合の修正・使用量上限メッセージのリンクをクリックできる形に・WebFetchが10万字超を黙って落とす不具合の修正ほか）。料金・上限・既定モデルの変更なし
+- **【記録のみ】anthropic.com/news 10/6「Expanding the Cyber Verification Program」**：審査を通ったセキュリティ専門家向け。一般ユーザーには影響なし
+- **【記録のみ】claude.com/blog 10/6**：企業事例（Comcast・Booz Allen）／Claude Startupsの拡大。手元は変わらない
+- **【差分なし】Claude Apps リリースノート**：先頭はSeptember 28, 2026「Claude Sonnet 5.5 launch」のまま（上位6件に後から差し込まれた項目なし）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅（以上サブエージェントがWebFetch）／@ClaudeDevs ⚠️未確認（今朝はX検索で代用）
+
 
 ## [2026-10-06] 調査結果（デイリー・火曜）
 

@@ -121,7 +121,7 @@ const check = (name, cond, detail) => { if (cond) pass++; else { fail++; console
     check('前提語を拾う', (await page.textContent('#pmc-chip2')).includes('確認'));
     await page.click('summary:has-text("見る項目を選ぶ")');
     await page.uncheck('#pmc-on-leak');
-    check('前提語をOFFにすると拾わない', (await page.textContent('#pmc-chip2')).includes('拾えた所なし'), await page.textContent('#pmc-chip2'));
+    check('前提語をOFFにすると拾わない', (await page.textContent('#pmc-chip2')).includes('問題なし'), await page.textContent('#pmc-chip2'));
 
     // はみ出し（横スクロール）が無いこと
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);

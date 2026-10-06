@@ -63,9 +63,10 @@ var SKELETON = [
   // ② 要注意表現
   '<section class="card" aria-labelledby="pmc-h2">',
   '<div class="card-head"><h3 class="card-title" id="pmc-h2">② 要注意表現</h3><span class="chip" id="pmc-chip2"></span></div>',
-  '<div class="first"><div class="lbl">1行目（初めて読む人が最初に目にする所）</div><div class="line" id="pmc-first"></div><div class="ask">この1行だけで、何の話か分かりますか？</div></div>',
   '<div id="pmc-finds"></div>',
   '<p class="sub" id="pmc-find-foot"></p>',
+  // 1行目は判定ではなく、自分で読み返すための表示。結果より下に置き、警告に見えない見た目にする（2026-10-06 ユーザー指摘）
+  '<div class="first"><div class="lbl">自分で確かめる所（ツールは判定しません）</div><div class="ask">1行目だけ読んで、何の話か分かりますか？</div><div class="line" id="pmc-first"></div></div>',
   '<details><summary>見る項目を選ぶ</summary>',
   '<div class="toggles">',
   '<label><input type="checkbox" id="pmc-on-leak">前の投稿を知らないと伝わりにくい言い回し（昨日の・前回の・例の など）</label>',
@@ -203,10 +204,10 @@ function mount(host) {
     if (!hasText) setChip($('chip2'), '', '入力待ち');
     else if (!any) setChip($('chip2'), '', 'すべてOFF');
     else if (res.items.length) setChip($('chip2'), 'warn', '確認 ' + res.items.length + '件');
-    else setChip($('chip2'), 'ok', '拾えた所なし');
+    else setChip($('chip2'), 'ok', '問題なし');
 
     $('find-foot').textContent = hasText && any && !res.items.length
-      ? '拾えた所はありませんでした。機械で見られるのは言い回しの形だけです。内容が伝わるかは、1行目を読み返して確認してください。'
+      ? '問題は見つかりませんでした。ツールが見ているのは言い回しの形だけです。'
       : '';
   }
 

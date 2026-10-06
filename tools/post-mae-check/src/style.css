@@ -93,10 +93,10 @@ ul.list li { margin: 0; padding: 6px 0; border-top: 1px solid #edf0f3; font-size
 ul.list li:first-child { border-top: 0; }
 code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 14px; background: var(--panel); border-radius: 4px; padding: 1px 5px; word-break: break-all; }
 
-.first { margin-top: 10px; border-left: 4px solid var(--accent); background: var(--panel); border-radius: 0 8px 8px 0; padding: 8px 12px; }
+.first { margin-top: 12px; border: 1px dashed #b8c2cc; background: #fff; border-radius: 8px; padding: 8px 12px; }
 .first .lbl { font-size: 13px; color: var(--muted); }
-.first .line { font-weight: 700; word-break: break-word; overflow-wrap: anywhere; white-space: pre-wrap; }
-.first .ask { font-size: 14px; color: var(--accent); margin-top: 2px; }
+.first .line { margin-top: 4px; color: var(--ink); word-break: break-word; overflow-wrap: anywhere; white-space: pre-wrap; }
+.first .ask { font-size: 14px; color: var(--muted); margin-top: 2px; }
 
 .find { margin-top: 10px; border: 1px solid var(--warn-line); background: var(--warn-bg); border-radius: 8px; padding: 8px 12px; }
 .find .tag { display: inline-block; font-size: 12px; font-weight: 700; color: var(--warn); border: 1px solid var(--warn-line); background: #fff; border-radius: 999px; padding: 0 8px; margin-right: 6px; }

@@ -45,7 +45,7 @@ tags: ChatGPT,Claude,Claude Code,使い分け,GPT-6 Astra
 
 ## Claude Codeがメインなのは、先に環境を作ったから
 
-==最初に環境を作ったのがClaude Codeだった==、というだけです。
+==最初に環境を作ったのがClaude Codeだった==、というのがいちばん大きい理由です。
 環境というのは、次の3つです。
 
 ・記事の書き方を決めた、ルールのファイル<br>
@@ -53,7 +53,7 @@ tags: ChatGPT,Claude,Claude Code,使い分け,GPT-6 Astra
 ・WordPressの下書きまで入れる、入稿の手順
 
 これに慣れていて、毎日これで回っています。
-それ以上の理由はありません。
+Maxを契約していることもあります。
 
 ### ChatGPT側に移したほうがいいのか、Astraで比べた
 

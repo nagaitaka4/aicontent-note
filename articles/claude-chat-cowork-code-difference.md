@@ -3,10 +3,10 @@ no: 73
 series:
 series_no:
 title: Claudeのチャット・Cowork・Claude Codeの違い
-date:
+date: 2026-10-06
 url: https://aicontent-note.com/claude-chat-cowork-code-difference/
 slug: claude-chat-cowork-code-difference
-status: draft
+status: published
 description: Claudeのチャット・Cowork・Claude Codeの違いを、公式の説明で並べました。私の場合はClaude Codeだけを使い、チャットはChatGPTです。チャットとCoworkが1つになる途中なので、画面の見分け方もまとめました。
 eyecatch: eyecatch_0073.png
 eyecatch_alt: Claudeのチャット・Cowork・Claude Codeの違いを、Claudeのロゴとテラコッタ色の文字で表したアイキャッチ画像

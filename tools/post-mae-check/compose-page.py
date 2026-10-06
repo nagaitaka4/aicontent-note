@@ -4,7 +4,7 @@
   python3 tools/post-mae-check/compose-page.py
 
 やること：
-  1. pages/x-post-checker.md を operations/md-to-wp.py で変換する（説明文・表・CTAボタン）
+  1. pages/ai-like-text-checker.md を operations/md-to-wp.py で変換する（説明文・表・CTAボタン）
   2. 原稿の「【ツールをここに表示】」の段落を、ツール本体（dist/wp-block.txt）に差し替える
   3. 先頭の「WPの入力欄に写す情報」を、固定ページ用（タイトル・スラッグ・説明文…）に作り直す
   4. 組み立てた結果を検査して（ブロックの対応・CTA文言・ツールが1つだけ・MD記法の残り）、dist/page.wp.txt に書く
@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
-PAGE_MD = ROOT / "pages" / "x-post-checker.md"
+PAGE_MD = ROOT / "pages" / "ai-like-text-checker.md"
 TOOL = ROOT / "tools" / "post-mae-check" / "dist" / "wp-block.txt"
 MD_TO_WP = ROOT / "operations" / "md-to-wp.py"
 WP_OUT = ROOT / "operations" / "wp-output" / (PAGE_MD.stem + ".wp.txt")

@@ -99,6 +99,11 @@ const check = (name, cond, detail) => { if (cond) pass++; else { fail++; console
     check('AIっぽさ：0件でも自分で確かめる所へ案内する', (await page.textContent('#pmc-ai-foot')).includes('自分で確かめる所'));
     check('並び：①AIっぽさ→②伝わりにくい→③文字数', await page.evaluate(() => { const r = document.querySelector('#pmc-host').shadowRoot; const ys = ['#pmc-hai', '#pmc-h2', '#pmc-h1'].map((q) => r.querySelector(q).getBoundingClientRect().top); return ys[0] < ys[1] && ys[1] < ys[2]; }));
 
+    // 長い文章（記事など）は③を1行にまとめる
+    await page.fill('#pmc-t', 'あいうえおかきくけこ。'.repeat(60));
+    check('長文：③は1行だけ', (await page.isVisible('#pmc-count-long')) && !(await page.isVisible('#pmc-count-detail')), await page.textContent('#pmc-count-long'));
+    check('長文：チップは「X投稿には長い」', (await page.textContent('#pmc-chip1')).includes('X投稿には長い'));
+
     // 超過
     await page.fill('#pmc-t', 'あ'.repeat(141));
     check('141字で超過表示', (await page.textContent('#pmc-msg')).includes('2 超過'), await page.textContent('#pmc-msg'));

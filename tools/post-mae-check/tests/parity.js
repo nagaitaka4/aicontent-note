@@ -45,7 +45,7 @@ console.log(`重なり: ${ovOk} / ${ovN} 本で、x-cannibal.py と同じ結果�
 let aiOk = 0, aiHitsArticles = 0;
 for (const t of exp.ai) {
   const items = PMC.checkAiLike(t.text, { phrase: true, rhythm: false, shape: false });
-  const phrases = items.filter((i) => i.kind === 'noun' || i.kind === 'stock').map((i) => i.match).sort();
+  const phrases = items.filter((i) => i.kind === 'noun' || i.kind === 'stiff' || i.kind === 'stock').map((i) => i.match).sort();
   const vague = items.filter((i) => i.kind === 'vague').map((i) => i.match).sort();
   const sh = t.text.trim() ? PMC.xShape(t.text).shape : null;
   const same = JSON.stringify(phrases) === JSON.stringify(t.phrases.slice().sort()) && JSON.stringify(vague) === JSON.stringify(t.vague.slice().sort()) && sh === t.shape;

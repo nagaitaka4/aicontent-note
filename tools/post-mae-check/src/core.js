@@ -417,7 +417,9 @@ var PMC = (function () {
    */
 
   // 1. 動きを名詞に押し込めた言い回し（article-self-check.py NG_AI_PHRASES の語の形のもの）
-  var AI_NOUN = /の要否|取れる手|を余儀なく|に他なりません|と言えるでしょう/g;
+  var AI_NOUN = /の要否|取れる手/g;
+  // 1b. 硬い書き言葉（同 NG_AI_PHRASES。名詞の形ではないので説明を分ける。2026-10-06 レビュー指摘）
+  var AI_STIFF = /を余儀なく|に他なりません|と言えるでしょう/g;
   // 2. まとめ・つなぎの決まり文句（同 NG_AI_PHRASES の残り。行をまたがない）
   var AI_STOCK = /ここまで.{0,15}(?:書いて|説明して|見て|解説して)きました|について整理すると、大きく|という点が重要です|ということが言えます/g;
   // 3. 何のことかが抜けた抽象名詞（constraints.py VAGUE_NOUN_RE）。本文全体では文脈が足りた使い方が多いので1行目だけ
@@ -481,7 +483,7 @@ var PMC = (function () {
   /**
    * AIっぽく読まれやすい形を拾う。enabled で群ごとにON/OFF（phrase・rhythm・shape）。
    * 戻り値：[{kind, match, index, length, count?, sub?}]（位置の順）
-   *   kind: noun／stock／vague／source／repeat／causative（phrase）・conj／ending（rhythm）・shape（X投稿の形）
+   *   kind: noun／stiff／stock／vague／source／repeat／causative（phrase）・conj／ending（rhythm）・shape（X投稿の形）
    */
   function checkAiLike(text, enabled) {
     enabled = enabled || { phrase: true, rhythm: true, shape: true };
@@ -496,6 +498,7 @@ var PMC = (function () {
 
     if (enabled.phrase) {
       all(AI_NOUN, 'noun');
+      all(AI_STIFF, 'stiff');
       all(AI_STOCK, 'stock');
       all(AI_CAUSATIVE, 'causative');
       var fl = firstLineInfo(t);

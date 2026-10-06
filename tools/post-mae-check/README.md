@@ -1,8 +1,8 @@
-# 投稿まえチェック（X投稿チェッカー）
+# AIっぽさチェック（AIっぽい文章チェッカー）
 
-X（Twitter）に投稿する前に、**文字数と要注意表現**を確認するWebツール。
+文章（X投稿・メール・ブログ記事）の**AIっぽく読まれやすい所・伝わりにくい言い回し・X投稿の文字数**を確認するWebツール。旧名「投稿まえチェック（X投稿チェッカー）」。フォルダ名 `tools/post-mae-check/` と内部の名前（`pmc-`・`PMC`）は旧名のまま。
 
-**2026-10-06：v2。短い文章全般（X投稿・メール・ブログの一段落）の「AIっぽく読まれやすい所」を①に**（ユーザー判断・需要は`operations/structure-drafts/x-post-checker-v2-demand.md`、拾う形と根拠は`x-post-checker-v2-rules.md`）。判定は`core.js`の`checkAiLike`（9つの形）。言い回し・1行目の抽象名詞・X投稿の形は、`article-self-check.py`・`constraints.py`・`x-hook.py`と突き合わせて一致（公開記事の段落を含む4,543本）。公開記事70本（H2の節501）に当てると、何か出るのは16本（資料の紹介で終わる文10・同じ文末7・X投稿の形4・同じ締め1）。画面の並びは①AIっぽさ→②伝わりにくい言い回し→自分で確かめる所→③X投稿の文字数。**固定ページの原稿・題・スラッグは未更新（ユーザー判断待ち）**。
+**2026-10-06：v2「AIっぽさチェック（AIっぽい文章チェッカー）」。文章全般（X投稿・メール・ブログ記事。長文も可）の「AIっぽく読まれやすい所」を①に**（ユーザー判断・需要は`operations/structure-drafts/x-post-checker-v2-demand.md`、拾う形と根拠は`x-post-checker-v2-rules.md`）。判定は`core.js`の`checkAiLike`（9つの形）。言い回し・1行目の抽象名詞・X投稿の形は、`article-self-check.py`・`constraints.py`・`x-hook.py`と突き合わせて一致（公開記事の段落を含む4,543本）。公開記事70本（H2の節501）に当てると、何か出るのは16本（資料の紹介で終わる文10・同じ文末7・X投稿の形4・同じ締め1）。画面の並びは①AIっぽさ→②伝わりにくい言い回し→自分で確かめる所→③X投稿の文字数。原稿は `pages/ai-like-text-checker.md`（題・SEOタイトル・スラッグはユーザー了承済み・2026-10-06）。③はX投稿の上限の2倍（重み560）を超えると1行にまとめる。
 
 **2026-10-05：③直近の投稿との重なりを公開版から外した**（ユーザー判断。初めての人には必ず空で出る・投稿をためる手間が続かない・端末ごとで共有されない、の3点で使う人が少ないと見た）。あわせて**何も保存しない**形にした（localStorage・Cookie を使わない。`build.js` が保存領域を使う書き方を検査して止める）。判定の中身（`PMC.findOverlaps` など）は `src/core.js` に残し、`x-cannibal.py` との突き合わせテストも続ける（画面からは呼ばない）。
 ブラウザの中だけで動く（AIのAPIなし・外部通信なし・費用ゼロ）。スマホで使える。1ファイル。
@@ -11,14 +11,14 @@ X（Twitter）に投稿する前に、**文字数と要注意表現**を確認�
 
 ## 公開のしかた（WordPressに埋め込む）
 
-固定ページの原稿は `pages/x-post-checker.md`（説明文・表・CTA）。スラッグは `x-post-checker`（2026-10-01 ユーザー確定）。**説明文＋ツール＋CTAを1本にした `dist/page.wp.txt` を貼る。**
+固定ページの原稿は `pages/ai-like-text-checker.md`（説明文・表・CTA）。スラッグは `ai-like-text-checker`（2026-10-06に `x-post-checker` から変更・ユーザー了承。旧スラッグ2026-10-01 ユーザー確定）。**説明文＋ツール＋CTAを1本にした `dist/page.wp.txt` を貼る。**
 
 1. `git pull` して、`tools/post-mae-check/dist/page.wp.txt` を開き、**全文をコピー**する
 2. WordPressで**固定ページ**を新規作成 → 右上「⋮」→「コードエディター」に**全文を貼り付ける**（`md-to-wp.py` の出力を貼るときと同じ手順）
 3. 先頭の段落ブロック「WPの入力欄に写す情報」を見て、タイトル・SEOタイトル・スラッグ・説明文を各欄に写し、**そのブロックは削除する**
-4. 「ビジュアルエディター」に戻す → 右の設定で「アイキャッチ画像」に `images/pages/x-post-checker-eyecatch.png`（1200×630・作成済み）を設定し、代替テキストを `pages/x-post-checker.md` の `eyecatch_alt` にする → プレビューで動作確認 → 公開
+4. 「ビジュアルエディター」に戻す → 右の設定で「アイキャッチ画像」に `images/pages/x-post-checker-eyecatch.png`（1200×630・作成済み）を設定し、代替テキストを `pages/ai-like-text-checker.md` の `eyecatch_alt` にする → プレビューで動作確認 → 公開
 
-作り直すとき：ツール（`src/`）を直したら `node build.js` → 原稿（`pages/x-post-checker.md`）を直したら `python3 tools/post-mae-check/compose-page.py`。後者が、ブロックの対応・CTA文言（最新の公開記事と一致）・ツールが1つだけ・MD記法の残りを検査してから `dist/page.wp.txt` を書く。
+作り直すとき：ツール（`src/`）を直したら `node build.js` → 原稿（`pages/ai-like-text-checker.md`）を直したら `python3 tools/post-mae-check/compose-page.py`。後者が、ブロックの対応・CTA文言（最新の公開記事と一致）・ツールが1つだけ・MD記法の残りを検査してから `dist/page.wp.txt` を書く。
 
 ### CCにWordPressへ下書きを作らせる（Macのセッション・Chrome。2026-10-05に固定ページ1094で実施）
 
@@ -27,14 +27,14 @@ X（Twitter）に投稿する前に、**文字数と要注意表現**を確認�
 7.6章の手順を、次のように読み替える（**★は2026-10-05に固定ページ1094で分かったこと**）：
 
 1. `git pull` して `python3 tools/post-mae-check/compose-page.py` を実行する。入稿に使うのは **`dist/page.body.wp.txt`**（入稿情報を除いた本文だけ。先頭は `core/paragraph` のリード）
-2. Chromeで wp-admin を開き、ログイン済みか確認する。同じスラッグが無いことを確認する：`GET /wp-json/wp/v2/pages?slug=x-post-checker&status=any`
+2. Chromeで wp-admin を開き、ログイン済みか確認する。同じスラッグが無いことを確認する：`GET /wp-json/wp/v2/pages?slug=ai-like-text-checker&status=any`
 3. `POST /wp-json/wp/v2/pages` に `status:'draft'`・`title`・`slug`・`content`（page.body.wp.txt）を送る。**記事の `posts` ではなく `pages`**。カテゴリー・タグは無し
 4. ★ツール本体の `<script>` が残っているか確認する（`GET …/pages/<id>?context=edit` の `content.raw`）。**管理者（`unfiltered_html` あり）なら残った**。`content.raw` が送った本文と**完全一致**することまで見る（SHA-256）
    - ⚠️ WPは保存時に、script内の生の絵文字の部品（U+FE0F）を `&#xfe0f;` に置き換える → `build.js` が日本語以外の非ASCIIを `\uXXXX` に戻すようにした（直す前は不一致1か所）
    - ⚠️ WPは**表示時**に、script内の `<=…&&…>` をタグと誤認して `&&` を `&#038;&#038;` に変える（wptexturize・53か所・ツールが動かなかった）→ `build.js` がscriptの中身を `<!--` と `//-->` で包むようにした。**保存された本文が一致していても、プレビューで動くかは別に見る**
    - 本文の運び方：分けて積む代わりに、**push済みのコミットを指定して** `raw.githubusercontent.com` から取得し、ページ側でSHA-256をローカルの値と突き合わせてから送った（公開リポジトリなので取れる）
 5. ★説明文（SEO SIMPLE PACK）はRESTでは入らない。**固定ページの編集画面にも `input[name="ssp_meta_title"]`・`textarea[name="ssp_meta_description"]` がある**（`/service/` はSEOタイトル欄に `seo_title` をそのまま入れている）。⚠️ 2026-10-05は、CCがこの2欄に入れて `savePost()` する操作が自動モードの安全チェックで止められた → あなたの画面で入れる
-6. アイキャッチ：`images/pages/x-post-checker-eyecatch.png` を `media-new.php` のfile inputへ流し込む → `POST /wp/v2/media/<id>` でalt（`pages/x-post-checker.md` の `eyecatch_alt`）→ `POST /wp/v2/pages/<id> {featured_media}`（7.6章の手順6と同じ。**記事の `posts` ではなく `pages`**）。★固定ページでは、SWELLの既定の設定で**本文の上にアイキャッチは表示されない**（`og:image` には入る）。**投稿ページと同じくタイトルの下に出すには、編集画面の「SWELL設定」→「表示の上書き設定」→「アイキャッチ画像」を「表示」にして保存する**（`swell_meta_show_thumb=show`。`parts/page_head.php` が `is_show_thumb()` で判定）。2026-10-05、1回目の保存では値が残らず「----」のままだった（原因不明）。保存後に編集画面を読み直し、値が「表示」で残っていることと、プレビューに `.p-articleThumb` が出ることを確かめる。⚠️ 固定ページではタイトルの下線と画像のすき間が0pxになる（投稿ページは32px）→ SWELLの「カスタムCSS」欄（`swell_meta_css`）に `.p-articleThumb{margin-top:2em}` を入れた（2026-10-05・すき間32pxを実測）
+6. アイキャッチ：`images/pages/x-post-checker-eyecatch.png` を `media-new.php` のfile inputへ流し込む → `POST /wp/v2/media/<id>` でalt（`pages/ai-like-text-checker.md` の `eyecatch_alt`）→ `POST /wp/v2/pages/<id> {featured_media}`（7.6章の手順6と同じ。**記事の `posts` ではなく `pages`**）。★固定ページでは、SWELLの既定の設定で**本文の上にアイキャッチは表示されない**（`og:image` には入る）。**投稿ページと同じくタイトルの下に出すには、編集画面の「SWELL設定」→「表示の上書き設定」→「アイキャッチ画像」を「表示」にして保存する**（`swell_meta_show_thumb=show`。`parts/page_head.php` が `is_show_thumb()` で判定）。2026-10-05、1回目の保存では値が残らず「----」のままだった（原因不明）。保存後に編集画面を読み直し、値が「表示」で残っていることと、プレビューに `.p-articleThumb` が出ることを確かめる。⚠️ 固定ページではタイトルの下線と画像のすき間が0pxになる（投稿ページは32px）→ SWELLの「カスタムCSS」欄（`swell_meta_css`）に `.p-articleThumb{margin-top:2em}` を入れた（2026-10-05・すき間32pxを実測）
 7. コメント・ピンバックを閉じる：`POST …/pages/<id> {comment_status:'closed', ping_status:'closed'}`（レスポンスで両方 `closed` を確認）
 8. 数えて確認する。`compose-page.py` が出す値と合わせる：H2 4／表 3／`swl-marker` 1／CTAボタン 1／script 1。公開ページ（プレビュー）にMDの記法（`` ` ``・`**`・`==`）が残っていないかも見る
 10. **2回目以降の更新は、`wp:html` ブロック（ツール本体）だけを入れ替える**（2026-10-06〜）。ユーザーがWPでリードを直した（空行・マーカー位置）ため、全文差し替えはその直しを消す。差し替え前に、WPの本文が前回送ったものと同じかSHA-256で確かめ、違えば差分を見てWPを正とする。入れ替え後は「`wp:html` の外が1文字も変わっていない」ことを確かめる
@@ -64,7 +64,7 @@ CTAは**最新の公開記事（2026-10-05時点はno.72 `chatgpt-claude-divisio
 | ⏳ 未公開 | まだWordPressに貼っていない。貼る作業と、本番サイトでの動作確認（上の「公開のしかた」）は運営者の作業 |
 | ⚠️ 確認できていない | iPhone実機のSafari（確認はChromiumのスマホ設定と、WPのプレビューを幅390pxで開いた所まで）／Xの現在の数え方（新しい絵文字・ファイル名風のURL・日本語を含むURL）。入力を録画する計測は、2026-10-05に入っていないことを確認済み |
 | 他の人には合わない所 | 要注意表現は**日本語の投稿向け**（文字数は言語を問わない）／Premiumの長文ポストは対象外 |
-| ✅ 説明文とCTA | `pages/x-post-checker.md` に作成済み（CTAは最新の公開記事からコピー）。**関連記事カードは入れていない**（記事IDを本番サイトの公開APIから取る必要があり、クラウド環境から届かないため。入れるならMacで `md-to-wp.py` を実行する） |
+| ✅ 説明文とCTA | `pages/ai-like-text-checker.md` に作成済み（CTAは最新の公開記事からコピー）。**関連記事カードは入れていない**（記事IDを本番サイトの公開APIから取る必要があり、クラウド環境から届かないため。入れるならMacで `md-to-wp.py` を実行する） |
 
 ## 機能（初版）
 
@@ -129,7 +129,7 @@ src/vendor/          公式の正規表現（twitter-text 3.1.0 Apache-2.0／twe
 THIRD-PARTY-NOTICES.md  上のライセンス全文（自動生成）。dist/ のHTMLにも告知文を同梱している
 build.js             1つのHTMLに束ねる
 compose-page.py      固定ページ（説明文＋ツール＋CTA）を1本に組み立てる。検査つき
-../../pages/x-post-checker.md   固定ページの原稿（説明文・CTA）
+../../pages/ai-like-text-checker.md   固定ページの原稿（説明文・CTA）
 dist/                出力（page.wp.txt＝固定ページ丸ごと／page.body.wp.txt＝入稿情報を除いた本文だけ（REST用）／wp-block.txt＝ツールだけ／post-mae-check.html＝単独版）
 tests/               テストと「保存した正解」（xcount.py＝operations/x-count.py の検証／fuzz.js＝乱数の文章／gen-*.js＝正解や正規表現の生成）
 ../../operations/x-count-data.json   x-count.py が読む公式の正規表現（tests/gen-vendor.js が自動生成。手で直さない）

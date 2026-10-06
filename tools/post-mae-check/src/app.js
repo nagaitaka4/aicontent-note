@@ -2,7 +2,7 @@
  *
  * 外部と通信しない（fetch・XMLHttpRequest・外部スクリプト・画像・フォントを使わない）。
  * 何も保存しない（localStorage・Cookie などを使わない）。入力した文章は、ページを閉じれば消える。
- * 2026-10-06：v2。AIっぽく読まれやすい所を①に（短い文章全般）、X投稿の文字数は③へ。
+ * 2026-10-06：v2「AIっぽさチェック」。AIっぽく読まれやすい所を①に（X投稿・メール・記事など文章全般）、X投稿の文字数は③へ。
  * 2026-10-05：直近の投稿との重なり（と投稿の保存）は公開版から外した。判定の中身は core.js に残してある（x-cannibal.py との突き合わせテスト用）。
  * PMC（core.js）と PMC_CSS（style.css）は、ビルド時に同じスコープへ並べて入れる。
  */
@@ -38,13 +38,13 @@ function context(text, index, length) {
 /* ---------- 画面の骨組み（ユーザーの文章は入れない静的な部分だけ） ---------- */
 
 var SKELETON = [
-  '<h2 class="title">投稿まえチェック</h2>',
-  '<p class="lead">X投稿・メール・ブログの一段落など、短い文章のAIっぽく読まれやすい所と、伝わりにくい言い回しを確認します。X投稿の文字数も数えます。</p>',
+  '<h2 class="title">AIっぽさチェック</h2>',
+  '<p class="lead">X投稿・メール・ブログ記事など、文章のAIっぽく読まれやすい所と、伝わりにくい言い回しを確認します。X投稿の文字数も数えます。</p>',
   '<p class="privacy">入力した文章は、外部に送らず、保存もしません。ブラウザの中だけで処理し、ページを閉じれば消えます（AIも使っていません）。</p>',
 
   '<div class="field">',
   '<div class="field-top"><label for="pmc-t">チェックする文章</label><button type="button" class="link" id="pmc-clear">クリア</button></div>',
-  '<textarea id="pmc-t" rows="7" placeholder="X投稿・メール・ブログの一段落など、短い文章を貼り付けてください" spellcheck="false" autocomplete="off" autocapitalize="off" autocorrect="off"></textarea>',
+  '<textarea id="pmc-t" rows="7" placeholder="X投稿・メール・ブログ記事など、文章を貼り付けてください" spellcheck="false" autocomplete="off" autocapitalize="off" autocorrect="off"></textarea>',
   '</div>',
 
   // ① AIっぽさ（2026-10-06 v2で主役に）
@@ -75,7 +75,7 @@ var SKELETON = [
 
   '<details><summary>見る項目を選ぶ</summary>',
   '<div class="toggles">',
-  '<label><input type="checkbox" id="pmc-on-phrase">AIっぽい言い回し（「〜の要否」・決まり文句・「させ」の重ね など）</label>',
+  '<label><input type="checkbox" id="pmc-on-phrase">AIっぽい言い回し（「〜の要否」・決まり文句・「〜させる」が続く など）</label>',
   '<label><input type="checkbox" id="pmc-on-rhythm">文のリズム（「また、」「さらに、」が多い・同じ文末が続く）</label>',
   '<label><input type="checkbox" id="pmc-on-shape">X投稿の形（自分の話が最後の段落だけ）</label>',
   '<label><input type="checkbox" id="pmc-on-leak">前の投稿を知らないと伝わりにくい言い回し（昨日の・前回の・例の など）</label>',
@@ -86,6 +86,8 @@ var SKELETON = [
   // ③ X投稿の文字数
   '<section class="card" aria-labelledby="pmc-h1">',
   '<div class="card-head"><h3 class="card-title" id="pmc-h1">③ X投稿の文字数</h3><span class="chip" id="pmc-chip1"></span></div>',
+  '<p class="sub" id="pmc-count-long" hidden></p>',
+  '<div id="pmc-count-detail">',
   '<div class="meter" id="pmc-meter">',
   '<div class="m-row"><span class="m-num"><b id="pmc-w">0</b> / 280</span><span class="m-msg" id="pmc-msg"></span></div>',
   '<div class="bar" aria-hidden="true"><div class="fill" id="pmc-fill"></div></div>',
@@ -93,12 +95,13 @@ var SKELETON = [
   '<table class="tbl" id="pmc-tbl"></table>',
   '<p class="small" id="pmc-chars" style="margin-top:6px"></p>',
   '<div id="pmc-count-notes"></div>',
+  '</div>',
   '<p class="sub">通常のポスト用（上限280）です。Premiumの長文ポストは対象外です。数え方はXの公式ライブラリ twitter-text（設定 v3）に合わせています。確認日：<span id="pmc-spec"></span></p>',
   '</section>',
 
   '<div class="foot">',
   '<p class="small">このツールは、運営者が記事とXの投稿で実際に直してきた書き方を、そのまま機械にしたものです。AIが書いたかどうかの判定ではありません。採点も添削もしません。引っかかった所を示すだけで、直すかどうかは自分で決めてください。</p>',
-  '<p class="small">機械では見られないこと：内容がおもしろいか、言いにくくないか、1行目だけで話が通じるか。0件でも、AIっぽさが残ることはあります。</p>',
+  '<p class="small">機械では見られないこと：内容がおもしろいか、言いにくくないか、1行目だけで話が通じるか（1行目は一部の形だけ拾います）。0件でも、AIっぽさが残ることはあります。</p>',
   '<p class="small">Xの仕様が変わった場合は、追従できていないことがあります。</p>',
   '<p class="small">文字数の数え方・URLと絵文字の見つけ方は、Twitter, Inc. の twitter-text（Apache License 2.0）と twemoji-parser（MIT License）を元にしています。</p>',
   '</div>'
@@ -126,7 +129,17 @@ function mount(host) {
   function setChip(node, cls, text) { node.className = 'chip' + (cls ? ' ' + cls : ''); node.textContent = text; }
 
   /* --- ③ X投稿の文字数 --- */
+  // X投稿の上限を大きく超える文章（記事など）では、内訳を出さず1行にまとめる（2026-10-06）
+  var LONG_WEIGHT = 560;
   function renderCount(r, hasText) {
+    var long = r.weight > LONG_WEIGHT;
+    $('count-detail').hidden = long;
+    $('count-long').hidden = !long;
+    if (long) {
+      $('count-long').textContent = 'X投稿としては長すぎます（Xの数え方で' + r.weight + '／上限280）。X投稿でなければ、この欄は気にしなくて大丈夫です。';
+      setChip($('chip1'), '', 'X投稿には長い');
+      return;
+    }
     $('w').textContent = r.weight;
     var meter = $('meter');
     var pct = Math.min(100, r.weight / r.max * 100);
@@ -194,11 +207,12 @@ function mount(host) {
   /* --- ① AIっぽく読まれやすい所 --- */
   var AI_LABELS = {
     noun: { tag: '言い回し', msg: '動きを名詞に押し込めた言い方は、人が話すときにはあまり使いません。主語を立てて、動詞で言い直せないか確かめてください。', ex: '例：「課金の要否」→「お金を払わないと使えない」' },
+    stiff: { tag: '言い回し', msg: '書き言葉の硬い言い回しです。人に話すときの言葉で言い直せないか確かめてください。', ex: '例：「変更を余儀なくされた」→「変えるしかなかった」' },
     stock: { tag: '決まり文句', msg: 'まとめやつなぎの決まり文句です。削って、言いたいことから書き始められないか確かめてください。' },
     causative: { tag: '言い回し', msg: '「〜させて、〜させる」が続くと硬く読まれます。誰が何をするかを主語にして書けないか確かめてください。' },
     vague: { tag: '1行目', msg: '何のことかが抜けています。「何の線か」「何の差か」を名詞の前に付けると伝わります。', ex: '例：「明確なライン」→「どこまで似たらパクリかの線」' },
     source: { tag: '文の終わり', msg: '資料が何と言ったかで終わっています。読む人にとって何が起きるかまで書けないか確かめてください。' },
-    repeat: { tag: '繰り返し', msg: '同じ締めの言い回しが続くと、型どおりに見えます。2回目以降を言い換えるか、削れないか確かめてください。' },
+    repeat: { tag: '繰り返し', msg: '決まった言い回しが繰り返されると、型どおりに見えます。2回目以降を言い換えるか、削れないか確かめてください。' },
     conj: { tag: 'リズム', msg: 'つなぎの言葉が多いと、説明書のように読まれます。減らすか、文を短く切れないか確かめてください。' },
     ending: { tag: 'リズム', msg: '文末がそろいすぎると、単調に読まれます。1つ変えるか、文をまとめられないか確かめてください。' },
     shape: { tag: 'X投稿の形', msg: '説明が続いて、最後に自分の一言という形は、ニュースの紹介に見えます。自分の話を真ん中に置けないか確かめてください。' }
@@ -232,12 +246,11 @@ function mount(host) {
     var items = PMC.checkAiLike(text, { phrase: en.phrase, rhythm: en.rhythm, shape: en.shape });
     var finds = $('ai-finds');
     clear(finds);
-    var shown = items.slice(0, 8);
-    shown.forEach(function (it) {
+    // 記事を丸ごと貼る使い方があるので、件数で切らずに全件出す（2026-10-06 レビュー指摘）
+    items.forEach(function (it) {
       var lab = AI_LABELS[it.kind];
       finds.appendChild(findBox(text, lab.tag, aiWhat(it), lab.msg, lab.ex, it));
     });
-    if (items.length > shown.length) finds.appendChild(el('p', 'small', 'ほか ' + (items.length - shown.length) + ' 件'));
     var any = en.phrase || en.rhythm || en.shape;
     if (!hasText) setChip($('chip-ai'), '', '入力待ち');
     else if (!any) setChip($('chip-ai'), '', 'すべてOFF');
@@ -264,12 +277,10 @@ function mount(host) {
     var finds = $('finds');
     clear(finds);
     var any = en.leak || en.report || en.deixis;
-    var shown = res.items.slice(0, 8);
-    shown.forEach(function (it) {
+    res.items.forEach(function (it) {
       var lab = LABELS[it.kind];
       finds.appendChild(findBox(text, lab.tag, it.kind === 'leak' ? '「' + it.match + '」があります' : lab.what, lab.msg, null, it));
     });
-    if (res.items.length > shown.length) finds.appendChild(el('p', 'small', 'ほか ' + (res.items.length - shown.length) + ' 件'));
 
     if (!hasText) setChip($('chip2'), '', '入力待ち');
     else if (!any) setChip($('chip2'), '', 'すべてOFF');

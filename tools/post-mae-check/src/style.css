@@ -128,3 +128,6 @@ details > summary::marker { color: var(--accent); }
   .title { font-size: 20px; }
   .card { padding: 10px 12px 12px; }
 }
+
+/* hidden 属性をスタイルで打ち消さない */
+.pmc [hidden] { display: none !important; }

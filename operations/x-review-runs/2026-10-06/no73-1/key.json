@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A"
+  },
+  {
+    "kind": "candidate",
+    "id": "code73-01",
+    "text": "Claude Codeって名前に「Code」とあるけど、自分はコードを書かずに使ってます。\nやってるのは記事づくり。\n\n下書きを書かせて、チェック用の仕組みを手元で動かして直す。\n名前でだいぶ損してる道具だと思ってます。",
+    "hash": "ef4f90b3cb57f7f3",
+    "label": "B"
+  },
+  {
+    "kind": "candidate",
+    "id": "cloud73-01",
+    "text": "自分はClaudeだとClaude Codeしか使っていないので、Coworkの変更は正直ちょっと他人事です。\n\n今日から、Pro・Maxで新しく始めるCoworkの作業はクラウドで動くそうです。\nパソコンを閉じても進む。\n\nそれでも乗り換えないのは、記事もチェックの仕組みも、全部手元のフォルダにあるから。",
+    "hash": "ab68f92ddf325d92",
+    "label": "C"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D"
+  },
+  {
+    "kind": "candidate",
+    "id": "narabi73-ri",
+    "text": "Claudeを開くと「チャット」「Cowork」「コード」と並んでます。\n自分が使ってるのは「コード」だけ。\nチャットはChatGPTで、Coworkは使っていません。\n\n公式の説明で3つを並べてみたら、違いは「作業がどこで進むか」でした。\nhttps://aicontent-note.com/claude-chat-cowork-code-difference/",
+    "hash": "59547ad4c2183622",
+    "label": "E"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "F"
+  }
+]

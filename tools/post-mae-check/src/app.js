@@ -47,6 +47,17 @@ var SKELETON = [
   '<textarea id="pmc-t" rows="7" placeholder="X投稿・メール・ブログ記事など、文章を貼り付けてください" spellcheck="false" autocomplete="off" autocapitalize="off" autocorrect="off"></textarea>',
   '</div>',
 
+  // 見る項目を選ぶ：①と②の両方にかかるので、入力欄の直下・結果の前に閉じたまま置く（2026-10-06 ユーザー判断）
+  '<details><summary>見る項目を選ぶ</summary>',
+  '<div class="toggles">',
+  '<label><input type="checkbox" id="pmc-on-phrase">AIっぽい言い回し（「〜の要否」・決まり文句・「〜させる」が続く など）</label>',
+  '<label><input type="checkbox" id="pmc-on-rhythm">文のリズム（「また、」「さらに、」が多い・同じ文末が続く）</label>',
+  '<label><input type="checkbox" id="pmc-on-shape">X投稿の形（自分の話が最後の段落だけ）</label>',
+  '<label><input type="checkbox" id="pmc-on-leak">前の投稿を知らないと伝わりにくい言い回し（昨日の・前回の・例の など）</label>',
+  '<label><input type="checkbox" id="pmc-on-report">1行目が「〜しました」の報告で終わっている</label>',
+  '<label><input type="checkbox" id="pmc-on-deixis">1行目の「これ・それ・あれ」</label>',
+  '</div></details>',
+
   // ① AIっぽさ（2026-10-06 v2で主役に）
   '<section class="card" aria-labelledby="pmc-hai">',
   '<div class="card-head"><h3 class="card-title" id="pmc-hai">① AIっぽく読まれやすい所</h3><span class="chip" id="pmc-chip-ai"></span></div>',
@@ -72,16 +83,6 @@ var SKELETON = [
   '<li>「AIはこういうもの」と言い切っていませんか</li>',
   '</ul>',
   '</div>',
-
-  '<details><summary>見る項目を選ぶ</summary>',
-  '<div class="toggles">',
-  '<label><input type="checkbox" id="pmc-on-phrase">AIっぽい言い回し（「〜の要否」・決まり文句・「〜させる」が続く など）</label>',
-  '<label><input type="checkbox" id="pmc-on-rhythm">文のリズム（「また、」「さらに、」が多い・同じ文末が続く）</label>',
-  '<label><input type="checkbox" id="pmc-on-shape">X投稿の形（自分の話が最後の段落だけ）</label>',
-  '<label><input type="checkbox" id="pmc-on-leak">前の投稿を知らないと伝わりにくい言い回し（昨日の・前回の・例の など）</label>',
-  '<label><input type="checkbox" id="pmc-on-report">1行目が「〜しました」の報告で終わっている</label>',
-  '<label><input type="checkbox" id="pmc-on-deixis">1行目の「これ・それ・あれ」</label>',
-  '</div></details>',
 
   // ③ X投稿の文字数
   '<section class="card" aria-labelledby="pmc-h1">',

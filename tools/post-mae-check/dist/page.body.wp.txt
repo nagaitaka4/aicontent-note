@@ -68,7 +68,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"has-border -border03 is-style-bg_grid"} -->
-<p class="has-border -border03 is-style-bg_grid"><strong>・<strong>貼り付ける</strong>：X投稿・メール・ブログ記事など、文章を入力欄に貼ります。記事を丸ごと貼っても使えます<br>・<strong>出た所を読み返す</strong>：結果は「①AIっぽく読まれやすい所」「②伝わりにくい言い回し」「③X投稿の文字数」に出ます。出た所を読み返して、直すか決めます<br>・<strong>自分でも読む</strong>：0件でも、AIっぽさが残ることはあります。最後は「自分で確かめる所」を見ながら、声に出して読んでください</strong></p>
+<p class="has-border -border03 is-style-bg_grid"><strong>・<strong>貼り付ける</strong>：X投稿・メール・ブログ記事など、文章を入力欄に貼ります。記事を丸ごと貼っても使えます<br>・<strong>出た所を読み返す</strong>：結果は「①AIっぽく読まれやすい所」「②伝わりにくい言い回し」「③X投稿の文字数」に出ます。出た所を読み返して、直すか決めます<br>・<strong>自分でも読む</strong>：<strong>0件でも、AIっぽさが残ることはあります。</strong>最後は「自分で確かめる所」を見ながら、声に出して読んでください</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -88,7 +88,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>ツールが見る所</th><th>例と直し方</th></tr></thead><tbody><tr><td>「〜の要否」のように、動詞を名詞にまとめた言い方</td><td>「課金の要否」→「お金を払わないと使えない」</td></tr><tr><td>書き言葉の硬い言い回し</td><td>「変更を余儀なくされた」→「変えるしかなかった」</td></tr><tr><td>まとめ・つなぎの決まり文句</td><td>「ここまで3つの方法を説明してきました」「という点が重要です」→ 削って、言いたいことから書く</td></tr><tr><td>何のことかが抜けた言葉（1行目）</td><td>「明確なライン」→「どこまで似たらパクリかの線」</td></tr><tr><td>「◯◯は〜としています」と、資料の言い分で終わる文</td><td>読む人にとって何が変わるかまで書く</td></tr><tr><td>決まった言い回しの繰り返し（「今振り返ると」「そう感じています」など）</td><td>2回目を言い換えるか、削る</td></tr><tr><td>文の始めのつなぎが多い</td><td>「また、」「さらに、」「次に、」が3回 → 減らして、文を短く切る</td></tr><tr><td>同じ文末が続く</td><td>「〜ています。」が4文続く → 1つ変えるか、文をまとめる</td></tr><tr><td>「〜させる」が続く</td><td>「集めさせて、まとめさせた」→ 誰が何をするかを主語にして書く</td></tr><tr><td>自分の話が最後だけ（X投稿）</td><td>説明が続いて、最後に自分の一言 → 自分の話を真ん中に置く</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>ツールが見る所</th><th>例と直し方</th></tr></thead><tbody><tr><td>「〜の要否」のように、動詞を名詞にまとめた言い方</td><td>「課金の要否」→<strong>「お金を払わないと使えない」</strong></td></tr><tr><td>書き言葉の硬い言い回し</td><td>「変更を余儀なくされた」→<strong>「変えるしかなかった」</strong></td></tr><tr><td>まとめ・つなぎの決まり文句</td><td>「ここまで3つの方法を説明してきました」「という点が重要です」→ <strong>削って、言いたいことから書く</strong></td></tr><tr><td>何のことかが抜けた言葉（1行目）</td><td>「明確なライン」→<strong>「どこまで似たらパクリかの線」</strong></td></tr><tr><td>「◯◯は〜としています」と、資料の言い分で終わる文</td><td><strong>読む人にとって何が変わるかまで書く</strong></td></tr><tr><td>決まった言い回しの繰り返し（「今振り返ると」「そう感じています」など）</td><td><strong>2回目を言い換えるか、削る</strong></td></tr><tr><td>文の始めのつなぎが多い</td><td>「また、」「さらに、」「次に、」が3回 → <strong>減らして、文を短く切る</strong></td></tr><tr><td>同じ文末が続く</td><td>「〜ています。」が4文続く → <strong>1つ変えるか、文をまとめる</strong></td></tr><tr><td>「〜させる」が続く</td><td>「集めさせて、まとめさせた」→ <strong>誰が何をするかを主語にして書く</strong></td></tr><tr><td>自分の話が最後だけ（X投稿）</td><td>説明が続いて、最後に自分の一言 → <strong>自分の話を真ん中に置く</strong></td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
@@ -104,7 +104,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>対象</th><th>扱い</th></tr></thead><tbody><tr><td>入力した文章</td><td>このツールから、どこにも送られません。AIも使っていません</td></tr><tr><td>保存</td><td>入力した文章も設定も、どこにも保存しません。ページを閉じると消えます</td></tr><tr><td>アクセス解析</td><td>このページにも、ほかのページと同じアクセス解析（Google アナリティクス）が入っています。ツールは、入力した文章をアクセス解析に渡しません（<a href="https://aicontent-note.com/privacy-policy/"><strong>プライバシーポリシー</strong></a>）</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>対象</th><th>扱い</th></tr></thead><tbody><tr><td>入力した文章</td><td>このツールから、<strong>どこにも送られません</strong>。AIも使っていません</td></tr><tr><td>保存</td><td>入力した文章も設定も、<strong>どこにも保存しません</strong>。ページを閉じると消えます</td></tr><tr><td>アクセス解析</td><td>このページにも、ほかのページと同じアクセス解析（Google アナリティクス）が入っています。ツールは、<strong>入力した文章をアクセス解析に渡しません</strong>（<a href="https://aicontent-note.com/privacy-policy/"><strong>プライバシーポリシー</strong></a>）</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:separator -->
@@ -116,7 +116,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>AIの判定ではない</td><td>AIが書いたかどうかは判定しません。人が書いた文章に出ることも、AIが書いた文章で0件のこともあります</td></tr><tr><td>出ても直す必要はない</td><td>「NG」ではなく「確認してほしい所」です。読み返して通じるなら、そのままで大丈夫です</td></tr><tr><td>ツールでは分からないこと</td><td>内容がおもしろいか、言いにくくないか、1行目だけで話が通じるか（1行目は一部の形だけ拾います）。誤字、炎上しそうな表現、事実の誤りも見ていません</td></tr><tr><td>日本語向け</td><td>①と②は、日本語の文章向けです</td></tr><tr><td>X投稿の文字数</td><td>通常のポスト用（上限280）です。日本語は1字を2と数えるので、日本語だけなら140字までです。Xの公式の数え方（<a href="https://github.com/twitter/twitter-text/blob/master/config/v3.json"><strong>twitter-text</strong></a>のv3・2026年9月30日時点）に合わせています。新しい絵文字の一部や、日本語を含むURLは、Xの表示とずれることがあります。違うときは、Xの投稿画面の表示を優先してください</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>AIの判定ではない</td><td><strong>AIが書いたかどうかは判定しません</strong>。人が書いた文章に出ることも、AIが書いた文章で0件のこともあります</td></tr><tr><td>出ても直す必要はない</td><td>「NG」ではなく「確認してほしい所」です。<strong>読み返して通じるなら、そのままで大丈夫です</strong></td></tr><tr><td>ツールでは分からないこと</td><td>内容がおもしろいか、言いにくくないか、1行目だけで話が通じるか（1行目は一部の形だけ拾います）。誤字、炎上しそうな表現、事実の誤りも見ていません</td></tr><tr><td>日本語向け</td><td>①と②は、日本語の文章向けです</td></tr><tr><td>X投稿の文字数</td><td>通常のポスト用（上限280）です。日本語は1字を2と数えるので、<strong>日本語だけなら140字までです</strong>。Xの公式の数え方（<a href="https://github.com/twitter/twitter-text/blob/master/config/v3.json"><strong>twitter-text</strong></a>のv3・2026年9月30日時点）に合わせています。新しい絵文字の一部や、日本語を含むURLは、Xの表示とずれることがあります。違うときは、Xの投稿画面の表示を優先してください</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:separator -->

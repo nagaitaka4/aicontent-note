@@ -16,9 +16,9 @@ tags: Claude,Claude Cowork,Claude Code,使い分け
 
 # Claudeのチャット・Cowork・Claude Codeの違い
 
-答えるチャット、仕事を進めるCowork、手元で動くClaude Codeです。
-私の場合、Claudeは作業用のClaude Codeだけで、チャットはChatGPT、Coworkは使っていません。
-比べて選んだのではなく、作業の環境をClaude Codeに作ったから、というだけです。
+==答えるチャット、仕事を進めるCowork、手元で動くClaude Code。==
+私の場合、Claudeは作業用のClaude Codeだけで、チャットはChatGPTだけにしていて、Coworkは使っていません。
+最初に作業の環境を作ったのがClaude Codeで、慣れていて、Maxも契約しているからです。
 
 ---
 

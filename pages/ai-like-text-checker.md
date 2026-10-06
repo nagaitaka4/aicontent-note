@@ -4,7 +4,8 @@ title: AIっぽさチェック（AIっぽい文章チェッカー）
 seo_title: AIっぽい文章チェッカー｜どこがAIっぽいか無料で確認
 url: https://aicontent-note.com/ai-like-text-checker/
 slug: ai-like-text-checker
-status: draft
+status: published
+published: 2026-10-06
 last_updated: 2026-10-06
 eyecatch: images/pages/ai-like-text-checker-eyecatch.png
 eyecatch_alt: AIっぽい文章チェッカー「AIっぽさチェック」｜文章のAIっぽく読まれやすい所を無料で確認

@@ -4,7 +4,7 @@ title: プライバシーポリシー
 url: https://aicontent-note.com/privacy-policy/
 slug: privacy-policy
 status: published
-last_updated: 2026-10-01
+last_updated: 2026-10-06
 meta_description: AIコンテンツ運用ノートのプライバシーポリシーです。個人情報の取り扱い、アクセス解析ツールの使用、お問い合わせフォームでの情報収集について説明しています。
 ---
 
@@ -98,4 +98,4 @@ Google アナリティクスはCookieを使用してデータを収集します�
 
 ---
 
-*最終更新日：2026年10月1日*
+*最終更新日：2026年10月6日*

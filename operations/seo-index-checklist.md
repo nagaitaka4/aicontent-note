@@ -73,6 +73,8 @@
 | 16 | https://aicontent-note.com/service/ | リクエスト済み |
 | 17 | https://aicontent-note.com/contact/ | リクエスト済み |
 | 18 | https://aicontent-note.com/privacy-policy/ | リクエスト済み |
+| 19 | https://aicontent-note.com/ai-like-text-checker/ | **2026-10-06公開の固定ページ（AIっぽさチェック）。リクエストはユーザーに案内済み・未実施** |
+| 20 | https://aicontent-note.com/privacy-policy/ | **2026-10-06に節を追加（無料ツールに入力された文章について）。再リクエストはユーザーに案内済み・未実施** |
 | - | https://aicontent-note.com/claude-code-limitations/ | Googleが発見次第 |
 | - | https://aicontent-note.com/blog-update-outsource-timing/ | Googleが発見次第 |
 

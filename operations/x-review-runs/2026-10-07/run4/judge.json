@@ -1,0 +1,174 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "1行目からモデル名だらけ。",
+      "「Fable」が何か分からず置いていかれた。",
+      "1行目がプラン変更の報告。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "中盤は発表の要約。",
+      "前半は公式発表の要約。",
+      "終了の告知までは公式発表の要約。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "w1",
+    "text": "使い道が分からなかった、Claude Codeのお試し250ドル。\n残りで、仕事のツールを1つ任せました。\n\n最初は文字数チェッカー。\n自分が「これ使う人いますか？」と聞いたら、返事は「多くないと思います」。\n\nなので、文章のAIっぽい所に印を付けるチェッカーに作り替えました。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "1d514dec85f1adaf",
+    "label": "C",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "お試し250ドル"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 3.33,
+    "comments": [
+      "AIに「使う人いますか？」と聞いて「多くない」と返された所が面白い。誰が答えたのかが書かれておらず一瞬迷った。",
+      "「返事は」の相手が誰か一瞬分からず、オチが弱くなった。",
+      "「返事は」が誰の返事か一瞬わからない。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・お試し250ドル"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "w2",
+    "text": "Claude Codeのお試し250ドル、サッカーくじの次は仕事のツールを任せました。\n\nできたのは文字数チェッカー。\n自分が「これ使う人いますか？」と聞いたら、Claudeが「多くないと思います」。\n\nなので、文章のAIっぽい所に印を付けるチェッカーに作り替えました。\n残りは137ドルです。",
+    "hash": "0fef3be261d2dfde",
+    "label": "D",
+    "avg": {
+      "stop": 3.33,
+      "fun": 4.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "お試し250ドル",
+      "サッカーくじ"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.0,
+    "comments": [
+      "「サッカーくじの次は」が前の投稿を知らないと分からず引っかかった。",
+      "「サッカーくじの次は」で何それ？と気になり止まった。前の投稿を知らないと置いていかれる。",
+      "前の投稿を知らないと置いていかれる。リンクが無いので試せない。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・お試し250ドル・サッカーくじ"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "w3",
+    "text": "Claude Codeのお試し250ドル、残りで仕事のツールを1つ作ってもらいました。\n\nできた文字数チェッカーのこと、自分が「これ使う人いますか？」と聞いたら、\nClaudeは「多くないと思います」。作った本人なのに。\n\nなので、文章のAIっぽい所に印を付ける形に作り替えました。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "be174cd1492d6984",
+    "label": "E",
+    "avg": {
+      "stop": 3.0,
+      "fun": 4.33,
+      "follow": 4.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "お試し250ドル"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "「作った本人なのに。」のツッコミで笑えて、書き手の人柄が一番見える。1行目がもう少しフックのある言い方なら止まりやすい。",
+      "「作った本人なのに。」のツッコミで笑えて、人柄が見えた。1行目がやや説明調。",
+      "「作った本人なのに。」のツッコミで笑えて、AIとのやり取りが目に浮かぶ。1行目がもう少し引っかかる言い方なら、もっと止まる。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・お試し250ドル"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "F",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "結論がやや弱い。",
+      "有料を続けるか迷った話は自分の悩みと同じ。",
+      "比較が中途半端。"
+    ]
+  }
+]

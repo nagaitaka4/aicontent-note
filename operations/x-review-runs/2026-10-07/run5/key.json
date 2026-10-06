@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "candidate",
+    "id": "x2",
+    "text": "Claudeに課金していたら付いてきた、250ドル分のお試し。\n自分は残りで、仕事のツールを作ってもらいました。\n\n文字数チェッカー、「これ使う人いますか？」と聞くと、\nClaudeは「多くないと思います」。作った本人なのに。\n\nAIっぽい文章に印を付ける形に作り替えました。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "d698a003b5209035",
+    "label": "A"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "B"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D"
+  },
+  {
+    "kind": "candidate",
+    "id": "x1",
+    "text": "Claudeの有料プランに付いてきた、250ドル分のお試し。\n残りで、自分の仕事のツールを作ってもらいました。\n\n文字数チェッカー、「これ使う人いますか？」と聞いたら、\nClaudeは「多くないと思います」。作った本人なのに。\n\nAIっぽい文章に印を付ける形に作り替えました。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "5172c547a84d1871",
+    "label": "E"
+  },
+  {
+    "kind": "candidate",
+    "id": "x3",
+    "text": "Claudeの有料プランに付いてきた250ドル分のお試しで、仕事のツールを作ってもらいました。\n\n文字数チェッカー、自分が「これ使う人いますか？」と聞いたら、\nClaudeは「多くないと思います」。作った本人なのに。\n\nなので、AIっぽい文章に印を付ける形に作り替えました。\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "hash": "5075c6b16450754d",
+    "label": "F"
+  }
+]

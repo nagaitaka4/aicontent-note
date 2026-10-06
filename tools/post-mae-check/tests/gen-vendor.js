@@ -1,6 +1,6 @@
 // 公式の twitter-text 3.1.0 が実際に使っている正規表現を、そのまま書き出す（手で写さない）。
 //   node tests/gen-vendor.js
-// 出力: src/vendor/twitter-text-regex.js           （投稿まえチェック用・JS）
+// 出力: src/vendor/twitter-text-regex.js           （AIっぽさチェック用・JS）
 //       ../../operations/x-count-data.json         （operations/x-count.py 用・Python用に変換済み）
 const fs = require('fs');
 const path = require('path');
@@ -30,7 +30,7 @@ const comment = (txt) => txt.split('\n').map((l) => (' * ' + l).replace(/\s+$/, 
 if (/\*\//.test(apacheNotice + twemojiLicense + ttLicense)) throw new Error('ライセンス文面に */ が含まれている');
 
 const out = `/*!
- * 投稿まえチェックが使っている第三者の成果物。tests/gen-vendor.js が自動生成（手で直さない）。全文は THIRD-PARTY-NOTICES.md。
+ * AIっぽさチェック（旧 投稿まえチェック）が使っている第三者の成果物。tests/gen-vendor.js が自動生成（手で直さない）。全文は THIRD-PARTY-NOTICES.md。
  *
  * ■ twitter-text ${ttVersion}  https://github.com/twitter/twitter-text
  *   URLの見つけ方の正規表現（公式がそのまま使っているもの）を取り出して使っている。
@@ -56,7 +56,7 @@ var TT = {
 // 配布物に同梱する第三者ライセンスの全文（Apache License 2.0 は全文の写しを渡すことが条件）
 fs.writeFileSync(path.join(__dirname, '..', 'THIRD-PARTY-NOTICES.md'),
   '# 第三者のライセンス\n\n自動生成（tests/gen-vendor.js）。パッケージ同梱の文面をそのまま写している。\n\n' +
-  '投稿まえチェックと operations/x-count.py は、X公式の次の成果物から、正規表現（URLと絵文字の見つけ方）を取り出して使っている。' +
+  'AIっぽさチェック（旧 投稿まえチェック）と operations/x-count.py は、X公式の次の成果物から、正規表現（URLと絵文字の見つけ方）を取り出して使っている。' +
   '数え方の手順は公式の実装を見て書き直したもの（変更あり）。\n\n' +
   '---\n\n## twitter-text ' + ttVersion + '（Apache License 2.0）\nhttps://github.com/twitter/twitter-text\n\n```\n' + ttLicense.trim() + '\n```\n\n' +
   '---\n\n## twemoji-parser ' + twemojiVersion + '（MIT License）\nhttps://github.com/twitter/twemoji-parser\n\n```\n' + twemojiLicense + '\n```\n');

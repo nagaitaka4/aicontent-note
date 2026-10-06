@@ -55,7 +55,7 @@ for (const bad of ['</script', '<!--', '<script', '-->']) {
 }
 if (/\n\s*\n/.test(js)) throw new Error('空行が入っている（WordPressの自動整形で崩れる）');
 
-const fallback = '<p>「投稿まえチェック」を表示するには、ブラウザのJavaScriptが必要です。しばらく待っても表示されない場合は、ページを読み込み直してください。</p>';
+const fallback = '<p>「AIっぽさチェック」を表示するには、ブラウザのJavaScriptが必要です。しばらく待っても表示されない場合は、ページを読み込み直してください。</p>';
 // scriptの中身を <!-- と //--> で包む。WordPressは表示時の整形（wptexturize）で、コード中の `<=1&&a>` のような並びを
 // タグと誤認し、&& を &#038;&#038; に変える（2026-10-05 固定ページ1094のプレビューで53か所・ツールが動かなかった）。
 // HTMLコメントの中は整形されない。ブラウザは <!-- を1行コメントとして読むので、コードの意味は変わらない
@@ -68,7 +68,7 @@ fs.writeFileSync(path.join(dist, 'post-mae-check.html'), [
   '<!doctype html>',
   '<html lang="ja"><head><meta charset="utf-8">',
   '<meta name="viewport" content="width=device-width, initial-scale=1">',
-  '<title>投稿まえチェック</title>',
+  '<title>AIっぽさチェック</title>',
   '<style>body{margin:0;padding:16px;background:#f5f7f9;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;color:#1f2933}</style>',
   '</head><body>',
   snippet,

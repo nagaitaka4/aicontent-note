@@ -1,5 +1,5 @@
 /*!
- * 投稿まえチェックが使っている第三者の成果物。tests/gen-vendor.js が自動生成（手で直さない）。全文は THIRD-PARTY-NOTICES.md。
+ * AIっぽさチェック（旧 投稿まえチェック）が使っている第三者の成果物。tests/gen-vendor.js が自動生成（手で直さない）。全文は THIRD-PARTY-NOTICES.md。
  *
  * ■ twitter-text 3.1.0  https://github.com/twitter/twitter-text
  *   URLの見つけ方の正規表現（公式がそのまま使っているもの）を取り出して使っている。

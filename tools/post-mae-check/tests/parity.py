@@ -86,6 +86,40 @@ for label, t in texts:
             hits.append({"other": l2, "jac": jac, "shared": shared})
     out["overlaps"][label] = hits
 
+# AIっぽさ（v2・2026-10-06）：article-self-check.py の NG_AI_PHRASES／constraints.py の VAGUE_NOUN_RE／x-hook.py の check_shape
+# 対象は上の文章に加えて、公開記事の本文を段落ごとに（地の文体に誤って当たらないかも同時に見る）
+sys.path.insert(0, str(OPS))
+selfcheck = load("article_self_check", "article-self-check.py")
+NG_AI = [p for p in selfcheck.NG_AI_PHRASES]
+ai_texts = [(label, t) for label, t in texts]
+ARTICLES = OPS.parent / "articles"
+for f in sorted(ARTICLES.glob("*.md")):
+    raw = f.read_text(encoding="utf-8")
+    m = re.match(r"---\n(.*?)\n---\n", raw, re.S)
+    if not m or not re.search(r"^status:\s*published", m.group(1), re.M):
+        continue
+    body = re.sub(r"```.*?```", "", raw[m.end():], flags=re.S)
+    body = re.sub(r"<!--.*?-->", "", body, flags=re.S)
+    for j, para in enumerate(b for b in re.split(r"\n\s*\n", body) if b.strip()):
+        ai_texts.append((f"A:{f.stem[:24]}:{j}", para))
+for t_ in [
+    "課金の要否は、使い方で決まります。取れる手が変わる。",
+    "ここまで3つの方法を説明してきました。続けるという点が重要です。",
+    "明確なラインはありません。\n大きな差もありません。",
+    "新機能が出ました。\n\n料金は据え置きです。\n\n自分はまだ試していません。",
+    "新機能が出ました。\n\n料金は据え置きです。\n\n自分の場合はどうしますか？",
+    "新機能が出ました。\n\n\n\n自分は試しました。",
+    "　\n\n自分の話。\n\n説明です。",
+]:
+    ai_texts.append((f"AS{len(ai_texts)}", t_))
+out["ai"] = []
+for label, t in ai_texts:
+    phrases = sorted(m.group(0) for line in t.split("\n") for pat in NG_AI for m in re.finditer(pat, line))
+    first = next((l for l in t.split("\n") if l.strip()), "")
+    vague = sorted(m.group(0) for m in re.finditer(selfcheck.VAGUE_NOUN_RE, first))
+    shape = hook.check_shape(t)[1] if t.strip() else None
+    out["ai"].append({"label": label, "text": t, "phrases": phrases, "vague": vague, "shape": shape})
+
 (HERE / "out").mkdir(exist_ok=True)
 (HERE / "out" / "parity-expected.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-print(f"文章 {len(texts)} 本（実物 {len(texts) - len(synthetic)}・手書き {len(synthetic)}）／重なりの組 {sum(len(v) for v in out['overlaps'].values())} 件")
+print(f"文章 {len(texts)} 本（実物 {len(texts) - len(synthetic)}・手書き {len(synthetic)}）／重なりの組 {sum(len(v) for v in out['overlaps'].values())} 件／AIっぽさの突き合わせ {len(out['ai'])} 本（公開記事の段落を含む）")

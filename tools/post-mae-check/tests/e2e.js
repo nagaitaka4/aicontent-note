@@ -90,6 +90,15 @@ const check = (name, cond, detail) => { if (cond) pass++; else { fail++; console
     check('要注意表現のチップ', (await page.textContent('#pmc-chip2')).includes('確認'), await page.textContent('#pmc-chip2'));
     check('URLの一覧に出る', (await page.textContent('#pmc-count-notes')).includes('https://example.com/abc'));
 
+    // ① AIっぽく読まれやすい所（v2）
+    await page.fill('#pmc-t', '課金の要否は、使い方で決まります。\nここまで3つの方法を説明してきました。');
+    check('AIっぽさ：2件拾う', (await page.textContent('#pmc-chip-ai')).includes('確認 2件'), await page.textContent('#pmc-chip-ai'));
+    check('AIっぽさ：直し方の例が出る', (await page.textContent('#pmc-ai-finds')).includes('お金を払わないと使えない'));
+    await page.fill('#pmc-t', 'Claude Codeで記事を書いています。昨日は3本書けました。');
+    check('AIっぽさ：ふつうの文は問題なし', (await page.textContent('#pmc-chip-ai')).includes('問題なし'), await page.textContent('#pmc-chip-ai'));
+    check('AIっぽさ：0件でも自分で確かめる所へ案内する', (await page.textContent('#pmc-ai-foot')).includes('自分で確かめる所'));
+    check('並び：①AIっぽさ→②伝わりにくい→③文字数', await page.evaluate(() => { const r = document.querySelector('#pmc-host').shadowRoot; const ys = ['#pmc-hai', '#pmc-h2', '#pmc-h1'].map((q) => r.querySelector(q).getBoundingClientRect().top); return ys[0] < ys[1] && ys[1] < ys[2]; }));
+
     // 超過
     await page.fill('#pmc-t', 'あ'.repeat(141));
     check('141字で超過表示', (await page.textContent('#pmc-msg')).includes('2 超過'), await page.textContent('#pmc-msg'));

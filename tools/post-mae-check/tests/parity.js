@@ -40,5 +40,19 @@ for (const t of exp.texts) {
   else ng(`[重なり] ${t.label}: Python ${py.length}件 / JS ${js.length}件（差：${Object.keys(pyMap).filter((k) => !jsMap[k]).concat(Object.keys(jsMap).filter((k) => !pyMap[k])).slice(0, 4).join(',')}）`);
 }
 console.log(`重なり: ${ovOk} / ${ovN} 本で、x-cannibal.py と同じ結果（該当の組 ${pairs} 件を含む）`);
+
+// AIっぽさ（v2）：言い回し（NG_AI_PHRASES）・1行目の抽象名詞・X投稿の形が Python 版と同じか
+let aiOk = 0, aiHitsArticles = 0;
+for (const t of exp.ai) {
+  const items = PMC.checkAiLike(t.text, { phrase: true, rhythm: false, shape: false });
+  const phrases = items.filter((i) => i.kind === 'noun' || i.kind === 'stock').map((i) => i.match).sort();
+  const vague = items.filter((i) => i.kind === 'vague').map((i) => i.match).sort();
+  const sh = t.text.trim() ? PMC.xShape(t.text).shape : null;
+  const same = JSON.stringify(phrases) === JSON.stringify(t.phrases.slice().sort()) && JSON.stringify(vague) === JSON.stringify(t.vague.slice().sort()) && sh === t.shape;
+  if (t.label.startsWith('A:') && phrases.length) aiHitsArticles++;
+  if (same) aiOk++;
+  else ng(`[AIっぽさ] ${t.label}: Python 言い回し=${JSON.stringify(t.phrases)} 抽象名詞=${JSON.stringify(t.vague)} 形=${t.shape} / JS 言い回し=${JSON.stringify(phrases)} 抽象名詞=${JSON.stringify(vague)} 形=${sh}`);
+}
+console.log(`AIっぽさ（言い回し・1行目の抽象名詞・X投稿の形）: ${aiOk} / ${exp.ai.length} 件、article-self-check.py・constraints.py・x-hook.py と一致（公開記事の段落で言い回しに当たったもの ${aiHitsArticles} 件）`);
 console.log(fail === 0 ? '\n全部一致' : `\n不一致 ${fail} 件`);
 process.exit(fail === 0 ? 0 : 1);

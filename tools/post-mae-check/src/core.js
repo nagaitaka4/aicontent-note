@@ -410,6 +410,149 @@ var PMC = (function () {
     return { first: fl.line, items: items };
   }
 
+  /* ========== 2b. AIっぽく読まれやすい形（2026-10-06） ==========
+   * 一覧と根拠：operations/structure-drafts/x-post-checker-v2-rules.md
+   * 採用したのは、このサイトの公開記事70本で当たりを数え、地の文体に当たらない形だけ。
+   * AIが書いたかどうかの判定ではない。0件でもAIっぽさは残る（声に出して読むしかない部分がある）。
+   */
+
+  // 1. 動きを名詞に押し込めた言い回し（article-self-check.py NG_AI_PHRASES の語の形のもの）
+  var AI_NOUN = /の要否|取れる手|を余儀なく|に他なりません|と言えるでしょう/g;
+  // 2. まとめ・つなぎの決まり文句（同 NG_AI_PHRASES の残り。行をまたがない）
+  var AI_STOCK = /ここまで.{0,15}(?:書いて|説明して|見て|解説して)きました|について整理すると、大きく|という点が重要です|ということが言えます/g;
+  // 3. 何のことかが抜けた抽象名詞（constraints.py VAGUE_NOUN_RE）。本文全体では文脈が足りた使い方が多いので1行目だけ
+  var AI_VAGUE = /な(?:ライン|線|基準|差|範囲|条件|違い)/g;
+  // 4. 資料の紹介で終わる文（constraints.py SOURCE_ONLY_RE）。文末の句点は外して見る
+  var AI_SOURCE = /(?:としている|としています|と書いている|と書いています|と明記している|と定めている|に挙げる|に挙げている)$/;
+  // 5. 繰り返しやすい締め（メモリ feedback_no_repetition）。同じものが2回以上で出す
+  var AI_REPEAT = ['今振り返ると', '今は思っています', 'そう感じています', 'しかないと思っています', 'というのが現状です', 'が正直な結論です'];
+  // 6. 文の始めのつなぎ（公開記事 ai-article-quality-check「また・さらに・次に」）。3回以上で出す
+  var AI_CONJ = /(^|[。！!？?\n])[ \t　]*(また|さらに|次に)、/g;
+  var AI_CONJ_MIN = 3;
+  // 7. 同じ文末（末尾5字）が続く（同「段落の締め方が均一」）。公開記事では3文続きが5本あるので4文以上
+  var AI_ENDING_RUN = 4;
+  // 8. 使役の重ね（メモリ feedback_x_casual_tone「硬さの正体」①）
+  var AI_CAUSATIVE = /させ[^。\n]{0,20}させ/g;
+  // 9. X投稿の形：一人称が最後の段落にしかない（x-hook.py B）。X投稿くらいの長さのときだけ見る
+  //    （記事の節は最後に感想を置くのがふつうで、公開記事501節のうち10節に当たったため。2026-10-06）
+  var FIRST_PERSON = ['自分', '私', 'うち'];
+  var AI_SHAPE_MAX_WEIGHT = 300;
+
+  // 文に分け、それぞれの全文中の位置を持つ（改行でも区切る）
+  function sentenceSpans(text) {
+    var out = [];
+    var start = 0;
+    for (var i = 0; i <= text.length; i++) {
+      var c = text.charAt(i);
+      var end = i === text.length || c === '\n' || '。！!？?'.indexOf(c) >= 0;
+      if (!end) continue;
+      var stop = (c === '\n' || i === text.length) ? i : i + 1;
+      var s = text.slice(start, stop);
+      var lead = s.length - s.replace(/^[ \t　]+/, '').length;
+      if (s.trim()) out.push({ text: s.trim(), index: start + lead });
+      start = i + 1;
+    }
+    return out;
+  }
+
+  // x-hook.py check_shape と同じ判定。'last' 最後の段落だけ／'reader' 最後の問いかけだけ／'none' どこにも無い／'ok'
+  function xShape(text) {
+    var t = normalizeNewlines(text).replace(/^\s+|\s+$/g, '');
+    var parts = t ? t.split(/\n[ \t　]*\n/) : [];
+    var bs = [];
+    var pos = normalizeNewlines(text).indexOf(t);
+    var cursor = 0;
+    parts.forEach(function (p) {
+      var at = t.indexOf(p, cursor);
+      cursor = at + p.length;
+      if (p.trim()) bs.push({ text: p, index: pos + at });
+    });
+    if (bs.length < 2) return { shape: null, blocks: bs };
+    var hit = [];
+    bs.forEach(function (b, i) { if (FIRST_PERSON.some(function (w) { return b.text.indexOf(w) >= 0; })) hit.push(i); });
+    if (!hit.length) return { shape: 'none', blocks: bs };
+    if (hit.length === 1 && hit[0] === bs.length - 1) {
+      if (/[かの][。？?]?$/.test(bs[bs.length - 1].text.trim())) return { shape: 'reader', blocks: bs };
+      return { shape: 'last', blocks: bs };
+    }
+    return { shape: 'ok', blocks: bs };
+  }
+
+  /**
+   * AIっぽく読まれやすい形を拾う。enabled で群ごとにON/OFF（phrase・rhythm・shape）。
+   * 戻り値：[{kind, match, index, length, count?, sub?}]（位置の順）
+   *   kind: noun／stock／vague／source／repeat／causative（phrase）・conj／ending（rhythm）・shape（X投稿の形）
+   */
+  function checkAiLike(text, enabled) {
+    enabled = enabled || { phrase: true, rhythm: true, shape: true };
+    var t = normalizeNewlines(text);
+    var items = [];
+    function all(re, kind) {
+      var r = new RegExp(re.source, 'g');
+      var m;
+      while ((m = r.exec(t)) !== null) items.push({ kind: kind, match: m[0], index: m.index, length: m[0].length });
+    }
+    var sents = sentenceSpans(t);
+
+    if (enabled.phrase) {
+      all(AI_NOUN, 'noun');
+      all(AI_STOCK, 'stock');
+      all(AI_CAUSATIVE, 'causative');
+      var fl = firstLineInfo(t);
+      var vr = new RegExp(AI_VAGUE.source, 'g');
+      var vm;
+      while ((vm = vr.exec(fl.line)) !== null) items.push({ kind: 'vague', match: vm[0], index: fl.start + vm.index, length: vm[0].length });
+      sents.forEach(function (s) {
+        var body = s.text.replace(/[。！!？?\s]+$/, '');
+        var sm = AI_SOURCE.exec(body);
+        if (sm) items.push({ kind: 'source', match: sm[0], index: s.index + body.length - sm[0].length, length: sm[0].length });
+      });
+      AI_REPEAT.forEach(function (w) {
+        var at = [];
+        var i = t.indexOf(w);
+        while (i >= 0) { at.push(i); i = t.indexOf(w, i + w.length); }
+        if (at.length >= 2) items.push({ kind: 'repeat', match: w, index: at[1], length: w.length, count: at.length });
+      });
+    }
+
+    if (enabled.rhythm) {
+      var cr = new RegExp(AI_CONJ.source, 'g');
+      var cm, conj = [];
+      while ((cm = cr.exec(t)) !== null) {
+        conj.push({ index: cm.index + cm[0].length - cm[2].length - 1, word: cm[2] });
+        cr.lastIndex = cm.index + cm[0].length;
+      }
+      if (conj.length >= AI_CONJ_MIN) {
+        var third = conj[AI_CONJ_MIN - 1];
+        items.push({ kind: 'conj', match: third.word, index: third.index, length: third.word.length, count: conj.length });
+      }
+      var longS = sents.filter(function (s) { return Array.from(s.text).length > 6; });
+      var run = 1;
+      for (var k = 1; k < longS.length; k++) {
+        var a = Array.from(longS[k].text).slice(-5).join(''), b = Array.from(longS[k - 1].text).slice(-5).join('');
+        run = a === b ? run + 1 : 1;
+        if (run === AI_ENDING_RUN) {
+          var endLen = a.length;
+          items.push({ kind: 'ending', match: a, index: longS[k].index + longS[k].text.length - endLen, length: endLen, count: run });
+        }
+        if (run > AI_ENDING_RUN) items[items.length - 1].count = run;
+      }
+    }
+
+    if (enabled.shape && weigh(t).weight <= AI_SHAPE_MAX_WEIGHT) {
+      var sh = xShape(t);
+      if (sh.shape === 'last' || sh.shape === 'reader') {
+        var lastB = sh.blocks[sh.blocks.length - 1];
+        var fw = FIRST_PERSON.map(function (w) { return lastB.text.indexOf(w); }).filter(function (i) { return i >= 0; }).sort(function (x, y) { return x - y; })[0];
+        var word = FIRST_PERSON.filter(function (w) { return lastB.text.indexOf(w) === fw; })[0];
+        items.push({ kind: 'shape', sub: sh.shape, match: word, index: lastB.index + fw, length: word.length });
+      }
+    }
+
+    items.sort(function (x, y) { return x.index - y.index; });
+    return items;
+  }
+
   /* ========== 3. 直近の重なり（x-cannibal.py） ========== */
 
   var JACCARD = 0.18;
@@ -553,6 +696,8 @@ var PMC = (function () {
     extractUrls: extractUrls,
     extractEmoji: extractEmoji,
     checkPhrases: checkPhrases,
+    checkAiLike: checkAiLike,
+    xShape: xShape,
     firstLineInfo: firstLineInfo,
     findOverlaps: findOverlaps,
     grams: grams,

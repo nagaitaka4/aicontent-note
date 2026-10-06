@@ -97,11 +97,14 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 .first .lbl { font-size: 13px; color: var(--muted); }
 .first .line { margin-top: 4px; color: var(--ink); word-break: break-word; overflow-wrap: anywhere; white-space: pre-wrap; }
 .first .ask { font-size: 14px; color: var(--muted); margin-top: 2px; }
+.first .self { margin: 8px 0 0; padding-left: 1.2em; font-size: 14px; color: var(--muted); }
+.first .self li { margin-top: 2px; }
 
 .find { margin-top: 10px; border: 1px solid var(--warn-line); background: var(--warn-bg); border-radius: 8px; padding: 8px 12px; }
 .find .tag { display: inline-block; font-size: 12px; font-weight: 700; color: var(--warn); border: 1px solid var(--warn-line); background: #fff; border-radius: 999px; padding: 0 8px; margin-right: 6px; }
 .find .what { font-weight: 700; }
 .find .msg { font-size: 14px; margin-top: 2px; color: #4a3200; }
+.find .ex { font-size: 14px; margin-top: 2px; color: var(--ink); }
 .find .ctx { font-size: 14px; margin-top: 4px; color: var(--ink); word-break: break-word; overflow-wrap: anywhere; }
 mark { background: #ffd968; color: #1f2933; border-radius: 3px; padding: 0 2px; font-weight: 700; }
 

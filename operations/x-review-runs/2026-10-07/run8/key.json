@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "candidate",
+    "id": "l2",
+    "text": "Claudeに月100ドル払ってるのに、Claudeとチャットしたことがほぼありません。\n\n自分の相談相手はChatGPT。\nClaudeは、パソコンの中で記事を一緒に作る用です。\n\n同じClaudeでも、使い方が3つに分かれてます。違いをまとめました。\nhttps://aicontent-note.com/claude-chat-cowork-code-difference/",
+    "hash": "c4e205f3d7e13324",
+    "label": "A"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "B"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D"
+  },
+  {
+    "kind": "candidate",
+    "id": "l3",
+    "text": "「Claudeはチャットで使うもの」と思われがちですが、自分はClaudeのチャットをほぼ開きません。\n\n使ってるのは、パソコンの中で記事を一緒に作る使い方だけ。\n\nClaudeには使い方が3つあって、その違いをまとめました。\nhttps://aicontent-note.com/claude-chat-cowork-code-difference/",
+    "hash": "dae6c355abe0a417",
+    "label": "E"
+  },
+  {
+    "kind": "candidate",
+    "id": "l1",
+    "text": "Claudeに課金すると、使い方が3つ出てきます。\n話しかけて答えをもらう、作業を任せて離れる、パソコンの中のファイルを一緒に直す。\n\n自分が使ってるのは3つ目だけ。記事づくりは全部ここです。\n\n3つの違いと、どれから開けばいいかをまとめました。\nhttps://aicontent-note.com/claude-chat-cowork-code-difference/",
+    "hash": "ea80761ed9b52582",
+    "label": "F"
+  }
+]

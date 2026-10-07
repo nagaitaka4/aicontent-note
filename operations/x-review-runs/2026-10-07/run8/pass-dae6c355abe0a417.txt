@@ -1,0 +1,6 @@
+「Claudeはチャットで使うもの」と思われがちですが、自分はClaudeのチャットをほぼ開きません。
+
+使ってるのは、パソコンの中で記事を一緒に作る使い方だけ。
+
+Claudeには使い方が3つあって、その違いをまとめました。
+https://aicontent-note.com/claude-chat-cowork-code-difference/

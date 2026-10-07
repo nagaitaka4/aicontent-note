@@ -1,9 +1,20 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-07
+最終更新: 2026-10-08
 
 
 ---
+
+## [2026-10-08] 調査結果（デイリー・木曜）
+
+**①に差分あり（採用1件・記録のみ3件）。**
+
+- **【新規・採用】anthropic.com/news 10/7「Introducing Claude Haiku 5.5」の中の「Max・Teamに毎月のAPIクレジット」**（[記事](https://www.anthropic.com/claude-haiku-5-5)）verbatim `this week, we’ll roll out a new monthly API credit to all Max and Team subscribers for use on the Claude Platform . Max 5x users will get $100 in credits per month, Max 20x users will get $200, and Team subscribers will receive up to $500, pooled across their users. These credits are designed to allow our users to experiment with building tools, apps, and agents that call our API.`／Claude Appsリリースノート October 7, 2026「Monthly API credits for Max and Team plans」verbatim `They roll out over a few days.`（受け取りはClaude Consoleの組織をつなぐ：Max＝Settings > Billing）。**使う側の変化**：Max 5x（本人のプラン・月100ドル）に、自作ツールからAPIを呼ぶ分として毎月100ドル分が付く。**本人の請求画面（claude.ai 設定→請求・CCが読むだけで確認・10/8 06:50）**＝マックスプラン（Proの5倍）・次回更新11月4日・使用クレジット残高$0.00・**APIクレジットの表示はまだ無い**（配布は数日かけて）。本人は「APIは有料なので、レビューの自動化は利益が出て余裕が出たら」としていた（メモリ`feedback_independent_reviewer`・9/24）→ `research-20261008-01` → `APICR-01`
+- **【記録のみ】同じ発表：Claude Haiku 5.5**（`claude-haiku-5-5`・Haiku 4.5より平均約75%安い・Haikuで初めて努力度を調整可）／**Sonnet 5.5のキャッシュ読み取り半額**（verbatim `Sonnet 5.5 now runs around 20% cheaper on most agentic work`）。APIの料金の話で、本人の手元（Maxの定額）は変わらない
+- **【記録のみ】npm `@anthropic-ai/claude-code`**：`latest`／`next`＝2.1.293（10/8 02:18 JST）・`stable`は2.1.285のまま。CHANGELOG 2.1.293 verbatim `Added Claude Haiku 5.5 (claude-haiku-5-5), now the default Haiku model on the Anthropic API`。ほか修正（自動要約のあとに済んだ作業をやり直す不具合・`/model`の努力度の切り替えで最低を既定に保存してしまう不具合・catやgrepで1ファイルを見たときに入れ子のCLAUDE.mdが読まれない不具合）
+- **【記録のみ】@ClaudeDevs 10/8 05:07 JST**：Python・TypeScriptのSDKにcomputer use・browser useのツールが入った（開発者向け）／claude.com/blog 10/7「Automating eval design and hillclimbing with Claude」（開発者向け）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅（以上サブエージェントがWebFetch・発表本文はCCがcurlで原文を確認）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-07] 調査結果（デイリー・水曜）
 

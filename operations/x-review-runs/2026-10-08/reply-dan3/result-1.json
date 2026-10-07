@@ -1,0 +1,1 @@
+{"core": "ブランチを分ける目的はブランチそのものではなく、mainに合わせる前に差分を見る場所を作ることだ", "subject": "Git/GitHubのブランチ運用（mainに合わせる前に差分を確認する場所）", "replies": {"A": {"on_core": true, "same_subject": true, "unknown": [], "lecture": false, "template": false, "glad": 4, "profile": true, "comment": "「差分を見る場所」という自分の言葉を受け止めたうえで、ツールのときは別ブランチで中身を見てからmainに入れていたという実例が出てきて、伝わったことがはっきりわかる。記事もそうしてみた後の結果がわかれば、もっとうれしい。"}}}

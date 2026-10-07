@@ -1,5 +1,5 @@
 ---
-最終更新: 2026-10-07（朝ブリーフ：research-20261007-01・-02を追加／-02は`CREDIT-01`で消化）／2026-09-21
+最終更新: 2026-10-08（朝ブリーフ：research-20261008-01を追加→`APICR-01`で消化）／2026-10-07（朝ブリーフ：research-20261007-01・-02を追加／-02は`CREDIT-01`で消化）／2026-09-21
 ---
 
 # X投稿 素材ストック（ideas）
@@ -329,6 +329,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 | ID | 動向・ネタ | 出典ファイル | リサーチ日 | 鮮度期限 | 軸 |
 |---|---|---|---|---|---|
+| ~~research-20261008-01~~ | ~~**Claudeのマックスプラン（Max 5x）に、毎月100ドル分のAPIクレジット（自作ツールからAIを呼ぶ分）。Max 20xは200ドル・Teamは最大500ドル。今週中に数日かけて配布**~~ → **消化先`APICR-01`（2026-10-08朝ブリーフ）**。出典：[anthropic.com 10/7](https://www.anthropic.com/claude-haiku-5-5) verbatim `Max 5x users will get $100 in credits per month`。**使う側の変化**：本人のプランそのもの。本人の請求画面（10/8 06:50）にはまだ出ていない | research/trends.md | 2026-10-08 | 〜2026-10-10 | ② |
 | research-20261007-01 | **ClaudeがGoogleドキュメント・スプレッドシート・スライドの中で使えるようになった（Claude for Google Workspace・有料の全プランでパブリックベータ）**。出典：[claude.com 10/6](https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides) verbatim `Claude for Google Workspace™ is now in public beta on all paid Claude plans.`／Xの「本日のニュース」に速報（1,257件）。**使う側の変化**：有料プランなら追加料金なしで、開いているファイルの中からClaudeに頼める。⚠️ 本人はClaudeのチャット未使用・Google Docsの利用も未確認＝書くなら本人の立場を確かめてから | research/trends.md | 2026-10-07 | 〜2026-10-09 | ② |
 | ~~research-20261007-02~~ | ~~**Claudeのクラウドセッションのクレジット、受け取りは10/8 15:59（日本時間）まで、とXで拡散（@so_ainsight 22万ビュー）。本人の実画面＝250ドル中137ドル残り・11月5日16:59 JSTに期限切れ**~~ → **消化先`CREDIT-01`（2026-10-07朝ブリーフ）**。受け取り期限は第三者の解説のみ（公式ヘルプ未確認） | research/trends.md | 2026-10-07 | 〜2026-10-08 | ② |
 | research-20261002-01 | **Claude Codeに「mods」が来た。その1つ「You should know」は、作業の横で別のAIが見ていて、自分やClaudeが見落としたことを知らせる。入れるのはコマンド1行**。出典：[claude.com/blog 10/1](https://claude.com/blog/claude-code-mods) `Available today in the Claude Code CLI and desktop app`／CHANGELOG `2.1.287` verbatim `Added You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn it on with /plugin enable cc-plugin-you-should-know@builtin (for first-party sessions with telemetry on)`。**使う側の何が変わるか**：見落としを別のAIに見つけさせる仕組みを、自作しなくても標準で持てる（このメディアは別エージェントのレビューを自作してきた）。⚠️ このMacのCLIは2.1.283＝本人の画面で未確認。**「使った」と書かない**。modsは`aren't sandboxed`＝信頼できる配布元だけ、の注意あり。10/2の下書き（T-落差の対比）は盲検不合格（`x-review-runs/2026-10-02/brief1`の`mods`）＝出すなら本人が入れて試した日に実話で書き直す | research/trends.md 2026-10-02 | 2026-10-02 | 〜10/4 ⏰期限超過（10/5朝ブリーフで印のみ・閉じるかはX本部） | ② |

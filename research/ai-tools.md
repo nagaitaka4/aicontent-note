@@ -1,8 +1,17 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-07
+最終更新: 2026-10-08
 
 ---
+
+## [2026-10-08] 調査結果（デイリー・木曜）
+
+**②に差分1件（記録のみ）。**
+
+- **【記録のみ・第三者経由】ChatGPT「Audio uploads in ChatGPT」（October 6, 2026）**：公式リリースノートは403で取れず、[releasebot](https://releasebot.io/updates/openai/chatgpt)で確認（公式未照合）。verbatim `Upload audio files to ChatGPT to create transcripts, summarize recordings, and ask questions about their contents.` 有料プランとワークスペースが対象。10/7の巡回では載っていなかった（後から足された可能性）。本人の音声の用途は未確認＝採らない
+- **【差分なし】Gemini アプリ**：最新は2026.09.30「Skills」のまま
+- **【記録のみ・Xの話題】「ChatGPT dots」**（@Sokichi_Hoshino「経営者は全員、ChatGPT dotsを入れるべき」10/6・1,015いいね・16.8万ビュー）。公式の面で未確認・中身未調査＝次回、公式で確かめる
+
 
 ## [2026-10-07] 調査結果（デイリー・水曜）
 

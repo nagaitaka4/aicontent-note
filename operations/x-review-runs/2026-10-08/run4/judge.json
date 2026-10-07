@@ -1,0 +1,137 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "d1",
+    "text": "Claudeに月100ドル払ってる人は、自分で作ったツールにAIを組み込む利用料が、毎月100ドル分タダになるそうです。\n\n自分は記事のチェックを自動で回したくて、\n「利用料がかかるから、余裕が出たら」と後回しにしてました。\n\nまずは、書いた記事をAIに毎回読ませるところから。",
+    "hash": "79b5dc047b9ac408",
+    "label": "B",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "自分で作ったツールにAIを組み込む利用料（APIのこと？）"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.33,
+    "comments": [
+      "「100ドル分タダ」で止まりました。最後の一文が決意だけで終わり、何を始めたのか具体的な一歩が見えると次も読みたくなります。",
+      "「100ドル分タダ」で止まった。締めの一文が具体的に何をするのか分かりにくい。",
+      "「月100ドル分タダ」で止まり、記事チェックを後回しにしてた話は自分ごとに近く、まずやることが書いてあるのも良い。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "「スキル」",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "d2",
+    "text": "Claudeに月100ドル払ってたら、自分で作ったツールにAIを組み込む利用料が、毎月100ドル分タダになるらしい。\n\nうれしいけど、何を作るかまだ決めてないんだよな…",
+    "hash": "2e5d753d87357a2c",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "自分で作ったツールにAIを組み込む利用料"
+    ],
+    "news_votes": 1,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.67,
+    "comments": [
+      "中身が薄く「で？」で終わります。",
+      "「何を作るか決めてない」で話が終わってしまう。",
+      "「何を作るか決めてない」で終わってしまい、得るものがない。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.33,
+      "follow": 3.33
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 1.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  }
+]

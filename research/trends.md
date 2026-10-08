@@ -1,9 +1,20 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-08
+最終更新: 2026-10-09
 
 
 ---
+
+## [2026-10-09] 調査結果（デイリー・金曜）
+
+**①に差分あり（採用1件・記録のみ3件）。**
+
+- **【採用】MaxのAPIクレジットの配布が始まった（10/8の続き）**：@ClaudeDevs 10/9 01:09 JST verbatim `Monthly API credits are now available on Max and Team plans: $100 on Max 5x, $200 on Max 20x, and up to $500 pooled on Team.`／公式ヘルプ[Monthly API credits for Max and Team plans](https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans)（Updated today）。受け取りは claude.ai「Settings > Billing」の「API credits」→「Link organization」でConsoleの組織を1つだけ紐づける（あとから自分では変えられない）。**使えない所** verbatim `The credits don’t apply to: Interactive Claude Code in the terminal, IDE, desktop, or web`／**繰り越しなし** verbatim `Doesn't roll over. Unused credits expire at the end of each billing cycle.`／カード登録は不要。**本人の画面（claude.ai・10/9 06:5x・CCが読むだけで確認）**：「無料APIクレジット　ご利用中のプランに、毎月のAPIクレジットが含まれるようになりました。　クレジットを受け取る」が表示。**ボタンは押していない**（受け取るかは本人が決める）
+- **【記録のみ】anthropic.com/news 10/8「2026 Usage Policy update」**（[記事](https://www.anthropic.com/news/2026-usage-policy-update)・施行は11/12）：偽アカウント・偽ニュースでの世論操作を1つの章「Do Not Engage in Deceptive Campaigns or Artificial Activity」にまとめた／モデルへのしつこい暴言を禁止に追加（verbatim `It does not apply to common versions of user frustration, pushback, dark creative themes, or model testing and research.`）／高リスク用途（医療・金融など）の「人が確認する」要件の書き直し。ほとんどが既存ルールの明確化で、普通の使い方は変わらない
+- **【記録のみ】claude.com/blog 10/8「Build live dashboards and animate explainers with Claude」**（[記事](https://claude.com/resources/articles/dashboards-and-motion)）：Claude Dashboards（有料プランでベータ・BigQuery等のデータ基盤につなぐ）／Claude Motion（Team・Enterpriseでベータ）／**Docs・Slides・Designがベータを外れ、Freeを含む全プランへ**／単独のclaude.ai/designは12/14で閉じる。本人はClaudeのチャット未使用＝手元は変わらない
+- **【記録のみ】npm `@anthropic-ai/claude-code`**：`latest`／`next`＝2.1.295（10/9 03:22 JST）・`stable`＝2.1.286。2.1.294＝指示文で書いた`prompt`／`agent`フックが止めるべき操作を通していた不具合の修正。2.1.295＝フックが起動できない・時間切れのときに操作を止める`onFailure: "block"`の追加ほか、ゲートウェイ・MCP・プラグインまわりの修正が中心。料金・上限・既定モデルの変更なし
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅（先頭は10/7 Haiku 5.5のまま）／Newsroom ✅／claude.com/blog ✅（以上CCがcurlで原文を確認）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-08] 調査結果（デイリー・木曜）
 

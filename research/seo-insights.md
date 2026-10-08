@@ -1,8 +1,42 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-10-05
+最終更新: 2026-10-09
 
 ---
+
+## [2026-10-09] 調査結果（フル版・金曜）
+
+**③の新規は3件＝①September 2026 spam updateが10/8に完了 ②検索セントラルに「UGC Fresh Data Program」のページ新設（10/8） ③Search Central Blogに学習用プレイリストの案内（10/6）。**このメディアの手元が変わるのは①の「完了」だけ（GSCを読むときの区切りができた）。
+
+### Google / Search Console
+
+- **【完了】September 2026 spam update**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：`end`＝`2026-10-08T08:00:00+00:00`（**日本時間 10/8 17:00**）。最新の履歴は`The rollout was complete as of October 8, 2026.`。期間は**9/24〜10/8の14日間**（告知の`may take up to two weeks`どおり）。9/24以降に新しいインシデントは0件
+  - 使い道：**GSCで9/24〜10/8の変動を見るときの区切り**。変動をこの更新のせいと決めつけない（10/2の注記のまま）。完了後1〜2週の数字で前後を比べる
+- **【新規・記録のみ】UGC Fresh Data Program のドキュメント新設**（[Latest updates](https://developers.google.com/search/updates)：`October 8 Added documentation on the UGC Fresh Data Program`／[本体](https://developers.google.com/search/docs/appearance/ugc-fresh-data-program)・`Last updated 2026-10-08 UTC`・本日curl）
+  - verbatim：`approved platforms can use a dedicated data ingestion pipeline to send content and interaction signals to Google`／`It's independent of the Google Indexing API and traditional organic crawling for general web content.`／`This program doesn't guarantee that content will appear in Search.`
+  - 対象：`The platform must primarily host UGC, social postings, or forum discussions.`＋`A high volume of UGC content and a significant user base.`＋OAuth 2.0とJSON-LD（`SocialMediaPosting`／`DiscussionForumPosting`）の実装力。申込はフォームで、返事は`within 6-8 weeks`
+  - **このメディアには当たらない（✕）**：個人ブログ・中小企業サイトは対象外（投稿が主体の大規模プラットフォーム向け）。読み取れるのは「検索がフォーラム・SNSの一次の声を早く拾う方向」という流れだけ。9/16の「Search profiles」・7月の「social and video platforms」の流れと同じ線
+- **【新規・記録のみ】Search Central Blog**（[フィード](https://developers.google.com/static/search/blog/feed.xml)・本日curl）：`Tue, 06 Oct 2026`「[New learning paths: curated YouTube playlists for Search fundamentals and Technical SEO](https://developers.google.com/search/blog/2026/10/seo-learning-paths)」＝既存動画を順番に並べた再生リストの案内。**方針の変更ではない**
+- **【差分なし】Search Central のドキュメント更新**：10/1（生成AIコンテンツのガイド）と10/8（上のUGC）の2件のみ
+- **【差分なし】blog.google 検索フィード**（[RSS](https://blog.google/products/search/rss/)・本日curl）：10/1コーヒー・10/5旅行の生活ネタ2本のみ。AI Mode・AI Overviewsの新告知なし。**AI Mode情報モニタリングの全ユーザー展開（10/2記録）のGoogle公式ブログでの告知は今回も無い**
+
+### 調査・SEOメディア（二次情報・記録のみ）
+
+- **【新規・二次情報】AI Overviewsの無作為化実験（Agarwal氏・Sen氏の論文・SSRN）**（[鈴木謙一氏 10/6](https://www.suzukikenichi.com/blog/google-ai-overviews-reduce-website-clicks-by-nearly-40-with-no-change-in-user-satisfaction/)・本日curlで本文確認／元の論文[SSRN abstract_id=6513059](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6513059)は**curl・WebFetchとも403で未読**）
+  - 鈴木氏の要約：米国のPC版Chrome利用者1,065人・2週間・3群に無作為割り当て（通常396／AIO非表示374／AI Mode 295）。AIOが出る検索で外部クリックが1検索あたり0.62→0.37回（39.8%減）、ゼロクリックが54%→73%。AIOが出るのは検索の約41%で、全検索では約18.5%減。AIO内リンクからのクリックは外部クリック5,249件中372件（7.1%）。満足度（5段階）は4.0で差なし。AI Mode群は約40%が途中離脱
+  - ⚠️ **二次情報どうしで数字が割れている**：[Search Engine Journal](https://www.searchenginejournal.com/ai-overviews-cut-organic-clicks-38-field-study-finds/)は「38%」と報じている（指標の取り方の違いと見られるが未確認）。**査読前のワーキングペーパー**で、対象は米国のPC利用者のみ。**記事に使うなら論文本体を開いてから**
+  - 使い道：GEO記事群（no.54・no.63・no.65）の「AI Overviewsで流入が減る」の裏づけ候補。**ただし原文未読のため今は書かない**
+- **【新規・二次情報】優先ソース（Preferred Sources）の登録者数を知らせるメール**（[鈴木謙一氏 10/8](https://www.suzukikenichi.com/blog/google-sends-email-notifications-for-preferred-source-counts-could-search-console-reports-follow/)／元は[Search Engine Roundtable](https://www.seroundtable.com/google-preferred-source-subscribers-email-42244.html)のメール画像と[Glenn Gabe氏のX 10/6](https://x.com/glenngabe/status/2107524839837753413)）
+  - メール本文（画像からの転記）：`Here’s your latest preferred sources data as of 2026-10-05`／`Preferred source selections: ###`。同封のアンケートに「Search Consoleで優先ソースのレポートを出すなら」の設問
+  - ⚠️ **Googleの告知ではない**（一部サイトへの試験配信と見られる）。GSCへのレポート追加は**アンケートの設問があるだけ＝未定**
+  - このメディアには当たりにくい（優先ソースはトップニュース枠向けの話が中心）。記録のみ
+- **【差分なし】AI contribution pilot**（9/21記録）：鈴木氏10/4の週次まとめで「約100媒体に支払いテスト」と再掲されたが、**Googleの一次情報は今回も見つけていない**
+
+### 記事側への影響
+
+- **訂正が必要な記事：なし**
+- **スパムアップデート完了**：GSCの月次・週次を読むときに「9/24〜10/8は展開中」と区切る
+
 
 ## [2026-10-05] 調査結果（定期リサーチ・月曜のフル版／③のみ）
 

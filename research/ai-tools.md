@@ -1,8 +1,18 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-08
+最終更新: 2026-10-09
 
 ---
+
+## [2026-10-09] 調査結果（デイリー・金曜）
+
+**②に差分2件（採用候補1件・記録のみ1件）。今朝は公式リリースノートを実Chromeで読めた（10/7・10/8は403で未照合だった）。**
+
+- **【採用候補】ChatGPT「GPT-6 and Intelligent UI in ChatGPT」（October 7, 2026・[公式リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)）**：verbatim `The rollout starts globally today for Plus, Pro, Business, and Enterprise in the Chat tab, and expands to Free and Go starting tomorrow.`／`Plus, Pro, Business, and Enterprise use GPT-6 Sol; Free and Go use GPT-6 Luna.`／Intelligent UI＝答えに図・比較表・計算機などの部品を自動で混ぜる。`GPT-6 can also begin answering while it continues to think or use tools`。WorkとCodexのモデルは変わらない。**10/7・10/8の巡回では拾えていなかった**（公式403・第三者の集約に未掲載）。**本人の画面**：ChatGPTはPlus（10/9 CCが読むだけで確認）＝対象。ただしモデル名の表示や新しい答え方を本人が見たかは未確認
+- **【記録のみ】ChatGPT「Faster steering in Codex」（October 8, 2026）**：デスクトップのCodexで、作業中に送った追加指示への反応が早くなった。本人はCodex未使用
+- **【記録のみ】10/8記録の「Audio uploads in ChatGPT」（October 6）は公式で照合できた**（verbatim `Audio uploads are available with paid ChatGPT subscriptions and workspaces.`）
+- **【差分なし】Gemini アプリ**：最新は2026.09.30「Skills」のまま
+
 
 ## [2026-10-08] 調査結果（デイリー・木曜）
 

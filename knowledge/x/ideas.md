@@ -1,5 +1,5 @@
 ---
-最終更新: 2026-10-08（朝ブリーフ：research-20261008-01を追加→`APICR-01`で消化）／2026-10-07（朝ブリーフ：research-20261007-01・-02を追加／-02は`CREDIT-01`で消化）／2026-09-21
+最終更新: 2026-10-09（朝ブリーフ：research-20261009-01〜03を追加／-01は`KIYAKU-01`で消化）／2026-10-08（朝ブリーフ：research-20261008-01を追加→`APICR-01`で消化）／2026-10-07（朝ブリーフ：research-20261007-01・-02を追加／-02は`CREDIT-01`で消化）／2026-09-21
 ---
 
 # X投稿 素材ストック（ideas）
@@ -329,6 +329,9 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 | ID | 動向・ネタ | 出典ファイル | リサーチ日 | 鮮度期限 | 軸 |
 |---|---|---|---|---|---|
+| ~~research-20261009-01~~ | ~~**Claudeの利用ポリシーに「モデルへのしつこい暴言の禁止」が入った（11/12施行）。普通の不満・言い返しは対象外**~~ → **消化先`KIYAKU-01`（2026-10-09朝ブリーフ）**。出典：[anthropic.com 10/8](https://www.anthropic.com/news/2026-usage-policy-update) verbatim `It does not apply to common versions of user frustration, pushback, dark creative themes, or model testing and research.`。**使う側の変化**：Claude Codeを毎日使う本人も対象のルール（ふつうの使い方は変わらない）。Xの「本日のニュース」3,052件 | research/trends.md | 2026-10-09 | 〜2026-10-11 | ② |
+| research-20261009-02 | **MaxのAPIクレジット（月100ドル分）が本人の画面に届いた**（claude.ai「無料APIクレジット　クレジットを受け取る」・10/9朝・押していない）。条件：**画面で使うClaude Codeには使えない**（verbatim `The credits don’t apply to: Interactive Claude Code in the terminal, IDE, desktop, or web`）／**使わない月は消える**（`Doesn't roll over.`）／カード登録不要。出典：[公式ヘルプ](https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans)。**使う側の変化**：本人のプランそのもの。⚠️ `APICR-01`（⏸保留）の書き直し材料。盲検`2026-10-09/run1`の`c2`は「APIクレジット」「Claude Code」が通じず不合格＝言い換えが要る | research/trends.md | 2026-10-09 | 〜2026-10-12 | ② |
+| research-20261009-03 | **ChatGPTにGPT-6（10/7・Plus以上から順次、Free・Goは翌日から）。答えに図・比較表・計算機などを自動で混ぜる「Intelligent UI」**。出典：[ChatGPTリリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) verbatim `The rollout starts globally today for Plus, Pro, Business, and Enterprise in the Chat tab`。**使う側の変化**：本人の相談相手（ChatGPT Plus）の既定モデルが変わる。⚠️ 本人が新しい答え方を見たかは未確認。盲検`c3`はニュース紹介に見えて不合格＝本人の一言（使ってみてどうだったか）が要る | research/ai-tools.md | 2026-10-09 | 〜2026-10-10 | ② |
 | ~~research-20261008-01~~ | ~~**Claudeのマックスプラン（Max 5x）に、毎月100ドル分のAPIクレジット（自作ツールからAIを呼ぶ分）。Max 20xは200ドル・Teamは最大500ドル。今週中に数日かけて配布**~~ → **消化先`APICR-01`（2026-10-08朝ブリーフ）**。出典：[anthropic.com 10/7](https://www.anthropic.com/claude-haiku-5-5) verbatim `Max 5x users will get $100 in credits per month`。**使う側の変化**：本人のプランそのもの。本人の請求画面（10/8 06:50）にはまだ出ていない | research/trends.md | 2026-10-08 | 〜2026-10-10 | ② |
 | research-20261007-01 | **ClaudeがGoogleドキュメント・スプレッドシート・スライドの中で使えるようになった（Claude for Google Workspace・有料の全プランでパブリックベータ）**。出典：[claude.com 10/6](https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides) verbatim `Claude for Google Workspace™ is now in public beta on all paid Claude plans.`／Xの「本日のニュース」に速報（1,257件）。**使う側の変化**：有料プランなら追加料金なしで、開いているファイルの中からClaudeに頼める。⚠️ 本人はClaudeのチャット未使用・Google Docsの利用も未確認＝書くなら本人の立場を確かめてから | research/trends.md | 2026-10-07 | 〜2026-10-09 | ② |
 | ~~research-20261007-02~~ | ~~**Claudeのクラウドセッションのクレジット、受け取りは10/8 15:59（日本時間）まで、とXで拡散（@so_ainsight 22万ビュー）。本人の実画面＝250ドル中137ドル残り・11月5日16:59 JSTに期限切れ**~~ → **消化先`CREDIT-01`（2026-10-07朝ブリーフ）**。受け取り期限は第三者の解説のみ（公式ヘルプ未確認） | research/trends.md | 2026-10-07 | 〜2026-10-08 | ② |

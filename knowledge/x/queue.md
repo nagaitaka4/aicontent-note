@@ -1548,6 +1548,22 @@ Claudeの利用ルールに「AIへのしつこい暴言は禁止」が入るそ
 でも、言い方はちょっと気をつけます。
 ```
 
+> **✅ 2026-10-09 07時台：ユーザーが直した版（こちらを出す）**　重み260・盲検`2026-10-09/user1`合格（分からない言葉0〜1人）・ゲート[出してよい]。CCの元の版`c1`は同じrunで「Claude Code」「原文」が2人に通じず不合格になった
+```
+11/12から、Claudeの利用ルールに
+「AIへのしつこい暴言は禁止」
+が入るそうです。
+
+自分は毎日、
+「違う」「そうじゃない」「やり直し」
+って言ってます。
+
+確認したら、普通の不満や言い返しは対象外とのこと。
+
+セーフですが、
+言い方、もうちょっと気をつけようと思います。。
+```
+
 > **型**：`T-旬×自分ツッコミ`（元：@masahirochaen 298いいね＝海外の話題に自分の実例を即つなぐ）
 > **事実**：[anthropic.com 10/8「2026 Usage Policy update」](https://www.anthropic.com/news/2026-usage-policy-update) `We’ve added a prohibition on sustained and needless abusive or cruel behavior toward our models.`・`It does not apply to common versions of user frustration, pushback, dark creative themes, or model testing and research.`・`The updated policy takes effect on November 12.`。Xの「本日のニュース」（10/9朝）に「Anthropic、Claude AIへの持続的な虐待を新ポリシーで禁止」3,052件
 > **なぜ今日か**：10/8発表・10/9朝にXのニュース欄に出ている。鮮度〜10/11

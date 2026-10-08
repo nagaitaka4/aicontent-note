@@ -73,6 +73,7 @@
 | A22 | 持ち主（Primary Owner）は1組織に1人で、席を1つ使う。持ち主は譲れる。**申し込んだ人が持ち主になるという明記は見つかっていない** | `The Primary Owner seat uses one of your plan's licenses.` | 9267276・13133750（`How do I change the Primary Owner?`） |
 | A23 | 席の付け替えはAdmin以上、席の買い足しはOwner以上。標準→プレミアムの買い足しは差額が日割りですぐ請求 | `Admins and above can reassign seat types for members in Organization settings > Members.`／`Only Owners and Primary Owners can purchase seats and access Organization settings > Billing.`／`Seat type upgrades (Standard → Premium) are prorated and charged immediately for the price difference.` | 12004354 |
 | A24 | App StoreでPro・Maxを買った人は、招かれたとき「両方残す」しか選べない | `Keep both accounts is your only option` | 9267400 |
+| A25 | 役割の日本語名（日本語の公式ヘルプ）：ユーザー／管理者／オーナー／プライマリオーナー。Fable（最新モデル）：Proは追加の利用分でのみ・Max 5x/20xは週の上限の50%まで・Teamはプレミアム席だけ（週の上限の50%）。招かれた時点で選ばなくても、約7日バナーが出て、設定からいつでも移せる | `50% of weekly limits* on premium seats`／`you'll see a reminder banner for about seven days.` | [support.claude.com/ja/articles/9267276](https://support.claude.com/ja/articles/9267276)・claude.com/pricing・9267400（10/9） |
 
 **見つからなかった**：TeamでClaude Codeの利用をメンバーごとにオン／オフするスイッチ（探した面：support 9266767・12004354・11845131・12386420・13930452・9267276／code.claude.comのadmin-setup・server-managed-settings・authentication／Web検索2回）。Enterpriseはカスタムの役割でグループごとに許可・制限できる（13930452）。
 

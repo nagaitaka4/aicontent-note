@@ -41,7 +41,33 @@
 | 8 | コネクタの認証を管理者がまとめて管理できる | [@ClaudeDevs 2026-08-25](https://x.com/ClaudeDevs/status/2091953609185657251)：`Enterprise-managed auth for MCP connectors is now generally available.` | 2026-08-25（`research/trends.md` 1090行） |
 | 9 | Claude CodeはPro・Maxに含まれる | support.claude.com「Use Claude Code with your Pro or Max plan」 | no.72で確認済み（`in-house-vs-outsource-cost-facts.md` 3-3）。**verbatimの記録なし** |
 
-**⚠️ 該当の記録なし（執筆前に取り直す）**：Teamの管理画面でできること（メンバーの追加・請求・権限）／TeamのどちらのシートでClaude Codeが使えるか／Enterpriseの契約条件（最少人数・SSOなど）／支払い方法（請求書払いの可否）。
+**⚠️ 該当の記録なし（執筆前に取り直す）→ 2026-10-09に3-2で取り直した**：Teamの管理画面でできること（メンバーの追加・請求・権限）／TeamのどちらのシートでClaude Codeが使えるか／Enterpriseの契約条件（最少人数・SSOなど）／支払い方法（請求書払いの可否）。
+
+### 3-2. 2026-10-09に取り直した公式条件（英語の一次情報・curlで本文を取得・別エージェント調査＋CCが主要な原文を照合）
+
+**3節末尾の「該当の記録なし」4点はすべて埋まった。**更新日は各ページの`dateModified`。
+
+| # | 事実 | 原文（短い引用） | URL・更新日 |
+|---|---|---|---|
+| A1 | Teamは**標準席でもClaude Codeを使える**。プレミアム席は使用量が多いだけ | `Claude Code is included with every Team plan seat.` | [11845131](https://support.claude.com/en/articles/11845131-use-claude-code-with-your-team-or-enterprise-plan)・2026-10-07 |
+| A2 | 標準席に入ったのは2026年1月16日 | リリースノート `Claude Code access added to Team plan Standard seats` | [12138966](https://support.claude.com/en/articles/12138966-release-notes)・2026-10-07 |
+| A3 | ⚠️ 同じ11845131の手順の最後に古い表記が残る | `Your premium seat subscription will be linked to Claude Code.` | 11845131（冒頭のA1と食い違う。国内の解説記事でも「プレミアム席が必要」と「全席に含まれる」が割れている） |
+| A4 | 使用量：標準はProの1セッションあたり1.25倍、プレミアムは6.25倍。どちらも週の上限あり | `1.25x`／`6.25x` | [9266767](https://support.claude.com/en/articles/9266767-what-is-the-team-plan)・2026-10-07 |
+| A5 | Teamは2人から150席まで。標準とプレミアムは混ぜられる | `Team plans require a minimum of two members.`／`Team plans support up to 150 seats.`／`Organizations can mix and match seat types` | 9266767・[12004354](https://support.claude.com/en/articles/12004354-purchase-and-manage-seats-on-team-plans) |
+| A6 | 料金（米国向け・税抜）：標準 年払い月20ドル／月払い25ドル、プレミアム 年払い100ドル／月払い125ドル。地域で価格・通貨・税の扱いが変わる | `Prices shown are for US customers and exclude applicable taxes.` | 9266767・[claude.com/pricing](https://claude.com/pricing)。**日本からの表示（税込み）は執筆前に実Chromeで取り直す**（8/27の記録は標準22ドル／27.50ドル） |
+| A7 | 申し込む人は会社のメールアドレスが要る（gmail等は不可） | `The account creator must use a business email address.` | [9267247](https://support.claude.com/en/articles/9267247-get-started-with-the-team-plan)・2026-10-07 |
+| A8 | Teamの支払いはカードだけ（銀行振込も不可） | `Accepted payment methods are credit, debit, or prepaid cards.` | [12997503](https://support.claude.com/en/articles/12997503-team-plan-billing-faqs)・2026-10-07 |
+| A9 | 請求書払い（Invoicing / net terms）は営業経由のEnterpriseだけ。Enterpriseはオンライン購入なら20席から・営業経由なら50席から。年払いのみ。席20ドル＋使った分をAPI料金で | pricingの比較表 `Invoicing / net terms`／`US$20/seat/month, billed annually. Usage cost scales with model and task.` | [9797531](https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan)・2026-09-01／pricing |
+| A10 | 役割：User／Admin／Owner／Primary Owner（1組織に1人）。**席を買えるのはPrimary Owner**（席の記事は「Owner と Primary Owner」）。請求の確認・支払い方法の変更＝Owner以上。メンバーの招待・削除＝Admin以上。データの書き出し＝Primary Ownerだけ。利用状況の分析＝Owner以上 | 役割の表 `Provision new seats` ほか | [9267276](https://support.claude.com/en/articles/9267276-roles-and-permissions)・2026-09-22（12004354と「席を買える人」が食い違う） |
+| A11 | 招待した時点で席を使う。招待は21日で切れる | `Pending invitations occupy your available seats immediately` | [13133750](https://support.claude.com/en/articles/13133750-manage-members-on-team-and-enterprise-plans)・2026-08-21 |
+| A12 | 人を外しても、総席数を減らさないと請求は下がらない。標準→プレミアムは日割りで即時、戻す・減らすは次の更新日から（日割りの返金なし） | 12004354ほか3記事 | 12004354・2026-09-02 |
+| A13 | 使用量の上限：Owner以上が使用クレジットを有効にし、組織全体と個人ごとに月の上限額を決められる。超えた分はAPI料金 | Organization settings > Usage | [12005970](https://support.claude.com/en/articles/12005970-manage-usage-credits-for-team-and-seat-based-enterprise-plans)・2026-09-04 |
+| A14 | SSO・ドメイン検証・新しい個人アカウント作成の制限はTeamでも使える。**既存の個人アカウントを取り込む（Domain capture）のはEnterpriseだけ**。SCIM・監査ログはEnterpriseだけ | `Team plans can verify a domain and block new personal accounts from being created, but admins can't claim or migrate existing accounts.` | [14625619](https://support.claude.com/en/articles/14625619-claim-and-migrate-accounts-on-your-domain)・2026-09-02／[13132885](https://support.claude.com/en/articles/13132885-setting-up-single-sign-on-sso)。⚠️ 9266767の機能一覧は「Domain Capture」「Role-based permissioning」をTeamに並べていて、pricing・14625619・Claude Code Docsの3面と食い違う（3面を正とする） |
+| A15 | 会社のメールで個人のPro・Maxを使っている人をTeamに招くと、「両方残す」か「組織だけ（データを移す／消す）」を選ぶ。移したら戻せない。Pro・Maxは自動で解約・日割り返金（App Storeで買った人は自分で解約） | `Once content has been moved into an organization, it can't be moved back to a personal account.` | [9267400](https://support.claude.com/en/articles/9267400-move-your-personal-claude-account-to-a-team-or-enterprise-organization)・2026-10-07／9267247 |
+| A16 | Claude Codeへのログイン：`claude`を起動（別アカウントでログイン済みなら`/login`）→ `Claude account with subscription` → Team／Enterpriseを選んで`Authorize`。「Claude Max or Pro is required」と出たらログイン方法の選び間違い | 手順 | 11845131／[12386420](https://support.claude.com/en/articles/12386420-claude-code-faq)／[code.claude.com/docs/en/authentication](https://code.claude.com/docs/en/authentication) |
+| A17 | 管理者（Owner以上）は、組織全体のClaude Codeの設定を配れる（managed settings）。メンバーが「まだ組織に追加されていません」と出たら、席の設定を管理画面で直す | Organization settings > Claude Code > Managed settings | [server-managed-settings](https://code.claude.com/docs/en/server-managed-settings)・[admin-setup](https://code.claude.com/docs/en/admin-setup) |
+
+**見つからなかった**：TeamでClaude Codeの利用をメンバーごとにオン／オフするスイッチ（探した面：support 9266767・12004354・11845131・12386420・13930452・9267276／code.claude.comのadmin-setup・server-managed-settings・authentication／Web検索2回）。Enterpriseはカスタムの役割でグループごとに許可・制限できる（13930452）。
 
 ## 4. X編集部の在庫
 

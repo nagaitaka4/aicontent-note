@@ -197,7 +197,7 @@ AIを使うメリットは「成果までの期間を魔法のように縮める
 ・データを見ているが改善につなげられていない
 ・そもそも運用の設計がない
 
-この3つが積み重なって、止まっています。AIを導入しても、設計がなければ同じところで止まります。[コンテンツ運用を止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)では、止めない運用の設計について整理しています。
+この3つが積み重なって、止まっています。AIを導入しても、設計がなければ同じところで止まります。[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)では、どの工程で止まりやすいかと、その軽くし方をまとめています。
 
 ### AIを使えば速くなる。ただし「すぐ成果が出る」世界ではない
 
@@ -218,5 +218,5 @@ AIを使えば、記事制作は速くなります。更新頻度を維持しや
 
 **関連記事**
 ・[ブログ更新が止まる理由と、外注を検討するタイミングの見極め方](https://aicontent-note.com/blog-update-outsource-timing/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)
 ・[AIで作ったブログ記事、そのまま公開していいのか？品質チェックの方法](https://aicontent-note.com/ai-article-quality-check/)

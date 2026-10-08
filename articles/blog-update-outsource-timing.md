@@ -197,6 +197,6 @@ SEO記事は成果が出るまでに時間がかかります。アクセスが�
 
 **関連記事**
 
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)
 ・[AIで作ったブログ記事、そのまま公開していいのか？品質チェックの方法](https://aicontent-note.com/ai-article-quality-check/)
 ・[AIライティングツール比較｜ChatGPTとClaudeを両方使って気づいたこと](https://aicontent-note.com/ai-writing-tool-comparison/)

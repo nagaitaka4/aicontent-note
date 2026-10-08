@@ -89,7 +89,8 @@ Claude Codeをライター業務に使い始めてから、最初に変わった
 > 【チェック】
 > 変わったのは作業の速さではなく、「構成を確定した後の手戻りが減った」という質の変化です。最初から精度の高い骨格が出てくるので、やり直しが起きにくくなりました。
 
-この流れは[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)で書いた「止まらない設計」の考え方と同じです。詰まる工程を先に潰しておくことが、継続の鍵になります。
+この流れは[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)で書いた==「止まる工程を見つけて、そこだけ軽くする」考え方と同じ==です。
+詰まる工程を先に潰しておくことが、継続の鍵になります。
 
 > 【SWELLボタン: コンテンツ運用についてご相談はこちら / https://aicontent-note.com/contact/】
 
@@ -200,4 +201,4 @@ Claude Codeによって削減できるのは、思考の負担ではありませ
 **関連記事**
 ・[Claude Codeと相性が良い職種・業種まとめ【業務効率化の視点で整理】](https://aicontent-note.com/claude-code-compatible-jobs/)
 ・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

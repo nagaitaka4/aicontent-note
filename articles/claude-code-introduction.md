@@ -204,7 +204,7 @@ GitHub連携によって使えるようになる主なものをまとめます�
 - GitHubのIssueへの書き込みやクローズもClaude Code経由で実行できる
 
 このメディア自体も、記事ファイルや運用ルールのmdファイルをすべてGitHubで管理しています。
-運用を止めないための仕組みについては[こちらの記事](https://aicontent-note.com/content-operation-system/)で書いています。
+ブログが止まりやすい工程と、その軽くし方は[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)に書いています。
 
 ---
 

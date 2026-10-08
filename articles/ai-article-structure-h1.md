@@ -107,4 +107,4 @@ AIコンテンツ運用では、記事を書く作業よりも「何を書くか
 **関連記事**
 ・[記事構成はどこまで自動化できるか【Claude Code実践】](https://aicontent-note.com/claude-code-article-structure/)
 ・[Markdownとは？AI時代に全員が使うべき理由を実務視点で解説](https://aicontent-note.com/markdown-basics/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

@@ -202,4 +202,4 @@ WEBライティング副業そのものを否定したいわけではありま�
 **関連記事**
 ・[初納品・手取り344円。3時間かけて気づいたこと](https://aicontent-note.com/ai-webwriting-verification-07/)
 ・[8件応募・面談3件・契約ゼロ。クラウドワークス副業のリアル](https://aicontent-note.com/ai-webwriting-verification-06/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

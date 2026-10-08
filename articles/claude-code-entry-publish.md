@@ -141,7 +141,7 @@ Claude Codeをライター業務に導入して、一番「見落としていた
 
 仮にWordPress REST APIを経由した直接連携が実現できたとしても、SWELLのカスタムブロックや細かなデザイン調整は、今の段階では、人間が確認・修正する工程が残ると考えています。Claude Codeを使ったWordPress直接連携については、実際に検証してノートにまとめます。
 
-[コンテンツ運用が続かない理由と仕組みの作り方](https://aicontent-note.com/content-operation-system/)で書いた「止まらない設計」の考え方と同じで、詰まる工程を先に潰しておくことが継続の鍵になります。
+[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)で書いた「止まる工程を見つけて、そこだけ軽くする」考え方と同じで、詰まる工程を先に潰しておくことが継続の鍵になります。
 
 ---
 
@@ -176,4 +176,4 @@ Claude Codeをライター業務に導入して、一番「見落としていた
 **関連記事**
 ・[本文執筆・リライトはどこまで任せられるか【Claude Code実践】](https://aicontent-note.com/claude-code-writing-rewrite/)
 ・[記事構成はどこまで自動化できるか【Claude Code実践】](https://aicontent-note.com/claude-code-article-structure/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

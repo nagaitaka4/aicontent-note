@@ -229,8 +229,8 @@ SEOなのか、読者満足なのか、自分の納得なのか
 更新し続けながら直していく以外の選択肢はないと思います。
 <!-- [/ポイントボックス] -->
 
-[コンテンツ運用を止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)でも書きましたが、
-継続することが、長い目で見た品質向上につながるのではないでしょうか。
+==継続することが、長い目で見た品質向上につながる==のではないでしょうか。
+どの工程で止まりやすいかは、[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)にまとめています。
 
 ---
 
@@ -245,5 +245,5 @@ SEOなのか、読者満足なのか、自分の納得なのか
 ▶ support@aicontent-note.com
 
 <!-- 関連記事（WP入稿時に設定する）
-- [コンテンツ運用を止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/) ← 本文リンクあり
+- [ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/) ← 本文リンクあり
 -->

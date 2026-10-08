@@ -134,4 +134,4 @@ eyecatch: eyecatch_0046.png
 **関連記事**
 ・[AIに記事構成を任せてわかった。本当に重要なのはH2ではなくH1](https://aicontent-note.com/ai-article-structure-h1/)
 ・[ブログ更新が止まる理由と、外注を検討するタイミングの見極め方](https://aicontent-note.com/blog-update-outsource-timing/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

@@ -247,9 +247,9 @@ Claude Codeへの指示が安定しやすいです。
 
 > 【チェック】「テキスト化できる割合が5割以上」「毎週繰り返す作業がある」「毎回同じ操作をしている部分がある」の3つのうち2つ以上当てはまれば、Claude Codeを試す価値があります。
 
-コンテンツ運用の仕組みをどう設計するかは、
-[コンテンツ運用を止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
-でも詳しくまとめています。
+記事づくりがどの工程で止まりやすいかは、
+[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)
+にまとめています。
 
 ＼ 自分でやる時間がない方へ。まるっとブログ記事運用代行します／
 【WP入稿】SWELLボタン：「AIコンテンツ運用のご相談はこちら」/ https://aicontent-note.com/contact/
@@ -291,4 +291,4 @@ Claude Codeへの指示が安定しやすいです。
 【WP入稿】関連記事ブロック：
 ・[Claude Codeとは何か？できること・使い方を実際に使って解説する](https://aicontent-note.com/claude-code-introduction/)
 ・[AIで作ったブログ記事、そのまま公開していいのか？品質チェックの方法](https://aicontent-note.com/ai-article-quality-check/)
-・[コンテンツ運用を止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

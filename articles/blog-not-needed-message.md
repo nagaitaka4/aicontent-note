@@ -136,4 +136,4 @@ tags: ブログ,コンテンツ運用,ブログ更新,外注,継続
 **関連記事**
 ・[ブログ更新が止まる理由と、外注を検討するタイミングの見極め方](https://aicontent-note.com/blog-update-outsource-timing/)
 ・[AIコンテンツ運用で成果が出るまでの期間と、現実的な期待値](https://aicontent-note.com/ai-content-operation-results-timeline/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

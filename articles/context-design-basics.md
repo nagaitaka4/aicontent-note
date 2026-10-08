@@ -175,4 +175,4 @@ AI活用は「何を言うか」より「どんな状態で言うか」が先で
 **関連記事**
 ・[プロンプトとは？AIに仕事を依頼する設計書の考え方](https://aicontent-note.com/prompt-design-basics/)
 ・[Claude Code初心者が最初に理解すべき用語まとめ【非エンジニア向け・完全版】](https://aicontent-note.com/claude-code-glossary-beginners/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

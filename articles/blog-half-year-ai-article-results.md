@@ -141,7 +141,7 @@ Googleは[生成AI検索向けの公式ガイド](https://developers.google.com/
 
 順位が上がるかどうかは、まだ分かりません。
 ==ただ、書き続けなければ、次の半年の数字は出てきません==。
-止めないための仕組みの考え方は、[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)に書いています。
+止まりやすい工程と、その軽くし方は、[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)に書いています。
 
 ---
 
@@ -154,5 +154,5 @@ Googleは[生成AI検索向けの公式ガイド](https://developers.google.com/
 
 **関連記事**
 ・[AIコンテンツ運用で成果が出るまでの期間と、現実的な期待値](https://aicontent-note.com/ai-content-operation-results-timeline/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)
 ・[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)

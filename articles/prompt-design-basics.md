@@ -187,4 +187,4 @@ AIが何を理解し、何を理解していないのか。その前提を知る
 **関連記事**
 ・[Claude Code初心者が最初に理解すべき用語まとめ【非エンジニア向け・完全版】](https://aicontent-note.com/claude-code-glossary-beginners/)
 ・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

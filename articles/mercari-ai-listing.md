@@ -143,4 +143,4 @@ mercari/
 **関連記事**
 ・[ディレクトリ構造とは？AI業務が整理されるフォルダ設計の考え方](https://aicontent-note.com/directory-structure-basics/)
 ・[Claude Code初心者が最初に理解すべき用語まとめ【非エンジニア向け・完全版】](https://aicontent-note.com/claude-code-glossary-beginners/)
-・[コンテンツ運用が続かない理由と、止めないための仕組みの作り方](https://aicontent-note.com/content-operation-system/)
+・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

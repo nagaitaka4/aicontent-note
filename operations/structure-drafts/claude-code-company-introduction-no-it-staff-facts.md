@@ -51,7 +51,7 @@
 |---|---|---|---|
 | A1 | Teamは**標準席でもClaude Codeを使える**。プレミアム席は使用量が多いだけ | `Claude Code is included with every Team plan seat.` | [11845131](https://support.claude.com/en/articles/11845131-use-claude-code-with-your-team-or-enterprise-plan)・2026-10-07 |
 | A2 | 標準席に入ったのは2026年1月16日 | リリースノート `Claude Code access added to Team plan Standard seats` | [12138966](https://support.claude.com/en/articles/12138966-release-notes)・2026-10-07 |
-| A3 | ⚠️ 同じ11845131の手順の最後に古い表記が残る | `Your premium seat subscription will be linked to Claude Code.` | 11845131（冒頭のA1と食い違う。国内の解説記事でも「プレミアム席が必要」と「全席に含まれる」が割れている） |
+| A3 | ⚠️ 同じ11845131の手順の最後に古い表記が残る | `Your premium seat subscription will be linked to Claude Code.` | 11845131（冒頭のA1と食い違う。国内の解説記事でも「プレミアム席が必要」と「全席に含まれる」が割れている）。**10/9 07:3x にcurlで取り直してもこの表記のまま**（構成案のレビュー役は「Your seat is then linked」に変わったと報告したが、実物では確認できなかった） |
 | A4 | 使用量：標準はProの1セッションあたり1.25倍、プレミアムは6.25倍。どちらも週の上限あり | `1.25x`／`6.25x` | [9266767](https://support.claude.com/en/articles/9266767-what-is-the-team-plan)・2026-10-07 |
 | A5 | Teamは2人から150席まで。標準とプレミアムは混ぜられる | `Team plans require a minimum of two members.`／`Team plans support up to 150 seats.`／`Organizations can mix and match seat types` | 9266767・[12004354](https://support.claude.com/en/articles/12004354-purchase-and-manage-seats-on-team-plans) |
 | A6 | 料金（米国向け・税抜）：標準 年払い月20ドル／月払い25ドル、プレミアム 年払い100ドル／月払い125ドル。地域で価格・通貨・税の扱いが変わる | `Prices shown are for US customers and exclude applicable taxes.` | 9266767・[claude.com/pricing](https://claude.com/pricing)。**日本からの表示（税込み）は執筆前に実Chromeで取り直す**（8/27の記録は標準22ドル／27.50ドル） |
@@ -66,6 +66,8 @@
 | A15 | 会社のメールで個人のPro・Maxを使っている人をTeamに招くと、「両方残す」か「組織だけ（データを移す／消す）」を選ぶ。移したら戻せない。Pro・Maxは自動で解約・日割り返金（App Storeで買った人は自分で解約） | `Once content has been moved into an organization, it can't be moved back to a personal account.` | [9267400](https://support.claude.com/en/articles/9267400-move-your-personal-claude-account-to-a-team-or-enterprise-organization)・2026-10-07／9267247 |
 | A16 | Claude Codeへのログイン：`claude`を起動（別アカウントでログイン済みなら`/login`）→ `Claude account with subscription` → Team／Enterpriseを選んで`Authorize`。「Claude Max or Pro is required」と出たらログイン方法の選び間違い | 手順 | 11845131／[12386420](https://support.claude.com/en/articles/12386420-claude-code-faq)／[code.claude.com/docs/en/authentication](https://code.claude.com/docs/en/authentication) |
 | A17 | 管理者（Owner以上）は、組織全体のClaude Codeの設定を配れる（managed settings）。メンバーが「まだ組織に追加されていません」と出たら、席の設定を管理画面で直す | Organization settings > Claude Code > Managed settings | [server-managed-settings](https://code.claude.com/docs/en/server-managed-settings)・[admin-setup](https://code.claude.com/docs/en/admin-setup) |
+| A18 | Teamの申し込み：claude.ai/login に会社のメールアドレスを入れ、案内に沿ってTeamを選ぶ。月払いか年払いは申し込みのときに選ぶ。既にPro・Maxを会社のメールで使っているなら claude.ai/upgrade から。招くメンバーは、組織が許可したドメインのメールアドレスが要る。Teamは個人の利用を想定していない | `To get started with the Team plan, navigate to claude.ai/login and enter your work email address.`／`All team members must have an email address with one of your organization's allowed email domains to be invited to the account.`／`not intended for individual use` | 9267247・2026-10-07 |
+| A19 | 個人プラン（米国向け・税抜）：Pro 月20ドル（年払いなら月17ドル）／Max 100ドルから（5xか20x）。使える量はMaxがProの5倍か20倍 | `$20 if billed monthly.`／`From $100`／`Choose 5x or 20x more usage than Pro*` | claude.com/pricing（10/9） |
 
 **見つからなかった**：TeamでClaude Codeの利用をメンバーごとにオン／オフするスイッチ（探した面：support 9266767・12004354・11845131・12386420・13930452・9267276／code.claude.comのadmin-setup・server-managed-settings・authentication／Web検索2回）。Enterpriseはカスタムの役割でグループごとに許可・制限できる（13930452）。
 

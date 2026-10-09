@@ -1,9 +1,21 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-09
+最終更新: 2026-10-10
 
 
 ---
+
+## [2026-10-10] 調査結果（デイリー・土曜）
+
+**①に差分あり（採用1件・記録のみ2件）。**
+
+- **【新規・採用】Claude Codeの「Projects」（ベータ）の待機リストを全員解除**：[@ClaudeDevs 10/10 03:11 JST](https://x.com/ClaudeDevs/status/2108621476538781878) verbatim `We just let in every Pro and Max user from the Claude Code Projects waitlist!`（41万表示・6,516いいね・朝6時台に実Chromeで確認）／[続き](https://x.com/ClaudeDevs/status/2108621478006808806) `A project is an ongoing conversation where Claude coordinates the work for you, running each task as its own thread in parallel.`。公式ドキュメント[Let Claude coordinate ongoing work with Projects](https://code.claude.com/docs/en/claude-projects.md) verbatim `Projects are in public beta on Pro and Max plans and rolling out gradually` ／ `A project draws on the same plan limits as your other Claude Code sessions and uses them faster.` ／ `Cloud threads don't pick up anything from the Claude Code setup on your own machine.`
+  - **本人の画面**：claude.ai/codeのサイドバー「もっと見る」に**「プロジェクト（ベータ）」が出ている**ことを10/10 06時台にCCが実Chromeで確認（読むだけ・押していない）
+  - 9/18の`research-20260918-04`（再利用条件＝本人の画面にProjectsが出た日）が満たされた → `research-20261010-01` → `PROJ-01`
+- **【記録のみ】@ClaudeDevs 10/10 01:12 JST**：Claude Managed Agentsのdynamic workflows（複数エージェントの段階実行）がパブリックベータ。verbatim `We planted 70 bugs in a 116k-line codebase. Across 3 runs, a single agent found 14, 15 and 27 bugs. A workflow consistently found 66 in each of its 3 runs.`（開発者向け・本人の画面は変わらない）
+- **【記録のみ】npm `@anthropic-ai/claude-code`**：`latest`／`next`＝2.1.296（10/10 01:58 JST）・`stable`＝2.1.287。CHANGELOG 2.1.296 verbatim `Fixed Edit and NotebookEdit replacing every non-ASCII character in files that are not valid UTF-8 (Windows-1252, Shift-JIS, GBK); such edits are now refused`（Shift-JISのファイルを直すと日本語が壊れる不具合の修正。このリポジトリはUTF-8なので影響なし）ほか修正が中心
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅（先頭は10/7 Haiku 5.5のまま）／Newsroom ✅（最新10/8）／claude.com/blog ✅（最新10/8 Dashboards・Motion）（以上CCがcurlで原文を確認）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-09] 調査結果（デイリー・金曜）
 

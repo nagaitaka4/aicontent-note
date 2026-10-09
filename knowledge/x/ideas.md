@@ -1,5 +1,5 @@
 ---
-最終更新: 2026-10-09（記事セッション10時台：daily-20261009-01〔GSCとアナリティクスの違い・添え用の一言〕を取材素材に追加／朝ブリーフ：research-20261009-01〜03を追加／-01は`KIYAKU-01`で消化）／2026-10-08（朝ブリーフ：research-20261008-01を追加→`APICR-01`で消化）／2026-10-07（朝ブリーフ：research-20261007-01・-02を追加／-02は`CREDIT-01`で消化）／2026-09-21
+最終更新: 2026-10-10（朝ブリーフ：research-20261010-01〔Claude CodeのProjectsが本人の画面に来た〕を追加→`PROJ-01`で消化）／2026-10-09（記事セッション10時台：daily-20261009-01〔GSCとアナリティクスの違い・添え用の一言〕を取材素材に追加／朝ブリーフ：research-20261009-01〜03を追加／-01は`KIYAKU-01`で消化）／2026-10-08（朝ブリーフ：research-20261008-01を追加→`APICR-01`で消化）／2026-10-07（朝ブリーフ：research-20261007-01・-02を追加／-02は`CREDIT-01`で消化）／2026-09-21
 ---
 
 # X投稿 素材ストック（ideas）
@@ -330,6 +330,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 | ID | 動向・ネタ | 出典ファイル | リサーチ日 | 鮮度期限 | 軸 |
 |---|---|---|---|---|---|
+| ~~research-20261010-01~~ | ~~**Claude Codeの「プロジェクト」（ベータ）の待機リストが全員解除。本人の画面（claude.ai/code「もっと見る」）にも「プロジェクト ベータ」が出た**~~ → **消化先`PROJ-01`（2026-10-10朝ブリーフ）**。出典：[@ClaudeDevs 10/10 03:11 JST](https://x.com/ClaudeDevs/status/2108621476538781878)（41万表示）・[公式ドキュメント](https://code.claude.com/docs/en/claude-projects.md) verbatim `uses them faster`（量の減りが速い）。**使う側の変化**：1つの会話で作業を分けて同時に進める（スレッドはクラウドで動き、手元の設定は持ち込まれない）。9/18の`research-20260918-04`の再利用条件を満たした。⚠️ 本人はまだ押していない＝「使った」とは書かない | research/trends.md | 2026-10-10 | 〜2026-10-13 | ② |
 | ~~research-20261009-01~~ | ~~**Claudeの利用ポリシーに「モデルへのしつこい暴言の禁止」が入った（11/12施行）。普通の不満・言い返しは対象外**~~ → **消化先`KIYAKU-01`（2026-10-09朝ブリーフ）**。出典：[anthropic.com 10/8](https://www.anthropic.com/news/2026-usage-policy-update) verbatim `It does not apply to common versions of user frustration, pushback, dark creative themes, or model testing and research.`。**使う側の変化**：Claude Codeを毎日使う本人も対象のルール（ふつうの使い方は変わらない）。Xの「本日のニュース」3,052件 | research/trends.md | 2026-10-09 | 〜2026-10-11 | ② |
 | research-20261009-02 | **MaxのAPIクレジット（月100ドル分）が本人の画面に届いた**（claude.ai「無料APIクレジット　クレジットを受け取る」・10/9朝・押していない）。条件：**画面で使うClaude Codeには使えない**（verbatim `The credits don’t apply to: Interactive Claude Code in the terminal, IDE, desktop, or web`）／**使わない月は消える**（`Doesn't roll over.`）／カード登録不要。出典：[公式ヘルプ](https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans)。**使う側の変化**：本人のプランそのもの。⚠️ `APICR-01`（⏸保留）の書き直し材料。盲検`2026-10-09/run1`の`c2`は「APIクレジット」「Claude Code」が通じず不合格＝言い換えが要る | research/trends.md | 2026-10-09 | 〜2026-10-12 | ② |
 | research-20261009-03 | **ChatGPTにGPT-6（10/7・Plus以上から順次、Free・Goは翌日から）。答えに図・比較表・計算機などを自動で混ぜる「Intelligent UI」**。出典：[ChatGPTリリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) verbatim `The rollout starts globally today for Plus, Pro, Business, and Enterprise in the Chat tab`。**使う側の変化**：本人の相談相手（ChatGPT Plus）の既定モデルが変わる。⚠️ 本人が新しい答え方を見たかは未確認。盲検`c3`はニュース紹介に見えて不合格＝本人の一言（使ってみてどうだったか）が要る | research/ai-tools.md | 2026-10-09 | 〜2026-10-10 | ② |

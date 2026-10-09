@@ -1,8 +1,16 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-09
+最終更新: 2026-10-10
 
 ---
+
+## [2026-10-10] 調査結果（デイリー・土曜）
+
+**②に差分1件（記録のみ）。**
+
+- **【記録のみ】ChatGPT「Composer predictions in Codex」（October 9, 2026・[公式リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chromeで確認）**：Codexのデスクトップアプリで、次に送るメッセージの候補を出す（Tabで採用）。verbatim `The beta is available to personal ChatGPT Pro users aged 18 and older in all supported regions, in the latest Codex desktop app.`。本人はCodex未使用・Proでもない＝採らない
+- **【差分なし】Gemini アプリ**：最新は2026.09.30「Skills」のまま
+
 
 ## [2026-10-09] 調査結果（デイリー・金曜）
 

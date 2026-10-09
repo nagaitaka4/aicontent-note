@@ -109,7 +109,8 @@ def main(path):
     nested = [
         i + offset
         for i, l in enumerate(lines, 1)
-        if re.match(r"^・.*・", re.sub(r"\[.*?\]\(.*?\)", "", l))
+        # 2026-10-09：「Pro・Max」のように英数字どうしをつなぐ中黒は名前の一部なので、入れ子と見なさない（no.74で誤検知）
+        if re.match(r"^・.*・", re.sub(r"(?<=[A-Za-z0-9])・(?=[A-Za-z0-9])", "", re.sub(r"\[.*?\]\(.*?\)", "", l)))
         and not l.lstrip().startswith(("|", "#"))
     ]
     if not report("`・`のネストがない", not nested, f"該当行（ファイル基準）: {nested}／項目内の列挙は`A / B`にする"):
@@ -220,7 +221,11 @@ def main(path):
     if not report("H2見出しに「まとめ」がない", not matome_h2, f"{matome_h2}"):
         failures += 1
 
-    ng_heading_words = [h for h in [title] + h2s if re.search(r"導入|結論|まとめ", h)]
+    # 2026-10-09：「導入」は、見出しの区切り（はじめに）として単独で使う形だけを禁止する。
+    # 「Claude Code導入の手順」「会社に導入する」のように、KWや動詞の一部として使う形は対象外（no.74のKW「claude code 導入」で誤検知）
+    ng_heading_words = [h for h in [title] + h2s
+                        if re.search(r"結論|まとめ", h)
+                        or re.search(r"(^|[\s　：:・、。｜|（(【])導入($|[\s　：:・、。｜|）)】]|編|部分)", h)]
     if not report("タイトル・見出しに「導入」「結論」「まとめ」がない", not ng_heading_words, f"{ng_heading_words}"):
         failures += 1
 

@@ -1,9 +1,18 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-10
+最終更新: 2026-10-11
 
 
 ---
+
+## [2026-10-11] 調査結果（デイリー・日曜）
+
+**①差分なし。**
+
+- npm `@anthropic-ai/claude-code`：`latest`／`next`＝2.1.296（10/10 01:58 JST）のまま・`stable`＝2.1.287。CHANGELOG先頭も2.1.296のまま
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅（先頭は10/7のまま）／Newsroom ✅（最新10/8）／claude.com/blog ✅（最新10/8）（以上curlで原文を確認）／@ClaudeDevs ✅（実Chromeで読むだけ・最新は10/10 03:11のProjects待機リスト解除＝168万表示）
+- 参考（X上の反応）：@shimabu_it「遂にきたーーーーー Claude Projects」（936いいね・19万）＝Projectsは日本でも話題が続いている。10/10の`research-20261010-01`の延長として`PROJ-02`の材料に使った
+
 
 ## [2026-10-10] 調査結果（デイリー・土曜）
 

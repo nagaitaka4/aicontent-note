@@ -1,8 +1,22 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-10-09
+最終更新: 2026-10-12
 
 ---
+
+## [2026-10-12] 調査結果（フル版・月曜／スポーツの日）
+
+**③は一次情報の新着なし。**
+
+- **【差分なし】Search Status Dashboard**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：最新は10/8に完了したSeptember 2026 spam updateのまま。新しいインシデント0件
+- **【差分なし】Search Central のドキュメント更新**（[Latest updates](https://developers.google.com/search/updates)）：10/8（UGC Fresh Data Program）・10/1（生成AIコンテンツのガイド）のまま
+- **【差分なし】Search Central Blog**（[フィード](https://developers.google.com/static/search/blog/feed.xml)）：先頭は10/6の学習用プレイリストのまま
+- **【差分なし】blog.google 検索フィード**（[RSS](https://blog.google/products/search/rss/)）：10/5旅行・10/1コーヒーのまま。AI Mode・AI Overviewsの新告知なし
+- WebSearch「Google AI Mode AI Overviews update October 2026」：10月の確定した更新は見つからず（日付の誤った記事が混じる）
+
+### 記事側への影響
+- **訂正が必要な記事：なし**
+
 
 ## [2026-10-09] 調査結果（フル版・金曜）
 

@@ -16,6 +16,9 @@
      → 伸びた実物のどの型を真似たかが言えない候補は出さない
   7. カニバリ（2026-09-30新設）：x-cannibal.py で直近14日の投稿・キューと重なっていない。
      重なる場合は --overlap に「続き物として出す理由」を書けば通す（出力にその1行を載せる）
+  8. 文体（2026-10-11新設）：丁寧体（です・ます）の文末が投稿は2つ以上・リプライは1つ以上ある
+     → 2026-10-11：型T-ぼやきの元投稿の口調に引っぱられ、常体だけの投稿（PROJ-02）が7項目を全部通った。
+       盲検の読者役は初見なので「このアカウントの声と違う」を判定できない。8/21以降の投稿は全部2つ以上（posts-stock.mdで実測）
 
 x-firstline.py（1行目の固有名詞）は[要目視]を返すだけなので、ここでは参考表示にとどめる。
 """
@@ -27,6 +30,23 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 RUNS = HERE / "x-review-runs"
 MARGIN = 5
+
+
+def polite_endings(text):
+    """文末ごとに分け、丁寧体（です・ます系）で終わる文末を返す。体言止め・カギカッコは数えない。"""
+    import re
+    pat = re.compile(r"(です|ます|でした|ました|ません|でしょう|ください)(ね|よね|よ|か|が|けど|けれど|し|から|ので)?$")
+    out = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("http"):
+            continue
+        for sent in re.split(r"[。！？!?]+", line):
+            sent = re.sub(r"[\U0001F000-\U0001FFFF\u2600-\u27BF＞＜>< ]+", "", sent)
+            sent = re.sub(r"[\s…・、）)」』\"'〜ー]+$", "", sent).strip()
+            if len(sent) >= 4 and pat.search(sent):
+                out.append(sent)
+    return out
 
 
 def load(name):
@@ -112,6 +132,13 @@ def main():
             print("7 カニバリ: [OK] 重なりなし")
         _, nouns, _ = first.check(text)
         print(f"  参考   : 1行目の固有名詞 {'・'.join(nouns) if nouns else 'なし（1行目だけで何の話か分かるか目で見る）'}")
+
+    need = 1 if reply else 2
+    pol = polite_endings(text)
+    ok_tone = len(pol) >= need
+    print(f"8 文体   : {'[OK] 丁寧体の文末' + str(len(pol)) if ok_tone else '[NG] 丁寧体（です・ます）の文末が' + str(len(pol)) + '個（' + str(need) + '個以上必要）。過去の投稿の声で書き直す'}")
+    if not ok_tone:
+        ng.append("文体")
 
     print()
     if ng:

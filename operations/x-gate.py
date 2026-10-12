@@ -133,6 +133,11 @@ def main():
         _, nouns, _ = first.check(text)
         print(f"  参考   : 1行目の固有名詞 {'・'.join(nouns) if nouns else 'なし（1行目だけで何の話か分かるか目で見る）'}")
 
+    jibun = len(re.findall("自分", text))
+    print(f"9 一人称 : {'[NG] 「自分」が' + str(jibun) + '個。主語を省くか「私」にする（2026-10-13ユーザー指示）' if jibun else '[OK]'}")
+    if jibun:
+        ng.append("一人称")
+
     need = 1 if reply else 2
     pol = polite_endings(text)
     ok_tone = len(pol) >= need

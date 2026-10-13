@@ -412,7 +412,10 @@ def convert(md):
             continue
 
         # 地の文の ・箇条書き
-        if c.startswith("・"):
+        # 2026-10-13：番号付きの手順（`1. ` で始まる行）も同じ形にする。
+        # no.74で手順1〜4が改行なしの1段落（「…選ぶ）2. メンバーを招く3. …」）になって公開直前まで残り、
+        # ユーザーがWPで方眼の枠・改行・太字に直した。その形は ・箇条書きの変換と同じだった。
+        if c.startswith("・") or re.match(r"^\d+\. ", c):
             items = "<br>".join(
                 inline(l) for l in c.replace("<br>", "\n").split("\n") if l.strip()
             )

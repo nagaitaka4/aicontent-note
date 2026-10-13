@@ -9,7 +9,9 @@ rules/article-flow.mdの「機械チェック」項目をすべてここに集�
 実行後は必ずスクリプトの出力を読んでから記事を提示する（実行しただけで満足しない）。
 """
 
+import os
 import re
+import subprocess
 import sys
 import itertools
 import difflib
@@ -66,6 +68,34 @@ def load(path):
     frontmatter = parts[1] if len(parts) > 2 else ""
     body = parts[2] if len(parts) > 2 else text
     return text, frontmatter, body
+
+
+def visible_chars(body):
+    """読者が読む本文の字数（2026-10-13追加）。URL・記法・空白・画像のaltを数えない。
+    従来の「本文◯字」はリンクのURLまで数えていて、no.74では実際の読む量（2,614字）と
+    4,336字の差があった。前の版と比べる歯止め（下）はこの字数で行う。"""
+    t = re.sub(r'^!\[[^\]]*\]\([^)\s]+(?:\s+"([^"]*)")?\)$', lambda m: m.group(1) or "", body, flags=re.M)
+    t = re.sub(r"\]\([^)]*\)", "]", t)
+    t = re.sub(r"<br>|【[^】]*】", "", t)
+    t = re.sub(r"[\s#|*=\[\]`\-]", "", t)
+    return len(t)
+
+
+def previous_committed_body(path):
+    """コミット済みの前の版の本文（frontmatterを除く）。無ければNone。"""
+    try:
+        top = subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True,
+                             cwd=os.path.dirname(os.path.abspath(path)) or ".").stdout.strip()
+        if not top:
+            return None
+        rel = os.path.relpath(os.path.abspath(path), top)
+        r = subprocess.run(["git", "show", f"HEAD:{rel}"], capture_output=True, text=True, cwd=top)
+        if r.returncode != 0:
+            return None
+        parts = r.stdout.split("---", 2)
+        return parts[2] if len(parts) > 2 else r.stdout
+    except Exception:
+        return None
 
 
 def fm_value(frontmatter, key):
@@ -659,6 +689,25 @@ def main(path):
     note = f"／画像{n_img}枚（altは字数に含めない）" if n_img else ""
     print(f"[INFO] 本文 {char_count}字（公開記事の中央値は約3,500字）{note}")
     print("   → 冗長なら削る。ただし数値を理由に内容を削らない（原則2）")
+
+    # --- 前の版より膨らんでいないか（2026-10-13新設・no.74） ---
+    # 総量の上限は設けない（2026-09-03の決定どおり）。止めるのは「直すたびに膨らむ」ことだけ。
+    # no.74で、レビューの指摘を毎回「1文足す」で直し、本文が倍になった（ユーザー「2重にひどい」）。
+    # 指摘は書き換えか削るで直す。足すなら同じ量をどこかで削る。
+    # 増やすのが正しいとき（ユーザーが足すよう頼んだ等）だけ、環境変数 ALLOW_GROWTH="理由" を付けて実行する。
+    vis = visible_chars(body)
+    prev = previous_committed_body(path)
+    print(f"[INFO] 見える本文 {vis}字（URL・記法を除いた、読者が読む量）")
+    if prev is not None:
+        prev_vis = visible_chars(prev)
+        grew = vis > prev_vis
+        allow = os.environ.get("ALLOW_GROWTH", "").strip()
+        detail = f"前の版（HEAD）{prev_vis}字 → 今 {vis}字（{vis - prev_vis:+d}字）"
+        if grew and allow:
+            print(f"[OK] 前の版より見える本文が増えた — {detail}／許可の理由：{allow}")
+        elif not report("前の版より見える本文が増えていない（直すたびに膨らませない）", not grew,
+                        detail + ("／指摘は書き換えか削るで直す。増やすのが正しいときだけ ALLOW_GROWTH=\"理由\" を付けて再実行" if grew else "")):
+            failures += 1
 
     print(f"\n=== 結果: NG {failures}件 ===")
     print("\n--- 👁 判断チェック（このスクリプトでは検出不可・目視で毎回確認） ---")

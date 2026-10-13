@@ -1,8 +1,20 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-13
+最終更新: 2026-10-14
 
 ---
+
+## [2026-10-14] 調査結果（デイリー・水曜）
+
+**②新着1件（記録のみ・ネタ化しない）。**
+
+- **Gemini アプリ 2026.10.13**（[release notes](https://gemini.google/release-notes/)・curlで原文確認）：
+  - `Starting today, Gemini 4 Argon is rolling out globally for Google AI Pro & Ultra subscribers in the Gemini app.`（新しいフロンティアモデル・有料プランのみ）
+  - `Google Antigravity is now built into the Gemini macOS app`（Macアプリの中でコーディングエージェント）
+  - `Customize is rolling out globally across web, mobile, and the Gemini desktop app on Windows and macOS, for all user tiers.`（応答の調整・スキル・40以上のアプリ連携を1か所に。連携アプリの多くは米国の英語のみ）
+  - **判定**：軸②の採用基準＝「新モデルが出たという報告だけ」に当たる。本人はGeminiを使っていない（チャットはChatGPT・作業はClaude Code）＝画面で開けない題材なので投稿候補にしない
+- **ChatGPT リリースノート**（実Chrome）：最新はOctober 9, 2026「Composer predictions in Codex」のまま（「Updated: 4 日前」）。10月の見出し（10/9・10/7・10/6・10/2・10/1）に過去日付の追加なし
+
 
 ## [2026-10-13] 調査結果（デイリー・火曜）
 

@@ -3,10 +3,10 @@ no: 74
 series:
 series_no:
 title: Claude Code導入の手順。IT担当がいない会社が決める4つ
-date:
+date: 2026-10-13
 url: https://aicontent-note.com/claude-code-company-introduction-no-it-staff/
 slug: claude-code-company-introduction-no-it-staff
-status: draft
+status: published
 description: Claude Codeを会社に導入するときは、申し込む前に、契約・管理する人・渡さない情報・最初の業務の4つを決めます。Teamは2人から・カード払いだけなど、公式の条件で個人のPro・Maxと比べ、IT担当がいない会社が決める順番をまとめました。
 eyecatch_alt: Claude Code導入の手順と書いた文字の横に、チェック欄が並んだクリップボードを持つ男性と、会社のビルのアイコンを描いたアイキャッチ画像
 category: Claude Code活用

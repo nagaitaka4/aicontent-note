@@ -219,3 +219,4 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 71 | - | - | claude-code-permission-modes.md | 2026-09-30 |
 | 72 | - | - | chatgpt-claude-division-of-work.md | 2026-10-01 |
 | 73 | - | - | claude-chat-cowork-code-difference.md | 2026-10-06 |
+| 74 | - | - | claude-code-company-introduction-no-it-staff.md | 2026-10-13 |

@@ -1,9 +1,20 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-14
+最終更新: 2026-10-15
 
 
 ---
+
+## [2026-10-15] 調査結果（デイリー・木曜）
+
+**①新着3件（うちネタ化1件・条件付き1件・記録のみ1件）。**
+
+- **🆕 Claude Codeのハッカソンが日本で初開催（Built with Claude: Japan 2026）**＝@ClaudeDevs 10/14 07:00 JST（96万表示・4,989いいね・ブックマーク3,580）verbatim `エンジニアの方も、そうでない方も、日本在住のビルダーならどなたでも応募できます。` `応募締切は10月26日 23:59（日本時間）`。募集ページ（[cerebralvalley.ai](https://cerebralvalley.ai/e/built-with-claude-japan2026)・curlで原文確認）verbatim `Anthropic として初めて、日本全国からオンラインで参加できるハッカソン` `11月2日(月) 12:00〜11月10日(火) 14:00` `参加者：250 名（選考あり）` `クレジット：1 名あたり Max 5x Plan + $500 Claude API クレジットを提供` `賞品：入賞者に総額 $50,000（約8,000,000円）相当の Claude API クレジット` `日本在住の方が対象です。` `チームは 2 名までです。` `ベテランのエンジニアも、初めてコードに触れる方も`。**使う側の変化**：非エンジニアでも応募でき、選ばれればMax 5x（本人が毎月払っているのと同じ額のプラン）が付く → `research-20261015-01`
+- **Claude Codeのデスクトップアプリ更新（セッションを並べて回す）**＝@ClaudeDevs 10/15 04:01 JST（46.5万表示・9,443いいね）verbatim `It's now much quicker to start sessions, easier to split work across a few, and you can always see what each of them is doing.` `The new session screen keeps your recent folders one click away.` `You can also save a setup as an environment, like a few folders, an SSH host or the cloud`。本人はデスクトップアプリで記事・X・朝ブリーフのセッションを並行している＝使う側に関係する。ただし本人の画面で新しい画面を未確認・`PROJ-02`（10/11・作業を分けて同時に進める機能）と題材が近い → `research-20261015-02`（条件付き）
+- npm `@anthropic-ai/claude-code`：`latest`／`next`＝**2.1.300**（10/14 23:27 JST）・2.1.299（10/14 09:23 JST）・`stable`＝2.1.292。2.1.299 verbatim `Added idle compaction in the terminal: a 200K+ token conversation left idle for about 54 minutes is compacted before its one-hour prompt cache expires`／`Added /usage warnings for max effort, workflows, always-on context and large tool results`。「in the terminal」＝本人のデスクトップアプリで同じ動きかは未確認＝記録のみ。2.1.300はmods・OpenTelemetry・修正中心＝記録のみ
+- claude.com/blog：10/14「Agent observability on the Claude Platform」（開発者向けのOpenTelemetry・個人の使い方は変わらない＝記録のみ）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅（dateModified 10/7のまま）／Newsroom ✅（最新10/8）／claude.com/blog ✅（以上curl）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-14] 調査結果（デイリー・水曜）
 

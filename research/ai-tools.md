@@ -1,8 +1,18 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-15
+最終更新: 2026-10-16
 
 ---
+
+## [2026-10-16] 調査結果（デイリー・金曜）
+
+**②新着1件（条件付きでネタ候補・`research-20261016-01`）。**
+
+- **ChatGPTの音声（ChatGPT Voice）に新モデルGPT-Live-1.1と日本語の新しい声**＝[ChatGPTリリースノート October 15, 2026](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)（実Chrome）verbatim `New Live voices include options for French, German, Hindi, Japanese, Korean, and Mexican Spanish, plus Bubbie in English. The voices you see may vary by region and account.` `To choose a voice, open Settings > Voice, then select Voice.`。`rolling out`＝本人の画面に来ているか未確認。本人が音声を使っているかも未確認
+- 同日：Rosalind Academic Plan（米国の大学の研究室向け）＝記録のみ
+- 過去日付の追加なし（10月の見出し＝10/15・10/9・10/7・10/6・10/2・10/1）
+- **Gemini アプリ**：最新は2026.10.13のまま（curl）
+
 
 ## [2026-10-15] 調査結果（デイリー・木曜）
 

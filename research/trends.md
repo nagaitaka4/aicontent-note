@@ -1,9 +1,21 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-15
+最終更新: 2026-10-16
 
 
 ---
+
+## [2026-10-16] 調査結果（デイリー・金曜）
+
+**①新着3件（すべて記録のみ・ネタ化なし＝個人の使い方は変わらない）。**
+
+- **Code Review（Claude Code）が正式版に**＝[claude.com 10/15](https://claude.com/resources/articles/code-review-is-now-generally-available) verbatim `Code Review is out of research preview and available to Claude Team and Enterprise organizations.`／`Most reviews now finish about 3x faster (~20 minutes down to 6-10 minutes)`。対象はTeam・Enterpriseのみ・GitHubのPRに自動でレビュー＝本人（個人プラン・記事の運用）には使えない＝記録のみ
+- **Opus 5.5のfast modeがClaude Platform（API）で正式提供・待ちリスト撤廃**＝@ClaudeDevs 10/16 05:09 JST verbatim `It's the same Opus 5.5 but up to 2.5x faster, at $8 / $40 per million tokens.`。API向け＝記録のみ
+- **Anthropic Newsroom 10/15「An update on independent evaluators」**＝METRに社員並みのアクセスを提供（安全性の第三者評価）。使う側は変わらない＝記録のみ
+- npm `@anthropic-ai/claude-code`：**2.1.301**（10/15 23:34 JST）。CHANGELOG verbatim `Fixed a case where switching to a model with a smaller context window could spend usage credits on a summary by the previous model without asking first` ほか修正中心＝記録のみ
+- Claude Appsリリースノート：dateModified 10/15だが最新の見出しは10/7のまま（追加エントリなし）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅（以上curl）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-15] 調査結果（デイリー・木曜）
 

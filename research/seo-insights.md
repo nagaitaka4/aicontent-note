@@ -1,8 +1,29 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-10-12
+最終更新: 2026-10-16
 
 ---
+
+## [2026-10-16] 調査結果（フル版・金曜）
+
+**③の新規は1件＝GoogleのAI検索（AI Mode・AI Overviews）でリンクの出し方が変わる（10/15）。**
+
+- **🆕 blog.google 10/15「More ways to connect with the web from Search」**（[blog.google](https://blog.google/products-and-platforms/products/search/updates-ai-mode-overviews-explore-web/)・実Chromeで本文を読んだ）：5点
+  1. 回答の文中リンク（インライン）を増やし、上のほうに出す頻度を上げる verbatim `We're also launching updates to show inline links higher up in responses more frequently`
+  2. 公式の手続きページなど「1〜2か所しかない正しいページ」を回答の一番上に専用の枠で出すテスト verbatim `We'll be testing a new display in Search AI experiences to prominently surface these links in a dedicated section at the top of a response`
+  3. 時事記事のカルーセルを他の地域・言語へ広げる（Preferred Sourcesも強調）
+  4. 回答の最後の関連記事リンクにサムネイル画像を付けて目立たせる
+  5. AI Modeの動画結果で、作り手の名前から検索プロフィールへ飛べるテスト
+  - 数字：`the number of people who now use our Preferred Sources feature has grown by more than 7x since the start of the year`
+  - **このメディアへの影響**：4（関連記事リンクのサムネイル）は、AI Overviewsからの流入がアイキャッチで左右されうる。日本語で適用されるか・時期は書かれていない＝**GSCで「AIからの流入」を見る記事（no.27系・GEO記事）の更新材料に留める**
+- **【差分なし】Search Status Dashboard**（incidents.json・curl）：最新は10/8に完了したSeptember 2026 spam updateのまま
+- **【差分なし】Search Central のドキュメント更新**：10/8（UGC Fresh Data Program）のまま
+- **【差分なし】Search Central Blog**：先頭は10/6の学習用プレイリストのまま
+- blog.google 同日：News AI pilotに400媒体（報道機関向け）＝記録のみ
+
+### 記事側への影響
+- **訂正が必要な記事：なし**（日本語での適用・時期が未確認）
+
 
 ## [2026-10-12] 調査結果（フル版・月曜／スポーツの日）
 

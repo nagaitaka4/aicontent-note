@@ -1526,6 +1526,8 @@ claude 学習 させない 4／claude 使い方 初心者 4／claude 使い方 �
    - 表は`javascript_tool`で`document.querySelectorAll('tr')`を読むと全行まとめて取れる（行数セレクタの操作より速い）
    - **⚠️ `page=*文字列*`（contains指定）は効かない。**2026-08-07に対照テストで確認（`*claude-code*`でno.14が0表示になる）。**必ず`page=!<完全URL>`の完全一致で指定する。**contains指定の結果を「0表示」と読むと誤った結論に直結する
    - ブラウザペインが非表示だと`computer`のscrollがタイムアウトする。UI操作に頼らずURLパラメータで取得するほうが確実
+   - **記事ごとの日別データ（2026-10-14・no.23改稿で71本を1回で取得）**：URLは`...&breakdown=date&page=!<完全URLをencode>&start_date=YYYYMMDD&end_date=YYYYMMDD`（`start_date`/`end_date`が効く）。日付タブの表は期間の全日を1行ずつ出す（表示なしの日は「—」）。**多数の記事は、管理画面のページ内でこのURLを非表示のiframeで1本ずつ開き、`f.contentDocument`の`tr`を読む**（同じオリジンなので読める）。⚠️ **タブが裏に回っているとsetTimeoutが1分に1回ほどまで遅くなる**ので、待ちはタイマーでなく`MutationObserver`で「`tr`の数＝期間の日数＋1」になった瞬間を拾う。戻り値が長いと途中で切れるので、ページ内で集計してから返す。プロパティのデータは**2026-02-24から**。生データの例：`operations/structure-drafts/blog-update-frequency-gsc-2026-10-14.tsv`
+   - **クエリの部分一致は効く**：`&query=*<語をencode>`（ページの`*`は効かないが、クエリは効いた・10/14）
 6. 以下を判定して`site-status.md`に新スナップショットとして追記する
    - 11〜20位に滞留していて表示回数がある記事（＝リライト候補）
    - 順位が良いのにクリック0の記事（＝タイトル・description改善候補）

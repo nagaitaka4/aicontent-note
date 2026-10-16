@@ -47,7 +47,7 @@ PVやXからの訪問は、この数字に入っていません。
 ・公開90日未満：28本（6月14日以降に公開）
 
 90日は、公開直後の記事を、時間の経った記事と同じ条件で「クリック0」と判定しないための区切りです。
-成果が出るまでの期間の一般的な考え方は、[AIコンテンツ運用で成果が出るまでの期間と、現実的な期待値](https://aicontent-note.com/ai-content-operation-results-timeline/)にまとめています。
+公開から検索に出るまでの時期は、[ブログの更新頻度は月何本？72本書いて分かった、検索に出る時期](https://aicontent-note.com/ai-content-operation-results-timeline/)にまとめています。
 
 ## クリックが集まった記事は、種類が1つにまとまらなかった
 
@@ -153,6 +153,6 @@ Googleは[生成AI検索向けの公式ガイド](https://developers.google.com/
 ---
 
 **関連記事**
-・[AIコンテンツ運用で成果が出るまでの期間と、現実的な期待値](https://aicontent-note.com/ai-content-operation-results-timeline/)
+・[ブログの更新頻度は月何本？72本書いて分かった、検索に出る時期](https://aicontent-note.com/ai-content-operation-results-timeline/)
 ・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)
 ・[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)

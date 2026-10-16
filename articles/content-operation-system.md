@@ -44,7 +44,7 @@ eyecatch: eyecatch_0007.png
 
 忙しさや、成果が見えないことも重なります。
 忙しい時期は、5つの工程を1日で通そうとせず、重い工程だけ別の日に回すのも手です。
-成果が出るまでの期間は、[AIコンテンツ運用で成果が出るまでの期間と、現実的な期待値](https://aicontent-note.com/ai-content-operation-results-timeline/)に書きました。
+検索に出るまでの時期は、[ブログの更新頻度は月何本？72本書いて分かった、検索に出る時期](https://aicontent-note.com/ai-content-operation-results-timeline/)に書きました。
 
 【チェック】<br>
 **止まっている記事を1本思い出して、表のどの行で手が止まったかを1つだけ選んでみてください。**
@@ -107,4 +107,4 @@ AIをなめていました。
 **関連記事**
 ・[ブログ更新が止まる理由と、外注を検討するタイミングの見極め方](https://aicontent-note.com/blog-update-outsource-timing/)<br>
 ・[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)<br>
-・[AIコンテンツ運用で成果が出るまでの期間と、現実的な期待値](https://aicontent-note.com/ai-content-operation-results-timeline/)
+・[ブログの更新頻度は月何本？72本書いて分かった、検索に出る時期](https://aicontent-note.com/ai-content-operation-results-timeline/)

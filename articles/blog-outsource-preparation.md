@@ -63,7 +63,7 @@ eyecatch: eyecatch_0039.png
 まだ決まっていない場合は、問い合わせ時に一緒に整理することも可能です。
 
 > 【ポイント】
-> 成果が出るまでにかかる期間の目安については、[AIコンテンツ運用で成果が出るまでの期間と、現実的な期待値](https://aicontent-note.com/ai-content-operation-results-timeline/)で整理しています。
+> 公開から検索に出るまでの時期については、[ブログの更新頻度は月何本？72本書いて分かった、検索に出る時期](https://aicontent-note.com/ai-content-operation-results-timeline/)で整理しています。
 
 ---
 

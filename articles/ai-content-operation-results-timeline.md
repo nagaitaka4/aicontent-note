@@ -7,7 +7,7 @@ url: https://aicontent-note.com/ai-content-operation-results-timeline/
 slug: ai-content-operation-results-timeline
 status: published
 date: 2026-05-14
-updated: 2026-10-15
+updated: 2026-10-16
 description: ブログの更新頻度は、検索のために増やすより、毎月出し続けられる本数で決めれば十分です。72本を書いた記録では、最初の3か月は検索にほぼ出ず、4月に出した記事の多くは5月中旬にそろって表示され始めました。月の本数と時間の目安、検索に出た時期を表にしました。
 eyecatch: eyecatch_0023.png
 eyecatch_alt: ブログの更新頻度は月何本？と書いた文字の横に、週に1つずつチェックを入れたカレンダーと、途中から高くなる棒グラフを指す2人を描いたアイキャッチ画像

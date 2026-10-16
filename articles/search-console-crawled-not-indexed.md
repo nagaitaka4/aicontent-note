@@ -183,7 +183,7 @@ URL検査のデフォルト表示は、直近にインデックスに登録さ�
 
 当サイトにも、インデックス済みなのに過去3か月の表示が0の記事があります。登録を確認できた時点は、検索流入のスタート地点に立った段階です。
 
-公開後に見る数字と時間軸は、[AIコンテンツ運用で成果が出るまでの期間と、現実的な期待値](https://aicontent-note.com/ai-content-operation-results-timeline/)にも整理しました。
+公開から検索に表示されるまでの時期は、[ブログの更新頻度は月何本？72本書いて分かった、検索に出る時期](https://aicontent-note.com/ai-content-operation-results-timeline/)にも整理しました。
 
 数字に反応して135件すべてを触っていたら、運用はそこで止まっていたと思います。まず状況を分け、見る対象を絞ってから動く。今回やったことは、インデックス対策というより運用を止めないための整理でした。
 
@@ -199,4 +199,4 @@ URL検査のデフォルト表示は、直近にインデックスに登録さ�
 **関連記事**
 ・[コンテンツ運用代行とは？料金・内容・依頼する前に知っておくこと](https://aicontent-note.com/content-operation-outsource-what-is/)
 ・[ブログの内部リンクの貼り方とSEO効果の出し方](https://aicontent-note.com/internal-link-guide/)
-・[AIコンテンツ運用で成果が出るまでの期間と、現実的な期待値](https://aicontent-note.com/ai-content-operation-results-timeline/)
+・[ブログの更新頻度は月何本？72本書いて分かった、検索に出る時期](https://aicontent-note.com/ai-content-operation-results-timeline/)

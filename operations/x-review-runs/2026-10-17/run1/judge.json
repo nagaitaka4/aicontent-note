@@ -1,0 +1,162 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.67,
+    "comments": [
+      "1行目からClaudeのプラン名やモデル名が並んでいて、知らない人には何の話か分からない。",
+      "「違いが分からない」で終わっていて答えがない。",
+      "1行目がプラン変更の報告。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p-link23",
+    "text": "ブログの記事、公開日はバラバラなのに、検索に出始めたのはほぼ同じ週。\n\n私がAIで書いて4月に出した記事の多くが、5月中旬にそろって出てきました。\nそれまでの3か月は、ほぼ誰にも見られてません。\n\nあそこで止めなくて、本当によかったです。\nhttps://aicontent-note.com/ai-content-operation-results-timeline/",
+    "hash": "f56f70f352cd7cd1",
+    "label": "B",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.33,
+    "comments": [
+      "「公開日はバラバラなのに同じ週に出た」が意外で止まる。3か月誰にも見られなかったときの気持ちがもう一言あれば。",
+      "3か月誰にも見られなかったのに続けた話は刺さる。",
+      "3か月誰にも見られなかったのに止めなかった話は、社内で回すか迷う自分にそのまま刺さる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "前半は公式発表の要約。",
+      "前半は公式発表の要約で流し読みになった。",
+      "前半は終了のお知らせの要約。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p-eye01",
+    "text": "ChatGPTの画像生成、参考画像を渡すとレイアウトは本当にそのまま出してくれる。\n\nなのに私のブログのアイキャッチ、絵のタッチだけ別人になりました。\n\n原因はChatGPTじゃなく、Claudeが書いたプロンプトの「輪郭線は細め」の一言。\nAI同士の伝言ゲーム、間にいる私が一番見落としてました。",
+    "hash": "7ce1490755414d5c",
+    "label": "D",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "アイキャッチ"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.67,
+    "comments": [
+      "「AI同士の伝言ゲーム、間にいる私が見落とした」というオチが分かりやすく面白い。",
+      "AI同士の伝言ゲームで自分が見落とした、という失敗が意外で面白い。",
+      "一言のせいでタッチが変わり、自分が見落としていたという失敗が具体的で面白い。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "p-review90",
+    "text": "Claude Codeのコード、9割はClaudeが書いてて、人が読む前にClaudeが1回レビューして直してるそうです。\n\n私のブログも、記事はほぼClaudeが書いて、別のClaudeに先に読ませてます。\n\nそれでも最後に読んで直すのは私1人。\n開発チームでさえ人の時間が一番足りないなら、そりゃ詰まるわけです。",
+    "hash": "74f7fb65d3282bda",
+    "label": "E",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "news_votes": 0,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "1行目は開発の話に見えて自分には関係なさそう。後半は共感できる。",
+      "1行目が開発チームの話で自分ごとに感じにくかった。",
+      "冒頭が開発チームの話から始まり、自分の話に入るまで少し遠い。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "F",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "news_votes": 3,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "ニュースの紹介と迷いの話が混ざっている。",
+      "「安定して使いたい」の中身が弱い。",
+      "迷った末の結論がふわっとしている。"
+    ]
+  }
+]

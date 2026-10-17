@@ -1,9 +1,21 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-16
+最終更新: 2026-10-17
 
 
 ---
+
+## [2026-10-17] 調査結果（デイリー・土曜）
+
+**①新着4件（すべて記録のみ・ネタ化なし＝本人の使い方・料金・制限は変わらない）。**
+
+- npm `@anthropic-ai/claude-code`：**2.1.302**（10/17 01:48 JST）。CHANGELOG verbatim `Added a notice to /design-sync and /design-login that standalone Claude Design (claude.ai/design) closes by December 14, 2026`＝単体のClaude Design（claude.ai/design）が12/14までに終了。本人は未使用（リポジトリに使用記録なし）＝記録のみ。ほか`Idle compaction`の切り替えを/configに追加・修正中心
+- **@ClaudeDevs 10/17 06:34 JST** verbatim `Claude Code now gzips the conversation it sends on every turn, so it reaches the model faster. Cloud sessions also start up as soon as you start typing.`＝応答の出始めが速くなった。料金・制限・使える範囲は変わらない＝記録のみ
+- **@ClaudeDevs 10/17 03:54 JST／claude.com/blog 10/16「How the Claude Code team reviews code」** verbatim `Claude writes about 90% of Claude Code's code.` `From June to September, merged PRs more than doubled while the share reverted fell by more than 40%.`＝Anthropic社内のレビューの進め方。使う側は変わらない＝記録のみ（投稿の型`T-旬×自分ツッコミ`の材料にはなるが、10/11`PROJ-02`〔読んで直すので精一杯〕と題材が重なる）
+- claude.com/blog 10/16「How an Anthropic Japan BDR runs his day with a fleet of Claude agents」（Managed Agents・Claude Tag＝会社向け）＝記録のみ
+- Claude Appsリリースノート：最新の見出しは10/15のまま（10/15の中身は前日記録済み）／Newsroom：10/15が最新（追加なし）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅（以上curl）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-16] 調査結果（デイリー・金曜）
 

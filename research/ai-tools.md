@@ -1,8 +1,18 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-16
+最終更新: 2026-10-17
 
 ---
+
+## [2026-10-17] 調査結果（デイリー・土曜）
+
+**②新着2件（記録のみ）。**
+
+- **ChatGPT Slides**＝[ChatGPTリリースノート October 16, 2026](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)（実Chrome）verbatim `Slides is rolling out to eligible Pro, Business, and Enterprise users with Space access on the web and in the desktop app.`＝本人はPlus＝対象外＝記録のみ
+- **GPT-6 Proの更新**（同日）verbatim `Multiple agents that can work on different parts of a task in parallel.` `This update is rolling out to eligible Pro users in ChatGPT.`＝Pro限定＝記録のみ
+- 過去日付の追加なし（10月の見出し＝10/16・10/15・10/9・10/7・10/6・10/2・10/1）
+- **Gemini アプリ**：最新は2026.10.13のまま（curl）
+
 
 ## [2026-10-16] 調査結果（デイリー・金曜）
 

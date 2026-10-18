@@ -1,8 +1,23 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-10-16
+最終更新: 2026-10-19
 
 ---
+
+## [2026-10-19] 調査結果（フル版・月曜）
+
+**③は一次情報の新着1件（Indexing APIのクォータページ更新・10/16＝このメディアには無関係）。Googleの確定アップデートはなし。**
+
+- **【差分なし】Search Status Dashboard**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：最新は10/8に完了したSeptember 2026 spam updateのまま。新しいインシデント0件
+- **🆕 Search Central のドキュメント更新**（[Latest updates](https://developers.google.com/search/updates)・本日curl）：10/16付 verbatim `Updated the Indexing API quota page to reflect the current quota limits and process.`（[クォータページ](https://developers.google.com/search/apis/indexing-api/v3/quota-pricing)：`The default value is set to 200.`）。Indexing APIは求人・ライブ配信ページ向けで、**ブログ記事には使えない＝記録のみ**
+- **【差分なし】Search Central Blog**（[フィード](https://developers.google.com/static/search/blog/feed.xml)）：先頭は10/6の学習用プレイリストのまま
+- **【差分なし】blog.google 検索フィード**（[RSS](https://blog.google/products/search/rss/)）：先頭は10/15の3本（More ways to connect with the web from Search／News AI pilot 400媒体／ショッピングカート）のまま。10/16記録済み
+- **二次情報（記録のみ）**：Search Engine Roundtable 10/16（[記事](https://www.seroundtable.com/google-search-ranking-volatility-chatter-42317.html)・`datePublished` 2026-10-16T07:55-04:00）が順位変動と話題の急増を報告 verbatim `I am seeing a spike in volatility and, now probably more importantly, a spike in chatter over the past 24 hours`。**Googleの確認はなし**（ダッシュボードにも載っていない）。GSCで10/15〜16前後に動きがあれば、この日付と照らす
+- WebSearch「Google AI Mode AI Overviews announcement October 2026」：10/15以外の確定した10月の告知は見つからず（日付の誤った記事が混じる）
+
+### 記事側への影響
+- **訂正が必要な記事：なし**
+
 
 ## [2026-10-16] 調査結果（フル版・金曜）
 

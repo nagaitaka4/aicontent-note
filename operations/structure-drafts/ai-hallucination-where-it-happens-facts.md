@@ -161,7 +161,7 @@ https://developers.google.com/search/docs/fundamentals/using-gen-ai-content?hl=e
 
 ## 7. まだ無いもの
 
-1. **本人がふだんのチャット（ChatGPT）で嘘に当たった場面**（ユーザーのチャットはChatGPT・メモリ`feedback_author_usage_not_overridden`）。2節の記録はすべてClaude Codeの調べ物と記事づくりの中のもの → 構成案の確認事項で聞く
+1. ~~本人がふだんのチャット（ChatGPT）で嘘に当たった場面~~ → **2026-10-19に回答**：「結構、最新の情報じゃない答えは多い気がします。プリンターのおすすめを聞いたら2年前のモデルが出てきたこともあった」（`operations/interview-notes/ai-hallucination-where-it-happens.md`）。検索がオンだったか・モデル・機種は聞いていない＝書かない
 2. AI全体で「どこで嘘が多いか」の統計：無い。**記事では「私の記録では」の範囲で書く**
 3. #15（元に無いことを書いた）が、要約のせいか、写した元の記事のせいかは記録に無い＝推測のまま
 4. ChatGPTとClaudeのどちらが嘘が少ないか（サジェスト`claude ハルシネーション 少ない`）：比べた実測は無い＝**書かない**（公式の数字も別々の評価なので並べない）

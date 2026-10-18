@@ -14,6 +14,7 @@
      → レビューのあとで1文字でも直したら、ここで落ちる（2026-09-25：最後の2語修正が未レビューのまま出た）
   6. 型（2026-09-30新設）：--model の型IDが knowledge/x/model-posts.md の型一覧にある
      → 伸びた実物のどの型を真似たかが言えない候補は出さない
+  10. 見送り（2026-10-19新設）：queue.md で見送り・不採用の下書きと同じ材料なら止める（--overlap でも通らない）。
   7. カニバリ（2026-09-30新設）：x-cannibal.py で直近14日の投稿・キューと重なっていない。
      重なる場合は --overlap に「続き物として出す理由」を書けば通す（出力にその1行を載せる）
   8. 文体（2026-10-11新設）：丁寧体（です・ます）の文末が投稿は2つ以上・リプライは1つ以上ある
@@ -130,6 +131,14 @@ def main():
             ng.append("カニバリ")
         else:
             print("7 カニバリ: [OK] 重なりなし")
+        dp = subprocess.run([sys.executable, str(HERE / "x-cannibal.py"), args[0], "--declined"], capture_output=True, text=True)
+        if "[見送り]" in dp.stdout:
+            print("10 見送り: [NG] 一度見送った下書きと同じ材料（--overlap では通らない・2026-10-19 ユーザー指示）")
+            for l in [l.strip() for l in dp.stdout.splitlines() if l.startswith("  ")]:
+                print(f"           {l}")
+            ng.append("見送り")
+        else:
+            print("10 見送り: [OK]")
         _, nouns, _ = first.check(text)
         print(f"  参考   : 1行目の固有名詞 {'・'.join(nouns) if nouns else 'なし（1行目だけで何の話か分かるか目で見る）'}")
 

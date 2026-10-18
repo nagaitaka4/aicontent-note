@@ -91,6 +91,16 @@ def recent_posts(days):
     return out
 
 
+def declined():
+    """一度見送った・不採用にした下書き（2026-10-19 ユーザー指示「一度見送ったものは二度とださない」）"""
+    out = []
+    for head, body in blocks(QUEUE, re.compile(r"^### ")):
+        if "見送り" in head or "不採用" in head:
+            pid = re.sub(r"[（(　].*$", "", head[4:]).strip().strip("~")
+            out.append((f"見送り {pid}", body))
+    return out
+
+
 def live_queue():
     out = []
     for head, body in blocks(QUEUE, re.compile(r"^### ")):
@@ -111,6 +121,19 @@ def main():
         sys.exit(__doc__)
     text = Path(args[0]).read_text(encoding="utf-8").strip()
     g, mk = grams(text), marks(text)
+    if "--declined" in sys.argv:
+        hits = []
+        for label, body in declined():
+            gb = grams(body)
+            jac = len(g & gb) / max(1, len(g | gb))
+            shared = sorted(mk & marks(body))
+            if jac >= JACCARD or len(shared) >= 2:
+                hits.append((jac, label, shared))
+        hits.sort(reverse=True)
+        for jac, label, shared in hits[:6]:
+            print(f"  {label}  重なり{jac:.2f}  共通の目印：{'・'.join(shared) if shared else 'なし'}")
+        print("判定: [見送り] 一度見送った下書きと同じ材料" if hits else "判定: [OK] 見送りと重なりなし")
+        return
     hits = []
     for label, body in recent_posts(days) + live_queue():
         if norm(body) == norm(text):

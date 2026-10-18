@@ -1,9 +1,20 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-18
+最終更新: 2026-10-19
 
 
 ---
+
+## [2026-10-19] 調査結果（デイリー・月曜）
+
+**①新着1件（記録のみ・ネタ化なし）。**
+
+- **Anthropic Newsroom 10/18「Investing in the public benefit」**＝[anthropic.com/news/public-benefit-fund](https://www.anthropic.com/news/public-benefit-fund) verbatim `Subject to stockholder approval, 5% of Anthropic's shares will be committed today, with an additional 2% added at the board's discretion for every 50% increase in the company's value above a set baseline.`＝会社の株の一部を公益のための基金に回す話。使う側の料金・制限・使える範囲は変わらない＝記録のみ（軸②の採用基準「使う側の何かが変わる」を満たさない）
+- npm `@anthropic-ai/claude-code`：**2.1.303が`next`タグで公開**（10/19 06:15 JST）。`latest`は2.1.302のまま・CHANGELOGの最新見出しも2.1.302＝中身は未公表＝記録のみ
+- Newsroomの`cyber-verification-program`（Oct 6）は前回記録の範囲外だが、セキュリティ専門家向けの申請制＝本人に関係なし＝記録のみ
+- claude.com/blog：最新はOct 16のまま／Claude Appsリリースノート：最新の見出しは10/15のまま／@ClaudeDevs：最新は10/17 06:34 JST（gzip）のまま
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅（以上curl）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-18] 調査結果（デイリー・日曜）
 

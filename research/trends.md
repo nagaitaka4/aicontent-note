@@ -1,9 +1,20 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-19
+最終更新: 2026-10-20
 
 
 ---
+
+## [2026-10-20] 調査結果（デイリー・火曜）
+
+**①新着2件（1件をネタ化＝`research-20261020-01`）。**
+
+- **CHANGELOG.md `## 2.1.304`**（npm公開 10/20 04:47 JST・`stable`／`latest`／`next`とも2.1.304）verbatim `Added a warning on Pro and Max plans when resuming an inactive conversation would use a noticeable share of your 5-hour usage limit: resume anyway, or start a new conversation and Claude can look up the previous one if you refer to it`＝しばらく放っておいた会話を再開すると、5時間の使用量を目に見えて使うときに警告が出る。選べるのは「そのまま再開」か「新しい会話を始めて、前の会話はClaudeに探させる」。**使う側が変わる（Pro・Maxの制限）＝ネタ化**。⚠️ 本人の手元は2.1.283（ターミナルの`claude`）。デスクトップのCodeタブで警告を見たかは未確認＝「警告を見た」とは書かない
+  - 同じ版のほか：`/auto-mode-setup`（auto modeに自分の環境を教える案内つき設定）・modの`tool.check`の追加・不具合修正多数＝記録のみ
+- **claude.com/blog 10/19「Redesigning source control at Anthropic」**（実Chrome）＝社内のmonorepoへのマージが1日約2,500→30,000超になり、gitをやめて自社のバージョン管理（Scion）に5か月で移った話。使う側は変わらない＝記録のみ
+- Newsroom：最新はOct 7（Haiku 5.5）のまま／Claude Appsリリースノート：最新の見出しは10/7のまま／@ClaudeDevs：最新は10/17 06:34 JST（gzip）のまま
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅／@ClaudeDevs ✅（以上実Chromeで読むだけ）
+
 
 ## [2026-10-19] 調査結果（デイリー・月曜）
 

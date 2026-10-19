@@ -186,9 +186,37 @@ def table(rows):
     tb = "".join(
         "<tr>%s</tr>" % "".join("<td>%s</td>" % inline(c) for c in row) for row in body
     )
+    # 件数のような短い列がある表は、列幅を中身に合わせる（2026-10-20 no.75・ユーザー指示）。
+    # 固定レイアウト（has-fixed-layout）だと全列が同じ幅になり、「6件」の列が長文の列と同じ幅を取る。
+    # 短い列＝見出し・中身とも見える字数が6字以下の列。WPのエディターは {"hasFixedLayout":false} と
+    # class無しの <table> で保存するので、同じ形で出す（エディターで開いてもブロックが壊れない）。
+    def vis(c):
+        c = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", c)
+        return len(c.replace("**", "").replace("==", ""))
+    ncol = len(head)
+    short_cols = [
+        i for i in range(ncol) if all(vis(r[i]) <= 6 for r in [head] + body if i < len(r))
+    ]
+    short = bool(short_cols)
+    # 短い列は、字と字の間に改行を禁じる見えない文字（U+2060 WORD JOINER）を入れて折り返さない
+    # （列幅を中身に合わせると「件数」「6件」が2行に割れた・2026-10-20 no.75のプレビュー）。
+    # styleやclassを足さないので、エディターで開いてもブロックが壊れない
+    def nobreak(c):
+        return re.sub(r"(?<=[^\s=*\[\]()<>])(?=[^\s=*\[\]()<>])", "\u2060", c)
+    if short_cols:
+        head = [nobreak(c) if i in short_cols else c for i, c in enumerate(head)]
+        body = [[nobreak(c) if i in short_cols else c for i, c in enumerate(r)] for r in body]
+        th = "".join("<th>%s</th>" % inline(c) for c in head)
+        tb = "".join(
+            "<tr>%s</tr>" % "".join("<td>%s</td>" % inline(c) for c in row) for row in body
+        )
+    if short:
+        open_tag, table_tag = '<!-- wp:table {"hasFixedLayout":false} -->', "<table>"
+    else:
+        open_tag, table_tag = "<!-- wp:table -->", '<table class="has-fixed-layout">'
     return (
-        "<!-- wp:table -->\n"
-        '<figure class="wp-block-table"><table class="has-fixed-layout">'
+        open_tag + "\n"
+        '<figure class="wp-block-table">' + table_tag +
         "<thead><tr>%s</tr></thead><tbody>%s</tbody></table></figure>\n"
         "<!-- /wp:table -->" % (th, tb)
     )

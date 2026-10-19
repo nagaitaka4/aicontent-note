@@ -267,6 +267,21 @@ def main(path):
     note = "（4個以上は多い。比較・多列情報以外を表にしていないか確認）" if table_count >= T["table_count_info"] else ""
     print(f"[INFO] 表 {table_count}個{note}")
 
+    # --- 表に強調（太字かマーカー）があるか（2026-10-20 ユーザー指示・恒久）---
+    # 「表の重要な部分を太字にしたりマーカーを入れたりして見やすく。この指摘も何度もしている」（no.75）。
+    # 表の本文（見出し行と区切り行を除く）に `**` も `==` も無い表をNGにする。
+    # 何を強調するかは目視：各行の要の語句を太字に、持ち帰ってほしい行・数字にマーカー。
+    plain_tables = []
+    for m in re.finditer(r"((?:^\|.*\|\s*$\n?)+)", body, re.M):
+        rows = [r for r in m.group(1).strip("\n").split("\n") if r.strip()]
+        if len(rows) < 3 or not re.fullmatch(r"\|[-:| ]+\|\s*", rows[1]):
+            continue
+        body_rows = "\n".join(rows[2:])
+        if "**" not in body_rows and "==" not in body_rows:
+            plain_tables.append(rows[0][:34])
+    if not report("表に強調（太字かマーカー）がある", not plain_tables, f"強調の無い表: {plain_tables}／各行の要の語句を**太字**に、持ち帰ってほしい行・数字に==マーカー==を入れる"):
+        failures += 1
+
     h3s = re.findall(r"^### ", body, re.M)
     # 同一H2配下のH3が3つ以上連続していないか
     h2_blocks = re.split(r"^## ", body, flags=re.M)[1:]

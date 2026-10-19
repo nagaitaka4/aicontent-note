@@ -151,3 +151,6 @@ operations/wp-output/
 __pycache__/
 *.pyc
 operations/review-packs/
+
+# アイキャッチの参考画像（他メディアの画像・公開リポジトリに載せない）
+eyecatch-samples/

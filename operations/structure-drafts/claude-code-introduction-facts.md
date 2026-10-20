@@ -35,7 +35,7 @@
 
 | いつ | 実物 | 出どころ |
 |---|---|---|
-| 2026-03-27 | 最初のコミット。同じ日に`test.md`（日本語のテスト）・`branch.md`（ブランチの練習）・PR #1（`my-first-branch`）のマージ | `git log --reverse` |
+| 2026-03-27 | 最初のコミット。同じ日に`test.md`（日本語のテスト）・`branch.md`（ブランチの練習）・PR #1（`my-first-branch`）のマージ。**⚠️ 10/20：Claude Codeで作った記録は無い**（コミットにClaudeの共著が無く、GitHub Desktopの練習とも読める。Claudeの共著の初出は2026-04-03の`073e6ce2`）＝「Claude Codeの最初の週」の根拠に使わない | `git log --reverse` |
 | 2026-03-30 | 最初の記事と、ルール文書（SEOルール・サービス・ワークフロー・書き方）を追加。READMEを追加 | 同上 |
 | 2026-04-01〜04-03 | READMEと方針の文書を更新。略語のルールを追加。4/3に記事#8と運用ルール | 同上（3月は12コミット・4月は21コミット） |
 | 2026-04-07 | no.9を公開。入れた道具はVisual Studio Code・GitHub Desktop・Warp・Node.js。YouTubeの解説3本を見て始めた | `articles/claude-code-introduction.md` |
@@ -66,7 +66,12 @@
 | 8 | ローカル＝自分のパソコンでファイルに直接さわる／クラウド＝アプリを閉じても続く | 同上：`Local: runs on your machine with direct access to your files`／`Cloud: ... Sessions continue even if you close the app.` | 同上 |
 
 - 本人の今の入口：**デスクトップアプリで、作業の場所をローカルにして使っている**（no.73 `claude-chat-cowork-code-difference` の最後のH2「私は、手元のフォルダで記事をつくるので、ローカルだけを使っています」）
-- **⚠️ まだ無い記録**：デスクトップアプリから始めるときにNode.jsが要るか（公式の上の引用には出てこない＝要らないとも書いていない）。デスクトップアプリに替えた日。
+| 9 | **デスクトップアプリならNode.jsもCLIも入れなくてよい**／ターミナルを使わずに変更を確かめられる | [code.claude.com/docs/en/desktop-quickstart](https://code.claude.com/docs/en/desktop-quickstart)：`The desktop app includes Claude Code, so you don't need to install Node.js or the CLI to use the Code tab.`／`review its changes without using a terminal` | 2026-10-20（WebFetchで本文を取得・原文の文） |
+| 10 | 必要なプラン：Pro・Max・Team・Enterprise | 同上：`Claude Code requires a Pro, Max, Team, or Enterprise subscription` | 同上 |
+| 11 | 最初は小さく、よく知っているものから | 同上：`Start with a small project you know well. It's the fastest way to see what Claude Code can do.` | 同上 |
+
+- **⚠️ 訂正（10/20）**：上の5〜8を取った /desktop のページだけを見て「Node.jsが要るかは記録なし」としていた。quickstartに答えがあった（9番＝要らない）
+- **⚠️ まだ無い記録**：デスクトップアプリに替えた日。1番「Pro・Maxに含まれる（追加料金なし）」の原文
 
 ## 4. X編集部の在庫
 
@@ -109,7 +114,7 @@
 - サジェスト（**2026-10-20 11時台に取り直し**・`suggestqueries.google.com`）：`非エンジニア claude code`10件（本／使い方／できること／活用事例／始め方／活用／入門／note）・`claude code できること`10件（非エンジニア／できないこと／一覧／例／初心者）・`claude code 始め方`10件（windows／無料／スマホ／初心者／mac／vscode／ターミナル／非エンジニア／git）・`claude code 初心者`7件・`claude code 非エンジニア`4件・`claude code 最初`4件（にやること／の設定）
 - 自サイトのGSC：no.9は**インデックス済みだが表示0**（2026-08-11・被リンク15本）／**表示なし**（2026-09-10）／2026-09-14の直近6か月のページ表にも行が無い
 - **2026-10-20 再取得（直近3か月＝2026-07-18〜10-17・実Chrome）**：no.9（`page=!https://aicontent-note.com/claude-code-introduction/`）は**クリック0・表示0**。サイト全体でクエリに「非エンジニア」「できること」「始め方」を含むものは**表示0**。「初心者」は16表示（内部リンクの記事のクエリ1本だけ）。「claude code」を含むクエリは44表示・4クリック（no.56とno.14だけ）
-- **リライトの判定（`rules/article-flow.md` 6章）**：11〜20位の滞留ではなく表示0なので、順位を上げる直しではなく**題と中身の立て直し**。URLは被リンク15本があるので維持
+- **リライトの判定（`rules/article-flow.md` 6章）**：11〜20位の滞留ではなく表示0なので、順位を上げる直しではなく**題と中身の立て直し**。URLは維持（被リンクは10/20にgrepで公開記事18本・8/11の15本から増えた）
 - 隣の記事（2026-09-14・直近6か月）：用語集 0クリック／10表示／8.1位・no.62 0クリック／19表示／8.1位
 - 「非エンジニア」「できること」「始め方」を含むクエリで、自サイトに表示が出た記録：**見つからず（未計測）**
 
@@ -118,5 +123,5 @@
 1. **12項目の本人確認（旧C-3・未回答）。**抜け・出したくないもの・やっていないものがあるか。特に7番（経費台帳＝進んでいない）と9番（営業リスト＝成約なし）を出すか
 2. **最初の1週間で実際に詰まった所。**記録は「英語で分からない」「ターミナルに慣れない」の2つだけ。ほかに止まった所・解決までにかかった時間は本人の記憶にしか無い
 3. **「フォルダ」で詰まった中身。**`theme-map.md`に語だけあり、記録が見つからない
-4. **いまも使っている道具はどれか。**今の入口がデスクトップアプリ（ローカル）なのはno.73に書いてある（3節）。残りは、no.9のVS Code・GitHub Desktop・Warp・Node.jsのうち今も開いているもの／デスクトップアプリに替えた時期と理由
+4. ~~**いまも使っている道具はどれか。**~~（10/20：構成案から外した＝H2-2で「デスクトップアプリならターミナルは要らない」と答えるので、詰まった所にターミナルの行を置かない）今の入口がデスクトップアプリ（ローカル）なのはno.73に書いてある（3節）。残りは、no.9のVS Code・GitHub Desktop・Warp・Node.jsのうち今も開いているもの／デスクトップアプリに替えた時期と理由
 5. **未計測**：12項目それぞれの頻度（毎日やるもの・1回きりのもの）／2番・5番・7番・9番の今の件数

@@ -1,6 +1,6 @@
 # 材料シート：非エンジニアがClaude Codeでできること＋最初の1週間で詰まった所（TOP10 #4・T-5・D-20・no.9「claude-code-introduction」の全面改稿・URL維持）
 
-作成：2026-10-02 07時台。**執筆可能：△（12項目の本人確認＝旧C-3が未回答。最初の1週間の記録が薄い）**
+作成：2026-10-02 07時台。**2026-10-20 11時台に3〜6節を今の状態に合わせた**（GSC・カニバリ・X在庫・需要・公式のデスクトップアプリ）。**執筆可能：△（12項目の本人確認＝旧C-3が未回答。最初の1週間の記録が薄い）**
 > **執筆側はこのシートの事実だけを使う。**ここに無い数字・体験は書かない。12項目は2026-09-11にCCが記録から作った一覧で、本人の確認はまだ。
 
 ## 1. 記事の芯
@@ -60,11 +60,17 @@
 | 3 | チャットとCoworkが1つに統合される（入口の前提が変わる） | [claude.com/blog/cowork-is-now-claude](https://claude.com/blog/cowork-is-now-claude)：`Claude Cowork and chat are merging into one Claude.` | 2026-09-18（`claude-entry-points-non-engineer-facts.md` 3節） |
 | 4 | 学習に使われる条件・許可のモード | no.70・no.71で公開済み | `claude-company-data-training-facts.md`・`claude-code-permissions-auto-mode-facts.md` |
 
-**⚠️ 該当の記録なし（執筆前に取り直す）**：いまのインストール手順と動作環境（no.9は4月時点でNode.jsを入れている。デスクトップアプリから始める場合に何が要るか）。
+| 5 | デスクトップアプリの始め方：インストール→サインイン→「Code」タブ | [code.claude.com/docs/en/desktop](https://code.claude.com/docs/en/desktop)：`After installing, launch Claude, sign in, and click the Code tab.` | 2026-10-20（WebFetchの引用。**執筆前にブラウザで原文を開いて確かめる**） |
+| 6 | 対応OS：macOS（Intel・Apple Silicon）・Windows（x64・ARM64）・Linux（ベータ） | 同上：`Universal build for Intel and Apple Silicon`／`For x64 processors`／`Get Claude for Linux (beta)` | 同上 |
+| 7 | セッションを分けて動かすにはGitが要る。Macは多くが最初から入っている | 同上：`Session isolation requires Git. Most Macs include Git by default.` | 同上 |
+| 8 | ローカル＝自分のパソコンでファイルに直接さわる／クラウド＝アプリを閉じても続く | 同上：`Local: runs on your machine with direct access to your files`／`Cloud: ... Sessions continue even if you close the app.` | 同上 |
+
+- 本人の今の入口：**デスクトップアプリで、作業の場所をローカルにして使っている**（no.73 `claude-chat-cowork-code-difference` の最後のH2「私は、手元のフォルダで記事をつくるので、ローカルだけを使っています」）
+- **⚠️ まだ無い記録**：デスクトップアプリから始めるときにNode.jsが要るか（公式の上の引用には出てこない＝要らないとも書いていない）。デスクトップアプリに替えた日。
 
 ## 4. X編集部の在庫
 
-`python3 operations/x-article-sync-check.py`（2026-10-02）：**この行は「X側の材料」を明記していない16件の1つ**。同じ題材の下書き・投稿は次のとおり。
+`python3 operations/x-article-sync-check.py`（2026-10-02・**2026-10-20に再実行**＝この行は今も「X側の材料」を明記していない13件の1つ。10/2の後に同じ題材の新しい下書きは見つからなかった〔`queue.md`を「非エンジニア・詰まっ・ターミナル・英語で」でgrep〕）。同じ題材の下書き・投稿は次のとおり。
 
 | ID | 中身 | 状態 |
 |---|---|---|
@@ -78,25 +84,32 @@
 | メルカリ出品の投稿 | 写真フォルダ→一言で6処理 | 投稿済み（81ビュー・`published.md` 371行） |
 | `士_HR3` | 環境を作るのが難しそうだった。難しかったのは操作ではなく仕事の整理 | `sns/posts-stock.md`。GPT提案の草案で、実体験・数字は未確認 |
 
-## 5. 既存記事との重なり
+## 5. 既存記事との重なり（2026-10-20に見直し）
 
-| 記事 | 重なる所 | 扱い |
-|---|---|---|
-| no.9 `claude-code-introduction` | **正面**。H2「Claude Codeでできること」「導入前の正直な状態」「実際に導入した流れ」「GitHubとの連携」「mdファイルを読み込ませてClaude Codeを育てる」 | **この記事で全面改稿（URL維持）** |
-| no.14 `claude-code-compatible-jobs` | 職種別の「できること」 | 隣（待機列でリライト候補） |
-| no.21 `claude-code-glossary-beginners` | 初心者向けの用語 | 隣 |
-| no.62 `ai-work-environment-setup` | 環境を作る5ステップ | 隣（概念） |
-| no.19 `claude-code-limitations`・no.64 `blog-operation-automation-limit` | できなかったこと・人に残った判断 | 隣（「できないこと」はリンクで） |
-| no.42 `mercari-ai-listing` | 12項目の10番 | 子 |
-| TOP10 #2（入口の選び方）・#3（会社に入れる手順） | 「始め方」が重なりうる | #4は「できること＋詰まった所」に絞る |
+10/2の後に公開した3本（no.71・no.73・no.74）を、題とH2で読者の問いを比べた。
 
-**判定：同じ読者の問い（非エンジニアに何ができるか・どう始めるか）に答えているのはno.9だけ。改稿で1本にするので、2本で答える形にはならない。**
+| 記事 | 読者の問い | 重なる所 | 扱い |
+|---|---|---|---|
+| no.9 `claude-code-introduction`「Claude Codeとは何か？できること・使い方を実際に使って整理した」 | Claude Codeとは何か／何ができるか | **正面**。H2「Claude Codeでできること」「導入前の正直な状態」「実際に導入した流れ」 | **この記事で全面改稿（URL維持）** |
+| no.73 `claude-chat-cowork-code-difference`「Claudeのチャット・Cowork・Claude Codeの違い」 | どれを使えばいいか／どこで開くか | 「チャットと何が違うか」「Web版・デスクトップアプリ・スマホ。どこで開けばいいか」 | **違いと開く場所はno.73に任せる**。この記事は1〜2文でリンク |
+| no.74 `claude-code-company-introduction-no-it-staff`「Claude Code導入の手順。IT担当がいない会社が決める4つ」 | 会社に入れるとき何を決めるか（契約・管理する人・渡さない情報・最初の業務） | 「導入」「始め方」の語 | **会社として入れる話はno.74に任せる**。この記事は個人で触り始める人の「何ができるか・どこで詰まるか」 |
+| no.71 `claude-code-permission-modes`「Claude Codeの許可、どこまで自動でいいか。モードの選び方」 | 確認をどこまで自動にするか | 許可の確認がたくさん出て詰まる話（411件はたまった件数で、最初の1週間の話ではない＝2-2節） | 詰まった所に許可を入れるなら、1行でno.71へ |
+| no.14 `claude-code-compatible-jobs` | 自分の職種に合うか | 職種別の「できること」 | 隣。この記事は職種ではなく「1人が実際に任せている作業」 |
+| no.21 `claude-code-glossary-beginners` | 用語が分からない | 初心者・非エンジニア | 隣（英語・用語で詰まった所からリンク） |
+| no.62 `ai-work-environment-setup` | 任せる環境をどう作るか | 環境・ルールのファイル | 隣（12番からリンク） |
+| no.19 `claude-code-limitations` | できなかったこと | 「できないこと」 | 「できないこと」はリンクで |
+| no.42 `mercari-ai-listing` | メルカリ出品 | 12項目の10番 | 子 |
+
+**判定：「非エンジニアに何ができるか・触り始めてどこで詰まるか」に答えているのはno.9だけ。**no.73（どれを・どこで）とno.74（会社で入れる手順）は問いが違う。改稿で1本にするので、2本で答える形にはならない。
 
 ## 6. 需要
 
 - サジェスト（`operations/site-status.md` 2026-09-11 12時台取得）：`非エンジニア claude code`10件（本／使い方／できること／始め方／活用事例）・`claude code できること`10件（できないこと／非エンジニア／一覧）・`claude code 事例`9件・`claude code 初心者`7件・`claude code 非エンジニア`5件
 - サジェスト（同 2026-09-12 17時取得）：`claude code 始め方`10件（windows／初心者／mac）・`claude code 最初`6件（にやること／の設定／にやるべきこと）・`claude 非エンジニア`10件・`claude できること`10件（一覧／できないこと）・`claude 導入`6件・`claude 使い方 初心者`4件・`claude code 準備`2件・`claude code 何から`1件
+- サジェスト（**2026-10-20 11時台に取り直し**・`suggestqueries.google.com`）：`非エンジニア claude code`10件（本／使い方／できること／活用事例／始め方／活用／入門／note）・`claude code できること`10件（非エンジニア／できないこと／一覧／例／初心者）・`claude code 始め方`10件（windows／無料／スマホ／初心者／mac／vscode／ターミナル／非エンジニア／git）・`claude code 初心者`7件・`claude code 非エンジニア`4件・`claude code 最初`4件（にやること／の設定）
 - 自サイトのGSC：no.9は**インデックス済みだが表示0**（2026-08-11・被リンク15本）／**表示なし**（2026-09-10）／2026-09-14の直近6か月のページ表にも行が無い
+- **2026-10-20 再取得（直近3か月＝2026-07-18〜10-17・実Chrome）**：no.9（`page=!https://aicontent-note.com/claude-code-introduction/`）は**クリック0・表示0**。サイト全体でクエリに「非エンジニア」「できること」「始め方」を含むものは**表示0**。「初心者」は16表示（内部リンクの記事のクエリ1本だけ）。「claude code」を含むクエリは44表示・4クリック（no.56とno.14だけ）
+- **リライトの判定（`rules/article-flow.md` 6章）**：11〜20位の滞留ではなく表示0なので、順位を上げる直しではなく**題と中身の立て直し**。URLは被リンク15本があるので維持
 - 隣の記事（2026-09-14・直近6か月）：用語集 0クリック／10表示／8.1位・no.62 0クリック／19表示／8.1位
 - 「非エンジニア」「できること」「始め方」を含むクエリで、自サイトに表示が出た記録：**見つからず（未計測）**
 
@@ -105,5 +118,5 @@
 1. **12項目の本人確認（旧C-3・未回答）。**抜け・出したくないもの・やっていないものがあるか。特に7番（経費台帳＝進んでいない）と9番（営業リスト＝成約なし）を出すか
 2. **最初の1週間で実際に詰まった所。**記録は「英語で分からない」「ターミナルに慣れない」の2つだけ。ほかに止まった所・解決までにかかった時間は本人の記憶にしか無い
 3. **「フォルダ」で詰まった中身。**`theme-map.md`に語だけあり、記録が見つからない
-4. **いまも使っている道具はどれか。**no.9のVS Code・GitHub Desktop・Warp・Node.jsのうち、いま開いているもの／デスクトップアプリに替えた時期と理由
+4. **いまも使っている道具はどれか。**今の入口がデスクトップアプリ（ローカル）なのはno.73に書いてある（3節）。残りは、no.9のVS Code・GitHub Desktop・Warp・Node.jsのうち今も開いているもの／デスクトップアプリに替えた時期と理由
 5. **未計測**：12項目それぞれの頻度（毎日やるもの・1回きりのもの）／2番・5番・7番・9番の今の件数

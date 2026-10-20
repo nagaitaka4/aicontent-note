@@ -49,7 +49,7 @@ eyecatch_alt: Claude Codeでできること、始め方と詰まった所と書�
 ## Claude Codeの始め方：デスクトップアプリなら、ターミナルは要らない
 
 ==アプリを入れてサインインし、「コード」で作業の場所を「ローカル」にしてフォルダを選べば始められます。==
-Node.jsや、ターミナルで動かす版のClaude Codeを入れる必要はありません（[公式の始め方](https://code.claude.com/docs/en/desktop-quickstart)）。
+Node.jsや、ターミナル用のClaude Codeは要りません（[公式の始め方](https://code.claude.com/docs/en/desktop-quickstart)）。
 
 ・**有料プランが要る**：個人ならPro・Maxで使えます。パソコンはMac・Windowsです<br>
 ・**最初は小さなフォルダで**：中身をよく知っている小さなフォルダで、その中で終わる作業を1つ頼みます。例えば画像のサイズ合わせや、下書きのチェックです。公式も、よく知っている小さなものから始めるよう勧めています

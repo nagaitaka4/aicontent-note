@@ -71,6 +71,7 @@
 | 9 | **デスクトップアプリならNode.jsもCLIも入れなくてよい**／ターミナルを使わずに変更を確かめられる | [code.claude.com/docs/en/desktop-quickstart](https://code.claude.com/docs/en/desktop-quickstart)：`The desktop app includes Claude Code, so you don't need to install Node.js or the CLI to use the Code tab.`／`review its changes without using a terminal` | 2026-10-20（WebFetchで本文を取得・原文の文） |
 | 10 | 必要なプラン：Pro・Max・Team・Enterprise | 同上：`Claude Code requires a Pro, Max, Team, or Enterprise subscription` | 同上 |
 | 11 | 最初は小さく、よく知っているものから | 同上：`Start with a small project you know well. It's the fastest way to see what Claude Code can do.` | 同上 |
+| 12 | デスクトップアプリの定期実行（ローカル）は、アプリが開いていてパソコンが起きているときだけ動く。寝ていた時間の分は、起きたときに1回だけ取り戻す | [code.claude.com/docs/en/desktop-scheduled-tasks](https://code.claude.com/docs/en/desktop-scheduled-tasks)：`Tasks only run while the desktop app is running and your computer is awake.` | 2026-10-20（本文のGPTレビューの指摘で取得。本人の毎朝の調べ物＝`~/.claude/scheduled-tasks/x-morning-brief`はこの仕組み） |
 
 - **⚠️ 訂正（10/20）**：上の5〜8を取った /desktop のページだけを見て「Node.jsが要るかは記録なし」としていた。quickstartに答えがあった（9番＝要らない）
 - **⚠️ まだ無い記録**：デスクトップアプリに替えた日。1番「Pro・Maxに含まれる（追加料金なし）」の原文

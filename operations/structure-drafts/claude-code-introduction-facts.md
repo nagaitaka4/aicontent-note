@@ -24,7 +24,7 @@
 | 2 | WordPressへの入稿（下書きまで） | no.63〜66・Chrome拡張 | `operations/md-to-wp.py`あり。本数は数え直していない |
 | 3 | アイキャッチのリサイズ・リネーム・色補正 | `images/`のアイキャッチ69枚 | `images/`の`eyecatch_`77ファイル |
 | 4 | X投稿の下書き・文字数と1行目の機械チェック | `knowledge/x/queue.md`・`x-count.py`・`x-firstline.py` | 在庫55本（`queue.md` 10/02の更新行）。スクリプト2本あり |
-| 5 | 毎朝・週2回の自動リサーチ | 定期実行6本・51回（2026-07-06〜） | 数え直していない（`operations/automation-log.md`は135行） |
+| 5 | 毎朝・週2回の自動リサーチ（**毎朝6:30にMacで・Macが起きているときだけ**＝`operations/session-handoff.md` 9/26の行・`~/.claude/scheduled-tasks/x-morning-brief`） | 定期実行6本・51回（2026-07-06〜） | 数え直していない（`operations/automation-log.md`は135行） |
 | 6 | サーチコンソールの数字を読んで記事を決め直す | `operations/site-status.md` | 1,711行 |
 | 7 | 領収書PDFから経費台帳を作る | `business-ops` 70行（⚠️ 進んでいない） | リポジトリはある。行数は数え直していない |
 | 8 | 請求書PDFの生成 | `business-ops/invoices/generate_invoice.py` | ファイルあり |

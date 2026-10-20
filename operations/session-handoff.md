@@ -1,57 +1,57 @@
 # セッション引き継ぎ
 
-最終更新：2026-10-20 11:10（**セッション終了。新しいセッションは、TOP10 #1「非エンジニアがClaude Codeでできること＋最初の1週間で詰まった所」（no.9 `claude-code-introduction`の全面改稿・URL維持）の構成案から。**no.75「ChatGPTやClaudeの嘘はどこで起きる？ハルシネーション対策」は10/20 10:34に公開・公開後の作業まで完了。GSCはユーザーがリクエスト済み）
+最終更新：2026-10-20 17:05（**セッション終了。新しいセッションは、TOP10 #1「Claude Codeの会話履歴は消える？何日残るか、自分の記録で数えた」（D-46・新規）の構成案から。**no.9「非エンジニアがClaude Codeでできること。始め方と詰まった所」は10/20 15:06にリライト公開（URL維持）・公開後の作業まで完了。GSCは15:38にユーザーが再リクエスト済み）
 
 ---
 
 ## 次のセッションでまず行うこと
 
-**TOP10 #1「非エンジニアがClaude Codeでできること＋最初の1週間で詰まった所」（T-5・D-20・no.9の全面改稿・URL維持）の構成案を作り、確認事項を取材形式で聞く。**材料シートは**ある**＝`operations/structure-drafts/claude-code-introduction-facts.md`（10/2作成・執筆可能△：本人の確認が未回答）。行の中身は`~/Documents/GitHub/tasks/README.md` TOP10 #1の行が正。
+**TOP10 #1「Claude Codeの会話履歴は消える？何日残るか、自分の記録で数えた」（D-46・新規）の構成案を作り、確認事項を取材形式で聞く。**材料シートは**ある**＝`operations/structure-drafts/claude-code-conversation-history-facts.md`（10/19作成・2節に記録の実物〔8/28に171本・10/5に247本・10/19に356本〕・3節に公式の英語原文）。行の中身は`~/Documents/GitHub/tasks/README.md` TOP10 #1の行が正。
+
+### なぜこれが1位か（10/20 CC判断・ユーザーに報告済み）
+
+繰り上げ順の#2〜#6（ChatGPT Work×Claude Cowork／事務職／文章の見分け／翌日も続きから／PDF）は、どれも実験が始まっていない。材料シートがあり、実験の要らない行を先にした。順番を変えたいとユーザーが言ったら従う。
 
 ### 手順（この順）
 
 1. `git pull --rebase origin main`（tasksも）
-2. `rules/article-flow.md`を読み直す（4原則・1章・2章〔レビューの指摘は書き換えか削るで直す〕・5章の🔒「端的・要所だけ」と**🔒 表には強調を入れる**・6章リライト）と`rules/task-management.md` 0番
-3. **リライトの判定（`rules/article-flow.md` 6章）**：no.9の今＝題「Claude Codeとは何か？できること・使い方を実際に使って整理した」（2026-04-07公開・08-10更新）。`operations/site-status.md`では「インデックス済みだが表示0」（332行・797行）。GSCで直近3か月の表示・クエリを取り直す（記事ごと日別の取り方は`operations/site-status.md`「記事ごとの日別データ」）
-4. **材料シートを今の状態に合わせる**（10/2から変わったこと）：
-   - **カニバリの見直し**：10/2のあとに公開した no.73「Claudeのチャット・Cowork・Claude Codeの違い」（`claude-chat-cowork-code-difference`）・no.74「Claude Code導入の手順。IT担当がいない会社が決める4つ」（`claude-code-company-introduction-no-it-staff`）・no.71「Claude Codeの許可、どこまで自動でいいか」と題名＋H2で読者の問いを比べ、5節を書き直す
-   - 4節（X在庫）：`python3 operations/x-article-sync-check.py`
-   - 6節（需要）：サジェストを取り直す（`curl -s -G https://suggestqueries.google.com/complete/search --data-urlencode "q=<語>" -d client=firefox -d hl=ja`）。TOP10の行は`非エンジニア claude code`10件・`できること`10件・`始め方`10件
-5. `python3 operations/article-precheck.py claude-code-introduction "<KW>"`
-6. **構成案を書く**：`articles/no9_rewrite_composition.md`。冒頭に「書き方」節・言いたいこと（1文）・タイトルの約束の表・想定読者。**確認事項は材料シート7節から取材形式で**（質問＋候補A/B/C＋推奨・**ファイルにある答えを聞かない**）。7節の未回答：
-   - ①12項目の本人確認（旧C-3）＝抜け・出したくないもの・やっていないもの。特に7番（経費台帳＝進んでいない）と9番（営業リスト＝成約なし）を出すか。12項目の一覧は材料シート2節
-   - ②最初の1週間で実際に詰まった所（記録は「英語で分からない」「ターミナルに慣れない」の2つだけ）
-   - ③「フォルダ」で詰まった中身（`operations/theme-map.md`に語だけある）
-   - ④いまも使っている道具（no.9のVS Code・GitHub Desktop・Warp・Node.jsのうち今開いているもの／デスクトップアプリに替えた時期と理由）
-   - CCの仮説（材料シート7節）：構成・執筆・入稿・チェックはClaude Code／画像と「Claude Codeの結果を外から見る」ときがChatGPT。⚠️ 本人の使い方（ClaudeはClaude Codeだけ・チャットはChatGPT・Coworkは未使用＝メモリ`feedback_author_usage_not_overridden`）と食い違うことを書かない
-7. **初稿の構成案をコミット** → 別のレビュー役（対象ファイルと`operations/gpt-article-review-prompt.md`だけを渡す・**事実の照合用に材料シートと生データの場所も渡し、数字は計算し直させる**）→ 直す（足さずに書き換えか削る）→「直してから」なら再レビュー → GPT依頼文（`operations/review-requests/no9_rewrite_composition.md`）＋`python3 operations/review-pack.py <file> --stage 構成案` → 提示（送り先のチャットを1行で伝える）
-8. リライトなので、構成確定後に今のアイキャッチ（`images/eyecatch_0009.png`）をReadで開いて、作り直すか決める（詰め込み型なら作り直す）。参考画像は`python3 operations/eyecatch-sampler.py`で集めた一覧から選べる（下の「決まったこと」）
+2. `rules/article-flow.md`を読み直す（4原則・1章・2章〔レビューの指摘は書き換えか削るで直す〕・5章の🔒「端的・要所だけ」と🔒「表には強調を入れる」）と`rules/task-management.md` 0番
+3. **新規かリライトかを決める**：材料シート5節は「no.25（Claude Code Desktopのセッション管理・機能紹介・GSC 9表示）は保持期間を扱っていない」＝新規の見込み。no.25とTOP10 #5「翌日も続きから任せられるか」（再開の問い）と、題＋H2で読者の問いを比べてから決める。採番は`articles/*.md`の`no:`を実測（決め打ち禁止・画像ファイルの存在も確認）
+4. **材料シートを今の状態に合わせる**：
+   - 2節：`find ~/.claude/projects -maxdepth 2 -name "*.jsonl"`で本数と一番古い日を数え直す（4回目の実測になる）。起動元（各記録の`entrypoint`欄：`claude-desktop`／`sdk-cli`）と30日より古い本数も
+   - 3節：公式（[Explore the .claude directory](https://code.claude.com/docs/en/claude-directory)）を英語の原文で取り直す。**復元（消えた記録を戻せるか）は未確認**＝公式で探す。再開の方法（[Manage sessions](https://code.claude.com/docs/en/sessions)）も取り直す
+   - 4節（X在庫）：`python3 operations/x-article-sync-check.py`。`KEEP-01`（8/28の「30日しか残っていない」＝今は内容が変わった）・10/20投稿の`RESUME-01`（同じ会話を続けるより、前提だけメモで渡す）と重ならないか
+   - 6節（需要）：サジェストを取り直す（`curl -s -G https://suggestqueries.google.com/complete/search --data-urlencode "q=<語>" -d client=firefox -d hl=ja`）。行は`claude code 履歴`8・`claude code 会話`10・`claude 履歴`10。GSCは実Chromeで直近3か月（`operations/site-status.md`「よく使うURL」・クエリは`&query=*<語>`の部分一致が効く）
+5. `python3 operations/article-precheck.py <slug> "<KW>"`
+6. **構成案を書く**：`articles/no<番号>_composition.md`。冒頭に「書き方」節・言いたいこと（1文）・タイトルの約束の表・想定読者。**確認事項は材料シート7節から取材形式で**（質問＋候補A/B/C＋推奨・**ファイルにある答えを聞かない**・1つずつ聞く）。7節の未回答：
+   - **C-18：会話の記録が消えて困ったことはあるか**（無ければ「困る前に知っておく」の書き方）
+   - ターミナル（CLI）で直接`claude`を打って使っているか（記録の上では見当たらない＝デスクトップアプリ326・SDK経由23・記載なし8）
+   - ⚠️ 本人の使い方（ClaudeはClaude Code〔デスクトップアプリ・ローカル〕だけ・チャットはChatGPT・Coworkは未使用）と食い違うことを書かない
+7. **初稿の構成案をコミット** → 別のレビュー役（対象ファイルと`operations/gpt-article-review-prompt.md`だけを渡す・**事実の照合用に材料シートと生データの場所も渡し、数字は数え直させる**）→ 直す（足さずに書き換えか削る）→「直してから」なら再レビュー → GPT依頼文（`operations/review-requests/<ファイル名>`）＋`python3 operations/review-pack.py <file> --stage 構成案` → 提示（送り先のチャットを1行で伝える）
+8. 構成確定後にアイキャッチ：`python3 operations/eyecatch-sampler.py`で一覧を作り、ユーザーに選んでもらう → `/eyecatch-ref`
 
-### このセッション（10/16〜10/20）で決まったこと（恒久・必ず守る）
+### このセッション（10/20）で決まったこと（恒久・必ず守る）
 
-- **🔒 記事の表には強調を入れる**（10/20 ユーザー指示「この指摘も何度もしています。恒久的なルールに」）：各行の要の語句を`**太字**`に、持ち帰ってほしい行・数字に`==マーカー==`。**表の本文に強調が1つも無いと`article-self-check.py`がNG**。列の見出しは「たとえば」でなく「例えば」
-- **表の列幅**：件数のような短い列（6字以下）がある表は、`md-to-wp.py`が列幅を中身に合わせて出し、短い列は折り返さない（字の間にU+2060）。エディターで開いてもブロックは壊れない（no.75で確認）
-- **本文に半端な実数の件数を書かない**（10/19「件数を具体的に書いてるのがAI丸出し」）：地の文は概数（ユーザーはWPで「20件近く」→「20件ぐらい」に直した）。実数を越える概数（数十回）は使わない。表の件数の列は実数でよい
-- **補充はTOP10が10本を切ったときだけ**（10/20「10本切ったら補充でいいです」）：待機列の本数では補充しない。`rules/task-management.md`・`rules/article-flow.md` 8章5番・朝ブリーフ`full-research.md`・`operations/pipeline-status.py`を同じ基準に直した。**いま待機列は4本＝補充は不要**
-- **アイキャッチの参考集め**：`python3 operations/eyecatch-sampler.py`が10メディア（SmartHR Mag.・LIG・Backlog・HubSpot・note・Workship・LISKUL・Keywordmap・SEO HACKS・カオナビ）のRSSから記事のアイキャッチを集め、`eyecatch-samples/<日付>/`（gitignore＝公開リポジトリに載せない）に一覧（`index.html`・`sheet.jpg`）を作る。記事ごとに使ってよい（1回1分ほど）。運用は「一覧から選ぶ→合うのが無ければ取り直す」
-- **GPTに添付する参考画像は`~/Desktop/アイキャッチ添付/`にまとめる**（10/19 ユーザー指示「パスが深くて探すのが一苦労」）：名前は`no<番号>_<順番>_<役割>_<出どころ>`。`knowledge/eyecatch-rules.md`の手順2.5と`/eyecatch-ref`に入れた
-- **参考画像2枚の組み合わせ**（no.75）：「組み方は1枚目・色と文字と絵のタッチは2枚目」と、プロンプトの中で画像を「3人が並ぶ画像」「虫眼鏡の画像」のように中身で呼ぶ（添付の順番に依らない）
-- **OpenAIの画像APIでアイキャッチを直接作れる**（10/19に公式で確認）：gpt-image-2.5（Sunburst／Flare）・参考画像を複数渡せる・1200×640で作って630に切る。1枚の出力は約4〜16円（high〜max・1ドル158円）＋入力分。**今は使わない（ユーザー判断）**。ChatGPTの課金とは別のAPI登録が要る
-- **WPにユーザーが直した所がある前提で送る**：本文を送り直す前に、前回送った版とブロック単位のハッシュで比べる（no.75でリードの「20件ぐらい」を見つけた）。前回送った版は`git show HEAD:operations/md-to-wp.py`の旧スクリプトでも再現できる
-- **Xのリンク型も見送り判定を通す**：`x-cannibal.py`はURLを除いて比べるように直した（記事URLのドメインを目印に数え、リンク型が全部「見送り」で止まっていた）。no.75のプリンターの話は10/20朝の`PRINT-01`見送りと同じ材料＝使わない
-- 10/9〜10/16の決まりも引き続き守る：レビューの指摘は書き換えか削る／初稿は最初のレビューの前にコミット／実験の材料は`operations/experiment-materials.md`に自動でためる／WPへの本文は一時のファイル入力欄＋SHA照合（`operations/wp-block-guide.md`）／料金は日本から開いた税込み表示／本人の使い方を一般論に置き換えない／本人の回答の範囲を越えない／構成案・報告に字数を書かない／確認事項は取材形式／レビュー役には生データの場所を渡し数字を計算し直させる／アイキャッチは詰め込み型なら作り直す・絵のタッチは参考画像と同じ
+- **確認事項の「ファイルにある答え」は、いつの話かまで正しく書く**（10/20 ユーザー指摘「ファイルにある答えは、初期のClaudeCodeの導入時の3つになってます」）：「使い始めたころ」と聞きながら、導入時の記録を「ファイルにある答え」に並べていた。時期・場面をずらして聞かない
+- **確認事項に、根拠の無い語を持ち込まない**（10/20「『フォルダ』で詰まった、という質問がよくわかりません」）：`theme-map.md`に語だけあった「フォルダ」をそのまま聞いた。本人は「どのファイルに何があるか把握していない・構成も作成もClaude Codeに任せている・詰まった覚えはない」。記録で裏が取れない語は聞く前に外す（`theme-map.md`からも外した）
+- **公式の一次情報は、関係するページを全部見てから「無い」と言う**：/desktop だけ見て「Node.jsが要るかは記録なし」とし、quickstartに`you don't need to install Node.js or the CLI`があった（別のレビュー役が見つけた）
+- **Claudeのデスクトップアプリの定期実行（ローカル）は、アプリが開いていてMacが起きているときだけ動く**（公式 desktop-scheduled-tasks・`Tasks only run while the desktop app is running and your computer is awake.`）。本人の毎朝の調べ物（`x-morning-brief`）はこの仕組み。記事に書くときは「Claudeのアプリが開いていてMacが起きていれば」
+- **リライトで題が変わったら、本文の中に文字で書いたリンクだけWPで直す**：SWELLの記事リンクカード（`wp:loos/post-link`）は表示のときに今の題を読むので触らない（設定値に旧題が残っても表示は新題）。no.9では22か所中、文字のリンク6か所（5記事）だけ直した。直し方＝WPの`content.raw`でその文字列だけ置き換え→保存後の本文が「置き換えた結果」とSHA一致・ブロック数同じ→公開ページで旧題0
+- **GPTの直し案でも、一文60字の上限を越えるならそのまま入れない**：要の語（「以前ターミナルから入れたとき」）だけ入れて縮める
+- 10/16〜10/20の決まりも引き続き守る：🔒 表には強調（太字・マーカー・「例えば」）／本文に半端な実数の件数を書かない（概数）／補充はTOP10が10本を切ったときだけ（**いま待機列は3本・補充不要**）／アイキャッチの参考は`eyecatch-sampler.py`の一覧から・GPTに添付する画像は`~/Desktop/アイキャッチ添付/`／参考画像2枚は中身で呼ぶ（「題が白い帯に乗っている画像」など）／WPにユーザーが直した所がある前提で送る（ブロック単位のハッシュ）／レビューの指摘は書き換えか削る／初稿は最初のレビューの前にコミット／WPへの本文は一時のファイル入力欄＋SHA照合（`operations/wp-block-guide.md`）／本人の使い方を一般論に置き換えない／本人の回答の範囲を越えない／構成案・報告に字数を書かない／確認事項は取材形式
+
+### no.9の記録（10/20 完了）
+
+- リライト公開：10/20 15:06（post 135・`claude-code-introduction`・URL維持・公開のまま題・本文・アイキャッチ〔メディア1149〕・タグ・説明文を入れ替えた）。公開ページで確認：題・説明文126字・og:image・H2 3・表2・マーカー7・区切り線5・タグ3（Claude Code／AI活用／非エンジニア）・記法の残り0・旧題0・埋め込み0・コメント欄なし。本文はSHA一致（`f17e35b9…`）
+- リライトの理由：GSC直近3か月（7/18〜10/17）で表示0。「とは」の題を検索の語（非エンジニア・できること・始め方）で立て直した
+- 経緯：構成案は別のレビュー役4回＋確認3つ＋GPT1回（1点直して執筆GO）で第9稿。本文は別のレビュー役2回＋GPT1回（公開してよい）。確認の回答＝12の作業→10に（経費の表・営業リストを外す）／詰まった所は「入れるとき」（ターミナルの英語の表示）と「使い始めてから」（変更のぶつかり・どのAIを使うか＝今も決めきれていない）／フォルダは詰まっていない。画面の表記「コード」「ローカル」はユーザーが確認
+- ファイル：構成案`articles/no9_rewrite_composition.md`／材料シート`operations/structure-drafts/claude-code-introduction-facts.md`／取材メモ`operations/interview-notes/claude-code-introduction.md`／アイキャッチのプロンプト`operations/structure-drafts/claude-code-introduction-eyecatch-prompt.md`（組み方と文字＝LIG・絵のタッチ＝note・GPT 1回目を採用）／記録`operations/rewrite-log.md`
+- 後処理：旧題の本文リンク6か所（no.11・no.56×2・no.74・no.14・no.49）をWPで修正・MD同期17記事21か所・バックログD-20・TOP10繰り上げ（新1位＝会話履歴／#10にCSV）・GSC確認を常時掲載（再リクエスト済み）・Xキューへ申し送り（`knowledge/x/queue.md`在庫サマリーの冒頭）
+- 効果の確認：2026-11のGSC
 
 ### no.75の記録（10/20 完了）
 
-- 公開：10/20 10:34（post 1141・`ai-hallucination-where-it-happens`・新規）。アイキャッチ1142。公開ページで確認：題・説明文129字・OGP・H2 4・マーカー7・表1・区切り線6・タグ5（ChatGPT／Claude／AI活用／プロンプト／品質チェック）・記法の残り0・コメント閉。WPの本文はCCが最後に送った版とSHA一致
-- 経緯：構成案は別のレビュー役5回＋GPT1回（2点直して執筆GO）。本文は別のレビュー役1回＋GPT1回（2点直して公開してよい）。公開前にユーザー指示で、リード1文目に「（ハルシネーション）」・表に太字とマーカー・「例えば」・件数の列を狭く
-- ファイル：構成案`articles/no75_composition.md`／材料シート`operations/structure-drafts/ai-hallucination-where-it-happens-facts.md`（`research/`の訂正50行→17件の分類）／取材メモ`operations/interview-notes/ai-hallucination-where-it-happens.md`／アイキャッチのプロンプト`operations/structure-drafts/ai-hallucination-where-it-happens-eyecatch-prompt.md`
-- 後処理：MD published・workflow・backlog（D-34）・issue #2（公開済み73本）・TOP10繰り上げ（新1位＝no.9改稿／#10にExcel）・GSC確認を常時掲載・Xキューに`NOKOSHI75-リ`（リンク型・10/21〜10/23）
-- 説明文と本文H2-2の「20件近く」は、ユーザーが直したリードの「20件ぐらい」とそろえていない（ユーザー判断待ちではなく、指摘された箇所だけ直した）
-
-### no.23の記録（10/16 完了）
-
-- 公開（リライト）：10/16 17:42（post 366）。詳細は前の版の引き継ぎ（git履歴）と`operations/rewrite-log.md`
+- 公開：10/20 10:34（post 1141・新規）。詳細は前の版の引き継ぎ（git履歴）と`articles/no75_composition.md`。Xキューに`NOKOSHI75-リ`（リンク型・10/21〜10/23）
 
 ---
 
@@ -126,6 +126,7 @@
 | **教訓（10/20）** | ①朝の候補`PRINT-01`（プリンターのおすすめが2年前のモデル）はユーザー判断で見送り＝🚫（同じ材料の`p3`も） ②`run2`で1位の「日本は対象外」は8月の材料で8月にXへ出していた＝2週間ルールで外した ③**締めは問いかけより答え**（ユーザー指摘・盲検でも答え版1.33位／問いかけ版3.33位・プロフ3/3対0/3） |
 | **次** | 未返信なし。②が2本続いた（`DESIGN-01`・`RESUME-01`）ので次は①か③。no.75（ハルシネーション対策）公開後はリンク型＝プリンターの例は見送り済みなので、訂正の記録の側から。読者役が欲しがった「メモに何を書くか」（前回どこまで・決めたこと・次にやること）は返信が来たときの材料 |
 | **🆕 10/20 10時台（記事セッションから）** | **no.75公開で`NOKOSHI75-リ`をキューへ**（リンク型・軸③・「ChatGPTやClaudeの嘘って、作り話のイメージでした」→多かったのは見落としと、1ページだけ見て「無い」と言い切るほう＋記事URL・盲検`2026-10-20/no75-1`合格・ゲート`--model T-通説返し`[出してよい]・重み271）。出すのは10/21〜10/23。確定枠にしない＝順番は朝ブリーフ。プリンターの話は`PRINT-01`見送りと同じ材料なので使わない。`x-cannibal.py`はURLを除いて比べるように直した |
+| **🆕 10/20 15時台（記事セッションから）** | **no.9を全面改稿して公開**（URL維持・題「非エンジニアがClaude Codeでできること。始め方と詰まった所」）。材料の申し送りは`knowledge/x/queue.md`在庫サマリーの冒頭（10の作業・デスクトップアプリならターミナルもNode.jsも要らない・変更がぶつかって止まった・どのAIを使うか今も決めきれていない）。キューへの投入はまだ＝朝ブリーフが判断。no.75の`NOKOSHI75-リ`（10/21〜10/23）と同じ週になる |
 | **直近の投稿** | `RESUME-01`（10/20・②）／`DESIGN-01`（10/19・②）／`PACE23-01`（10/16・①）／`TEAM74-01`（10/14・①）／`TOMARU07-リ`（10/12・③） |
 
 ## X編集部の状態（**2026-10-19 08:50更新**・3点完了）

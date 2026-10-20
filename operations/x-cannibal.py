@@ -35,8 +35,14 @@ MARK = re.compile(
 )
 
 
+def strip_urls(t):
+    """URLは比べない（2026-10-20：リンク型はどれも記事URLを含み、ドメインとhttpsを
+    「共通の目印2つ」と数えて、題材の違うリンク型が全部[見送り]で止まった・no.75）"""
+    return re.sub(r"https?://\S+", "", t)
+
+
 def norm(t):
-    return re.sub(r"\s+", "", t)
+    return re.sub(r"\s+", "", strip_urls(t))
 
 
 def grams(t, n=3):
@@ -46,7 +52,7 @@ def grams(t, n=3):
 
 def marks(t):
     out = set()
-    for m in MARK.finditer(t):
+    for m in MARK.finditer(strip_urls(t)):
         s = re.sub(r"\s+", "", m.group(0))
         if s.lower() in COMMON:
             continue

@@ -1,0 +1,7 @@
+Claudeに調べ物を任せて、5か月で20件ぐらい直しました。
+
+いちばん多かったのは、1ページだけ見て「日本は対象外」と言い切るやつ。
+出典のリンクが付いているので、つい信じてしまいます。
+
+ChatGPTやClaudeの嘘がどこで起きるか、まとめました。
+https://aicontent-note.com/ai-hallucination-where-it-happens/

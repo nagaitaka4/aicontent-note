@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "candidate",
+    "id": "c3",
+    "text": "Claudeに調べ物を任せて、5か月で20件ぐらい直しました。\n\nいちばん多かったのは、1ページだけ見て「日本は対象外」と言い切るやつ。\n出典のリンクが付いているので、つい信じてしまいます。\n\nChatGPTやClaudeの嘘がどこで起きるか、まとめました。\nhttps://aicontent-note.com/ai-hallucination-where-it-happens/",
+    "hash": "168c5589fcd023a7",
+    "label": "A"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B"
+  },
+  {
+    "kind": "candidate",
+    "id": "c2",
+    "text": "ChatGPTやClaudeの嘘って、作り話のイメージでした。\n\nAIに任せた調べ物で直した記録を数えたら、多かったのは見落としと、1ページだけ見て「無い」と言い切るほう。\n出典のリンクが付いていても、普通に間違えていました。\n\nどこを確かめればいいか、まとめました。\nhttps://aicontent-note.com/ai-hallucination-where-it-happens/",
+    "hash": "08d149ae780a3f56",
+    "label": "C"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E"
+  },
+  {
+    "kind": "candidate",
+    "id": "c1",
+    "text": "ChatGPTにプリンターのおすすめを聞いたら、2年前のモデルが出てきました。\n\nAIに任せた調べ物で直した記録を数えたら、いちばん多かったのは作り話じゃなくて見落としでした。\n1ページだけ見て「日本は対象外」と言い切る、みたいな。\n\n確かめ方をまとめました。\nhttps://aicontent-note.com/ai-hallucination-where-it-happens/",
+    "hash": "18a7054f4e560daa",
+    "label": "F"
+  }
+]

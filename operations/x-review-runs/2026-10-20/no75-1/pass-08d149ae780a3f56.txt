@@ -1,0 +1,7 @@
+ChatGPTやClaudeの嘘って、作り話のイメージでした。
+
+AIに任せた調べ物で直した記録を数えたら、多かったのは見落としと、1ページだけ見て「無い」と言い切るほう。
+出典のリンクが付いていても、普通に間違えていました。
+
+どこを確かめればいいか、まとめました。
+https://aicontent-note.com/ai-hallucination-where-it-happens/

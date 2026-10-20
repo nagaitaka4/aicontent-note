@@ -234,7 +234,8 @@ def main():
     print()
     print("## 在庫3段（下限）")
     print(f"{mark(len(open_cells), MIN_OPEN_CELLS)} テーママップの空欄（アーカイブ無し・未判定）: {len(open_cells)}本（下限{MIN_OPEN_CELLS}）")
-    print(f"{mark(len(wait_ok), MIN_WAIT_OK)} 待機列の◯: {len(wait_ok)}本（下限{MIN_WAIT_OK}）／TOP10 {len(top)}本・待機列 {len(wait)}本")
+    # 2026-10-20 ユーザー指示「10本切ったら補充でいいです」：補充の基準はTOP10が10本あるか。待機列の本数は表示だけ
+    print(f"{mark(len(top), 10)} TOP10: {len(top)}本（10本を切ったら補充）／待機列の◯ {len(wait_ok)}本・待機列 {len(wait)}本（補充の基準にしない）")
     print(f"{mark(len(ready), MIN_SHEETS)} 材料シート完成（7節そろい＝すぐ出せる）: {len(ready)}本（下限{MIN_SHEETS}）")
     print()
     print("## TOP10・待機列と材料シート")

@@ -1,8 +1,17 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-20
+最終更新: 2026-10-21
 
 ---
+
+## [2026-10-21] 調査結果（デイリー・水曜）
+
+**②新着1件（`ideas.md`に条件付きで追加＝`research-20261021-01`）。**
+
+- **ChatGPTリリースノート October 20, 2026「Introducing locked chats」**（実Chrome）verbatim `Locked chats let you keep selected conversations in your account while hiding them from regular chat history, pinned chats, and search. Open them with your 4-digit account PIN or supported device authentication.` `Locked chats are rolling out gradually to Free, Go, Plus, and Pro users on the web, in the iOS and Android apps, and in the new ChatGPT desktop app for macOS and Windows. To lock a chat, open a chat’s more options menu (•••) and select Lock chat.`＝選んだ会話を履歴・ピン留め・検索から隠し、4桁のPINか端末の認証で開く。保持期間とモデル改善の設定は変わらない（`Your retention and model-improvement settings stay unchanged.`）。**`rolling out gradually`＝本人の画面で未確認のため条件付き**
+- 過去日付の追加：10月の見出しは10/20・10/16・10/15・10/9・10/7・10/6・10/2・10/1で、10/16以前に追加なし
+- Gemini アプリ：2026.10.13のまま（curl）
+
 
 ## [2026-10-20] 調査結果（デイリー・火曜）
 

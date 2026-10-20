@@ -1,9 +1,19 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-20
+最終更新: 2026-10-21
 
 
 ---
+
+## [2026-10-21] 調査結果（デイリー・水曜）
+
+**①新着2件（すべて記録のみ・ネタ化なし）。**
+
+- **CHANGELOG.md `## 2.1.305`**（npm公開 10/21 04:29 JST・`latest`／`next`＝2.1.305・`stable`＝2.1.304）＝修正中心。使う側に近いのは verbatim `Improved /usage: each warning is now a one-line fix that names its source, and f applies the fixes` くらいで、料金・制限・使える範囲は変わらない＝記録のみ
+- **@ClaudeDevs 10/20 06:47 JST** verbatim `We launched OSS Scanner, which gives critical open source projects free, periodic vulnerability scans from our strongest models.`＝重要なオープンソースのプロジェクト向けの無料の脆弱性スキャン。本人に関係なし＝記録のみ
+- Newsroom：最新はOct 7のまま／Claude Appsリリースノート：最新の見出しはOctober 15のまま／claude.com/blog：最新はOct 19（ソース管理の記事・前回記録済み）
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅（以上curl）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-20] 調査結果（デイリー・火曜）
 

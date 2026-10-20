@@ -1,0 +1,7 @@
+「公式のサポート文書にこう書いてあります」
+AIにそう言われて開いたら、その一文がどこにも無かったんです。
+出典まで付いてたので、私は信じかけてました。
+
+ChatGPTやClaudeの嘘は、出典があっても起きます。
+どこを確かめればいいか、まとめました。
+https://aicontent-note.com/ai-hallucination-where-it-happens/

@@ -47,7 +47,7 @@ Anthropicは2つの製品を正面から比較していません。
 くり返しになりますが、両者を並べた公式の比較は公開されていません。
 セットアップから実際の使い方までは、次の記事にまとめています。
 
-[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
+[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)
 
 近い形のものに、2026年7月9日公開のChatGPT Workがあります。
 どちらもチャットの中で情報を横断し、成果物まで作ります。

@@ -179,6 +179,6 @@ Claude Codeを業務に組み込もうとしているなら、このタイミン
 
 **関連記事**
 
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)  
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)  
 ・[Claude Code初心者が最初に理解すべき用語まとめ【非エンジニア向け・完全版】](https://aicontent-note.com/claude-code-glossary-beginners/)  
 ・[Claude Codeでも効率化できなかったこと、正直に書く](https://aicontent-note.com/claude-code-limitations/)

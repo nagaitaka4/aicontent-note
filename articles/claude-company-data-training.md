@@ -339,4 +339,4 @@ Claude Codeの案内どおりに作業を進めていたら、その流れでAPI
 **関連記事**
 ・[弁護士業務の案件管理と書類作成に、Claude Codeを当てはめた](https://aicontent-note.com/claude-code-lawyer-case-management/)
 ・[社労士業務の就業規則・36協定に、Claude Codeを当てはめた](https://aicontent-note.com/claude-code-labor-consultant-rules-agreement/)
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)

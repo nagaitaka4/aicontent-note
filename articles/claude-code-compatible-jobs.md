@@ -43,7 +43,7 @@ Claude Codeの本質は・・・
 コーディングは、あくまでその一機能にすぎません。
 
 どんなツールかを詳しく知りたい方は、
-[Claude Codeとは何か？できること・使い方を実際に使って解説する](https://aicontent-note.com/claude-code-introduction/)
+[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)
 もあわせて読んでみてください。
 
 ---
@@ -289,6 +289,6 @@ Claude Codeへの指示が安定しやすいです。
 【WP入稿】SWELLボタン：「AIコンテンツ運用のご相談はこちら」/ https://aicontent-note.com/contact/
 
 【WP入稿】関連記事ブロック：
-・[Claude Codeとは何か？できること・使い方を実際に使って解説する](https://aicontent-note.com/claude-code-introduction/)
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)
 ・[AIで作ったブログ記事、そのまま公開していいのか？品質チェックの方法](https://aicontent-note.com/ai-article-quality-check/)
 ・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

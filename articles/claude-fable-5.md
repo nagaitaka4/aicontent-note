@@ -149,4 +149,4 @@ Claude Codeでは、現時点でFast modeのデフォルトモデルがOpus 4.8�
 **関連記事**
 ・[Claude Opus 4.8。AIが「ここ怪しい」と言うようになった](https://aicontent-note.com/claude-opus-4-8-honesty/)
 ・[Claudeの課金が6月から変わる。影響がある使い方・ない使い方](https://aicontent-note.com/claude-subscription-change-june-2026/)
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)

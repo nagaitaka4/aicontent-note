@@ -134,6 +134,6 @@ Claude Codeを使い続けていると、設定の段階からわからない言
 
 **関連記事**
 
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)  
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)  
 ・[Claude Codeと相性が良い職種・業種まとめ【業務効率化の視点で整理】](https://aicontent-note.com/claude-code-compatible-jobs/)  
 ・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)

@@ -142,7 +142,7 @@ Google WorkspaceやMicrosoft 365などで、会社のメールを先に用意し
 
 「Pro・Maxが必要」と出たら、`/login`で会社のアカウントを選び直します（[Claude CodeのFAQ](https://support.claude.com/en/articles/12386420-claude-code-faq)）。
 私はエンジニアではないので、画面のスクショをAIに見せながら入れました。
-入れ方は[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)に書いています。
+入れ方は[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)に書いています。
 
 ---
 
@@ -155,5 +155,5 @@ Google WorkspaceやMicrosoft 365などで、会社のメールを先に用意し
 
 **関連記事**
 ・[Claudeに会社の情報を渡して大丈夫か。データが学習に使われる条件](https://aicontent-note.com/claude-company-data-training/)<br>
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)<br>
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)<br>
 ・[Claude Codeの許可、どこまで自動でいいか。モードの選び方](https://aicontent-note.com/claude-code-permission-modes/)

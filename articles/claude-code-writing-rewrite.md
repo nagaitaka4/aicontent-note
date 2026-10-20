@@ -178,4 +178,4 @@ H2を一括で渡すと、後半になるにつれて軸がブレることがあ
 **関連記事**
 ・[記事構成はどこまで自動化できるか【Claude Code実践】](https://aicontent-note.com/claude-code-article-structure/)
 ・[Claude Codeと相性が良い職種・業種まとめ【業務効率化の視点で整理】](https://aicontent-note.com/claude-code-compatible-jobs/)
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)

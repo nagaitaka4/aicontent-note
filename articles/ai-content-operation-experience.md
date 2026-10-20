@@ -242,4 +242,4 @@ AIで楽に回せると思って始めた。実際は最初の数ヶ月、コツ
 **関連記事**
 ・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)
 ・[Claude Codeでも効率化できなかったこと、正直に書く](https://aicontent-note.com/claude-code-limitations/)
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)

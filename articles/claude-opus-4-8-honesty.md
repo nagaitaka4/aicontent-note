@@ -163,6 +163,6 @@ AIが自分の不確実性を伝えられるようになること。これは派
 ---
 
 **関連記事**
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)
 ・[Claudeの課金が6月から変わる。影響がある使い方・ない使い方](https://aicontent-note.com/claude-subscription-change-june-2026/)
 ・[プロンプトとは？AIに仕事を依頼する設計書の考え方](https://aicontent-note.com/prompt-design-basics/)

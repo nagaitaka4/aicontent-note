@@ -161,7 +161,7 @@ ChatGPTで感じていたストレスがほぼなくなりました。
 こういった作業はClaude Codeに任せています。
 
 Claude Codeが具体的に何をしてくれるかは、
-[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
+[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)
 にまとめています。
 
 ---

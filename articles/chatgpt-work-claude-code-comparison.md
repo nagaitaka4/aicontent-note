@@ -83,7 +83,7 @@ Claude Codeは、コマンドラインからPC上のファイルを直接操作�
 | 導入の難易度 | 低い。普段のChatGPTから入る | 最初の環境構築だけ負荷がかかる |
 
 ChatGPT Workの起点は接続したアプリの側にあり、一方、Claude Codeの起点は自分のPCの中にあります。
-できることの全体像は、「[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)」に書いています。
+できることの全体像は、「[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)」に書いています。
 
 ### 積み上がるものが違う
 
@@ -118,7 +118,7 @@ Claude Codeは置いたCLAUDE.mdを自動で読み込みます（[Claude Code公
 ブログ運営で効いてくるのは、トンマナや禁止事項を手元のファイルに残せることです。
 逆に、複数のツールに散った数字を1枚にまとめる作業では、この強みが活きません。
 
-手元に環境を持つ運用が実際どうなるかは、「[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)」で書いています。
+手元に環境を持つ運用が実際どうなるかは、「[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)」で書いています。
 
 ---
 
@@ -184,6 +184,6 @@ Coworkの実際の使われ方は、[Claude Coworkの使い方｜実際の9割�
 ---
 
 **関連記事**
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)
 ・[ブログ更新が止まる理由と、外注を検討するタイミングの見極め方](https://aicontent-note.com/blog-update-outsource-timing/)
 ・[コンテンツ運用代行とは？料金・内容・依頼する前に知っておくこと](https://aicontent-note.com/content-operation-outsource-what-is/)

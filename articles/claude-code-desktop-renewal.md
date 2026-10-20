@@ -208,5 +208,5 @@ Pro・Max・Team・Enterpriseプランのユーザーを対象に、Claude Code�
 
 **関連記事**
 ・[Claude Codeのレート制限が2倍に。長時間作業がしやすくなった](https://aicontent-note.com/claude-code-rate-limit-update/)
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)
 ・[Claude Codeでも効率化できなかったこと、正直に書く](https://aicontent-note.com/claude-code-limitations/)

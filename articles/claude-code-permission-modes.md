@@ -151,5 +151,5 @@ Claude Codeに、この2つを伝えれば足してくれます。
 
 **関連記事**
 ・[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)<br>
-・[Claude Codeとは何か？できること・使い方を実際に使って整理した](https://aicontent-note.com/claude-code-introduction/)<br>
+・[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)<br>
 ・[Claude Code初心者が最初に理解すべき用語まとめ【非エンジニア向け・完全版】](https://aicontent-note.com/claude-code-glossary-beginners/)

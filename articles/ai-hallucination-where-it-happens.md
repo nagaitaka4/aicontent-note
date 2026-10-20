@@ -5,8 +5,8 @@ series_no:
 title: ChatGPTやClaudeの嘘はどこで起きる？ハルシネーション対策
 url: https://aicontent-note.com/ai-hallucination-where-it-happens/
 slug: ai-hallucination-where-it-happens
-status: draft
-date: 2026-10-19
+status: published
+date: 2026-10-20
 description: ChatGPTやClaudeの嘘（ハルシネーション）は、出典が付いた答えでも起きます。AIに任せた調べ物で20件近く訂正した中では、見落としや1か所だけの確認から来た間違いがいちばん多くありました。間違いが出た場所と、公式の減らし方、確かめ方をまとめました。
 eyecatch: eyecatch_0075.png
 eyecatch_alt: ChatGPTやClaudeの嘘はどこで起きる？と書いた題の下に、虫眼鏡でスマートフォンを確かめる人、肩をすくめる人、考え込む人の3人を描いたアイキャッチ画像

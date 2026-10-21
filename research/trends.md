@@ -1,9 +1,21 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-21
+最終更新: 2026-10-22
 
 
 ---
+
+## [2026-10-22] 調査結果（デイリー・木曜）
+
+**①新着5件（1件をネタ化＝`research-20261022-01`）。**
+
+- **claude.com/blog 10/21「Introducing Claude Duet」**＋**Claude Appsリリースノート October 21, 2026**（curl）verbatim `Today, we’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working even when you step away, and checks with you before it acts on your behalf.` `Each morning, it sends you a short brief on the most important items across your connected apps.` `A research preview is available by waitlist today, starting with US Pro and Max subscribers.` `For this research preview, Claude Duet is included in Pro and Max plans and uses the same usage limits as the rest of Claude.`＝毎朝つないだアプリから大事なことを短いブリーフで届け、動く前に確認する新アプリ（iOS・Android・claude.ai）。**順番待ち・まず米国のPro/Maxから＝本人の画面では使えない**。本人は同じ形（毎朝6:30にClaude Codeの定期実行で候補を出し、押すのは人）を自作して回している＝**使う側の比較が書ける→ネタ化**（「使った」とは書かない）
+- **claude.com/blog 10/21「Claude Security now scans continuously and tracks fixes」**＝リポジトリの継続スキャン。本人に関係なし＝記録のみ
+- **claude.com/blog 10/21 HCLTechのパートナー参加**／**Newsroom 10/18「Investing in the public benefit」・10/21 Long-Term Benefit Trustの人事**＝使う側は変わらない＝記録のみ
+- **@ClaudeDevs 10/22 06:03 JST** verbatim `API version 2026-10-21 is now available.` `temperature, top_p, and top_k are removed from the Messages API`＝API利用者向け。本人はAPIを使っていない＝記録のみ
+- **CHANGELOG.md `## 2.1.306`**（npm 10/21 11:28 JST・`latest`＝2.1.306・`next`＝2.1.307・`stable`＝2.1.304）＝クラウドセッションの`claude -p`のログイン表示ほか修正2件のみ＝記録のみ（2.1.307はCHANGELOG未記載）
+- **巡回チェック**：CHANGELOG ✅／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅（以上curl）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-21] 調査結果（デイリー・水曜）
 

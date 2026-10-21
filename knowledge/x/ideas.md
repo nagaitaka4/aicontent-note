@@ -61,6 +61,12 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 **基準に満たないものはここに入れない**（research/配下への記録だけで止める）。
 
+> **📅 2026-10-22 06〜07時台（`x-morning-brief`・木曜）：追記1件（`research-20261022-01`＝Claude Duet）→ 下書き（自作の朝ブリーフ×Duet）は盲検不合格（「Claude Duet」「ブリーフ」が3人とも通じない）＝キュー投入なし。**`research-20261021-01`（ChatGPTのチャットのロック・本人の画面で未確認）は期限（〜10/23）内だが下書きなし
+
+| ID | 使う側の何が変わるか | 出典 | 鮮度期限 | 軸 |
+|---|---|---|---|---|
+| research-20261022-01（下書きは盲検不合格・言い換えるなら「毎朝まとめを届けるアプリ」から） | Anthropicの新アプリ「Claude Duet」（10/21）＝毎朝つないだアプリから大事なことをブリーフで届け、動く前に確認する。Pro・Maxに含まれ使用量は共通。**順番待ち・まず米国から＝本人は使えない**。本人は同じ形（Claude Codeの定期実行で毎朝6:30に投稿候補・リプライ先を出し、押すのは人）を自作して回している | [claude.com/resources/articles/claude-duet](https://claude.com/resources/articles/claude-duet) `Each morning, it sends you a short brief on the most important items across your connected apps.` `starting with US Pro and Max subscribers` | 〜10/24 | ② |
+
 > **📅 2026-10-04 09時台（`x-morning-brief`・日曜）：追記1件（`research-20261004-01`＝Googleのガイド更新）→ 同日`FACTG-01`でキュー化。**10/3は朝ブリーフが途中で止まり記録なし。`research-20261002-01`（mods・〜10/4）は本人の画面で未確認のまま本日が最終日＝下書きなし
 
 > **📅 2026-10-02 06〜07時台（`x-morning-brief`・金曜・フル版A込み）：追記2件・`queue.md`への投入1本（`YOMI-01`＝リサーチ由来ではなく10/1の実作業から）。**`research-20261002-01`（Claude Codeのmods・〜10/4）は下書き`MODS`を書いたが盲検不合格（「Claude Code」「コマンド1行で出てきた」が通じない・伝聞で引かれる）＋消費側ゲート（在庫54本・期限つき`DIV72-リ`／`PERM71-リ`の2本）で**キューに入れていない**。`research-20261002-02`（GoogleのAI Modeの情報モニタリング）は本人の画面で未確認＝条件付き。**期限内の生存行**：`research-20261002-01`（〜10/4）・`research-20260929-01`（Sonnet 5.5・〜10/2＝本日が最終日・本人の一言待ちのまま）

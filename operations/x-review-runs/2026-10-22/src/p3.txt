@@ -1,0 +1,6 @@
+プログラムを書けない私が、Claude Codeに任せてる作業を数えたら10個ありました。
+記事の構成、WordPressへの入稿、アイキャッチの仕上げ、毎朝の調べ物まで。
+
+逆に、まだ決めきれてないのは「どのAIに聞くか」です。
+始め方と詰まった所をまとめました。
+https://aicontent-note.com/claude-code-introduction/

@@ -1,9 +1,21 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-22
+最終更新: 2026-10-23
 
 
 ---
+
+## [2026-10-23] 調査結果（デイリー・金曜）
+
+**①新着4件（すべて記録のみ・ネタ化なし）。**
+
+- **Newsroom Oct 22, 2026「Donating Agent Skills to the Agentic AI Foundation」**＋**@ClaudeDevs 10/23 02:55 JST** verbatim `We're donating Agent Skills to the Agentic AI Foundation ( @AgenticAIFdn ), the same foundation we donated MCP to.` `Your skills keep working, and the licenses don't change.`＝使う側は変わらない（軸②の採用基準に当たらない）＝記録のみ
+- **claude.com/blog 10/22「The full Claude Platform, available on Google Cloud」**＋**@ClaudeDevs 10/23 06:27 JST** verbatim `You can now use the full Claude API from your Google Cloud account` `It uses your Google Cloud IAM credentials, and usage draws down your Google Cloud commitment.`＝API・Google Cloud利用者向け。本人は使っていない＝記録のみ
+- **claude.com/blog 10/22「Building agents: When to fold subagents into your main agent loop」**（https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop）verbatim `using fewer subagents in favor of progressively disclosed context and tools can improve quality` `Shared context produces better answers`＝作り手向けの考え方。⚠️ 本人の「調べる係と書く係を分けて1本にまとめた」話は10/21の@oikon48宛リプライで使用済み（handoff「同じ話を投稿に使わない」）＝記録のみ
+- **npm 2.1.307（10/22 05:47 JST）・2.1.308（10/22 13:19 JST）・2.1.309（10/23 05:34 JST）**＝CHANGELOGは2.1.307が修正中心（`/claude-api api-version`の追加・MCPの修正ほか）、2.1.308は`Bug fixes and reliability improvements`、2.1.309は未記載＝料金・制限・使える範囲は変わらない＝記録のみ
+- Claude Appsリリースノート：最新はOctober 21（Duet・前回記録済み）
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅／Newsroom ✅／claude.com/blog ✅（WebFetch）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-22] 調査結果（デイリー・木曜）
 

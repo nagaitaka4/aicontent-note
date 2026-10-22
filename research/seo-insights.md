@@ -1,8 +1,21 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-10-19
+最終更新: 2026-10-23
 
 ---
+
+## [2026-10-23] 調査結果（フル版・金曜）
+
+**③は一次情報の新着1件（Search Centralのドキュメント整理・10/21＝新しい機能ではない）。Googleの確定アップデートはなし。**
+
+- **【差分なし】Search Status Dashboard**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：最新は10/8に完了したSeptember 2026 spam updateのまま
+- **🆕 Search Central のドキュメント更新**（[Latest updates](https://developers.google.com/search/updates)・本日curl）：10/21付 verbatim `Updated the control what you share with Google Search documentation to include existing options such as the robots meta tag, data-nosnippet , X-Robots-Tag , and the Search generative AI control`。[該当ページ](https://developers.google.com/search/docs/crawling-indexing/control-what-you-share)（`Last updated 2026-10-21 UTC`）verbatim `You can manage your site's inclusion in generative AI features on Google Search, including AI Overviews and AI Mode, by using the Search generative AI control in Search Console.`＝**既存の設定（9/4に「2026-08-31付で全世界に展開完了」を記録済み）を一覧ページに載せただけ＝記録のみ**
+- **【差分なし】Search Central Blog**（[フィード](https://developers.google.com/static/search/blog/feed.xml)）：先頭は10/6の学習用プレイリストのまま
+- blog.google 検索フィード：本日curlはリダイレクトで未取得（次回は実Chrome）
+
+### 記事側への影響
+- **訂正が必要な記事：なし**（no.65「AI Overviewの確認方法」の設定の記述は変わらない）
+
 
 ## [2026-10-19] 調査結果（フル版・月曜）
 

@@ -372,6 +372,22 @@ def convert(md):
             out.append(heading(c[4:], 3))
             continue
 
+        # コードの欄（``` で囲んだ部分 → wp:code）2026-10-22追加
+        # それまでは段落として扱い、改行が消えて「``<code>…</code>``」の1行になっていた（no.53 mercari-ai-listing）。
+        # 中に空行があるとチャンクが分かれるので、閉じる ``` まで足し合わせる。
+        if c.startswith("```"):
+            code = c
+            while code.count("```") < 2 and i < len(chunks):
+                code += "\n\n" + chunks[i].rstrip()
+                i += 1
+            lines = code.split("\n")
+            inner = "\n".join(lines[1:-1]) if lines[-1].strip() == "```" else "\n".join(lines[1:])
+            out.append(
+                '<!-- wp:code -->\n<pre class="wp-block-code"><code>%s</code></pre>\n<!-- /wp:code -->'
+                % esc(inner)
+            )
+            continue
+
         # 表
         if c.startswith("|"):
             out.append(table(c.split("\n")))

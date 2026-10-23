@@ -1,9 +1,21 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-23
+最終更新: 2026-10-24
 
 
 ---
+
+## [2026-10-24] 調査結果（デイリー・土曜）
+
+**①新着4件（すべて記録のみ・ネタ化なし）。**
+
+- **claude.com/blog 10/23「Claude Cowork and chat come together for Enterprise」**＝Enterpriseプラン向け（9/16の個人プラン向け統合の企業版）。本人はEnterpriseではない＝使う側は変わらない＝記録のみ
+- **claude.com/blog 10/23「Claude Duet Safety, Privacy, and Security」**＝Duetの安全設計の解説。Duet自体は米国Pro/Maxの順番待ち（10/22記録済み）＝本人の画面で開けない＝記録のみ
+- **@ClaudeDevs 10/24 03:24 JST** verbatim `We’re adding support for MCP Tasks and Elicitations in Claude.` `Tasks let Claude give plugins long-running jobs such as deep research and report back when they’re done.` `Elicitations let plugins ask users for input mid-task`＝プラグイン作り手向け＝記録のみ
+- **npm 2.1.310（10/24 06:20 JST・`next`）**／`latest`＝2.1.309・`stable`＝2.1.308。CHANGELOG `## 2.1.309`は修正のみ（サンドボックス・権限チェック・`/privacy-settings`の表示ほか）、2.1.310は未記載＝料金・制限・使える範囲は変わらない＝記録のみ
+- Newsroom：10/22「Open call for guest investigators (life sciences)」＝本人に関係なし。Claude Appsリリースノート：最新はOctober 21（Duet・記録済み）
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（実Chromeで読むだけ）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-23] 調査結果（デイリー・金曜）
 

@@ -1,0 +1,5 @@
+Claude Codeの昔の会話、題名は一覧に残ってるのに、開くと中身がありません。
+いつの間にか消えてて、本当にびっくりしました。
+
+戻す方法は公式にも書かれてないので、残したいなら先に設定しておくしかないです。
+https://aicontent-note.com/claude-code-conversation-history/

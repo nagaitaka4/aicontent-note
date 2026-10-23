@@ -1,0 +1,6 @@
+Claude Codeと何か月もブログを作ってきたのに、7月以前の会話がもう開けません。
+一覧に題名だけ残ってるのが、地味にこたえます。
+戻す方法は無いので、これからは残す設定を先にしておきます。
+
+消える条件と残し方はこちら。
+https://aicontent-note.com/claude-code-conversation-history/

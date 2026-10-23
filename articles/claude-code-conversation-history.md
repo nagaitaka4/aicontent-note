@@ -33,6 +33,7 @@ tags: Claude Code,設定,プライバシー設定
 
 会社の管理設定で日数が決まっているときは、どこで使った会話もその日数で消えます。
 自分の設定では延ばせません。
+
 Claude Codeは起動したあと、裏で古い記録を消します。[知らせは出ません](https://code.claude.com/docs/en/settings-reference#cleanupperioddays)。
 
 ---
@@ -44,7 +45,8 @@ Claude Codeは起動したあと、裏で古い記録を消します。[知ら�
 まず、その会話を使った場所の一覧で探します。
 
 ・**デスクトップアプリ**：アーカイブした会話まで見る<br>
-・**ターミナル / VS Code**：それぞれの[一覧](https://code.claude.com/docs/en/sessions)で探す。ターミナルは `claude --resume` のあと Ctrl＋A で、ほかのフォルダの会話も出る
+・**ターミナル / VS Code**：それぞれの[一覧](https://code.claude.com/docs/en/sessions)で探す。ターミナルは `claude --resume` のあと Ctrl＋A で、ほかのフォルダの会話も出る<br>
+・**PCの中**：[記録のファイル](https://code.claude.com/docs/en/sessions#where-transcripts-are-stored)は ~/.claude/projects に、作業フォルダごとに入っている
 
 8月末の更新より前は、デスクトップアプリの会話も30日で消えていました。
 私のPCでは、7月以前に始めた会話の多くが、一覧に題だけ残っています。
@@ -55,18 +57,57 @@ Claude Codeは起動したあと、裏で古い記録を消します。[知ら�
 ## 会話履歴を長く残す設定と、残す前に知っておくこと
 
 ==デスクトップアプリだけで使うなら、設定は要りません。==
-ターミナルなどの会話は、`cleanupPeriodDays`を大きな数にすると長く残せます。
-[公式](https://code.claude.com/docs/en/settings-reference#cleanupperioddays)が挙げる例は3650日（約10年）です。
+ターミナルやVS Codeの会話は、設定ファイルに1行足すと長く残せます。
+延ばしても、すでに消えた会話は戻らないので、気づいた時点で設定します。
 
-1. MacのFinderで command＋shift＋G を押し、~/.claude と入れる。候補のフォルダ「.claude」を開く（隠しフォルダ）
-2. settings.json があれば、右クリックの「このアプリケーションで開く」からテキストエディットで開く。中身が `{}` だけなら、下の3行に置き換えて保存する。それ以外なら、下の真ん中の行を最初の { のすぐ下に貼る。行の終わりにカンマを付けて保存する（同じ項目があれば数字だけ書き換える）
-3. 無いときは、テキストエディットの新規書類で「フォーマット」→「標準テキストにする」を選ぶ。下の3行をコピーして貼る。保存の画面でも同じキーで ~/.claude を選び、settings.json の名前で保存する。拡張子を聞かれたら「“.json”を使用」を選ぶ
+### 手順1：設定ファイルのあるフォルダを開く（Mac）
+
+1. Finderを開き、command＋shift＋G を押す
+2. 「~/.claude」と入れる
+3. 候補に出たフォルダ「.claude」を開く
+
+【ポイント】<br>
+**.claude はふだん隠れているフォルダです。**<br>
+似た名前の「.claude.json」は別のファイルなので開きません。
+
+### 手順2：settings.json があるとき、1行足す
+
+1. settings.json を右クリックし、「このアプリケーションで開く」からテキストエディットを選ぶ
+2. 中身が {} だけなら、全部消して下の3行を貼る
+3. ほかの設定が書いてあれば、最初の { のすぐ下に下の真ん中の1行を貼り、行の終わりにカンマ（,）を付ける
+4. 同じ cleanupPeriodDays の行がもうあれば、数字だけ 3650 に書き換える
+5. command＋S で保存する
 
 ```
 {
   "cleanupPeriodDays": 3650
 }
 ```
+
+3650日は約10年で、[公式](https://code.claude.com/docs/en/settings-reference#cleanupperioddays)が長く残す例に挙げている数です。
+
+### 手順2：settings.json が無いとき、新しく作る
+
+1. テキストエディットで新規書類を作る
+2. メニューの「フォーマット」→「標準テキストにする」を選ぶ
+3. 上の3行をコピーして貼る
+4. command＋S を押し、保存の画面でも同じキーで .claude フォルダを選ぶ
+5. 名前を settings.json にして保存する。拡張子を聞かれたら「“.json”を使用」を選ぶ
+
+【アラート】<br>
+**3行は、手で打たずにコピーして貼ります。**<br>
+テキストエディットで打つと、" が別の記号に変わることがあります。
+
+### 手順3：設定が入ったか確かめる
+
+・**再起動は要らない**：保存すると、Claude Codeが[その場で読み込みます](https://code.claude.com/docs/en/settings#when-edits-take-effect)<br>
+・**読み込まれたか**：ターミナルで `/status` を開く。「Setting sources」に「User settings」と出ていれば入っている<br>
+・**書き間違えたとき**：次に起動したとき「Settings Error」と出る。その画面から直せる
+
+### 大事な会話だけ残すなら /export
+
+ターミナルなら、会話の中で `/export` と打つと、[今の会話を文字のファイルに保存できます](https://code.claude.com/docs/en/sessions#export-and-locate-session-data)。
+保存したファイルは自動では消えないので、期限を気にせず残せます。
 
 【アラート】<br>
 **会話の記録は[暗号化されていません](https://code.claude.com/docs/en/claude-directory#plaintext-storage)。**<br>

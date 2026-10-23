@@ -5,8 +5,8 @@ series_no:
 title: Claude Codeの会話履歴は消える？残る期間と残す設定
 url: https://aicontent-note.com/claude-code-conversation-history/
 slug: claude-code-conversation-history
-status: draft
-date: 2026-10-22
+status: published
+date: 2026-10-23
 description: Claude Codeの会話履歴は、ターミナルなどで使った会話なら、最後に使ってから30日を超えると知らせなしに自動で消えます。最後にデスクトップアプリで使った会話は、今は期限なしで残ります。消えた会話を戻す方法は公式に書かれていないため、長く残す設定と注意点をまとめました。
 eyecatch: eyecatch_0076.png
 eyecatch_alt: Claude Codeの会話履歴は消える？と書いた題の横に、四角い置き時計、上のほうが紙片になって消えていく書類の山、30と書いた卓上カレンダーを描いたアイキャッチ画像

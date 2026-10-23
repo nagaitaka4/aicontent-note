@@ -18,7 +18,7 @@ tags: Claude Code,限界,効率化,ライター業務,業務設計
 
 Claude Codeで業務を効率化してきた中で、「効率化が効く記事」と「効率化が効かない記事」の差がはっきり見えてきました。このノートでは、シリーズの締めとして、うまくいかなかった部分を実体験をもとに整理します。
 
-このシリーズ（[#01 導入の全体像](https://aicontent-note.com/claude-code-introduction/) → [#02 記事構成](https://aicontent-note.com/claude-code-article-structure/) → [#03 本文執筆・リライト](https://aicontent-note.com/claude-code-writing-rewrite/) → [#04 入稿・整形・公開](https://aicontent-note.com/claude-code-entry-publish/)）を通じて言えることは、「どこまで任せられるか」の判断は、最終的に人間が持ち続けるということです。
+このシリーズ（[#01 相性が良い職種・業種](https://aicontent-note.com/claude-code-compatible-jobs/) → [#02 記事構成](https://aicontent-note.com/claude-code-article-structure/) → [#03 本文執筆・リライト](https://aicontent-note.com/claude-code-writing-rewrite/) → [#04 入稿・整形・公開](https://aicontent-note.com/claude-code-entry-publish/)）を通じて言えることは、「どこまで任せられるか」の判断は、最終的に人間が持ち続けるということです。
 
 このノートでは、「どこまで使えるか」ではなく、「どこで使わないかも含めて判断できる状態」をゴールにしています。
 

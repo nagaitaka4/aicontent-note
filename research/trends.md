@@ -1,9 +1,19 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-24
+最終更新: 2026-10-25
 
 
 ---
+
+## [2026-10-25] 調査結果（デイリー・日曜）
+
+**①新着1件（記録のみ・ネタ化なし）。**
+
+- **CHANGELOG.md `## 2.1.310`が載った**（npm 10/24 06:20 JST・`latest`＝`next`＝2.1.310・`stable`＝2.1.308）。本人に関わりうる1行 verbatim `Fixed background cleanup deleting some recent files, such as pasted images, when cleanupPeriodDays is set to a very large value`＝`cleanupPeriodDays`をとても大きい値にすると、自動の片づけが最近のファイル（貼り付けた画像など）まで消すことがあった不具合の修正。**no.76（会話履歴の記事）は`cleanupPeriodDays: 3650`を勧めている**＝「very large」が3650を含むかは公式に書かれていない（閾値の記載なし）。本人の`~/.claude/settings.json`には`cleanupPeriodDays`の設定なし＝本人は影響を受けていない。**X投稿の材料にはしない**（本人が設定していない・何日から起きるか不明）。記事側の確認事項：no.76に「古い版では大きい値で最近のファイルが消える不具合があった（2.1.310で修正）」を足すかは記事編集部が判断
+- その他の2.1.310の項目＝Bedrock・Vertex等でのMonitor、クラウドセッションの管理画面、VSCode・Claude Tag・Code Reviewの修正＝本人の使い方は変わらない＝記録のみ
+- Newsroom：新着は10/23 Research「An alignment assessment of the UK AISI cybertesting incident」のみ＝使う側は変わらない＝記録のみ。claude.com/blog：10/23の2件のあと新着なし。Claude Appsリリースノート：最新はOctober 21のまま。@ClaudeDevs：10/24 03:24 JST（MCP Tasks・記録済み）のあと新着なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（実Chrome＋curl）／claude.com/blog ✅（実Chromeで読むだけ）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-24] 調査結果（デイリー・土曜）
 

@@ -1,8 +1,22 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-10-23
+最終更新: 2026-10-26
 
 ---
+
+## [2026-10-26] 調査結果（フル版・月曜）
+
+**③は一次情報の新着1件（Search Centralのドキュメント整理・10/23＝新しい機能ではない）。Googleの確定アップデートはなし。**
+
+- **【差分なし】Search Status Dashboard**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：最新は10/8に完了したSeptember 2026 spam updateのまま
+- **🆕 Search Central のドキュメント更新**（[Latest updates](https://developers.google.com/search/updates)・本日curl）：10/23付 verbatim `Updated the URL structure best practices to clarify word separation guidelines using hyphens versus underscores.`（理由 verbatim `To synchronize the documentation with the episodes of "The Non-Canonical Cabinet" video series.`）。このメディアのスラッグは英語のハイフン区切り（例：`claude-code-conversation-history`）＝**変更不要・記録のみ**
+- **【差分なし】Search Central Blog**（[フィード](https://developers.google.com/static/search/blog/feed.xml)）：先頭は10/6の学習用プレイリストのまま
+- **blog.google 検索フィード**（[RSS](https://blog.google/products/search/rss/)・本日curlで取得）：新着は10/19「See the top style searches from people in big fashion capitals」（ファッション検索の話題）＝このメディアに無関係・記録のみ
+- WebSearch「Google AI Mode AI Overviews update announcement October 2026」：10月の確定した新告知は見つからず
+
+### 記事側への影響
+- **訂正が必要な記事：なし**
+
 
 ## [2026-10-23] 調査結果（フル版・金曜）
 

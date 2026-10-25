@@ -1867,3 +1867,10 @@ claude 学習 させない 4／claude 使い方 初心者 4／claude 使い方 �
 **外部の需要（Googleサジェスト・2語まで・10/19）**：`リライト 効果`7・`ブログ リライト`10・`claude code ホームページ`4・`claude ホームページ`10・`ai ホームページ`10・`claude code サイト`5・`claude デザイン`10・`claude デザイナー`10・`ai デザイナー`8・`claude design`10・`claude code 定期実行`3・`claude スケジュール`7・`claude 自動化`4・`claude クレジット`10・`claude 解約`8・`claude 請求書`10（意図はClaude側の請求）・`claude スライド`10・`claude docs`10・`メルカリ ai`10（意図違い）・`メルカリ 出品文`5・`ai 文章 チェック`10（意図は副業）・`ai 校正`9・`claude 営業`10・`ai 営業リスト`4・`claude code アプリ`10・`非エンジニア アプリ開発`1・`ロゴ 商標登録`7・`help improve our ai models`5・`claude fx`10・`toto ai`10・`claude max 足りる`0・`claude code 使用量`10・`アイキャッチ ai`4（意図違い）＝**33語**
 
 **判定**：◯2（D-52・D-53→待機14・15）／△とメモ（D-55・D-54・D-48訂正）／✗は`operations/editorial-meeting.md` 第5回
+
+## 2026-10-26 07時台（定期リサーチ・月曜のフル版⑦：GSCの合計のみ）
+
+- **GSC 直近3か月：クリック212／表示5,090／CTR 4.2%／平均14.9位**（10/19：193／4,600／15.6位）
+- クリックの上位：`claude 担当職種`2・`chatgpt work claude code`2・`ロゴ パクリ どこまで`1・`claude code 仕事`1・`chatgpt work claude code 比較`1・`claude cowork`1・`chatgpt work claude cowork 比較`1
+- 表示の上位（0クリック）：`インデックス未登録`149（75.5位）・`help improve our ai models 意味`126（7.6位）・`help improve our ai models とは`78（7.8位）・`被リンク 貼り方`60
+- ⚠️ クエリ全件の束ね直し・ページ別・候補のサジェストは今回は未実施（③の補充が不要＝TOP10 10本のため）

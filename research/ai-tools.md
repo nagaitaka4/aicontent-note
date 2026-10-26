@@ -1,8 +1,15 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-26
+最終更新: 2026-10-27
 
 ---
+
+## [2026-10-27] 調査結果（デイリー・火曜）
+
+- **GPT-6.1 Terra（ChatGPTリリースノート October 26, 2026）**：verbatim `GPT-6.1 Terra is rolling out in ChatGPT Work and Codex.`／`The rollout includes Plus, Pro, Business, Enterprise, and Edu plans.`／`Your plan’s overall usage limits are unchanged.` → 対象は**ChatGPT WorkとCodex**で、通常のチャットではない・上限も変わらない＝**新モデルの報告だけ**＝軸②の採用基準外。記録のみ（本人はチャットでChatGPTを使う・Workは未使用）
+- 過去日付の追加：**October 21, 2026「MoMo payments in Vietnam」**（ベトナムの決済手段・関係なし）。10/26の巡回では見出しに無かった＝あとから足された実例（SKILL.mdの注意どおり）
+- Gemini アプリは2026.10.13のまま（curl）
+
 
 ## [2026-10-26] 調査結果（デイリー・月曜）
 

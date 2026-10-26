@@ -1,9 +1,18 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-26
+最終更新: 2026-10-27
 
 
 ---
+
+## [2026-10-27] 調査結果（デイリー・火曜）
+
+- **AnthropicがIPO（新規株式公開）に向けてForm S-1をSECに提出（10/26）**：[Newsroom](https://www.anthropic.com/news/s1-sec) verbatim `Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.`／`Nasdaq Global Select Market under the symbol “ANT.”`／`The number of shares ... and the price range ... have not yet been determined.` → **使う側（料金・制限・機能）は何も変わらない**＝軸②の採用基準外。ネタ化しない（株・投資の話はXでも扱わない）
+- **Claude for Nonprofitsのプラグイン拡張（10/26）**：[claude.com/blog](https://claude.com/blog)「Expanding Claude for Nonprofits」＝認証済みの非営利団体向け。読者に関係なし・記録のみ
+- npm：`next`＝**2.1.311**（2026-10-26T19:47Z公開）・`latest`＝2.1.310・`stable`＝2.1.308。CHANGELOG先頭は`## 2.1.310`のまま（2.1.311の項目はまだ無い）
+- Claude Appsリリースノート：最新はOctober 21（Duet）のまま／@ClaudeDevs：10/23の2件（MCP Tasks・Elicitations）のあと新着なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（curl）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-26] 調査結果（デイリー・月曜）
 

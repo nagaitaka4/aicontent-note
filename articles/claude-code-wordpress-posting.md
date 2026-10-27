@@ -7,7 +7,7 @@ url: https://aicontent-note.com/claude-code-wordpress-posting/
 slug: claude-code-wordpress-posting
 status: draft
 date:
-description: Claude CodeにWordPressの入稿は、下書き保存までなら任せられます。20本近くを任せて、いちばん危なかったのは人がWordPressで直した所を送り直しで消すことでした。起きた失敗を種類ごとに並べ、任せるときの3つの確認をまとめます。
+description: Claude CodeにWordPressの入稿は、公開まで任せられます。私は新しい記事を下書き保存まで任せ、公開ボタンは自分で押しています。20本近くでいちばん危なかったのは、人が直した所を送り直しで消すことでした。起きた失敗と、任せるときの3つの確認をまとめます。
 eyecatch: eyecatch_0077.png
 eyecatch_alt: Claude CodeにWordPress入稿は任せられる？と書いた題の横に、ブログの編集画面を開いたノートPCと、オレンジのペンで直した跡のある紙と鉛筆を描いたアイキャッチ画像
 category: Claude Code活用
@@ -16,24 +16,25 @@ tags: Claude Code,WordPress,入稿,Claude in Chrome,自動化
 
 # Claude CodeにWordPress入稿は任せられる？失敗と対策
 
-==Claude CodeにWordPressの入稿は、下書き保存まで任せられます。==
+==Claude CodeにWordPressの入稿は、公開まで任せられます。==
+私は新しい記事を下書き保存まで任せ、公開ボタンは自分で押しています。
 20本近くを任せて、いちばん危なかったのは、人がWordPressで直した所を送り直しで消すことでした。
-今は、公開ボタンを人に残し、送る前にWordPressの今の本文と比べてもらっています。
 
 ---
 
-## Claude CodeにWordPress入稿は、下書き保存まで任せられる
+## Claude CodeにWordPress入稿は、公開まで任せられる
 
-公開ボタンも押せますが、私は人に残しています。
+Claude Codeにできることと、私が実際に任せている所を分けると、こうなります。
 
-| やること | 誰が |
-|---|---|
-| **本文**を入れる（SWELLの装飾ブロック・表・区切り線も） | Claude Code |
-| **題・スラッグ・カテゴリー・タグ** | Claude Code |
-| **アイキャッチと本文の画像**のアップロード、**検索向けの説明文** | Claude Code |
-| **ログイン** | 人 |
-| **太字・マーカー・表の幅**などの仕上げ | 人（下書きの画面で） |
-| ==**公開ボタン**== | ==人== |
+| やること | Claude Codeにできるか | 私の分担 |
+|---|---|---|
+| **本文**を入れる（SWELLの装飾ブロック・表・区切り線も） | できる | Claude Code |
+| **題・スラッグ・カテゴリー・タグ** | できる | Claude Code |
+| **アイキャッチと本文の画像**のアップロード、**検索向けの説明文** | できる | Claude Code |
+| **ログイン** | [止まって人に頼む](https://code.claude.com/docs/en/chrome) | 私 |
+| **太字・マーカー・表の幅**などの仕上げ | できる | 私（下書きの画面で） |
+| ==**新しい記事の公開ボタン**== | できる | ==私== |
+| **公開中の記事**を直したときの保存 | できる | Claude Code |
 
 ### 私が使っている環境
 
@@ -42,7 +43,6 @@ tags: Claude Code,WordPress,入稿,Claude in Chrome,自動化
 ・**変換スクリプト**：Markdownの原稿を、SWELLの装飾ブロックに変える自作のもの。SWELLは私が使っているWordPressのテーマ
 
 Claude Codeは、ログインしたままのChromeを拡張ごしに操作して入れます。
-ログイン画面やCAPTCHAに当たると、[止まって人に頼みます](https://code.claude.com/docs/en/chrome)。
 
 【アラート】<br>
 **公式がいちばん危ないと言っているのは、ページに隠された指示です。**<br>
@@ -63,11 +63,14 @@ Claude Codeは、ログインしたままのChromeを拡張ごしに操作して
 
 ## Claude CodeにWordPress入稿を任せるときの3つの確認
 
+私が毎回入れている確認は、次の3つです。
+
 【チェック】<br>
-**公開ボタンは人が押す**<br>
+**新しい記事の公開ボタンは自分で押す**<br>
 **送る前はWordPressの本文と原稿を比べ、保存後は本文をもう一度開いて確かめる**<br>
 **公開後は実物の画面を開いて、表示を確かめる**
 
+新しい記事の公開まで任せないのは、公開した記事がそのまま誰でも読める状態になるからです。
 Claudeが代わりに操作したことでも、責任は使う人が負います。
 [公式](https://support.claude.com/en/articles/12902428-use-claude-in-chrome-safely)にも「You remain responsible for all browser actions」とあります。
 

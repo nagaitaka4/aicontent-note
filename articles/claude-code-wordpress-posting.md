@@ -7,7 +7,7 @@ url: https://aicontent-note.com/claude-code-wordpress-posting/
 slug: claude-code-wordpress-posting
 status: draft
 date:
-description: Claude CodeにWordPressの入稿は、公開まで任せられます。私は新しい記事を下書き保存まで任せ、公開ボタンは自分で押しています。20本近くでいちばん危なかったのは、人が直した所を送り直しで消すことでした。起きた失敗と、その止め方をまとめます。
+description: Claude CodeにWordPressの入稿は、公開まで任せられます。私は新しい記事を下書き保存まで任せ、公開ボタンは自分で押しています。私が下書きで直した所を、送り直しで消したこともありました。20本近く任せて起きた失敗と、その止め方をまとめます。
 eyecatch: eyecatch_0077.png
 eyecatch_alt: Claude CodeにWordPress入稿は任せられる？と書いた題の横に、ブログの編集画面を開いたノートPCと、オレンジのペンで直した跡のある紙と鉛筆を描いたアイキャッチ画像
 category: Claude Code活用
@@ -18,7 +18,7 @@ tags: Claude Code,WordPress,入稿,Claude in Chrome,自動化
 
 ==Claude CodeにWordPressの入稿は、公開まで任せられます。==
 私は新しい記事を下書き保存まで任せ、公開ボタンは自分で押しています。
-20本近くを任せて、いちばん危なかったのは、人がWordPressで直した所を送り直しで消すことでした。
+20本近く任せるなかで、私が下書きの画面で直した所を、Claude Codeが本文を送り直して消したことが2回ありました。
 
 ---
 

@@ -1,9 +1,21 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-27
+最終更新: 2026-10-28
 
 
 ---
+
+## [2026-10-28] 調査結果（デイリー・水曜）
+
+- npm：`latest`＝`next`＝**2.1.312**（2026-10-27T18:36Z公開）・`stable`＝2.1.308。CHANGELOGに`## 2.1.311`と`## 2.1.312`が載った
+- **2.1.312で本人に関わる1行**：verbatim `Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start; Write now asks Claude to read it all or edit in place`＝とても大きいCLAUDE.md・ルールファイル（サブフォルダ内）を、先頭だけ見て丸ごと書き直してしまう不具合の修正。書き込み時に「全部読むか、部分編集にする」よう求めるようになった。**本人のリポジトリは`rules/x-post-flow.md`が1,805行・`knowledge/x/queue.md`が4,219行**（Readの既定は2,000行まで）＝当てはまる側。ただし**過去に先頭だけで上書きされた記録は見つからない**（git logで300行超の削除は8/6の意図的な再構成1件のみ）＝実害は語れない → `ideas.md`に`research-20261028-01`（★★★★☆・下書きなし）
+- 2.1.312のその他：使用量の表示「session limit」→「**5-hour limit**」（5時間の上限）に名称変更／VSCodeでリセット時刻を時計の時刻で表示＝使い方は変わらない＝記録のみ
+- **2.1.311で本人に関わりうる行**：verbatim `Fixed standard-context sessions stopping with "Usage credits required for 1M context" when a request ran over 200K tokens; Claude Code now compacts the conversation and continues`／`Fixed Claude seeing stale MEMORY.md and CLAUDE.md content right after automatic compaction when those files were edited earlier in the session`＝不具合の修正・本人が困った記録なし＝記録のみ
+- Newsroom：10/27の新着は「Investing in the public benefit」（[news/public-benefit-fund](https://www.anthropic.com/news/public-benefit-fund)・ページ上の公開日はOct 18表記）＝株式の一部を公益の基金へ＝使う側は変わらない＝記録のみ
+- claude.com/blog（実Chrome）：10/27「Manage costs and demonstrate ROI for Claude Code on Google Cloud」「Claude for Financial Advisors」＝会社・業種向け＝記録のみ
+- Claude Appsリリースノート：最新はOctober 21のまま／@ClaudeDevs：10/24の2件（MCP Tasks・Elicitations）のあと新着なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（実Chromeで読むだけ）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-27] 調査結果（デイリー・火曜）
 

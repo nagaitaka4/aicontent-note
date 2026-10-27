@@ -1,8 +1,15 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-27
+最終更新: 2026-10-28
 
 ---
+
+## [2026-10-28] 調査結果（デイリー・水曜）
+
+- **ChatGPTリリースノート October 27, 2026「iCloud Mail and Calendar plugins in ChatGPT」**（実Chrome）：verbatim `iCloud users can now connect Mail and Calendar to ChatGPT to find emails, catch up on your inbox, check your schedule, and update calendar events.`／`Available to all ChatGPT plans on the web, desktop app, and iOS.` → iCloudのメール・カレンダーをつなげる。本人がiCloudメールを使っているかは記録なし＝語れる立場がない＝記録のみ
+- 10月の見出し＝10/27・10/26・10/21・10/20・10/16・10/15・10/9・10/7・10/6・10/2・10/1（過去日付の追加なし）
+- Gemini アプリは2026.10.13のまま（curl）
+
 
 ## [2026-10-27] 調査結果（デイリー・火曜）
 

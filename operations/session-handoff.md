@@ -1,6 +1,6 @@
 # セッション引き継ぎ
 
-最終更新：2026-10-27 07:10（**TOP10 #1 no.77「Claude CodeにWordPress入稿は任せられる？失敗と対策」の構成案は第4稿**（`articles/no77_composition.md`）。別のレビュー役2回＋GPT1回〔3点直して執筆GO〕を反映済み。**次＝ユーザーの構成確定 → アイキャッチの参考画像選び（10/27の一覧`eyecatch-samples/2026-10-27/`・CCの推奨はKeywordmap ACADEMY「リンクを張るときに気を付けること」）→ `/eyecatch-ref` → 本文執筆**。下の「手順」1〜7は10/23に済んでいる）
+最終更新：2026-10-27 12:40（**TOP10 #1 no.77「Claude CodeにWordPress入稿は任せられる？失敗と対策」は構成確定（第4稿・10/27 ユーザー確定）・アイキャッチ完成（`images/eyecatch_0077.png`・2回目で採用）。次＝本文執筆**（`python3 operations/article-precheck.py claude-code-wordpress-posting "claude code wordpress"`→最新published記事のCTAをコピー→執筆→初稿コミット→別のレビュー役→GPT）。アイキャッチの改善候補「部品と色をしぼる」を型に入れるかはユーザーの了承待ち（`knowledge/eyecatch-rules.md`））
 
 ---
 

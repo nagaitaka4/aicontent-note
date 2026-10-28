@@ -36,7 +36,7 @@ ChatGPT Workは、2026年7月9日にOpenAIが公開したChatGPT内のエージ�
 搭載モデルは、同日公開されたGPT-5.6です。
 
 なお、OpenAIはブラウザ「Atlas」も2026年8月9日に終了します。
-機能はChatGPTとCodexへ移ります（[OpenAIヘルプセンター](https://help.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work)）。
+機能はChatGPTとCodexへ移ります（[OpenAIヘルプセンター](https://help.openai.com/ja-jp/articles/20001371)）。
 
 ### できること
 
@@ -52,7 +52,7 @@ ChatGPT Workは、2026年7月9日にOpenAIが公開したChatGPT内のエージ�
 【アラート】<br>
 守備範囲は接続先で決まります。つないでいないアプリやファイルには手が届きません。
 
-スケジュール済みタスクにも、公式に明記された制約があります（[OpenAIヘルプセンター](https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt)）。
+スケジュール済みタスクにも、公式に明記された制約があります（[OpenAIヘルプセンター](https://help.openai.com/ja-jp/articles/10291617)）。
 
 ・同時に動かせるタスク数は、Go 3 / Plus 5 / BusinessとEdu 10 / ProとEnterprise 15<br>
 ・プロジェクト内のファイルには、タスクからアクセスできない<br>
@@ -90,7 +90,7 @@ ChatGPT Workの起点は接続したアプリの側にあり、一方、Claude C
 ChatGPT Workは、つなぐアプリの数が増えるほど守備範囲が広がります。
 一方、Claude Codeはルールをファイルに書き溜めるほど精度が上がります。
 
-Claude Codeは置いたCLAUDE.mdを自動で読み込みます（[Claude Code公式ドキュメント](https://code.claude.com/docs/en/memory)）。
+Claude Codeは置いたCLAUDE.mdを自動で読み込みます（[Claude Code公式ドキュメント](https://code.claude.com/docs/ja/memory)）。
 蓄積した基準が、次回にそのまま効く構造です。
 
 ---

@@ -29,7 +29,7 @@ OpenAIが[研究記事](https://openai.com/ja-JP/index/why-language-models-hallu
 起きる理由として、公式は次のことを挙げています。
 
 ・**OpenAI**：AIを採点するテストの多くが、「分からない」と答えるより当て推量に点を与える作りになっている<br>
-・**[Claudeのヘルプ](https://support.claude.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on)**：最新の情報で学習していないことがあり、最近の出来事を聞くと混乱することがある
+・**[Claudeのヘルプ](https://support.claude.com/ja/articles/8525154)**：最新の情報で学習していないことがあり、最近の出来事を聞くと混乱することがある
 
 ---
 
@@ -58,7 +58,7 @@ Claude Codeにニュースや調査の調べ物を任せた、5か月あまり�
 ## 嘘をつかせないプロンプトはある？Claudeの公式が最初に挙げる3つ
 
 ==頼み方で減らせますが、無くなりはしません。==
-Claudeの[開発者向けドキュメント](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations)は、基本の方法に次の3つを挙げています。
+Claudeの[開発者向けドキュメント](https://platform.claude.com/docs/ja/test-and-evaluate/strengthen-guardrails/reduce-hallucinations)は、基本の方法に次の3つを挙げています。
 
 ・「分からないことは推測せず、分からないと答えてください」と書く<br>
 ・渡した資料から、根拠の文をそのまま抜き出させる<br>

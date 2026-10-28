@@ -39,7 +39,7 @@ ui_labels: 自動,手動,編集を受け入れる,プラン,権限をバイパ�
 
 【メモ】<br>
 **ターミナルで使っているなら、Shift+Tabで切り替えれます。**<br>
-ターミナルには、前もって許可した操作だけ進めて、ほかは聞かずに断る「dontAsk」もあります。人が見ていない自動処理向けで、Shift+Tabでは出てきません（[公式](https://code.claude.com/docs/en/permission-modes)）。
+ターミナルには、前もって許可した操作だけ進めて、ほかは聞かずに断る「dontAsk」もあります。人が見ていない自動処理向けで、Shift+Tabでは出てきません（[公式](https://code.claude.com/docs/ja/permission-modes)）。
 
 ---
 
@@ -56,8 +56,8 @@ ui_labels: 自動,手動,編集を受け入れる,プラン,権限をバイパ�
 | 読み込んだページやファイルに仕込まれた指示 | 守りがない | Claudeが読む前に、別の仕組みが怪しい指示を見つける |
 
 自動でもリスクはゼロになりませんが、何もしないバイパスよりずっと小さくなります。
-公式も、確認を減らしつつ裏でチェックしたいなら、バイパスではなく自動を使うよう書いています（[公式](https://code.claude.com/docs/en/permission-modes)）。
-バイパスは、壊れても困らない隔離した環境で使うモードです（[公式](https://code.claude.com/docs/en/desktop)）。
+公式も、確認を減らしつつ裏でチェックしたいなら、バイパスではなく自動を使うよう書いています（[公式](https://code.claude.com/docs/ja/permission-modes)）。
+バイパスは、壊れても困らない隔離した環境で使うモードです（[公式](https://code.claude.com/docs/ja/desktop)）。
 
 【メモ】<br>
 **モード選択の「有効にする」は、押しても設定が開くだけです。**
@@ -99,7 +99,7 @@ ui_labels: 自動,手動,編集を受け入れる,プラン,権限をバイパ�
 ## 「今後は聞かない」を押すとどうなるか
 
 ==「今後は聞かない」を押したコマンドは、そのプロジェクトでは次から聞かれなくなります==。
-そのコマンドは、自動のチェックを通らずに実行されます（[公式](https://code.claude.com/docs/en/auto-mode-config)）。
+そのコマンドは、自動のチェックを通らずに実行されます（[公式](https://code.claude.com/docs/ja/auto-mode-config)）。
 
 ・押すのは、毎日使う安全な操作だけにする<br>
 ・許可は、そのプロジェクトの .claude/settings.local.json に残る<br>

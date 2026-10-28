@@ -29,7 +29,7 @@ tags: Claude Code,Dynamic Workflows,AI活用,記事チェック,コンテンツ�
 ・AIが、やることの段取りを台本に書く<br>
 ・その台本どおりに、AIが何体も動く
 
-[公式ドキュメント](https://code.claude.com/docs/en/workflows)の説明を借ります。Dynamic Workflowsは、多数のサブエージェントを一度に動かすスクリプトです。言語はJavaScriptで、**そのスクリプトはClaudeが書きます**。
+[公式ドキュメント](https://code.claude.com/docs/ja/workflows)の説明を借ります。Dynamic Workflowsは、多数のサブエージェントを一度に動かすスクリプトです。言語はJavaScriptで、**そのスクリプトはClaudeが書きます**。
 
 ==ここでいう台本が、スクリプトのこと==です。
 

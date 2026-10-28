@@ -6,6 +6,8 @@
 
 ## 次のセッションでまず行うこと
 
+**🆕 2026-10-29 06:43：TOP10 #1は実験待ち（ユーザーが実施中）。**比べる仕事＝メルカリ出品の下準備・サーチコンソールの数字・請求書PDF（10/28 ユーザー了承）。本人の画面は統合後（Coworkの文字なし・「フォルダを追加」）。キット＝`~/Desktop/AI比較実験_20261029/`（頼み方と記録表.md）。**ユーザーが結果を`結果_Claude/`・`結果_ChatGPT/`に入れて知らせたら**、CCが表をCSVと・請求書の合計（¥112,000）を突き合わせて材料シート8節に記録 → 構成案へ。詳細は`operations/structure-drafts/chatgpt-work-claude-cowork-facts.md` 7・8節
+
 **TOP10 #1「ChatGPT WorkとClaude Cowork、仕事で選ぶなら」（新規・種類：AI動向×実況・実験で作る＝同じ業務を両方に頼んで比べる）の構成案と、実験の設計から。テーマはユーザー了承済み（10/28 17:27「でいいですが、新規セッションではじめます」）＝着手してよいかは聞かずに始める。**行の中身は`~/Documents/GitHub/tasks/README.md` TOP10 #1、材料は`operations/structure-drafts/chatgpt-work-claude-cowork-facts.md`（10/26作成・実験は未実施）。
 
 - ⚠️ **本人はCoworkを仕事で使っていない**（ClaudeはClaude Codeだけ・チャットはChatGPT）＝実験として行う（10/13 ユーザー了承）。実験をやるまで比べた結果を書かない。やっていない使い方を断定で勧めない（メモリ`feedback_author_usage_not_overridden`）

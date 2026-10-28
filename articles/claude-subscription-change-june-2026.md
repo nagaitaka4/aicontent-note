@@ -68,10 +68,10 @@ Maxなら、週次上限の最大50%まで追加料金なしで使えます。
 | 全モデルの週次上限 | Pro・Max | リセットを待つか使用クレジット。Proで使用クレジットの支出が月80ドルに近づいたら、Max 5xと比べる（週次の倍率は非公開） |
 
 80ドルは、月払いのPro（20ドル）とMax 5x（100ドル）の定価の差です（税別）。
-年払いのProや、使用クレジットのまとめ買い（最大30%引き・[公式ヘルプ](https://support.claude.com/en/articles/14246112-buy-usage-bundles)）では差が変わります。
+年払いのProや、使用クレジットのまとめ買い（最大30%引き・[公式ヘルプ](https://support.claude.com/ja/articles/14246112)）では差が変わります。
 Maxの週次上限をドルに直した額も公開されていないので、80ドルは比べ始める目安です。
 
-Fableの枠を使い切った後も、別のモデルならプランの上限の範囲で続けられます（[Fableの公式ヘルプ](https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan)）。
+Fableの枠を使い切った後も、別のモデルならプランの上限の範囲で続けられます（[Fableの公式ヘルプ](https://support.claude.com/ja/articles/15424964)）。
 週次上限がMaxで何倍になるかは、公開されていません。
 
 原因の見分け方は、後半の「上限に当たる原因を見分ける」で説明します。
@@ -83,10 +83,10 @@ Fableの枠を使い切った後も、別のモデルならプランの上限の
 同じプランでも、選ぶモデルで上限の減り方が違います。
 公式は、軽い順にHaiku、Sonnet、Opus、Fableと説明しています（[Claude Academy](https://academy.claude.com/tutorials/choosing-the-right-claude-model)）。
 
-・原文は「Opus is heavy, and Fable uses the most.」。倍率の数字は出ていない<br>
-・Claude Codeの既定はOpus 5.5（v2.1.280以降。Pro / Max / Team共通。[公式ドキュメント](https://code.claude.com/docs/en/model-config)）<br>
+・Opusは重く、Fableがいちばん多く使うという説明で、倍率の数字は出ていない<br>
+・Claude Codeの既定はOpus 5.5（v2.1.280以降。Pro / Max / Team共通。[公式ドキュメント](https://code.claude.com/docs/ja/model-config)）<br>
 ・Opus 5.5は前のOpusより安く、同じ上限で25%長く使える（[9月22日の告知](https://x.com/ClaudeDevs/status/2102438800836489554)）。それでもSonnetよりは重い<br>
-・Fableは、Proでは最初から使用クレジット。Maxは週次上限の最大50%まで追加料金なし（[Fableの公式ヘルプ](https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan)）
+・Fableは、Proでは最初から使用クレジット。Maxは週次上限の最大50%まで追加料金なし（[Fableの公式ヘルプ](https://support.claude.com/ja/articles/15424964)）
 
 ==最新版でモデルの設定を変えていなければ、ProでもClaude Codeは重いOpusで動きます。==
 下げるのは、Sonnetで足りる作業だけです。
@@ -127,7 +127,7 @@ ProとMaxの大きな違いは、料金と使える量です。
 | Max 5x | 100ドル | Proの5倍 | 月払いのみ |
 | Max 20x | 200ドル | Proの20倍 | 月払いのみ |
 
-出典は[料金ページ](https://claude.com/ja/pricing)と[Maxプランの公式ヘルプ](https://support.claude.com/en/articles/11049741-what-is-the-max-plan)です。
+出典は[料金ページ](https://claude.com/ja/pricing)と[Maxプランの公式ヘルプ](https://support.claude.com/ja/articles/11049741)です。
 **5時間ごとの枠だけで比べると、Max 5xは料金も量もProの5倍で、枠の単価は下がりません**。
 料金より5時間ごとの量が大きく伸びるのは、Max 20x（料金10倍・量20倍）だけです。
 
@@ -163,7 +163,7 @@ Pro・Maxには、5時間ごとの上限に加えて週次上限があります�
 ・5x／20x：Proの「5時間ごとに使える量」の5倍と20倍<br>
 ・使用クレジット：上限を超えた利用やProでのFableを、APIの標準料金で続ける仕組み。自分で有効にして残高を足す
 
-チャットとClaude Codeは、同じ上限を分け合います（[公式ヘルプ](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)）。
+チャットとClaude Codeは、同じ上限を分け合います（[公式ヘルプ](https://support.claude.com/ja/articles/11145838)）。
 チャットで使った分だけ、Claude Codeで使える量が減ります。
 
 【インフォ】<br>
@@ -261,7 +261,7 @@ Fableを使うときは、右下のゲージをこまめに見る
 | Agent SDK・claude -p・他社アプリ | 別のクレジットから引く | これまでどおりプランの上限から引く |
 | 月ごとのクレジット（Pro 20ドル／Max 5x 100ドル／Max 20x 200ドル） | 配られる | 配られない |
 
-出典は[Agent SDKの公式ヘルプ](https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan)です。
+出典は[Agent SDKの公式ヘルプ](https://support.claude.com/ja/articles/15036540)です。
 Anthropicは、変更する前に知らせるとしています。
 変わるまでは、Agent SDKなどを使っていても、手元で対応することはありません。
 

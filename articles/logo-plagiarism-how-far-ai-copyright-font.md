@@ -216,7 +216,7 @@ AIで作ったロゴでも、ここまでの判断は変わりません。
 ⑤を見るのは、よく知られた表示と紛らわしい使い方が、不正競争防止法で止められるからです（第2条第1項第1号）。
 先に使っていた人の権利（先使用権）も、実際に使われているロゴの話です。
 
-画像そのもので探したいときは、[WIPOのGlobal Brand Database](https://www.wipo.int/en/web/global-brand-database)が無料で使えます。
+画像そのもので探したいときは、[WIPOのGlobal Brand Database](https://branddb.wipo.int/ja/)が無料で使えます。
 ロゴ画像を上げて、形やカラーで探せます。
 日本の商標も入っています。
 
@@ -274,7 +274,7 @@ J-PlatPatの検索結果も、登録を保証するものではありません�
 ・同じような指示なら、他の人にも似たロゴが出る。自分だけのロゴになるとは限らない（[OpenAI](https://openai.com/policies/terms-of-use/)と[Canva](https://www.canva.com/policies/ai-product-terms/)の規約）<br>
 ・[Canvaのテンプレートや素材](https://www.canva.com/help/trademarks-logo/)を使ったロゴは、Canvaの規約では商標に使えない。誰でも使える素材で、権利が独占にならないため<br>
 ・[Adobe Firefly](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)は、他人の作品を参照画像に上げること自体を禁止。出たロゴが似ていなくても違反で、アカウントを止めることがある<br>
-・ロゴの案をAIで作って出せるかは、サイトで違う。[99designs](https://support.99designs.com/hc/en-us/articles/29341768376212-Generative-AI-in-Design-Contests)のコンペは不可、[Fiverr](https://help.fiverr.com/hc/en-us/articles/34998793899665-Using-AI-on-Fiverr-Guidelines-for-freelancers-and-clients)は可、[クラウドワークス](https://crowdworks.jp/static/lp/ai_policy/)は発注者との取り決め
+・ロゴの案をAIで作って出せるかは、サイトで違う。[99designs](https://support.99designs.com/hc/ja/articles/29341768376212)のコンペは不可、[Fiverr](https://help.fiverr.com/hc/en-us/articles/34998793899665-Using-AI-on-Fiverr-Guidelines-for-freelancers-and-clients)は可、[クラウドワークス](https://crowdworks.jp/static/lp/ai_policy/)は発注者との取り決め
 
 特許庁は商標法の条件で審査するので、規約に反していても、条件を満たせば登録されます。
 ==登録されても、ツールとの契約に反した状態は残ります==。
@@ -292,7 +292,7 @@ AIツールの規約で出力が自分のものになっても、他の人が作
 
 ・[クラウドワークス](https://crowdworks.jp/pages/agreement.html)は、侵害していないことをワーカーがクライアントに保証すると定めている（利用規約 第18条第2項）<br>
 ・保証に反していたら、ワーカーが損害賠償その他の責任を負うとも書いてある（同）<br>
-・[99designs](https://support.99designs.com/hc/en-us/articles/204109569-Originality-Policy)のコンペは、参考にするのはよいが、似すぎたものは複製として扱う<br>
+・[99designs](https://support.99designs.com/hc/ja/articles/204109569)のコンペは、参考にするのはよいが、似すぎたものは複製として扱う<br>
 ・保証の範囲を著作権だけに絞る書き方もある（[伊藤海法律事務所](https://kai-law.jp/agreement/design-and-production-outsourcing-agreement/)）。商標や意匠は、知らずに似ても侵害になるため
 
 ==調べないと決めるのも判断で、その責任は作った側に残ります==。

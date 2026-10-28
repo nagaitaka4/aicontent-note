@@ -56,8 +56,8 @@
 
 **残っていること**：
 - 11本の「WPにだけある装飾」は、同日にMDの記法で出せるものだけ写した（下の追記）。残りは写せないので、MDから本文を丸ごと送り直す前に必ず差分を取ること
-- no.56のAtlasのリンク先は、英語版も日本語版も今は「ChatGPT Atlas の提供終了」の記事になっていて、本文の「機能はChatGPTとCodexへ移ります」を裏づけていない（内容の確認が別に要る）
-- self-checkが拾わない英語のページ（`anthropic.com/legal/consumer-terms`・`academy.claude.com`・`openai.com/index/…`など、URLに`/en/`が無いもの）は今回の対象外
+- ~~no.56のAtlasのリンク先が、本文の「機能はChatGPTとCodexへ移ります」を裏づけていない~~ → 同日に直した。OpenAIの公式発表（日本語版）で確かめられたのは「Atlasの学びはChatGPTのパソコン操作とChrome拡張機能に生かされ、単体のAtlasは段階的に終了」まで。「Codexへ移る」と「8月9日」は一次情報で見つからなかったので削り、「提供を終了しました」（ヘルプセンター）＋「その学びは、ChatGPTのChrome拡張機能などに生かされています」（公式発表）に書き換えた。同じ記事の公式発表のリンクも日本語版（`openai.com/ja-JP/index/…`）に。WPは2ブロックだけ置き換え、SHA一致・公開のまま
+- self-checkが拾わない英語のページ（`anthropic.com/legal/consumer-terms`・`academy.claude.com`・`openai.com/index/…`など、URLに`/en/`が無いもの）は今回の対象外 → `operations/link-lang-check.py`を新設（リンク先を開いて`<html lang>`を読む）。公開済み全記事で、日本語以外15本・開けない11本。日本語版がある10本と、日本語版が無い一次情報の扱いはユーザーと相談中
 
 **追記：WPにだけある装飾・文言をMDへ写した（2026-10-28 午後・ユーザー指示）**
 

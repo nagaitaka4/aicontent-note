@@ -19,6 +19,46 @@
 
 ## 記録
 
+### 公開済み15本の英語リンク・英語の引用を日本語版へ（2026-10-28・部分置換）
+
+**きっかけ**：no.77の最終チェックでユーザー指摘「英語のページで読むことが不可能」「日本人なので英語がわかりません」。`article-self-check.py`に英語リンク・英語の引用の検査を足したので、既存の公開記事も直した。順位やクリックを狙うリライトではないので、GSCでの効果の判定はしない。
+
+**対象と件数**（リンクは本文中の出現数）
+
+| no. | スラッグ | 日本語版へ | 英語の表記・引用を日本語に |
+|---|---|---|---|
+| 9 | `claude-code-introduction` | 1 | — |
+| 27 | `claude-subscription-change-june-2026` | 7 | 1（Claude Academyの「Opus is heavy…」） |
+| 32 | `in-house-vs-outsource-cost` | 1 | — |
+| 55 | `rule-file-basics` | 1 | 1（リンク名「How Claude remembers your project」） |
+| 56 | `chatgpt-work-claude-code-comparison` | 3 | — |
+| 66 | `claude-code-dynamic-workflows-article-check` | 1 | — |
+| 68 | `logo-plagiarism-how-far-ai-copyright-font` | 3（WIPOは`branddb.wipo.int/ja/`） | — |
+| 69 | `ai-how-to-use-10-questions` | 4 | 1（ChatGPTの性格名をカタカナに） |
+| 70 | `claude-company-data-training` | 7 | 5（Data usage／when this setting is on／all rights…／Help Improve our AI models／previous or new chats） |
+| 71 | `claude-code-permission-modes` | 4 | — |
+| 72 | `chatgpt-claude-division-of-work` | 4 | — |
+| 73 | `claude-chat-cowork-code-difference` | 8 | — |
+| 74 | `claude-code-company-introduction-no-it-staff` | 8 | — |
+| 75 | `ai-hallucination-where-it-happens` | 2 | — |
+| 76 | `claude-code-conversation-history` | 8 | — |
+
+合計：リンク62か所（URLは49種類）・表記と引用8か所。置き換えの規則は、Claude Code docs `/docs/en/`→`/docs/ja/`（ページ内の`#`の飛び先は日本語版にも同じidがあることを確認）、Claude Platform docs も同じ、Anthropicヘルプ・プライバシーセンター `/en/articles/<番号>-<英語の題>`→`/ja/articles/<番号>`、OpenAIヘルプ `/en/`→`/ja-jp/articles/<番号>`、Perplexity `/en/`→`/ja/`、99designs `/hc/en-us/`→`/hc/ja/`。
+
+**日本語版が無く、英語のまま残したリンク（3本）**：`ALLOW_EN_LINK`の理由つきでself-checkを通す。いずれも`/hc/ja/`を開くと英語版へ転送される（10/28 実Chromeで確認）。
+- no.69：Midjourney「Prompt Basics」
+- no.68：Envato Elements「Envato Elements License」
+- no.68：Fiverr「Using AI on Fiverr」
+
+**確かめ方**：日本語版の題と、記事が拠っている数字・語句が日本語版にもあるかを全リンクで照合（Claude系はcurl、OpenAI・99designs・Perplexity・WIPOほかは実Chrome）。
+
+**WPへの反映**：本文の丸ごと差し替えはしていない。15本のうち11本で、WPにだけある装飾（表の列幅・太字・枠の段落スタイル・ボタンのID・リンクカードの題）と、変換スクリプトの版の違いがMDとずれていたため（差分はブロック単位のハッシュで確認）。WPの本文で、置き換える文字列がMDと同じ回数あることを確かめてから、その文字列だけを置き換えてRESTで送った。送る直前に本文が読んだ時から変わっていないことを確認・送信後の本文SHAが置き換え後の想定と全件一致・ブロックの開きと閉じの数が一致・公開のまま。差がなかった4本（no.9・32・75・76）は、送った本文がMDの新しい出力とSHAまで一致。公開ページで、英語のリンクが上の3本だけ・英語の引用0件を確認。
+
+**残っていること**：
+- 11本の「WPにだけある装飾」はMDに写していない（前からのずれ）。MDから本文を丸ごと送り直すと消えるので、送り直す前に差分を取ること
+- no.56のAtlasのリンク先は、英語版も日本語版も今は「ChatGPT Atlas の提供終了」の記事になっていて、本文の「機能はChatGPTとCodexへ移ります」を裏づけていない（内容の確認が別に要る）
+- self-checkが拾わない英語のページ（`anthropic.com/legal/consumer-terms`・`academy.claude.com`・`openai.com/index/…`など、URLに`/en/`が無いもの）は今回の対象外
+
 ### no.9 非エンジニアがClaude Codeでできること。始め方と詰まった所（`claude-code-introduction`）
 
 **実施日**：2026-10-20（初回公開は2026-04-07・前回の更新は2026-08-10）

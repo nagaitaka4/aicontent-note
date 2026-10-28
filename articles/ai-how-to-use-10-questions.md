@@ -137,7 +137,7 @@ Q4とQ5は、指示やルールをどこまで書き込むかの話です。
 ・1ファイル200行以内に収める<br>
 ・3回言っても守られないことは、書き足さず、数えるチェックで止める
 
-**よく言われるのは、ルールファイルに書けば、毎回同じ指示を繰り返さなくていい、という答え**です（[Claude Code](https://code.claude.com/docs/en/memory)）。
+**よく言われるのは、ルールファイルに書けば、毎回同じ指示を繰り返さなくていい、という答え**です（[Claude Code](https://code.claude.com/docs/ja/memory)）。
 ただ、Claude Codeの公式ドキュメントでは、ルールファイルは強制の設定ではなく、AIが読む資料として扱われます。
 長いほど守られにくく、1ファイル200行以内が目安です。
 
@@ -167,10 +167,10 @@ Q7は、同じ課題で30本書かせて試しました。
 
 | やりたいこと | ツール | 公式が説明している特徴 |
 |---|---|---|
-| 企画の相談、壁打ち | [ChatGPT](https://help.openai.com/en/articles/11899719-customizing-your-chatgpt-personality) | 話し方の性格を設定で選べる（Default／Professional／Friendlyなど7種類） |
+| 企画の相談、壁打ち | [ChatGPT](https://help.openai.com/ja-jp/articles/11899719) | 話し方の性格を設定で選べる（デフォルト／プロフェッショナル／フレンドリーなど7種類） |
 | 長い文章を書いて整える | [Claude](https://www.anthropic.com/research/claude-character) | 好奇心、偏らない見方、思慮深さを持つように性格を設計した（2024年） |
 | 自分のメールや資料を使う | [Gemini](https://support.google.com/gemini/answer/15229592?hl=ja) | Gmail、ドキュメント、ドライブ、カレンダーとつなぎ、中身を探して要約できる |
-| 出典つきで調べる | [Perplexity](https://www.perplexity.ai/help-center/en/articles/10354917-what-is-an-answer-engine-and-how-does-perplexity-work-as-one) | ネットをその場で検索し、出典つきで答えるアンサーエンジン |
+| 出典つきで調べる | [Perplexity](https://www.perplexity.ai/help-center/ja/articles/10354917) | ネットをその場で検索し、出典つきで答えるアンサーエンジン |
 
 性格を説明しているのはChatGPTとClaudeで、GeminiとPerplexityは、つながる先や検索が特徴です。
 性格の違いは使い心地の差で、できることの差は、つながる先と検索で決まります。
@@ -220,7 +220,7 @@ Claude Opus 5で、条件ごとに10本ずつです。
 ・禁止の形より、してほしい形で書く<br>
 ・禁止するなら、理由を1つ添える
 
-公式ガイドも、「何をしないか」より「何をするか」を伝えるよう勧めています（[Anthropic](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)）。
+公式ガイドも、「何をしないか」より「何をするか」を伝えるよう勧めています（[Anthropic](https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/claude-prompting-best-practices)）。
 ただし、良い例のほうにも理由つきの否定形が残っています。
 
 ・理由なし：三点リーダーは使わない<br>

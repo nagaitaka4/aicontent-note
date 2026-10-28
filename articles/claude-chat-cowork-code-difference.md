@@ -36,11 +36,11 @@ tags: Claude,Claude Cowork,Claude Code,使い分け
 | Cowork | 頼んで離れて、出来上がりを受け取る | 「競合5社を調べて、比較表とスライドにして」 | 有料プラン |
 | Claude Code（ローカル＝自分のパソコンで動かす） | 自分のパソコンの上で動き、手元のファイルを直接扱う。フォルダもやり取りの記録もパソコンに残る | 「このフォルダの下書きを、チェック用のスクリプトにかけて直して」 | 有料プラン |
 
-無料プランで使えるのは、チャットだけです（[料金ページ](https://claude.com/ja/pricing)・[Coworkのヘルプ](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)）。
+無料プランで使えるのは、チャットだけです（[料金ページ](https://claude.com/ja/pricing)・[Coworkのヘルプ](https://support.claude.com/ja/articles/13345190)）。
 プランの選び方は、[Claudeに課金すべきか。料金・制限より先にモデルで決める](https://aicontent-note.com/claude-subscription-change-june-2026/)に書きました。
 
 Claude Codeは、デスクトップアプリの「コード」を開いて、作業の場所に「ローカル」を選べば使えます。
-別に入れるものは無く（[公式](https://code.claude.com/docs/en/overview)）、頼むのも日本語で大丈夫です。
+別に入れるものは無く（[公式](https://code.claude.com/docs/ja/overview)）、頼むのも日本語で大丈夫です。
 **名前に「Code」とありますが、私はコードを書かずに、記事づくりに使っています。**
 
 ---
@@ -49,7 +49,7 @@ Claude Codeは、デスクトップアプリの「コード」を開いて、作
 
 ==ファイルを読んで書くだけなら、どちらでもできます==。
 違うのは、作業がどこで進むかです。
-Pro・Maxでは、2026年10月6日以降に新しく始めるCoworkはクラウドで進みます（[公式](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile)）。
+Pro・Maxでは、2026年10月6日以降に新しく始めるCoworkはクラウドで進みます（[公式](https://support.claude.com/ja/articles/15520349)）。
 
 |  | Cowork（Pro・Max） | Claude Code（ローカル） |
 |---|---|---|
@@ -57,8 +57,8 @@ Pro・Maxでは、2026年10月6日以降に新しく始めるCoworkはクラウ�
 | パソコンを閉じたら | 作業は続く。ただし手元のファイルは使えなくなる | 進むのは、パソコンが動いていて、アプリを開いている間 |
 | やり取りの履歴の保存先 | Claudeのアカウント | 自分のパソコン |
 
-Coworkは、Claude Codeと同じ仕組みで、コード以外の仕事をするものです。Coworkもクラウドの上でプログラムを動かせます（[公式](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)）。
-公式は、1台のパソコンに置いておきたい仕事の行き先として、Claude Codeを案内しています（[公式](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile)）。
+Coworkは、Claude Codeと同じ仕組みで、コード以外の仕事をするものです。Coworkもクラウドの上でプログラムを動かせます（[公式](https://support.claude.com/ja/articles/13345190)）。
+公式は、1台のパソコンに置いておきたい仕事の行き先として、Claude Codeを案内しています（[公式](https://support.claude.com/ja/articles/15520349)）。
 手元のフォルダを使うときの条件は、最後の見出しにまとめました。
 
 私は、記事づくりにClaude Codeのローカルを使っています。
@@ -81,11 +81,11 @@ Coworkの実際の使われ方は、[Claude Coworkの使い方｜実際の9割�
 
 ・Coworkでしかできなかった仕事も、どの会話からでも頼める<br>
 ・ProとMaxのプランから順に届く。同じプランでも、届く時期は人によって違う。一度変わると元に戻せない<br>
-・Claude Codeは、今までどおりデスクトップアプリから開ける（[公式ヘルプ](https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude)）
+・Claude Codeは、今までどおりデスクトップアプリから開ける（[公式ヘルプ](https://support.claude.com/ja/articles/16761823)）
 
 Pro・Maxなのに切り替えが無いときは、アプリならまず最新にします。
 Webなら「ホーム」の入力欄で確かめます。
-それでも無ければ、統合後の画面です（[公式](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile)）。
+それでも無ければ、統合後の画面です（[公式](https://support.claude.com/ja/articles/15520349)）。
 
 ---
 
@@ -97,7 +97,7 @@ Webなら「ホーム」の入力欄で確かめます。
 ・Cowork：手元のフォルダに届くのは、デスクトップアプリで始めた作業で、アプリを開いている間だけ<br>
 ・Claude Code：デスクトップアプリで、作業の場所をローカルにして使う
 
-Claude Codeにも、アプリを閉じても続く「クラウド」や、スマホから使う方法があります（[公式](https://code.claude.com/docs/en/desktop)）。
+Claude Codeにも、アプリを閉じても続く「クラウド」や、スマホから使う方法があります（[公式](https://code.claude.com/docs/ja/desktop)）。
 私は、手元のフォルダで記事をつくるので、ローカルだけを使っています。
 
 ---

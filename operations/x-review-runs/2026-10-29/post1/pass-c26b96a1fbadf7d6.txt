@@ -1,0 +1,5 @@
+AIに任せるなら最後まで任せればいい、と思ってましたが、ブログの公開ボタンだけは今も自分で押してます。
+
+Claude CodeがWordPressの下書きまで作ってくれるので、途中の中身はほとんど見てない。
+だからPCのプレビューで全部読み直すのが、いちばん長い作業になりました。
+https://aicontent-note.com/claude-code-wordpress-posting/

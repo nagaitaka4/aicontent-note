@@ -1,0 +1,6 @@
+Claude CodeはWordPressの公開ボタンまで押せます。
+でも私は、下書き保存までにしてます。
+
+書いてる途中の中身はほとんど見ていないので、最後にPCのプレビューで全部読み直す。
+入稿でいちばん時間をかけてるのは、結局ここです。
+https://aicontent-note.com/claude-code-wordpress-posting/

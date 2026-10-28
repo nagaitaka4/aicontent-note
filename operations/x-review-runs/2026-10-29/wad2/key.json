@@ -1,0 +1,18 @@
+{
+  "type": "reply",
+  "parent": "わど🐏AI界のマスコット（@wad0427）\nClaude Codeを作ってるチームが、コードのチェックをどう回してるかを公開してた\nいちばん効くと書かれてたのは、AIに「できました」と言わせず、テストの結果や画面を出させること\n作った本人は、これで仕上がりが2〜3倍よくなると見積もってる\n\n【スレッドの続き1】\nもう1つは、書き終わったものを、別のAIにまっさらな状態で読ませること\n同じ会話の続きで見直させるんじゃなくて、何も知らない状態から読ませるのがポイント\n\n【スレッドの続き2】\nぼくも投稿の下書きは、書いたあとに自動のチェックを通してから予約してる\n個人でAIを使うときも、「終わった？」より「結果を見せて」と頼むほうが、手直しは減ると思う\nみんなはAIに何を見せてもらってる？\n\n【引用：Addy Osmani（@addyosmani）の記事「How the Claude Code team does code review」】\nWe previously mentioned that Claude writes about 90 percent of the code for Claude Code. So how do we do code review at this scale? Who reads code anyway? What happens if code goes wrong?",
+  "items": [
+    {
+      "id": "r3",
+      "text": "Claude Codeのチームも「結果を見せて」派なんですね。\n私もClaude CodeにX投稿の下書きを書かせていて、「チェックしました」の一言を信じたら、決めた書き方が何度も抜けてました。\n今は判定するプログラムの出力を貼ってもらって、最後に何も知らない別のAIに読ませてます。",
+      "hash": "601dfe057dc3a618",
+      "label": "A"
+    },
+    {
+      "id": "r4",
+      "text": "「できました」を信じない、Claude Codeを作ってるチームでもそこなんだとホッとしました。\nX投稿の下書きをClaude Codeに任せていて、「チェックしました」なのに決めた書き方が抜けていたことが何度もあって。\n今はチェックの結果をそのまま見せてもらってます。",
+      "hash": "863b5481c27bf97d",
+      "label": "B"
+    }
+  ]
+}

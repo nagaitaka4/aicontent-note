@@ -1,0 +1,4 @@
+Claude CodeにWordPressの入稿を任せたら、私が下書きで直した6か所を、本文ごと送り直して消されました。しかも2回。
+
+保存の履歴から戻せたので助かりましたが、自分で気づかなかったら、そのまま公開してたと思います。
+https://aicontent-note.com/claude-code-wordpress-posting/

@@ -31,8 +31,8 @@ Claude Codeにできることと、私が実際に任せている所を分ける
 | **本文**を入れる（SWELLの装飾ブロック・表・区切り線も） | できる | Claude Code |
 | **題・スラッグ・カテゴリー・タグ** | できる | Claude Code |
 | **アイキャッチと本文の画像**のアップロード、**検索向けの説明文** | できる | Claude Code |
-| **ログイン** | [止まって人に頼む](https://code.claude.com/docs/en/chrome) | 私 |
-| **太字・マーカー・表の幅**などの仕上げ | できる | 私（下書きの画面で） |
+| **ログイン** | [できない](https://code.claude.com/docs/ja/chrome) | 私 |
+| **太字・マーカー・表の幅**などの仕上げ | できる | Claude Code（私が見て直すことも多い） |
 | ==**新しい記事の公開ボタン**== | できる | ==私== |
 | **公開中の記事**を直したときの保存 | できる | Claude Code |
 
@@ -41,20 +41,22 @@ Claude Codeにできることと、私が実際に任せている所を分ける
 PCでプレビューを開いて全体を読み直し、細かいニュアンスや、このまま出していいかを確かめてから公開しています。
 いちばん時間をかけているのが、この確認です。
 
-Claudeが操作しても、責任は使う人にあります。
-[公式](https://support.claude.com/en/articles/12902428-use-claude-in-chrome-safely)にも「You remain responsible for all browser actions」とあります。
+[公式のヘルプ](https://support.claude.com/ja/articles/12902428-use-claude-in-chrome-safely)には、Claudeが代わりに行ったブラウザの操作は、すべて使う人の責任だとあります。
+公開した記事も、その中に入ります。
 
 ### 私が使っている環境
 
 ・**Claude Code**：デスクトップアプリで使う<br>
-・**Claude in Chrome**：Chromeを、Claude Codeが操作できるようにする拡張機能。[有料プラン（Pro・Max・Team・Enterprise）で使える](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome)<br>
+・**Claude in Chrome**：Chromeを、Claude Codeが操作できるようにする拡張機能。[有料プラン（Pro・Max・Team・Enterprise）で使える](https://support.claude.com/ja/articles/12902428-use-claude-in-chrome-safely)<br>
 ・**変換スクリプト**：Markdownの原稿を、SWELLの装飾ブロックに変える自作のもの。SWELLは私が使っているWordPressのテーマ
 
 私は、ログインしたままのいつものChromeで、Claude Codeに入れさせています。
 
 【アラート】<br>
-**公式がいちばん危ないと言っているのは、ページに隠された指示です。**<br>
-そのため、大事なアカウントの無い[別のブラウザプロファイル](https://support.claude.com/en/articles/12902428-use-claude-in-chrome-safely)を勧めています。
+**公式がいちばんのリスクに挙げているのは、Webページに隠された指示です。**<br>
+「銀行の明細を取ってきて」のような見えない指示に、Claudeが従うおそれがあります。
+
+公式は、銀行などの大事なアカウントにログインしていない[別のブラウザプロファイル](https://support.claude.com/ja/articles/12902428-use-claude-in-chrome-safely)を勧めています。
 
 ---
 

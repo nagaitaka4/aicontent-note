@@ -373,6 +373,22 @@ def main(path):
         hint = "（統計・製品・公式の仕組みに触れているなら一次情報へのリンクが要る）"
     print(f"[INFO] 外部一次情報リンク {len(ext_links)}本／内部リンク {len(int_links)}本{hint}")
 
+    # --- 英語のページへのリンク・英語の引用（2026-10-28追加・no.77）---
+    # 調べるのは英語の一次情報でよいが、読者は英語を読めない。リンク先は日本語版、
+    # 引用は日本語の説明にする。no.77では英語リンク4本と英語の引用1か所が、
+    # 別のレビュー役2回とGPTレビュー2回を素通りした（ユーザー指摘「英語のページで読むことが不可能」）。
+    # 日本語版が本当に無いときだけ ALLOW_EN_LINK="理由" で通す。
+    en_links = [u for _, u in all_links if re.search(r"/en(-[a-z]{2})?/|[?&]hl=en\b|/en$", u)]
+    en_quotes = [q for q in re.findall(r"「([^」]+)」", strip_decoration(body))
+                 if len(re.findall(r"[A-Za-z]+", q)) >= 3 and not re.search(r"[ぁ-んァ-ヶ一-龠]", q)]
+    allow_en = os.environ.get("ALLOW_EN_LINK", "")
+    report(
+        "英語のページへのリンク・英語の引用がない（日本語版へ・引用は日本語の説明に）",
+        not (en_links or en_quotes) or bool(allow_en),
+        f"英語リンク{en_links[:3]}／英語の引用{en_quotes[:3]}"
+        + (f"／許可の理由：{allow_en}" if allow_en and (en_links or en_quotes) else ""),
+    )
+
     # --- H2直下リード文の文数・字数 ---
     # 2026-08-12：字数の上限を追加。従来は「3文まで」しか見ておらず、
     # 7月〜の公開記事では中央値66字・最大204字まで膨らんでいた（5〜6月は44字）。

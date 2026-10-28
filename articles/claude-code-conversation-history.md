@@ -24,7 +24,7 @@ tags: Claude Code,設定,プライバシー設定
 
 ## Claude Codeの会話履歴は、どこで使ったかで残る期間が変わる
 
-[公式の説明](https://code.claude.com/docs/en/claude-directory)と私のPCの記録を並べると、こうなります。
+[公式の説明](https://code.claude.com/docs/ja/claude-directory)と私のPCの記録を並べると、こうなります。
 
 | 使った場所 | 残る期間 | 私のPCでは |
 |---|---|---|
@@ -34,7 +34,7 @@ tags: Claude Code,設定,プライバシー設定
 会社の管理設定で日数が決まっているときは、どこで使った会話もその日数で消えます。
 自分の設定では延ばせません。
 
-Claude Codeは起動したあと、裏で古い記録を消します。[知らせは出ません](https://code.claude.com/docs/en/settings-reference#cleanupperioddays)。
+Claude Codeは起動したあと、裏で古い記録を消します。[知らせは出ません](https://code.claude.com/docs/ja/settings-reference#cleanupperioddays)。
 
 ---
 
@@ -45,8 +45,8 @@ Claude Codeは起動したあと、裏で古い記録を消します。[知ら�
 まず、その会話を使った場所の一覧で探します。
 
 ・**デスクトップアプリ**：アーカイブした会話まで見る<br>
-・**ターミナル / VS Code**：それぞれの[一覧](https://code.claude.com/docs/en/sessions)で探す。ターミナルは `claude --resume` のあと Ctrl＋A で、ほかのフォルダの会話も出る<br>
-・**PCの中**：[記録のファイル](https://code.claude.com/docs/en/sessions#where-transcripts-are-stored)は ~/.claude/projects に、作業フォルダごとに入っている
+・**ターミナル / VS Code**：それぞれの[一覧](https://code.claude.com/docs/ja/sessions)で探す。ターミナルは `claude --resume` のあと Ctrl＋A で、ほかのフォルダの会話も出る<br>
+・**PCの中**：[記録のファイル](https://code.claude.com/docs/ja/sessions#where-transcripts-are-stored)は ~/.claude/projects に、作業フォルダごとに入っている
 
 8月末の更新より前は、デスクトップアプリの会話も30日で消えていました。
 私のPCでは、7月以前に始めた会話の多くが、一覧に題だけ残っています。
@@ -83,7 +83,7 @@ Claude Codeは起動したあと、裏で古い記録を消します。[知ら�
 }
 ```
 
-3650日は約10年で、[公式](https://code.claude.com/docs/en/settings-reference#cleanupperioddays)が長く残す例に挙げている数です。
+3650日は約10年で、[公式](https://code.claude.com/docs/ja/settings-reference#cleanupperioddays)が長く残す例に挙げている数です。
 
 ### 手順2：settings.json が無いとき、新しく作る
 
@@ -99,17 +99,17 @@ Claude Codeは起動したあと、裏で古い記録を消します。[知ら�
 
 ### 手順3：設定が入ったか確かめる
 
-・**再起動は要らない**：保存すると、Claude Codeが[その場で読み込みます](https://code.claude.com/docs/en/settings#when-edits-take-effect)<br>
+・**再起動は要らない**：保存すると、Claude Codeが[その場で読み込みます](https://code.claude.com/docs/ja/settings#when-edits-take-effect)<br>
 ・**読み込まれたか**：Claude Codeの会話の中で `/status` と打つ。「Setting sources」に「User settings」と出ていれば入っている<br>
 ・**書き間違えたとき**：次に起動したとき「Settings Error」と出る。その画面から直せる
 
 ### 大事な会話だけ残すなら /export
 
-ターミナルなら、会話の中で `/export` と打つと、[今の会話を文字のファイルに保存できます](https://code.claude.com/docs/en/sessions#export-and-locate-session-data)。
+ターミナルなら、会話の中で `/export` と打つと、[今の会話を文字のファイルに保存できます](https://code.claude.com/docs/ja/sessions#export-and-locate-session-data)。
 保存したファイルは自動では消えないので、期限を気にせず残せます。
 
 【アラート】<br>
-**会話の記録は[暗号化されていません](https://code.claude.com/docs/en/claude-directory#plaintext-storage)。**<br>
+**会話の記録は[暗号化されていません](https://code.claude.com/docs/ja/claude-directory#plaintext-storage)。**<br>
 読ませたファイルの内容も、記録に残ります。
 
 ---

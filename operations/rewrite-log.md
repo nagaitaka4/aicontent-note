@@ -57,7 +57,11 @@
 **残っていること**：
 - 11本の「WPにだけある装飾」は、同日にMDの記法で出せるものだけ写した（下の追記）。残りは写せないので、MDから本文を丸ごと送り直す前に必ず差分を取ること
 - ~~no.56のAtlasのリンク先が、本文の「機能はChatGPTとCodexへ移ります」を裏づけていない~~ → 同日に直した。OpenAIの公式発表（日本語版）で確かめられたのは「Atlasの学びはChatGPTのパソコン操作とChrome拡張機能に生かされ、単体のAtlasは段階的に終了」まで。「Codexへ移る」と「8月9日」は一次情報で見つからなかったので削り、「提供を終了しました」（ヘルプセンター）＋「その学びは、ChatGPTのChrome拡張機能などに生かされています」（公式発表）に書き換えた。同じ記事の公式発表のリンクも日本語版（`openai.com/ja-JP/index/…`）に。WPは2ブロックだけ置き換え、SHA一致・公開のまま
-- self-checkが拾わない英語のページ（`anthropic.com/legal/consumer-terms`・`academy.claude.com`・`openai.com/index/…`など、URLに`/en/`が無いもの）は今回の対象外 → `operations/link-lang-check.py`を新設（リンク先を開いて`<html lang>`を読む）。公開済み全記事で、日本語以外15本・開けない11本。日本語版がある10本と、日本語版が無い一次情報の扱いはユーザーと相談中
+- self-checkが拾わない英語のページ（`anthropic.com/legal/consumer-terms`・`academy.claude.com`・`openai.com/index/…`など、URLに`/en/`が無いもの）は今回の対象外 → `operations/link-lang-check.py`を新設（リンク先を開いて`<html lang>`を読む）。公開済み全記事で、日本語以外15本・開けない11本 → 同日に片づけた（ユーザー指示：日本語版があれば差し替え、無ければリンクを残し、本文で中身を日本語で説明していればよい）
+  - 日本語版へ11か所：no.59（OpenAIの広告テスト・GPT-5.6 Solの発表・料金ページ2か所）、no.63（広告テスト・欧州拡大）、no.27（Claude Academy `/ja/`）、no.68（OpenAI利用規約・Adobe生成AIガイドライン`/jp/`・Canvaの規約とヘルプ`/ja_jp/`）。日本語版の中身が記事の記述と合うことを実Chromeで確認。WPは文字列だけ置き換え、SHA一致・公開のまま・公開ページで旧URL 0
+  - 日本語版が無い16本（今回の13本＋前回の3本）は、どれも本文か表の行で中身を日本語で説明していたので、足した説明は0。`operations/en-link-allow.tsv`に理由つきで載せ、`article-self-check.py`と`link-lang-check.py`が読む（毎回の`ALLOW_EN_LINK`は不要に）
+  - 結果：`link-lang-check.py --published`で外部リンク150本＝日本語134・日本語以外0・要確認0・許可済み16
+  - 気づいた別件：no.59の「いま日本で新しく契約すると月額¥3,000」は、料金ページ（日本語版・英語版とも同じページに転送）がドル表示で、10/28の実Chromeでは¥3,000を確かめられなかった（ログイン状態や地域で変わる可能性あり・未対応）
 
 **追記：WPにだけある装飾・文言をMDへ写した（2026-10-28 午後・ユーザー指示）**
 

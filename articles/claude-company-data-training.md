@@ -28,15 +28,15 @@ Claudeでは、==通常のチャットが学習に使われるかは設定で変
 
 | Claudeのプラン | 学習に使われるか | 標準の保持期間 | 根拠 |
 |---|---|---|---|
-| Free・Pro・Max＋設定オン | 使われる | 5年 | [Claude Code公式 Data usage](https://code.claude.com/docs/en/data-usage) |
+| Free・Pro・Max＋設定オン | 使われる | 5年 | [Claude Code公式 データ使用](https://code.claude.com/docs/ja/data-usage) |
 | Free・Pro・Max＋設定オフ | 使われない | 30日 | 同上 |
 | Team・Enterprise・API | 既定で使わない | 30日 | 同上・[料金ページ](https://claude.com/pricing) |
 
 ※そのアカウントでClaude Codeを使った分も、同じ扱いです。
 ※安全性レビュー対象の会話や、自分から送ったフィードバックには、別の保持期間が適用される場合があります。
-※Claude.aiのIncognitoチャットは例外で、設定がオンでも学習には使われません（[プライバシーセンター](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training)）。
+※Claude.aiのIncognitoチャットは例外で、設定がオンでも学習には使われません（[プライバシーセンター](https://privacy.claude.com/ja/articles/10023580)）。
 
-公式の原文は「when this setting is on」、つまり設定がオンのときに使う、です。
+公式の日本語版にも「この設定がオンの場合」に使う、と書かれています。
 **「Claudeだから危ない」でも「有料だから安全」でもなく、どの設定で使っているかで答えが変わります**。
 
 ### この記事で言う「渡す」とは
@@ -50,11 +50,11 @@ Claudeでは、==通常のチャットが学習に使われるかは設定で変
 ・Google DriveなどのコネクタやMCPサーバーの中身 → **対象外**。ただし会話に直接コピーした分は対象
 
 最後の1つだけ、扱いが違います。
-つなげたサービスの中身そのものは学習に使われませんが、本文に貼れば会話の一部になります（[プライバシーセンター](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training)）。
+つなげたサービスの中身そのものは学習に使われませんが、本文に貼れば会話の一部になります（[プライバシーセンター](https://privacy.claude.com/ja/articles/10023580)）。
 
 ただし、**学習に使われない設定なら何でも入力してよい、という意味ではありません**。
 Anthropicの[Consumer Terms](https://www.anthropic.com/legal/consumer-terms)は、入力する情報の権利や許可を利用者側に求めています。
-原文では「all rights, licenses, and permissions」を持つと利用者が保証します。
+必要な権利・ライセンス・許可をすべて持っていると、利用者が保証する決まりです。
 
 【ポイント】<br>
 **有料のPro・Maxでも、設定がオンなら学習に使われる**
@@ -71,7 +71,7 @@ Anthropicの[Consumer Terms](https://www.anthropic.com/legal/consumer-terms)は�
 3. ==AIモデルの改善に協力する==のスイッチを見る
 
 URLで直接開くなら、[claude.ai/settings/data-privacy-controls](https://claude.ai/settings/data-privacy-controls)です。
-英語表示での名前は「Help Improve our AI models」です（[プライバシーセンターの手順](https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings)）。
+公式ヘルプでは「AIモデルの改善を支援する」と書かれています（[プライバシーセンターの手順](https://privacy.claude.com/ja/articles/12109829)）。
 
 説明文は「チャットやコーディングセッションのデータを……トレーニングと改善に使用することを許可します」です。
 
@@ -109,8 +109,8 @@ URLで直接開くなら、[claude.ai/settings/data-privacy-controls](https://cl
 | 自分から送ったフィードバック | オフでもモデル改善に使われる場合がある |
 | 「位置情報メタデータ」 | 別の設定。連動しない |
 
-過去のチャットも「previous or new chats」として、今後の学習には使われなくなります。
-すでに始まった学習からは外れません（[プライバシーセンター](https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data)）。
+公式には「以前のチャットや新しいチャット」とあり、過去のチャットも今後の学習には使われなくなります。
+すでに始まった学習からは外れません（[プライバシーセンター](https://privacy.claude.com/ja/articles/10023548)）。
 
 【アラート】<br>
 オフにしても、すでに始まった学習と、作られたモデルからは外れない
@@ -218,7 +218,7 @@ Claude Codeの設定ファイルに、読み取りを断る指定を書けます
 私の設定には、この指定が入っていませんでした。
 気づいた時点で、.envと鍵ファイルを読み取り拒否に追加しました。
 
-公式ドキュメントの例もこの形です（[Claude Code公式](https://code.claude.com/docs/en/settings)）。
+公式ドキュメントの例もこの形です（[Claude Code公式](https://code.claude.com/docs/ja/settings)）。
 指定しておくと、AIが中身を開こうとした時点で止まります。
 
 ログインについては、人がやると決めています。
@@ -238,7 +238,7 @@ AIに渡すのは記事や数字で、パスワードは入力しません。
 
 まず、**渡した情報がすぐ誰かの目に触れるわけではありません**。
 Anthropicの説明では、データは送るときも保存するときも暗号化されます。
-社員は既定では会話を読めません（[プライバシーセンター](https://privacy.claude.com/en/articles/10458704-how-does-anthropic-protect-the-personal-data-of-claude-users)）。
+社員は既定では会話を読めません（[プライバシーセンター](https://privacy.claude.com/ja/articles/10458704)）。
 
 起きるのは、次の5つです。
 右端の列は、モデル改善の設定で変わるかどうかです。

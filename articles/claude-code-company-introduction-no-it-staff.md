@@ -53,7 +53,7 @@ IT担当がいなくても、この表の上から順に決めれば進められ
 料金は日本から[料金ページ](https://claude.com/pricing)を開いた表示（税込み・2026年10月9日）です。
 年払いなら、Proは18ドル、Teamは22ドルと110ドルになります。
 
-「プレミアムでないとClaude Codeが使えない」は古い情報です。2026年1月から全シートに入っています（[公式ヘルプ](https://support.claude.com/en/articles/11845131-use-claude-code-with-your-team-or-enterprise-plan)）。
+「プレミアムでないとClaude Codeが使えない」は古い情報です。2026年1月から全シートに入っています（[公式ヘルプ](https://support.claude.com/ja/articles/11845131)）。
 ProとMaxの選び方は、[Claudeに課金すべきか。料金・制限より先にモデルで決める](https://aicontent-note.com/claude-subscription-change-june-2026/)に書きました。
 
 ### シートと料金は、スタンダードから
@@ -62,11 +62,11 @@ ProとMaxの選び方は、[Claudeに課金すべきか。料金・制限より�
 Max 20x並みに使う人は、プレミアムでも足りません。
 
 3人なら、Teamのスタンダードは月82.50ドル、Pro3つは月66ドルです。
-**Teamを年払いにすると、Proの月払いと同じ66ドルで、量は1.25倍です**（[Teamプランの説明](https://support.claude.com/en/articles/9266767-what-is-the-team-plan)）。
+**Teamを年払いにすると、Proの月払いと同じ66ドルで、量は1.25倍です**（[Teamプランの説明](https://support.claude.com/ja/articles/9266767)）。
 
 ### 独自ドメインのメールが無いと、申し込みで止まる
 
-Teamは、gmailなどのメールでは申し込めません（[Teamの始め方](https://support.claude.com/en/articles/9267247-get-started-with-the-team-plan)）。
+Teamは、gmailなどのメールでは申し込めません（[Teamの始め方](https://support.claude.com/ja/articles/9267247)）。
 Google WorkspaceやMicrosoft 365などで、会社のメールを先に用意します。
 私もgmailで個人のMax（5x）を使っているので、Teamにするならここからです。
 
@@ -79,7 +79,7 @@ Google WorkspaceやMicrosoft 365などで、会社のメールを先に用意し
 ## ② 管理する人：誰がお金を管理し、誰が人を招くか
 
 ==お金を任せる人を、組織に1人のプライマリオーナーにします。==
-招待だけ任せる人は、管理者にします（オーナーにすると請求も触れるため・[役割と権限](https://support.claude.com/en/articles/9267276-roles-and-permissions)）。
+招待だけ任せる人は、管理者にします（オーナーにすると請求も触れるため・[役割と権限](https://support.claude.com/ja/articles/9267276)）。
 
 | やること | おすすめの担当 |
 |---|---|
@@ -94,7 +94,7 @@ Google WorkspaceやMicrosoft 365などで、会社のメールを先に用意し
 ・**招待リンクは最初からオン**。入った人の分だけ席が増えることがあるので、使わないなら止める<br>
 ・**人を外しても、席を減らさないと請求は下がらない**（下がるのは次の更新日から）
 
-上限に達しても、何もしなければ止まるだけで、追加の料金は出ません（[使用クレジットの管理](https://support.claude.com/en/articles/12005970-manage-usage-credits-for-team-and-seat-based-enterprise-plans)）。
+上限に達しても、何もしなければ止まるだけで、追加の料金は出ません（[使用クレジットの管理](https://support.claude.com/ja/articles/12005970)）。
 
 ---
 
@@ -104,7 +104,7 @@ Google WorkspaceやMicrosoft 365などで、会社のメールを先に用意し
 
 **パスワード・APIキー・カード番号・お客さんの個人情報など、渡さないものを1枚に書いて共有します。**
 そうしたファイルは、Claude Codeで作業するフォルダに置きません。
-作業するフォルダのファイルは読まれるからです（[権限の説明](https://code.claude.com/docs/en/permissions)）。
+作業するフォルダのファイルは読まれるからです（[権限の説明](https://code.claude.com/docs/ja/permissions)）。
 
 私も、Claude Codeの案内どおりに進めていて、APIキーを渡してしまい、作り直しました。
 渡してしまったときの対応は、[Claudeに会社の情報を渡して大丈夫か。データが学習に使われる条件](https://aicontent-note.com/claude-company-data-training/)にまとめました。
@@ -131,7 +131,7 @@ Google WorkspaceやMicrosoft 365などで、会社のメールを先に用意し
 | 招かれる社員 | 本人が「両方残す」か「会社だけ」を選ぶ。**会社側に移した会話は戻せない** | **招く前に、この2択を伝える** |
 | App Storeで買った人 | **個人の契約は自動では止まらない** | 個人をやめるなら、Apple側で解約する |
 
-詳しくは[個人アカウントの移し方](https://support.claude.com/en/articles/9267400-move-your-personal-claude-account-to-a-team-or-enterprise-organization)にあります。
+詳しくは[個人アカウントの移し方](https://support.claude.com/ja/articles/9267400)にあります。
 
 ### 申し込みからログインまで
 
@@ -140,7 +140,7 @@ Google WorkspaceやMicrosoft 365などで、会社のメールを先に用意し
 3. 各自がClaude Codeを入れてログインする（「サブスクリプション付き Claude アカウント」→「認可」）
 4. 消してもいいフォルダで、④の業務を1回試す
 
-「Pro・Maxが必要」と出たら、`/login`で会社のアカウントを選び直します（[Claude CodeのFAQ](https://support.claude.com/en/articles/12386420-claude-code-faq)）。
+「Pro・Maxが必要」と出たら、`/login`で会社のアカウントを選び直します（[Claude CodeのFAQ](https://support.claude.com/ja/articles/12386420)）。
 私はエンジニアではないので、画面のスクショをAIに見せながら入れました。
 入れ方は[非エンジニアがClaude Codeでできること。始め方と詰まった所](https://aicontent-note.com/claude-code-introduction/)に書いています。
 

@@ -29,7 +29,7 @@ tags: ルールファイル,CLAUDE.md,AI活用,非エンジニア,業務設計
 【インフォ】<br>
 ルールファイルとは、AIに指示書を毎回書き直させないための、固定した判断基準です。Claude CodeのCLAUDE.mdはその代表例です。
 
-Claude Codeは、プロジェクトルートに置いたCLAUDE.mdをセッションごとに自動で読み込みます（[Claude Code公式ドキュメント「How Claude remembers your project」](https://code.claude.com/docs/en/memory)）。このブログでも、方向性・禁止事項・文体のルールをまとめ、毎回参照させています。
+Claude Codeは、プロジェクトルートに置いたCLAUDE.mdをセッションごとに自動で読み込みます（[Claude Code公式ドキュメント「Claude があなたのプロジェクトを記憶する方法」](https://code.claude.com/docs/ja/memory)）。このブログでも、方向性・禁止事項・文体のルールをまとめ、毎回参照させています。
 
 「[READMEとは？AIと人間が共有する業務マニュアルの作り方](https://aicontent-note.com/readme-basics/)」との違いは一言で言えます。READMEが「最初に読む案内」なら、ルールファイルは「仕事中ずっと守る基準」です。
 

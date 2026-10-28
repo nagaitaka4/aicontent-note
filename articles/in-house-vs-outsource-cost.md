@@ -52,7 +52,7 @@ eyecatch: eyecatch_0032.png
 私が払っているのは、月130ドル（約2万円）です。
 
 【メモ】<br>
-**Claude Codeは、手元のファイルを読んで作業を進めるClaudeの道具。Pro・Maxの契約に含まれます**（[公式](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)）。
+**Claude Codeは、手元のファイルを読んで作業を進めるClaudeの道具。Pro・Maxの契約に含まれます**（[公式](https://support.claude.com/ja/articles/11145838)）。
 
 | ツール | 月額 | 何に使っているか |
 |---|---|---|

@@ -5,8 +5,8 @@ series_no:
 title: Claude CodeにWordPress入稿は任せられる？失敗と対策
 url: https://aicontent-note.com/claude-code-wordpress-posting/
 slug: claude-code-wordpress-posting
-status: draft
-date:
+status: published
+date: 2026-10-28
 description: Claude CodeにWordPressの入稿は、公開まで任せられます。私は新しい記事を下書き保存まで任せ、公開ボタンは自分で押しています。私が下書きで直した所を、送り直しで消したこともありました。20本近く任せて起きた失敗と、その止め方をまとめます。
 eyecatch: eyecatch_0077.png
 eyecatch_alt: Claude CodeにWordPress入稿は任せられる？と書いた題の横に、ブログの編集画面を開いたノートPCと、オレンジのペンで直した跡のある紙と鉛筆を描いたアイキャッチ画像
@@ -41,7 +41,7 @@ Claude Codeにできることと、私が実際に任せている所を分ける
 PCでプレビューを開いて全体を読み直し、細かいニュアンスや、このまま出していいかを確かめてから公開しています。
 いちばん時間をかけているのが、この確認です。
 
-[公式のヘルプ](https://support.claude.com/ja/articles/12902428-use-claude-in-chrome-safely)には、Claudeが代わりに行ったブラウザの操作は、すべて使う人の責任だとあります。
+[公式のヘルプ](https://support.claude.com/ja/articles/12902428-use-claude-in-chrome-safely)には、「Claudeが代わりに行ったブラウザの操作は、すべて使う人の責任」としています。
 公開した記事も、その中に入ります。
 
 ### 私が使っている環境

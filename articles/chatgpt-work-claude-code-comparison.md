@@ -32,11 +32,11 @@ tags: ChatGPT Work,Claude Code,AIエージェント,比較,業務効率化
 【インフォ】<br>
 **エージェントとは、指示に答えるだけでなく、手順を分解して自分で実行するAIのこと**
 
-公式発表によれば、アプリを横断して情報を集め、完成した成果物まで作ります（[OpenAI公式発表](https://openai.com/index/chatgpt-for-your-most-ambitious-work/)、2026年7月9日）。
+公式発表によれば、アプリを横断して情報を集め、完成した成果物まで作ります（[OpenAI公式発表](https://openai.com/ja-JP/index/chatgpt-for-your-most-ambitious-work/)、2026年7月9日）。
 搭載モデルは、同日公開されたGPT-5.6です。
 
-なお、OpenAIはブラウザ「Atlas」も2026年8月9日に終了します。
-機能はChatGPTとCodexへ移ります（[OpenAIヘルプセンター](https://help.openai.com/ja-jp/articles/20001371)）。
+なお、OpenAIのブラウザ「Atlas」は[提供を終了しました](https://help.openai.com/ja-jp/articles/20001371)。
+その学びは、ChatGPTのChrome拡張機能などに生かされています（[公式発表](https://openai.com/ja-JP/index/chatgpt-for-your-most-ambitious-work/)）。
 
 ### できること
 

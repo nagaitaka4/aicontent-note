@@ -28,7 +28,7 @@ tags: ChatGPT,Claude,Claude Code,使い分け,GPT-6 Astra
 私は、ほとんどClaudeのチャットは使わず、Claude側はClaude Codeにまとめています。
 
 【メモ】<br>
-**Claude Codeは、手元のファイルを読んで作業を進める道具。ClaudeのPro・Maxの契約に含まれます**（[公式](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)）。
+**Claude Codeは、手元のファイルを読んで作業を進める道具。ClaudeのPro・Maxの契約に含まれます**（[公式](https://support.claude.com/ja/articles/11145838)）。
 
 | 作業 | 使っているほう | もう片方でもできるか |
 |---|---|---|
@@ -37,7 +37,7 @@ tags: ChatGPT,Claude,Claude Code,使い分け,GPT-6 Astra
 | ふだんのチャット・相談 | ChatGPT | できる（Claudeのチャット） |
 | 書いた記事のレビュー | ChatGPT | できる（Claude Codeの中に、別のレビュー役を立てられる） |
 
-画像の行は、[Claudeの公式ヘルプ](https://support.claude.com/en/articles/9002504-can-claude-produce-images)が根拠です。
+画像の行は、[Claudeの公式ヘルプ](https://support.claude.com/ja/articles/9002504)が根拠です。
 画像のほかは、もう片方でもできるか、できる部分が多い作業です。
 それでもこう分けている理由を、順に書きます。
 
@@ -58,7 +58,7 @@ Maxを契約していることもあります。
 ### ChatGPT側に移したほうがいいのか、Astraで比べた
 
 GPT-6 Astraは、OpenAIの新しいモデルです。
-**2026年10月時点で、ChatGPT PlusでもWorkとCodexで使えます**（[OpenAI](https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex)）。
+**2026年10月時点で、ChatGPT PlusでもWorkとCodexで使えます**（[OpenAI](https://help.openai.com/ja-jp/articles/20001516)）。
 新しいモデルなら移す理由になるかを見たくて、同じ記事を1本ずつ書かせました。
 
 ・渡したもの：同じ構成案と、事実のメモ<br>
@@ -103,7 +103,7 @@ ChatGPTは3つの用途で使っていますが、3つ全部が課金の理由�
 無料と有料の違いは、[ChatGPTの無料と有料の違い｜無制限化しても課金する理由](https://aicontent-note.com/chatgpt-free-paid-difference/)にまとめています。
 
 普段のチャットをChatGPTに回すのは、Claude Code側の使用量を減らさないためです。
-Claudeは、チャットとClaude Codeで使用量の枠が共通です（[公式](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan)）。
+Claudeは、チャットとClaude Codeで使用量の枠が共通です（[公式](https://support.claude.com/ja/articles/11145838)）。
 Maxでも、重い作業が続くと上限に当たることがあります。
 
 正直に言うと、名残りに近い部分もあります。

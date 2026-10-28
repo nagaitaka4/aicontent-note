@@ -271,9 +271,9 @@ J-PlatPatの検索結果も、登録を保証するものではありません�
 ここから先は著作権や商標とは別で、使うときに同意した規約で決まります。
 規約は、同意して使えば契約の内容になります（[民法](https://laws.e-gov.go.jp/law/129AC0000000089) 第548条の2）。
 
-・同じような指示なら、他の人にも似たロゴが出る。自分だけのロゴになるとは限らない（[OpenAI](https://openai.com/policies/terms-of-use/)と[Canva](https://www.canva.com/policies/ai-product-terms/)の規約）<br>
-・[Canvaのテンプレートや素材](https://www.canva.com/help/trademarks-logo/)を使ったロゴは、Canvaの規約では商標に使えない。誰でも使える素材で、権利が独占にならないため<br>
-・[Adobe Firefly](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)は、他人の作品を参照画像に上げること自体を禁止。出たロゴが似ていなくても違反で、アカウントを止めることがある<br>
+・同じような指示なら、他の人にも似たロゴが出る。自分だけのロゴになるとは限らない（[OpenAI](https://openai.com/ja-JP/policies/terms-of-use/)と[Canva](https://www.canva.com/ja_jp/policies/ai-product-terms/)の規約）<br>
+・[Canvaのテンプレートや素材](https://www.canva.com/ja_jp/help/trademarks-logo/)を使ったロゴは、Canvaの規約では商標に使えない。誰でも使える素材で、権利が独占にならないため<br>
+・[Adobe Firefly](https://www.adobe.com/jp/legal/licenses-terms/adobe-gen-ai-user-guidelines.html)は、他人の作品を参照画像に上げること自体を禁止。出たロゴが似ていなくても違反で、アカウントを止めることがある<br>
 ・ロゴの案をAIで作って出せるかは、サイトで違う。[99designs](https://support.99designs.com/hc/ja/articles/29341768376212)のコンペは不可、[Fiverr](https://help.fiverr.com/hc/en-us/articles/34998793899665-Using-AI-on-Fiverr-Guidelines-for-freelancers-and-clients)は可、[クラウドワークス](https://crowdworks.jp/static/lp/ai_policy/)は発注者との取り決め
 
 特許庁は商標法の条件で審査するので、規約に反していても、条件を満たせば登録されます。

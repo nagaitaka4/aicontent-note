@@ -33,7 +33,7 @@ tags: ChatGPT,広告,AI検索,GEO,コンテンツ運用
 | 対象プランでも表示されない場合（主な例） | 18歳未満と判断されたアカウント。一時チャット。健康・メンタルヘルス・政治などの機微なトピックの近く |
 | 表示される場所 | 回答の末尾の下。スポンサー提供と明示され、回答とは視覚的に区別される |
 
-出典は[ChatGPT での広告のテスト](https://openai.com/index/testing-ads-in-chatgpt/)と、[ChatGPT での広告（ヘルプセンター）](https://help.openai.com/ja-jp/articles/20001047-ads-in-chatgpt)です。
+出典は[ChatGPT での広告のテスト](https://openai.com/ja-JP/index/testing-ads-in-chatgpt/)と、[ChatGPT での広告（ヘルプセンター）](https://help.openai.com/ja-jp/articles/20001047-ads-in-chatgpt)です。
 
 この表から言えるのは、**広告が出るかどうかが、プランと利用条件で分かれている状態になった**ことです。対象プランに入っていても、必ず表示されるわけではありません。
 
@@ -45,7 +45,7 @@ Goは有料プランですが、広告が表示される側に入っています
 【メモ】<br>
 無料版は広告を消す設定も選べますが、その場合は1日のメッセージ数が減ります。
 
-なお、[欧州31か国への拡大は8月24日から](https://openai.com/index/chatgpt-ads-expands-across-europe/)で、日本の話とは別の発表です。
+なお、[欧州31か国への拡大は8月24日から](https://openai.com/ja-JP/index/chatgpt-ads-expands-across-europe/)で、日本の話とは別の発表です。
 
 ## 広告は、回答とは別のシステムで配信されている
 

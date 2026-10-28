@@ -1,0 +1,20 @@
+# 日本語版が無いので英語のまま残すリンク（2026-10-28新設）
+# article-self-check.py と link-lang-check.py が読む。ここにあるURLは英語でもNGにしない。
+# 条件：本文（その文か表の行）で、リンク先の中身を日本語で説明していること。説明が無いまま足さない。
+# 列：URL<TAB>記事<TAB>理由（日本語版が無いことをどう確かめたか・本文のどこで説明しているか）
+https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics	no.69	/hc/ja/は英語版へ転送される（10/28 実Chrome）。直前の段落で、ガイドが挙げる例（入れたくない物を書くと出てしまう）を説明
+https://help.elements.envato.com/hc/en-us/articles/360000628966-Envato-Elements-License	no.68	/hc/ja/は英語版へ転送される（10/28 実Chrome）。本文で「フォントをクライアントに使わせられない」と説明
+https://help.fiverr.com/hc/en-us/articles/34998793899665-Using-AI-on-Fiverr-Guidelines-for-freelancers-and-clients	no.68	/hc/ja/は英語版へ転送される（10/28 実Chrome）。本文で「AIの案は可」と説明
+https://www.anthropic.com/research/claude-character	no.69	Anthropicのサイトに日本語版が無い（/ja/は404・hreflangなし）。表の行で性格の設計を説明
+https://www.anthropic.com/legal/consumer-terms	no.70	Anthropicの規約に日本語版が無い（言語の切り替えなし）。本文で「入力する情報の権利や許可を利用者が保証する」と説明
+https://www.anthropic.com/news/updates-to-our-consumer-terms	no.70	Anthropicの発表に日本語版が無い（hreflangなし）。本文で選ぶ期限と「第三者に売らない」を説明
+https://www.anthropic.com/news/claude-fable-5-mythos-5	no.36	Anthropicの発表に日本語版が無い（/ja/は404）。本文でセーフガードが発動する割合と対象を説明
+https://ahrefs.com/blog/ai-overview-citations-top-10/	no.54	日本語版が無い（/ja/は英語版へ転送・hreflangはen/es/frのみ）。表の行で数字と調査の規模を説明
+https://www.prnewswire.com/news-releases/new-5w-research-overlap-between-top-google-rankings-and-ai-cited-sources-has-collapsed-from-70-to-under-20-302760132.html	no.54	英語のプレスリリース（確認画面で中身を開けず、日本語版の有無は未確認）。表の行で数字を説明
+https://arxiv.org/abs/2311.09735	no.54	英語の論文（hreflangなし）。本文で検証した施策と効果のあった3つを説明
+https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-september-2025-update	no.54	日本語版が無い（hreflangなし）。本文と表で調査の期間・規模・数字を説明
+https://markwilliamscook.substack.com/p/how-catstxt-showed-llmstxt-evidence	no.60	個人のブログで日本語版が無い（hreflangなし）。本文で実験を説明し、日本語の解説にもリンク
+https://fonts.google.com/faq	no.68	日本語版が無い（hl=jaでも英語）。表の行で「ロゴに使えるが、商標登録の記載は無い」と説明
+https://openfontlicense.org/ofl-faq/	no.68	日本語版が無い（hreflangなし）。表の行で説明
+https://klim.co.nz/faqs/	no.68	書体メーカーのFAQで日本語版が無い（hreflangなし）。本文で「アウトライン化した文字の改変を認めている」と説明
+https://www.grillitype.com/eula	no.68	書体メーカーの使用許諾で日本語版が無い（hreflangなし）。本文で同上を説明

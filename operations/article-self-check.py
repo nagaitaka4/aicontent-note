@@ -378,7 +378,15 @@ def main(path):
     # 引用は日本語の説明にする。no.77では英語リンク4本と英語の引用1か所が、
     # 別のレビュー役2回とGPTレビュー2回を素通りした（ユーザー指摘「英語のページで読むことが不可能」）。
     # 日本語版が本当に無いときだけ ALLOW_EN_LINK="理由" で通す。
-    en_links = [u for _, u in all_links if re.search(r"/en(-[a-z]{2})?/|[?&]hl=en\b|/en$", u)]
+    # 日本語版が無いと確かめ、本文で中身を日本語で説明しているリンクは operations/en-link-allow.tsv に
+    # 理由つきで載せる（10/28・既存の公開記事16本）。載っているURLは毎回の ALLOW_EN_LINK なしで通る。
+    allow_tsv = os.path.join(os.path.dirname(os.path.abspath(__file__)), "en-link-allow.tsv")
+    allowed_en = set()
+    if os.path.exists(allow_tsv):
+        allowed_en = {l.split("\t")[0] for l in open(allow_tsv, encoding="utf-8")
+                      if l.strip() and not l.startswith("#")}
+    en_links = [u for _, u in all_links
+                if re.search(r"/en(-[a-z]{2})?/|[?&]hl=en\b|/en$", u) and u not in allowed_en]
     en_quotes = [q for q in re.findall(r"「([^」]+)」", strip_decoration(body))
                  if len(re.findall(r"[A-Za-z]+", q)) >= 3 and not re.search(r"[ぁ-んァ-ヶ一-龠]", q)]
     allow_en = os.environ.get("ALLOW_EN_LINK", "")

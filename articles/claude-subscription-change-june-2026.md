@@ -81,7 +81,7 @@ Fableの枠を使い切った後も、別のモデルならプランの上限の
 ## モデルで、上限の減り方が変わる
 
 同じプランでも、選ぶモデルで上限の減り方が違います。
-公式は、軽い順にHaiku、Sonnet、Opus、Fableと説明しています（[Claude Academy](https://academy.claude.com/tutorials/choosing-the-right-claude-model)）。
+公式は、軽い順にHaiku、Sonnet、Opus、Fableと説明しています（[Claude Academy](https://academy.claude.com/ja/tutorials/choosing-the-right-claude-model)）。
 
 ・Opusは重く、Fableがいちばん多く使うという説明で、倍率の数字は出ていない<br>
 ・Claude Codeの既定はOpus 5.5（v2.1.280以降。Pro / Max / Team共通。[公式ドキュメント](https://code.claude.com/docs/ja/model-config)）<br>

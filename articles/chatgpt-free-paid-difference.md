@@ -28,7 +28,7 @@ ChatGPTの無料と有料の違いは、大半が上限と速度の差です。
 
 ### 発表で変わったこと
 
-OpenAIは、2026年8月6日に[変更内容](https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/)を発表しました。
+OpenAIは、2026年8月6日に[変更内容](https://openai.com/ja-JP/index/improving-gpt-5-6-sol-in-chatgpt/)を発表しました。
 無料版の標準モデルがGPT-5.6 Lunaへ変わり、Thinkボタンも開放されました。
 
 【アラート】<br>
@@ -44,7 +44,7 @@ PlusとProには、回答にかける思考量を選ぶスライダーが加わ�
 
 ### コンテンツ運用で使う機能の比較
 
-出典は、[公式料金ページ](https://chatgpt.com/pricing)です。
+出典は、[公式料金ページ](https://chatgpt.com/ja-JP/pricing/)です。
 
 | 機能 | 無料版 | Go | Plus |
 |---|---|---|---|
@@ -163,7 +163,7 @@ Claudeの課金が変わったときも、[自分の使い方で影響を判断�
 
 ChatGPTワークの違いは、[Claude Codeとの比較記事](https://aicontent-note.com/chatgpt-work-claude-code-comparison/)で整理しています。
 
-広告が出ないことも、有料の理由になりますが、テスト対象はFreeとGoのログイン成人ユーザーで、[PlusとProには表示されません](https://openai.com/index/testing-ads-in-chatgpt/)。
+広告が出ないことも、有料の理由になりますが、テスト対象はFreeとGoのログイン成人ユーザーで、[PlusとProには表示されません](https://openai.com/ja-JP/index/testing-ads-in-chatgpt/)。
 ただ、無料版に下げていないので、私には比べる材料がありません。
 
 【ポイント】<br>
@@ -182,7 +182,7 @@ ChatGPTワークの違いは、[Claude Codeとの比較記事](https://aicontent
 3つ目に当てはまるなら、待っても解決しません。
 
 料金は、契約した時期によって請求額が変わります。
-いま日本で新しく契約すると、[月額¥3,000](https://chatgpt.com/pricing)です。
+いま日本で新しく契約すると、[月額¥3,000](https://chatgpt.com/ja-JP/pricing/)です。
 円建ての対応より前にドル建てで契約した場合は、[月額20ドル](https://help.openai.com/ja-jp/articles/6950777-what-is-chatgpt-plus)のまま請求されます。
 [通貨を変えるには解約して契約し直す必要がある](https://help.openai.com/ja-jp/articles/10421635-multicurrency-billing)と公式に書かれています。
 

@@ -16,6 +16,7 @@ self-checkはネットに出ない作りなので、別のスクリプトにし�
     ja      … 日本語のページ
     非ja    … 日本語以外（en など）。日本語版を探して差し替えるか、無ければ理由を残す
     要確認  … 開けなかった（403・Cloudflareの確認画面・JSでしか言語が出ないなど）。実Chromeで見る
+    許可済み … operations/en-link-allow.tsv に理由つきで載っている（日本語版が無く、本文で中身を説明している）
 """
 import concurrent.futures
 import glob
@@ -38,7 +39,12 @@ def links(path):
 
 # URLに日本語版の印があるページは、開けなくても（403・JSでしか中身が出ない）日本語版として扱う。
 # 例：help.openai.com/ja-jp/・openai.com/ja-JP/・helpx.adobe.com/jp/・branddb.wipo.int/ja/（lang属性はenだが画面は日本語）
-JA_IN_URL = re.compile(r"/(ja|ja-jp|jp)(/|$)|[?&](hl|lang)=ja\b", re.I)
+JA_IN_URL = re.compile(r"/(ja|ja-jp|ja_jp|jp)(/|$)|[?&](hl|lang)=ja\b", re.I)
+
+# 日本語版が無いと確かめ、本文で中身を日本語で説明しているリンク（理由つき）。ここにあるURLは「許可済み」に数える
+ALLOW_TSV = os.path.join(ROOT, "operations", "en-link-allow.tsv")
+ALLOWED = {l.split("\t")[0]: l.rstrip("\n").split("\t")[-1] for l in open(ALLOW_TSV, encoding="utf-8")
+           if l.strip() and not l.startswith("#")} if os.path.exists(ALLOW_TSV) else {}
 
 
 class _Follow308(urllib.request.HTTPRedirectHandler):
@@ -52,6 +58,8 @@ OPENER = urllib.request.build_opener(_Follow308)
 
 def lang_of(url):
     """(判定, 理由, 最終URL) を返す"""
+    if url in ALLOWED:
+        return "許可済み", "en-link-allow.tsv", url
     if JA_IN_URL.search(url):
         return "ja", "URLにja", url
     # アプリの設定画面（claude.ai/settings など）は、使う人の言語で表示される。読み物のページではないので対象外
@@ -101,17 +109,17 @@ def main(args):
     with concurrent.futures.ThreadPoolExecutor(12) as ex:
         res = dict(zip(uniq, ex.map(lang_of, uniq)))
 
-    total = {"ja": 0, "非ja": 0, "要確認": 0}
+    total = {"ja": 0, "非ja": 0, "要確認": 0, "許可済み": 0}
     for p, us in per.items():
-        bad = [(u, res[u]) for u in us if res[u][0] != "ja"]
+        bad = [(u, res[u]) for u in us if res[u][0] not in ("ja", "許可済み")]
         for u in us:
             total[res[u][0]] += 1
         if bad:
             print("== %s" % os.path.relpath(p, ROOT))
             for u, (kind, lang, final) in bad:
                 print("  [%s] %s  (%s)" % (kind, html.unescape(u), lang))
-    print("\n外部リンク %d本（重複を除くURL %d種類）：ja %d／非ja %d／要確認 %d" % (
-        sum(len(v) for v in per.values()), len(uniq), total["ja"], total["非ja"], total["要確認"]))
+    print("\n外部リンク %d本（重複を除くURL %d種類）：ja %d／非ja %d／要確認 %d／許可済み %d" % (
+        sum(len(v) for v in per.values()), len(uniq), total["ja"], total["非ja"], total["要確認"], total["許可済み"]))
 
 
 if __name__ == "__main__":

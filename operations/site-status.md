@@ -1874,3 +1874,112 @@ claude 学習 させない 4／claude 使い方 初心者 4／claude 使い方 �
 - クリックの上位：`claude 担当職種`2・`chatgpt work claude code`2・`ロゴ パクリ どこまで`1・`claude code 仕事`1・`chatgpt work claude code 比較`1・`claude cowork`1・`chatgpt work claude cowork 比較`1
 - 表示の上位（0クリック）：`インデックス未登録`149（75.5位）・`help improve our ai models 意味`126（7.6位）・`help improve our ai models とは`78（7.8位）・`被リンク 貼り方`60
 - ⚠️ クエリ全件の束ね直し・ページ別・候補のサジェストは今回は未実施（③の補充が不要＝TOP10 10本のため）
+
+## 2026-10-29（第10回・2週間おき定点観測。ルーティン`biweekly-gsc-x-checkup`の自動実行）
+
+- 取得方法：実Chrome（claude-in-chrome）でGSCを直接操作（ログインは残っていた）。表は`tbody tr`の`td`をスクリプトで読み取り。URLに`metrics=CLICKS,IMPRESSIONS,CTR,POSITION`。直近2週間は`start_date`／`end_date`
+- 期間：**直近3か月＝2026-07-27〜2026-10-26**（GSCの最終更新は約5時間前）
+- 公開記事数：75本（`articles/`の`status: published`）
+
+### 全体
+
+| 指標 | 2026-10-29 | 前回（10/15・第9回） | 前々回（10/1・第8回） |
+|---|---|---|---|
+| クリック | **222** | 190 | 162 |
+| 表示回数 | **5,340** | 4,350 | 3,690 |
+| 平均CTR | **4.2%** | 4.4% | 4.4% |
+| 平均掲載順位 | **14.7** | 16.1 | 17.5 |
+
+- **直近2週間（10/13〜10/26）単独**：クリック51／表示1,410／CTR 3.6%／平均9.1位。前回の直近2週間（9/29〜10/12）はクリック40／表示996／4.0%／9.2位。**表示は約1.4倍、クリックは約1.3倍**
+- 直近2週間のクリックの内訳：no.70 12・no.14 12・no.71 9・no.72 4・no.56 3・no.68 2・SWELL 2・no.73 2・ほか1ずつ。**no.56は3クリック／89表示に落ち、3か月で1位だった記事が直近ではno.70・no.14・no.71の下**
+- 3か月の窓が2週間ぶん進んだ（7/13〜7/26が抜けて10/13〜10/26が入った）ので、前回との差は純増ではない
+
+### 上位ページ（クリック順・クリック2以上）
+
+| ページ | クリック | 表示 | CTR | 掲載順位 | 前回（10/15）比 |
+|---|---|---|---|---|---|
+| chatgpt-work-claude-code-comparison（no.56） | 49 | 531 | 9.2% | 6.3 | 46→49／442→531 |
+| claude-code-compatible-jobs（no.14） | 47 | 934 | 5.0% | 6.0 | 42→47／797→934 |
+| **claude-company-data-training（no.70）** | **24** | **694** | 3.5% | 7.1 | **12→24／266→694** |
+| swell-seo-settings | 13 | 278 | 4.7% | 13.5 | 13→13 |
+| **claude-code-permission-modes（no.71）** | **11** | **222** | 5.0% | 6.7 | **2→11／76→222** |
+| directory-structure-basics | 11 | 183 | 6.0% | 8.3 | 11→11 |
+| readme-basics | 7 | 161 | 4.3% | 7.4 | 8→7 |
+| mercari-ai-listing | 6 | 83 | 7.2% | 7.5 | 10→6 |
+| claude-code-lawyer-case-management（no.49） | 6 | 31 | 19.4% | 8.2 | 5→6 |
+| claude-code-labor-consultant-rules-agreement（no.53） | 5 | 30 | 16.7% | 10.5 | 5→5 |
+| logo-plagiarism-how-far-ai-copyright-font（no.68） | 4 | 162 | 2.5% | 6.8 | 2→4／91→162 |
+| claude-chat-cowork-code-difference（no.73） | 4 | 59 | 6.8% | 13.4 | 2→4 |
+| **chatgpt-claude-division-of-work（no.72）** | 4 | 56 | 7.1% | 9.5 | **初登場**（10/1公開） |
+| chatgpt-free-paid-difference | 3 | 142 | 2.1% | 10.8 | 3→3 |
+| rule-file-basics | 3 | 66 | 4.5% | 6.9 | 3→3 |
+| claude-cowork-usage-data | 3 | 49 | 6.1% | 11.6 | 3→3 |
+| claude-code-writing-rewrite | 3 | 48 | 6.2% | 6.6 | 3→3 |
+| internal-link-guide（no.46） | 2 | 166 | 1.2% | 14.1 | 2→2／199→166 |
+| blog-outsource-pricing-guide（no.40） | 2 | 104 | 1.9% | 11.6 | 2→2／116→104 |
+| claude-code-entry-publish | 2 | 21 | 9.5% | 6.3 | 3→2 |
+| prompt-design-basics | 2 | 7 | 28.6% | 3.9 | 2→2 |
+| geo-ng-practices | 2 | 7 | 28.6% | 4.9 | 2→2 |
+
+**クリック1**：ai-overview-check-method（121表示・36.4位）／claude-subscription-change-june-2026（97・9.8位）／markdown-basics（53・9.6位）／**claude-code-company-introduction-no-it-staff（no.74・46・6.2位・初登場）**／llms-txt-geo-effect（31・15.6位）／ai-information-organization（23・10.9位）／geo-ai-citation-difference（22・35.4位）／**ai-hallucination-where-it-happens（no.75・10・6.6位・初登場）**／claude-code-article-structure（10・10.4位）
+
+**クリック0で表示が多いもの**：search-console-crawled-not-indexed（no.57）519表示・65.9位／no.56の`#index_id0`・`#index_id3`・`#index_id7`が各136表示・4.7位、`#index_id6`72表示／no.14の見出しリンク行（4行で計226表示・4.8〜5.7位）／ai-writing-tool-comparison 55表示・11.0位／service 43表示・30.1位／ai-work-environment-setup 39表示・9.9位／template-basics 33表示・6.7位／token-design-basics 27表示・7.8位
+
+### 主要クエリ（全157行のうち、クリックありと表示10以上）
+
+| クエリ | クリック | 表示 | 掲載順位 |
+|---|---|---|---|
+| claude 担当職種 | 2 | 18 | 4.8 |
+| chatgpt work claude code | 2 | 16 | 2.9 |
+| ロゴ パクリ どこまで | 1 | 18 | 5.8 |
+| claude code 仕事 | 1 | 14 | 10.1 |
+| chatgpt work claude code 比較 | 1 | 8 | 4.1 |
+| chatgpt work claude cowork 比較 / claude cowork | 各1 | 3 / 2 | 33.3 / 10.5 |
+| llms.txt とは / gpt claude どっち / chatgpt claude 比較 | 各1 | 各1 | 7.0 / 17.0 / 44.0 |
+| インデックス未登録 | 0 | 149 | 75.5 |
+| クロール済み – インデックス未登録 | 0 | 146 | 64.5 |
+| 検出 - インデックス未登録 | 0 | 141 | 65.2 |
+| **help improve our ai models 意味** | 0 | **131** | 7.7 |
+| **help improve our ai models とは** | 0 | **83** | 7.8 |
+| 被リンク 貼り方 | 0 | 60 | 15.5 |
+| ai overview チェック | 0 | 39 | 23.6 |
+| swell seo対策 | 0 | 28 | 23.7 |
+| ai時代 内部リンク | 0 | 26 | 15.8 |
+| ai overview | 0 | 26 | 71.7 |
+| クロール済み インデックス未登録 | 0 | 25 | 61.1 |
+| aiライティングツール 比較／ai ライティング ツール 比較 | 0 | 15／13 | 6.4／6.4 |
+| ブログアフィリエイト 初心者 内部リンク 貼り方 | 0 | 14 | 17.1 |
+| ai検索 表示 確認 | 0 | 13 | 34.7 |
+| swell seo | 0 | 12 | 17.3 |
+| swell seo設定 | 0 | 11 | 10.3 |
+| claude 招待リンク | 0 | 10 | 7.1 |
+| ブログ 作成 代行 料金 | 0 | 10 | 21.2 |
+
+### 判定
+
+**① 11〜20位に滞留していて表示があるページ（リライト候補）**
+
+| ページ | 表示 | 順位 | 見立て |
+|---|---|---|---|
+| swell-seo-settings | 278 | 13.5 | 直近2週間50表示・13.0位・クリック2。前回の「直近は7.6位」から戻った |
+| internal-link-guide（no.46） | 166 | 14.1 | 3か月の表示が199→166に減少。直近2週間で目立った表示なし |
+| blog-outsource-pricing-guide（no.40） | 104 | 11.6 | 116→104。9/2判定のまま |
+| chatgpt-free-paid-difference | 142 | 10.8 | 133→142。クリック3のまま |
+| claude-chat-cowork-code-difference（no.73） | 59 | 13.4 | 直近2週間39表示・14.7位・クリック2。表示2桁 |
+| claude-cowork-usage-data | 49 | 11.6 | 表示2桁 |
+
+→ **リライト計画（no.40→9/1検証→no.46→no.14）は変更しない。**表示が3桁未満のページのCTRは根拠にしない
+
+**② 順位が良いのにクリックが少ない／0のページ**
+
+- **no.70（claude-company-data-training）**：前回「直近の伸びが続くかを10/29に見る」とした記事。**直近2週間も428表示・7.4位・クリック12（2.8%）で、伸びは続いた**（前回の直近2週間は229表示・クリック8）。3か月で694表示・クリック24・CTR 3.5%。**受けているのは`help improve our ai models 意味／とは`（計214表示・7.7〜7.8位・クリック0）**。表示が3桁なのでCTRを見てよい数。**英語の設定名で調べた人に、題と説明文がその設定の話だと伝わっていない可能性**がある＝題・descriptionに英語の設定名を入れる改善が候補。⚠️ 決めるのはタスク表（TOP10）で、本ルーティンでは変更しない
+- no.71（claude-code-permission-modes）：222表示・6.7位・クリック11（5.0%）。公開1か月で伸びている。触らない
+- ai-writing-tool-comparison：55表示・11.0位・クリック0（前回7.2位から下落）。表示2桁
+- template-basics：33表示・6.7位・クリック0。表示2桁
+- no.56の見出しリンク行（各136表示・4.7位）・no.14の見出しリンク行：本体の行とは別に出ている。前回と同じ
+
+**③ カニバリ**：`インデックス未登録`系はすべてno.57、`help improve our ai models`系はno.70のみ。見出しリンク行は同じページの別行で、他ページとの食い合いではない。**カニバリなし**
+
+**④ no.56（chatgpt-work-claude-code-comparison）の直近の落ち込み**：3か月ではサイト1位（49クリック）だが、**直近2週間は3クリック／89表示・7.1位**。前回の直近2週間の内訳は取っていないため、落ち込みの始まりは特定できない。ChatGPT Work・Claude Coworkの話題の旬が過ぎた可能性はあるが、この数字だけでは原因は分からない。次回（11/12前後）も直近2週間で見る
+
+**⑤ 新しい記事の立ち上がり**：no.71（2→11クリック）・no.72（初登場4クリック）・no.74（46表示・6.2位・クリック1）・no.75（10表示・6.6位・クリック1）。公開後2週間前後で6位台に出ている

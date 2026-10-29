@@ -1,0 +1,18 @@
+{
+  "type": "reply",
+  "parent": "Kazuho Oku（@kazuho）の投稿（2026-10-29・6,867表示）\n僕「commitして」\nClaude「Co-authored-by: Claude Code っと...」\n僕「僕が渡した .patch ファイル適用しただけだろお前」\n\n引用元（@kazuho・10月27日）\nClaude「PR開いたよ」\n僕「Generated with Claude Codeって僕が書いたコードやろ」",
+  "items": [
+    {
+      "id": "k1",
+      "text": "「Co-authored-by」、私のところは逆なんですよね。ブログの原稿もルールもほぼ全部Claude Codeが書いてて、私は読んで「違う」と言ってるだけ。それでも作者は私の名前で、Claudeは共同作成者の1行だけです。",
+      "hash": "0d06c19bdb0dec8b",
+      "label": "A"
+    },
+    {
+      "id": "k2",
+      "text": ".patchを当てただけで付くの、笑いました。私はブログをまるごとClaude Codeで回してて、原稿もほぼ書いてもらってるので、あの1行が付くたびに「むしろ作者はそっちでは」と思ってます。",
+      "hash": "df6393b920bf6e34",
+      "label": "B"
+    }
+  ]
+}

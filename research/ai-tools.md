@@ -1,8 +1,15 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-10-29
+最終更新: 2026-10-30
 
 ---
+
+## [2026-10-30] 調査結果（デイリー・金曜）
+
+- **ChatGPTリリースノート October 29, 2026「More Work and Codex usage on Pro and Business Premium Plans」**（実Chrome・[公式](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)）：verbatim `Pro 100 and Pro 500 plans now include twice their previous Work and Codex allowance.`／`We've also canceled the Pro 200 reduction announced in our September 29 email.` → 上位のProプラン（100・500ドル）でWorkとCodexの利用枠が2倍。9/29のメールで予告していたPro 200の枠の削減は取りやめ。**Plusは対象外**（本文にPlusの記載なし）＝本人（ChatGPTはPlus）の画面では変わらない＝本人の立場では「使う側が変わる」を満たさない＝記録のみ（9/30のPro 500と同じ判断・Claudeの週の上限との対比は10/27`IPO27-01`と材料が重なる）
+- 10月の見出し＝10/29・10/28・10/27・10/26・10/21・10/20・10/16・10/15・10/9・10/7・10/6・10/2・10/1（過去日付の追加なし）
+- Gemini アプリは2026.10.13のまま（curl）
+
 
 ## [2026-10-29] 調査結果（デイリー・木曜）
 

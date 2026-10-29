@@ -61,6 +61,8 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 **基準に満たないものはここに入れない**（research/配下への記録だけで止める）。
 
+> **📅 2026-10-30 06〜07時台（`x-morning-brief`・金曜）：追記0件。**①Claude Code・Anthropicは差分なし（npm 2.1.312のまま・Apps 10/21・Newsroom・blog 10/28・@ClaudeDevs 10/23のまま）②ChatGPT 10/29「Pro 100・Pro 500のWork／Codexの枠を2倍・Pro 200の削減を撤回」＝Plusは対象外で本人の画面は変わらない＝記録のみ（`research/ai-tools.md`）
+
 > **📅 2026-10-29 06〜07時台（`x-morning-brief`・木曜）：追記0件。**①Claude Code・Anthropicは差分なし（npm 2.1.312のまま・Apps 10/21のまま・@ClaudeDevs新着なし）。claude.com/blogの10/28分はEnterprise・法務・導入事例＝記録のみ ②ChatGPT「Texting your dot」（10/28・米国Proのベータ）＝日本の本人は使えない＝記録のみ
 
 > **📅 2026-10-28 06〜07時台（`x-morning-brief`・水曜）：追記1件（`research-20261028-01`＝Claude Code 2.1.312・大きいルールファイルを先頭だけ見て書き直す不具合の修正）→ 単独では★★★★☆（実害の記録なし）。本人のルール1,800行と組み合わせて`RULE1800-01`（軸①）で消化。**②iCloudメール・カレンダーのChatGPT連携＝本人が語れる立場になく記録のみ

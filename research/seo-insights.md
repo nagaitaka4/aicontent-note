@@ -4,6 +4,20 @@
 
 ---
 
+## [2026-10-30] 調査結果（フル版・金曜）
+
+**③は一次情報の新着1件（Search Centralのドキュメント更新・10/26＝ユーザー投稿のスパム対策＝このメディアに無関係）。Googleの確定アップデートはなし。**
+
+- **【差分なし】Search Status Dashboard**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：最新は10/8に完了したSeptember 2026 spam updateのまま
+- **🆕 Search Central のドキュメント更新**（[Latest updates](https://developers.google.com/search/updates)・本日curl）：10/26付 verbatim `Updated the user-generated spam prevention guide with guidance on blocking indexing of link-shared content and monitoring abuse in Search Console.` → 掲示板・コメント欄などユーザーが書くページを持つサイト向け。このメディアにユーザー投稿のページは無い＝記録のみ
+- **【差分なし】Search Central Blog**（[フィード](https://developers.google.com/static/search/blog/feed.xml)）：先頭は10/6の学習用プレイリストのまま
+- **blog.google 検索フィード**（[RSS](https://blog.google/products/search/rss/)）：新着は10/28「Build and manage Connected Apps in one place」＝検索のSEOには無関係・記録のみ
+- WebSearch「Google AI Mode AI Overviews update October 2026 announcement」：10月の確定した公式告知は見つからず（二次情報のみ）
+
+### 記事側への影響
+- **訂正が必要な記事：なし**（10/29改稿のno.67が引いているAI生成コンテンツのガイド・スパムポリシーの定義に変更なし）
+
+
 ## [2026-10-26] 調査結果（フル版・月曜）
 
 **③は一次情報の新着1件（Search Centralのドキュメント整理・10/23＝新しい機能ではない）。Googleの確定アップデートはなし。**

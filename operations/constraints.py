@@ -118,7 +118,7 @@ CONSTRAINTS = [
     ("write", "禁止表現", "同じ言い回し・同じ結論パターンをセクション間で繰り返さない"),
     ("write", "frontmatter", f"タイトルは{T['title_max']}字以内（理想30〜33字）。KWの語彙をそのまま前方に置く"),
     ("write", "frontmatter", f"description は{T['desc_min']}〜{T['desc_max']}字。記事の結論を含める"),
-    ("write", "CTA・関連記事", f"CTA文言は最新published記事からそのままコピーする。途中1回・末尾1回で、間にH2を{T['cta_gap_sections_min']}つ以上入れる"),
+    ("write", "CTA・関連記事", f"CTA文言は最新published記事からそのままコピーする。途中1回・末尾1回で、間にH2を{T['cta_gap_sections_min']}つ以上入れる（検証・整理系＝一本の論証でつながる記事は末尾1回でよい）"),
     ("write", "CTA・関連記事", f"記事末尾の関連記事は{T['related_count']}本"),
     ("review", "提示前", f"文単位の類似度が{T['similarity_threshold']}以上の文ペアがないか（言い換えは検出できないため目視も要る）"),
     ("review", "提示前", "同じ引用フレーズを使い回していないか"),

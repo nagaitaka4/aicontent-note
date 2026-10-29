@@ -1,19 +1,34 @@
 # セッション引き継ぎ
 
-最終更新：2026-10-28 17:30（**次のテーマ「ChatGPT WorkとClaude Cowork、仕事で選ぶなら」をユーザーが了承（17:27）・新しいセッションで構成案から始める**。no.77は10/28 14:34に公開・公開時の作業まで完了。別セッションで公開済み記事の英語リンクを日本語版に・日本語版が無いリンクは`operations/en-link-allow.tsv`に理由つきで載せる形に（`3959d11`））
+最終更新：2026-10-29 12:15（**次＝TOP10 #1「AIで書いた記事はSEOで不利？75本の検索の数字で見る」（no.67の全面改稿）の構成案から・新しいセッションで始める（ユーザー指示）**。このセッションでは、Cowork比較の実験を中止→読者の定義をCLAUDE.mdに合わせた→テーマの作り方を「検索で読まれている記事から作る」に変えてTOP10を組み直した→ルールファイル6本を整理（2,720→1,873行）
 
 ---
 
 ## 次のセッションでまず行うこと
 
-**🆕 2026-10-29 10:30：TOP10を組み直した（ユーザー了承）。新1位は「AIで書いた記事はSEOで不利？75本の検索の数字で見る」（no.67の全面改稿・URL維持）＝構成案から。**Cowork比較は実験を中止（「労力と内容が見合わない」）してバックログへ。テーマの作り方は「検索で読まれている記事から作る」に変更・0番の④は「実物・実測を1つは入れる」に緩めた（`rules/task-management.md` 0番の⚠️2026-10-29・候補は`operations/theme-candidates-2026-10-29-demand-first.md`）。読者の定義はCLAUDE.mdに合わせた（Claude専門ではない・Claudeの題は25％枠まで）。**ルールファイルの整理は完了（10/29 12時台）**：確実な分（`operations/rules-cleanup-changes-2026-10-29.md`）＋ユーザー判断の7件（台帳・対象リスト・フォロー記録を`knowledge/x/reply-ledger.md`・`follow-log.md`へ／金曜のX編集会議を削除／4.5を「ユーザー版は盲検とx-gateへ」に／取材条件を朝ブリーフの基準に／良い投稿の例を`model-posts.md`参照に／止めた定期タスクのフォルダ2つをゴミ箱へ・cb.shは残す／投稿は毎日1本・旬ネタの日は朝と昼の2本まで）。6ファイル2,720→1,895行。**残りの要確認17件も10/29 12時台に推奨どおり反映（13件を直し4件はそのまま）＝ルール整理は完了**。Xの目的は「AI × コンテンツ運用の実務」に変更。デスクトップの`AI比較実験_20261029`は消すかをユーザーに任せた
+**TOP10 #1「AIで書いた記事はSEOで不利？75本の検索の数字で見る」（no.67 `blog-half-year-ai-article-results`〔9/15公開「ブログの直近半年、検索の実数。AIで書いた64本のクリックの内訳」〕の全面改稿・URL維持・種類：実況）の構成案から。テーマはユーザー了承済み（10/29 10:28「◯の14本でTOP10と待機列を組み直してください」）＝着手してよいかは聞かずに始める。**
 
-**TOP10 #1「ChatGPT WorkとClaude Cowork、仕事で選ぶなら」（新規・種類：AI動向×実況・実験で作る＝同じ業務を両方に頼んで比べる）の構成案と、実験の設計から。テーマはユーザー了承済み（10/28 17:27「でいいですが、新規セッションではじめます」）＝着手してよいかは聞かずに始める。**行の中身は`~/Documents/GitHub/tasks/README.md` TOP10 #1、材料は`operations/structure-drafts/chatgpt-work-claude-cowork-facts.md`（10/26作成・実験は未実施）。
+- **リライトの手順**（`rules/article-flow.md` 6章）：構成案は`articles/no67_rewrite_composition.md`。書き換え前にコミット → 既存MDを直接書き換え（URL・スラッグ・no.は変えない）→ `updated:` → WPは全文貼り替え → `operations/rewrite-log.md`に記録。⚠️ no.67のWP上のブロックを先に確かめる（全文差し替えが安全なのは`md-to-wp.py`で入稿した記事＝no.63以降。no.67は該当）
+- **材料シートはまだ無い**＝`operations/structure-drafts/ai-article-seo-facts.md`を作るところから（`pipeline-status.py`は「材料シート完成 1本（下限5）」で🔴＝TOP10を入れ替えたため）
+- **このテーマの根拠**（`operations/theme-candidates-2026-10-29-demand-first.md` #1）：サジェスト`ai 記事 seo`8（ペナルティ）・`生成ai seo`9（影響／記事）・`ai 記事`8（つまらない／seo）。Google上位は企業メディアの「Googleの公式見解＋安全な使い方◯選」型（pantograph・anema・bridge-world・auncon・lany・japan-ai・unisrv）で、**実際に出した記事の数字を見せる記事が無い**＝このメディアの一手は75本・半年のGSC（最新は`operations/site-status.md` 2026-10-29 第10回：直近3か月222クリック／5,340表示／14.7位）。no.67は今クリック1未満＝改稿で失うものが小さい
+- **Googleの公式**：生成AIコンテンツのガイド（2026-10-01更新・公開前に人の手で事実確認＝バックログD-47）を原文で取り直す。**リンクは日本語版**（self-checkがNGにする）
+- ⚠️ 書き方の注意：①「AIで書いたから評価された／されなかった」と因果で書かない（期間と母数をそろえる・1事例を全体の根拠にしない＝メモリ`feedback_analysis_classification_rigor`）②型（構成・切り口）は上位記事から借りるが文章は借りない ③本文に半端な実数の件数を書かない（概数）④読者はClaudeユーザーに限らない＝AIで記事を書くか迷っている個人・中小企業の担当者
+- 手順：`git pull --rebase origin main`（tasksも）→ `rules/article-flow.md`と`rules/task-management.md` 0番を読み直す → 材料シート → `python3 operations/article-precheck.py blog-half-year-ai-article-results "ai 記事 seo"` → 構成案 → 別のレビュー役 → 直す → `review-pack.py` → 提示（`cb`の1行・送り先）
 
-- ⚠️ **本人はCoworkを仕事で使っていない**（ClaudeはClaude Codeだけ・チャットはChatGPT）＝実験として行う（10/13 ユーザー了承）。実験をやるまで比べた結果を書かない。やっていない使い方を断定で勧めない（メモリ`feedback_author_usage_not_overridden`）
-- ⚠️ 9/16にClaudeのチャットとCoworkが1つに統合＝題の「Claude Cowork」が本人の画面で今どう表示されるかを執筆直前に確かめる。料金・使える範囲も両社の料金ページで取り直す。**リンクは日本語版**（self-checkがNGにする）
-- 英語リンク：日本語版が無いと確かめたリンクは`operations/en-link-allow.tsv`に理由つきで載せる（self-checkと`link-lang-check.py`が読む）。1回だけの例外は`ALLOW_EN_LINK="理由"`
-- 手順：`git pull --rebase origin main`（tasksも）→ `rules/article-flow.md`と`rules/task-management.md` 0番を読み直す → 材料シート → 需要（サジェスト・GSC）→ `article-precheck.py` → 構成案`articles/no78_composition.md`（「できる範囲」と「本人の分担・判断」を分ける）→ 実験の中身（業務の数・回数・判定）を確認事項にして1つずつ聞く
+### このセッション（10/29）で決まったこと（恒久・必ず守る）
+
+- **読者の定義はCLAUDE.mdのとおり**（Claude専門のメディアではない）：`operations/editorial-strategy.md` 2章・編集会議・テーママップ・戦略GPTの知識を直した。**題にClaude／Claude Codeが入るテーマは「Claude運用系25％」の枠まで**（20本なら5本）。メモリ`feedback_not_claude_only_media`
+- **テーマの作り方を「検索で読まれている記事から作る」に変えた**：①種の語からサジェストを数百件 ②読者の判断になっている語の件数 ③検索上位の型と足りない所 ④型を借りて実物・実測を1つ入れる。**0番の④は「実物・実測を1つは入れる」に緩めた**（`rules/task-management.md` 0番の⚠️2026-10-29）。初回の記録は`operations/theme-candidates-2026-10-29-demand-first.md`（539件・◯14本）
+- **実験は、本人の手間と読者に届く価値を先に見積もる。本人に記録表を書かせない**（Cowork比較は「労力と内容が見合わない」で中止・メモリ`feedback_experiment_cost_vs_value`）。実験前提のテーマ7本・Cowork比較・事務職・デザイナーはバックログ末尾「2026-10-29 TOP10から外したテーマ」
+- **ルールファイル6本を整理した**（2,720→1,873行・方針は変えていない）。洗い出し`operations/rules-cleanup-audit-2026-10-29.md`・変更の全件`operations/rules-cleanup-changes-2026-10-29.md`・外した経緯は`operations/lessons.md`末尾。ユーザー判断で変えたもの：
+  - 除外台帳・対象リスト＝`knowledge/x/reply-ledger.md`／フォローの記録＝`knowledge/x/follow-log.md`（ルールは`rules/x-post-flow.md` 3.4に残した）
+  - **X投稿は毎日1本・旬ネタの日は朝と昼の2本まで**（旧「週2〜3本・同じ日に複数投稿しない」）。朝ブリーフの手順書も「無ければ作る」にそろえた
+  - Xの目的は「**AI × コンテンツ運用の実務**」（旧：Claude Code × 実務）
+  - 取材する条件は「在庫5本未満、または出せる★★★★★が2本未満」
+  - x-post-flow 4.5は「ユーザー版は盲検と`x-gate.py`へ・直すなら理由を示して確認」／金曜のX編集会議と「良い投稿の例」4本は削除（真似る元は`knowledge/x/model-posts.md`）
+  - 止めた定期タスクのフォルダ2つ（`marketing-research-mon-fri`・`ai-trends-daily`）はゴミ箱へ（名前に`_20261029`）。`cb.sh`は残す
+- **CLAUDE.mdの「GPTに貼る全文の出し方」**（`cb`の1行・貼る直前に押す・送り先を1行）は記事以外の相談文にも適用（CLAUDE.mdに残した）
+- 未決：デスクトップの`AI比較実験_20261029`（Cowork比較の実験キット・写真8枚のコピーなど）を消すかはユーザーに任せた（CCは消さない）
 
 ### このセッション（10/27〜10/28・no.77）で決まったこと（恒久・必ず守る）
 

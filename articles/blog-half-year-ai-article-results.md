@@ -11,7 +11,7 @@ status: published
 description: AIで書いたこと自体で、SEOが不利になることはありません。Googleは、作成方法ではなく内容を評価すると公式に書いています。全部AIで書いたこのサイトの74本は、手動による対策は無く、クリックが付いたのは4割ほどでした。手動による対策の確かめ方と、記事ごとの数字を紹介します。
 eyecatch_alt: AI記事はSEOで不利？AIで書いた74本の数字、と書いた題の下に、ノートパソコンの前で話す2人と、検索の数字のグラフを描いたアイキャッチ画像
 category: AIコンテンツ運用検証
-tags: SEO,AI記事,Search Console,Google,ブログ運用
+tags: SEO,AI記事,Search Console,Google公式,ブログ運用
 eyecatch: eyecatch_0067.png
 ---
 

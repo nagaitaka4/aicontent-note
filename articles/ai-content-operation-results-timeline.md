@@ -80,6 +80,6 @@ Search Consoleで、9月までに公開した69本を見ました。
 ---
 
 **関連記事**
-・[ブログの直近半年、検索の実数。AIで書いた64本のクリックの内訳](https://aicontent-note.com/blog-half-year-ai-article-results/)<br>
+・[AI記事はSEOで不利？ペナルティの条件とAIで書いた74本の数字](https://aicontent-note.com/blog-half-year-ai-article-results/)<br>
 ・[ブログが続かないのはネタ切れだけじゃない。71本で分かった、止まる工程](https://aicontent-note.com/content-operation-system/)<br>
 ・[ブログは外注か内製か。AIで書く実費と代行の相場を並べた](https://aicontent-note.com/in-house-vs-outsource-cost/)

@@ -334,7 +334,23 @@ def main(path):
         print(f"[要確認] `・`箇条書きが3行以上連続する箇所が{len(bullet_runs)}件（表化を検討）")
 
     # --- AIっぽい接続表現 ---
-    ai_hits = [(i, p) for i, l in enumerate(lines, 1) for p in NG_AI_PHRASES if re.search(p, l)]
+    # 2026-10-30（no.78「AIっぽい文章の特徴と直し方」）：言い回しを例として見せる記事のために、
+    # 「」の中と、見出しに「直す前」がある表のその列は数えない。地の文で使えば今までどおりNG。
+    ai_hits = []
+    before_col = None
+    for i, l in enumerate(lines, 1):
+        t = l
+        if l.startswith("|"):
+            cells = l.strip().strip("|").split("|")
+            if before_col is None and any("直す前" in c for c in cells):
+                before_col = next(k for k, c in enumerate(cells) if "直す前" in c)
+            elif before_col is not None and before_col < len(cells):
+                cells[before_col] = ""
+            t = "|".join(cells)
+        else:
+            before_col = None
+        t = re.sub(r"「[^」]*」", "", t)
+        ai_hits += [(i, p) for p in NG_AI_PHRASES if re.search(p, t)]
     if not report("AIっぽい接続表現が混入していない", not ai_hits, f"{ai_hits}"):
         failures += 1
 

@@ -67,6 +67,8 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 > **📅 2026-10-28 06〜07時台（`x-morning-brief`・水曜）：追記1件（`research-20261028-01`＝Claude Code 2.1.312・大きいルールファイルを先頭だけ見て書き直す不具合の修正）→ 単独では★★★★☆（実害の記録なし）。本人のルール1,800行と組み合わせて`RULE1800-01`（軸①）で消化。**②iCloudメール・カレンダーのChatGPT連携＝本人が語れる立場になく記録のみ
 
+> **📅 2026-10-31 06〜07時台（`x-morning-brief`・土曜）：追記1件（`research-20261031-01`＝Claude Code 2.1.314のCodeタブの放置時の自動要約）。キュー投入なし**（本人の画面で起きたか確かめられない＝合格ライン1を満たさない・感情が無い）。②ChatGPTは差分なし
+
 > **📅 2026-10-25 06〜07時台（`x-morning-brief`・日曜）：追記0件。**①CHANGELOG 2.1.310（`cleanupPeriodDays`をとても大きい値にすると最近のファイルが消えることがあった不具合の修正＝no.76が勧める設定に関わるが、本人は設定しておらず閾値も不明）＝記録のみ ②差分なし。期限内の「リサーチ由来」の行は無し（`research-20261022-01`は10/24で期限切れ）
 
 > **📅 2026-10-23 06〜07時台（`x-morning-brief`・金曜）：追記0件。**①Agent Skillsの財団への寄贈（使う側は変わらない）・Google Cloud経由のClaude API・サブエージェントの記事（本人の材料は10/21のリプライで使用済み）＝記録のみ ②差分なし。`research-20261021-01`（チャットのロック）は本日10/23が期限・本人の画面で未確認のまま
@@ -75,6 +77,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 | ID | 使う側の何が変わるか | 出典 | 鮮度期限 | 軸 |
 |---|---|---|---|---|
+| research-20261031-01 | Claude Code **2.1.314**（npm 10/30 09:12 JST）で、**VS CodeとClaude DesktopのCodeタブに「放置時の自動要約」**：20万トークン超の会話を放置すると要約され、キャッシュが切れていれば次のメッセージでその要約が使われる。CHANGELOG verbatim `Added idle compaction to VS Code and Claude Desktop's Code tab: a 200K+ token conversation left idle is summarized, and the summary is used on your next message if the prompt cache has expired`。**使う側の何が変わるか**：Codeタブで長い会話を置いたまま戻ると、続きは要約から始まる（本人はCodeタブが主）。⚠️ 本人の画面でいつ起きたかは見えない＝「使った」「起きた」と書かない。出すなら本人が放置後に要約された日に実話で | [CHANGELOG](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) | 〜2026-11-02 | ② |
 | ~~research-20261028-01~~（→ `RULE1800-01`で消化・投稿の2行目に使った） | Claude Code 2.1.312（10/28）で、**とても大きいCLAUDE.md・ルールファイルを先頭だけ見て丸ごと書き直してしまう不具合を修正**。書き込み時に「全部読むか部分編集に」と求めるようになった。本人のルールは1,800行・キューは4,200行で当てはまる側だが、上書きされた記録は無い（使うなら「怖くなって確かめた」側の話・確かめた事実が要る） | [CHANGELOG 2.1.312](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) verbatim `Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start` | 〜10/31 | ② |
 | research-20261022-01（下書きは盲検不合格・言い換えるなら「毎朝まとめを届けるアプリ」から） | Anthropicの新アプリ「Claude Duet」（10/21）＝毎朝つないだアプリから大事なことをブリーフで届け、動く前に確認する。Pro・Maxに含まれ使用量は共通。**順番待ち・まず米国から＝本人は使えない**。本人は同じ形（Claude Codeの定期実行で毎朝6:30に投稿候補・リプライ先を出し、押すのは人）を自作して回している | [claude.com/resources/articles/claude-duet](https://claude.com/resources/articles/claude-duet) `Each morning, it sends you a short brief on the most important items across your connected apps.` `starting with US Pro and Max subscribers` | 〜10/24 | ② |
 

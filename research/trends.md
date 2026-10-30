@@ -1,9 +1,20 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-30
+最終更新: 2026-10-31
 
 
 ---
+
+## [2026-10-31] 調査結果（デイリー・土曜）
+
+- npm：**2.1.314**（10/30 00:12 UTC・latest）と**2.1.315**（10/30 21:05 UTC公開・CHANGELOGにはまだ節なし）。CHANGELOGの先頭は`## 2.1.314`
+  - 使う側に関わるもの：verbatim `Added idle compaction to VS Code and Claude Desktop's Code tab: a 200K+ token conversation left idle is summarized, and the summary is used on your next message if the prompt cache has expired` → Codeタブで20万トークン超の会話を放置すると要約され、キャッシュ切れなら次の発言で要約が使われる＝`ideas.md` `research-20261031-01`（本人の画面で起きたか未確認＝キュー投入なし）
+  - ほか：`permissions.blockWritesOutsideWorkingDirectories`の追加／「使用量の上限で自動で続ける」が3回を超えて続く不具合の修正／`/upgrade`がApp Store・Google Play課金のプランで変更先を案内するよう修正 ほか不具合修正多数＝記録のみ
+- Claude Appsリリースノート：最新はOctober 21のまま（curl）／Newsroom：新着なし（public-benefit-fund・s1-secのまま）
+- claude.com/blog（実Chrome・日本語の記事一覧）：10/28の3本のあと新着なし
+- @ClaudeDevs（実Chrome）：10/30に2件＝Claude APIのリクエスト上限を32MB→より大きく・20枚超の画像で1枚あたり2000px→3000px＝API利用者向け・本人の使い方は変わらない＝記録のみ
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（実Chromeで読むだけ）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-30] 調査結果（デイリー・金曜）
 

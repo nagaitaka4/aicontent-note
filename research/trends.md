@@ -1,9 +1,20 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-10-31
+最終更新: 2026-11-01
 
 
 ---
+
+## [2026-11-01] 調査結果（デイリー・日曜）
+
+- npm：**2.1.316**（10/31 00:42 UTC・latest）。CHANGELOGの先頭は`## 2.1.316`（2.1.315の節はなし）
+  - 使う側に関わるもの：verbatim `Deprecated fast mode for Opus 4.8 as of October 30, 2026; it will be removed on November 30, 2026.` → Opus 4.8の高速モードは11/30で終了（Opus 5.5へ移れば高速モードは続く）＝本人はOpus 5.5なので影響なし＝記録のみ
+  - ほか：`CLAUDE_CODE_DISABLE_ULTRATHINK`／`CLAUDE_CODE_SUBAGENT_EFFORT`の追加／見えない文字を含むプロンプトがEnter2回必要だった不具合の修正／Enterprise向けのグループ共有の月予算 ほか＝記録のみ
+- Claude Appsリリースノート：最新はOctober 21のまま（curl）／Newsroom：新着なし（public-benefit-fund・s1-secのまま）
+- claude.com/blog（実Chrome・日本語の記事一覧）：10/28の3本のあと新着なし
+- @ClaudeDevs（実Chrome）：10/29（UTC）のAPIのリクエスト上限の2件のあと新着なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（実Chromeで読むだけ）／@ClaudeDevs ✅（実Chromeで読むだけ）
+
 
 ## [2026-10-31] 調査結果（デイリー・土曜）
 

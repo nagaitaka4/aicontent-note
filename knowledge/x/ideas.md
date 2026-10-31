@@ -61,6 +61,8 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 **基準に満たないものはここに入れない**（research/配下への記録だけで止める）。
 
+> **📅 2026-11-01 06〜07時台（`x-morning-brief`・日曜）：追記0件。**①Claude Code 2.1.316（Opus 4.8の高速モードを11/30で終了・本人はOpus 5.5で影響なし）・Apps 10/21・Newsroom・blog 10/28・@ClaudeDevs 10/29のまま ②ChatGPT 10/30「スマホアプリで2アカウントを切り替え」（`rolling out`・本人は複数アカウントなし）＝どちらも使う側が変わらない＝記録のみ。期限内の生存行：`research-20261031-01`（Codeタブの放置時の自動要約・期限11/2・本人の画面で未確認＝キュー投入なしのまま）
+
 > **📅 2026-10-30 06〜07時台（`x-morning-brief`・金曜）：追記0件。**①Claude Code・Anthropicは差分なし（npm 2.1.312のまま・Apps 10/21・Newsroom・blog 10/28・@ClaudeDevs 10/23のまま）②ChatGPT 10/29「Pro 100・Pro 500のWork／Codexの枠を2倍・Pro 200の削減を撤回」＝Plusは対象外で本人の画面は変わらない＝記録のみ（`research/ai-tools.md`）
 
 > **📅 2026-10-29 06〜07時台（`x-morning-brief`・木曜）：追記0件。**①Claude Code・Anthropicは差分なし（npm 2.1.312のまま・Apps 10/21のまま・@ClaudeDevs新着なし）。claude.com/blogの10/28分はEnterprise・法務・導入事例＝記録のみ ②ChatGPT「Texting your dot」（10/28・米国Proのベータ）＝日本の本人は使えない＝記録のみ

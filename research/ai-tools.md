@@ -7,6 +7,7 @@
 ## [2026-11-01] 調査結果（デイリー・日曜）
 
 - **ChatGPTリリースノート October 30, 2026「Account switching on iOS and Android」**（実Chrome・[公式](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)）：verbatim `Account switching is rolling out to the ChatGPT iOS and Android apps. You can stay signed in to up to 2 ChatGPT accounts at a time and switch between them without signing out.` → スマホアプリで2つのアカウントをログインしたまま切り替えられる（`rolling out`＝順次）。本人は複数アカウントを使っていない＝記録のみ
+- **Xの話題（公式発表なし）**：「ChatGPTも12月から共通の使用制限になるっぽい」（[@hikawoai](https://x.com/hikawoai/status/2116104833879155109)・10/30・32万表示・支払い画面の注意書きの報告・本人の日本アカウントでは未確認）。海外報告の文言＝`Starting in December, plan usage will have a shared limit across all of ChatGPT and Codex.`（[Windows Report](https://windowsreport.com/openai-likely-to-make-chatgpt-and-codex-share-usage-limits-starting-in-december/)）。OpenAIのリリースノート・ヘルプには11/1朝時点で記載なし＝**未確認**。Xネタ`CHATLIM-01`（「かも、と話題」で書いた）
 - 10月の見出し＝10/30・10/29（2件）・10/28・10/27・10/26・10/21・10/20・10/16・10/15・10/9・10/7・10/6・10/2・10/1（過去日付の追加なし）
 
 

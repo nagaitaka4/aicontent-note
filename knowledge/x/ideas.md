@@ -61,7 +61,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 **基準に満たないものはここに入れない**（research/配下への記録だけで止める）。
 
-> **📅 2026-11-01 06〜07時台（`x-morning-brief`・日曜）：追記0件。**①Claude Code 2.1.316（Opus 4.8の高速モードを11/30で終了・本人はOpus 5.5で影響なし）・Apps 10/21・Newsroom・blog 10/28・@ClaudeDevs 10/29のまま ②ChatGPT 10/30「スマホアプリで2アカウントを切り替え」（`rolling out`・本人は複数アカウントなし）＝どちらも使う側が変わらない＝記録のみ。期限内の生存行：`research-20261031-01`（Codeタブの放置時の自動要約・期限11/2・本人の画面で未確認＝キュー投入なしのまま）
+> **📅 2026-11-01 06〜07時台（`x-morning-brief`・日曜）：追記1件（`research-20261101-01`＝Xで話題の「ChatGPTも12月から共通の上限かも」・公式発表なし→`CHATLIM-01`で消化）。**①Claude Code 2.1.316（Opus 4.8の高速モードを11/30で終了・本人はOpus 5.5で影響なし）・Apps 10/21・Newsroom・blog 10/28・@ClaudeDevs 10/29のまま ②ChatGPT 10/30「スマホアプリで2アカウントを切り替え」（`rolling out`・本人は複数アカウントなし）＝どちらも使う側が変わらない＝記録のみ。期限内の生存行：`research-20261031-01`（Codeタブの放置時の自動要約・期限11/2・本人の画面で未確認＝キュー投入なしのまま）
 
 > **📅 2026-10-30 06〜07時台（`x-morning-brief`・金曜）：追記0件。**①Claude Code・Anthropicは差分なし（npm 2.1.312のまま・Apps 10/21・Newsroom・blog 10/28・@ClaudeDevs 10/23のまま）②ChatGPT 10/29「Pro 100・Pro 500のWork／Codexの枠を2倍・Pro 200の削減を撤回」＝Plusは対象外で本人の画面は変わらない＝記録のみ（`research/ai-tools.md`）
 
@@ -79,6 +79,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 | ID | 使う側の何が変わるか | 出典 | 鮮度期限 | 軸 |
 |---|---|---|---|---|
+| ~~research-20261101-01~~（→ `CHATLIM-01`で消化） | **ChatGPTも12月から、チャットを含めた全体で共通の使用上限になるかも**（支払い画面の注意書き`Starting in December, plan usage will have a shared limit across all of ChatGPT and Codex.`の報告・@hikawoai 32万表示・日本の画面では未確認）→ 雑談を量を気にせずChatGPTに逃がしていた使い方が変わるかも。**公式発表なし** | [@hikawoai](https://x.com/hikawoai/status/2116104833879155109)・[Windows Report](https://windowsreport.com/openai-likely-to-make-chatgpt-and-codex-share-usage-limits-starting-in-december/) | 11/2 | ② |
 | research-20261031-01 | Claude Code **2.1.314**（npm 10/30 09:12 JST）で、**VS CodeとClaude DesktopのCodeタブに「放置時の自動要約」**：20万トークン超の会話を放置すると要約され、キャッシュが切れていれば次のメッセージでその要約が使われる。CHANGELOG verbatim `Added idle compaction to VS Code and Claude Desktop's Code tab: a 200K+ token conversation left idle is summarized, and the summary is used on your next message if the prompt cache has expired`。**使う側の何が変わるか**：Codeタブで長い会話を置いたまま戻ると、続きは要約から始まる（本人はCodeタブが主）。⚠️ 本人の画面でいつ起きたかは見えない＝「使った」「起きた」と書かない。出すなら本人が放置後に要約された日に実話で | [CHANGELOG](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) | 〜2026-11-02 | ② |
 | ~~research-20261028-01~~（→ `RULE1800-01`で消化・投稿の2行目に使った） | Claude Code 2.1.312（10/28）で、**とても大きいCLAUDE.md・ルールファイルを先頭だけ見て丸ごと書き直してしまう不具合を修正**。書き込み時に「全部読むか部分編集に」と求めるようになった。本人のルールは1,800行・キューは4,200行で当てはまる側だが、上書きされた記録は無い（使うなら「怖くなって確かめた」側の話・確かめた事実が要る） | [CHANGELOG 2.1.312](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) verbatim `Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start` | 〜10/31 | ② |
 | research-20261022-01（下書きは盲検不合格・言い換えるなら「毎朝まとめを届けるアプリ」から） | Anthropicの新アプリ「Claude Duet」（10/21）＝毎朝つないだアプリから大事なことをブリーフで届け、動く前に確認する。Pro・Maxに含まれ使用量は共通。**順番待ち・まず米国から＝本人は使えない**。本人は同じ形（Claude Codeの定期実行で毎朝6:30に投稿候補・リプライ先を出し、押すのは人）を自作して回している | [claude.com/resources/articles/claude-duet](https://claude.com/resources/articles/claude-duet) `Each morning, it sends you a short brief on the most important items across your connected apps.` `starting with US Pro and Max subscribers` | 〜10/24 | ② |

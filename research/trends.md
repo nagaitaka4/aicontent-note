@@ -11,7 +11,9 @@
 - Claude Appsリリースノート：記事の更新日は「October 30, 2026」に変わったが、エントリの最新はOctober 21（Claude Duet）のまま＝新しい項目なし（curl）／Newsroom：新着なし（public-benefit-fund・announcementsのまま）
 - claude.com/blog（実Chrome・日本語の記事一覧）：10/28の3本のあと新着なし
 - @ClaudeDevs（実Chrome）：10/30（JST）のAPIのリクエスト上限の2件のあと新着なし
-- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（実Chromeで読むだけ）／@ClaudeDevs ✅（実Chromeで読むだけ）
+- **🆕（10/31発表・10/31と11/1の巡回で拾えていなかった）Maxプランの名前変更とUltraの5時間制限の撤廃**（[@claudeai 10/31 02:29 JST・677万表示](https://x.com/claudeai/status/2116220869479428500)・[料金ページ](https://claude.com/pricing)・本日curl）：verbatim `We’re renaming our Max plans: Max 5x → Max / Max 20x → Ultra / Max is still $100/month, and Ultra is still $200.`／`We’re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing subscribers. Newer accounts keep a temporary limit until they’re verified`／`Weekly limits remain unchanged.` 料金ページ：Max＝`5x Pro usage every 5 hours and every week`・Ultra＝`No 5-hour limit`・`10x Pro usage every week`・`$200 a month in API credits, up from $100 on Max`・`No 5-hour limit for verified accounts`・`Prices shown don’t include applicable tax.` → **本人のプラン（旧Max 5x・税込み月110ドル）は名前が「Max」になるだけ。上のプラン（旧Max 20x・税込み月220ドル）は5時間の制限なし。週の上限はどのプランも変わらない。**Xの話題欄にも「Anthropic、Claude Ultraプランで5時間制限を撤廃」（2.5万件のポスト）。返信には「20x→10xの表記に変わった＝実質半分では」という反発もある（公式は週の上限は変わらないと説明）＝`ideas.md` `research-20261102-01`
+  - ⚠️ 巡回の漏れ：Appsリリースノート・Newsroom・blog・@ClaudeDevsのどれにも出ず、**@claudeaiと料金ページにだけ**出ていた。見る面に`@claudeai`と`claude.com/pricing`を足す必要がある（X本部へ報告）
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（実Chromeで読むだけ）／@ClaudeDevs ✅（実Chromeで読むだけ）／**@claudeai ✅（実Chromeで読むだけ・今回から）／claude.com/pricing ✅（curl・今回から）**
 
 
 ## [2026-11-01] 調査結果（デイリー・日曜）

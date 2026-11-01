@@ -61,7 +61,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 **基準に満たないものはここに入れない**（research/配下への記録だけで止める）。
 
-> **📅 2026-11-02 06〜07時台（`x-morning-brief`・月曜）：追記0件。**①Claude Code 2.1.316のまま・Apps 10/21・Newsroom・blog 10/28・@ClaudeDevs 10/30のまま ②ChatGPT 10/30のまま・「12月の共通上限」は公式の記載なし（噂のまま）＝差分なし。`CHATLIM-01`は11/1にXに出なかった＝🚫見送り（同じ材料も出さない）。期限内の生存行：`research-20261031-01`（Codeタブの放置時の自動要約・期限11/2・本人の画面で未確認＝キュー投入なしのまま）
+> **📅 2026-11-02 06〜07時台（`x-morning-brief`・月曜）：追記1件（`research-20261102-01`＝10/31のMaxプランの名前変更とUltraの5時間制限の撤廃・巡回の面〔@claudeai・料金ページ〕に無く2日遅れで拾った）→ 本日の投稿候補`ULTRA-01`で消化。**①Claude Code 2.1.316のまま・Apps 10/21・Newsroom・blog 10/28・@ClaudeDevs 10/30のまま ②ChatGPT 10/30のまま・「12月の共通上限」は公式の記載なし（噂のまま）＝差分なし。`CHATLIM-01`は11/1にXに出なかった＝🚫見送り（同じ材料も出さない）。期限内の生存行：`research-20261031-01`（Codeタブの放置時の自動要約・期限11/2・本人の画面で未確認＝キュー投入なしのまま）
 
 > **📅 2026-11-01 06〜07時台（`x-morning-brief`・日曜）：追記1件（`research-20261101-01`＝Xで話題の「ChatGPTも12月から共通の上限かも」・公式発表なし→`CHATLIM-01`で消化）。**①Claude Code 2.1.316（Opus 4.8の高速モードを11/30で終了・本人はOpus 5.5で影響なし）・Apps 10/21・Newsroom・blog 10/28・@ClaudeDevs 10/29のまま ②ChatGPT 10/30「スマホアプリで2アカウントを切り替え」（`rolling out`・本人は複数アカウントなし）＝どちらも使う側が変わらない＝記録のみ。期限内の生存行：`research-20261031-01`（Codeタブの放置時の自動要約・期限11/2・本人の画面で未確認＝キュー投入なしのまま）
 
@@ -81,6 +81,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 | ID | 使う側の何が変わるか | 出典 | 鮮度期限 | 軸 |
 |---|---|---|---|---|
+| ~~research-20261102-01~~（→ `ULTRA-01`で消化） | **Claudeのプランの名前が変わり、上のプラン（旧Max 20x→「Ultra」・月200ドル＋税）は5時間ごとの制限がなくなった**（認証済みのアカウント・10/31から順に）。**週の上限はどのプランも変わらない。**旧Max 5xは「Max」（月100ドル＋税）で中身は同じ → 本人（Max・税込み110ドル）は名前が変わるだけ。本人が止まるのは週の上限（10/27`IPO27-01`で「上のプランは月220ドル、高すぎ」と書いた＝続き物） | [@claudeai 10/31](https://x.com/claudeai/status/2116220869479428500)・[料金ページ](https://claude.com/pricing) | 11/3 | ② |
 | ~~research-20261101-01~~（→ `CHATLIM-01`で消化） | **ChatGPTも12月から、チャットを含めた全体で共通の使用上限になるかも**（支払い画面の注意書き`Starting in December, plan usage will have a shared limit across all of ChatGPT and Codex.`の報告・@hikawoai 32万表示・日本の画面では未確認）→ 雑談を量を気にせずChatGPTに逃がしていた使い方が変わるかも。**公式発表なし** | [@hikawoai](https://x.com/hikawoai/status/2116104833879155109)・[Windows Report](https://windowsreport.com/openai-likely-to-make-chatgpt-and-codex-share-usage-limits-starting-in-december/) | 11/2 | ② |
 | research-20261031-01 | Claude Code **2.1.314**（npm 10/30 09:12 JST）で、**VS CodeとClaude DesktopのCodeタブに「放置時の自動要約」**：20万トークン超の会話を放置すると要約され、キャッシュが切れていれば次のメッセージでその要約が使われる。CHANGELOG verbatim `Added idle compaction to VS Code and Claude Desktop's Code tab: a 200K+ token conversation left idle is summarized, and the summary is used on your next message if the prompt cache has expired`。**使う側の何が変わるか**：Codeタブで長い会話を置いたまま戻ると、続きは要約から始まる（本人はCodeタブが主）。⚠️ 本人の画面でいつ起きたかは見えない＝「使った」「起きた」と書かない。出すなら本人が放置後に要約された日に実話で | [CHANGELOG](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) | 〜2026-11-02 | ② |
 | ~~research-20261028-01~~（→ `RULE1800-01`で消化・投稿の2行目に使った） | Claude Code 2.1.312（10/28）で、**とても大きいCLAUDE.md・ルールファイルを先頭だけ見て丸ごと書き直してしまう不具合を修正**。書き込み時に「全部読むか部分編集に」と求めるようになった。本人のルールは1,800行・キューは4,200行で当てはまる側だが、上書きされた記録は無い（使うなら「怖くなって確かめた」側の話・確かめた事実が要る） | [CHANGELOG 2.1.312](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) verbatim `Fixed Claude overwriting a very large CLAUDE.md, rules file or @-included file in a subdirectory after seeing only its start` | 〜10/31 | ② |

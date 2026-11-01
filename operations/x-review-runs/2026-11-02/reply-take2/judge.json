@@ -1,0 +1,48 @@
+[
+  {
+    "id": "take-r3",
+    "text": "「初手Claude Code」、非エンジニアの私もそこから入りました。Coworkは結局一度も使わないまま、ブログの記事づくりからWordPressへの入稿までClaude Codeで回してます。初心者にはCoworkが先と聞くたびに少し不安だったので、前言撤回うれしいです。",
+    "hash": "5113f4c102f89952",
+    "label": "A",
+    "on_core": 3,
+    "same_subject": 3,
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "lecture": 0,
+    "template": 0,
+    "glad_author": 4,
+    "glad_avg": 4.0,
+    "profile": 3,
+    "comments": [
+      "非エンジニアが初手Claude CodeでCoworkを使わず回している実例で、撤回の主張を裏づけている。『Coworkが先と聞くたびに不安だった』という本音もあって自然。",
+      "本題を裏付ける実例で、「Coworkが先と聞くたびに不安だった」という本音が人間らしくて良いです。",
+      "実例で前言撤回を裏付けているので本人はうれしい。最後の「前言撤回うれしいです」は少し上から評価しているようにも読めるので、「心強いです」程度にするとより自然。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "id": "take-r4",
+    "text": "非エンジニアですが、Coworkを開かないまま初手Claude Codeで始めて、ブログの記事づくりからWordPressへの入稿まで全部それで回してます。法律事務所みたいに慎重な現場の方に「初手Claude Code」と言ってもらえると心強いです。",
+    "hash": "dd289a5318b7f47a",
+    "label": "B",
+    "on_core": 3,
+    "same_subject": 3,
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "lecture": 0,
+    "template": 3,
+    "glad_author": 4,
+    "glad_avg": 3.67,
+    "profile": 2,
+    "comments": [
+      "『慎重な現場の方に言ってもらえると心強い』は持ち上げ方が少し型どおり。",
+      "肩書きを持ち上げる定型の締めに見え、少しお世辞っぽいです。",
+      "持ち上げ方が定型的でやや営業っぽい。"
+    ],
+    "pass": false,
+    "why": [
+      "決まり文句・AIっぽい3人"
+    ]
+  }
+]

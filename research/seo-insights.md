@@ -1,8 +1,22 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-10-26
+最終更新: 2026-11-02
 
 ---
+
+## [2026-11-02] 調査結果（フル版・月曜）
+
+**③は一次情報の新着1件（Search Central Blog 10/30＝robots.txtで複数のAI会社の「学習に使わないで」をまとめて伝える共通の書き方を、Googleも2027年に対応予定）。Googleの確定アップデートはなし。**
+
+- **【差分なし】Search Status Dashboard**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：最新は10/8に完了したSeptember 2026 spam updateのまま
+- **【差分なし】Search Central のドキュメント更新**（[Latest updates](https://developers.google.com/search/updates)・本日curl）：先頭は10/26（ユーザー投稿のスパム対策）のまま
+- **🆕 Search Central Blog 10/30「Supporting a shared AI training control for websites」**（[公式](https://developers.google.com/search/blog/2026/10/ai-training-control)・本日curl）：verbatim `Today, we're announcing our plans to support a shared AI training control in robots.txt.`／`When a website uses this policy token to opt out of training in its robots.txt file (and Google-Extended is not explicitly specified), Google plans to interpret that as if the publisher had disallowed Google-Extended.`／`We aim to support this new control along with other AI providers in 2027` → IETFのAIPREFの「共通の目印（policy token）」でAIの学習を断ると、GoogleはGoogle-Extendedを断ったのと同じに扱う予定。**検索の順位・表示とは別の話（Google-Extendedは検索に影響しない）・対応は2027年の予定・書き方はまだ草案**＝今日このメディアがやることは無い。記録のみ（記事の更新材料にする既存記事なし）
+- **blog.google 検索フィード**：新着なし（10/28のConnected Appsのまま）
+- WebSearch：AI Overviews・AI Modeの10月の確定した公式告知は見つからず（前回と同じ）
+
+### 記事側への影響
+- **訂正が必要な記事：なし**
+
 
 ## [2026-10-30] 調査結果（フル版・金曜）
 

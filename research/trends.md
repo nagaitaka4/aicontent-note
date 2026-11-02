@@ -1,9 +1,20 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-02
+最終更新: 2026-11-03
 
 
 ---
+
+## [2026-11-03] 調査結果（デイリー・火曜・文化の日）
+
+- npm：**2.1.316**のまま（10/31 00:42 UTC）＝新しい版なし／CHANGELOGの先頭も`## 2.1.316`＝差分なし
+- Claude Appsリリースノート：最新エントリはOctober 21（Claude Duet）のまま／Newsroom：新着なし（public-benefit-fund・S-1のまま）
+- claude.com/blog（実Chrome）：🆕11/2「Make long-running agents faster with message threads」（Messages APIの新機能・開発者向け）
+- **🆕 @ClaudeDevs 11/3 04:06 JST**（[投稿](https://x.com/ClaudeDevs/status/2117332451231956997)）：verbatim `We recently integrated message threads in Claude Code. On requests with 500K to 1M tokens, median time to first token is about 35% lower.` / `In long conversations, the median request went from about 800 KB to 1.8 KB.`（親：[Message threads are now in public beta on the Messages API](https://x.com/ClaudeDevs/status/2117332449382510884)）
+  - 判定：使う側の変化は「長い会話で返事が始まるまでが速くなる」だけ。料金・制限・使える範囲は変わらず、本人の画面で差を確かめる手段がない＝採用基準（軸②）に満たない＝記録のみ
+- @claudeai（実Chrome）：10/31のプラン名変更のあと新着なし／claude.com/pricing（curl）：変化なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（実Chrome）／Newsroom ✅（実Chrome）／claude.com/blog ✅／@ClaudeDevs ✅／@claudeai ✅／claude.com/pricing ✅（curl）
+
 
 ## [2026-11-02] 調査結果（デイリー・月曜）
 

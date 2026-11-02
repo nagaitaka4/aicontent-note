@@ -488,7 +488,7 @@ GSCで需要が見えているクラスタ（インデックス未登録326表�
 |---|---|---|
 | ChatGPT WorkとClaude Cowork、仕事で選ぶなら | 10/29に実験を始めたが「労力と内容が見合わない」で中止。Coworkを仕事で使っていない＝実況にならない | `operations/structure-drafts/chatgpt-work-claude-cowork-facts.md`（7・8節） |
 | Claude Codeは事務職の仕事に使えるか | 実験前提（事務の作業5つ×各3回）。Claudeの題 | 材料シート作成済み（10/26） |
-| ClaudeとChatGPTの文章は見分けられるか | 実験前提。TOP10 #2「AIっぽい文章の特徴と直し方」に置き換え | — |
+| ClaudeとChatGPTの文章は見分けられるか | 実験前提。TOP10 #2「AIっぽい文章の特徴と直し方」に置き換え（✅ 置き換え先は2026-11-02にno.78として公開・ai-like-writing-features-fix） | — |
 | ClaudeにPDFを読ませて大丈夫か（D-36） | 実験前提 | — |
 | Claudeにスクショを渡して大丈夫か（D-39） | 実験前提 | — |
 | ClaudeにExcelを任せて大丈夫か（D-38） | 実験前提 | — |

@@ -5,8 +5,8 @@ series_no:
 title: AIっぽい文章の特徴と直し方。直す前と後を並べた
 url: https://aicontent-note.com/ai-like-writing-features-fix/
 slug: ai-like-writing-features-fix
-status: draft
-date: 2026-10-30
+status: published
+date: 2026-11-02
 description: AIっぽい文章の特徴の1つは、普段なら動詞で言う所を、名詞や決まり文句にしていることです。人が直した前と後の文を並べ、1文に話を詰めこむ・同じ文末が続くといったほかの形、AIへの頼み方、無料のチェッカーで拾える所と拾えない所もまとめました。
 eyecatch: eyecatch_0078.png
 eyecatch_alt: AIっぽい文章の特徴と直し方と書いた題の下に、赤ペンで直した原稿を持つ男性と、ノートパソコンで作業する女性を描いたアイキャッチ画像

@@ -1,9 +1,18 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-03
+最終更新: 2026-11-04
 
 
 ---
+
+## [2026-11-04] 調査結果（デイリー・水曜）
+
+- 🆕 npm：**2.1.317**（11/3 08:57 JST）／CHANGELOGの先頭も`## 2.1.317`。使う側に関わりそうなもの：verbatim `Added a check that asks before a web or shell tool call sends your account email address to the network`（アカウントのメールアドレスがWebやシェル経由で外へ送られる前に確認が出る）／`Fixed a project's effortLevel setting being ignored by sessions that an app starts ahead of time and then opens in the project, such as new sessions in the desktop app's Code tab`（本リポジトリの設定に`effortLevel`は無い）。ほかは企業向け（ゲートウェイの費用レポート・OTel）と修正中心 → 本人の画面で差が見える変化ではない＝記録のみ
+- @ClaudeDevs（実Chrome）：🆕11/4 02:30 JST「October was a big month for Claude Code」（[10月のまとめ](https://x.com/ClaudeDevs/status/2117670658113155075)・24万表示）。中身は10月に出た機能の振り返り（放置した長い会話の自動要約＝`research-20261031-01`で記録済み・`ultrathink`で1回だけ`xhigh`＝10月のCHANGELOGで記録済み・長い会話を再開する前の5時間枠の警告＝CHANGELOGの過去の版で既出）＝新情報なし／🆕11/4 03:09 JST プラグインの自動接続とEnterprise向けの管理された認証（[投稿](https://x.com/ClaudeDevs/status/2117680635561312732)・プラグインを作る開発者・企業の管理者向け）＝記録のみ
+- @claudeai（実Chrome）：10/31のプラン名変更のあと新着なし／claude.com/pricing（curl）：`No 5-hour limit`の表記のまま＝変化なし
+- Claude Appsリリースノート（curl）：エントリの最新はOctober 21のまま／Newsroom（curl）：新着なし／claude.com/blog（実Chrome）：11/2のmessage threadsのあと新着なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（実Chrome）／@ClaudeDevs ✅（実Chrome）／@claudeai ✅（実Chrome）／claude.com/pricing ✅（curl）
+
 
 ## [2026-11-03] 調査結果（デイリー・火曜・文化の日）
 

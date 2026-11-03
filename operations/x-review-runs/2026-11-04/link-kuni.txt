@@ -1,0 +1,1 @@
+リンク先はClaude Codeの公式の更新履歴。該当の1行は「permissions.blockWritesOutsideWorkingDirectories を追加：Write・Edit・NotebookEdit は、どの許可モードでも作業ディレクトリ（追加した作業ディレクトリを含む）の外のパスへの書き込みを拒否する」。シェル（Bash）経由の書き込みは対象外。返信欄には「入れたい」「事故防止に地味に大きい」「導入後は必要な作業が止まらないか確かめると安心」が並ぶ。

@@ -1,9 +1,19 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-04
+最終更新: 2026-11-05
 
 
 ---
+
+## [2026-11-05] 調査結果（デイリー・木曜）
+
+- 🆕 npm：**2.1.318**（11/4 06:55 JST）／CHANGELOGの先頭も`## 2.1.318`。使う側に関わりそうなもの：verbatim `Added the date a stored claude.ai sign-in ends to claude auth status (loginExpiresAt)` / `Added a one-line stderr warning to claude -p text output, starting 10 days before a stored claude.ai sign-in ends`（`claude -p`＝定期実行で使う形。ログインが切れる10日前から警告）／`Fixed the "Now using usage credits" notice reappearing about every 30 seconds while a background subagent is running`。ほかは修正中心＝記録のみ
+- **🆕 @ClaudeDevs 11/5 04:29 JST**（[投稿](https://x.com/ClaudeDevs/status/2118063143167693011)・28万表示）：verbatim `Background subagents in Claude Code now use less of your usage limit.` / `A running subagent updates its status line every 30 seconds, and each update used to re-read its whole conversation. Now Haiku 5.5 writes it from short notes instead, so each update costs about 99% less.`（続き[投稿](https://x.com/ClaudeDevs/status/2118063144572772627)）`The subagent itself keeps its own model. Sessions with background subagents used about 5% less of the limit, so the same limit gets you about 6% more prompts.` / `It's live for most Pro, Max and Ultra users and for everyone on Team and Enterprise. Update to v2.1.316+.`
+  - 判定：**使う側の制限が変わる**（裏で別のAIを動かす使い方なら、同じ上限で約6%多く頼める）。⚠️ 条件：`most Pro, Max and Ultra users`＝全員ではない・v2.1.316以上・「約5%」「約6%」はバックグラウンドのサブエージェントがあるセッションの平均。本人の画面で差は見えない＝「増えたのを確かめた」とは書かない → `research-20261105-01`
+- @claudeai（実Chrome）：10/31のプラン名変更のあと新着なし／claude.com/pricing（curl）：`No 5-hour limit`の表記のまま＝変化なし
+- Claude Appsリリースノート（curl）：最新エントリはOctober 21のまま／Newsroom（curl）：新着なし（最新10/28）／claude.com/blog（curl）：🆕11/4「New agents and products for security, productivity, and creative work on Claude Marketplace」（企業向けのマーケットプレイス）＝記録のみ
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（curl）／@ClaudeDevs ✅（実Chrome）／@claudeai ✅（実Chrome）／claude.com/pricing ✅（curl）
+
 
 ## [2026-11-04] 調査結果（デイリー・水曜）
 

@@ -61,6 +61,8 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 **基準に満たないものはここに入れない**（research/配下への記録だけで止める）。
 
+> **📅 2026-11-06 06〜07時台（`x-morning-brief`・金曜）：追記1件（`research-20261106-01`＝ChatGPT Images 2.6：直すときに人物の服などが保たれやすい・参考画像の保存）→ 本人の画面で使えるか未確認のためキュー投入なし。**①Claude Apps 11/5（Enterprise向けの管理機能）・@claudeai 11/6 Personal Finance（米国のみ）＝記録のみ ②ChatGPT Images 2.6（11/4）
+
 > **📅 2026-11-05 06〜07時台（`x-morning-brief`・木曜）：追記1件（`research-20261105-01`＝裏で動く別のAI〔バックグラウンドのサブエージェント〕の状況表示が軽くなり、同じ上限で約6%多く頼める）→ `SUBAGT-01`としてキューへ（X本部11/2の「次」＝①か③のため本日の投稿候補にはしない・期限11/8）。**①Claude Code 2.1.318（ログインが切れる日の表示・`claude -p`の10日前の警告ほか＝記録のみ）・blog 11/4 Marketplace（企業向け）＝記録のみ ②ChatGPT 10/30のまま＝差分なし
 
 > **📅 2026-11-04 06〜07時台（`x-morning-brief`・水曜）：追記0件。**①Claude Code 2.1.317（メールアドレスが外へ送られる前の確認・Codeタブの`effortLevel`の修正ほか＝本人の画面で差が見えない）・@ClaudeDevs 11/4「10月のまとめ」（放置時の自動要約など既出）・プラグインの自動接続（開発者・企業向け）＝記録のみ ②ChatGPT 10/30のまま＝差分なし。期限内の生存行なし（`research-20261031-01`は期限11/2を超過・本人の画面で未確認のまま）
@@ -87,6 +89,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 | ID | 使う側の何が変わるか | 出典 | 鮮度期限 | 軸 |
 |---|---|---|---|---|
+| research-20261106-01 | **ChatGPTの画像生成が新しくなり（Images 2.6・11/4）、直すときに人物の服などが保たれやすくなった。**例は「背景を変えてもキャラクターの服が変わらない」。参考画像を保存して次のチャットで`@名前`で呼べる。GIFも作れる（順に提供）。**使う側の何が変わるか**：アイキャッチを直す往復（服や髪型が勝手に変わる）が減るかもしれない。本人はアイキャッチをChatGPTで作っていて、11/5もno.79で2回目を作り直した。⚠️ 対象プランの記載なし＝**本人の画面で使えるか未確認**（合格ライン3点の条件1）。次のアイキャッチ（no.80）で直しの往復が減ったかを見れば実体験になる | [ChatGPTリリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) November 4, 2026・verbatim `better at preserving details across edits, like a character’s outfit when you change the background` | 11/7（発表11/4から3日） | ② |
 | ~~research-20261105-01~~（→ `SUBAGT-01`でキュー化） | **Claude Codeで裏で動かす別のAI（バックグラウンドのサブエージェント）が、上限を食わなくなった。**30秒ごとの状況表示が毎回会話を丸ごと読み直していたのを、Haiku 5.5が短いメモから書く形に変えた（1回あたり約99%減）。サブエージェント自体のモデルは変わらない。**使う側の何が変わるか**：裏で別のAIを動かすセッションは上限の減りが約5%少なく、同じ上限で約6%多く頼める（本人は記事・X投稿のチェックを別のAIに読ませている）。verbatim `Sessions with background subagents used about 5% less of the limit, so the same limit gets you about 6% more prompts.` ⚠️ `live for most Pro, Max and Ultra users`＝全員ではない・v2.1.316以上・本人の画面で差は見えない＝「増えたのを確かめた」と書かない | [@ClaudeDevs 11/5](https://x.com/ClaudeDevs/status/2118063143167693011)・[続き](https://x.com/ClaudeDevs/status/2118063144572772627) | 〜2026-11-08 | ② |
 | ~~research-20261102-01~~（→ `ULTRA-01`で消化） | **Claudeのプランの名前が変わり、上のプラン（旧Max 20x→「Ultra」・月200ドル＋税）は5時間ごとの制限がなくなった**（認証済みのアカウント・10/31から順に）。**週の上限はどのプランも変わらない。**旧Max 5xは「Max」（月100ドル＋税）で中身は同じ → 本人（Max・税込み110ドル）は名前が変わるだけ。本人が止まるのは週の上限（10/27`IPO27-01`で「上のプランは月220ドル、高すぎ」と書いた＝続き物） | [@claudeai 10/31](https://x.com/claudeai/status/2116220869479428500)・[料金ページ](https://claude.com/pricing) | 11/3 | ② |
 | ~~research-20261101-01~~（→ `CHATLIM-01`で消化） | **ChatGPTも12月から、チャットを含めた全体で共通の使用上限になるかも**（支払い画面の注意書き`Starting in December, plan usage will have a shared limit across all of ChatGPT and Codex.`の報告・@hikawoai 32万表示・日本の画面では未確認）→ 雑談を量を気にせずChatGPTに逃がしていた使い方が変わるかも。**公式発表なし** | [@hikawoai](https://x.com/hikawoai/status/2116104833879155109)・[Windows Report](https://windowsreport.com/openai-likely-to-make-chatgpt-and-codex-share-usage-limits-starting-in-december/) | 11/2 | ② |

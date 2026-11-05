@@ -1,8 +1,15 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-05
+最終更新: 2026-11-06
 
 ---
+
+## [2026-11-06] 調査結果（デイリー・金曜）
+
+- **🆕 ChatGPTリリースノート November 4, 2026「Introducing ChatGPT Images 2.6」**（実Chrome・[公式](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・「Updated: 21 時間前」）：verbatim `Our new image generation model creates images faster and is better at preserving details across edits, like a character’s outfit when you change the background.` / `GIF creation is rolling out in ChatGPT.` / `Saved reference images let you reuse a photo in later chats.`
+  - 判定：**使う側の何が変わるか**＝画像を直すとき（背景だけ変える等）に人物の服などが保たれやすくなる・参考画像を保存して次のチャットで`@名前`で呼べる。⚠️ 対象プランの記載なし・GIFは`rolling out`＝本人の画面で使えるか未確認。本人はアイキャッチをChatGPTで作っている（no.79で11/5に2回目を作り直した）→ `research-20261106-01`
+- 10月の見出しは前回と同じで過去日付の追加なし
+
 
 ## [2026-11-05] 調査結果（デイリー・木曜）
 

@@ -1,9 +1,19 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-05
+最終更新: 2026-11-06
 
 
 ---
+
+## [2026-11-06] 調査結果（デイリー・金曜）
+
+- npm：**2.1.318**のまま（11/4 06:55 JST）／CHANGELOGの先頭も`## 2.1.318`＝差分なし
+- **🆕 Claude Appsリリースノート November 5, 2026**（[公式](https://support.claude.com/en/articles/12138966-release-notes)・curl）：verbatim `Claude Enterprise has new security and admin features, including a security center, inference hooks, centralized management, and additional access controls, several in beta.` ＝Enterprise向け＝記録のみ
+- **🆕 @claudeai 11/6 03:00 JST**（[投稿](https://x.com/claudeai/status/2118403114890137895)・実Chrome）：verbatim `Introducing Personal Finance in Claude, in beta in the US.` / `Access is read-only, and Claude can't move, manage, or invest your money.` / `Rolling out gradually in the US on the Pro, Max, and Ultra plans` ＝米国のみ・本人の画面で開けない＝記録のみ（採用基準の条件1を満たさない）
+- @ClaudeDevs（実Chrome）：11/5のバックグラウンドのサブエージェント（`research-20261105-01`）・11/4のプラグインの自動接続（開発者向け）のあと新着なし
+- Newsroom（curl）：新着なし（最新10/28）／claude.com/blog（curl）：先頭は10/22の記事のまま＝新着なし／claude.com/pricing（curl）：`No 5-hour limit`の表記のまま＝変化なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（curl）／@ClaudeDevs ✅（実Chrome）／@claudeai ✅（実Chrome）／claude.com/pricing ✅（curl）
+
 
 ## [2026-11-05] 調査結果（デイリー・木曜）
 

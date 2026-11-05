@@ -53,8 +53,13 @@ def main():
         ranks = [r["rank"].index(lab) + 1 for r in results]
         row = dict(it)
         row["avg"] = {k: round(sum(p[k] for p in posts) / n, 2) for k in KEYS}
-        row["unknown_readers"] = sum(1 for p in posts if p.get("unknown"))
-        row["unknown_terms"] = sorted({t for p in posts for t in p.get("unknown", [])})
+        # 2026-11-06：引用先にだけある言葉（本文に無い）は直せないので、合否に数えず参考に出す
+        quote = it.get("quote", "")
+        def own(t):
+            return not (quote and t in quote and t not in it["text"])
+        row["unknown_readers"] = sum(1 for p in posts if any(own(t) for t in p.get("unknown", [])))
+        row["unknown_terms"] = sorted({t for p in posts for t in p.get("unknown", []) if own(t)})
+        row["unknown_quote_only"] = sorted({t for p in posts for t in p.get("unknown", []) if not own(t)})
         row["news_votes"] = sum(1 for p in posts if p.get("news"))
         row["premise_missing"] = sum(1 for p in posts if isinstance(p.get("premise"), dict) and p["premise"].get("in_post") is False)
         row["premise_topics"] = [p["premise"].get("topic", "") for p in posts if isinstance(p.get("premise"), dict)]
@@ -76,6 +81,8 @@ def main():
         if r["kind"] != "candidate":
             continue
         why = []
+        if r.get("unknown_quote_only"):
+            r.setdefault("notes", []).append("引用先にだけある分からない言葉（合否に数えない）：" + "・".join(r["unknown_quote_only"]))
         if r["unknown_readers"] > 1:
             why.append(f"分からない言葉を挙げた読者{r['unknown_readers']}人：" + "・".join(r["unknown_terms"]))
         if r["news_votes"] > 1:
@@ -103,6 +110,8 @@ def main():
         if r["kind"] == "candidate" and not r["pass"]:
             for w in r["why"]:
                 print(f"         - {w}")
+        for w in r.get("notes", []):
+            print(f"         ・{w}")
     passed = [r for r in rows if r["kind"] == "candidate" and r["pass"]]
     for r in passed:
         (d / f"pass-{r['hash']}.txt").write_text(r["text"] + "\n", encoding="utf-8")

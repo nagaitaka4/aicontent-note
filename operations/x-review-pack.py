@@ -4,6 +4,9 @@
 使い方:
   python3 operations/x-review-pack.py 候補1.txt 候補2.txt 候補3.txt [--run 名前]
 
+  引用ポストで出す候補は、本文のあとに「---引用---」の行を置き、その下に引用する投稿を書く
+  （読者役には引用つきで見せる。ハッシュ＝ゲートで照合するのは本文だけ・2026-11-05）
+
 やること:
   1. 候補（2〜4本）に、基準の3本（sns/posts-stock.md の実物）を混ぜてシャッフルする
   2. 読者役3人ぶんの依頼文を書き出す（同じ並び・違う読者像）
@@ -51,12 +54,13 @@ Xのタイムラインを流し見しています。この投稿者のことは�
 - profile：この投稿を読んで、プロフィールを見に行くか（true/false）
 - news：ニュースの紹介に見えるか（true/false）。公式発表の要約＋最後に一言、の形なら true
 - person：書き手本人の決断・感情・失敗が入っているか（true/false）
+- premise：この投稿が受けている話・前提（誰かの意見・話題・「〜と言われる」など）を1文で（topic）。その話が投稿の中（引用している投稿を含む）に書いてあるか（in_post：true/false）。前提なしで成り立つ投稿なら topic は空・in_post は true。**読み手が好意的に補わないと分からない前提は false**
 - comment：どこで読む気が落ちたか、何があれば良くなるか（1〜2文）
 
 最後に、全部を「フォローしたくなる順」に並べてください（rank）。
 
 **回答はJSONだけを1つ返してください。前後に文章を書かないでください。**形：
-{{"posts": {{"A": {{"unknown": [], "stop": 3, "fun": 3, "follow": 3, "profile": false, "news": false, "person": true, "comment": ""}}, ...}}, "rank": ["A", ...]}}
+{{"posts": {{"A": {{"unknown": [], "stop": 3, "fun": 3, "follow": 3, "profile": false, "news": false, "person": true, "premise": {{"topic": "", "in_post": true}}, "comment": ""}}, ...}}, "rank": ["A", ...]}}
 
 {body}
 """
@@ -79,6 +83,17 @@ def baseline_text(pid):
     return norm(m.group(1))
 
 
+QUOTE_SEP = "---引用---"
+
+
+def split_quote(raw):
+    """本文と引用（あれば）に分ける。ハッシュは本文だけで取る"""
+    if QUOTE_SEP in raw:
+        body, quote = raw.split(QUOTE_SEP, 1)
+        return norm(body), norm(quote)
+    return norm(raw), ""
+
+
 def main():
     args = sys.argv[1:]
     run = None
@@ -91,8 +106,8 @@ def main():
 
     items = []
     for p in args:
-        t = norm(Path(p).read_text(encoding="utf-8"))
-        items.append({"kind": "candidate", "id": Path(p).stem, "text": t, "hash": text_hash(t)})
+        t, q = split_quote(Path(p).read_text(encoding="utf-8"))
+        items.append({"kind": "candidate", "id": Path(p).stem, "text": t, "quote": q, "hash": text_hash(t)})
     for b in BASELINES:
         t = baseline_text(b)
         items.append({"kind": "baseline", "id": b, "text": t, "hash": text_hash(t)})
@@ -108,7 +123,13 @@ def main():
     d = day / run
     d.mkdir(parents=True, exist_ok=True)
 
-    body = "\n\n".join(f"【{it['label']}】\n{it['text']}" for it in items)
+    def show(it):
+        s = f"【{it['label']}】\n{it['text']}"
+        if it.get("quote"):
+            s += "\n\n（この投稿は次の投稿を引用している）\n> " + it["quote"].replace("\n", "\n> ")
+        return s
+
+    body = "\n\n".join(show(it) for it in items)
     for n, persona in enumerate(PERSONAS, 1):
         (d / f"prompt-{n}.md").write_text(
             PROMPT.format(persona=persona, labels=f"{labels[0]}〜{labels[-1]}", body=body),

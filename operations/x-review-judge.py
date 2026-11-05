@@ -11,6 +11,9 @@
 合格の条件（2026-09-30改訂：盲検は「通じるか」だけを見る）:
   1. 分からない言葉・前提を挙げた読者が1人以下
   2. ニュースの紹介に見えると答えた読者が1人以下
+  3. 受けている話・前提が投稿の中に書いていないと答えた読者が1人以下（2026-11-05新設）
+     理由：「AIの手柄を横取りしてる感覚はまったくない」が、誰も言っていない前提を否定しているのに
+     「分からない言葉」には挙がらず3人とも1位で通った（ユーザー指摘「いきなり、AIの手柄を横取りしてる話、いつどこででましたか？」）
 止まる・面白い・フォロー・順位は**参考表示だけ**で合否に使わない。
 理由：2026-09-30、AIの読者役は1,494いいねの実物に「いいねしない」と答え、ユーザーが
 「全然おもしろくない」と却下した投稿を1位にした。面白さの判定は、knowledge/x/model-posts.md
@@ -53,6 +56,9 @@ def main():
         row["unknown_readers"] = sum(1 for p in posts if p.get("unknown"))
         row["unknown_terms"] = sorted({t for p in posts for t in p.get("unknown", [])})
         row["news_votes"] = sum(1 for p in posts if p.get("news"))
+        row["premise_missing"] = sum(1 for p in posts if isinstance(p.get("premise"), dict) and p["premise"].get("in_post") is False)
+        row["premise_topics"] = [p["premise"].get("topic", "") for p in posts if isinstance(p.get("premise"), dict)]
+        row["premise_asked"] = all(isinstance(p.get("premise"), dict) for p in posts)
         row["person_votes"] = sum(1 for p in posts if p.get("person"))
         row["profile_votes"] = sum(1 for p in posts if p.get("profile"))
         row["avg_rank"] = round(sum(ranks) / n, 2)
@@ -70,6 +76,10 @@ def main():
             why.append(f"分からない言葉を挙げた読者{r['unknown_readers']}人：" + "・".join(r["unknown_terms"]))
         if r["news_votes"] > 1:
             why.append(f"ニュースの紹介に見える{r['news_votes']}人")
+        if not r["premise_asked"]:
+            why.append("前提の確認（premise）が無い返答がある＝古い依頼文。x-review-pack.pyで作り直す")
+        elif r["premise_missing"] > 1:
+            why.append(f"受けている話が投稿の中に無い{r['premise_missing']}人：" + "／".join(t for t in r["premise_topics"] if t))
         r["pass"] = not why
         r["why"] = why
 

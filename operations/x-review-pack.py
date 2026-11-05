@@ -54,13 +54,13 @@ Xのタイムラインを流し見しています。この投稿者のことは�
 - profile：この投稿を読んで、プロフィールを見に行くか（true/false）
 - news：ニュースの紹介に見えるか（true/false）。公式発表の要約＋最後に一言、の形なら true
 - person：書き手本人の決断・感情・失敗が入っているか（true/false）
-- premise：この投稿が受けている話・前提（誰かの意見・話題・「〜と言われる」など）を1文で（topic）。その話が投稿の中（引用している投稿を含む）に書いてあるか（in_post：true/false）。前提なしで成り立つ投稿なら topic は空・in_post は true。**読み手が好意的に補わないと分からない前提は false**
+- premise：この投稿が受けている話・前提（誰かの意見・話題・「〜と言われる」など）を1文で（topic）。その話が投稿の中（引用している投稿を含む）に書いてあるか（in_post：true/false）。前提なしで成り立つ投稿なら topic は空・in_post は true。**読み手が好意的に補わないと分からない前提は false**。あわせて、投稿が否定・反論している感覚や考え（「〜とは思わない」「〜な感覚はない」の「〜」）を書き（denied）、それがあなたを含むふつうの人が持っている感覚か（common：true/false）。**引用先の1人だけの考えを、みんなが持っている前提のように否定しているなら false**。何も否定していなければ denied は空・common は true
 - comment：どこで読む気が落ちたか、何があれば良くなるか（1〜2文）
 
 最後に、全部を「フォローしたくなる順」に並べてください（rank）。
 
 **回答はJSONだけを1つ返してください。前後に文章を書かないでください。**形：
-{{"posts": {{"A": {{"unknown": [], "stop": 3, "fun": 3, "follow": 3, "profile": false, "news": false, "person": true, "premise": {{"topic": "", "in_post": true}}, "comment": ""}}, ...}}, "rank": ["A", ...]}}
+{{"posts": {{"A": {{"unknown": [], "stop": 3, "fun": 3, "follow": 3, "profile": false, "news": false, "person": true, "premise": {{"topic": "", "in_post": true, "denied": "", "common": true}}, "comment": ""}}, ...}}, "rank": ["A", ...]}}
 
 {body}
 """

@@ -59,6 +59,10 @@ def main():
         row["premise_missing"] = sum(1 for p in posts if isinstance(p.get("premise"), dict) and p["premise"].get("in_post") is False)
         row["premise_topics"] = [p["premise"].get("topic", "") for p in posts if isinstance(p.get("premise"), dict)]
         row["premise_asked"] = all(isinstance(p.get("premise"), dict) for p in posts)
+        # 2026-11-06：引用先の1人の考えを、みんなの前提のように否定していないか
+        row["denied_uncommon"] = sum(1 for p in posts if isinstance(p.get("premise"), dict) and p["premise"].get("common") is False)
+        row["denied_views"] = [p["premise"].get("denied", "") for p in posts if isinstance(p.get("premise"), dict)]
+        row["common_asked"] = all(isinstance(p.get("premise"), dict) and "common" in p["premise"] for p in posts)
         row["person_votes"] = sum(1 for p in posts if p.get("person"))
         row["profile_votes"] = sum(1 for p in posts if p.get("profile"))
         row["avg_rank"] = round(sum(ranks) / n, 2)
@@ -80,6 +84,10 @@ def main():
             why.append("前提の確認（premise）が無い返答がある＝古い依頼文。x-review-pack.pyで作り直す")
         elif r["premise_missing"] > 1:
             why.append(f"受けている話が投稿の中に無い{r['premise_missing']}人：" + "／".join(t for t in r["premise_topics"] if t))
+        if not r["common_asked"]:
+            why.append("否定している考えの確認（common）が無い返答がある＝古い依頼文。x-review-pack.pyで作り直す")
+        elif r["denied_uncommon"] > 1:
+            why.append(f"ふつうの人が持っていない感覚を否定している{r['denied_uncommon']}人：" + "／".join(t for t in r["denied_views"] if t))
         r["pass"] = not why
         r["why"] = why
 

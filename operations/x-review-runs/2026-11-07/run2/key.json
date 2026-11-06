@@ -1,0 +1,47 @@
+[
+  {
+    "kind": "candidate",
+    "id": "c5",
+    "text": "ブログの見出し画像、何を描かせるかはClaudeに考えさせて、絵はChatGPTに頼む運用がかなり良いです。\nChatGPTへの頼み方もClaudeが書くので、私はClaudeと話すだけ。",
+    "quote": "",
+    "hash": "606d952140e4847f",
+    "label": "A"
+  },
+  {
+    "kind": "candidate",
+    "id": "c4",
+    "text": "ブログの見出し画像、何を描かせるかはClaudeに考えさせて、絵はChatGPTに描いてもらう運用がかなり良いです。\n私はClaudeと話して、出てきた頼み方の文章をChatGPTに貼るだけ。\nどっちのAIが優れているかより、相性の話だなと思ってます。",
+    "quote": "",
+    "hash": "4787a9278f02e2c4",
+    "label": "B"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "C"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E"
+  },
+  {
+    "kind": "candidate",
+    "id": "c6",
+    "text": "毎日AIに任せているブログ、AIに渡す作業の指示書に何を書くと効くのか。\n私の指示書を見ながら、書き方のコツを8つにまとめました。\n個人的に気に入ってるのは「候補を出すだけ。判断と実行は人がやる」の一文です。\nClaudeでの作り方は、記事から👇\nhttps://aicontent-note.com/agent-skills-how-to-create/",
+    "quote": "",
+    "hash": "cecb739a23325fdd",
+    "label": "F"
+  }
+]

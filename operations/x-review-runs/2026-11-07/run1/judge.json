@@ -1,0 +1,269 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったという変更",
+      "ChatGPTの無料プランで無制限にチャットできるようになった",
+      "ChatGPTの無料プランが無制限になったという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "迷った末にPlusを続けた決断は見えるが、「画像生成・速度・モデル・・・」が並べただけで弱い。何に一番お金を払う価値を感じたか、1つ言い切ってくれると共感しやすい。",
+      "有料プランで迷っている自分にはドンピシャの話題で止まった。ただ「安定して使いたい」がPlusのどこで得られるのかが曖昧で、結局いくら払う価値があったのかが分かればもっと刺さる。",
+      "前半はニュースの要約で、迷った話が後半に少し出るだけです。Plusを続けた決め手を、自分の使い方の具体例で1つ書いてくれたら読む価値が出ます。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 3,
+    "premise_topics": [
+      "投稿者が8/21に「無料でもマイGPTは使える」と書いた過去の投稿",
+      "ChatGPTのマイGPTが終了するという発表と、本人が以前「無料でもマイGPTは使える」と書いていたこと",
+      "8/21に本人が「無料でもマイGPTは使える」と書いた投稿"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.0,
+    "comments": [
+      "前半は公式発表の要約で、スキル・カスタムアクションが何なのか分からず読む気が落ちた。「書いたばかりでした＞＜」の気まずさはいいので、そこをもっと前に出すと人が見える。",
+      "前半は公式発表の要約で、最後に一言の形。8/21の投稿を知らないので「＞＜」の気まずさが伝わりきらず、困ったことや次にどうするかが一言あれば人柄が出る。",
+      "終了のニュースで手は止まりましたが、スキル・カスタムアクションの話から仕様の説明になって読む気が落ちました。「＞＜」の失敗談は人柄が出ていて良いので、そちらを先頭にしたほうが面白いです。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c3",
+    "text": "AIに任せたブログ、なぜ毎朝同じ手順で回るのか。\n手順書を分析して、書き方のコツを8つにまとめました。\n保存して、手順書づくりに使ってみてください。\nClaudeでの作り方は記事から👇\nhttps://aicontent-note.com/agent-skills-how-to-create/",
+    "quote": "",
+    "hash": "58350cd5d98a9d09",
+    "label": "C",
+    "avg": {
+      "stop": 2.33,
+      "fun": 1.67,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude",
+      "手順書（AIに渡すもの？）",
+      "手順書（AIに渡す手順書のこと？）"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 1,
+    "premise_topics": [
+      "",
+      "AIに任せたブログが毎朝同じ手順で回っていること",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 0,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "「なぜ毎朝同じ手順で回るのか」が自分の困りごとと結びつかず、記事の宣伝にしか見えない。8つのうち1つでも中身を書いてほしい。",
+      "1行目の「なぜ回るのか」が前提を知らないとピンとこず、宣伝の告知文に見えて読む気が落ちた。本人がどこで困ったかが一つでもあれば違う。",
+      "記事の宣伝文に見えます。8つのうち1つでも中身を見せてくれたら保存したくなります。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude・手順書（AIに渡すもの？）・手順書（AIに渡す手順書のこと？）"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c2",
+    "text": "毎日AIに任せているブログの手順書、何を書くと効くのか。\n私の手順書を見ながら、書き方のコツを8つにまとめました。\n個人的に気に入ってるのは「候補を出すだけ。判断と実行は人がやる」の一文です。\nClaudeで手順書を作るやり方は、記事から👇\nhttps://aicontent-note.com/agent-skills-how-to-create/",
+    "quote": "",
+    "hash": "a4a5bd2cf303c8de",
+    "label": "D",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude",
+      "手順書（AIに渡すもの？）",
+      "手順書（AIに渡す手順書のこと？）"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "毎日AIにブログを任せていること",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 1.33,
+    "comments": [
+      "「判断と実行は人がやる」の一文が具体的で、AIへの付き合い方に考えがある人だと分かる。ただ手順書が何を指すのか（AIへの指示書？）が一言あるともっと入りやすい。",
+      "「候補を出すだけ。判断と実行は人がやる」の一文が具体的で、この人の考え方が見えて良かった。手順書が何のことか（AIへの指示メモ？）が一言あれば入りやすい。",
+      "「判断と実行は人がやる」の一文で、AIに丸投げしない人だと分かり信頼できました。毎日回していて何が変わったか（工数など）が一言あれば、外注か内製かで迷っている身としてもっと刺さります。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude・手順書（AIに渡すもの？）・手順書（AIに渡す手順書のこと？）"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c1",
+    "text": "ブログのアイキャッチ、Claudeに考えさせて、絵はChatGPTに描いてもらう運用がかなり良いです。\n私はClaudeと話して、出てきた指示文をChatGPTに貼るだけ。\nどっちが優れているかより、相性の話だなと思ってます。",
+    "quote": "",
+    "hash": "c8c921c23ac8abe4",
+    "label": "E",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude",
+      "アイキャッチ",
+      "指示文（プロンプトのこと？）"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 1,
+    "premise_topics": [
+      "ClaudeとChatGPTのどちらが優れているかという比較の話",
+      "ClaudeとChatGPTどちらが優れているかという比較の話",
+      "ClaudeとChatGPTのどちらが優れているかという比較の話題"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "どっちのAIが優れているかで選ぶ",
+      "どっちのAIが優れているかで選ぶべきという考え",
+      "どっちが優れているかで選ぶ"
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.33,
+    "comments": [
+      "ChatGPTに貼るだけ、という使い分けは真似できそうで面白い。実際にできたアイキャッチの画像があると一気に止まると思う。",
+      "使い分けは真似できそうで参考になる。ただ「かなり良い」の中身（時間が減った、見た目が良くなった等）が無いので、どれくらい良いのかが分からない。",
+      "すぐに真似できる運用で、自社のブログにも使えそうだと思いました。できあがった画像の例が1枚あれば、さらに止まります。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude・アイキャッチ・指示文（プロンプトのこと？）"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "F",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.67,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Maxの初期設定のモデルがOpus 5に変わったという発表",
+      "Claude Maxの既定モデルがOpus 5に変わったこと",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "Opus 5ならはっきり差を感じられるという期待",
+      "Opus 5ならはっきり差が出る"
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "モデル名が4つ並んで、Claudeを知らない自分には何の話か全く分からなかった。詳しい人向けの投稿に見える。",
+      "モデル名が並んで初心者の自分には置いていかれた感じ。正直に「違いが分からない」と言っているのは好感だが、どんな使い方で比べたかがあれば参考になる。",
+      "モデル名が並ぶので、詳しい人向けの話に見えて離脱しました。どんな作業で違いを比べたのかが一つあれば、自分ごととして読めます。"
+    ]
+  }
+]

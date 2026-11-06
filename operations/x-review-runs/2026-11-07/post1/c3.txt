@@ -1,0 +1,5 @@
+AIに任せたブログ、なぜ毎朝同じ手順で回るのか。
+手順書を分析して、書き方のコツを8つにまとめました。
+保存して、手順書づくりに使ってみてください。
+Claudeでの作り方は記事から👇
+https://aicontent-note.com/agent-skills-how-to-create/

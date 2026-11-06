@@ -1,0 +1,258 @@
+[
+  {
+    "kind": "candidate",
+    "id": "c5",
+    "text": "ブログの見出し画像、何を描かせるかはClaudeに考えさせて、絵はChatGPTに頼む運用がかなり良いです。\nChatGPTへの頼み方もClaudeが書くので、私はClaudeと話すだけ。",
+    "quote": "",
+    "hash": "606d952140e4847f",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "「かなり良い」の中身が書いてなくて、何がどう良かったのかが分からないまま終わります。前より楽になったことや、出来上がった画像の違いがあれば読みたくなります。",
+      "1行目で何の話かすぐ分かって、役に立ちそうでした。ただ『かなり良い』の中身（どう良くなったか、前はどうだったか）がないので、ノウハウのメモ止まりに見えます。",
+      "やり方の紹介だけで終わっていて、なぜ良いのか（どれくらい楽になったか、前は何に困っていたか）が見えないので印象に残りません。完成した画像の例が1枚あると試してみたくなります。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "c4",
+    "text": "ブログの見出し画像、何を描かせるかはClaudeに考えさせて、絵はChatGPTに描いてもらう運用がかなり良いです。\n私はClaudeと話して、出てきた頼み方の文章をChatGPTに貼るだけ。\nどっちのAIが優れているかより、相性の話だなと思ってます。",
+    "quote": "",
+    "hash": "4787a9278f02e2c4",
+    "label": "B",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 1,
+    "premise_topics": [
+      "どっちのAIが優れているかという比較の話",
+      "ClaudeとChatGPTのどっちが優れているかという比較の話",
+      "どっちのAIが優れているかという比べ方"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "どっちのAIが優れているかで選ぶ",
+      "どっちのAIが優れているかで選ぶもの",
+      "どちらのAIが優れているかで選ぶべき"
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "最後の「相性の話」で考えが見えて、Aより人柄が出ています。ただ「かなり良い」の根拠がやはり薄いので、うまくいった例が1つあると説得力が増します。",
+      "最後の『相性の話』でちょっと考えを足しているぶん、Aより書き手の顔が見えます。ただ、相性が良い理由（Claudeが何を得意で、ChatGPTが何を得意か）がないので、なるほどまでは行きませんでした。",
+      "最後の「相性の話」で書き手の考えが見えて、Aより読めます。ただ「相性」が何を指すのか（Claudeのどこが考えるのに向いていて、ChatGPTのどこが絵に向いているのか）を一言入れてくれれば納得できます。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "C",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 1,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったというニュース",
+      "ChatGPTの無料プランの利用制限が変わったこと",
+      "ChatGPTの無料プランが無制限になったというニュース"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "1行目の「無料でも無制限」で止まりました。ただ途中の「画像生成・速度・モデル・・・」が箇条書きのメモっぽく、結局Plusを続けたのかやめたのかが一瞬分かりにくいです。",
+      "有料プランで迷っている自分には『無制限』で手が止まりました。結局Plusを続けたのか分かりにくいのと、『画像生成・速度・モデル・・・。』の並べ方で読む気が少し落ちます。続けた・やめたをはっきり書けばもっと刺さります。",
+      "「迷った」までは共感できましたが、結局Plusを続けたのかやめたのかが一読でわかりませんでした。「なので有料は続けます」と結論をはっきり書いてくれれば読み終わりがすっきりします。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.33,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 1,
+    "premise_topics": [
+      "Claude MaxのデフォルトモデルがOpus 5に変わったという話",
+      "Claude Maxの標準モデルがOpus 5に変わったこと",
+      "Claude Maxの標準モデルがOpus 5に変わったという話"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 1,
+    "denied_views": [
+      "",
+      "",
+      "Opus 5はSonnet 5より明らかに良い"
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "知らない名前が並んでいて、1行目で自分には関係ない話だと思ってしまいます。モデルごとに何が違うのかを一言でも書いてくれれば読めます。",
+      "モデル名が並んでいて、まだ使い始めたばかりの自分には何の話か分かりませんでした。『差を感じない』という正直さは好きなので、どんな作業で比べたかが1つあると読めます。",
+      "モデル名が4つ並んで、ふだんそこまで使い込んでいない自分には違いがわからず1行目で離れました。何の作業をして差を感じなかったのか、具体的な一例があれば読めます。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.33,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 3,
+    "premise_topics": [
+      "8/21に本人が「無料でもマイGPTは使える」と投稿したこと",
+      "8/21に本人が『無料でもマイGPTは使える』と書いていたこと",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.67,
+    "comments": [
+      "「終了するそうです」で止まりますが、中盤は公式発表の要約に見えます。「書いたばかり＞＜」の失敗談は面白いものの、前の投稿を知らないので実感が湧きませんでした。",
+      "『終了』で手が止まり、『書いたばかりでした＞＜』で人柄が見えて面白かったです。ただ真ん中の終了日や移行の説明はニュースの要約っぽくて、自分には関係あるのか分からないまま読み流しました。",
+      "「終了する」は気になって止まりましたが、中身はほぼ公式発表の要約に見えます。「書いたばかりでした＞＜」の失敗は人柄が出ていて良いので、自分の運用で何が困るのかをもう一言あると、ニュース以上の投稿になります。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c6",
+    "text": "毎日AIに任せているブログ、AIに渡す作業の指示書に何を書くと効くのか。\n私の指示書を見ながら、書き方のコツを8つにまとめました。\n個人的に気に入ってるのは「候補を出すだけ。判断と実行は人がやる」の一文です。\nClaudeでの作り方は、記事から👇\nhttps://aicontent-note.com/agent-skills-how-to-create/",
+    "quote": "",
+    "hash": "cecb739a23325fdd",
+    "label": "F",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "指示書（AIに渡す作業の指示書が何を指すのか）",
+      "指示書（何のことか一瞬分からない）",
+      "指示書（何のことか少し曖昧）"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "「毎日AIに任せているブログ」で、この人が何をしているのか気になってプロフィールを見たくなりました。気に入っている一文の理由がもう少しあると、記事も開きたくなります。",
+      "『毎日AIに任せているブログ』で、この人は本当に回しているんだと思い、気になりました。『候補を出すだけ。判断と実行は人がやる』の一文は良くて、なぜそれが効いたのか一言あればリンクも踏みます。",
+      "「毎日AIに任せているブログ」は、まさに迷っている自分には刺さりました。気に入った一文の引用で人の判断が残っているのがわかり安心できますが、「指示書」が何なのか（AIへの作業手順書のこと）が一言あると、もっとすっと入ります。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：指示書（AIに渡す作業の指示書が何を指すのか）・指示書（何のことか一瞬分からない）・指示書（何のことか少し曖昧）"
+    ]
+  }
+]

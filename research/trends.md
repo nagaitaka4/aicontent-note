@@ -1,9 +1,18 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-06
+最終更新: 2026-11-07
 
 
 ---
+
+## [2026-11-07] 調査結果（デイリー・土曜）
+
+- 🆕 npm：**2.1.319**（11/6 09:58 JST）／CHANGELOGの先頭も`## 2.1.319`。使う側に関わりそうなもの：verbatim `Added permissions.denyInsteadOfPrompting setting: a tool call that would wait on a permission prompt is denied and the turn continues, in terminal sessions, subagents and teammates`（許可待ちで止まる代わりに断って続ける設定）／`Added an "Earlier in this session" row to /tasks that lists finished subagents, so you can reopen one and message it even after it leaves the list or you restart`／`Fixed slash commands typed after a leading space, tab or newline being sent to Claude as plain text instead of running`。ほかにClaude apps gatewayの管理者向けで`ahead of Claude Desktop's November 10 change`（`coworkTabEnabled: false`・`chatSessionRetentionDays`に依存する組織のポリシー）＝11/10にデスクトップ版で何か変わるが、中身の公式発表は未確認＝記録のみ
+- **🆕 @ClaudeDevs 11/7 04:58 JST**（[投稿](https://x.com/ClaudeDevs/status/2118795192090386454)・実Chrome）：verbatim `We've made it easier to get your repo running in Claude Code cloud sessions on Pro, Max, and Ultra.` / `Claude figures out what dependencies, network access, and API keys it needs, then saves the environment for next time.` ＝クラウドのセッションの準備の話。本人はデスクトップのCodeタブでローカル運用＝画面で確かめていない＝記録のみ（採用基準の条件1を満たさない）
+- Claude Appsリリースノート（curl）：🆕November 6, 2026 verbatim `Eligible Enterprise organizations can now tag projects with the codes they already use` ＝Enterprise向け＝記録のみ
+- @claudeai（実Chrome）：11/6のPersonal Finance（米国のみ）のあと新着なし／Newsroom（実Chrome）：新着なし（「Latest news」の先頭はOpus 5.5の固定表示）／claude.com/blog（実Chrome）：11/5の2本のあと新着なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（実Chrome）／claude.com/blog ✅（実Chrome）／@ClaudeDevs ✅（実Chrome）／@claudeai ✅（実Chrome）／claude.com/pricing ✅（curl・`No 5-hour limit`のまま）
+
 
 ## [2026-11-06] 調査結果（デイリー・金曜）
 

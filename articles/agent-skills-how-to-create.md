@@ -3,10 +3,10 @@ no: 79
 series:
 series_no:
 title: Agent Skillsの作り方。ブログ運用の手順書で使う8つのコツ
-date:
+date: 2026-11-06
 url: https://aicontent-note.com/agent-skills-how-to-create/
 slug: agent-skills-how-to-create
-status: draft
+status: published
 description: Agent Skillsは、AIに渡す業務の手順書です。Claude Codeならフォルダと1枚のSKILL.mdで作れますが、効くかどうかは書式より中身で決まります。判断基準の書き方から失敗の残し方まで、8つのコツをブログ運用の手順書の実例で紹介します。
 eyecatch: eyecatch_0079.png
 eyecatch_alt: Agent Skillsの作り方と8つのコツと書いた題の横に、フォルダから出たSKILL.mdの書類と1から8の番号の行を描いたアイキャッチ画像

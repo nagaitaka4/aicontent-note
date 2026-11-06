@@ -421,7 +421,7 @@ GSCで需要が見えているクラスタ（インデックス未登録326表�
 | D-07 | Claudeの5時間制限・使用制限の仕組み | 統合 | `claude 5時間`9件・`claude 使用制限`9件／課金記事218表示の隣 | Proで制限に頻繁に当たった | D-01に統合（9/11：仕組みの説明が主役になるため、制限に当たった体験の節にする） |
 | D-08 | Claude Codeのフック（hooks）で「毎回言う」をなくす | 統合 | `claude code hooks`9件 | 日時を毎回差し込むフックを運用中 | D-05に統合（9/11：実物のフックが1つで、単独の記事にならない） |
 | D-09 | Claude in ChromeでWordPressの入稿まで任せた | ◯ | `claude in chrome`9件 | no.63〜66の入稿 | TOP10 #6（9/11に待機列から上げた。⚠️ no.64と重ねない） |
-| D-10 | Claude Codeのスキルを業務に使う | 統合 | `claude code スキル`9件・`skill`9件 | `eyecatch-ref`スキルを運用中（`.claude/commands/eyecatch-ref.md`） | D-05に統合（9/11：実物のスキルが1つで、単独の記事にならない） |
+| D-10 | Claude Codeのスキルを業務に使う | 統合 | `claude code スキル`9件・`skill`9件 | `eyecatch-ref`スキルを運用中（`.claude/commands/eyecatch-ref.md`） | D-05に統合（9/11：実物のスキルが1つで、単独の記事にならない）（✅ 2026-11-06：「伸びている記事の中身を写す」方式で、no.79「Agent Skillsの作り方。ブログ運用の手順書で使う8つのコツ」として公開・agent-skills-how-to-create） |
 | D-11 | Claude CodeのComputer Use（画面操作）を実際の作業で使った | △ | `claude computer use`9件 | 9/7のX投稿`CU-気`（旧271） | バックログ（9/11：④が弱い。実体験はX投稿1本ぶん） |
 | D-12 | ロングテールキーワードの調べ方（GSCの実データで） | ✗ | `ロングテールキーワード`9件 | 自サイトのGSC（旧S-05） | バックログ（9/11：④✗。主役は一般的な調べ方の説明） |
 | D-13 | SWELLの目次設定 | ✗ | `swell 目次`5件／SWELLクラスタの隣 | このサイトで使用中 | バックログ（9/11：④✗。主役は設定手順の説明） |

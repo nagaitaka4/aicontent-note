@@ -4,6 +4,19 @@
 
 ---
 
+## [2026-11-09] 調査結果（フル版・月曜）
+
+**③は一次情報の新着なし。Googleの確定アップデートもなし。**
+
+- **【差分なし】Search Status Dashboard**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：最新はSeptember 2026 spam update（開始9/24・10/8完了）のまま
+- **【差分なし】Search Central のドキュメント更新**（[Latest updates](https://developers.google.com/search/updates)・本日curl）：先頭は10/26（ユーザー投稿のスパム対策）のまま
+- **Search Central Blog**（本日curl）：11月は`search-central-live-zurich-2026`（イベント告知）だけのまま
+- WebSearch「Google AI Overviews AI Mode update November 2026」：11月の公式告知は見つからず（最新は10/15の「情報源へのリンクの見せ方の改善」・既出）
+
+### 記事側への影響
+- **訂正が必要な記事：なし**
+
+
 ## [2026-11-06] 調査結果（フル版・金曜）
 
 **③は一次情報の新着なし。Googleの確定アップデートもなし。**

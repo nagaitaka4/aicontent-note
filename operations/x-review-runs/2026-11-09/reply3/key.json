@@ -1,0 +1,18 @@
+{
+  "type": "reply",
+  "parent": "redtea（@Syuiro_2・データサイエンティスト9年目）の投稿（2026-11-08・266いいね・1.7万表示）：\nClaude Codeとかで自分で分析したい！って言う営業さんにこのSkillsを渡してみた。\n（リンクカード）GitHub - atsushi-green/ds-ai-coding-skills: A collection of AGENTS.md configurations, skills, and prompts tailored for Data Scientists to maximize productivity with AI coding assistants.\n\nスレッドの続き（本人の返信）：\nさらに私がチェックしたい図とかを出すようにskillsで指示してあるので、営業さんに分析結果を投げられても妥当性判断はこっちでサクッとできるという寸法です。",
+  "items": [
+    {
+      "id": "h1",
+      "text": "このSkills、まだ触れてないんですが「頼んでなくても確認用の図を必ず出させる」作りに惹かれました。\nブログをClaude Codeに任せていても、「チェックしました」と言いながら確認を飛ばされることがよくあるので。\n営業さんは、その図が勝手に付いてくることに気づいてるんですか？",
+      "hash": "1047225666326e0e",
+      "label": "A"
+    },
+    {
+      "id": "i1",
+      "text": "このSkills、「頼まれたことだけやって確認を省く」のを図で止めてるのがいいですね。\n私はまだ使ってないですが、ブログをClaude Codeに任せていて「チェックしました」の後に抜けが見つかることはよくあります。\n営業さんは、その図が付いてくることに気づいてるんですか？",
+      "hash": "c794a11d8c3aa655",
+      "label": "B"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "reply",
+  "parent": "redtea（@Syuiro_2・データサイエンティスト9年目）の投稿（2026-11-08・266いいね・1.7万表示）：\nClaude Codeとかで自分で分析したい！って言う営業さんにこのSkillsを渡してみた。\n（リンクカード）GitHub - atsushi-green/ds-ai-coding-skills: A collection of AGENTS.md configurations, skills, and prompts tailored for Data Scientists to maximize productivity with AI coding assistants.\n\nスレッドの続き（本人の返信）：\nさらに私がチェックしたい図とかを出すようにskillsで指示してあるので、営業さんに分析結果を投げられても妥当性判断はこっちでサクッとできるという寸法です。",
+  "items": [
+    {
+      "id": "c1",
+      "text": "このSkillsはまだ触ったことがないですが、「チェックしたい図を必ず出させる」所は真似したいです。\n私もブログの運用をClaude Codeに任せていて、毎朝の投稿の準備で「どの材料を使ったか」だけは必ず1行出させてます。\nそこを見れば確認がすぐ終わるので、すごく分かります。",
+      "hash": "4ded0be7c73b29c4",
+      "label": "A"
+    },
+    {
+      "id": "d1",
+      "text": "このSkills、データ分析をしない私でも「チェックしたい図を必ず出させる」所は真似したいと思いました。\nブログの運用をClaude Codeに任せていて、毎朝の準備で「どの材料を使ったか」だけは必ず1行出させてます。\n営業さんの分析にも、見たい図が最初から付いてくるんですね。",
+      "hash": "2a178de56542d06e",
+      "label": "B"
+    },
+    {
+      "id": "a1",
+      "text": "確認したい図を先に指定しておくの、データ分析じゃないですが私もブログで同じことをしてます。\n毎朝のX投稿の準備をClaude Codeに任せていて、候補の下に「どの材料を使ったか」を必ず1行出させてます。\nそこだけ見れば、調べた話が候補に届いてないのがすぐ分かるので。",
+      "hash": "38c7ea455b5b68a6",
+      "label": "C"
+    }
+  ]
+}

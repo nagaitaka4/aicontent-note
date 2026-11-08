@@ -1,0 +1,255 @@
+[
+  {
+    "kind": "candidate",
+    "id": "c2",
+    "text": "うちのClaudeの口癖\n\n「これ、かなりわかります。」\n\nリプライの温度の例として私が一度言っただけなのに、それから下書きの書き出しが4回中3回これに。",
+    "quote": "",
+    "hash": "a22b1bd209b99aec",
+    "label": "A",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.33,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "リプライの温度の例"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 1,
+    "premise_topics": [
+      "書き手がClaudeにリプライの下書きを頼んでいて、書き出しの例を一度伝えたこと",
+      "書き手がClaudeにリプライの例として「これ、かなりわかります。」と一度言ったこと",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.67,
+    "comments": [
+      "「リプライの温度の例として」がどういう場面なのか分からず、そこで止まった。何を頼んだときの話なのかを先に書いてくれれば入ってきやすい。",
+      "「一度言っただけでうつった」という意外性は面白い。ただ「リプライの温度の例」が分かりにくく、最後にオチや本人の反応（困った・笑った）があればもっと良くなる。",
+      "「リプライの温度の例として」の意味がつかみにくくて止まった。でも、自分が一度言っただけの言葉をAIが真似しだした、という意外さは面白い。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：リプライの温度の例"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 1,
+    "premise_topics": [
+      "Claude Maxの標準モデルがOpus 5に変わったこと",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+      "Opus 5は前のモデルより性能が上がったと言われている"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 1,
+    "denied_views": [
+      "Opus 5はSonnet 5より違いが分かるほど良い",
+      "Opus 5はSonnet 5より違いがはっきり分かる",
+      "Opus 5ならSonnet 5との違いを感じられる"
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "知らない名前が4つ続いて、1行目で離脱しそう。詳しい人向けの話に見える。",
+      "有料プランを迷っている身には「違いが分からない」は参考になるが、Fableが何か分からず置いていかれた。どんな作業で比べたかが1つあれば読み続ける。",
+      "モデル名が並んでいて、ヘビーユーザー向けの話に見えた。Web担当の仕事でどう違ったかの具体例があれば読める。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c1",
+    "text": "うちのClaudeの口癖\n\n「これ、かなりわかります。」\n\nXのリプライの下書きを頼むと、4回中3回これで始まってました。",
+    "quote": "",
+    "hash": "550afadec6c464f2",
+    "label": "C",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 0,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "分かりやすいけど「へえ」で終わる。本人がどう感じたか、どうしたかが一言あれば笑える。",
+      "分かりやすいが「4回中3回でした」で終わっていて、だから何？で止まる。書き手の感想や困りごとがひと言ほしい。",
+      "分かりやすいけど「へえ」で終わる。それで困ったのか、どうしたのかがあると人柄が見える。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "c3",
+    "text": "うちのClaudeの口癖、「これ、かなりわかります。」\nXのリプライの書き出しを任せたら、4回中3回これでした。\n返信欄に並ぶと、さすがにバレます。",
+    "quote": "",
+    "hash": "69ae5600781bbef7",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 4.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "「さすがにバレます」で笑った。AIに任せてるのを隠したい気持ちが見えて人柄が出ている。",
+      "「さすがにバレます」で笑えて、AIに任せている人の本音が見えるので一番親しみがわいた。直したかどうかの続きが読みたくなる。",
+      "「さすがにバレます」で笑えて、AIでリプライを書いている気まずさも正直に出ている。どう直したかが一言あれば、フォローしたくなる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E",
+    "avg": {
+      "stop": 3.33,
+      "fun": 2.67,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったこと",
+      "ChatGPTの無料プランのチャットが無制限になったこと",
+      "ChatGPTの無料プランが無制限になったという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "無料で無制限なら有料プランは要らない",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "1行目は気になって止まる。後半の迷いは共感できるが、結局Plusを続けたのか分かりにくい。",
+      "有料をやめるか迷った経緯は自分ごととして読めた。「画像生成・速度・モデル・・・」が羅列で流れてしまうので、決め手が具体的だとさらに良い。",
+      "有料をやめるか迷った話は自分にも近い。ただ、結局続けたのかやめたのかがはっきりしない。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "F",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 2,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表と、本人が以前『無料でも使える』と書いたこと",
+      "ChatGPTのマイGPTが終了するという発表と、書き手が8/21に「無料でもマイGPTは使える」と書いたこと",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.67,
+    "comments": [
+      "中盤の移行の説明が専門的で読む気が落ちた。「書いたばかりでした＞＜」の失敗談は親しみが持てるので、ここをもっと前に出すと良い。",
+      "前半は公式発表の要約で読み流しかけたが、「書いたばかりでした＞＜」で人柄が出て止まった。8/21の投稿を知らないので、その部分を短く説明するか冒頭に持ってくると良い。",
+      "中盤は公式発表の要約で、専門用語が多くて読む気が落ちた。「書いたばかりでした＞＜」の自虐は親しみが持てる。それを冒頭に出すと良い。"
+    ]
+  }
+]

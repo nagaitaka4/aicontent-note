@@ -1,0 +1,212 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "u12",
+    "text": "非エンジニアの私、Claudeの新モデルが出るたびに「前のは賢くなかったのか？」と思います。\n賢い順にFable・Opus・Sonnet・Haiku。\n今日はその一番上が新しくなりました。\n\n公式のおすすめは「普段使いはOpus」。\nFableは上限の減りが早いので、結局Opusです。\n大・中・小ならわかりやすいのに。",
+    "quote": "",
+    "hash": "dfbce701c4025bd8",
+    "label": "B",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Fable",
+      "上限の減り"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.33,
+    "comments": [
+      "「前のは賢くなかったのか？」は共感できて止まりました。「上限の減り」が何のことか一言あるともっと分かりやすいです。",
+      "1行目の「前のは賢くなかったのか？」は自分も思っていたので止まった。最後の「大・中・小ならわかりやすいのに」も共感できる。新しいFableで何が変わったのか、一言あるとさらに良い。",
+      "並び順の説明もあり非エンジニアでもついていける。最後の「大・中・小なら」で笑えた。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "u10",
+    "text": "非エンジニアの私、Claudeの新モデルが出るたびに「前のは賢くなかったのか？」と思います。\n賢い順にFable・Opus・Sonnet・Haiku。\n今日はその一番上が新しくなりました。\n公式のおすすめは「普段はOpus」。\n\nFableは上限の減りが早いので、結局Opusです。\n大・中・小ならわかりやすいんですが。",
+    "quote": "",
+    "hash": "fdf8087a0305c6da",
+    "label": "C",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Fable",
+      "上限の減り"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.67,
+    "comments": [
+      "Bとほぼ同じで、共感できる書き出しです。「わかりやすいんですが。」の締めのほうが少し柔らかく、人柄が出ていて好みです。",
+      "Bとほぼ同じで共感できる。ぼやきのキレはBのほうが上。",
+      "Bとほぼ同じで分かりやすい。締めの「〜んですが」が少しぼやけて、Bの言い切りの方がオチとして効いている。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  }
+]

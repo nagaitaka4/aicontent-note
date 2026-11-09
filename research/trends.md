@@ -1,9 +1,19 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-09
+最終更新: 2026-11-10
 
 
 ---
+
+## [2026-11-10] 調査結果（デイリー・火曜）
+
+- **🆕 Claude Fable 5.2／Claude Mythos 5.2 発表**（[Newsroom](https://www.anthropic.com/claude-fable-and-mythos-5-2)・November 9, 2026〔米国時間〕＝日本時間11/10早朝・curl）：verbatim `They generate outputs up to 30% faster than Claude Fable 5.1 and Claude Mythos 5.1, and they’re available at a lower price: $8 per million input tokens and $40 per million output tokens.`／`For most coding and knowledge tasks, we recommend that users start with Claude Opus 5.5, our strongest daily driver, and then switch to a different model as required`／`Claude Fable 5.2 is available today on all platforms`。FableとMythosは同じモデル（Mythosは認定プログラムのみ）
+- **🆕 発売記念の上限リセット**（[ヘルプ](https://support.claude.com/en/articles/17506494)・curl）：verbatim `Max plans, Ultra plans, premium seats on Team plans, and premium seats on legacy seat-based Enterprise plans` → `One to three Fable limit resets, depending on how long you’ve subscribed`（6か月未満1・6〜12か月2・12か月超3／`These resets expire on March 8, 2027`）。Proと Teamの標準席は `All Fable models included in your plan for one week, up to 50% of your weekly usage limits, plus one Fable limit reset`（11/16 23:59 PTまで）。リセットは`Settings > Usage`の`Limit resets`→`Reset for free`。`A reset doesn’t raise your limits.`
+- 🆕 npm／CHANGELOG：**2.1.321**（2026-11-09T19:02Z＝日本時間11/10 04:02）。verbatim `Added Claude Fable 5.2 (`claude-fable-5-2`), now the default Fable model — 1M context, $8/$40 per Mtok`。ほかは修正が中心（読み取り専用のBashが許可なしで砂場の外で動いた件の修正など）
+- Claude Apps：最新はNovember 6のまま（Fable 5.2の行はまだ無い）／ChatGPT：差分なし（ai-tools.md）
+- X上の反応（実Chrome・06:45頃）：トレンドに「Fable5.2」。個人の反応は発表から2〜3時間でまだ小さい（@Kusqdev「リセットチケットの追加きたけど、これFable限定？」、@secondarykey「Proなのに使用量にFableのメーターが出た」）
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／ヘルプ記事 ✅（curl）／claude.com/blog ⚠️未確認／@ClaudeDevs ⚠️未確認（X検索で@claudeaiの発表投稿は確認）／claude.com/pricing ⚠️未確認
+
 
 ## [2026-11-09] 調査結果（デイリー・月曜）
 

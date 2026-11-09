@@ -1,0 +1,275 @@
+[
+  {
+    "kind": "candidate",
+    "id": "p5",
+    "text": "Claudeの新しいモデル「Fable 5.2」が出ました。\nでも正直、Fable・Opus・Sonnet・Haikuって、名前だけでどれが賢いのか分かる人いるんでしょうか。\n公式のおすすめは「普段はOpus、難しい作業だけFable」。ブログを任せている私も普段はOpusです。\n大・中・小って書いてくれたら迷わないのに。",
+    "quote": "",
+    "hash": "0f34bddedf5b7bd0",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Fable",
+      "Fable 5.2",
+      "Haiku",
+      "Opus",
+      "Sonnet"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.33,
+    "comments": [
+      "1行目が新モデルの告知なので、Claudeを知らない私には関係ない話に見えます。",
+      "1行目が発表の報告なので流しそうになったが、2行目の「名前で分からない」は共感できた。",
+      "1行目が新モデルの告知なのでニュース紹介に見えて流しかけた。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Fable・Fable 5.2・Haiku・Opus・Sonnet",
+      "ニュースの紹介に見える3人"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 2.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p4",
+    "text": "Claudeの中の種類、Fable・Opus・Sonnet・Haiku。名前だけ見ても、どれが賢いのか分かりません。\nそこへ今日、また新しい「Fable 5.2」が出ました。\n公式は「ほとんどの作業はまずOpusから」と書いていて、ブログを任せている私も普段はOpusです。\n大・中・小って書いてくれたら助かるのに。",
+    "quote": "",
+    "hash": "480aa784077c08f4",
+    "label": "C",
+    "avg": {
+      "stop": 2.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Fable",
+      "Fable 5.2",
+      "Haiku",
+      "Opus",
+      "Sonnet"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "1行目に知らないカタカナの名前が4つ並んでいて、流し見だと読み飛ばします。",
+      "1行目が名前の羅列で少し硬い。Aとほぼ同じで意外性は薄い。",
+      "「Claudeの中の種類」という1行目が少し硬く、何の話か一瞬遅れる。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Fable・Fable 5.2・Haiku・Opus・Sonnet"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p6",
+    "text": "非エンジニアの私、Claudeの新しいモデルが出るたびに「じゃあ前のは賢くなかったの？」で止まります。\n今日は「Fable 5.2」。Fable・Opus・Sonnet・Haiku、名前では順番が分かりません。\n公式のおすすめも「普段はOpus」なので、ブログを任せるときは結局いつものOpusに戻ります。",
+    "quote": "",
+    "hash": "c1c2b1ca776de007",
+    "label": "F",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Fable",
+      "Fable 5.2",
+      "Haiku",
+      "Opus",
+      "Sonnet"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "「非エンジニアの私」「じゃあ前のは賢くなかったの？」に自分と同じ目線を感じて止まりました。結局いつものに戻る、というオチも親しみがあります。",
+      "「じゃあ前のは賢くなかったの？」は自分も思うので止まった。非エンジニア目線が親近感。オチが「いつものOpusに戻る」で少し弱い。",
+      "「じゃあ前のは賢くなかったの？」が非エンジニアの本音で止まった。何に任せているかが一言あればさらに良い。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Fable・Fable 5.2・Haiku・Opus・Sonnet"
+    ]
+  }
+]

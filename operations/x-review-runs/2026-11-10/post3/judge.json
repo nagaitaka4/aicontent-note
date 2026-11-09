@@ -1,0 +1,267 @@
+[
+  {
+    "kind": "candidate",
+    "id": "p6",
+    "text": "非エンジニアの私、Claudeの新しいモデルが出るたびに「じゃあ前のは賢くなかったの？」で止まります。\n今日は「Fable 5.2」。Fable・Opus・Sonnet・Haiku、名前では順番が分かりません。\n公式のおすすめも「普段はOpus」なので、ブログを任せるときは結局いつものOpusに戻ります。",
+    "quote": "",
+    "hash": "c1c2b1ca776de007",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Fable 5.2",
+      "Fable・Opus・Sonnet・Haiku"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "2行目でカタカナの名前が4つ並んだところで読む気が落ちました。",
+      "1行目の「止まります」には共感。2行目で名前が4つ並んで置いていかれます。",
+      "2行目でモデル名が4つ並んで置いていかれた。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Fable 5.2・Fable・Opus・Sonnet・Haiku"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "C",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 1.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.33,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 2.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p7",
+    "text": "非エンジニアの私、Claudeの新しい頭脳（モデル）が出るたびに「じゃあ前のは賢くなかったの？」で止まります。\n今日も一番上のが新しくなりました。全部で4種類、名前では賢さの順番が分かりません。\n公式のおすすめも「普段は2番目のを」なので、ブログを任せるときは結局いつものに戻ります。",
+    "quote": "",
+    "hash": "c7171d2731bcdc8a",
+    "label": "E",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "2番目の",
+      "一番上の"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 2,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "名前を伏せているので「一番上」「2番目」が何のことか分からず、ぼやけました。",
+      "「一番上」「2番目」が何のことか分からず、ぼんやりしています。",
+      "「一番上の」「2番目の」が何なのか分からずぼんやりした。名前を一つだけでも出してもらえれば。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：2番目の・一番上の",
+      "受けている話が投稿の中に無い2人：x／x／x"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p8",
+    "text": "非エンジニアの私、Claudeの新しい頭脳（モデル）が出るたびに「じゃあ前のは賢くなかったの？」で止まります。\n今日は一番上の「Fable」が新しくなりました。4種類の名前は、見ても順番が分かりません。\n公式のおすすめは「普段は2番目のOpus」。結局いつものOpusに戻ります。",
+    "quote": "",
+    "hash": "f9f09a4d74c10943",
+    "label": "F",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Fable",
+      "Opus"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 2.33,
+    "comments": [
+      "Aよりは名前が少なくて読みやすく、位置関係も分かります。最後の「結局いつものに戻る」に何を任せているのかがあると良くなります。",
+      "3本の中では一番分かりやすく、「結局いつものに戻る」にも共感。戻ったあとどうだったかの一言があれば。",
+      "A・Eより一番読みやすい。最後の「いつものOpusに戻る」で何が困らないのか（ブログが書けているのか）が一言あるとフォローしたくなる。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Fable・Opus"
+    ]
+  }
+]

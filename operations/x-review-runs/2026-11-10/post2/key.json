@@ -1,0 +1,47 @@
+[
+  {
+    "kind": "candidate",
+    "id": "p5",
+    "text": "Claudeの新しいモデル「Fable 5.2」が出ました。\nでも正直、Fable・Opus・Sonnet・Haikuって、名前だけでどれが賢いのか分かる人いるんでしょうか。\n公式のおすすめは「普段はOpus、難しい作業だけFable」。ブログを任せている私も普段はOpusです。\n大・中・小って書いてくれたら迷わないのに。",
+    "quote": "",
+    "hash": "0f34bddedf5b7bd0",
+    "label": "A"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B"
+  },
+  {
+    "kind": "candidate",
+    "id": "p4",
+    "text": "Claudeの中の種類、Fable・Opus・Sonnet・Haiku。名前だけ見ても、どれが賢いのか分かりません。\nそこへ今日、また新しい「Fable 5.2」が出ました。\n公式は「ほとんどの作業はまずOpusから」と書いていて、ブログを任せている私も普段はOpusです。\n大・中・小って書いてくれたら助かるのに。",
+    "quote": "",
+    "hash": "480aa784077c08f4",
+    "label": "C"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E"
+  },
+  {
+    "kind": "candidate",
+    "id": "p6",
+    "text": "非エンジニアの私、Claudeの新しいモデルが出るたびに「じゃあ前のは賢くなかったの？」で止まります。\n今日は「Fable 5.2」。Fable・Opus・Sonnet・Haiku、名前では順番が分かりません。\n公式のおすすめも「普段はOpus」なので、ブログを任せるときは結局いつものOpusに戻ります。",
+    "quote": "",
+    "hash": "c1c2b1ca776de007",
+    "label": "F"
+  }
+]

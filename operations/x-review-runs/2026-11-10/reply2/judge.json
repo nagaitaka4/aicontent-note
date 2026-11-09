@@ -1,0 +1,55 @@
+[
+  {
+    "id": "r3",
+    "text": "「117 Branches」見て、私のブログのリポジトリも開いてみました。\nClaude Codeが自動で付けた「crazy-cray」みたいな名前のブランチが14本、5月から残ってました。\nプログラムが書けないのでgitは任せきりで、.mdに書いてたのは「作業前に最新にそろえる」だけ。片付けは書いてなかったです。",
+    "hash": "8f23922e4fef5313",
+    "label": "A",
+    "on_core": 3,
+    "same_subject": 3,
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "crazy-cray（Claude Codeが自動で付けるブランチ名の例と読めるが、知らないと一瞬戸惑う）",
+      "crazy-cray（自動で付くブランチ名の例らしいが知らないと一瞬戸惑う）"
+    ],
+    "lecture": 0,
+    "template": 0,
+    "glad_author": 4,
+    "glad_avg": 4.0,
+    "profile": 3,
+    "comments": [
+      "14本残っていた実数と.mdに片付けを書いていなかった点まで返しており、スレッドにきちんと噛み合っている。",
+      "自然につながっていて、手とり足取り.mdにきれいに返している。",
+      "「117 Branches」を受けて自分のリポジトリを見た流れが自然。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：crazy-cray（Claude Codeが自動で付けるブランチ名の例と読めるが、知らないと一瞬戸惑う）・crazy-cray（自動で付くブランチ名の例らしいが知らないと一瞬戸惑う）"
+    ]
+  },
+  {
+    "id": "r4",
+    "text": "私のブログのリポジトリも開いてみたら、Claude Codeが自動で付けた「crazy-cray」みたいな適当な名前のブランチが14本、5月から残ってました。\ngitは丸ごと任せきりで、.mdに書いてたのは「作業前に最新にそろえる」だけ。片付けまでは書いてなかったです。",
+    "hash": "28ad453971ca4208",
+    "label": "B",
+    "on_core": 3,
+    "same_subject": 3,
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "crazy-cray（同上）"
+    ],
+    "lecture": 0,
+    "template": 0,
+    "glad_author": 4,
+    "glad_avg": 4.0,
+    "profile": 1,
+    "comments": [
+      "Aとほぼ同じ中身で短くまとまっている。画像への言及がない分つながりがやや弱い。",
+      "いきなり自分の話から始まる印象がやや強い。",
+      "きっかけが抜けて唐突。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：crazy-cray（同上）"
+    ]
+  }
+]

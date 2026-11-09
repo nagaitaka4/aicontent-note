@@ -1,0 +1,226 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた",
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.67,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p12",
+    "text": "非エンジニアの私、Claudeの新しい頭脳（モデル）が出るたびに「じゃあ前のは賢くなかったの？」で止まります。\n賢い順にFable・Opus・Sonnet・Haiku。今日はその一番上が新しくなりました。\n公式のおすすめは「普段は2番目のOpus」。ブログも結局いつものOpusです。大・中・小なら覚えられるのに。",
+    "quote": "",
+    "hash": "606470591bc26e64",
+    "label": "C",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Fable",
+      "Haiku",
+      "Opus",
+      "Sonnet"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Fable・Haiku・Opus・Sonnet"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "u5",
+    "text": "Claudeの新しいモデルが出るたびに「前のは賢くなかったのか？」と、ふと思います。\n賢い順にFable・Opus・Sonnet・Haiku。\n今日はその一番上が新しくなりました。\n\n公式のおすすめは「普段使いはOpus」。\n\n利用制限もあって、結局Opusです。\n大・中・小としてくれるならわかりやすいんですが。",
+    "quote": "",
+    "hash": "844e3a160da73238",
+    "label": "D",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Fable",
+      "Haiku",
+      "Opus",
+      "Sonnet",
+      "利用制限"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "Cとほぼ同じだが「非エンジニアの私」が無い分、誰の話か分かりにくく1行目の引きが弱い。利用制限でOpusになる理由が分からない。",
+      "内容はCと同じだけど、1行目に「私」がない分ふつうのつぶやきに見えて弱い。読みやすさはこちらが上。",
+      "Cとほぼ同じ内容で読みやすいが、「非エンジニアの私」がなく誰が言っているのか見えにくい分、少し弱い。「利用制限もあって」の中身がわからない。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Fable・Haiku・Opus・Sonnet・利用制限"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "x",
+      "x",
+      "x"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  }
+]

@@ -163,9 +163,10 @@
 - 入れ直しは`~/.local/bin/cb <名前>`（全文のブロックは出さない）。`cb`は送り先も表示する
 - セルフチェック：no.71・no.72は、公開後にユーザーのWP編集を同期した結果NGが1件ずつ残っている（リードの長さ）。ユーザーの直しなのでそのまま
 
+- **アイキャッチの「余白と配置」（中央に文字・左右に絵の組み方）は型に入れない**（11/9 ユーザー判断で保留）。次に同じ組み方を使うときに参考画像から測り直す（`knowledge/eyecatch-rules.md`に1行）
+
 ### まだ決まっていないこと
 
-- **アイキャッチの型の「余白と配置」（中央に文字・左右に絵の組み方）**：no.64で参考画像から測った値（文字のかたまりは横幅の約半分・上約85px／下約60px・絵は文字の左右に約20px以上空ける）にした。型（`knowledge/eyecatch-rules.md`）に入れるかはユーザーの了承待ち。実物は上約130px／下約125pxと指定より余白が広く出た（`operations/structure-drafts/blog-operation-automation-limit-eyecatch-prompt.md`）
 - **固定ページのアイキャッチの保存名**：ルールは`knowledge/eyecatch-rules.md`の`eyecatch_XXXX.png`（記事の`no`・4桁）。固定ページには`no`が無く、no.73は記事に使用済み（`eyecatch_0073.png`にすると上書き事故）。現状は`images/pages/x-post-checker-eyecatch.png`（`service-banner.png`の前例）＝仮。**ルールに「固定ページは`images/pages/<slug>-eyecatch.png`」と追記してよいか、ユーザーの了承待ち**
 - プライバシーポリシーの「最終更新日」：MDは2026-10-01。WPに反映した日に、WPとMDの両方を合わせる
 - Xの`閾値-気`（`knowledge/x/queue.md`）：あと2字削る・盲検・`x-gate.py`が未実施（投稿前に必要）

@@ -93,7 +93,7 @@ AIをなめていました。
 ひとりで回すのがつらい工程がはっきりしているなら、そこだけ人に任せる手もあります。
 
 外注を考えるタイミングは[ブログ更新が止まる理由と、外注を検討するタイミングの見極め方](https://aicontent-note.com/blog-update-outsource-timing/)に書きました。
-入稿をどこまで任せられたかは、[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)にまとめています。
+どの作業をAIに任せ、何を人が決めるかは、[ブログ自動化をAIに任せると起きること。任せる作業と人が決めること](https://aicontent-note.com/blog-operation-automation-limit/)にまとめています。
 
 ---
 
@@ -106,5 +106,5 @@ AIをなめていました。
 
 **関連記事**
 ・[ブログ更新が止まる理由と、外注を検討するタイミングの見極め方](https://aicontent-note.com/blog-update-outsource-timing/)<br>
-・[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)<br>
+・[ブログ自動化をAIに任せると起きること。任せる作業と人が決めること](https://aicontent-note.com/blog-operation-automation-limit/)<br>
 ・[ブログの更新頻度は月何本？72本書いて分かった、検索に出る時期](https://aicontent-note.com/ai-content-operation-results-timeline/)

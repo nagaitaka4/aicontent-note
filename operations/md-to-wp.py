@@ -124,7 +124,12 @@ def split_sentences(text):
     parts = re.split(r"(?<=。)(?![」』）\)])", masked)
 
     def _unmask(x):
-        return re.sub(r"\x00(\d+)\x00", lambda m: anchors[int(m.group(1))], x)
+        # 「」の中にリンクがあると、退避が2重になる（「\x000\x00」ごと退避される）。
+        # 1回では内側が戻らないので、残りが無くなるまで戻す（2026-11-09・no.64で
+        # 「ゆうきさんの「[記事名](URL)」です」のリンクが記号に化けていた）
+        while re.search(r"\x00\d+\x00", x):
+            x = re.sub(r"\x00(\d+)\x00", lambda m: anchors[int(m.group(1))], x)
+        return x
 
     return [p for p in (_unmask(s).strip() for s in parts) if p]
 

@@ -91,7 +91,7 @@ ProとMaxのどちらにするかは、[Claudeに課金すべきか。料金・�
 
 **それでも、記事づくりは相変わらず安定せず、構成と本文を読んで直す作業は残っています。**
 
-人に残る工程は、[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)に表でまとめています。
+人に残る工程は、[ブログ自動化をAIに任せると起きること。任せる作業と人が決めること](https://aicontent-note.com/blog-operation-automation-limit/)に表でまとめています。
 
 【ポイント】<br>
 **いまの私でも、月4本なら自分が動く時間は月12時間ほどです。**
@@ -140,5 +140,5 @@ ProとMaxのどちらにするかは、[Claudeに課金すべきか。料金・�
 
 **関連記事**
 ・[ブログ代行の相場はいくら？運用代行の料金目安と失敗しない選び方](https://aicontent-note.com/blog-outsource-pricing-guide/)<br>
-・[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)<br>
+・[ブログ自動化をAIに任せると起きること。任せる作業と人が決めること](https://aicontent-note.com/blog-operation-automation-limit/)<br>
 ・[Claudeに課金すべきか。料金・制限より先にモデルで決める](https://aicontent-note.com/claude-subscription-change-june-2026/)

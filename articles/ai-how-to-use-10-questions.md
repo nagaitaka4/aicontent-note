@@ -262,7 +262,7 @@ AIが書いた記事をどう確かめるかは、[AIで作ったブログ記事
 ・任せる前に、人が確かめる場所を決めておく
 
 任せる工程を増やすほど、人の時間は「確認」に集まります。
-どこまで任せられたかの実測は、[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)にまとめています。
+どの作業を任せ、何を人が決めるかは、[ブログ自動化をAIに任せると起きること。任せる作業と人が決めること](https://aicontent-note.com/blog-operation-automation-limit/)にまとめています。
 
 ---
 
@@ -274,6 +274,6 @@ AIが書いた記事をどう確かめるかは、[AIで作ったブログ記事
 ---
 
 **関連記事**
-・[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)
+・[ブログ自動化をAIに任せると起きること。任せる作業と人が決めること](https://aicontent-note.com/blog-operation-automation-limit/)
 ・[ルールファイルとは？AIを安定運用する指示書の考え方](https://aicontent-note.com/rule-file-basics/)
 ・[AIに仕事を任せる人が最初に整えるべき環境。土台を作る5ステップ](https://aicontent-note.com/ai-work-environment-setup/)

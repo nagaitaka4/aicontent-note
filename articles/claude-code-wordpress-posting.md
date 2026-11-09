@@ -79,6 +79,6 @@ PCでプレビューを開いて全体を読み直し、細かいニュアンス
 ---
 
 **関連記事**
-・[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)<br>
+・[ブログ自動化をAIに任せると起きること。任せる作業と人が決めること](https://aicontent-note.com/blog-operation-automation-limit/)<br>
 ・[入稿・整形・公開はどこまで効率化できるか【Claude Code実践】](https://aicontent-note.com/claude-code-entry-publish/)<br>
 ・[Claudeに会社の情報を渡して大丈夫か。データが学習に使われる条件](https://aicontent-note.com/claude-company-data-training/)

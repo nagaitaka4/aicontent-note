@@ -307,6 +307,6 @@ AIツールの規約で出力が自分のものになっても、他の人が作
 ---
 
 **関連記事**
-・[ブログ運用はどこまで自動化できたか。人に残った2つの判断](https://aicontent-note.com/blog-operation-automation-limit/)
+・[ブログ自動化をAIに任せると起きること。任せる作業と人が決めること](https://aicontent-note.com/blog-operation-automation-limit/)
 ・[Claude Codeでも効率化できなかったこと、正直に書く](https://aicontent-note.com/claude-code-limitations/)
 ・[ChatGPTの無料と有料の違い｜無制限化しても課金する理由](https://aicontent-note.com/chatgpt-free-paid-difference/)

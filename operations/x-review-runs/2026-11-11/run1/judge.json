@@ -1,0 +1,256 @@
+[
+  {
+    "kind": "candidate",
+    "id": "c2",
+    "text": "私の究極の目標は「サボること」なので、SNSの投稿もネタ集めから下書きまでAIに任せています。\n\nただ、サボりきれないところが1つだけありました。\n別のAIに読者のふりをさせて「合格」が出た案でも、面白いかどうかは私が決めるしかなかった。\nhttps://aicontent-note.com/ai-sns-posting-continue/",
+    "quote": "",
+    "hash": "60570aafa0c4e65d",
+    "label": "A",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "別のAIに読者のふりをさせて「合格」"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.67,
+    "comments": [
+      "「目標はサボること」の1行目でつかまれた。ただ「読者のふりをさせて合格」の仕組みがピンと来ず、最後が「私が決めるしかなかった」で終わるので、どう決めているのかの一例があればもっと良い。",
+      "1行目の「究極の目標はサボること」で止まった。でも「別のAIに読者のふりをさせる」の仕組みは一度読んだだけだと分かりにくい。面白くなかった実際の案を1つ見せてくれたら、もっと刺さると思う。",
+      "「究極の目標はサボること」の1行目で止まった。ただ「面白いかは私が決めるしかなかった」で話が終わっていて、具体的にどんな案をなぜ止めたのか1例あれば刺さる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトのモデルがOpus 5に変わったこと",
+      "Claude MaxのデフォルトがOpus 5になった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "知らない製品名ばかりで1行目からついていけなかった。詳しい人向けの話に見える。",
+      "有料プランに入るか迷っている身からすると、Maxは遠い話。Fableが何か分からず、置いていかれた感じがした。",
+      "モデル名が並んでいて、Web担当の私には何がどう違うのか分からない。「違いを実感できず」も、どんな作業で比べたのかが無いので判断材料にならない。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c1",
+    "text": "非エンジニアの私の目標は「ラクすること」なので、ブログもXの下書きもClaudeに任せています。\n\nが、別のAIに読者のふりをさせて「合格」が出た案を、私が「面白くない」で止めたことがあります。\n通じるかはAIで確かめられても、面白いかまでは任せられませんでした。\nhttps://aicontent-note.com/ai-sns-posting-continue/",
+    "quote": "",
+    "hash": "0e01c66678177e81",
+    "label": "C",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.67,
+      "follow": 3.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude",
+      "別のAIに読者のふりをさせて「合格」"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.33,
+    "comments": [
+      "「非エンジニア」「ラクすること」で親近感がわいた。AIが合格にしたのに自分が「面白くない」で止めた話が具体的で一番引っかかった。止めた案がどんなものだったか一言あれば、さらに良い。",
+      "「非エンジニア」「ラクすること」が自分に近くて、親しみがわいた。「面白くない」で止めたのが何の案だったか、具体的に書いてあれば次も読みたくなる。",
+      "「合格」が出た案を自分が「面白くない」で止めた、という具体的な判断が見えて信用できる。止めた案の中身を一言入れれば、外注か内製か迷う私にもっと響く。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのチャットが無料でも無制限になったこと",
+      "ChatGPTのチャットが無料でも無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "自分も使っているChatGPTの話なので気になる。Plusを続けるか迷った話は共感できたが、結局続けたのかやめたのかが少し分かりにくい。",
+      "有料にするか迷っているので「Plusを続けるか迷った」は刺さった。ただ、迷った理由の並びが「・・・」で終わっていて、結論の根拠が少し弱い。",
+      "迷った末にPlusを続けた判断は人間味があって良い。ただ「画像生成・速度・モデル・・・」が並べただけで、何が決め手だったのか伝わりにくい。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 1,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了する",
+      "ChatGPTのマイGPT終了の発表、および8/21の自分の投稿"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "前半は発表の要約で情報が多く、途中で読む気が落ちた。「書いたばかりでした＞＜」の失敗談は人柄が見えて良いので、そこを前に出した方が止まる。",
+      "前半はニュースの要約で、専門用語が多く読む気が落ちた。「書いたばかりでした＞＜」の人間らしさは良いけど、前の投稿を知らないと半分しか伝わらない。",
+      "前半は公式発表の要約で、後半の「書いたばかりでした＞＜」は前の投稿を知らないと半分しか通じない。マイGPTを業務で何に使っていて、どう困るのかがあれば読む理由になる。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c3",
+    "text": "AIにSNSの投稿を書かせている私が、AIに任せきらないことが2つあります。\n言葉づかいと、出すかどうか。\n\nAIの下書きに、私の過去の投稿には一度も無い一人称が何度も出てきたことがあって。\n今は過去の投稿を渡して、言葉はそこから取らせています。\nhttps://aicontent-note.com/ai-sns-posting-continue/",
+    "quote": "",
+    "hash": "686d0cdb65cf40fc",
+    "label": "F",
+    "avg": {
+      "stop": 3.0,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.0,
+    "comments": [
+      "使ったことのない一人称が何度も出てきたという失敗は「あるある」で面白い。ただ1行目が少し説明っぽく、どんな一人称だったかを書いてくれたらもっと笑えた。",
+      "「過去の投稿に一度も無い一人称が何度も出てきた」は具体的で、AIを使うときに自分もやりそうな失敗だと感じた。1行目は少し固いので、この失敗談から始めたほうが止まると思う。",
+      "過去に一度も使っていない一人称が出てきた、という失敗が具体的で面白く、社内で回すときにも使える工夫だと思った。1行目がやや説明的なので、失敗の話から入れば止まりやすい。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

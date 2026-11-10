@@ -1,9 +1,18 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-10
+最終更新: 2026-11-11
 
 
 ---
+
+## [2026-11-11] 調査結果（デイリー・水曜）
+
+- **🆕 Claude Whiteboards・Claude Sheets（ベータ）／Claude Data（正式版）**（[claude.com/blog](https://claude.com/resources/articles/sheets-whiteboards-data)・2026年11月10日〔米国時間〕・curl）：verbatim `Today we’re launching Claude Whiteboards and Claude Sheets in beta` ／ `These are available on all paid plans.` ＝ホワイトボード（チームでClaudeとブレスト）とスプレッドシート（Claudeが作って一緒に直す）。Claude Dataは10月のベータ（社内データに質問）が正式版になり改名。**使う側の変化**：有料プランならClaudeの中でボード・表を作れる（ベータ）。⚠️ 本人はClaudeのチャット側を使っていない（`feedback_author_usage_not_overridden`）・画面で開けるかは未確認
+- **🆕 アプリをClaudeの中で開いて、Claudeがその中で作業できる**（[claude.com/blog](https://claude.com/resources/articles/interactive-connectors-full-tool)・同日）：verbatim `you can open a tool beside your conversation or expand it to full screen, and ask Claude to work alongside you and make changes directly.` ／ `This is rolling out on the web and in the Claude desktop app on all plans, as part of the new Claude experience`＝チャットとCoworkの統合版に切り替わったアカウントから順に。@ClaudeDevs（11/11 04時台JST）も`serve your full site inside Claude`と開発者向けに告知。⚠️ `rolling out`＝本人の画面に出ているか未確認（9/22`Privacy Center`と同じ条件）
+- npm／CHANGELOG：**2.1.322**（2026-11-10T01:58Z）。verbatim `Added fast mode on Vertex in the global, us and eu regions` のみ＝使う側に影響なし
+- Claude Apps：最新はNovember 6のまま／Newsroom：11/9のFable 5.2のあと新着なし／@ClaudeDevs：11/10にモデルの選び方ガイド（Fable 5.2・Opus 5.5・Sonnet・Haikuの使い分け）
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（実Chrome）／Newsroom ✅（実Chrome）／claude.com/blog ✅（実Chrome＋curl）／@ClaudeDevs ✅（実Chrome）／@claudeai ⚠️未確認／claude.com/pricing ⚠️未確認
+
 
 ## [2026-11-10] 調査結果（デイリー・火曜）
 

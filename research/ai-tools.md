@@ -1,8 +1,14 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-10
+最終更新: 2026-11-11
 
 ---
+
+## [2026-11-11] 調査結果（デイリー・水曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome）：🆕 November 10「Business Hub in ChatGPT」＝事業者が自分の店・会社の情報をChatGPT上で管理（verbatim `eligible ecommerce and online service businesses in the US`＝客の質問に答えるエージェントは米国のみ）。本人の運用に影響なし＝記録のみ。11/4のImages 2.6より前の日付の追加は見当たらず
+- Gemini・国産ツール：差分なし
+
 
 ## [2026-11-10] 調査結果（デイリー・火曜）
 

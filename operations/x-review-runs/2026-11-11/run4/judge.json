@@ -1,0 +1,261 @@
+[
+  {
+    "kind": "candidate",
+    "id": "f2",
+    "text": "素のClaudeにXの投稿を書かせるとなんかイマイチだったので、書かせる⇒私がダメ出し、を繰り返してから「過去の投稿に出てくる私の言葉で書いて」と頼むようにしたら、割と私っぽいのが出てきます。\n\nほっとくと一人称が「うち」になるんです。使ったことないのに。\nhttps://aicontent-note.com/ai-sns-posting-continue/",
+    "quote": "",
+    "hash": "4626417a5a7b24bb",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 4.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude",
+      "素のClaude"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.0,
+    "comments": [
+      "1行目が長くて「書かせる⇒ダメ出し」のところで少し読みにくい。「うち」のオチで笑えたので、最初にそれが来ると止まりやすい。",
+      "1文目が長くて流し見だと読む気が少し落ちる。2段落目の「うち」になる話がおもしろく、こっちを先頭に置けば止まりやすい。",
+      "1文目が長くて、流し見だと途中で読むのが落ちます。「一人称が『うち』になる」の一言が面白いので、これを先頭に持ってくると止まりやすいです。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったという話",
+      "ChatGPTの無料プランが無制限になった",
+      "ChatGPTの無料プランが無制限になったという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "「無料で無制限」は気になって止まる。最後の結論が「結局Plusを続けたのかやめたのか」が少しぼやけるので、はっきり書いてあると良い。",
+      "有料プランを続けるかで迷う気持ちは自分と重なって読みやすい。ただ「無料で無制限なのに、なぜ続けたか」の決め手がもう一歩具体的だと説得力が出る。",
+      "前半はニュースの要約です。後半の迷った話は良いのですが、結局Plusを続けたのかやめたのかが読み取りにくいです。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "f3",
+    "text": "素のClaudeにXの投稿を書かせるとなんかイマイチだったので、書かせる⇒私がダメ出し、を繰り返してから「過去の投稿に出てくる私の言葉で書いて」と頼むようにしたら、割と私っぽいのが出てきます。\n\n頼む前は、一度も使ったことのない「うち」が一人称になってました。\nhttps://aicontent-note.com/ai-sns-posting-continue/",
+    "quote": "",
+    "hash": "f4204029afd30ad7",
+    "label": "C",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude",
+      "素のClaude"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.67,
+    "comments": [
+      "「うち」の話が説明調になっていて、Aより笑いが弱い。過去形なのでオチの驚きが薄れる。",
+      "Aと同じ中身だけど、過去形の説明なので「うち」のオチが弱く、ただの報告になっている。驚きが伝わる言い方のほうがいい。",
+      "過去形の「なってました」なので、オチが説明っぽくなって笑いが弱いです。Aより印象に残りません。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトモデルがOpus 5に変わったという話",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった",
+      "Claude MaxのデフォルトがOpus 5になったという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "固有名詞ばかりでClaudeを知らない私には何の話か分からない。違いを感じなかった具体的な場面が1つあれば入りやすい。",
+      "モデル名ばかりで、有料プランに入っていない自分には何が違うのか分からない。「違いが分からなかった」という正直さはいいけれど、どんな作業で試したかがあれば参考になる。",
+      "「違いを実感できない」という正直さは良いです。ただ、Fableが何なのか分からず、Web担当の私には遠い話でした。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "前半は公式発表の要約で、ニュースっぽい。「書いたばかりでした＞＜」は人柄が出ていて良いが、自分がどう困るかがもう少しあると刺さる。",
+      "前半が公式発表の要約で、ニュースっぽく見える。「書いたばかりでした＞＜」は人柄が見えていいので、この人がこの機能で何を作っていて何が困るのかがあると読みたくなる。",
+      "1行目は止まりますが、中盤は公式発表の要約です。8/21の投稿を知らないので「＞＜」の失敗にもピンときませんでした。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "f1",
+    "text": "素のClaudeにXの投稿を書かせるとなんかイマイチだったので、書かせる⇒私がダメ出し、を繰り返してから「過去の投稿に出てくる私の言葉で書いて」と頼むようにしたら、割と私っぽいのが出てきます。\n\nほっとくと一人称が「うち」になります。一度も使ったことないのに。\nhttps://aicontent-note.com/ai-sns-posting-continue/",
+    "quote": "",
+    "hash": "a607f0812890dc3e",
+    "label": "F",
+    "avg": {
+      "stop": 3.0,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude",
+      "素のClaude"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "Aとほぼ同じで「うち」のオチが効いている。「一度も」が入って少しだけ強調が分かりやすい。1行目が長いのは同じ。",
+      "「一度も使ったことないのに」で思わず笑えて、AIにありそうだと共感した。1文目が長いので、もっと短く切ると流し見でも最後まで読める。",
+      "「一度も使ったことないのに」でクスッとしました。社内でAIに書かせる話としても参考になります。1文目が長いので、冒頭をもっと短くすると良いです。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

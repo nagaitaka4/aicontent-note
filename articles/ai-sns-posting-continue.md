@@ -6,7 +6,7 @@ title: AIでSNS投稿を続ける方法。ネタ・画像・投稿文の任せ�
 date: 2026-11-10
 url: https://aicontent-note.com/ai-sns-posting-continue/
 slug: ai-sns-posting-continue
-status: draft
+status: published
 description: SNS投稿は、ネタ集め・画像・投稿文の3つともAIに任せられます。止まりやすい所はAIに渡し、言葉づかいと出すかどうかは自分で決めます。AIでXを半年回してきた私のやり方で、作業ごとの任せ方とXの自動投稿のルール、続けるときの3つのコツを紹介します。
 eyecatch: eyecatch_0080.png
 eyecatch_alt: AIでSNS投稿を続ける方法と書いた青い帯の題の横に、大きなスマートフォンの周りでノートパソコンを打つ人・画像のカードを運ぶ人・送信ボタンを押す人を描いたアイキャッチ画像

@@ -204,7 +204,7 @@ MDファイルの `eyecatch_alt` の内容をそのままコピーして貼り�
 | 56 | - | - | chatgpt-work-claude-code-comparison.md | 2026-08-06 |
 | 57 | - | - | search-console-crawled-not-indexed.md | 2026-08-14 |
 | 58 | - | - | claude-cowork-usage-data.md | 2026-08-14 |
-| 59 | - | - | chatgpt-free-paid-difference.md | 2026-08-19 |
+| 59 | - | - | chatgpt-free-paid-difference.md | 2026-08-19（2026-11-12 全面改稿・URL維持） |
 | 60 | - | - | llms-txt-geo-effect.md | 2026-08-20 |
 | 61 | ai-ops-basics | 10 | ai-information-organization.md | 2026-08-25 |
 | 62 | ai-ops-basics | 11 | ai-work-environment-setup.md | 2026-08-26 |

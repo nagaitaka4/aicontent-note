@@ -100,7 +100,7 @@ ChatGPTは3つの用途で使っていますが、3つ全部が課金の理由�
 | ふだんのチャット・相談 | Claudeのチャットでもできる | 足りる（ふつうのテキストのチャットは、無料でも回数無制限） |
 | 書いた記事のレビュー | Claude Codeの中でもできる | 足りる（記事を貼って読んでもらうだけ） |
 
-無料と有料の違いは、[ChatGPTの無料と有料の違い｜無制限化しても課金する理由](https://aicontent-note.com/chatgpt-free-paid-difference/)にまとめています。
+無料と有料の違いは、[ChatGPT有料プランの違い。Go・Plus・Proと画像生成の上限](https://aicontent-note.com/chatgpt-free-paid-difference/)にまとめています。
 
 普段のチャットをChatGPTに回すのは、Claude Code側の使用量を減らさないためです。
 Claudeは、チャットとClaude Codeで使用量の枠が共通です（[公式](https://support.claude.com/ja/articles/11145838)）。
@@ -125,4 +125,4 @@ Maxでも、重い作業が続くと上限に当たることがあります。
 **関連記事**
 ・[ChatGPT WorkとClaude Codeの違いと選び方](https://aicontent-note.com/chatgpt-work-claude-code-comparison/)<br>
 ・[Claudeに課金すべきか。料金・制限より先にモデルで決める](https://aicontent-note.com/claude-subscription-change-june-2026/)<br>
-・[ChatGPTの無料と有料の違い｜無制限化しても課金する理由](https://aicontent-note.com/chatgpt-free-paid-difference/)
+・[ChatGPT有料プランの違い。Go・Plus・Proと画像生成の上限](https://aicontent-note.com/chatgpt-free-paid-difference/)

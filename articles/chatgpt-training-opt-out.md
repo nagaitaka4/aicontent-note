@@ -98,5 +98,5 @@ ChatGPTに学習させないには、設定の「モデル改善に協力する�
 
 **関連記事**
 ・[Claudeに会社の情報を渡して大丈夫か。データが学習に使われる条件](https://aicontent-note.com/claude-company-data-training/)<br>
-・[ChatGPTの無料と有料の違い｜無制限化しても課金する理由](https://aicontent-note.com/chatgpt-free-paid-difference/)<br>
+・[ChatGPT有料プランの違い。Go・Plus・Proと画像生成の上限](https://aicontent-note.com/chatgpt-free-paid-difference/)<br>
 ・[ChatGPTやClaudeの嘘はどこで起きる？ハルシネーション対策](https://aicontent-note.com/ai-hallucination-where-it-happens/)

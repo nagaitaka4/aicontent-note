@@ -21,6 +21,11 @@
      → 2026-10-11：型T-ぼやきの元投稿の口調に引っぱられ、常体だけの投稿（PROJ-02）が7項目を全部通った。
        盲検の読者役は初見なので「このアカウントの声と違う」を判定できない。8/21以降の投稿は全部2つ以上（posts-stock.mdで実測）
 
+  11. 書き出し（2026-11-11新設）：1行目の先頭6文字が、直近5投稿のどれかの1行目と同じなら止める
+     → 2026-11-11：前日の`FABLE52-04`と同じ「非エンジニアの私」で始まる候補を出し、ユーザーに指摘された
+  12. 怠慢（2026-11-11新設）：「サボる・怠惰・ラクする」などを書いていたら止める
+     → 2026-11-11：写す元（究極目標は怠惰）をそのまま置き換えた`SABORI80-リ`に「メディアの信用に関わる」
+
 x-firstline.py（1行目の固有名詞）は[要目視]を返すだけなので、ここでは参考表示にとどめる。
 """
 import importlib.util
@@ -139,6 +144,17 @@ def main():
             ng.append("見送り")
         else:
             print("10 見送り: [OK]")
+        cm = load("x-cannibal")
+        head = text.strip().splitlines()[0].strip()[:6]
+        same = [pid for pid, body in cm.recent_posts(14)[:5]
+                if body.strip() != text.strip() and body.strip().splitlines()[0].strip()[:6] == head]
+        print(f"11 書き出し: {'[NG] 直近5投稿と同じ入り「' + head + '」（' + '・'.join(same) + '）' if same else '[OK]'}")
+        if same:
+            ng.append("書き出し")
+        lazy = re.findall(r"サボ|怠惰|怠け|怠慢|手抜き|手を抜|ラクす|ラクし|楽す|楽し?たい", text)
+        print(f"12 怠慢   : {'[NG] 「' + '・'.join(lazy) + '」＝怠けている印象・メディアの信用に関わる（2026-11-11 ユーザー指示）' if lazy else '[OK]'}")
+        if lazy:
+            ng.append("怠慢")
         _, nouns, _ = first.check(text)
         print(f"  参考   : 1行目の固有名詞 {'・'.join(nouns) if nouns else 'なし（1行目だけで何の話か分かるか目で見る）'}")
 

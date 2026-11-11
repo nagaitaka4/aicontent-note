@@ -3,10 +3,10 @@ no: 81
 series:
 series_no:
 title: ChatGPTに学習させない設定。会社の情報を入れる前に
-date: 2026-11-10
+date: 2026-11-11
 url: https://aicontent-note.com/chatgpt-training-opt-out/
 slug: chatgpt-training-opt-out
-status: draft
+status: published
 description: ChatGPTに学習させないには、設定の「モデル改善に協力する」をオフにします。無料版・Plus・Proは、最初からオンです。オフで止まること・残ること、Business・Enterpriseとの違いと、会社の情報を入れる前に見る2つを紹介します。
 eyecatch: eyecatch_0081.png
 eyecatch_alt: ChatGPTに学習させない設定と書いた白いカードの下に「モデル改善に協力する」のオフのスイッチを置き、左右に吹き出しと鍵の盾を持つ2人を描いたアイキャッチ画像

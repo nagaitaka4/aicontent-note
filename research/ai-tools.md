@@ -1,8 +1,14 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-11
+最終更新: 2026-11-12
 
 ---
+
+## [2026-11-12] 調査結果（デイリー・木曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome・「Updated: 24 時間前」）：🆕 November 10の項に**「Retiring Advanced and Standard Voice」が足されていた**（昨日の巡回ではBusiness Hubだけ）。verbatim `We’re retiring Advanced and Standard voice from ChatGPT Voice on December 11, 2026.` ／ `virtually all people using voice in ChatGPT now use GPT-Live` ／ `Live video and screen-sharing will continue to be powered by Advanced voice until GPT-Live has this capability.`＝音声会話は12/11からGPT-Liveだけになる（ビデオ・画面共有は当面旧版のまま）。**本人は音声を使っている記録がない**＝ideasに記録のみ（`research-20261112-02`）
+- Gemini・国産ツール：差分なし
+
 
 ## [2026-11-11] 調査結果（デイリー・水曜）
 

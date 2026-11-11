@@ -1,9 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-11
+最終更新: 2026-11-12
 
 
 ---
+
+## [2026-11-12] 調査結果（デイリー・木曜）
+
+- **🆕 Pro・Max・Ultra・Teamに「完全リセット」が1回、無料で配られた（12/10 14:00 PTまで）**（[@ClaudeDevs](https://x.com/ClaudeDevs/status/2120275296637321476)・2026-11-11 06:59 JST・300万表示・実Chrome）：verbatim `We've given all Pro, Max, Ultra, and Team users one free full reset, across all models and limits. Use it anytime before December 10 at 2:00PM PT.` ／理由 `We recently fixed a few small issues that used more limits than intended, and the Fable resets didn't do much for those of you who'd already hit your weekly limits for all models.` ／場所 `Settings > Usage, or at clau.de/reset`。**本人の画面で確認（実Chrome・claude.ai/settings/usage・読むだけ）**：「上限のリセット 3 件利用可能」＝「完全リセット 有効期限：12月11日 7:00 JST［無料でリセット］」＋「Fable リセット · 2（2027年3月9日 16:59 JST）」。Fableリセットの説明は「週間の使用量すべてがリセットされるわけではありません」。同じ画面に「このペースでは、火曜日のリセットを待たずに、土曜日の夜に上限に達する見込みです」（今週43%・木曜朝）／今週の製品別：Claude Code 100%。**使う側の変化**：週の上限に当たった人も、全部のモデル・上限を1回だけ戻せる（Fableのリセットとは別物）→ ideas `research-20261112-01`
+- 🆕 claude.com/blog：JPMorganChaseのClaude Code拡大（事例・記録のみ）。Personal Financeは11/5のリリースノート掲載分（米国のみ・Pro/Max/Ultra）＝本人に影響なし・11/5〜11/11の巡回で未記録だった
+- npm／CHANGELOG：2.1.322のまま（差分なし）／Claude Apps：最新はNovember 6のまま／Newsroom：11/9のFable 5.2のあと新着なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（curl）／@ClaudeDevs ✅（実Chrome）／本人のUsage画面 ✅（実Chrome・読むだけ）／claude.com/pricing ⚠️未確認
+
 
 ## [2026-11-11] 調査結果（デイリー・水曜）
 

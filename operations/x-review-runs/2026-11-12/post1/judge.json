@@ -1,0 +1,275 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.67,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 1,
+    "premise_topics": [
+      "Claude MaxのデフォルトモデルがOpus 5に変わった",
+      "Opus 5は他より性能が上だと言われている",
+      "Claude MaxのデフォルトがOpus 5に変わったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "B",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランでもチャットが無制限になった",
+      "ChatGPTの無料プランが無制限になった",
+      "ChatGPTの無料プランが無制限になったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 3,
+    "premise_topics": [
+      "投稿者が8/21に「無料でもマイGPTは使える」と書いていた",
+      "前に投稿者が「無料でもマイGPTは使える」と書いていた",
+      "8/21に本人が書いた「無料でもマイGPTは使える」という投稿"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.33,
+    "comments": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c2",
+    "text": "Claude Codeやばいです。\nブログもXもほぼ任せていたら、木曜で週の上限の43%。\n\n使用量の画面いわく「このペースでは、火曜日のリセットを待たずに、土曜日の夜に上限に達する見込みです」。\n\n（昨日Claudeが配ってくれた、全部の上限を1回戻せる無料リセットは土曜の夜に使います）",
+    "quote": "",
+    "hash": "a4bdbf7f481d826a",
+    "label": "D",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.67,
+      "follow": 3.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "火曜日のリセット",
+      "無料リセット",
+      "週の上限"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 3,
+    "premise_topics": [
+      "昨日Claudeが全部の上限を1回戻せる無料リセットを配った",
+      "Claude Codeには週ごとの使用上限があり、昨日リセット券が配られた",
+      "Claudeが全部の上限を1回戻せる無料リセットを配ったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.33,
+    "comments": [
+      "「ブログもXもほぼ任せていたら」で、この人がAIに何をさせているのか気になりました。最後のカッコ書きは前の出来事を知らないと分かりにくく、そこで少し置いていかれました。",
+      "「ブログもXもほぼ任せていたら」で、自分と同じ使い方の人だと分かり一気に興味が湧いた。「昨日Claudeが配ってくれた無料リセット」は知らないとピンとこないので、一言説明がほしい。",
+      "「ブログもXもほぼ任せていたら」が刺さった。「やばい」が良い意味か悪い意味か一瞬迷ったのと、昨日のリセットの話は前を知らないと分かりにくい。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：火曜日のリセット・無料リセット・週の上限",
+      "受けている話が投稿の中に無い3人：昨日Claudeが全部の上限を1回戻せる無料リセットを配った／Claude Codeには週ごとの使用上限があり、昨日リセット券が配られた／Claudeが全部の上限を1回戻せる無料リセットを配ったこと"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c1",
+    "text": "Claude Code、やばいです（悪い意味で）。\nまだ木曜の朝なのに、週の上限の43%。\n\nしかも使用量の画面が「このペースでは、火曜日のリセットを待たずに、土曜日の夜に上限に達する見込みです」と計算してくれます。\n\n（昨日配られた、全部の上限を1回戻せる無料リセットは土曜の夜に押します）",
+    "quote": "",
+    "hash": "9ecad580b0bb985c",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.33,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "火曜日のリセット",
+      "無料リセット",
+      "週の上限"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 3,
+    "premise_topics": [
+      "昨日、全部の上限を1回戻せる無料リセットが配られた",
+      "Claude Codeには週ごとの使用上限があり、昨日リセット券が配られた",
+      "Claudeが全部の上限を1回戻せる無料リセットを配ったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "何に使って43%になったのかが書いていないので、ただの使いすぎの愚痴に見えました。",
+      "「（悪い意味で）」の切り返しは面白くて止まる。何にそんなに使ったのかが書かれていない。",
+      "何に使ってそこまで減ったのかが書いていない。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：火曜日のリセット・無料リセット・週の上限",
+      "受けている話が投稿の中に無い3人：昨日、全部の上限を1回戻せる無料リセットが配られた／Claude Codeには週ごとの使用上限があり、昨日リセット券が配られた／Claudeが全部の上限を1回戻せる無料リセットを配ったこと"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c3",
+    "text": "Claudeの上限のリセット、3回分たまってます。\n一番上のモデル用が2回と、昨日配られた全部の上限を1回戻せる無料リセット。\n\n使用量の画面は「このペースでは、火曜日のリセットを待たずに、土曜日の夜に上限に達する見込みです」と言うので、土曜の夜に1回ぶっぱなす予定です。",
+    "quote": "",
+    "hash": "b1aed13a4781e15b",
+    "label": "F",
+    "avg": {
+      "stop": 2.0,
+      "fun": 3.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "ぶっぱなす",
+      "一番上のモデル用",
+      "一番上のモデル用のリセット",
+      "上限のリセット",
+      "無料リセット",
+      "週の上限の仕組み"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 3,
+    "premise_topics": [
+      "Claudeには上限を戻すリセットという仕組みがあり、昨日無料で配られた",
+      "Claudeには上限があって、リセットの権利がたまったり配られたりする",
+      "Claudeの上限リセットの仕組みと、配られた無料リセット"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.67,
+    "comments": [
+      "1行目の「リセットが3回分たまってる」が何のことか分からず。",
+      "内輪話に見える。",
+      "何がすごいのか分からなかった。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：ぶっぱなす・一番上のモデル用・一番上のモデル用のリセット・上限のリセット・無料リセット・週の上限の仕組み",
+      "受けている話が投稿の中に無い3人：Claudeには上限を戻すリセットという仕組みがあり、昨日無料で配られた／Claudeには上限があって、リセットの権利がたまったり配られたりする／Claudeの上限リセットの仕組みと、配られた無料リセット"
+    ]
+  }
+]

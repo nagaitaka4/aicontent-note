@@ -115,6 +115,10 @@
   - **料金ページ（11/11 17時台に取り直し）**：GPT-6 Astra＝無料版・Go「いいえ」／Plus「上限あり」／Pro「拡張」。GPT-5.6 Sol Pro＝Plus「拡張」／Pro「無制限*」。**Proだけのものは dots（常時稼働のエージェント）**。Pro専用のモデルは料金ページの表では確認できない
   - **Proの概要**（同上）：「ChatGPT Pro には、Pro モデル、Codex、deep research…が含まれます」「Chat における GPT-6 Pro の週間メッセージ上限」。GPT-6 ProがPlusで使えないとは書いていない＝**「Pro専用の高性能モデル」とは書かない**
 
+- **本文のGPTレビュー（11/12 6時台）を受けて取り直した分**：
+  - **ChatGPT の GPT-6 とその他のモデル**（https://help.openai.com/ja-jp/articles/20001354 ・更新12日前）：「GPT‑6 Astra を基盤とする GPT‑6 Pro は、Pro $100、Pro $200、Business、Enterprise プランの ChatGPT で利用できます」「Plus プランでは、ChatGPT Work と Codex で GPT‑6 Astra を利用できます」＝**チャットのGPT-6 ProはProから**（Plusはチャットでは使えない）。⚠️ Pro $500は列挙に無い＝本文は「Proから」とだけ書き、ティアごとには書かない。GPT-6 ProはProでも無制限ではない（週間上限あり）
+  - 料金ページ（11/12 6時台に取り直し）：Pro専用のモデルの行は無い（Astra・Sol ProはPlusも「上限あり」「拡張」）。Proの「Monthly API credits」は Pro 100 ￥16,800／Pro 200 ￥30,000／Pro 500 ￥84,000（API クレジットの額で、月額の円ではない＝本文には書かない）
+
 ### 5-3. リリースノート（https://help.openai.com/ja-jp/articles/6825453 ・最新の項目は10/16）
 
 - **2026-10-07 GPT-6**：Plus・Pro・Business・Enterprise は GPT-6 Sol、無料・Go は GPT-6 Luna。Pro の推論は GPT-6 Astra

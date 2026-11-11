@@ -245,7 +245,7 @@ python3 operations/md-to-wp.py articles/<slug>.md
 1. MD：`status: published`／`date:`記入
 2. `operations/article-md-workflow.md`に追記
 3. `operations/article-backlog.md`：`[x]`＋次回確定マーク移動
-4. GitHub issue #2 更新
+4. ~~GitHub issue #2 更新~~（2026-11-12 廃止・issueはクローズ＝もう見ていない〔ユーザー〕）
 5. `~/Documents/GitHub/tasks/README.md`更新。**TOP10で空いた枠は、待機列（TOP11〜20）の上から入れる**（2026-09-11変更）。待機列から選ばない場合は、選ばなかった理由を1行書く。補充（TOP10が10本を切ったときだけ・基準は下げない）は`rules/task-management.md`「補充の手順」
 6. WP同期（WPを正としてMDを合わせる。ズレ指摘時はユーザーに確認）
 7. X投稿キューへネタ抽出3本（`rules/x-post-flow.md` 3.5章）

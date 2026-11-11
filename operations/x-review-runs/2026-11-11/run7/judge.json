@@ -1,0 +1,209 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトがOpus 5に変わったこと",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+      "Claude MaxのデフォルトがOpus 5に変わった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "モデル名が並んでいて、Claudeを知らないと何の話か分からない。1行目で読むのをやめた。Fableで「おっ！」となった中身を具体的に書いてくれれば興味がわく。",
+      "モデル名が並んでいて、有料プランを迷っている自分には温度感が伝わりにくいです。どんな作業で比べたのかが一つあれば、もっと読みたくなります。",
+      "モデル名ばかりで、ブログ担当の私には関係ない話に見えて1行目で流しました。どんな作業で比べたのかが一言あれば読めます。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "u3",
+    "text": "何も設定していないClaudeでXの投稿内容を作成したらイマイチでした。\nルールを作り、私がダメ出し、修正を繰り返していたら、割と安定していいのが出るようになりました。\n\nただ、ほっとくと一人称が「うち」になります。一度も使ったことないんですが。\nhttps://aicontent-note.com/ai-sns-posting-continue/",
+    "quote": "",
+    "hash": "1cf51a7d738c8e38",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "一人称が勝手に「うち」になる話は意外で、少し笑えた。1行目は「イマイチでした」でよくある話に見えるので、「うち」の話を先に出したほうが手が止まりそう。",
+      "最初はAIあるあるかなと思いましたが、「うち」で笑ってしまい人柄が見えました。リンクの記事で何を学べるのかが一言あれば、クリックしやすいです。",
+      "1行目は普通ですが、一人称が勝手に「うち」になるオチで笑いました。社内でAIを回すときの実感が出ていて、リンク先も読みたくなります。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "マイGPT終了は仕事で使っている身として気になるので止まった。後半はほぼ発表の要約で、「書いたばかりでした＞＜」の失敗談が救い。移行で困ったことを書いてくれれば面白くなる。",
+      "前半は発表の要約なので、流し読みになりました。「書いたばかりでした＞＜」は面白いですが、本人がどう対応するのかがあると止まります。",
+      "前半はニュースの要約です。「8/21に書いたばかり」の失敗談で少し人柄が見えましたが、自分の業務にどう響くかがあれば良くなります。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D",
+    "avg": {
+      "stop": 3.33,
+      "fun": 2.67,
+      "follow": 3.0
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランでもチャットが無制限になったこと",
+      "ChatGPTの無料プランでチャットが無制限になったこと",
+      "ChatGPTの無料プランのチャットが無制限になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.33,
+    "comments": [
+      "Plusを続けるか迷う気持ちは分かるし共感できる。「画像生成・速度・モデル・・・」の部分がぼんやりしていて、何と何を比べて決めたのかが伝わりにくい。",
+      "有料を続けるか迷った話なので、今の自分に刺さりました。「・・・」で迷った理由がぼかされているので、決め手を具体的に書いてほしいです。",
+      "結論が「Plusを続けた」で、迷った理由が「・・・」で省かれていて伝わりませんでした。何に使っていて決め手は何だったかがあると参考になります。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "u5",
+    "text": "何も設定していないClaudeでXの投稿内容を作成したらイマイチでした。\n\nルールを作り、私がダメ出し、修正を繰り返していたら、割と安定していいのが出るようになりました。\n\nただ、ほっとくと一人称が「うち」になったことがあります。一度も使ったことないんですが。\nhttps://aicontent-note.com/ai-sns-posting-continue/",
+    "quote": "",
+    "hash": "f2c536ed5c5f6fb0",
+    "label": "E",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.67,
+    "comments": [
+      "Bとほぼ同じ内容だが、「なったことがあります」と過去の1回のように書かれていて、今も起きるのか分からず面白さが弱まった。改行が多い分、Bより読みやすい。",
+      "Bとほぼ同じですが、「なったことがあります」だと過去の話になり、オチが弱く感じました。今も起きているBの方が笑えます。",
+      "Bとほぼ同じで面白いですが、「なったことがあります」と過去の話にしたぶんオチが弱く感じました。今も起きる話のほうが笑えます。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

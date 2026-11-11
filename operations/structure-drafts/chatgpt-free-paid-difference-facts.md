@@ -110,6 +110,11 @@
 - **ChatGPT での広告**（https://help.openai.com/ja-jp/articles/20001047-ads-in-chatgpt ・更新8日前・11/11 12時台に原文確認）：「ChatGPT 無料版および ChatGPT Go のユーザーには、広告が表示される場合があります。ChatGPT Plus、ChatGPT Pro、Business、Enterprise、Edu の各アカウントでは広告は表示されません」。回答の下に広告ユニットが1つ。画像生成中のビジュアル広告もテスト中。一時チャットには出ない
 - **複数通貨での請求**（https://help.openai.com/ja-jp/articles/10421635 ・更新昨日）：JPY（日本）に対応。**有効なサブスクリプションは今の通貨で請求が続く。通貨を変えるには解約して、請求期間が終わった後に登録し直す**。アプリ（App Store・Google Play）で買った場合はストアが管理
 
+- **GPTレビュー（11/11 17時台）を受けて取り直した分**：
+  - **ChatGPT のスケジュール済みタスク**（https://help.openai.com/ja-jp/articles/10291617 ・更新10日前）：「無料プランのユーザーは、単発のタスク、または実行頻度が 1 日 1 回以下の繰り返しタスクをスケジュールできます」。有効にできるタスクはFree・Go 3件／Plus 5件／Pro 15件。⚠️ **料金ページは無料版「いいえ」でヘルプと食い違う**＝記事ではスケジュールタスクを書かない（構成案第3稿で削除）
+  - **料金ページ（11/11 17時台に取り直し）**：GPT-6 Astra＝無料版・Go「いいえ」／Plus「上限あり」／Pro「拡張」。GPT-5.6 Sol Pro＝Plus「拡張」／Pro「無制限*」。**Proだけのものは dots（常時稼働のエージェント）**。Pro専用のモデルは料金ページの表では確認できない
+  - **Proの概要**（同上）：「ChatGPT Pro には、Pro モデル、Codex、deep research…が含まれます」「Chat における GPT-6 Pro の週間メッセージ上限」。GPT-6 ProがPlusで使えないとは書いていない＝**「Pro専用の高性能モデル」とは書かない**
+
 ### 5-3. リリースノート（https://help.openai.com/ja-jp/articles/6825453 ・最新の項目は10/16）
 
 - **2026-10-07 GPT-6**：Plus・Pro・Business・Enterprise は GPT-6 Sol、無料・Go は GPT-6 Luna。Pro の推論は GPT-6 Astra

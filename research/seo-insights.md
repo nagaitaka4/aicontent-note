@@ -1,8 +1,22 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-11-06
+最終更新: 2026-11-13
 
 ---
+
+## [2026-11-13] 調査結果（フル版・金曜）
+
+**③の注目：November 2026 core update が11/11 03:06 JSTに開始（最大2週間＝11/25ごろまで）。**
+
+- **🆕 November 2026 core update**（[Search Status Dashboard incidents.json](https://status.search.google.com/incidents.json)・本日curl）：begin `2026-11-10T18:06:00+00:00`／verbatim `Released the November 2026 core update <https://developers.google.com/search/docs/appearance/core-updates>, which applies globally and to all languages. The rollout may take up to 2 weeks to complete.`。11/9のフル版のあとに出た＝今回はじめて記録
+  - **自サイトへの影響**：展開中（〜11/25目安）はGSCの順位・表示が揺れる。**この期間の数字で改稿の当否を判定しない**（no.64改稿11/9・no.59改稿11/12・no.80公開11/10・no.82公開11/12がちょうど重なる）→ `operations/measurement-calendar.md`の期日が11/25より前のものは、展開完了後に取り直す
+- 🆕 Search Central ドキュメント更新（[Latest updates](https://developers.google.com/search/updates)）：November 12 `Added a new page about identifying traffic from Google Search using HTTP Referer headers.`／November 9 `Added "things to do" query support to the aggregator and supplier units`（旅行系＝影響なし）
+- 🆕 Search Central Blog：`Moving to a CDN without overwhelming your origin (or blocking Googlebot)`（11月・技術者向け。本サイトはCDN移行の予定なし＝記録のみ）
+
+### 記事側への影響
+- **訂正が必要な記事：なし**（コアアップデートの記述がある記事は、時期の例として古い月名を出しているだけ。grepで要確認は次の改稿時）
+- no.83（ブログはオワコン？・執筆中）の材料：「検索の順位はコアアップデートのたびに動く」は一次情報（上のverbatim）で書ける
+
 
 ## [2026-11-09] 調査結果（フル版・月曜）
 

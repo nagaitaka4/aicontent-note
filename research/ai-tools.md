@@ -1,8 +1,15 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-12
+最終更新: 2026-11-13
 
 ---
+
+## [2026-11-13] 調査結果（デイリー・金曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome・「Updated: 一昨日」）：最新はNovember 10（Voice終了・Business Hub＝既録）のまま。差分なし
+- Gemini：まとめサイト（[ai-tldr.dev](https://ai-tldr.dev/releases/google-gemini-intelligence-november-2026/)）に「11/10 Gemini IntelligenceにAndroidのウィジェット作成（Create My Widget）」。**Google公式で未確認**＝記録のみ・ネタにしない
+- 国産ツール：差分なし
+
 
 ## [2026-11-12] 調査結果（デイリー・木曜）
 

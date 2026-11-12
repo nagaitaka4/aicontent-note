@@ -1,9 +1,18 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-12
+最終更新: 2026-11-13
 
 
 ---
+
+## [2026-11-13] 調査結果（デイリー・金曜）
+
+- 🆕 Claude Apps リリースノート November 12：`Claude Meetings is rolling out in beta on Team and Enterprise plans in Claude and Claude Desktop. You can add Claude to a Google Meet call as a visible participant that takes notes, answers questions, and builds artifacts`（[出典](https://support.claude.com/en/articles/12138966-release-notes)）＝Team/Enterpriseのみ。本人（個人のMax）は使えない＝記録のみ
+- 🆕 claude.com/blog・@ClaudeDevs 11/12：`Self-hosted Claude Managed Agents is now in private beta.`（[@ClaudeDevs](https://x.com/ClaudeDevs/status/2120938988165091693)・34.6万表示）＝企業の自社環境向け。記録のみ。同日 J.Crewの事例（記録のみ）。11/10「Your apps can now open in Claude」（パートナーのアプリをClaudeの中で開く）は11/11巡回分
+- npm：**2.1.323（2026-11-12 20:29 UTC公開）**。CHANGELOG.mdはまだ2.1.322まで（中身未掲載＝次回確認）
+- Newsroom：11/10「IPOのロードショー開始」（既録）のあと新着なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（curl）／@ClaudeDevs ✅（実Chrome）
+
 
 ## [2026-11-12] 調査結果（デイリー・木曜）
 

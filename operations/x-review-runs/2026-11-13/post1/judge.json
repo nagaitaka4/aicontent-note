@@ -1,0 +1,261 @@
+[
+  {
+    "kind": "candidate",
+    "id": "KAKARI-01",
+    "text": "ブロガーというのかい？贅沢な名だね。\n今からお前の名前はAIの記事の確認係だ。\nいいかい、AIの記事の確認係だよ。\n\nブログをほぼClaudeに任せてから、私の仕事は本当にこれです。\n\n書くのはClaude、読んで「ここ直して」と頼むのが私。\n返事はしました。",
+    "quote": "",
+    "hash": "af26b17d90f59b14",
+    "label": "A",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "ブロガーというのかい？贅沢な名だね（元ネタを知らないと唐突）",
+      "ブロガーというのかい？贅沢な名だね（元ネタを知らないと意味不明）",
+      "返事はしました",
+      "返事はしました。"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 3,
+    "premise_topics": [
+      "千と千尋の神隠しの湯婆婆が名前を奪う場面のパロディ",
+      "千と千尋の神隠しの湯婆婆のセリフのパロディ",
+      "映画のセリフのパロディ（名前を奪われる場面）"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "1行目のパロディで止まるが、元ネタを知らないと『返事はしました』が唐突で何の話か分からない。元ネタだと分かる一言があれば伝わる。",
+      "1行目のパロディで止まるが、最後の「返事はしました。」が元ネタを知らないと唐突で意味が取れない。元のセリフ（返事をするんだ）を入れれば落ちが通じる。",
+      "冒頭のパロディは目を引くが、自分の話に入るまでが遅く、最後の『返事はしました』が置いてけぼり。確認係として何をどれだけ直しているかの一例があれば良い。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：ブロガーというのかい？贅沢な名だね（元ネタを知らないと唐突）・ブロガーというのかい？贅沢な名だね（元ネタを知らないと意味不明）・返事はしました・返事はしました。",
+      "受けている話が投稿の中に無い3人：千と千尋の神隠しの湯婆婆が名前を奪う場面のパロディ／千と千尋の神隠しの湯婆婆のセリフのパロディ／映画のセリフのパロディ（名前を奪われる場面）"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPT機能が終了するという発表",
+      "ChatGPTのマイGPT終了の発表",
+      "ChatGPTのマイGPT終了の発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "前半は発表の要約で読み流しそうになる。8/21に書いたばかりという失敗談は良いので、そこを1行目に出すと人柄が出る。",
+      "前半は発表の要約で流し読みになる。「書いたばかりでした＞＜」の失敗が人柄として一番良いので、そこを1行目に持ってくると止まる。",
+      "前半は発表の要約で読み流した。『書いたばかりでした＞＜』は人柄が出ていて良いので、そこを1行目に持ってくると止まる。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "C",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランのチャットが無制限になったという話",
+      "ChatGPTの無料プランが無制限になったこと",
+      "ChatGPT無料プランのチャット無制限化"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.33,
+    "comments": [
+      "迷った末に何を選んだのかが『安定して使いたいが勝った』だけでは分かりにくい。Plusを続けたと一言はっきり書いてほしい。",
+      "有料プランで迷っている自分に刺さる話題で、結論が「Plusを続けた」と読める。ただ最後の結論がぼんやりしていて、続けたのか分かりにくい。",
+      "迷った末に有料を続けた話は共感できるが、何に使っていて何が決め手だったかがぼんやり。業務での具体的な使い方が一言あれば参考になる。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "KAKARI-02",
+    "text": "私、Claudeにブログをほぼ任せたら、こう言われた気がします。\n\n「ブロガーというのかい？贅沢な名だね。\n今からお前の名前はAIの記事の確認係だ。\n分かったら返事をするんだ、AIの記事の確認係！」\n\n書くのはClaude、読んで「ここ直して」と頼むのが私です。",
+    "quote": "",
+    "hash": "3495a468011e7b3b",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 4.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "ブロガーというのかい？贅沢な名だね（元ネタ）"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "千と千尋の神隠しの湯婆婆のセリフのパロディ",
+      "千と千尋の神隠しの湯婆婆のセリフのパロディ",
+      "映画のセリフのパロディ（名前を奪われる場面）"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.0,
+    "comments": [
+      "『こう言われた気がします』と前置きがあるのでパロディとして読める。最後に、確認係になってどう感じたかの本音が一言あればもっと良い。",
+      "元のセリフの形がそろっているので知っていれば笑える。1行目が「私、」で始まり弱いので、セリフから入った方が止まる。",
+      "『私、Claudeにブログをほぼ任せたら』で何の話か先に分かるのでパロディが効いている。確認係として実際どれくらい手を入れているのか、続きが気になる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "OKINI-01",
+    "text": "最近のお気に入りの頼み方は、ChatGPTに\n「この参考画像の組み方と絵のタッチだけ借りて、人物と文字は全部変えて」\nって頼んだやつ。\n\n真似しすぎるとパクリになるので、借りる所と変える所を分けて書いています。\nブログの見出し画像、これで80枚作ってやっと落ち着きました。",
+    "quote": "",
+    "hash": "13212588bee5aae5",
+    "label": "E",
+    "avg": {
+      "stop": 3.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "具体的な頼み方がそのまま使えそうで、80枚作ったという試行錯誤も見えて良い。1行目がやや地味なので、80枚の話を先に出すと止まりやすい。",
+      "そのまま真似できる頼み方と80枚の試行錯誤が見えて実用的。1行目の「最近のお気に入り」が平凡なので、80枚の話を先に出すと止まりやすい。",
+      "80枚作って落ち着いたという試行錯誤と、パクリにならない頼み方は実務でそのまま使えそう。1行目がやや平凡なので『80枚』を前に出すと止まりやすい。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "F",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Maxの標準モデルがOpus 5になったという発表",
+      "Claude MaxのデフォルトモデルがOpus 5になった発表",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "Claudeを知らないので製品名ばかりで置いていかれた。何に使ってどう違わなかったかの具体例があれば読める。",
+      "モデル名が並び、有料プランを迷っている段階の自分には遠い。違いを感じなかった具体的な作業例があれば読める。",
+      "モデル名が並んで自分には関係ない話に見えた。ブログ作業で何が変わった・変わらなかったかの具体例があれば読める。"
+    ]
+  }
+]

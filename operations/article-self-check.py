@@ -61,6 +61,23 @@ def strip_decoration(text):
     return re.sub(r"\*\*(.+?)\*\*", r"\1", text, flags=re.S)
 
 
+def mask_code_blocks(body):
+    """```で囲んだコードの欄を、行の数はそのままに「```」だけの行へ置き換える（2026-11-12追加・no.82）。
+    コードの欄は読者が読む地の文ではない（プロンプトの実物など）。中身まで数えると、一文・段落の長さ・
+    ・のネスト・引用の使い回しなどが、載せた実物に対して出ていた。行の数を変えないので、報告する行番号はずれない。
+    「```」は文字だけの段落の連続チェックでは区切りとして数え、見える本文の字数には入らない。"""
+    out, inside = [], False
+    for line in body.split("\n"):
+        if line.strip().startswith("```"):
+            inside = not inside
+            out.append("```")
+        elif inside:
+            out.append("```")
+        else:
+            out.append(line)
+    return "\n".join(out)
+
+
 def load(path):
     with open(path, encoding="utf-8") as f:
         text = f.read()
@@ -119,6 +136,8 @@ def main(path):
     lines = body.split("\n")
     # bodyはfrontmatter除去後のため、報告する行番号にファイル基準のオフセットを加える
     offset = text[: text.index(body)].count("\n") if body in text else 0
+    body = mask_code_blocks(body)
+    lines = body.split("\n")
     failures = 0
 
     print("=== 🤖 機械チェック（rules/article-flow.md準拠） ===\n")
@@ -581,7 +600,7 @@ def main(path):
     # 公開53本の実測は中央値6連続（最大12）。no.57は言い直しを削って6→3連続になった。
     # 直し方は「視覚要素を足す」ではなく「冗長な段落を畳む・H3で切る」（原則2）。
     print("\n--- 文字だけの段落の連続チェック（4連続まで） ---")
-    BREAKERS = ("|", "・", "【", "＼", "※", "![", "---", "[お問い合わせ")
+    BREAKERS = ("|", "・", "【", "＼", "※", "![", "---", "[お問い合わせ", "```")
     runs_over = []
     for blk in re.split(r"^## ", body, flags=re.M)[1:]:
         h2title = blk.split("\n", 1)[0][:30]

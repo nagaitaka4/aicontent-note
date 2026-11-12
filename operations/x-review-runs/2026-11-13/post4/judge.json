@@ -1,0 +1,216 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったという話",
+      "ChatGPTの無料プランが無制限になったという変更",
+      "ChatGPTの無料プランのチャットが無制限になったという変更"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "迷って課金を続けた決断が見えるのは良い。ただ無料で無制限になったという話が本当か少し引っかかり、理由がもう一歩具体的だと共感しやすい。",
+      "有料プランに迷う自分には刺さる話。ただ「無料でも無制限」と書いた直後に「利用制限が明確じゃない」とあり、結局どうなのか少し混乱した。",
+      "前半はニュースの要約で読み流しかけたが、Plusを続けた迷いと理由が最後にあるのは良い。何に使っているからPlusが要るのかが一言あると自分ごとにしやすい。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Maxの標準モデルがOpus 5に変わったこと",
+      "Claude Maxの標準モデルがOpus 5に変わったこと",
+      "Claude Maxの標準モデルがOpus 5に変わったという変更"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "固有名詞が4つ並んで、Claudeを知らない私には何の話か分からず1行目で離脱。どんな作業で比べたかが一言あれば読める。",
+      "モデル名が並んでいて、AIを使い始めたばかりの自分には何の話か分からず1行目で離れた。どんな作業で比べたのか具体的な例があれば読める。",
+      "モデル名が並んで、自分には関係ない上級者の話に見えて離脱した。どんな作業で差が出なかったのかが具体的にあると読める。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた",
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPT終了の発表",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPT機能が終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.67,
+    "comments": [
+      "終了の告知は気になって止まるが、中盤は発表の要約。前に書いたことが外れた＞＜は人柄が見えて良いので、そこをもっと前に出すと良い。",
+      "前半は発表の要約で流してしまうが、「書いたばかりでした＞＜」の失敗談で少し人柄が見えた。中身の作り方を知らないので移行の話はピンとこない。",
+      "ほぼ公式発表の要約で、最後の「書いたばかり＞＜」で少し人柄が出る程度。8/21の投稿を知らないので、何を書いたのか一言あると伝わる。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "NAOSHI-u1",
+    "text": "AIに任せたブログ記事あるある。\nClaudeに任せた私のブログで、直した所です。\n\n・8千字を超えて、要点が埋もれる\n・リンク先が英語のページ\n・「17件」と具体的すぎる数字\n・表が文字だけで、強調がない\n・断定する\n・同じ内容が重複する\n\n英語のリンクと表は、今はチェックで止まります。",
+    "quote": "",
+    "hash": "76f2312de24fe8f9",
+    "label": "D",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.33,
+      "follow": 4.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "チェックで止まる（何のチェックか）"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIに書かせたブログ記事にはよくある癖があるという話",
+      "AIに書かせたブログ記事にはありがちな失敗がある",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.0,
+    "comments": [
+      "あるあるで分かりやすく、実際に直した所なので信用できる。「断定する」「重複する」はよく聞く話で、ほかの項目より印象が薄い。",
+      "実際に直した所なので、これから記事をAIに任せたい自分に役立つ。後半の「断定する」「重複する」はよく聞く話で、少し並べただけに見えた。",
+      "社内でAIに書かせるか迷っている身には具体的で役立つ。「断定する」「重複する」は一般的すぎて弱いので、実例があると良い。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "NAOSHI-03",
+    "text": "AIに任せたブログ記事あるある。\nClaudeに任せた私のブログで、直した所です。\n\n・8千字を超えて、要点が埋もれる\n・リンク先が英語のページ\n・「17件」と半端な数字を書く\n・表が文字だけで、強調がない\n・私のやり方を「近道です」と言い切る\n\n英語のリンクと表は、今はチェックで止まります。",
+    "quote": "",
+    "hash": "56415a8e334f86a1",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "チェックで止まる（何のチェックか）"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIに書かせたブログ記事にはよくある癖があるという話",
+      "AIに書かせたブログ記事にはありがちな失敗がある",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "「近道です」と言い切るの具体例が生々しくて面白い。項目が絞られていてDより読みやすい。",
+      "「近道です」と言い切る、が具体的で本人の記事らしさが出ていて面白い。「チェックで止まります」のチェックが何か一言あれば真似したくなる。",
+      "「近道です」と言い切る例が具体的で、AIのクセが目に浮かんで面白い。最後の「チェック」が何なのか分からないので、一言補うとさらに良い。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

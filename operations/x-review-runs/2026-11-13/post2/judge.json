@@ -1,0 +1,210 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.33,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Maxの標準モデルがOpus 5に変わったこと",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.33,
+    "comments": [
+      "1行目から知らない製品名が並び、Claudeを知らないと何の話か分からない。Opus 5とSonnet 5の違いを一言添えてほしい。",
+      "モデル名が並ぶだけで、有料プランに迷っている自分には何が違うのか分からない。使い方の具体例がひとつあれば読めた。",
+      "モデル名が続いて、Web担当の私には違いの話がピンときません。どんな作業で差が出なかったのか、具体例が1つあれば読めました。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "NAOSHI-01",
+    "text": "Claudeにほぼ任せているブログで、公開前に直したところです。\n\n・1本が8千字を超えて、要点が埋もれる\n・リンク先が英語のページ\n・「17件」のような半端な数字を本文に書く\n・表が文字だけで、大事な所が見えない\n・私のやり方を「近道です」と言い切る\n\nどれも、読めばすぐ気づくものでした。",
+    "quote": "",
+    "hash": "875bc4408012ba9d",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIに任せたブログ記事には直すべき癖がある",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.33,
+    "comments": [
+      "具体的な箇条書きは実感があって読める。最後の一文が淡白なので、どれが一番困ったかなど本人の気持ちがあるとよい。",
+      "リストはAIに書かせた記事のよくあるミスで、自分にも役立つ。締めの「すぐ気づく」が平坦で、なぜ見落としていたかの一言があればもっと人柄が出る。",
+      "AIにブログを任せたときに直す所がわかって、そのまま使えます。最後の「すぐ気づく」で終わってしまうので、どう防いでいるかまで一言あれば、もっとフォローしたくなります。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "NAOSHI-02",
+    "text": "Claudeに任せたブログ記事あるある。\n私のブログで、公開前に実際に直したものです。\n\n・1本が8千字を超えて、要点が埋もれる\n・リンク先が英語のページ\n・「17件」のような半端な数字を本文に書く\n・表が文字だけで、大事な所が見えない\n・私のやり方を「近道です」と言い切る",
+    "quote": "",
+    "hash": "db7855033e5150f2",
+    "label": "C",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIに任せたブログ記事によくある失敗",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.67,
+    "comments": [
+      "「あるある」で1行目が止まりやすい。ただ締めがなく、箇条書きで終わるので書き手の感想が一言ほしい。",
+      "「あるある」の1行目で止まり、実際に直したものなので信頼できる。最後に本人の一言（どれが一番痛かったか等）があれば人柄も見えた。",
+      "「あるある」で入るので止まりますが、リストで終わっていて書き手の感想がありません。最後に一言あればBより良くなります。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランのチャットが無制限になったこと",
+      "ChatGPTのチャットが無料でも無制限になったこと",
+      "ChatGPTのチャットが無料でも無制限になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "無料で無制限は気になって止まる。結局Plusを続けた判断が見えるのは良いが、理由が少しぼんやりしている。",
+      "有料を続けるか迷った話は自分の悩みと重なって読める。結局何に困るのを避けたかったのか、もう一歩具体的だと刺さる。",
+      "Plusを続けた迷いは人柄が見えますが、「画像生成・速度・モデル・・・」の所で中身がぼやけました。何に一番お金を払っているのかが具体的なら読み切れます。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 1,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了すること",
+      "ChatGPTのマイGPTの終了発表と、本人が8/21に書いた投稿",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "前半は発表の要約で情報だけになりがち。「書いたばかりでした＞＜」の失敗談が人柄が出ていて良いので、そこをもっと前に出すとよい。",
+      "前半は終了の告知の要約で、マイGPTを使っていない自分には関係が薄い。8/21の投稿も見ていないので、最後の嘆きが伝わりにくい。",
+      "前半は発表の要約で、カスタムアクションなど知らない言葉が多くて流しました。「8/21に書いた」は前の投稿を知らないと伝わりにくいです。"
+    ]
+  }
+]

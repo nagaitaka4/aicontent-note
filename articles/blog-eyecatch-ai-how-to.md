@@ -3,10 +3,10 @@ no: 82
 series:
 series_no:
 title: ブログのアイキャッチをAIで作る方法。80枚作って決めた頼み方の型
-date:
-url:
+date: 2026-11-12
+url: https://aicontent-note.com/blog-eyecatch-ai-how-to/
 slug: blog-eyecatch-ai-how-to
-status: draft
+status: published
 description: ブログのアイキャッチをAIで作るとき、私は参考画像を決めて頼んでいます。やり方に正解はありません。参考画像の借り方によってはパクリになります。80枚ほど作って固まった頼み方の型として、毎回書く8つの項目とそのまま使えるプロンプト、1枚目に出た失敗の直し方を紹介します。
 eyecatch: eyecatch_0082.png
 eyecatch_alt: アプリコット色の地に「ブログのアイキャッチをAIで作る方法」の題と黒いラベルを置き、額・クリップボード・ノートパソコン・横長の絵のカードを持つ線画の4人を並べたアイキャッチ画像

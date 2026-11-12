@@ -1983,3 +1983,144 @@ claude 学習 させない 4／claude 使い方 初心者 4／claude 使い方 �
 **④ no.56（chatgpt-work-claude-code-comparison）の直近の落ち込み**：3か月ではサイト1位（49クリック）だが、**直近2週間は3クリック／89表示・7.1位**。前回の直近2週間の内訳は取っていないため、落ち込みの始まりは特定できない。ChatGPT Work・Claude Coworkの話題の旬が過ぎた可能性はあるが、この数字だけでは原因は分からない。次回（11/12前後）も直近2週間で見る
 
 **⑤ 新しい記事の立ち上がり**：no.71（2→11クリック）・no.72（初登場4クリック）・no.74（46表示・6.2位・クリック1）・no.75（10表示・6.6位・クリック1）。公開後2週間前後で6位台に出ている
+
+## 2026-11-12（第11回・2週間おき定点観測。ルーティン`biweekly-gsc-x-checkup`の自動実行）
+
+- 取得方法：実Chrome（claude-in-chrome）でGSCを直接操作（ログインは残っていた）。表は`tbody tr`の`td`をスクリプトで読み取り。URLに`metrics=CLICKS,IMPRESSIONS,CTR,POSITION`。直近2週間は`start_date`／`end_date`。⚠️ 開いた直後は`tabs_context`の表示が遅れて「新しいタブ」のままに見えた（実際は読み込めていた）。裏に回ったタブは表が描画されないので、余分なタブを閉じてから読んだ
+- 期間：**直近3か月＝2026-08-10〜2026-11-09**（GSCの最終更新は約4時間前）
+- 公開記事数：79本（`articles/`の`status: published`）
+
+### 全体
+
+| 指標 | 2026-11-12 | 前回（10/29・第10回） | 前々回（10/15・第9回） |
+|---|---|---|---|
+| クリック | **261** | 222 | 190 |
+| 表示回数 | **6,740** | 5,340 | 4,350 |
+| 平均CTR | **3.9%** | 4.2% | 4.4% |
+| 平均掲載順位 | **14.0** | 14.7 | 16.1 |
+
+- **直近2週間（10/27〜11/9）単独**：クリック61／表示1,840／CTR 3.3%／平均10.9位。前回の直近2週間（10/13〜10/26）はクリック51／表示1,410／3.6%／9.1位。**表示は約1.3倍、クリックは約1.2倍。平均順位は9.1→10.9に下がった**
+- 直近2週間のクリックの内訳：no.70 11・mercari-ai-listing 11・no.14 9・no.71 8・ai-like-text-checker（固定ページ・AIっぽさチェック）6・no.56 4・no.76 3・readme-basics 2・ほか1ずつ
+- 3か月の窓が2週間ぶん進んだ（7/27〜8/9が抜けて10/27〜11/9が入った）ので、前回との差は純増ではない
+
+### 上位ページ（クリック順・クリック2以上）
+
+| ページ | クリック | 表示 | CTR | 掲載順位 | 前回（10/29）比 |
+|---|---|---|---|---|---|
+| claude-code-compatible-jobs（no.14） | 50 | 986 | 5.1% | 6.0 | 47→50／934→986 |
+| chatgpt-work-claude-code-comparison（no.56） | 50 | 585 | 8.5% | 6.1 | 49→50／531→585 |
+| claude-company-data-training（no.70） | **35** | **990** | 3.5% | 7.0 | **24→35／694→990** |
+| claude-code-permission-modes（no.71） | **19** | **436** | 4.4% | 7.1 | **11→19／222→436** |
+| **mercari-ai-listing（no.42）** | **15** | 173 | 8.7% | 7.7 | **6→15／83→173** |
+| directory-structure-basics（no.41） | 12 | 336 | 3.6% | **14.8** | 11→12／183→336・**8.3位→14.8位** |
+| swell-seo-settings | 11 | 299 | 3.7% | 14.4 | 13→11 |
+| readme-basics | 7 | 211 | 3.3% | 7.8 | 7→7 |
+| **ai-like-text-checker（固定ページ）** | 6 | 62 | 9.7% | 7.9 | **初登場** |
+| claude-chat-cowork-code-difference（no.73） | 5 | 123 | 4.1% | 14.8 | 4→5 |
+| chatgpt-claude-division-of-work（no.72） | 5 | 81 | 6.2% | 8.8 | 4→5 |
+| logo-plagiarism-how-far-ai-copyright-font（no.68） | 4 | 272 | 1.5% | 6.7 | 4→4／162→272 |
+| claude-code-writing-rewrite | 4 | 82 | 4.9% | 8.0 | 3→4 |
+| claude-code-lawyer-case-management（no.49） | 4 | 22 | 18.2% | 7.7 | 6→4 |
+| chatgpt-free-paid-difference | 3 | 151 | 2.0% | 10.6 | 3→3 |
+| **claude-code-conversation-history（no.76）** | 3 | 142 | 2.1% | 8.4 | **初登場**（10/23公開） |
+| rule-file-basics | 3 | 62 | 4.8% | 6.6 | 3→3 |
+| claude-cowork-usage-data | 3 | 49 | 6.1% | 11.6 | 3→3 |
+| claude-code-labor-consultant-rules-agreement（no.53） | 3 | 22 | 13.6% | 10.4 | 5→3 |
+| claude-code-company-introduction-no-it-staff（no.74） | 2 | 54 | 3.7% | 6.9 | 1→2 |
+| claude-code-entry-publish | 2 | 17 | 11.8% | 6.4 | 2→2 |
+| prompt-design-basics | 2 | 9 | 22.2% | 7.2 | 2→2 |
+| geo-ng-practices | 2 | 5 | 40% | 3.4 | 2→2 |
+
+**クリック1**：ai-overview-check-method（179表示・38.3位）／internal-link-guide（no.46・111・13.9位）／blog-outsource-pricing-guide（no.40・100・11.1位）／claude-subscription-change-june-2026（73・9.2位）／markdown-basics（50・9.2位）／ai-work-environment-setup（48・9.1位）／ai-hallucination-where-it-happens（no.75・46・7.4位）／llms-txt-geo-effect（31・15.6位）／ai-information-organization（23・10.9位）／geo-ai-citation-difference（20・38.0位）／**ai-like-writing-features-fix（no.78・12・37.2位・初登場）**
+
+**クリック0で表示が多いもの**：search-console-crawled-not-indexed（no.57）520表示・65.8位（**直近2週間は40表示未満**＝3か月の数字はほぼ前半のもの）／no.56の`#index_id0`・`#index_id3`・`#index_id7`が各173表示・4.6位、`#index_id6`85表示／no.14の見出しリンク行（4行で計298表示・4.6〜5.6位）／ai-writing-tool-comparison 82表示・15.3位／service 46表示・30.7位／template-basics 31表示・6.7位／token-design-basics 26表示・7.8位／chatgpt-ads-ai-search-geo 23表示・7.4位
+
+### 直近2週間（10/27〜11/9）のページ（クリックありと表示40以上）
+
+| ページ | クリック | 表示 | CTR | 掲載順位 |
+|---|---|---|---|---|
+| no.70 claude-company-data-training | 11 | 296 | 3.7% | 6.9 |
+| mercari-ai-listing | 11 | 100 | 11% | 7.8 |
+| no.14 claude-code-compatible-jobs | 9 | 177 | 5.1% | 6.1 |
+| no.71 claude-code-permission-modes | 8 | 214 | 3.7% | 7.5 |
+| ai-like-text-checker | 6 | 41 | 14.6% | 8.3 |
+| no.56 chatgpt-work-claude-code-comparison | 4 | 78 | 5.1% | 4.6 |
+| no.76 claude-code-conversation-history | 3 | 122 | 2.5% | 8.0 |
+| readme-basics | 2 | 85 | 2.4% | 8.3 |
+| directory-structure-basics | 1 | 169 | 0.6% | **21.1** |
+| no.73 claude-chat-cowork-code-difference | 1 | 64 | 1.6% | 16.1 |
+| no.68 logo-plagiarism-how-far-ai-copyright-font | **0** | **110** | 0% | 6.6 |
+| swell-seo-settings | 0 | 66 | 0% | 18.3 |
+| ai-overview-check-method | 0 | 58 | 0% | 42.3 |
+
+（ほかクリック1：claude-code-writing-rewrite・no.72・no.78・ai-work-environment-setup・no.74）
+
+### 主要クエリ（全202行のうち、クリックありと表示10以上）
+
+| クエリ | クリック | 表示 | 掲載順位 |
+|---|---|---|---|
+| chatgpt work claude code | 2 | 16 | 2.9 |
+| ロゴ パクリ どこまで | 1 | 35 | 4.6 |
+| readme.md とは | 1 | 29 | 8.5 |
+| claude code 仕事 | 1 | 21 | 8.5 |
+| chatgpt work claude code 比較 | 1 | 11 | 3.7 |
+| 権限をバイパスとは | 1 | 5 | 9.2 |
+| chatgpt work claude cowork 比較 / aiっぽい文章 直す プロンプト / claude chatgpt 課金するなら / claude cowork | 各1 | 3 / 2 / 2 / 2 | 33.3 / 6.5 / 7.0 / 10.5 |
+| llms.txt とは / gpt claude どっち / chatgpt claude 比較 | 各1 | 各1 | 7.0 / 17.0 / 44.0 |
+| インデックス未登録 | 0 | 149 | 75.5 |
+| **help improve our ai models 意味** | 0 | **147** | 7.8 |
+| クロール済み – インデックス未登録 | 0 | 146 | 64.5 |
+| 検出 - インデックス未登録 | 0 | 141 | 65.2 |
+| **help improve our ai models とは** | 0 | **86** | 7.8 |
+| **ディレクトリ階層** | 0 | **63** | 36.8 |
+| ai overview チェック | 0 | 47 | 24.3 |
+| 被リンク 貼り方 | 0 | 41 | 15.5 |
+| swell seo対策 | 0 | 30 | 21.2 |
+| ai検索 表示 確認 | 0 | 28 | 34.9 |
+| ai overview | 0 | 26 | 71.7 |
+| クロール済み インデックス未登録 | 0 | 25 | 61.1 |
+| seo simple pack 使い方 | 0 | 22 | 32.3 |
+| swell seo | 0 | 19 | 14.3 |
+| chatgpt 記事作成ツール 違い | 0 | 17 | 41.1 |
+| claude 2（リライト）claude 2 | 0 | 15 | 6.1 |
+| aiライティングツール 比較／ai ライティング ツール 比較 | 0 | 15／13 | 6.4／6.4 |
+| ディレクトリ構造とは／ディレクトリ構造 | 0 | 14／13 | 19.1／31.2 |
+| ai時代 内部リンク | 0 | 13 | 17.1 |
+| ai overview 表示されない／表示 されない | 0 | 13／10 | 72.0／76.7 |
+| ロゴ パクリ | 0 | 12 | 7.2 |
+| ブログ 作成 代行 料金／ブログ記事 代行 | 0 | 11／11 | 21.5／53.4 |
+| shinjidainotobira.com | 0 | 11 | 27.7 |
+| claude 担当職種 | 0 | 10 | 4.9 |
+| claude 招待リンク | 0 | 10 | 7.1 |
+
+### 判定
+
+**① 11〜20位に滞留していて表示があるページ（リライト候補）**
+
+| ページ | 表示 | 順位 | 見立て |
+|---|---|---|---|
+| **directory-structure-basics（no.41）** | **336** | **14.8** | **新しく入った。**3か月の表示は183→336に増えたが、順位は8.3→14.8。直近2週間は169表示・21.1位・クリック1。`ディレクトリ階層`63表示・36.8位、`ディレクトリ構造とは`19.1位、`ディレクトリ構造`31.2位＝表示は増えたが下の順位で出ている |
+| swell-seo-settings | 299 | 14.4 | 直近2週間66表示・18.3位・クリック0。前回の直近（13.0位）からさらに下がった |
+| no.73 claude-chat-cowork-code-difference | 123 | 14.8 | 直近2週間64表示・16.1位・クリック1 |
+| internal-link-guide（no.46） | 111 | 13.9 | 166→111に減少 |
+| blog-outsource-pricing-guide（no.40） | 100 | 11.1 | 104→100。横ばい |
+| chatgpt-free-paid-difference | 151 | 10.6 | 142→151。クリック3のまま |
+| ai-writing-tool-comparison | 82 | 15.3 | 55→82・11.0位→15.3位。表示2桁 |
+
+→ **リライト計画（no.40→9/1検証→no.46→no.14）は変更しない。**no.41は候補として記録するだけ（決めるのはTOP10）。表示が3桁未満のページのCTRは根拠にしない
+
+**② 順位が良いのにクリックが少ない／0のページ**
+
+- **no.70（claude-company-data-training）**：3か月35クリック／990表示・7.0位で伸び続けている。ただし直近2週間の表示は428→296に減った（クリックは12→11）。**`help improve our ai models 意味／とは`は計233表示・7.8位で、まだクリック0**。題・descriptionに英語の設定名が入っていない状態は前回と同じ（題「Claudeに会社の情報を渡して大丈夫か。データが学習に使われる条件」）。前回の候補（題・descriptionに英語の設定名を入れる）は未決のまま。⚠️ 決めるのはTOP10で、本ルーティンでは変更しない
+- **no.68（logo-plagiarism-how-far-ai-copyright-font）**：3か月272表示・6.7位でCTR 1.5%（4クリック）。**直近2週間は110表示・6.6位でクリック0**。表示が3桁なのでCTRを見てよい数。`ロゴ パクリ どこまで`35表示・4.6位でクリック1、`ロゴ パクリ`12表示・7.2位でクリック0。**題・descriptionの改善が候補**
+- no.76（claude-code-conversation-history）：142表示・8.4位・クリック3（2.1%）。公開3週間。もう2週間見る
+- template-basics（31表示・6.7位）・token-design-basics（26表示・7.8位）・chatgpt-ads-ai-search-geo（23表示・7.4位）：クリック0だが表示2桁
+- no.56・no.14の見出しリンク行：本体の行とは別に出ている。前回と同じ
+
+**③ カニバリ**：`インデックス未登録`系はno.57、`help improve our ai models`系はno.70、`ロゴ パクリ`系はno.68、`ディレクトリ`系はno.41（同じ話題の記事はこの1本）。見出しリンク行は同じページの別行。**カニバリなし**（クエリごとのページ内訳は今回は取っていない）
+
+**④ no.56の落ち込みは続いた**：直近2週間は4クリック／78表示・4.6位（前回の直近2週間は3クリック／89表示・7.1位）。順位はむしろ上がったが、表示が戻らない＝探す人が減った（ChatGPT Work・Claude Coworkの話題の旬が過ぎた）見方と合う。3か月の数字（50クリック）は前半の貯金で、次回以降さらに下がる見込み
+
+**⑤ 伸びたページ**：mercari-ai-listing（no.42・6月公開）が直近2週間で11クリック／100表示・CTR 11%と急に伸びた（前回の3か月は6クリック）。固定ページ`ai-like-text-checker`（AIっぽさチェック）が初登場で6クリック・CTR 9.7%。no.71は19クリック／436表示と倍増
+
+**⑥ 新しい記事**：no.76（3クリック・142表示・8.4位）・no.78（1クリック・12表示・37.2位）・no.79（agent-skills-how-to-create・4表示・7.2位）。no.77・no.80・no.81はまだ表に出ていない（no.80・81は11/10・11/11公開）

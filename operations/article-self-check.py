@@ -773,7 +773,7 @@ def main(path):
     prev = previous_committed_body(path)
     print(f"[INFO] 見える本文 {vis}字（URL・記法を除いた、読者が読む量）")
     if prev is not None:
-        prev_vis = visible_chars(prev)
+        prev_vis = visible_chars(mask_code_blocks(prev))
         grew = vis > prev_vis
         allow = os.environ.get("ALLOW_GROWTH", "").strip()
         detail = f"前の版（HEAD）{prev_vis}字 → 今 {vis}字（{vis - prev_vis:+d}字）"

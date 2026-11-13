@@ -52,7 +52,8 @@ AIが広がっている今も、検索からブログを読みに来る人はい
 | **ChatGPTを使う人のうち、Googleも使う人** | **95%のままだった** | 2025年9月〜2026年5月・世界・ブラウザとアプリでの利用（[Similarweb](https://aisearch.similarweb.com/blog/is-ai-replacing-search/)） |
 | **Googleで検索して、どこも押さずに終わる割合** | 調べた検索全体では約47%で、期間中ゆるやかに上がった。==日本は約41%で、ベトナムと並んで一番低い== | 2024年10月〜2025年12月・Googleの検索102億回・パソコン中心（[iPullRank](https://ipullrank.com/zero-click-behavior-analysis-q3-2026)） |
 
-SEO（検索で上に出す工夫）は、GoogleのAIによる概要やAIモードでも有効だと[Googleの説明](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide?hl=ja)にあります。
+AIの答えに出る工夫（GEO）も、[Googleの説明](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide?hl=ja)ではSEO（検索で上に出す工夫）の一部です。
+GoogleのAIによる概要やAIモードに出るのに、特別な対策は要らないとしています。
 
 ---
 

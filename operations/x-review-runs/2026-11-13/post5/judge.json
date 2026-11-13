@@ -1,0 +1,214 @@
+[
+  {
+    "kind": "candidate",
+    "id": "NAOSHI-u2",
+    "text": "AIに任せたブログ記事あるある。\nClaudeに任せた私のブログで、直した所です。\n\n・8千字を超えて、要点が埋もれる\n・同じ内容が重複する\n・リンク先が英語のページ\n・「17件」と具体的すぎる数字\n・私の体験を一般論として断定\n・自分を正当化する\n\n記事を重ねる度に、「癖」が見えてきます👀",
+    "quote": "",
+    "hash": "a10e7bb37e2d3ef8",
+    "label": "A",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.67,
+      "follow": 3.33
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 1.33,
+    "comments": [
+      "「自分を正当化する」はAIらしくて面白く、もっと具体例が見たくなりました。最後の一文はふわっとしているので、どう直したかを一言書いてあれば良かったです。",
+      "あるあるの並びは共感できるが、最後の「癖が見えてきます」がまとめっぽくて弱い。どう直したかや、一番困った1件の話があれば人柄が出る。",
+      "「自分を正当化する」が意外でクスッとくる。各項目に一言ずつ具体例があればもっと読み込みたくなる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "NAOSHI-u1",
+    "text": "AIに任せたブログ記事あるある。\nClaudeに任せた私のブログで、直した所です。\n\n・8千字を超えて、要点が埋もれる\n・リンク先が英語のページ\n・「17件」と具体的すぎる数字\n・表が文字だけで、強調がない\n・断定する\n・同じ内容が重複する\n\n英語のリンクと表は、今はチェックで止まります。",
+    "quote": "",
+    "hash": "76f2312de24fe8f9",
+    "label": "B",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Claude",
+      "チェックで止まります（何のチェックか分からない）",
+      "今はチェックで止まります（何のチェックか説明がない）"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.67,
+    "comments": [
+      "リストはAとほぼ同じで面白いですが、最後の「チェックで止まります」が仕組みを知らないと伝わりません。「断定する」も短すぎて何の話か分かりにくかったです。",
+      "最後の一文で仕組み化している感じが見えて気になるが、「チェック」が何か分からず少し置いていかれる。どうやって止めているか一言あるとプロフィールまで行きたくなる。",
+      "最後の「チェックで止まります」の仕組みが気になるが説明がなく、少しモヤッとする。「断定する」が短すぎて何のことか弱い。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Claude・チェックで止まります（何のチェックか分からない）・今はチェックで止まります（何のチェックか説明がない）"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 1,
+    "premise_topics": [
+      "8/21に書いた「無料でもマイGPTは使える」という自分の投稿",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "前半は公式発表の要約で、ニュースに見えます。「書いたばかりでした＞＜」の失敗談は人柄が出ていて良いので、そこを先頭に持ってくると止まりやすいです。",
+      "前半はニュースの要約で流しそうになる。「書いたばかりでした＞＜」は人柄が出て良いので、そこを1行目に近づけると止まる。",
+      "前半はニュースの要約で読み流しかけたが、自分の過去投稿が外れた「＞＜」で人柄が見えた。そこを冒頭に出すと止まりやすい。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "ChatGPTの無料プランでチャットが無制限になった",
+      "ChatGPTの無料プランが無制限になったという変更"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "1行目はニュースっぽく、迷った話も結論が「安定して使いたい」でぼんやりしています。結局Plusを続けたのかどうかをはっきり書いてほしいです。",
+      "Plusを続けるか迷った話は自分と重なって読めた。ただ結論の理由が抽象的で、具体的に何で困るのが嫌だったかがあると刺さる。",
+      "迷った末の結論は共感できるが、結局Plusを続けたのか分かりにくい。結論を一言はっきり書いてほしい。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "Claude MaxのデフォルトがOpus 5になった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "固有名詞が多くて、Claudeを知らない私には何の話か分かりませんでした。モデルの違いを感じた具体的な場面が1つあれば読めたと思います。",
+      "モデル名が並んで有料プランを迷っている自分には遠い話に感じた。どんな作業で差がなかったのか具体例があると読める。",
+      "モデル名が並んで自分には関係ない話に見え、1行目で離脱した。ブログ運用でどう違ったかに寄せれば読める。"
+    ]
+  }
+]

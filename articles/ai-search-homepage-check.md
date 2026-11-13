@@ -7,7 +7,7 @@ date: 2026-11-13
 url: https://aicontent-note.com/ai-search-homepage-check/
 slug: ai-search-homepage-check
 status: draft
-description: GoogleのAI検索のために、ホームページに特別に足すものはありません。ChatGPTなどのAIが読むときの支障は、無料の診断ツール2つで点検できます。WordPressのこのサイトを測った結果と、事業のサイトで直す所・急がなくていい所を紹介します。
+description: GoogleのAI検索に特別な対策は要らないと、Googleは説明しています。ChatGPTなどのAIが読むときの支障は、無料の診断ツール2つで点検できます。WordPressのこのサイトを測った結果と、事業のサイトで直す所・急がなくていい所を紹介します。
 eyecatch: eyecatch_0084.png
 eyecatch_alt: 淡い藍色と白の斜めの地に「AI検索対策」のラベルと「ホームページの何を直す？」の題を置き、クリップボードを持つ女性と、虫めがねでホームページの画面をのぞく男性を描いたアイキャッチ画像
 category: AIとコンテンツの実務
@@ -16,7 +16,7 @@ tags: AI検索,GEO,SEO,ホームページ,構造化データ
 
 # AI検索対策はホームページの何を直す？無料の診断ツール2つで測った
 
-GoogleのAI検索のために、ホームページに特別に足すものはありません。
+GoogleのAI検索に特別な対策は要らないと、Googleは説明しています。
 ChatGPTなどのAIがページを読むときに支障になりそうな点は、無料の診断ツール2つで点検できます。
 先に見るのは、==AIが読みに来るのを止めていないかと、会社・運営者の情報==です。
 

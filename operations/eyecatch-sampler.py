@@ -24,7 +24,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 
-# 名前, 表示名, RSS。アイキャッチが写真ではなく、絵と題で作られているメディアを選んでいる（2026-10-19・16メディアから見た目で10に絞った）
+# 名前, 表示名, RSS（RSSが無いサイトは一覧ページのURL＋4列目に記事URLの正規表現）。アイキャッチが写真ではなく、絵と題で作られているメディアを選んでいる（2026-10-19・16メディアから見た目で10に絞った）
 # 外したもの（写真が中心で、このメディアの絵＋題のアイキャッチの参考にならない）：PR TIMES MAGAZINE・ラクスルマガジン・KAGOYA・DX Insight・
 #   Salesforceブログ・AIsmiley・SEOラボ（サングローブ）・TDI 味噌・ミエルカマガジン（動画のサムネイル型）。バズ部はRSSがSSLで読めない
 MEDIA = [
@@ -38,7 +38,21 @@ MEDIA = [
     ("keywordmap", "Keywordmap ACADEMY", "https://keywordmap.jp/academy/feed/"),
     ("seohacks", "SEO HACKS", "https://www.seohacks.net/blog/feed/"),
     ("kaonavi", "カオナビ 人事用語集", "https://www.kaonavi.jp/dictionary/feed/"),
+    # 2026-11-13 追加（ユーザー「素材が切れてきている。もっといろんなサイトから」）。候補約70サイトを試し、絵＋題の質が高い10に絞った
+    ("digitalidentity", "デジタルアイデンティティ", "https://digitalidentity.co.jp/blog/feed"),
+    ("growthseed", "GrowthSeed", "https://growthseed.jp/experts/feed/"),
+    ("moneyforward", "マネーフォワード クラウド", "https://biz.moneyforward.com/blog/feed/"),
+    ("comnico", "We Love Social（comnico）", "https://www.comnico.jp/we-love-social/rss.xml"),
+    ("hubspoten", "HubSpot Blog（英語）", "https://blog.hubspot.com/marketing/rss.xml"),
+    # RSSが無いサイトは、4列目に記事URLの正規表現を書くと、一覧ページから記事を拾う
+    ("lycbiz", "LINEヤフー for Business", "https://www.lycbiz.com/jp/column/", r"/jp/column/[a-z0-9-]+/[a-z0-9-]+/"),
+    ("sansan", "Sansan", "https://jp.sansan.com/media/", r"/media/[a-z0-9-]+/$"),
+    ("webkanji", "Web幹事", "https://web-kanji.com/posts", r"/posts/[a-z0-9-]+$"),
+    ("ferret", "ferret", "https://ferret-plus.com/", r"https://ferret-plus.com/\d+"),
+    ("goodpatch", "Goodpatch Blog", "https://goodpatch.com/blog", r"/blog/20\d\d-\d\d-[a-z0-9-]+|/blog/[a-z0-9-]{8,}$"),
 ]
+# 外したもの（2026-11-13）：写真が中心＝Chatwork・jinjer・Canva・WACUL・coconala・digiday・tribe・BOXIL・emma／製品画面やロゴだけ＝SATORI・kintone・Bakuraku・Figma
+# ／RSSも一覧も読めない＝freee・LANY・Mazrica・Wix・Intercom・Mailchimp ほか。バナーのギャラリー（Bannnner.com・Retro Banners）は広告サイズ（300×250など）ばかりで横長のアイキャッチの参考にならない
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
 ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "eyecatch-samples")
@@ -85,11 +99,26 @@ def og_image(page_url):
     return None
 
 
+def page_items(page_url, pattern, n):
+    """RSSが無いサイト：一覧ページの中から、記事URLの正規表現に合うリンクを n 件"""
+    data, _ = get(page_url)
+    text = data.decode("utf-8", "ignore")
+    items = []
+    for href in re.findall(r'href=["\']([^"\']+)', text):
+        link = urllib.parse.urljoin(page_url, html.unescape(href))
+        if re.search(pattern, link) and link.rstrip("/") != page_url.rstrip("/") and link not in [l for _, l in items]:
+            items.append(("", link))
+        if len(items) >= n:
+            break
+    return items
+
+
 def collect(media, n, outdir):
-    key, label, feed = media
+    key, label, feed = media[:3]
+    pattern = media[3] if len(media) > 3 else None
     rows = []
     try:
-        items = feed_items(feed, n)
+        items = page_items(feed, pattern, n) if pattern else feed_items(feed, n)
     except Exception as e:
         print(f"[{label}] RSSが読めない: {e}", file=sys.stderr)
         return key, label, rows

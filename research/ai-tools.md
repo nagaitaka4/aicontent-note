@@ -1,8 +1,14 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-13
+最終更新: 2026-11-14
 
 ---
+
+## [2026-11-14] 調査結果（デイリー・土曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome・「Updated: 3 時間前」）：🆕 November 13「Introducing ChatGPT Wallet」＝verbatim `Wallet is rolling out gradually in dots to ChatGPT Pro subscribers age 18 or older in the United States`（エージェントが買い物の支払いまで行う・生体認証で承認）。米国のProのみ＝本人に影響なし・記録のみ。11/4〜11/10の項に後から足された項目なし
+- Gemini・国産ツール：差分なし
+
 
 ## [2026-11-13] 調査結果（デイリー・金曜）
 

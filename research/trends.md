@@ -1,9 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-13
+最終更新: 2026-11-14
 
 
 ---
+
+## [2026-11-14] 調査結果（デイリー・土曜）
+
+- npm：**2.1.324（2026-11-13 18:42 UTC）・2.1.325（同 20:07 UTC）**。CHANGELOG.mdは2.1.325と2.1.323を掲載（2.1.324の見出しは無し）。2.1.323：verbatim `Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools` ／ `Added an options menu (stop, switch to usage credits, upgrade) when a model needs usage credits that are turned off or used up`。2.1.325：ほぼ不具合の修正（`Fixed a security issue in how zstd-compressed responses are decoded` 等）＝使う側の変化は小さい。記録のみ（[出典](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md)）
+- claude.com/blog：11/12「Using Claude Opus 5.5 as your daily driver for knowledge work」「Claude for manufacturing」・11/13「Building always-on agents」「Claude Tag guide for startups」＝使い方の解説・業種向け。記録のみ
+- Claude Apps リリースノート：最新はNovember 12（Claude Meetings＝既録）のまま／Newsroom：11/9のあと新着なし／@ClaudeDevs：11/12の動画（新モデルのAPI公開の裏側）のみ
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（curl）／@ClaudeDevs ✅（実Chrome）
+
 
 ## [2026-11-13] 調査結果（デイリー・金曜）
 

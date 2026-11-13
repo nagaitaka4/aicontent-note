@@ -1,0 +1,56 @@
+[
+  {
+    "id": "d1",
+    "text": "Museは使っていませんが、Claude CodeのCLAUDE.mdまわりで、まさにこれでした。「内容は削らない」と「4,000字を超えたらダメ」が同居していて、足しては削るの往復が止まらず。字数の方を消したら落ち着きました。",
+    "hash": "bae8b74c275f1f39",
+    "label": "A",
+    "on_core": 3,
+    "same_subject": 0,
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "4,000字を超えたらダメ（何の字数制限か）",
+      "「4,000字を超えたらダメ」が何のルールか"
+    ],
+    "lecture": 0,
+    "template": 0,
+    "glad_author": 4,
+    "glad_avg": 4.0,
+    "profile": 3,
+    "comments": [
+      "Museではなく、Claude CodeのCLAUDE.mdで矛盾する指示を消したら落ち着いた具体例。",
+      "Museではなく Claude Code の話なので、subjectそのものではない。",
+      "Museではなく Claude Code の話に置き換えている。"
+    ],
+    "pass": false,
+    "why": [
+      "親投稿の話題の物そのものについて話していると答えたのが0/3人（全員必要・似た別の物への置き換えは不可）",
+      "分からない言葉を挙げた読者2人：4,000字を超えたらダメ（何の字数制限か）・「4,000字を超えたらダメ」が何のルールか"
+    ]
+  },
+  {
+    "id": "d2",
+    "text": "Museは使っていませんが、Claude Codeに読ませるCLAUDE.mdとルールを足す一方だった頃、同じことが起きました。「内容は削らない」と「4,000字を超えたらダメ」が同居していて、足しては削るの往復に。字数の方を消したら止まりました。",
+    "hash": "8822660ab2e34673",
+    "label": "B",
+    "on_core": 3,
+    "same_subject": 0,
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "4,000字を超えたらダメ（何の字数制限か）"
+    ],
+    "lecture": 0,
+    "template": 0,
+    "glad_author": 4,
+    "glad_avg": 4.0,
+    "profile": 3,
+    "comments": [
+      "足す一方だった頃と直接つながる。",
+      "字数ルールがCLAUDE.mdの中の決まりだと伝わればさらに通じやすい。",
+      "Museではなく Claude Code の話。"
+    ],
+    "pass": false,
+    "why": [
+      "親投稿の話題の物そのものについて話していると答えたのが0/3人（全員必要・似た別の物への置き換えは不可）"
+    ]
+  }
+]

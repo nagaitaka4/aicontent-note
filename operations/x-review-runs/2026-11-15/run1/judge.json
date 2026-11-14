@@ -1,0 +1,253 @@
+[
+  {
+    "kind": "candidate",
+    "id": "a",
+    "text": "「もう検索エンジンに戻れない」、わかります。\n私も調べものは、まずAIに聞くようになりました。\n\nそれでも、ブログは書き続けています。\nAIに聞いたあと「本当？」と確かめに行く先は、だれかのページなので。\n\nGoogleのAIの答えにも、元のページのリンクが出ます。\nhttps://aicontent-note.com/blog-owakon-ai-search/",
+    "quote": "",
+    "hash": "6e9c08e6cc598b39",
+    "label": "A",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 3,
+    "premise_topics": [
+      "「もう検索エンジンに戻れない」という誰かの発言",
+      "誰かが言った「もう検索エンジンに戻れない」という話",
+      "「もう検索エンジンに戻れない」というだれかの発言"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "1行目の「わかります」が誰への返事か分からず、置いていかれた感じがしました。「確かめに行く先はだれかのページ」はなるほどと思いました。最後のリンクで宣伝っぽく見えたのが残念です。",
+      "1行目の「わかります」は誰に言っているのか分からず、引用元が見えないので少し置いていかれた。最後のGoogleの一文は唐突で、リンクを押すきっかけになっていない。",
+      "1行目のカギカッコはだれの発言なのか分からず、引用もないので置いていかれた感じがする。最後の「GoogleのAIの答えにもリンクが出ます」も唐突で、前の段落とのつながりが弱い。"
+    ],
+    "pass": false,
+    "why": [
+      "受けている話が投稿の中に無い3人：「もう検索エンジンに戻れない」という誰かの発言／誰かが言った「もう検索エンジンに戻れない」という話／「もう検索エンジンに戻れない」というだれかの発言"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c",
+    "text": "私のブログは、記事のほとんどをClaudeと書いています。\n\nブログはオワコンとも言われますが、GoogleのAIの答えにも、元のページのリンクは出ます。\n\nAIで書いたかどうかより、そのリンクを押したくなる中身かどうか。\nAI関係なく、中身の強さってやっぱり大事ですね。\nhttps://aicontent-note.com/blog-owakon-ai-search/",
+    "quote": "",
+    "hash": "15e835400ce17240",
+    "label": "B",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ブログはオワコンと言われている",
+      "ブログはオワコンと言われている",
+      "ブログはオワコンと言われる"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "ブログはオワコン",
+      "ブログはオワコン",
+      "AIで書いたかどうかが大事"
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "「中身の強さってやっぱり大事」がよくある締めで、読む気が落ちました。Claudeと書いていて実際どうなのか、具体的な話が1つあれば良かったです。",
+      "1行目の「Claudeと書いている」は少し気になった。でも締めの「中身の強さってやっぱり大事」がよく聞く結論で、そこで読む気が落ちた。",
+      "「中身の強さってやっぱり大事ですね」は当たり前の締めで、ここで読む気が落ちた。Claudeとどう書いていて何が大変なのかが一つでもあれば、外注か内製か迷っている側としては読みたくなる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "スキル（ChatGPTの機能としての）",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPT終了の発表",
+      "マイGPTの終了発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "ChatGPTを使っているので1行目で止まりましたが、真ん中は発表のまとめで、スキル・カスタムアクションは分かりませんでした。「書いたばかりでした＞＜」は人間らしくて良いので、ここを前に出すと良くなりそうです。",
+      "前半は発表のまとめで、ニュースを紹介しているように見えた。「書いたばかりでした＞＜」に人柄が出ているので、これを前に出すと良くなりそう。",
+      "前半は公式発表の要約に見える。「8/21に書いたばかり＞＜」で人柄が出るけど、その記事が見えないので内輪っぽい。業務で使っていた人は何をすればいいのか、が一言あれば役に立つ。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.33,
+      "follow": 3.33
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.33,
+    "comments": [
+      "Plusをやめるか迷った話は自分にも関係があって読めました。「・・・」で迷った理由がぼやけていて、結局Plusを続けたのかどうかが一瞬分かりにくかったです。",
+      "有料にするか迷っている自分の悩みとそのまま重なり、迷った末の決め方が参考になった。何が決め手で、どれくらい違ったかの実感が一言あるともっと良い。",
+      "Plusを続けるか迷った話は自分ごととして読めた。ただ、結局続けたのかどうかが「が勝ちました」だけでは少し分かりにくく、いくら払う価値があったのかがあると良い。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Maxの標準のモデルがOpus 5に変わった",
+      "Claude Maxの標準モデルがOpus 5に変わった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.67,
+    "comments": [
+      "固有名詞ばかりでClaudeを知らない私には分かりませんでした。正直な感想は好感が持てますが、詳しい人向けの投稿だと感じます。",
+      "モデル名が並んでいて、使い始めたばかりの自分には話が入ってこなかった。「違いを感じない」という正直さは好き。",
+      "モデル名が4つ並んでいて、詳しい人向けの話だと感じてスクロールした。違いを感じなかったのがどんな作業だったのかが書いてあれば、一般の担当者にも伝わる。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "b",
+    "text": "ブログはオワコンと言われますが、私はAIで変わったのは順番だと思っています。\n\n昔は、検索が入口。\n今は、AIに聞いてから「本当？」と確かめに検索する。\n\n私がClaudeと一緒にブログを続けているのは、その確かめに行く先に残りたいからです。\nhttps://aicontent-note.com/blog-owakon-ai-search/",
+    "quote": "",
+    "hash": "2c1b121673b600e8",
+    "label": "F",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ブログはオワコンと言われている",
+      "ブログはオワコンと言われている",
+      "ブログはオワコンと言われる"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "ブログはオワコン",
+      "ブログはオワコン",
+      "ブログはオワコン"
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.33,
+    "comments": [
+      "「変わったのは順番」がすっと入り、自分の調べ方にも当てはまると思いました。最後の「確かめに行く先に残りたい」で書き手の考えが見えて良かったです。リンクがなければもっと自然でした。",
+      "「変わったのは順番」という見方は納得できたし、ブログを続ける理由も分かりやすい。ただ全体に整いすぎていて、迷いや失敗が見えないぶん引っかかりが少し弱い。",
+      "「変わったのは順番」という見方が分かりやすく、会社のブログを続ける理由として腑に落ちた。確かめに行く先に残るために具体的に何をしているかが一つあれば、もっと良い。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

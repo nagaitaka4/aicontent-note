@@ -1,0 +1,18 @@
+{
+  "type": "reply",
+  "parent": "Gemini、ChatGPT、Claudeのモデル命名規則を調べてみた！(画像はGrok製)\nGeminiの次のモデルは一体何になるんだろうなぁ\n\n［画像：表「各社のモデル命名（2026年11月時点）」］\nChatGPT（天体のラテン語）：Astra＝星／Sol＝太陽／Terra＝地球／Luna＝月\nClaude（詩・文学）：Fable＝物語／Mythos＝神話／Opus＝作品／Sonnet＝十四行詩／Haiku＝俳句\nGemini（元素名）：Carbon＝炭素／Argon＝アルゴン／Hydrogen＝水素（補足：Gemini 4からの命名。アプリには従来のFlash-LiteやProも残っている）",
+  "items": [
+    {
+      "id": "c1",
+      "text": "「物語」「神話」「作品」、Claudeの名前ってこういう意味だったんですね。\n私は名前から賢い順が分からなくて、新しいモデルが出るたびに「どれが上？」ってなってました。\n意味で並べてもらうと、少し覚えやすくなりそうです。",
+      "hash": "a07cea66fa092e08",
+      "label": "A"
+    },
+    {
+      "id": "c2",
+      "text": "Claudeは詩・文学だったんですね。\n非エンジニアの私は、新しいモデルが出るたびに「Opusより上なの？」と調べ直してました。\n大・中・小なら一発なのに、と思ってたので、意味で並んでるとちょっと納得です。",
+      "hash": "6baa3ecde3724217",
+      "label": "B"
+    }
+  ]
+}

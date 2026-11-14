@@ -1,9 +1,18 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-14
+最終更新: 2026-11-15
 
 
 ---
+
+## [2026-11-15] 調査結果（デイリー・日曜）
+
+- npm：2.1.325（2026-11-13 20:07 UTC）のまま＝新しい版なし。CHANGELOG.mdも2.1.325が最新（既録）
+- **@ClaudeDevs（11/14 07:51〜09:00 JST・前回の巡回のあと）**：🆕 デスクトップアプリのClaude Codeで、modsを使って見た目（テーマ）を自作できる＝verbatim `You can now build custom themes for Claude Code on desktop with mods! Change the colors, add an animated background, and make it your own.` ／ `Themes work in local sessions in the desktop app today, support for cloud sessions is coming soon.`（[投稿](https://x.com/ClaudeDevs/status/2121392666244186327)・[docs](https://code.claude.com/docs/en/plugins/mods/interface.md)＝`$.theme.set`はv2.1.319以降・ターミナルは背景を描かない）。見た目の変更で使い方は変わらない（「Desktop刷新」は3ビューの実績）＝記録のみ
+- **@ClaudeDevs（11/14 07:51 JST）**：🆕 Claude CodeのProjectsの更新＝verbatim `The coordinator is now much more proactive. It answers your questions in the project chat and gives you updates on the status of your ongoing threads.` ／ `/btw and /fork work in projects now too.`（[投稿](https://x.com/ClaudeDevs/status/2121375309287301360)）。本人がProjectsを日常で使っている記録なし＝記録のみ
+- claude.com/blog：11/13の2本（既録）のあと新着なし／Newsroom：11/10（IPOのロードショー）のあと新着なし／Claude Apps リリースノート：November 12のまま
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（curl）／@ClaudeDevs ✅（実Chrome）
+
 
 ## [2026-11-14] 調査結果（デイリー・土曜）
 

@@ -1,8 +1,14 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-14
+最終更新: 2026-11-15
 
 ---
+
+## [2026-11-15] 調査結果（デイリー・日曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome・「Updated: 昨日」）：最新はNovember 13（ChatGPT Wallet＝既録）のまま。November 10・4の項に後から足された見出しなし
+- Gemini・国産ツール：差分なし
+
 
 ## [2026-11-14] 調査結果（デイリー・土曜）
 

@@ -1,8 +1,20 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-11-13
+最終更新: 2026-11-16
 
 ---
+
+## [2026-11-16] 調査結果（フル版・月曜）
+
+**③は一次情報の新着なし。November 2026 core update は展開中のまま（開始11/11 03:06 JST・end未記載＝完了の告知なし）。**
+
+- **Search Status Dashboard**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：先頭は`November 2026 core update`（begin `2026-11-10T18:06:00+00:00`・end なし）＝展開中。**11/25目安までの順位・表示で改稿の当否を判定しない**（11/13の記録どおり）
+- **Search Central のドキュメント更新**（[Latest updates](https://developers.google.com/search/updates)・本日curl）：先頭はNovember 12（Search からの流入をRefererで見分けるページの追加・既録）のまま
+- WebSearch「Google AI Mode AI Overviews update November 2026」：Googleの一次の告知は見つからず。業界まとめ（[Search Engine Roundtable 11月のまとめ](https://seroundtable.com/november-2026-google-webmaster-report-42431.html)）に「AI Mode・AI Overviewsのリンクの見せ方をまた更新」「クリックのデータは出さない」等＝二次情報のため記録のみ・記事に使わない
+
+### 記事側への影響
+- **訂正が必要な記事：なし**
+
 
 ## [2026-11-13] 調査結果（フル版・金曜）
 

@@ -1,0 +1,257 @@
+[
+  {
+    "kind": "candidate",
+    "id": "p9",
+    "text": "AIのClaude Codeにブラウザの操作まで任せたら、もう手放せません。\nスマホにアプリを入れたときと同じです。\n\n今は私のブログの管理画面での下書きづくりも、記事が検索で何回見られたかの数字集めも任せています。\n\n公開ボタンだけは、出すと決めた私が押します。",
+    "quote": "",
+    "hash": "2b9301a6cc5f0af3",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "「スマホにアプリを入れたときと同じ」のたとえが何と同じなのかピンと来ず、そこで少し止まった。最初どう困っていたかの一言があると変化が伝わる。",
+      "「スマホにアプリを入れたときと同じ」の例えがピンと来ず、そこで少し止まった。ブラウザ操作を任せるまでに何が大変だったか一言あると、自分もやってみようと思える。",
+      "「スマホにアプリを入れたときと同じ」のたとえがぼんやりしていて、何が同じなのか一瞬止まりました。最初は自分で貼っていた、のような前後の変化があればもっと実感がわきます。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "p7",
+    "text": "AIのClaude Codeを使ってるのに、ブラウザを操作させてないのはもったいないです。\n私も最初は、書いてもらった原稿を自分で管理画面に貼っていました。\n\n今は管理画面での下書きづくりも、記事が検索で何回見られたかの数字集めも任せています。\n\n公開ボタンだけは、出すと決めた私が押します。",
+    "quote": "",
+    "hash": "69f1577af11e0219",
+    "label": "B",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Codeを使っている人の多くがブラウザ操作をさせていない",
+      "Claude Codeを使っていてもブラウザ操作はさせていない人が多い",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.0,
+    "comments": [
+      "以前は原稿を自分で貼っていたという話で、自分ごととして読めた。ブラウザを操作させるとは具体的に何をどう頼むのかが一言あるとなお良い。",
+      "「最初は自分で貼っていた」があるので、同じ段階の自分には入りやすい。1行目が少し説教っぽいので、手間がどれだけ減ったかの実感があると良い。",
+      "最初は手で貼っていたという話があって、自分も同じことをしているので刺さりました。1行目の「もったいない」はやや上から感じますが、続きで和らぎます。どれくらい時間が浮いたかの一言があればさらに良いです。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "C",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトモデルがOpus 5に変わった",
+      "Claude Maxの標準モデルがOpus 5に変わった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "Opus 5は違いがはっきり分かる",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.67,
+    "comments": [
+      "知らない名前ばかりで1行目から置いていかれた。詳しい人向けで、自分には関係ない話に見える。",
+      "モデル名が多くて、有料プランを迷っている段階の自分には何の話か分かりにくい。違いを感じなかった具体的な作業が書いてあれば参考になる。",
+      "モデル名が並んでいて、ふだん使っていない身にはほぼ意味が分かりませんでした。ブログ更新など具体的な作業で比べた話なら読めます。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p8",
+    "text": "AIのClaude Codeを使ってるのに、ブラウザを操作させてないのはもったいないです。\nスマホにアプリを1つも入れてないのと同じ。\n\n私がブログで任せているのは↓\n・管理画面での下書きづくり\n・記事が検索で何回見られたかの数字集め\n\n公開ボタンだけは、出すと決めた私が押します。",
+    "quote": "",
+    "hash": "3e2d5f581a40f92f",
+    "label": "D",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Codeを使っている人の多くがブラウザ操作をさせていない",
+      "Claude Codeを使っていてもブラウザ操作はさせていない人が多い",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.67,
+    "comments": [
+      "箇条書きで見やすいが、言い切りが強くて少し上から言われている感じがした。失敗や迷いがあると親しみが出る。",
+      "箇条書きで分かりやすいが、「アプリを1つも入れてないのと同じ」がやや煽り気味で少し引いた。迷いや失敗が見えず、情報だけの印象。",
+      "「スマホにアプリを1つも入れてないのと同じ」は言い切りが強く、使っていない側として少し責められている感じがしました。箇条書きは分かりやすいですが、本人の迷いや失敗がないので情報だけに見えます。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になった",
+      "ChatGPTの無料プランでもチャットが無制限になった",
+      "ChatGPTのチャットが無料でも無制限になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.67,
+    "comments": [
+      "ChatGPTは使っているので1行目で止まった。Plusを続けるか迷った話は共感できるが、結局続けたのかが少し分かりにくい。",
+      "有料を続けるか迷った話は、まさに今の自分の悩みなので止まった。結局Plusを続けたのかどうかが一読で分かりにくいので、結論をはっきり書いてほしい。",
+      "有料を続けるか迷った話は身近で読めましたが、マイGPTが何か分からないのと、結論の「安定して使いたいが勝った」で結局続けたのか分かりにくかったです。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "F",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了すると発表された",
+      "ChatGPTのマイGPTが終了する",
+      "ChatGPTのマイGPTが終了する"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.67,
+    "comments": [
+      "「書いたばかりでした＞＜」に人柄が出ていて面白い。ただ8/21の話は前の投稿を知らないと半分しか伝わらない。",
+      "「8/21に書いたばかりでした＞＜」の素直な失敗感で人柄が見えて良い。前半は公式発表の要約っぽく、カスタムアクションなど知らない言葉で一瞬読む気が落ちた。",
+      "終了の発表の要約が中心で、用語が分からず途中で読む気が落ちました。「書いたばかり」の失敗は人柄が見えて良いですが、前の投稿を知らないと通じません。"
+    ]
+  }
+]

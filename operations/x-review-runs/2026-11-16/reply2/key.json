@@ -1,0 +1,18 @@
+{
+  "type": "reply",
+  "parent": "九条@セミリタイア（@kuzyofire）の投稿（11/14・5,277表示・いいね53）：\nMuseと相談した各LLMの使い分け\n\n判断と文脈が要るものはMuseへ、検証可能なものはCodexへ、文章の精度はClaude Codeへ、メディアと大量処理と別視点はGeminiへ\n\nうん。そんな感じする。",
+  "items": [
+    {
+      "id": "r3",
+      "text": "私の使い分けも、文章の精度はClaude Code、別視点は別のAI、のところが同じです。\n記事を書くのはClaude Codeで、見直しはGeminiではなくChatGPTに頼んでいます。\n同じAIに見直させると甘くなる気がして。\nMuseの判断役はまだ試せていません。",
+      "hash": "4ff7be3e7407b1c4",
+      "label": "A"
+    },
+    {
+      "id": "r4",
+      "text": "4つの分け方のうち、文章と別視点の2つは私も同じ形です。\n記事を書くのはClaude Code、別視点で見直すのはChatGPTにしています（Geminiではなく）。\n同じAIに見直させると甘くなる気がして。\nMuseとCodexはまだ使えていないので、判断役の話は気になります。",
+      "hash": "c2cea0c7cb2fd676",
+      "label": "B"
+    }
+  ]
+}

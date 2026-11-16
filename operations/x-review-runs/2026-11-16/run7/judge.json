@@ -1,0 +1,214 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトがOpus 5に変わったこと",
+      "Claude MaxのデフォルトがOpus 5になった",
+      "Claude MaxのデフォルトがOpus 5になったという変更"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.67,
+    "comments": [
+      "製品名ばかりでClaudeを知らない私には何の話か分からず、1行目で流しました。違いを感じなかった具体的な作業例が1つあれば読めたと思います。",
+      "有料プランを迷っている身としては1行目で止まる。Fableが何か分からず、そこで置いていかれた感じがした。",
+      "モデル名が4つ並んで、Claudeを契約していない自分には違いが分からず置いていかれた。ブログ運用でどう差が出たかの具体例があれば読める。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "w5",
+    "text": "AIのClaude Codeを使ってるのに、\nブラウザを操作させてないのはもったいないです。\n原稿はAIが書いてるのに、貼るのは人がやってませんか？\n\n私がブログで任せているのは↓\n・WordPressでの下書きと入稿\n・公開後の記事の手直し\n・検索で見られた回数の集計\n\n公開ボタンだけは、私が押します。",
+    "quote": "",
+    "hash": "0f27cb15ef695a37",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIで原稿を書いても貼り付けは人が手作業でやっている、というよくある状況",
+      "原稿はAIに書かせても、WordPressへの貼り付けは人がやっている",
+      "AIで原稿を書いていても、WordPressへの貼り付けは人が手でやっているという状況"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.67,
+    "comments": [
+      "「貼るのは人がやってませんか？」は自分ごとで刺さりました。ブラウザを操作させるのがどういうことか、1行説明があるともっと分かりやすいです。",
+      "「貼るのは人がやってませんか？」は自分のことで刺さった。どうやって任せているのか、設定の手間が一言あればもっと読みたくなる。",
+      "「貼るのは人がやってませんか？」はまさに自分のことで止まった。ブラウザを操作させるのにどれくらい手間がかかるかが一言あると試したくなる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "C",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったこと",
+      "ChatGPTのチャットが無料でも無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になったという変更"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "無料で無制限は気になって止まりました。結局Plusを続けたのかやめたのかが少し読み取りにくく、結論を一言はっきり書いてほしいです。",
+      "まさに有料プランを迷っている話で止まった。ただ結局続けたのかが「安定して使いたいが勝った」でやや分かりにくい。",
+      "迷って有料を続けた判断は人柄が見えるが、結局何を決めたのか読み取るのに少し考えた。会社で使う立場からの判断材料があると役立つ。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了する",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.33,
+    "comments": [
+      "「8/21に書いたばかり」の部分は人柄が見えて良いですが、前の投稿を知らないので少し内輪感があります。全体は発表の要約に感じました。",
+      "前半はニュースの要約で読み流した。「8/21に書いたばかり」の失敗談は面白いが、前を知らないので何に書いたのか分からない。",
+      "ニュースの要約が中心で、マイGPTを使っていない自分には関係が薄い。8/21の自分の投稿を知らないので「＞＜」の失敗談も伝わりにくい。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "w4",
+    "text": "AIのClaude Codeを使ってるのに、\nブラウザを操作させてないのはもったいないです。\n原稿はAIが書いてるのに、貼るのは人がやってませんか？\n\n私がブログで任せているのは↓\n・WordPressへの入稿\n・公開後の手直し\n・検索で見られた回数の集計\n\n公開ボタンだけは、出すと決めた私が押します。",
+    "quote": "",
+    "hash": "7de376298e9dc41c",
+    "label": "E",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIで原稿を書いても貼り付けは人が手作業でやっている、というよくある状況",
+      "原稿はAIに書かせても、WordPressへの貼り付けは人がやっている",
+      "AIで原稿を書いていても、WordPressへの貼り付けは人が手でやっているという状況"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.33,
+    "comments": [
+      "Bとほぼ同じですが、「出すと決めた私が押します」で責任を持っている感じが出ていて少し好印象です。何がどれくらいラクになったかがあるとさらに良いです。",
+      "Bとほぼ同じで刺さる。「出すと決めた私が押します」で責任を持っている人柄が少し見えて、Bより好印象。",
+      "Bとほぼ同じで刺さる。「出すと決めた私が押します」で責任の線引きが見えて信頼できるが、少し言い回しが硬く感じた。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

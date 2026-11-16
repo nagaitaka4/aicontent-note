@@ -438,8 +438,9 @@ def main(path):
     print("\n--- H2直下リード文チェック（3文以内・100字以内） ---")
     for s in re.split(r"^## ", body, flags=re.M)[1:]:
         h2title, rest = s.split("\n", 1) if "\n" in s else (s, "")
-        # 【ブロック】・箇条書き（・と 1. の番号付き）・H3・表・画像・CTA(＼)のいずれかが出た時点でリード文とみなす
-        lead = re.split(r"\n(【|・|\d+\. |### |＼|\||!\[)", rest)[0].strip()
+        # 【ブロック】・箇条書き（・と 1. の番号付き）・H3・表・画像・CTA(＼)・コードの欄(```)のいずれかが出た時点でリード文とみなす
+        # 2026-11-17：コードの欄を追加（no.85でプロンプトの型の中の行までリードとして数えていた）
+        lead = re.split(r"\n(【|・|\d+\. |### |＼|\||!\[|```)", rest)[0].strip()
         # 内部リンクのアンカーテキスト内の「。」は文区切りではないため除外してからカウント
         lead_for_count = re.sub(r"\[[^\]]*\]", lambda m: m.group(0).replace("。", ""), lead)
         sentence_count = lead_for_count.count("。")

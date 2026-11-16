@@ -1,0 +1,213 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Opus 5とSonnet 5の違い",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトがOpus 5になった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.67,
+    "comments": [
+      "1行目からClaudeのプランやモデル名が並び、Claudeを知らない私には何の話か分かりません。違いを感じなかった具体的な作業例が一つあれば読めそうです。",
+      "有料プランを迷っている身としては気になる話題。ただFableが何か分からず、そこで置いていかれた。どんな使い方で試したかが1行あると参考になる。",
+      "モデル名が並ぶだけで、ブログを回す側の私には違いが何に効くのか分からず1行目で落ちた。どんな作業で差が出なかったかの具体例があれば読める。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了する",
+      "ChatGPTのマイGPTが終了する発表",
+      "ChatGPTのマイGPTが終了する"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "マイGPTの終了は気になるので止まりました。「書いたばかりでした＞＜」の失敗談は人柄が見えて良いですが、全体はニュース要約寄りです。",
+      "終了の告知は止まるが、前半は発表の要約。自分が書いた記事が外れた＞＜の部分が一番人間味があるので、もっと前に出すと良い。",
+      "前半はほぼ公式発表の要約。自分の過去投稿が外れた『＞＜』の部分は人柄が見えて良いので、そこを冒頭に出すと止まる。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "u4",
+    "text": "AIのClaude Codeを使ってるのに、\nブラウザを操作させてないのはもったいないです。\n書いた原稿を人が運んでいるのと同じです。\n\n私がブログで任せているのは↓\n・管理画面（WordPress）での下書きと入稿\n・記事が検索で何回見られたかの数字集め\n\n公開ボタンだけは、出すと決めた私が押します。",
+    "quote": "",
+    "hash": "99e28485d109b94f",
+    "label": "C",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIにブラウザ操作をさせられる",
+      "",
+      "Claude Codeを使っていてもブラウザ操作は任せていない人が多い"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.0,
+    "comments": [
+      "AIに入稿や数字集めまで任せているのは意外で、公開ボタンは自分で押すという線引きに人柄が出ています。Claude Codeを使っていない私には「もったいない」が少し遠く感じました。",
+      "「もったいない」の1行目はやや上から目線に感じた。具体的に任せている作業と、公開ボタンは自分で押すという線引きが見えて信頼できる。",
+      "入稿や数字集めまで任せている具体例が、社内でAIを回すか迷っている自分に刺さる。どれくらい時間が減ったかが一言あればさらに良い。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "u3",
+    "text": "AIのClaude Codeを使ってるのに、\nブラウザを操作させてないのはもったいないです。\n書いた原稿を、毎回人が運んでいるのと同じです。\n\n私がブログで任せているのは↓\n・WordPressでの下書きと入稿\n・記事が検索で何回見られたかの数字集め\n\n公開ボタンだけは、出すと決めた私が押します。",
+    "quote": "",
+    "hash": "b4b9f51607f3449d",
+    "label": "D",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIにブラウザ操作をさせられる",
+      "",
+      "Claude Codeを使っていてもブラウザ操作は任せていない人が多い"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "Cとほぼ同じですが「毎回人が運んでいる」の方が手間がイメージしやすいです。WordPressが管理画面だと分からない人もいるかもしれません。",
+      "Cとほぼ同じ。「毎回」が入って手間のイメージが少し伝わりやすい。1行目の断定は少し刺さりにくい。",
+      "『毎回人が運んでいる』で手間が具体的に浮かび、Cより少し伝わりやすい。公開ボタンは自分で押す線引きも信頼できる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランのチャットが無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になった",
+      "ChatGPTの無料プランのチャットが無制限になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "無料で無制限は気になるので止まりました。Plusを続けるか迷った話は共感できますが、結局続けたのかが少し分かりにくいです。",
+      "有料を続けるか迷っている自分と同じ悩みで共感した。結局何を決めたか（Plus継続）がもう少しはっきり書いてあると分かりやすい。",
+      "Plusを続けるか迷った話は共感できるが、『画像生成・速度・モデル・・・』が羅列で何を比べたのか伝わりにくい。決め手の具体例があれば良い。"
+    ]
+  }
+]

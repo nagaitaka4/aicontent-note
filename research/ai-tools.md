@@ -1,8 +1,14 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-16
+最終更新: 2026-11-17
 
 ---
+
+## [2026-11-17] 調査結果（デイリー・火曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome・「Updated: 5 時間前」）：🆕 November 16「Clinical search and plugins for ChatGPT for Clinicians」＝医療従事者向け＝記録のみ。November 13・10・4の見出しは既録のまま（後から足された項なし）
+- Gemini・国産ツール：差分なし
+
 
 ## [2026-11-16] 調査結果（デイリー・月曜）
 

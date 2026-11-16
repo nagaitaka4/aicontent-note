@@ -1,9 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-16
+最終更新: 2026-11-17
 
 
 ---
+
+## [2026-11-17] 調査結果（デイリー・火曜）
+
+- npm：🆕 2.1.326（2026-11-16 18:43 UTC）。CHANGELOG.mdは2.1.325が最新のまま＝中身未掲載
+- **@ClaudeDevs（11/17 06:18 JST）**：🆕 デスクトップ版Claude CodeがiOSシミュレーターのiPhone Duo（折りたたみ）に対応（public beta）＝verbatim `Claude Code on desktop now supports iPhone Duo in the iOS simulator (public beta).` ／ `Claude Code can offer to install Apple's App Resizability skill, which scans your project for layout issues and suggests fixes.`（[投稿](https://x.com/ClaudeDevs/status/2122439098740674839)）。iPhoneアプリの開発向け＝本人の使い方は変わらない＝記録のみ
+- Newsroom：🆕 Nov 16「Updating our coordinated vulnerability disclosure policy timelines」（/research・脆弱性開示の方針）＝使う側に影響なし＝記録のみ／Claude Apps リリースノート：November 12のまま／claude.com/blog：Nov 13のあと新着なし
+- **巡回チェック**：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（curl）／Newsroom ✅（curl）／claude.com/blog ✅（curl）／@ClaudeDevs ✅（実Chrome）
+
 
 ## [2026-11-16] 調査結果（デイリー・月曜）
 

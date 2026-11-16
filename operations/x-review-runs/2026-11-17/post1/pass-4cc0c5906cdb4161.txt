@@ -1,0 +1,8 @@
+AI検索対策、調べるほどやることが増えて私も迷います。
+
+でもGoogle自身は、GoogleのAI検索に特別な対策は要らないと書いています。
+
+このブログを測って、先に見るのは2つでいいと思いました。
+・AIが読みに来るのを止めていないか
+・会社の連絡先と住所
+https://aicontent-note.com/ai-search-homepage-check/

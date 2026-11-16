@@ -1,0 +1,8 @@
+AI検索対策、私はホームページで先に見るのは2つで足りると思っています。
+・AIが読みに来るのを止めていないか
+・会社の連絡先と住所
+
+Googleも、GoogleのAI検索に特別な対策は要らないと説明しています。
+
+このブログも無料のツールで測りました👇
+https://aicontent-note.com/ai-search-homepage-check/

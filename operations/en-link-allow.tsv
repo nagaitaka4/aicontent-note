@@ -21,3 +21,6 @@ https://www.grillitype.com/eula	no.68	書体メーカーの使用許諾で日本
 https://aisearch.similarweb.com/blog/is-ai-replacing-search/	no.83	日本語版が無い。表の行で「ChatGPTを使う人のうちGoogleも使う人が95
 https://isitagentready.com/	no.84	日本語版が無い（/ja/は404）。表の行で「AI向けの新しい仕組みを重く見る・Content SiteでAPIや決済の項目が外れる」と説明
 https://is-agentic.com/	no.84	日本語版が無い（/ja/は転送・hreflangなし）。表の行で「AIがふつうに読めるかを重く見る・必須の6項目のうち4つ」と説明
+https://developers.openai.com/api/docs/guides/prompt-engineering	no.87	公式ガイドは英語のみ（11/17 実Chromeで原文を開いた・日本語版の切り替えなし）。H2①の表とH2②の表で、見出しと箇条書きが区切りと階層を伝えるのに役立つことがある・読みやすくなることがある、と日本語で説明
+https://ai.google.dev/gemini-api/docs/prompting-strategies?hl=ja	no.87	?hl=jaでも本文は英語（11/17 実Chrome）。H2②の表で、XML風のタグかマークダウンの見出しが効果がある・どちらかにそろえる、と日本語で説明
+https://arxiv.org/abs/2411.10541	no.87	論文は英語のみ。H2②の段落で、同じ中身を4つの書き方で比べた結果（GPT-4は影響が小さい傾向・タスクによって大きな差・一番良い形は決まらない）を日本語で説明

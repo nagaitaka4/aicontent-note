@@ -1,0 +1,255 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったというニュース",
+      "ChatGPTの無料プランで利用制限がなくなったという変更",
+      "ChatGPTの無料プランのチャットが無制限になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.67,
+    "comments": [
+      "「無制限」と言ったすぐ後に「利用制限が明確じゃない」とあって混乱しました。結局Plusを続けたのかどうかもはっきりしません。",
+      "どこが決め手だったのかが見えにくい。",
+      "前半がニュースの要約で、迷った話が後半に少しあるだけ。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p1",
+    "text": "Claudeに私のブログの方針と過去の投稿を全部教えて、Xの投稿案とリプライ先を毎朝6時半に出してもらう仕組みを作ったんですが、X運用がかなり捗ってます。\n\nいちばん時間がかかっていたリプライ先探しが、起きたら終わっています。",
+    "quote": "",
+    "hash": "d77937eac4160092",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.0,
+    "comments": [
+      "1文目が長くて途中で読む気が落ちました。「起きたら終わっています」は気になるので、どう作ったのかを少しでも書いてくれれば次も読みたくなります。",
+      "1文目が長くて流し見では読みづらい。「起きたらリプライ先探しが終わっている」を先頭に持ってきたほうが止まる。",
+      "1文目が長くて読むのに疲れるが、『起きたら終わっている』は具体的で気になる。仕組みをどう作ったのか、自分にもできるのかが一言あれば、もっと知りたくなる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.33,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 2,
+    "premise_topics": [
+      "本人が8/21に書いた「無料でもマイGPTは使える」という投稿",
+      "8/21の自分の投稿（無料でもマイGPTは使える）",
+      "ChatGPTのマイGPTの提供が終了する"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "中身はほぼお知らせの要約で、用語も分かりませんでした。",
+      "前半は公式発表のまとめで、知らない用語が多くて読む気が落ちる。",
+      "前半は公式発表の要約で、専門用語が続いて少し読む気が落ちた。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.67,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 1,
+    "premise_topics": [
+      "Opus 5は前のモデルより性能が上だと言われていること",
+      "Claude Maxのデフォルトモデルが変わったこと",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 1,
+    "denied_views": [
+      "Opus 5ははっきり違いが分かるほど良くなった",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "モデル名ばかりで、何の話か分かりませんでした。",
+      "モデル名ばかりで遠い話。",
+      "モデル名ばかりで関係が分からない。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p3",
+    "text": "X運用、Claude Codeに毎朝の候補出しを任せるだけで全然十分な気がしてます。\n\nもはやXの検索はほとんどしてなくて、出てきた投稿案とリプライ先を読んで、選んでるだけになってます。",
+    "quote": "",
+    "hash": "1064a97b873f56a8",
+    "label": "E",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 1,
+    "premise_topics": [
+      "X運用には自分で検索して投稿やリプライ先を探す必要があるという考え",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "X運用は自分で検索しないと回らない",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 3.33,
+    "comments": [
+      "「選んでるだけ」というラクさは面白いのですが、何を任せているのかの具体例がなく、ふわっとしています。",
+      "「選んでるだけ」というラクさは気になる。ただ、何をどう任せているのかが少し足りない。",
+      "『任せるだけで十分』の具体的な中身が薄く、読み終えても『ふーん』で終わる。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Claude Code"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p2",
+    "text": "Claudeに私のブログの方針を全部教えて、毎朝6時半にXの投稿案とリプライ先を出してもらっているんですが、これがかなり良いです。\n\nいちばん面倒だったリプライ先探しが、起きたら終わってます。\n投稿といいねは私が押してます（Xのルールで、いいねや返信の自動化はダメなので）。",
+    "quote": "",
+    "hash": "bf07e1426821ad03",
+    "label": "F",
+    "avg": {
+      "stop": 3.33,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Xのいいねや返信の自動化はルールで禁止されていること",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "仕組みと、自分で押しているところがはっきり分かれていて信頼できました。1行目がもう少し短ければもっと止まります。",
+      "具体的で、押すところは自分で押しているという線引きがあるので信用できる。1行目に「起きたら終わってる」があれば、もっと止まる。",
+      "仕組みと、自分が押している部分の分け方まで書いてあって、信用できそうだと感じた。最後の行は短くしてもいい。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

@@ -218,8 +218,20 @@ def table(rows):
         tb = "".join(
             "<tr>%s</tr>" % "".join("<td>%s</td>" % inline(c) for c in row) for row in body
         )
+    # 1列目が短い見出しで、ほかの列に長い文が入る表は、SWELLの「1列目の幅」を付ける（2026-11-17 no.86・ユーザー指示）。
+    # 固定レイアウトだと全列が同じ幅になり、1列目が余って長い文の列が何行にも折れる。ユーザーがWPで
+    # 毎回付けていた値に合わせる（1列目が10字以下＝200px／16字以下＝250px・no.71/74/79/86の実測）。
+    # SWELLは属性だけ保存し、styleは表示のときに足すので、<table>のタグは変えない
+    col1 = max(vis(r[0]) for r in [head] + body if r)
+    rest = max((vis(r[i]) for r in [head] + body for i in range(1, len(r))), default=0)
+    cell1 = None
+    if not short and col1 <= 16 and rest >= col1 * 2:
+        cell1 = "200px" if col1 <= 10 else "250px"
     if short:
         open_tag, table_tag = '<!-- wp:table {"hasFixedLayout":false} -->', "<table>"
+    elif cell1:
+        open_tag = '<!-- wp:table {"swlCell1Width":"%s","swlFz":""} -->' % cell1
+        table_tag = '<table class="has-fixed-layout">'
     else:
         open_tag, table_tag = "<!-- wp:table -->", '<table class="has-fixed-layout">'
     return (

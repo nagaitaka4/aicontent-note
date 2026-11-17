@@ -6,7 +6,7 @@ title: AIへの指示は音声入力で速くなる？手打ちに戻った理�
 date: 2026-11-17
 url: https://aicontent-note.com/ai-voice-input-instructions/
 slug: ai-voice-input-instructions
-status: draft
+status: published
 description: AIへの指示が音声入力で速くなる人はいます。私は言いたいことがまとまっているときは楽でしたが、長く話すと誤字脱字の書き直しが増え、一度は手打ちに戻しました。音声入力が向く場面と打つほうが速い場面、Macの標準の音声入力で試す手順をまとめました。
 eyecatch: eyecatch_0086.png
 eyecatch_alt: 黄色の地に雲形の吹き出しで「AIへの指示は音声入力で速くなる？」の題を置き、ノートパソコンに向かって話すめがねの男性と、口の前のマイクの吹き出しを描いたイラスト

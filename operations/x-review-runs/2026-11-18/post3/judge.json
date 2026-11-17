@@ -1,0 +1,256 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトモデルがOpus 5に変わった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "製品名とモデル名が続き何の話か分からない。",
+      "Fableが何か一言あれば。",
+      "モデル名が並ぶだけ。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "s2",
+    "text": "AIに文章を書かせるのが当たり前の状態からブログを始めた私みたいな人こそ、むしろ時間をとって、AIの文を自分の言葉に直す練習をした方がいいかもしれません。\n\n直しているうちに、何が言いたいのかがやっと見えてきます。",
+    "quote": "",
+    "hash": "fa7daf860f07acad",
+    "label": "B",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 1,
+    "premise_topics": [
+      "AIが当たり前の時代だからこそ、手を動かす練習をした方がいい（という意見）",
+      "AIに書かせるのが当たり前の時代の文章の練習",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 1,
+    "profile_votes": 0,
+    "avg_rank": 5.33,
+    "comments": [
+      "「むしろ」が何に対しての「むしろ」なのか分からず、元になった話を知らない感じが残ります。1文目が長く、言い切りも「かもしれません」で弱いです。",
+      "1行目が長くて、言いたいことが最後まで分からない。「かもしれません」で終わるので、実際どう直したかの例が一つほしい。",
+      "1文目が長くて「〜かもしれません」と弱いので流してしまう。直して何が変わったかの具体例が1つあれば刺さる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "s3",
+    "text": "「AIが当たり前だからこそ写経」、私にはかなり刺さる話です。\n\nAIで書くのが当たり前の状態からブログを始めたので、手で書き写したことはありません。\n代わりに、AIが書いた文を自分の言葉に直す時間をとっています。今のところ、それが私の写経です。",
+    "quote": "私が博士課程学生の時、トップジャーナル掲載論文の写経を少しやっていました。\n\nAIが研究で使われるのが当然になり、文章を生成させるのが当たり前の状態からスタートする研究初心者に対しては、むしろ時間をとってこういう手を動かす教育をした方が良いかもしれません。",
+    "hash": "eba3618fb6da52ee",
+    "label": "C",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "写経",
+      "写経（文章を書き写すことだとは引用を読んで分かったが、1行目では意味が取れない）"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "研究初心者には論文の写経のように手を動かす教育をした方がいいという博士課程経験者の意見",
+      "AIが当たり前だからこそ、手を動かす写経的な訓練が必要という博士課程経験者の意見",
+      "研究者の『AIが当たり前だからこそ論文の写経をした方がいい』という意見"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.33,
+    "comments": [
+      "引用があるので話の流れが分かり、「AIの文を直すのが私の写経」という置き換えは面白いです。ただ1行目の「写経」は引用を読むまで意味が取れない。",
+      "引用元の話を自分のやり方に置き換えていて共感できる。直す前と後の具体例が一つあれば、もっと刺さった。",
+      "引用元を読めば話はつながるが、1行目だけだと「写経」が何のことか分かりにくい。直した前後の例があれば実感がわく。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：写経・写経（文章を書き写すことだとは引用を読んで分かったが、1行目では意味が取れない）"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "D",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.33,
+      "follow": 3.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT",
+      "マイGPT（名前は聞いたことがある程度）"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPT機能が終了する",
+      "ChatGPTのマイGPTが終了する発表",
+      "ChatGPTのマイGPT終了の発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.0,
+    "comments": [
+      "前半は発表の要約。",
+      "前半は公式発表の要約。",
+      "中身は発表の要約。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "s1",
+    "text": "私は、AIで文章を書くのが当たり前の状態からブログを始めたので、むしろAIが書いた文は、時間をとって自分の言葉に直しています。\n\n遠回りですが、手を動かさないと、どこが自分の考えなのか分からなくなるので。",
+    "quote": "",
+    "hash": "8534e5a9bdff2c88",
+    "label": "E",
+    "avg": {
+      "stop": 2.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 1,
+    "premise_topics": [
+      "AIで書くのが当たり前なら、AIの文をそのまま使えばいいという考え",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "「むしろ」が何への反対か書いていないので少し引っかかりますが、「どこが自分の考えなのか分からなくなる」は共感できます。直す前と後の具体例が1つあると、もっと止まります。",
+      "2行目の理由は納得できる。1行目がもたついているので、「どこが自分の考えか分からなくなる」を先頭にした方が止まる。",
+      "「遠回りでも直す」は社内でAIを回すか迷っている自分に参考になる。どのくらい時間がかかるか・どこを直すかが少しあればフォローしたくなる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "F",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.33,
+      "follow": 3.33
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランでチャットが無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になった",
+      "ChatGPTの無料プランのチャットが無制限になったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 1.67,
+    "comments": [
+      "結局何が決め手だったのかが少しぼやけています。",
+      "迷った末にPlusを続けた決断が見えるのでリアル。",
+      "有料を続けるか迷った話は自分ごと。"
+    ]
+  }
+]

@@ -79,16 +79,16 @@ Qiitaの「[私が「AI音声入力」をやめた理由 ― Claude Codeでの�
 **誤字が多いときは、同じ設定の「マイクの入力元」で別のマイクを選んでみます。**
 
 私も今、もう一度音声入力を試しています。
-音声のほうがいい気もしてきましたが、「5（ご）」と言ったのに「後」と入るような打ち直しは、まだあります。
+音声のほうがいい気もしてきましたが、「5（ご）」と言ったのに「後」と入るような打ち直しは、まだまだあります。
 
 【アラート】<br>
-会社の情報を話すなら、声をどこで文字にするかと、その文章をどこへ送るかを、別々に確かめます。
+会社の情報を声で話すなら、声がどこへ送られて文字になるかを確かめます。
 
 ・**Macの標準**：Macの中だけで文字にするかは、手順1の画面の「キーボードショートカット」→音声入力の説明で分かる<br>
 ・**ChatGPTのマイクのアイコン**：OpenAIのモデルで文字にする。音声はチャットが履歴にある間、保持される（[音声入力のFAQ](https://help.openai.com/ja-jp/articles/12168547)）<br>
 ・**Claude Codeの専用の音声入力（[`/voice`](https://code.claude.com/docs/ja/voice-dictation)）**：Anthropicのサーバーで文字にする。日本語で話すなら`/config`で言語を日本語にする（空だと英語で文字になる）
 
-文字にした文章の扱いは、[ChatGPTに学習させない設定。会社の情報を入れる前に](https://aicontent-note.com/chatgpt-training-opt-out/)と[Claudeに会社の情報を渡して大丈夫か。データが学習に使われる条件](https://aicontent-note.com/claude-company-data-training/)にまとめています。
+文字になった指示が学習に使われるかは、[ChatGPTに学習させない設定。会社の情報を入れる前に](https://aicontent-note.com/chatgpt-training-opt-out/)と[Claudeに会社の情報を渡して大丈夫か。データが学習に使われる条件](https://aicontent-note.com/claude-company-data-training/)にまとめています。
 
 ---
 

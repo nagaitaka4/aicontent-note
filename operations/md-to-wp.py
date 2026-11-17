@@ -96,10 +96,19 @@ def inline(text):
         r"\*\*\[([^\]]+)\]\(([^)]+)\)\*\*", r'<a href="\2"><strong>\1</strong></a>', text
     )
     # `code` … コードの表示にする（2026-09-25追加。変換しておらず、公開ページに記号付きで出ていた：no.27の/model・/usage、dynamic-workflowsの/config）
-    text = re.sub(r"`([^`]+)`", r"<code>\1</code>", text)
+    # 中身は < > & をエスケープし、ほかの記法の変換から外す（2026-11-18追加。no.87の`<context>`が
+    # HTMLのタグとして読まれ、表のブロックが「無効」になった）
+    codes = []
+
+    def _code(m):
+        codes.append("<code>%s</code>" % esc(m.group(1)))
+        return "\x01%d\x01" % (len(codes) - 1)
+
+    text = re.sub(r"`([^`]+)`", _code, text)
     text = re.sub(r"==([^=]+)==", MARKER.replace("%s", r"\1"), text)
     text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2"><strong>\1</strong></a>', text)
     text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", text)
+    text = re.sub(r"\x01(\d+)\x01", lambda m: codes[int(m.group(1))], text)
     return text.strip()
 
 

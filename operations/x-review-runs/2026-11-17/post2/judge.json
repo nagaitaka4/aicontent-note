@@ -1,0 +1,210 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったという変更",
+      "ChatGPTの無料プランでもチャットが無制限になったという話",
+      "ChatGPTの無料プランのチャットが無制限になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.0,
+    "comments": [
+      "無料で十分か迷う気持ちは共感できるが、結局Plusを続けたのか分かりにくい。「Plusを続けることにしました」と結論をはっきり書くと読み終わりがすっきりする。",
+      "有料プランを迷っている自分には1行目が刺さった。「画像生成・速度・モデル・・・」で何に迷ったかがぼやけていて、決め手になった具体的な場面が1つあればもっと良い。",
+      "結局Plusを続けたのか解約したのかがはっきりせず、「勝ちました」で何を選んだか一瞬迷った。会社で使う目線の判断理由が一言あると参考になる。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+      "Claude Maxの標準モデルがOpus 5に変わったという話",
+      "Claude Maxの標準モデルがOpus 5に変わった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "Claudeを知らないので固有名詞が多すぎて1行目で離れた。どんな作業で差が無かったのか一例あれば、知らない人にも伝わる。",
+      "モデル名が続いて、Claudeを使っていない自分には何の話か入ってこなかった。「違いを実感できない」正直さは好印象なので、どんな作業で比べたかが1つあれば読める。",
+      "モデル名が続いて、使い込んでいる人向けの話に見えて離れた。ブログ更新など具体的な使い方で違いがあったかを書いてくれると自分ごとになる。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "u6",
+    "text": "AI検索対策を調べると「結論を先に」など色々出てきて、\n結局どうしたらいいか私も迷います。\n\nでもGoogleは、自社のAI検索に特別な対策は要らないと書いています。\n\n先に見るのは2つだけ。\n・AIが読みに来るのを止めていないか\n・会社の連絡先と住所をAI向けにも書いているか\nhttps://aicontent-note.com/ai-search-homepage-check/",
+    "quote": "",
+    "hash": "9aa6a6daf2f6fac0",
+    "label": "C",
+    "avg": {
+      "stop": 3.67,
+      "fun": 2.67,
+      "follow": 3.33
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AI検索対策として「結論を先に」など色々な方法が言われていること",
+      "AI検索対策として「結論を先に」などのやり方がたくさん出回っている話",
+      "AI検索対策として「結論を先に」など色々な対策が言われている"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "AI検索には特別な対策が必要だという考え",
+      "AI検索には特別な対策が必要だ",
+      "AI検索には特別な対策が必要だという考え"
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.33,
+    "comments": [
+      "「迷う」に共感し、Googleが要らないと言っているのは意外で止まった。チェック2つも具体的で分かりやすいが、「私も」の「も」が誰と同じなのか少し引っかかる。",
+      "「Googleは要らないと書いている」で少し止まったが、後半はチェック項目とリンクだけで情報寄り。「AI向けにも書く」が具体的に何をするのか分からず、そこで読む気が落ちた。",
+      "まさに自分が迷っている話で、2つに絞ってくれるのは助かる。「AIが読みに来るのを止めていないか」の確認方法が一言あるとリンクを踏む前から安心できる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.67,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.67,
+    "comments": [
+      "「書いたばかりでした＞＜」の失敗談が人柄が見えて良い。ただ前半は発表の要約で、マイGPTを使っていない身には影響が分かりにくい。",
+      "「書いたばかりでした＞＜」の失敗談で人柄が見えて面白かった。ただ前半は発表の要約で、「スキル」「カスタムアクション」が分からず流し読みになった。",
+      "前半は発表の要約で読み流したが、「書いたばかりでした＞＜」で人柄が見えた。マイGPTを使っていない身には影響が分からず、移すときにどうするかの一言があると良い。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "u5",
+    "text": "AI検索対策を調べると色々出てきて、\n結局どうしたらいいのか迷います。\n\nでも、Googleは、自社のAI検索に特別な対策は要らないと書いています。\n\n私が先に見ると決めたのは2つだけ。\n・AIが読みに来るのを止めていないか\n・会社の連絡先と住所をAI向けにも書いているか\n\nhttps://aicontent-note.com/ai-search-homepage-check/",
+    "quote": "",
+    "hash": "88965cd61f5a3cbb",
+    "label": "E",
+    "avg": {
+      "stop": 3.33,
+      "fun": 2.67,
+      "follow": 3.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AI検索対策として色々な方法が言われていること",
+      "AI検索対策の情報がたくさん出回っていて迷う話",
+      "AI検索対策の情報が色々あって迷う"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "AI検索には特別な対策が必要だという考え",
+      "AI検索には特別な対策が必要だ",
+      "AI検索には特別な対策が必要だという考え"
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.0,
+    "comments": [
+      "迷いからGoogleの意外な答え、自分が決めた2つと流れが自然で読みやすい。「私が決めた」で書き手の判断が見えるのが良い。",
+      "「私が決めた」でCより本人の判断が見えるが、中身はほぼ同じでチェック項目＋リンクの形。なぜその2つに絞ったか、自分のサイトで何が見つかったかが一言あれば止まる。",
+      "「私が先に見ると決めた」で本人の判断として読めて信頼できる。1行目は「色々出てきて」だけでCより引きが弱く、具体例が1つあると止まりやすい。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

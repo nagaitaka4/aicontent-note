@@ -1,7 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-17
+最終更新: 2026-11-18
 
+
+---
+
+## [2026-11-18] 調査結果（デイリー・水曜）
+
+- npm：🆕 2.1.327（2026-11-17 20:33 UTC）。CHANGELOG.mdは2.1.326まで掲載（2.1.327は未掲載）。2.1.326の主な中身＝agent teamsとCode Modeの併用・`/status`に機能が切られている理由の行・Ctrl+Oで隠れた起動時の通知・不具合の修正多数＝使う側の使い方は変わらない＝記録のみ
+- **@ClaudeDevs（11/18 06:18 JST）**：🆕 Code Mode（実験的）＝verbatim `Check out Code Mode, a new, experimental way for Claude Code to work with tools. Claude writes scripts that chain your tools together`（環境変数`CLAUDE_CODE_EXPERIMENTAL_COD…`で opt in）https://x.com/ClaudeDevs/status/2122801681939234950 ＝環境変数で入れる実験機能・本人の画面に出ていない＝記録のみ（X候補の条件1を満たさない）
+- **@ClaudeDevs／claude.com/blog（11/17）**：Linked billing（Claude Platformのbeta）＝verbatim `users of tools like Factory, Linear, and Ramp can pay for Claude API usage through their Claude Platform organization, without sharing an API key` ＝API・企業向け＝記録のみ
+- **Claude Appsリリースノート（November 17, 2026）**：🆕 Choose a release channel in Claude Desktop＝verbatim `Stable stays the default and gets new versions less often, after more testing. Latest gets a new version about once a day` https://support.claude.com/en/articles/12138966-release-notes ＝デスクトップ版の更新の受け取り方を選べる。本人が日常で困っている話ではない・設定名の日本語表記は未確認＝記録のみ
+- Newsroom：差分なし（最新はNov 9のFable 5.2・Mythos 5.2）
 
 ---
 

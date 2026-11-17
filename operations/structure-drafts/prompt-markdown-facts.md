@@ -92,7 +92,7 @@ URL：https://note.com/green_donguri/n/nedc603e42a8e
 **研究（英語）**：[Does Prompt Formatting Have Any Impact on LLM Performance?](https://arxiv.org/abs/2411.10541)（2024/11/15・He ほか）
 
 - 同じ中身をプレーンテキスト・Markdown・JSON・YAMLで渡して比べた。`GPT-3.5-turbo's performance varies by up to 40% in a code translation task depending on the prompt template, while larger models like GPT-4 are more robust to these variations.`
-- → 形式で結果が変わることはある。ただし大きいモデルほど影響は小さい。**「Markdownが一番」とは言っていない**（どの形が勝つかはタスクとモデルで変わる）。2024年の古いモデルの話
+- → 形式で結果が変わることはある。GPT-4はGPT-3.5より影響が小さい傾向（GPT-4-turboは「greater resilience to prompt format changes」）。**ただしGPT-4でも大きな差が出たタスクがある**：GPT-4-32k-0613のHumanEval＝普通の文76.2・JSON 21.95（論文本文の表1・11/17 21時台にGPTレビューの指摘で確認）。結論は「no single format excelling universally」。**「Markdownが一番」とは言っていない**（どの形が勝つかはタスクとモデルで変わる）。2024年の古いモデルの話
 
 ⚠️ 英語のリンク（OpenAI・Google・arXiv）を本文に入れるときは`operations/en-link-allow.tsv`に登録し、本文でリンク先の中身を日本語で説明する（メモリ`feedback_reader_links_japanese`）。Anthropicは日本語版にリンクする。
 
@@ -113,4 +113,4 @@ URL：https://note.com/green_donguri/n/nedc603e42a8e
 1. **CSVでデータを渡した実物は無い** → 場面2は作らない（元の記事の紹介の中で触れるだけ）。推奨どおりなら聞かなくてよい
 2. **普段ChatGPTに手で打つ短い頼みごとをMarkdownで書いているか**は記録に無い → 推奨は「書かない」（記事の主張は長い指示書と返事の形の話で、短い頼みごとの書き方に本人の事実は要らない。一般論として「短い頼みごとには要らない」は公式の書き方〔役立つことがある〕と上位の反対側の記事で言える）
 3. ✅ **no.35がどのクエリで表示されているか**（2026-11-17 15時台・実ChromeのGSC・3か月＝8/16〜11/15）：60表示・1クリック・平均8.7位。**クエリの内訳は「データがありません」＝すべて開示されない少数の語**。`プロンプト マークダウン`で食い合っている証拠は無い → 題は`プロンプト マークダウン`を前に置き、記法の説明はno.35へリンクで逃がす
-4. 「Markdownで書くとAIの精度が上がる」を確かめた実験はこのメディアに無い → 「精度が上がる」とは書かない。公式（役立つことがある）と研究（形式で変わることはあるが大きいモデルほど影響は小さい）の範囲で書く
+4. 「Markdownで書くとAIの精度が上がる」を確かめた実験はこのメディアに無い → 「精度が上がる」とは書かない。公式（役立つことがある）と研究（形式で変わることはある・GPT-4は影響が小さい傾向だがタスクによっては大きな差も出た・一番良い形は決まらない）の範囲で書く

@@ -6,7 +6,7 @@ title: AIを使うと思考力は落ちる？落ちる使い方と、私が手�
 date: 2026-11-18
 url: https://aicontent-note.com/ai-thinking-ability-decline/
 slug: ai-thinking-ability-decline
-status: draft
+status: published
 description: AIを使うと思考力は落ちるのか。AIを使って問題を解いていた人は、AIなしになると点が下がった実験があります。ただ下がったのは主に、AIに答えをそのまま聞いていた人でした。研究で分かっていることと、AIで記事を作っている私が自分で決めていることをまとめました。
 eyecatch: eyecatch_0088.png
 eyecatch_alt: 白に近いベージュの地に「AIを使うと思考力は落ちる？」の題を置き、大きな電球を抱える女性と、チェックの付いた画面を指さす男性を描いたイラスト

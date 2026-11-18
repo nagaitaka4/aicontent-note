@@ -76,6 +76,8 @@ AIで回してきたこのブログでは、==1か月半ほどで記事ごとの
 そのぶん、最後に下書きの画面で読む時間を取っています。
 入稿の任せ方と、そこで起きた失敗は[Claude CodeにWordPress入稿は任せられる？失敗と対策](https://aicontent-note.com/claude-code-wordpress-posting/)にまとめました。
 
+AIに任せると考える力が落ちるのかは、[AIを使うと思考力は落ちる？落ちる使い方と、私が手放さない判断](https://aicontent-note.com/ai-thinking-ability-decline/)にまとめました。
+
 ---
 
 ## 崩れを止める4つの手当て

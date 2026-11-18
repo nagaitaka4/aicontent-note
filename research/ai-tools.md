@@ -1,6 +1,16 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-18
+最終更新: 2026-11-19
+
+---
+
+## [2026-11-19] 調査結果（デイリー・木曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome）：
+  - 🆕 **November 18「Live Dictation in ChatGPT」**＝verbatim `With Live Dictation, your speech turns into text as you talk` / `We’ve also removed the 10-minute recording limit.` / `rolling out globally to all ChatGPT plans on iOS, Android, web, and the desktop app.` ＝音声入力が話しながら文字になる・10分の上限撤廃・全プランに順次＝**使える範囲が変わる＝軸②で採用**（`research-20261119-01`）。日本語の画面での機能名は未確認＝「音声入力」と書く
+  - 🆕 November 17「GPT-6.2 Astra and Sol in ChatGPT Work and Codex」＝verbatim `Both models are available in preview in Work and Codex desktop.` / `Regular Chat keeps its existing model choices.` ＝通常のチャットは変わらない＝新モデルの報告だけ＝記録のみ
+  - 11/16以前の見出しは既録のまま（後から足された項なし）
+- Gemini・国産AIライティングツール：本人の使い方に影響する差分は見当たらず
 
 ---
 

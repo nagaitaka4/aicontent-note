@@ -61,6 +61,8 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 **基準に満たないものはここに入れない**（research/配下への記録だけで止める）。
 
+> **📅 2026-11-19 06〜07時台（`x-morning-brief`・木曜）：追記1件（`research-20261119-01`＝ChatGPTの音声入力が話しながら文字になる・10分の上限撤廃）→ 本人の画面で未確認・本人は今は手打ちのためキュー投入なし（no.86のリンク型〔11/21〜〕と組む案をX本部へ）。**GPT-6.2 Astra・Sol（11/17・WorkとCodexだけ・通常のチャットは変わらない）・Claude Code 2.1.327・claude.com/blogの2本（開発チームの考え方・Claude Docsの負荷試験）＝記録のみ
+
 > **📅 2026-11-11 06〜07時台（`x-morning-brief`・水曜）：追記1件（`research-20261111-01`＝Claude Sheets・Whiteboards〔ベータ・有料プラン全部〕）→ 本人はClaudeのチャット側を使っておらず画面でも未確認のためキュー投入なし。**同日の「アプリをClaudeの中で開いて作業させる」は`rolling out`（新しいClaudeに切り替わったアカウントから）で本人の画面に出ているか未確認＝research/への記録だけ。ChatGPTのBusiness Hubは米国の事業者向け＝記録のみ
 
 > **📅 2026-11-06 06〜07時台（`x-morning-brief`・金曜）：追記1件（`research-20261106-01`＝ChatGPT Images 2.6：直すときに人物の服などが保たれやすい・参考画像の保存）→ 本人の画面で使えるか未確認のためキュー投入なし。**①Claude Apps 11/5（Enterprise向けの管理機能）・@claudeai 11/6 Personal Finance（米国のみ）＝記録のみ ②ChatGPT Images 2.6（11/4）
@@ -93,6 +95,7 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 | ID | 使う側の何が変わるか | 出典 | 鮮度期限 | 軸 |
 |---|---|---|---|---|
+| research-20261119-01 | **ChatGPTの音声入力が、話している途中から文字になる形に変わり、10分の録音の上限もなくなった（11/18付・iOS・Android・ウェブ・デスクトップの全プランに順次）。**波形を押すと途中の文字の表示・非表示を切り替えられる。**使う側の何が変わるか**：話し終えるまで文字起こしを待たなくてよくなり、長く話しても途中で切れない。⚠️ 本人は音声入力を試して手打ちに戻した（no.86「手打ちに戻った理由」・誤字の直しが増えた）＝今は手打ち。本人の画面に届いているか未確認・日本語の画面での機能名も未確認＝**キュー投入なし**。出すなら**no.86のリンク型（枠11/21〜11/24）の「今出す理由」として組む**のが筋（期限11/21と重なる）。本人が画面で一度話してみてから | [リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) verbatim `With Live Dictation, your speech turns into text as you talk` / `We’ve also removed the 10-minute recording limit.` | 2026-11-21 | 軸② |
 | ~~research-20261112-01~~（→ `RESET-01`でキュー化） | **Claudeの有料プラン（Pro・Max・Ultra・Team）全員に「完全リセット」が1回、無料で配られた（11/11 06:59 JST・@ClaudeDevs・12/10 14:00 PTまで＝日本時間12/11 7:00）。**全部のモデル・全部の上限を1回だけ戻せる。理由は「上限を想定より多く使う不具合を直した」「Fableのリセットは週の上限に当たった人には効かなかった」。**使う側の何が変わるか**：週の上限に当たっても1回は戻せる＝上限の残りを見ながら使う人は「いつ使うか」を決める話になる。**本人の画面で確認済み**：「完全リセット 有効期限：12月11日 7:00 JST［無料でリセット］」＋Fableリセット2件／同じ画面に「このペースでは火曜日のリセットを待たずに土曜日の夜に上限に達する見込み」（今週43%・木曜朝）／今週はClaude Code 100% | [@ClaudeDevs](https://x.com/ClaudeDevs/status/2120275296637321476)・本人のUsage画面（11/12 実Chrome） | 2026-11-14 | 軸② |
 | research-20261112-02 | ChatGPTの音声モードの旧版（Advanced・Standard）が12/11で終わり、GPT-Liveだけになる（11/10付・あとから追加）。**本人は音声を使っている記録がない＝合格ライン1（手元で開ける・使っている）を満たさないので下書きにしない**。記録のみ | [リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) | 2026-11-13 | 軸② |
 | research-20261111-01 | **Claudeの中で表（Claude Sheets）とホワイトボード（Claude Whiteboards）を作れるようになった（ベータ・11/10米国時間）。**表はClaudeが作って一緒に直す、ボードはチームでClaudeとブレストしてタイムラインや担当に整理する。**使う側の何が変わるか**：有料プランなら追加料金なしで、表・ボードのために別のツールへ貼り直さなくてよくなる。⚠️ 本人はClaudeのチャット側を使っていない（チャットはChatGPT）＝出すなら本人が画面で開いて触ってから | [claude.com/blog](https://claude.com/resources/articles/sheets-whiteboards-data) verbatim `These are available on all paid plans.` | 11/13 | ② |

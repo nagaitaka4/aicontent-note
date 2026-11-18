@@ -1,0 +1,210 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Maxの標準モデルがOpus 5に変わったという発表",
+      "Claude MaxのデフォルトがOpus 5に変わった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "製品名とモデル名が並んでいて何の話か分からなかった。",
+      "Fableが何か分からず置いていかれた。",
+      "モデル名が3つ続き違いが分からない。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c1",
+    "text": "AIに記事のレビューで見てもらう所、私は4つ渡しています。\n\n1. タイトルの問いに答えているか\n2. 私のやり方を正解と書いていないか\n3. 読者が知りたい順に読めるか\n4. 数字や日付の誤り\n\n渡す前は、タイトルに答えていない記事も「公開してよい」でした。\nhttps://aicontent-note.com/ai-article-review-how-to/",
+    "quote": "",
+    "hash": "78348ec5e5b5a2e3",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 2.67,
+      "follow": 3.33
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 3.33,
+    "comments": [
+      "4項目は実務で使えそうですが、ほぼ情報だけでした。最後の一文の『公開してよい』が誰の判定なのか一瞬分かりにくい。",
+      "4項目はすぐ使えそうで助かる。最後の一文の「公開してよい」が誰の判定なのか一瞬分からなかった。",
+      "社内でAIを使って回すなら、まさに知りたいチェック項目でした。2番は少し意味が取りにくい。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.33,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 1,
+    "premise_topics": [
+      "マイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了する",
+      "ChatGPTのマイGPTが終了するという発表と、8/21に書いた本人の記事"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.0,
+    "comments": [
+      "中身はほぼ公式発表の要約で、『＞＜』は人柄が見えて良かった。",
+      "前半はニュースの要約。「＞＜」で人柄が見えて読む気が戻った。",
+      "前半は公式発表の要約で、8/21の記事を知らないので重みが伝わらない。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランでチャットが無制限になったこと",
+      "ChatGPTの無料プランでチャットが無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になった変更"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 1.67,
+    "comments": [
+      "Plusを続けるか迷う話は共感した。何を比べて決めたのかが少しぼやけている。",
+      "Plusを続けるか迷っている今の自分にそのまま刺さった。",
+      "迷って続けた判断は身近で良い。並びが言葉足らず。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c4",
+    "text": "AIに記事のレビューで見てもらう所、見逃すと困る順に4つです。\n\n1位 タイトルの問いに答えているか\n2位 私のやり方を正解と書いていないか\n3位 読者が知りたい順か\n4位 数字や日付の誤り\n\n「おかしい所を見て」だけだと、タイトルに答えていない記事も通りました。\nhttps://aicontent-note.com/ai-article-review-how-to/",
+    "quote": "",
+    "hash": "70bc86fa14629970",
+    "label": "E",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIに『おかしい所を見て』とだけ頼む普通のレビューのやり方",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.0,
+    "comments": [
+      "順位がついていて、最後の一文で具体的に頼まないとダメなんだと腹落ちした。リンクが付いていて宣伝っぽく見えるので、失敗談をもう一言入れると良さそう。",
+      "順位付きなので優先順位が分かりやすく、最後の失敗談もBより具体的。1行目がBとほぼ同じで、新しさは弱め。",
+      "『見逃すと困る順』で優先度がつき、Bより使いやすい。最後の一文で『雑に頼むと素通りする』と分かるのが説得力あり。2位の意味はやや分かりにくい。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

@@ -1,7 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-18
+最終更新: 2026-11-19
 
+
+---
+
+## [2026-11-19] 調査結果（デイリー・木曜）
+
+- npm：2.1.327（2026-11-17 20:33 UTC）のまま。CHANGELOG.mdに2.1.327が掲載された＝`/install-github-app`の確認・`claude mcp add-json <name> -`・`/status`に壊れた設定ファイルの一覧・`/export`が上書き前に聞く等＝使う側の使い方は変わらない＝記録のみ
+- @ClaudeDevs：11/18のCode Mode（既録）以降の新規なし（実Chrome）
+- Claude Appsリリースノート：差分なし（最新はNovember 17のrelease channel・既録）
+- Newsroom：差分なし（最新はNov 9）
+- claude.com/blog：🆕 Nov 16「How the Claude Code team thinks about verification」・Nov 17「Using a "chaos loop" to harden the Claude Docs launch」（Linked billingは既録）。前者は一覧に題があるが記事ページが404（2026-11-19 07時台）＝本文未確認・開発チームの考え方の記事で使う側の何かが変わる話ではない＝記録のみ
 
 ---
 

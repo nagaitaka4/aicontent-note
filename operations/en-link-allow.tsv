@@ -24,3 +24,4 @@ https://is-agentic.com/	no.84	日本語版が無い（/ja/は転送・hreflang�
 https://developers.openai.com/api/docs/guides/prompt-engineering	no.87	公式ガイドは英語のみ（11/17 実Chromeで原文を開いた・日本語版の切り替えなし）。H2①の表とH2②の表で、見出しと箇条書きが区切りと階層を伝えるのに役立つことがある・読みやすくなることがある、と日本語で説明
 https://ai.google.dev/gemini-api/docs/prompting-strategies?hl=ja	no.87	?hl=jaでも本文は英語（11/17 実Chrome）。H2②の表で、XML風のタグかマークダウンの見出しが効果がある・どちらかにそろえる、と日本語で説明
 https://arxiv.org/abs/2411.10541	no.87	論文は英語のみ。H2②の段落で、同じ中身を4つの書き方で比べた結果（GPT-4は影響が小さい傾向・タスクによって大きな差・一番良い形は決まらない）を日本語で説明
+https://arxiv.org/abs/2604.04721	no.88	論文の本文で日本語版が無い（日本語の報道はギズモード・ジャパンで、使い方別の数字は載っていない）。H2①の「答えをそのまま聞いた人だけ」の表で、使い方ごとの割合と正答率の変化を日本語で説明

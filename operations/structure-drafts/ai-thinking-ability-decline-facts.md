@@ -63,14 +63,16 @@ AIによる概要あり（MIT・カーネギーメロン大学などの研究、
 | 研究 | 中身（原文から） | リンク |
 |---|---|---|
 | **Microsoft Research・カーネギーメロン大学**（Lee ほか、CHI 2025） | 知識労働者319人・仕事でAIを使った実例936件の調査。"higher confidence in GenAI is associated with less critical thinking"（AIへの信頼が高いほど批判的思考が少ない）／"higher self-confidence is associated with more critical thinking"（自分への自信が高いほど多い）／"GenAI shifts the nature of critical thinking toward information verification, response integration, and task stewardship"（考える中身が、情報を確かめる・返事をまとめる・任せた仕事を管理する方へ移る） | https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/ （英語・日本語版なし→本文で中身を日本語で説明し`operations/en-link-allow.tsv`に登録） |
-| **カーネギーメロン大学・MIT・オックスフォード大学・UCLA**（Liu ほか、arXiv 2604.04721「AI Assistance Reduces Persistence and Hurts Independent Performance」・2026/4/6・v6 2026/10/13・査読前） | 1,222人のランダム化比較実験。AIで短期の成績は上がるが、AIを外すと成績が下がり、あきらめやすくなる。課題＝分数の計算・SAT形式の読解。実験全体は約15分（実験2）で、途中でAIを予告なく外した。**論文本文（実験2・自己申告）：AIの組のうち、主に答えを直接求めた人61%（189人）・ヒントや説明に使った人27%（82人）・使わなかった人12%（37人）。事前テストからの正答率の変化は、答えを直接求めた人−0.11・ヒントに使った人＋0.05・対照＋0.01・使わなかった人＋0.11。飛ばす割合も答えを直接求めた人だけ増えた（＋0.11）**＝下がったのは答えを丸ごと受け取った人 | https://arxiv.org/abs/2604.04721 ／日本語の報道：ギズモード・ジャパン（https://www.gizmodo.jp/2026/05/spending-just-10-minutes-with-ai-can-fry-your-brain-researchers-find.html ・2026/5/16「たった10分AIを使うだけで、思考停止に陥る可能性」・11/18に実在を確かめた。答えを求めた人ほど低下が大きく、ヒントに使った人には著しい低下は見られなかった、と書いている） |
+| **カーネギーメロン大学・MIT・オックスフォード大学・UCLA**（Liu ほか、arXiv 2604.04721「AI Assistance Reduces Persistence and Hurts Independent Performance」・2026/4/6・v6 2026/10/13・査読の状態は未確認〔下の⚠️〕） | 1,222人のランダム化比較実験。AIで短期の成績は上がるが、AIを外すと成績が下がり、あきらめやすくなる。課題＝分数の計算・SAT形式の読解。実験全体は約15分（実験2）で、途中でAIを予告なく外した。**論文本文（実験2・自己申告）：AIの組のうち、主に答えを直接求めた人61%（189人）・ヒントや説明に使った人27%（82人）・使わなかった人12%（37人）。事前テストからの正答率の変化は、答えを直接求めた人−0.11・ヒントに使った人＋0.05・対照＋0.01・使わなかった人＋0.11。飛ばす割合も答えを直接求めた人だけ増えた（＋0.11）**＝下がったのは答えを丸ごと受け取った人 | https://arxiv.org/abs/2604.04721 ／日本語の報道：ギズモード・ジャパン（https://www.gizmodo.jp/2026/05/spending-just-10-minutes-with-ai-can-fry-your-brain-researchers-find.html ・2026/5/16「たった10分AIを使うだけで、思考停止に陥る可能性」・11/18に実在を確かめた。答えを求めた人ほど低下が大きく、ヒントに使った人には著しい低下は見られなかった、と書いている） |
 | **MIT Media Lab**（Kosmyna ほか、arXiv 2506.08872「Your Brain on ChatGPT」・2025/6/10・v2 2025/12/31・査読前） | 54人を「LLM」「検索エンジン」「道具なし」の3組に分けてエッセイを書かせ、脳波を測った。道具なしの組が最も広く強いつながり、LLMの組が最も弱い。LLMの組は自分のエッセイを自分のものと感じる度合いが最も低く、自分の文を正確に引用できない人が多かった。4か月にわたり、LLMの組は脳・言語・行動のすべてで下回った | https://arxiv.org/abs/2506.08872 （英語）。日本語の解説：KDDI総合研究所（小林雅一・2025/7/7） |
 | **内視鏡医の研究**（Budzyń ほか、The Lancet Gastroenterology & Hepatology 2025/8/12・観察研究） | 4施設・経験のある内視鏡医19人。AIを入れた後、AIを使わない検査での腺腫の検出率が28.4%（226/795）→22.4%（145/648） | DOI 10.1016/S2468-1253(25)00133-5（英語）。主筆者は森悠一氏＝日本語の報道があるか7節 |
 | **自動化の皮肉**（Lisanne Bainbridge「Ironies of Automation」1983） | 自動化が進むほど、人はまれな障害のときに最も必要になるのに、練習の機会が最も少ない | 原典は英語。本文ではGIGAZINE（日本語）経由で紹介すれば足りる |
 
-- ⚠️ MIT・10分間の研究はどちらも査読前（arXiv）。本文で「査読前」と書くか、「実験では」と範囲をつけて書く。断定しない
+- ⚠️ MITは査読前（arXiv）。途中でAIを外す実験は査読の状態を確かめられていない（下の⚠️）。「実験では」と範囲をつけて書く。断定しない
 - ⚠️ 国内の意識調査（PR TIMES 38.0%・43.5%）は「感じている」の自己申告。使うなら自己申告と書く。今回は使わない方向
 - 10分間の研究の使い方別の数字は、arXivの本文（HTML版・実験2）で確かめた（11/18）。要旨には無い
+- ⚠️ 使い方別の分析は、論文本文（3.3節）が「cross-sectional in nature; therefore, the findings below are not necessarily causal」（横断的なので因果とは限らない）と書いている（11/18確認）＝「ヒントを使えば下がらない」と書かない
+- ⚠️ 掲載先：GPTのレビューは「COLM 2026に採録」と指摘したが、arXivの掲載情報・論文本文に掲載先の記述は無く、COLMの論文集（papers.cool・site:proceedings.colm.cc）でも見つからなかった。「COLM 2026で発表」はLive Scienceの記述だけ（本文は取得できず）。Engadgetは査読前と報じた＝本文では査読の状態を書かない（11/18）
 
 ## 6. 既存記事との重なり
 

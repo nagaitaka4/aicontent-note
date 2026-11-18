@@ -72,6 +72,7 @@ AIによる概要あり（MIT・カーネギーメロン大学などの研究、
 - ⚠️ 国内の意識調査（PR TIMES 38.0%・43.5%）は「感じている」の自己申告。使うなら自己申告と書く。今回は使わない方向
 - 10分間の研究の使い方別の数字は、arXivの本文（HTML版・実験2）で確かめた（11/18）。要旨には無い
 - ⚠️ 使い方別の分析は、論文本文（3.3節）が「cross-sectional in nature; therefore, the findings below are not necessarily causal」（横断的なので因果とは限らない）と書いている（11/18確認）＝「ヒントを使えば下がらない」と書かない
+- ✅ 掲載先（11/18 12:50に確認・上の⚠️を更新）：COLM 2026の予稿集に掲載されている（https://proceedings.colm.cc/paper_files/paper/2026/hash/c2166d01fe4bcd694aba89f608737678-Abstract-Conference.html 「Conference On Language Models 3 pre-proceedings (COLM 2026)」）。本文は読者に伝わらないので学会名を書かず「2026年」のまま
 - ⚠️ 掲載先：GPTのレビューは「COLM 2026に採録」と指摘したが、arXivの掲載情報・論文本文に掲載先の記述は無く、COLMの論文集（papers.cool・site:proceedings.colm.cc）でも見つからなかった。「COLM 2026で発表」はLive Scienceの記述だけ（本文は取得できず）。Engadgetは査読前と報じた＝本文では査読の状態を書かない（11/18）
 
 ## 6. 既存記事との重なり

@@ -1,7 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-19
+最終更新: 2026-11-20
 
+
+---
+
+## [2026-11-20] 調査結果（デイリー・金曜）
+
+- npm：🆕 2.1.328（2026-11-18 23:09 UTC）・2.1.329（2026-11-19 18:40 UTC）。CHANGELOG.mdは2.1.328まで掲載＝Bedrock等でのauto mode・`mcp_tool`フックの`"onFailure": "block"`・zshで`=`始まりの語が止まる不具合の修正・自動圧縮がシステムプロンプトを作り直すように・Code Modeの不具合修正多数・クレジット切れのエラー文言の修正 等＝使う側の使い方は変わらない＝記録のみ（2.1.329は未掲載）
+- @ClaudeDevs：11/17のLatest release channel・Code Mode・Linked billing（既録）以降の新規なし（実Chrome）
+- Claude Appsリリースノート：差分なし（最新はNovember 17のrelease channel・既録）
+- Newsroom：差分なし（最新はNov 9）
+- claude.com/blog：差分なし（最新はNov 17・既録）
 
 ---
 

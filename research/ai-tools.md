@@ -1,6 +1,15 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-19
+最終更新: 2026-11-20
+
+---
+
+## [2026-11-20] 調査結果（デイリー・金曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome）：
+  - 🆕 November 19「Health on Android, desktop, dots and sites」＝verbatim `Health is rolling out to more of the places you use ChatGPT, including the desktop app, dots, sites, and Android` / `This update is rolling out gradually` ＝健康記録の機能の対応先が増えた・コンテンツ運用の読者の使い方は変わらない＝記録のみ
+  - 11/18以前の見出しは既録のまま（後から足された項なし）
+- Gemini・国産AIライティングツール：本人の使い方に影響する差分は見当たらず
 
 ---
 

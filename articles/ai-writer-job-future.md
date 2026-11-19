@@ -6,7 +6,7 @@ title: AIでライターの仕事はなくなる？副業で契約ゼロだっ�
 date: 2026-11-19
 url: https://aicontent-note.com/ai-writer-job-future/
 slug: ai-writer-job-future
-status: draft
+status: published
 description: AIで厳しくなっているのは、情報をまとめて書くだけのライターの仕事です。何を書くか決める作業や事実の確認には、今も人の手が要ります。副業ライターを試して継続の契約がゼロだった私が、仕事が減った例の理由と、AIでブログを書く今も自分でしている作業をまとめました。
 eyecatch: eyecatch_0090.png
 eyecatch_alt: 濃紺の地に「AIでライターの仕事はなくなる？」の題を置き、原稿用紙を持つ女性と、タブレットを持つ男性を描いたイラスト

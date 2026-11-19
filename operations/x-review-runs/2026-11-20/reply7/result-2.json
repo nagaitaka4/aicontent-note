@@ -1,0 +1,1 @@
+{"core": "Claude Codeを入口1つにしてハーネスで振り分ける全体図の設計が綺麗で、自分の入口がバラバラなのを反省し、まず全体図を描いてみようと思った", "subject": "ktlog.netのClaude Codeおすすめ環境の全体図（入口1つ＋ハーネスで振り分ける設計）", "replies": {"A": {"on_core": true, "same_subject": true, "unknown": [], "lecture": false, "template": false, "glad": 4, "profile": true, "comment": "「入口バラバラ」に共感しつつ、全体図に自分の環境を当てはめて線が途切れる場所を具体的に示しているので、親投稿に自然につながる。"}}}

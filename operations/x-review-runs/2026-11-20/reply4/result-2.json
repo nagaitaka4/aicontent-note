@@ -1,0 +1,1 @@
+{"core": "Claude Codeを入口1つにして、他のAI・スキル・MCPに振り分ける前にJevで判定するハーネスの設計が綺麗で、自分も入口がバラバラなので全体図を描いてみる", "subject": "ktlog.netのClaude Codeおすすめ環境の全体図（入口を1つにするハーネス設計）", "replies": {"A": {"on_core": true, "same_subject": false, "unknown": [], "lecture": false, "template": false, "glad": 3, "profile": true, "comment": "具体的に書けているのは良いが、話が自分の環境だけで終わっていて、リンク先の全体図やJevの判定のどこを取り入れたいかに触れていない。"}}}

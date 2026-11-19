@@ -61,6 +61,8 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 **基準に満たないものはここに入れない**（research/配下への記録だけで止める）。
 
+> **📅 2026-11-20 06〜07時台（`x-morning-brief`・金曜）：追記0件。**Claude Code 2.1.328／2.1.329（npm）・ChatGPTのHealth（11/19）＝本人の使い方に影響しないので記録のみ。@ClaudeDevs・リリースノート・Newsroom・claude.com/blogは差分なし
+
 > **📅 2026-11-19 06〜07時台（`x-morning-brief`・木曜）：追記1件（`research-20261119-01`＝ChatGPTの音声入力が話しながら文字になる・10分の上限撤廃）→ 本人の画面で未確認・本人は今は手打ちのためキュー投入なし（no.86のリンク型〔11/21〜〕と組む案をX本部へ）。**GPT-6.2 Astra・Sol（11/17・WorkとCodexだけ・通常のチャットは変わらない）・Claude Code 2.1.327・claude.com/blogの2本（開発チームの考え方・Claude Docsの負荷試験）＝記録のみ
 
 > **📅 2026-11-11 06〜07時台（`x-morning-brief`・水曜）：追記1件（`research-20261111-01`＝Claude Sheets・Whiteboards〔ベータ・有料プラン全部〕）→ 本人はClaudeのチャット側を使っておらず画面でも未確認のためキュー投入なし。**同日の「アプリをClaudeの中で開いて作業させる」は`rolling out`（新しいClaudeに切り替わったアカウントから）で本人の画面に出ているか未確認＝research/への記録だけ。ChatGPTのBusiness Hubは米国の事業者向け＝記録のみ

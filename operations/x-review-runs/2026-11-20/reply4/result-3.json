@@ -1,0 +1,1 @@
+{"core": "Claude Codeを入口1つに絞り、振り分け前にJevで判定するハーネスを挟む全体図の設計が綺麗で、自分も入口がバラバラだと反省し全体図を描いてみたいという話", "subject": "ktlog.netのClaude Codeおすすめ環境の全体図（入口1つ＋Jev判定ハーネス）", "replies": {"A": {"on_core": true, "same_subject": false, "unknown": [], "lecture": false, "template": false, "glad": 3, "profile": false, "comment": "本題の『入口を絞る』には乗れているが、記事の全体図やJevの判定には触れておらず、話が自分の環境に寄っている。"}}}

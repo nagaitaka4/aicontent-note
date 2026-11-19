@@ -2160,3 +2160,52 @@ claude 学習 させない 4／claude 使い方 初心者 4／claude 使い方 �
 | ai 任せすぎ・ai バカになる | 0 | — |
 
 - 比較と結論は`operations/theme-candidates-2026-11-16-copy-growing.md`
+
+## 2026-11-20 外部の需要（Googleサジェストの件数・定期リサーチ 金曜のフル版③）
+
+TOP10 7本・待機列0本のため③を実行。比較は`operations/theme-candidates-2026-11-20-copy-growing.md`。
+
+**GSC（3か月・クエリ232件・合計1,683表示・2026-11-20取得）の束**
+
+| 束 | 件数 | 表示 | クリック |
+|---|---|---|---|
+| インデックス未登録 | 10 | 424 | 0 |
+| AI Overview・AI検索 | 12 | 377 | 0 |
+| help improve our ai models・学習 | 6 | 241 | 0 |
+| ディレクトリ・readme | 12 | 182 | 1 |
+| Claude（Code以外） | 53 | 132 | 5 |
+| SWELL・SEO SIMPLE PACK | 16 | 112 | 0 |
+| Claude Code | 28 | 109 | 4 |
+| ChatGPT | 31 | 106 | 6 |
+| ロゴ | 11 | 76 | 1 |
+| 代行 | 7 | 42 | 0 |
+| ライティングツール | 4 | 38 | 0 |
+| リライト | 3 | 32 | 0 |
+| アプリ・自作・バイブ／生産性・効率／画像 | 0 | 0 | 0 |
+
+ページ別の上位（3か月）：`claude-company-data-training`1,069表示41クリック・`claude-code-compatible-jobs`1,044/56・`chatgpt-work-claude-code-comparison`611/48・`claude-code-permission-modes`593/22・`search-console-crawled-not-indexed`457/0
+
+**サジェスト（2語まで・最大10件）**
+
+| 語 | 件数 | 主な続き |
+|---|---|---|
+| バイブコーディング | 10 | とは／始め方／コツ／claude code／デメリット／危険性 |
+| ノーコード ai | 9 | アプリ開発／エージェント／ツール／dify |
+| ai アプリ作成 | 4 | おすすめ／無料 |
+| ai ツール 自作・非エンジニア アプリ・バイブコーディング 注意 | 1 | — |
+| ai 業務ツール | 0 | — |
+| 指名検索 | 7 | 数／調べ方／とは |
+| サーチコンソール 指名 | 2 | 検索／検索数 |
+| 指名検索 調べ方 | 0 | — |
+| aiモード seo | 4 | 対策／影響 |
+| aiモード 対策 | 1 | google |
+| ai 学習 拒否 | 9 | 設定／google／x／note |
+| robots.txt ai | 9 | 拒否／学習 |
+| claude スケジュール | 9 | タスク／機能／済みタスク／実行／クラウド |
+| ai 定期実行 | 4 | 無料／notion |
+| ai 失業 | 9 | アメリカ／日本／職種 |
+| gas gemini | 9 | サイドパネル／連携／api |
+| chatgpt api クレジット | 5 | カード／購入 |
+| ai ファクトチェック | 4 | やり方／プロンプト |
+| 構成案 ai | 1 | lp |
+| 記事構成 ai・ai 事実確認 | 0 | — |

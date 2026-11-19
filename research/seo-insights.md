@@ -1,8 +1,26 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-11-16
+最終更新: 2026-11-20
 
 ---
+
+## [2026-11-20] 調査結果（フル版・金曜）
+
+**③の注目：GoogleがAI Modeの既定のモデルを「Gemini 4 Hydrogen」に切り替えた（11/12・全世界・全ユーザー）。これまでの記録で拾えていなかった。November 2026 core update は展開中のまま（end未記載）。**
+
+- **🆕 Gemini 4 Hydrogen が Google 検索に**（[Google公式ブログ](https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/)・`datePublished` `2026-11-12T18:00:00+00:00`）：verbatim `Today, Google Search is bringing cutting-edge intelligence to everyone with Gemini 4 Hydrogen.`／`This is the biggest model upgrade to Search yet.`／`Hydrogen is now available globally in Google Search for all users.`。クエリファンアウト（質問を小分けにして同時に検索する仕組み）が強化され、`connecting you to a broader range of helpful links than before`と説明
+  - **公式ブログに書いてないこと**：「既定（デフォルト）」の語とAI Overviewsへの適用は、同じ日のGoogle検索VP Robby Stein氏のXの投稿にだけある（[鈴木謙一氏の解説 11/19](https://www.suzukikenichi.com/blog/how-ai-mode-describes-your-brand-depends-on-search-results-a-gemini-4-hydrogen-test-shows/)による。**Stein氏の投稿そのものは未確認**）。日本語・日本への言及は公式ブログに無い（`all supported AI Mode languages`とだけ）
+  - 同記事が紹介するDEJAN社の検証（11/18・API単体で実施＝AI Modeの画面そのものではない）：AI Modeでブランドがどう語られるかは、モデルの記憶より検索がモデルに渡す結果で決まる＝**二次情報・記録のみ**
+  - **自サイトへの影響**：AI Modeからのリンク先が広がるとの説明だが、リンク数・サイト数は非公表。コアアップデート展開中と重なるため、**11/25目安までGSCの数字で影響を判定しない**（11/13の記録どおり）
+- **🆕 Search Central Blog 11/16「New filtering and reporting capabilities in the Search Analytics API」**（[公式](https://developers.google.com/search/blog/2026/11/search-analytics-api-update)）：verbatim `Today, we're bringing all three capabilities to the Search Analytics API`＝指名検索フィルタ（`brandedClassification`）・マルチモーダル（`webMultimodal`＝Lens・かこって検索）・複数の国／端末の絞り込み（`filterLists`）がAPIでも取れるように。**このメディアはGSCをAPIで取っていない（`operations/*.py`にAPI呼び出しなし）＝記録のみ**。11/16の月曜フル版は同日公開のこの記事を拾えていなかった
+- **🆕 Google-Agent の許可手順ドキュメント**（[Allow Google-Agent traffic](https://developers.google.com/crawling/docs/crawlers-fetchers/allow-google-agent)・`Last updated 2026-11-17 UTC`）：Googleのエージェント（ユーザーの依頼でサイト内検索・予約などを行う）をWAF・CDN・ボット対策で誤って止めないための手順。User-Agentの`Google-Agent`と公開IP範囲で見分け、署名（Web Bot Auth・実験中）も検証できる。**予約・購入の導線を持たないこのブログには実害なし＝記録のみ**
+- **Search Central のドキュメント更新**（[Latest updates](https://developers.google.com/search/updates)・本日curl）：November 18 `Removed the Data Feed validation tool from the book actions documentation`（予約アクション向け＝影響なし）。ほかは11/12までの既録
+- **Search Status Dashboard**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：`November 2026 core update`（begin `2026-11-10T18:06:00+00:00`・end なし）＝展開中のまま
+
+### 記事側への影響
+- **訂正が必要な記事：なし**（AI Modeの使用モデル名を書いた記事は`grep -rl "AI Mode\|AIモード" articles/`で次の改稿時に確認）
+- 既存記事の更新材料：AI検索・AI Overviewsに触れる記事を改稿するとき「AI Modeは2026-11-12からGemini 4 Hydrogenで動く（公式ブログ）」は一次情報で書ける
+
 
 ## [2026-11-16] 調査結果（フル版・月曜）
 

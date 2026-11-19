@@ -6,7 +6,7 @@ title: AI画像のAIっぽさをなくす方法。アイキャッチで効いた
 date: 2026-11-19
 url: https://aicontent-note.com/ai-image-remove-ai-look/
 slug: ai-image-remove-ai-look
-status: draft
+status: published
 description: AIで作った画像がAIっぽく見えるのは、デザインの方向が伝わっていないことが一因です。ブログのアイキャッチを全部AIで作っている私が、AIっぽく見える3つの特徴と、見本の画像を見せる・頼み方を型にする・崩れたら戻す、の3つの頼み方をまとめました。
 eyecatch: eyecatch_0089.png
 eyecatch_alt: 白に近いグレーの地に「AI画像のAIっぽさをなくす方法」の題を置き、見本の額縁を持つ女性と、チェックの付いた紙を持つ男性を描いたイラスト

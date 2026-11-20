@@ -1,6 +1,16 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-20
+最終更新: 2026-11-21
+
+---
+
+## [2026-11-21] 調査結果（デイリー・土曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome）：
+  - 🆕 November 20「ChatGPT Space is rolling out to Plus」＝verbatim `Starting today, ChatGPT Space is rolling out globally to Plus users ages 18 and older.` / `It replaces Library and is your new home for pages, slides, images, and uploaded files.` / `People on Free can’t open shared pages or presentations. Public links aren’t available.`＝これまでPro・Business・Enterpriseだけ（当ファイル361行目）→Plusにも。本人はPlus・画像の置き場が変わる＝ideasへ（`research-20261121-01`・本人の画面で未確認のためキュー投入なし）
+  - 🆕 November 19「New mobile experience for ChatGPT」＝Pro（18歳以上・dotsの提供地域）から・Plusは一部のみ＝記録のみ
+  - 11/18以前の見出しは既録のまま（後から足された項なし）
+- Gemini・国産AIライティングツール：本人の使い方に影響する差分は見当たらず
 
 ---
 

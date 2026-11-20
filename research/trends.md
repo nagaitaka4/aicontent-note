@@ -1,7 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-20
+最終更新: 2026-11-21
 
+
+---
+
+## [2026-11-21] 調査結果（デイリー・土曜）
+
+- npm：🆕 2.1.330（2026-11-20 19:16 UTC）。CHANGELOG.mdは2.1.329まで掲載＝フックの宣言場所を信頼ダイアログで示す・`/tasks`に定期タスクや`/loop`を表示・`~/.claude.json`が初期化される不具合の修正・`/code-review <PR番号>`が別のブランチを見ていた不具合の修正・Code Modeの暴走の上限 等＝使う側の使い方は変わらない＝記録のみ（2.1.330は未掲載）
+- Claude Appsリリースノート：🆕 November 20「Computer use (beta) for Team and Enterprise plans」＝verbatim `It's now available in beta on Team and Enterprise plans, and is rolling out to organizations gradually.`＝本人のプランは対象外＝記録のみ
+- @ClaudeDevs：11/17の3件（既録）以降の新規なし（実Chrome）
+- Newsroom：「Latest news」の見出しに November 20, 2026 の表示があるが、新しい記事のリンクは無し（一覧の最新はNov 9のFable 5.2・既録）
+- claude.com/blog：差分なし（最新はNov 17・既録）
 
 ---
 

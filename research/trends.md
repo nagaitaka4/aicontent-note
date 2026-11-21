@@ -1,7 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-21
+最終更新: 2026-11-22
 
+
+---
+
+## [2026-11-22] 調査結果（デイリー・日曜）
+
+- npm：2.1.330（2026-11-20 19:16 UTC）のまま。CHANGELOG.mdに2.1.330が掲載された＝🆕 verbatim `Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /config`（頼むとグラフを描く内蔵の機能・Maxの本人のmacOSも対象）／長い会話の圧縮直後に数分固まる不具合の修正／WebFetchが数分固まる不具合の修正／Claude in Chromeが一時的な接続切れのあと「未接続」のままになる不具合の修正 等 → グラフは「使う側の何が変わるか」がある＝ideasへ（`research-20261122-01`・本人の画面で未確認のためキュー投入なし）
+- Claude Appsリリースノート：🆕 November 20「A refreshed look for Claude Mobile」＝verbatim `A refreshed look for Claude Mobile is rolling out gradually, starting with Claude for iOS.` / `the new look needs iOS 26 or later`＝見た目だけ・本人はチャット側を使っていない＝記録のみ（同日のComputer use for Team/Enterpriseは既録）
+- Newsroom：🆕 Nov 18「Anthropic prices initial public offering」・Nov 20「closing of initial public offering」＝株式の話で使う側（料金・制限・機能）は変わらない＝記録のみ（株・投資はXで扱わない・239行目と同じ判断）。⚠️ 11/20・11/21の巡回は「新しい記事のリンクは無し」と書いていた＝見落とし
+- @ClaudeDevs：11/18（JST）の投稿（既録）以降の新規なし（実Chrome）
+- claude.com/blog：差分なし（最新はNov 17・既録）
 
 ---
 

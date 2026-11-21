@@ -1,0 +1,209 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったという発表",
+      "ChatGPTの無料プランでもチャットが無制限になったという変更",
+      "ChatGPTの無料プランが無制限になったという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "前半は発表の紹介で、迷った話が後半に少しだけ。結局Plusを続けたのか解約したのかがはっきりせず、オチが弱い。",
+      "有料プランを続けるか迷った話は自分ごとで刺さるが、「画像生成・速度・モデル・・・」が並べただけで、何が決め手だったかが薄い。続けた理由を具体的に1つ書いてくれると参考になる。",
+      "前半は発表の要約で、迷った話が後半に少しあるだけ。何に使っていてPlusのどこが決め手だったかがあれば読みたくなる。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 2.33,
+    "comments": [
+      "「書いたばかりでした＞＜」で人柄が少し見えて良い。ただ中盤の移行の説明は専門的で、マイGPTを使っていない自分には読み飛ばしたくなった。",
+      "前半は公式発表の要約で、ニュース紹介に見える。「書いたばかりでした＞＜」は人柄が出ていて良いが、自分はこれからどうするかがあると読み応えが出る。",
+      "「書いたばかりでした＞＜」で人柄は少し見えるが、大半は終了の告知の要約。自分の業務にどう影響するかが無いので流してしまう。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "f2",
+    "text": "ブログをClaudeで回してるのですが、迷うと「どちらにしますか？」と聞いてくるのが地味に困りもの。\n\nそこで、おすすめを1つ理由つきで先に出してもらい、私はそれにOKか直すかを返すように。\n\n選ばされる感じがなくなって、判断がかなり軽く感じます。",
+    "quote": "",
+    "hash": "2d864074ad5c15e1",
+    "label": "C",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.67,
+      "follow": 3.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIが迷うと「どちらにしますか？」と聞き返してくること",
+      "AIが迷うと「どちらにしますか？」と聞き返してくる",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "ChatGPTでも聞き返されるのは分かるので共感できる。具体的にどう頼んだのか一言あれば真似できて保存したくなる。",
+      "「地味に困りもの」がまさに自分も感じていたことで、すぐ真似できる工夫まであるので止まった。実際にAIへどう頼んだかの一文があればさらに保存したくなる。",
+      "ブログをAIで回している実例で、聞き方を変えた工夫がすぐ真似できそうで刺さった。実際の頼み方の一文があればもっと良い。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "f1",
+    "text": "ブログをClaudeで回してるのですが、私の印象では、調べものは強い一方、迷うと「どちらにしますか？」と聞いてくるのが弱めでした。\n\nなので迷うところは、おすすめを1つ理由つきで出してもらい、私はそれにOKか直すかを返すように。\n\n選ばされる感じがなくなって、判断がかなり軽く感じます。",
+    "quote": "",
+    "hash": "dbdfe06537dfa956",
+    "label": "D",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIが迷うと「どちらにしますか？」と聞き返してくること",
+      "AIが迷うと「どちらにしますか？」と聞き返してくる",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "1文目が長く、「調べものは強い一方」が挟まって何の話か分かりにくい。「弱めでした」もAIの性能評価っぽくて、Cの方がすっと入る。",
+      "1行目が長く、「調べものは強い一方〜弱め」という評価の話に見えて、困りごとが伝わるのが遅い。「聞いてくるのが弱め」も言い回しが分かりにくく、Cの方がすっと入る。",
+      "1文目が長く「調べものは強い一方」で何の話か一瞬ぼやける。Cと同じ中身ならCの方がすっと入る。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E",
+    "avg": {
+      "stop": 1.67,
+      "fun": 2.33,
+      "follow": 1.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+      "Claude MaxのデフォルトがOpus 5になったという変更"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "1行目から知らない名前ばかりで、自分向けではないとすぐスクロールした。使い分けている人向けの話。",
+      "モデル名が並ぶだけで、有料プランを迷っている自分には違いが分からず置いていかれた。どんな作業で差を感じなかったのかが具体的にあれば読める。",
+      "モデル名が並んで、ブログを回す立場からは何が違うのか分からない。どんな作業で試して差が無かったかが書いてあれば判断材料になる。"
+    ]
+  }
+]

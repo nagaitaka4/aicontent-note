@@ -1,0 +1,251 @@
+[
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "A",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPT終了の発表",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "マイGPTを使っている身としては1行目で止まった。終了の要約が中心で、最後の「書いたばかり＞＜」の人柄がもう少し前に来ると読みたくなる。",
+      "1行目のニュースで止まるが、中盤は公式発表の要約。最後の「書いたばかりでした＞＜」は人柄が見えて良いので、自分の使い方で困ることがもう少しあれば。",
+      "前半は終了のお知らせの要約で、自分にはまだ関係が薄い。8/21に書いたばかりという一言で人柄は見えるが、何を書いたのか分からないので乗り切れない。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c2",
+    "text": "Claudeでブログを書いてるのですが、調べものや構成はめちゃくちゃ強い一方、言い回しだけはまだ硬めな印象。\n\nなので、言い回しは頼み直さず、WordPressの下書きで私が直接直しています。そのほうが正直早いです。\n\n好みも入るところなので、手で直すほうが私好みにしていきやすいんですよね。",
+    "quote": "",
+    "hash": "0e765ba5879560ed",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIで書いた文章は言い回しが硬い",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.67,
+    "comments": [
+      "共感はできるが、結論が「自分で直す」で意外性は薄い。どんな言い回しをどう直したか1例あると面白い。",
+      "等身大で共感できるが、結論が「手で直す」で意外性は弱め。どんな言い回しを直したか例が1つあると一気に面白くなる。",
+      "社内でAIに書かせるか迷っている身には、言い回しは人が直すという分担がそのまま参考になる。どのくらい直しているのか、手間の量が少しあれば判断材料になった。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "c3",
+    "text": "Claudeでブログを回してるのですが、調べものや書くのはめちゃくちゃ強い一方、迷うと選択肢を並べて聞いてくるのだけ弱めな印象。\n\nそこで、迷うところは「おすすめ1つと理由」で出してもらい、私は選ぶだけにしました。\n\n題や構成は好みも入るので、選ぶ形にすると私好みにしていきやすいです。",
+    "quote": "",
+    "hash": "aa4f6f89dab68faa",
+    "label": "C",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.33,
+      "follow": 4.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIは迷うと選択肢を並べて聞いてくる",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.33,
+    "comments": [
+      "「おすすめ1つと理由で出してもらう」はChatGPTでもすぐ真似できそうで役に立つ。頼み方の実際の文があればもっと良い。",
+      "「おすすめ1つと理由で出してもらう」はすぐ真似できる工夫で役に立つ。1行目がB・Fと同じ入りで止まりにくいので、最初に工夫の結果を出すと良い。",
+      "「おすすめ1つと理由」で出させるという工夫は真似できそうで良い。選択肢を並べられて困った具体例が1つあると、もっと実感がわいた。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトモデルがOpus 5に変わった",
+      "Claude MaxのデフォルトがOpus 5になった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.67,
+    "comments": [
+      "固有名詞ばかりでClaudeを知らない自分には何の話か分からず1行目で離れた。違いが分からなかった具体的な場面があれば読める。",
+      "Fableが何か分からず置いていかれた。正直な感想は良いが、有料プランを迷っている身としては具体的にどんな作業で試したかが欲しい。",
+      "モデル名が並んでいて、使っていない自分には違いが分からず置いていかれた。ブログでどう使って差が出なかったのかが書いてあれば読めた。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.33,
+      "follow": 3.33
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランのチャットが無制限になった",
+      "ChatGPTの無料プランでもチャットが無制限になった",
+      "ChatGPTの無料プランのチャットが無制限になったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.67,
+    "comments": [
+      "無料で無制限は気になる情報で止まった。Plusを続けた迷いは共感できるが、決め手の話がもう少し具体的だと良い。",
+      "有料を続けるか迷った過程と決め手が書いてあり、まさに自分が知りたい話。「・・・」の部分で何を比べたかもう少し具体的だと説得力が増す。",
+      "有料を続けるか迷った話は共感できるが、画像生成・速度・モデルの並びが箇条で流れて判断の中身が薄い。何に使っているから残したのかがあると良い。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c1",
+    "text": "Claudeでブログを書いてるのですが、調べものや構成はめちゃくちゃ強い一方、言い回しだけ硬めな印象。\n\nそこで、私が直した方が早そうなところは、WordPressの下書きで直接直すようにしています。\n\n言い回しは好みも入るので、手で直すほうが私好みにしていきやすいです。",
+    "quote": "",
+    "hash": "e82d3a7acf8ead76",
+    "label": "F",
+    "avg": {
+      "stop": 3.33,
+      "fun": 2.67,
+      "follow": 3.33
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIで書いた文章は言い回しが硬い",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 4.33,
+    "comments": [
+      "Bとほぼ同じ内容で、自分で直すという結論に驚きはない。直した前後の例が1つあると読む価値が出る。",
+      "Bとほぼ同じ内容で、具体例がないので流してしまう。直した前後の一例があれば止まる。",
+      "Bとほぼ同じ内容で、こちらの方がすっきり読める。直す量や時間の目安が一言あれば、外注と比べる材料になる。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

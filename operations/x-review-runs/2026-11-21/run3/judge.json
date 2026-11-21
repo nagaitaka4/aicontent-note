@@ -1,0 +1,209 @@
+[
+  {
+    "kind": "candidate",
+    "id": "NO86-u1",
+    "text": "AIへの指示、音声入力をやめて全部手打ちに戻したのに、\n今また音声入力を試しています。\n\n長く話すと誤字脱字が多く、結局打ち直していたのも理由でした。\nでも今は、音声のほうがいい気もしてきました。\n\n「UI」と入れたいのに、「友愛」になるような打ち直しは、まだまだあります。\nhttps://aicontent-note.com/ai-voice-input-instructions/",
+    "quote": "",
+    "hash": "4808507932c3ce10",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "以前、音声入力をやめて手打ちに戻したという本人の経緯",
+      "以前、音声入力をやめて手打ちに戻したという本人の過去の判断",
+      "以前、音声入力をやめて手打ちに戻していた"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "「UI」が「友愛」になる例はクスッとくる。ただ、なぜ今また音声のほうがいいと思い始めたのかが書かれておらず、そこで読む気が少し落ちた。",
+      "「友愛」の例はクスッとくるが、結局どっちがいいのかがぼやけていて読み終わりが弱い。今また試している理由（何が変わったか）が1行あると引き込まれる。",
+      "「UI→友愛」は笑えて人柄が出ている。ただ「やめたのにまた試している」理由が「気がしてきました」だけでぼんやりしていて、何が変わったのか一言あると記事を開きたくなる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったという話",
+      "ChatGPTの無料プランが無制限になったという変更",
+      "ChatGPTの無料プランが無制限になったという変更"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "「無料でも無制限」は目を引く。ただ後半はPlusを続ける判断の話だけで、決め手の「安定して使いたい」が当たり前すぎて印象に残らなかった。",
+      "有料プランで迷っている自分には刺さる話題で、1行目で止まった。「画像生成・速度・モデル・・・」が尻すぼみで、何が決め手だったのかもう少し具体的だと参考になる。",
+      "「・・・。」のあたりで迷った中身が並ぶだけになり、読む気が落ちた。結局Plusを続けたのかどうかがはっきり書かれていないので、どっちにしたかを一言で言い切ってほしい。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "NO86-u2",
+    "text": "AIへの指示、音声入力をやめて手打ちに戻したのに、\n今また音声入力を試しています。\n\n長く話すと誤字脱字が多く、打ち直していたのも理由でした。\nでも今は、音声のほうがいい気もしてきました。\n\n「UI」と入れたいのに、「友愛」になる打ち直しは、まだまだあります。\nhttps://aicontent-note.com/ai-voice-input-instructions/",
+    "quote": "",
+    "hash": "80fbd4fe07ea0344",
+    "label": "C",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "以前、音声入力をやめて手打ちに戻したという本人の経緯",
+      "以前、音声入力をやめて手打ちに戻したという本人の過去の判断",
+      "以前、音声入力をやめて手打ちに戻していた"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 2.33,
+    "comments": [
+      "Aとほぼ同じ内容で、少しすっきりして読みやすい。今また試している理由やきっかけが一言あれば、続きが気になる投稿になると思う。",
+      "Aとほぼ同じでやや読みやすいが、印象は同じ。音声入力に戻った決め手が見えるともっと読みたくなる。",
+      "Aとほぼ同じで、少しすっきりして読みやすい。こちらも、なぜ今また音声がいいと思ったのかの具体的な理由が1つあれば止まる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D",
+    "avg": {
+      "stop": 1.67,
+      "fun": 2.0,
+      "follow": 1.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトのモデルがOpus 5に変わったという話",
+      "Claude Maxの既定モデルがOpus 5になったという発表",
+      "Claude Maxの標準モデルがOpus 5に変わった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "1行目から知らない名前ばかりで、自分には関係ない話だと思ってスクロールした。それぞれ何なのかの説明が少しでもあれば、まだ読めたかもしれない。",
+      "固有名詞が4つ並び、使っていない自分には何の話か分からず1行目で離脱。どんな作業で差が出なかったのか具体例があれば読める。",
+      "モデル名が4つ続いて、Web担当の自分には何の話か分からず1行目で離れた。どんな作業で差が無かったのかが書いてあれば、自分の仕事に引き寄せて読める。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "以前この人が「無料でもマイGPTは使える」と書いていたこと",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表と、書き手が以前「無料でも使える」と書いたこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.33,
+    "comments": [
+      "ChatGPTの機能が終わるのは、使っている身としては止まる。ほぼ発表の要約だが、「書いたばかりでした＞＜」に人柄が出ていて少し親しみがわいた。",
+      "中盤は公式発表の要約で、用語が分からず読む気が落ちた。「書いたばかりでした＞＜」の人間味は良いので、自分ならどうするかが一言あるとフォローしたくなる。",
+      "「終了」は止まるが、2〜3行目は発表の要約で読み流した。「書いたばかり＞＜」の失敗談は親しみが持てるので、ここを前に出して、自分は何を作っていて困るのかがあると良い。"
+    ]
+  }
+]

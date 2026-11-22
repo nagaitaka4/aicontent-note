@@ -1,6 +1,19 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-11-20
+最終更新: 2026-11-23
+
+---
+
+## [2026-11-23] 調査結果（フル版・月曜／勤労感謝の日）
+
+**③は新規なし。November 2026 core update は展開中のまま（11/10開始・end未記載＝14日目）。**
+
+- **Search Status Dashboard**（[incidents.json](https://status.search.google.com/incidents.json)・本日curl）：`November 2026 core update`（begin `2026-11-10T18:06:00+00:00`・end なし）＝展開中のまま。**11/25目安までGSCの数字で影響を判定しない**（11/13・11/20の記録どおり）
+- **Search Central Blog**（本日curl）：11月の記事は`crawling-cdn`・`search-analytics-api-update`・`search-central-live-zurich-2026`の3本＝すべて既録
+- **Search Central のドキュメント更新**（[Latest updates](https://developers.google.com/search/updates)）：`Last updated 2026-11-18 UTC`＝11/20記録以降の更新なし
+
+### 記事側への影響
+- 訂正が必要な記事：なし
 
 ---
 

@@ -1,7 +1,18 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-22
+最終更新: 2026-11-23
 
+
+---
+
+## [2026-11-23] 調査結果（デイリー・月曜／勤労感謝の日）
+
+**①は差分なし。**
+- npm：2.1.330（2026-11-20 19:16 UTC）のまま。CHANGELOG.mdの先頭も`## 2.1.330`のまま（11/22記録済み）
+- Claude Appsリリースノート：最新はNovember 20（Claude Mobileの見た目・Team/EnterpriseのComputer use）のまま＝既録
+- Newsroom：最新はNov 20（IPOの完了）のまま＝既録／claude.com/blog：最新は11/17（Linked billing・chaos loop）のまま＝既録
+- @ClaudeDevs：11/17〜18の投稿（既録）以降の新規なし（実Chrome）
+- 巡回チェック：CHANGELOG ✅／npm ✅／Claude Apps ✅（実Chrome）／Newsroom ✅（curl）／claude.com/blog ✅（実Chrome）／@ClaudeDevs ✅（実Chromeで読むだけ）
 
 ---
 

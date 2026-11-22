@@ -1,0 +1,210 @@
+[
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "A",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPT終了の発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.33,
+    "comments": [
+      "前半は発表の要約で、ニュース記事っぽい。「書いたばかりでした＞＜」の失敗談はいいので、そこを先に出すと人柄が見えて止まりやすい。",
+      "前半は発表の要約で読む気が少し落ちたが、「書いたばかりでした＞＜」で人が見えた。自分は移行すべきか・どうするつもりかが一言あると良い。",
+      "1行目で止まったが、中盤は発表の要約で読み流した。「書いたばかりでした＞＜」の失敗は人柄が見えて良いので、外注か内製かで迷う人にとって何が困るかが一言あればもっと良い。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランのチャットが無制限になったこと",
+      "ChatGPTの無料プランのチャットが無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になった話"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "Plusを続けるか迷った話は共感できるが、結局続けたのかやめたのか一瞬分かりにくい。「Plusは続けることにしました」とはっきり書くと締まる。",
+      "有料プランを迷っている自分にはまさに刺さる話。「画像生成・速度・モデル・・・」の迷いがもう少し具体的だと参考になる。",
+      "Plusを続けた迷いは共感できるが、「画像生成・速度・モデル・・・」で何を比べたのかがぼやけた。決め手が具体的だと残る。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "C",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+      "Claude Maxのデフォルトモデルが変わった",
+      "Claude MaxのデフォルトがOpus 5になったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "固有名詞だらけでClaudeを知らないと何の話か分からず、1行目で流してしまう。何が違うと期待していたのかを一言あると入りやすい。",
+      "MaxやFableが何か分からず、モデル名が続いて置いていかれた。どんな作業で試したかが一つあれば判断材料になる。",
+      "モデル名が並んでいて、自分には関係が薄く感じて読む気が落ちた。どんな作業で差が無かったのかが書いてあれば判断材料になる。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "p6",
+    "text": "私とClaude Codeの作業の記録を1か月分、時間帯ごとに数えてもらいました（自動で動いた分は抜いて）。\n\n11時台が山で、夜中の0時〜5時は0。夕方4時台と夜7時台はほぼ空っぽ。\n\n作業の記録なのに、私の1日の過ごし方が見える気がして笑いました。",
+    "quote": "",
+    "hash": "6dabad7bf4b81866",
+    "label": "D",
+    "avg": {
+      "stop": 3.0,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.0,
+    "comments": [
+      "1行目が長めで説明っぽく、止まるかは微妙。最後の「1日の過ごし方が見える」は面白いので、そこから入ると止まりやすい。",
+      "AIとの作業記録で自分の生活が見えるという発想が面白い。夕方と夜7時に何をしているのか一言あると、もっと人柄が見える。",
+      "AIと実際に仕事を回している様子が見えて、この人の運用をもっと見たくなった。1行目が少し長いので、11時台が山という結果を先に出すと止まりやすい。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "p7",
+    "text": "私とClaude Codeの作業の記録を1か月分、時間帯ごとに数えてもらいました（自動で動いた分は抜いて）。\n\nいちばん多いのは11時台。夜中の0時〜5時は0。夕方4時台と夜7時台はほぼ空っぽ。\n\nただの数字なのに、私の1日が透けて見えて笑いました。",
+    "quote": "",
+    "hash": "bed68b2fe1e6677f",
+    "label": "E",
+    "avg": {
+      "stop": 3.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "Dとほぼ同じだが「透けて見えて」の方が言い回しとして軽くて読みやすい。夕方が空っぽな理由（何をしてるか）が一言あるともっと人柄が見える。",
+      "Dとほぼ同じだが「透けて見えて」の方が少し印象に残る。空っぽの時間帯の理由があればもっと笑える。",
+      "「ただの数字なのに1日が透けて見えて」の締めがDより言葉として立っていて少し好き。1行目は同じく長めで、流し見だと結果まで届かない可能性がある。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

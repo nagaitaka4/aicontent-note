@@ -1,7 +1,18 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-23
+最終更新: 2026-11-24
 
+
+---
+
+## [2026-11-24] 調査結果（デイリー・火曜）
+
+- npm：🆕 2.1.331（2026-11-23 18:36 UTC）。CHANGELOG.mdの先頭も`## 2.1.331`＝Code ModeのBedrock等対応・`claude doctor`にAPI疎通の欄・タップ式の音声入力が15秒無音か2分の上限で止まったときに通知（verbatim `Added a notice when tap-mode voice dictation stops by itself, after 15 seconds without recognized speech or at its 2-minute limit`）・押して話す音声入力が途中で止まり言葉が抜ける不具合の修正・/compactで要約の一部が抜ける不具合の修正 等＝使う側の使い方は変わらない＝記録のみ
+- @ClaudeDevs：🆕 11/24 06:30 JST「We've redesigned the side panel in Claude Code on desktop.」verbatim `Files, Changes, Terminal and your other tools now open as tabs beside your session. You can still move a tab to see several at once, or pop it out into its own window.` / `Rolling out on Mac. Windows and Linux coming soon!`（[投稿](https://x.com/ClaudeDevs/status/2124978802006851961)）＝本人はMacのデスクトップアプリ＝ideasへ（`research-20261124-02`・rolling outで本人の画面で未確認のためキュー投入なし）
+- @ClaudeDevs：🆕 11/24 05:13 JST「Introducing Claude Ship (beta)」verbatim `Claude can review your pull requests, work on fixes, and approve the ones your team's policy allows.` / `update Claude Code and run /ship. It's rolling out in the CLI and desktop app now.`＝プルリクエストの運用で本人は使っていない＝記録のみ
+- claude.com/blog：🆕 11/23「Zero data retention with Enterprise Frontier Safeguards is now in beta」（Claude Platform・Enterprise）・「The enterprise guide to securing coding agents」・KPMGの事例＝企業向け＝記録のみ
+- Claude Appsリリースノート：最新はNovember 20のまま＝既録／Newsroom：今回は未巡回（claude.com/blog・@ClaudeDevsで当日分を拾った）
+- 巡回チェック：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（実Chrome）／claude.com/blog ✅（実Chrome）／@ClaudeDevs ✅（実Chromeで読むだけ）／Newsroom ✗（未巡回）
 
 ---
 

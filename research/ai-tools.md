@@ -1,6 +1,13 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-23
+最終更新: 2026-11-24
+
+---
+
+## [2026-11-24] 調査結果（デイリー・火曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome）：🆕 November 23「GPT-6.2, now in the chat tab」verbatim `We're rolling out a version of GPT-6.2, optimized for the chat tab, for Plus, Pro, Business and Enterprise tiers.` / `On especially challenging prompts, GPT-6.2 followed instructions 78.1% of the time, up from 62.5% for GPT-6.` / `GPT‑6.2 starts rolling out globally to ChatGPT Plus, Pro, Business and Enterprise tiers today in the Chat tab.`＝本人はChatGPT Plusで記事の見直しに使っている＝ideasへ（`research-20261124-01`・rolling outで本人の画面で未確認のためキュー投入なし）
+- Gemini・国産AIライティングツール：本人の使い方に影響する差分は見当たらず
 
 ---
 

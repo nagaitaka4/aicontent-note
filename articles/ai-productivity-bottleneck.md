@@ -3,10 +3,10 @@ no: 91
 series:
 series_no:
 title: AIで生産性が上がらないのはなぜ？考えられる3つの理由と確かめ方
-date: 2026-11-19
+date: 2026-11-24
 url: https://aicontent-note.com/ai-productivity-bottleneck/
 slug: ai-productivity-bottleneck
-status: draft
+status: published
 description: AIを使っても、片づく仕事の数が思ったほど増えないことがあります。調査や解説から考えられる理由は、AIが作った後の作業が追いつかない・直す手間が増える・仕事の流れが変わっていないの3つ。どれに当たるかを作業の記録で確かめる方法と、理由ごとの直し方をまとめました。
 eyecatch: eyecatch_0091.png
 eyecatch_alt: 青緑の地に「AIで生産性が上がらないのはなぜ？考えられる3つの理由と確かめ方」の題を置き、ノートパソコンから届く紙に印を付ける女性を描いたイラスト
@@ -42,7 +42,7 @@ AIはチームの良い所も弱い所もそのまま大きくし、作業が速
 
 ### 2. AIが出したものを直す手間が増える
 
-人事ソフトの会社[Workdayの調査](https://www.workday.com/ja-jp/perspectives/hr/ai-speed-fix-rework.html)では、AIで減らした時間の約37%が、AIが出したものの手直しに使われていました。
+人事ソフトの会社、[Workdayの調査](https://www.workday.com/ja-jp/perspectives/hr/ai-speed-fix-rework.html)では、AIで減らした時間の約37%が、AIが出したものの手直しに使われていました。
 AIの下書きが早くできても、そのまま使えなければ、減らした時間の一部は直す作業で消えます。
 
 ### 3. 仕事の流れが変わっていない

@@ -78,6 +78,8 @@ AIで回してきたこのブログでは、==1か月半ほどで記事ごとの
 
 AIに任せると考える力が落ちるのかは、[AIを使うと思考力は落ちる？落ちる使い方と、私が手放さない判断](https://aicontent-note.com/ai-thinking-ability-decline/)にまとめました。
 
+公開の数が増えないときの確かめ方は、[AIで生産性が上がらないのはなぜ？考えられる3つの理由と確かめ方](https://aicontent-note.com/ai-productivity-bottleneck/)で整理しています。
+
 ---
 
 ## 崩れを止める4つの手当て

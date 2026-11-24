@@ -1,0 +1,214 @@
+[
+  {
+    "kind": "candidate",
+    "id": "u1",
+    "text": "ChatGPTやClaude Codeの返事が長くて、全部読むだけで疲れます。\n\n正直、途中はほとんど読んでいません。最後の数行や確認したいところしか読まないことも多くて、それでだいたい足りてます。\n\nただ、その分見落としもかなり多いと思ってます。",
+    "quote": "",
+    "hash": "45e55b182415f19e",
+    "label": "A",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 2.0,
+    "comments": [
+      "「返事が長くて疲れる」はすごく分かるので止まりました。見落としで実際に困った話が一つあれば、もっと読みたくなります。",
+      "1行目は「わかる」と止まるが、最後が「見落としが多い」で終わっていて、どうしているのかが無いので物足りない。見落として困った具体例か、自分なりの対処が1つあればフォローしたくなる。",
+      "共感はするが、見落としが多いと言って終わるので、実際に何を見落として困ったかの一例か、どう対処しているかがあれば読み続けたくなる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "u2",
+    "text": "ChatGPTもClaude Codeも、返事が長くて、全部読むだけで疲れます。\n\n正直、途中はほとんど読んでいません。最後の数行や確認したいところしか読まないことも多くて、それでだいたい足りてます。\n\nただ、その分見落としもかなり多いと思ってます。",
+    "quote": "",
+    "hash": "79278a2543c2f2b5",
+    "label": "B",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 1.67,
+    "comments": [
+      "Aとほぼ同じで共感はできます。最後が「見落としが多い」で終わるので、どう対処しているかが一言あると良いです。",
+      "Aとほぼ同じで、「どちらも」と言い切っている分だけ1行目の共感は少し強い。ただ締めが投げっぱなしなので、見落とした失敗談か工夫が一言欲しい。",
+      "Aとほぼ同じで、「ChatGPTもClaude Codeも」の方が両方使っている感じが少し伝わる。見落とした具体例が一つあれば一気に良くなる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いたばかり（前の投稿を知らないと分からない）",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 2,
+    "premise_topics": [
+      "8/21に書いた「無料でもマイGPTは使える」という過去の投稿",
+      "8/21に投稿者が「無料でもマイGPTは使える」と書いたこと",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "前半はお知らせの要約で流し読みしました。「書いたばかりでした＞＜」の部分は人柄が出ていて好きです。",
+      "前半は公式発表の要約で、マイGPTを使っていない自分には「スキル」「カスタムアクション」が分からず流しそうになった。「＞＜」の部分は人柄が出ていて良いので、自分の作ったマイGPTをどうするかを書いてくれると読む理由ができる。",
+      "前半は公式発表の要約で、マイGPTやカスタムアクションが何か分からず流し見で落ちた。「書いたばかり」の失敗談は人柄が出ているので、そこを頭に出すと止まりやすい。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D",
+    "avg": {
+      "stop": 3.33,
+      "fun": 2.33,
+      "follow": 2.67
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      "ChatGPTの無料プランのチャットが無制限になったという変更"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.0,
+    "comments": [
+      "結局Plusを続けたのかどうかが分かりにくく、途中で読む気が落ちました。結論を先に書いてほしいです。",
+      "有料プランに入るか迷っている自分には「無料でも無制限」とPlusを続けた理由がそのまま刺さる。「画像生成・速度・モデル・・・」の迷いをもう少し具体的に書いてくれると、判断の参考になってさらに良い。",
+      "結局Plusを続けたのかやめたのかが一読で分かりにくく、改行も細切れで読みづらい。決めた結論を先に書いてくれると判断の参考になる。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "知らない名前ばかりで、自分には関係ない話だと感じて飛ばしました。詳しい人向けです。",
+      "1行目がプラン名とモデル名だけで、自分には関係ない話に見えてスクロールしかけた。どんな作業で違いが分からなかったのか一例あれば、自分の使い方と比べられる。",
+      "モデル名が並んでいて、AIを仕事に使いたいだけの立場からは自分に関係ある話に見えなかった。どんな作業で差が出なかったかが書いてあれば判断材料になる。"
+    ]
+  }
+]

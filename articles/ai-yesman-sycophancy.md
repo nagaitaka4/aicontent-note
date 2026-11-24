@@ -6,7 +6,7 @@ title: AIが肯定ばかりするのはなぜ？イエスマンにしない頼�
 date: 2026-11-24
 url: https://aicontent-note.com/ai-yesman-sycophancy/
 slug: ai-yesman-sycophancy
-status: draft
+status: published
 description: AIに相談やレビューを頼むと、賛成ばかりされることがあります。研究者は、使う人の満足を重視する作りを原因の1つに挙げています。観点を出させる・結論を先に言わない・基準を先に渡す・別のAIに見てもらうの4つの頼み方と使える型、大事な判断を自分で決める理由をまとめました。
 eyecatch: eyecatch_0092.png
 eyecatch_alt: 淡いピーチの地に「AIが肯定ばかりするのはなぜ？イエスマンにしない頼み方」の題を置き、ノートパソコンの奥の女性と賛成の吹き出し、チェックリストを描いたイラスト

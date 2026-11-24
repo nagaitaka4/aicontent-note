@@ -1,7 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-24
+最終更新: 2026-11-25
 
+
+---
+
+## [2026-11-25] 調査結果（デイリー・水曜）
+
+- npm：2.1.331（2026-11-23 18:36 UTC）のまま。CHANGELOG.mdの先頭も`## 2.1.331`のまま（11/24記録済み）
+- Claude Appsリリースノート：🆕 November 24「Install artifacts as apps (beta)」verbatim `You can now install an artifact that Claude makes for you as an app on your Mac or Windows computer. It gets its own window and icon, opens like any other app` ＋ @ClaudeDevs 11/25 04:47 JST verbatim `It's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).` / `Building the app and any calls it makes to Claude count toward your usage limits.`（[投稿](https://x.com/ClaudeDevs/status/2125315491522650299)）＝本人はMacのClaude Desktop＝ideasへ（`research-20261125-01`・本人の画面で未確認のためキュー投入なし）
+- Claude Appsリリースノート：🆕 November 24「Monthly recap is out of beta」verbatim `The monthly recap (Reflect, in Settings) is now out of beta for Free, Pro, Max, and Ultra plans on the web, Claude Desktop, and Claude for iOS and Android. Recaps can now draw on your Claude Code sessions and Claude Cowork tasks in the cloud`＝ideasへ（`research-20261125-02`・Claude Codeのセッションが材料になる条件〔クラウドのみか〕は未確認）
+- @ClaudeDevs／claude.com/blog：🆕 11/24「MCP servers can now ship skills, run tasks, and more with Claude」verbatim `With Skills over MCP (beta), servers can publish skills alongside their tools.`＝MCPサーバーを作る側の話＝記録のみ
+- 巡回チェック：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（実Chrome）／claude.com/blog ✅（実Chrome）／@ClaudeDevs ✅（実Chromeで読むだけ）／Newsroom ✗（未巡回）
 
 ---
 

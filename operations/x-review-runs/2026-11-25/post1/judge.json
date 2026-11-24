@@ -1,0 +1,276 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Maxのデフォルトモデルが変わった",
+      "Claude MaxのデフォルトがOpus 5に変わった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.33,
+    "comments": [
+      "モデル名が並んでいて、Claudeを知らない私には何の話かほとんど分かりません。違いを感じなかった具体的な作業例が1つあれば読めそうです。",
+      "有料プランを迷っている身としては『違いを実感できない』は参考になる。Fableが何か分からず置いていかれたので、どんな作業で比べたかが一つあると良かった。",
+      "モデル名が並ぶだけで、Web担当の自分には関係ない話に見えた。どんな作業で差が出なかったのかが一言あれば読める。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "B",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了する",
+      "ChatGPTのマイGPTが終了する",
+      "ChatGPTのマイGPT機能が終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 2.67,
+    "comments": [
+      "ChatGPTを使っているので1行目で止まります。ただ真ん中は公式の要約で、「書いたばかりでした＞＜」の部分は人柄が見えて好印象。代わりにどうするかが分かると助かります。",
+      "前半は公式発表の要約で、ニュース感が強い。『書いたばかりでした＞＜』の失敗の一言で人柄が見えて持ち直したので、そこをもっと前に出すと良い。",
+      "前半は公式発表の要約で流し読みになった。「書いたばかりでした＞＜」の失敗は人柄が見えて良いが、8/21に何を書いたのかが分からないので前提が弱い。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "EIGO-02",
+    "text": "Claude Codeが急に英語で話しだす問題、私は設定ファイルの一番上に「言語（最優先・例外なし）」の欄を置いています。\n\nツールの返事が英語でも、つられない。\n会話が要約されても、モデルが変わっても日本語。\n\n要約のあとの英語が気になって、ここまで書きました。",
+    "quote": "",
+    "hash": "f025f0d64c628460",
+    "label": "C",
+    "avg": {
+      "stop": 2.67,
+      "fun": 2.33,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "会話が要約される",
+      "設定ファイル"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 3,
+    "premise_topics": [
+      "Claude Codeが急に英語で話しだす問題",
+      "Claude Codeが急に英語で話しだす問題",
+      "Claude Codeが急に英語で話しだすという問題"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "「急に英語で話しだす問題」がよく知られている前提で書かれていて、知らない私は置いていかれます。何が起きて困ったのかを先に一言書いてほしいです。",
+      "『英語で話しだす問題』が有名な話のように始まるが、私は知らないのでピンとこない。ハウツーとしては実用的だけど、どう困ったかの具体例があると入りやすい。",
+      "「急に英語で話しだす問題」は使っている人なら分かるが、自分には何のことか前提がない。具体的な対処が書いてあるのは実務的で好印象。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・会話が要約される・設定ファイル",
+      "受けている話が投稿の中に無い3人：Claude Codeが急に英語で話しだす問題／Claude Codeが急に英語で話しだす問題／Claude Codeが急に英語で話しだすという問題"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.33,
+      "follow": 3.33
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランでチャットが無制限になった",
+      "ChatGPTのチャットが無料でも無制限になった",
+      "ChatGPTのチャットが無料でも無制限になったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "自分も迷いそうな「Plusを続けるか」の話で共感しやすいです。「画像生成・速度・モデル・・・。」の部分がぼやけているので、何と何を比べたかが具体的だともっと良くなります。",
+      "有料プランを続けるか迷った話が、今の自分とそのまま重なって最後まで読めた。『画像生成・速度・モデル・・・』の部分で、何を比べたのかもう少し具体的だとさらに良い。",
+      "「無料でも無制限」は自分にも関係があり止まった。Plusを続けた決断が見えて参考になる。何に使っていて安定が必要なのかが一言あると、さらに自分ごとにできる。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "EIGO-03",
+    "text": "Claude Codeが気を抜くと英語になる問題、私は会話の要約のあとが一番気になってます。\n\n設定ファイルの一番上に「最優先・例外なし」で、\nツールの返事が英語でもつられない、モデルが変わっても日本語、と書いています。\n\n道具で止める方法もあると知って、そっちも気になります。",
+    "quote": "",
+    "hash": "9a5947217e1bed04",
+    "label": "E",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code",
+      "会話の要約",
+      "設定ファイル",
+      "道具で止める方法"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 3,
+    "premise_topics": [
+      "Claude Codeが英語になる問題と、それを道具で止める方法",
+      "Claude Codeが気を抜くと英語になる問題と、それを道具で止める方法がある話",
+      "Claude Codeが気を抜くと英語になるという問題と、それを道具で止める方法があるという話"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.0,
+    "comments": [
+      "前提の話も、最後の「道具で止める方法」が何なのかも書かれていないので、内輪の会話に見えます。何の道具かが分かれば読めそうです。",
+      "『道具で止める方法もあると知って』が何の話か分からず、どこかの続きに見える。Cとほぼ同じ内容で、個人の迷いや失敗が薄い。",
+      "「道具で止める方法」が何のことか書いておらず、どこかの話を受けているようで置いていかれた。Cとほぼ同じ内容で新しさがない。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code・会話の要約・設定ファイル・道具で止める方法",
+      "受けている話が投稿の中に無い3人：Claude Codeが英語になる問題と、それを道具で止める方法／Claude Codeが気を抜くと英語になる問題と、それを道具で止める方法がある話／Claude Codeが気を抜くと英語になるという問題と、それを道具で止める方法があるという話"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "EIGO-01",
+    "text": "「気を抜いたら英語で喋りだす」、私のClaude Codeでも会話の要約のあとに起きてました。\n\n今は設定ファイルの一番上に書いています。\n・ツールの返事が英語でも、つられない\n・要約されても、モデルが変わっても日本語\n\n日本語で話してもらうだけで、ここまで書くとは。",
+    "quote": "@gosrum（金のニワトリ）11/24 13:00\nOpus 5.5 が気を抜いたら英語で喋りだす問題、みのるんさんの「claude-code-japanese-guard」を使うようにしたらほぼ解決しました。圧倒的感謝...！\n「Opus 5.5 を使うときに、急に英語話し出して困る」という方は一度導入することをおすすめします",
+    "hash": "1260cb9c0e8e7610",
+    "label": "F",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Claude Code",
+      "会話の要約"
+    ],
+    "unknown_quote_only": [
+      "Opus 5.5",
+      "claude-code-japanese-guard"
+    ],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Opus 5.5が気を抜くと英語で話しだす問題（引用元の投稿）",
+      "Opus 5.5が気を抜いたら英語で喋りだす問題がツール導入で解決したという引用投稿",
+      "Opus 5.5が気を抜くと英語で話しだす問題と、それを解決するツールの紹介"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "引用があるので何の話かはなんとなく分かります。「ここまで書くとは」は少し笑えましたが、Claudeを使わない私には関係が薄く感じます。",
+      "引用があるので前提は分かる。『ここまで書くとは』の苦笑いは少し人柄が見えるが、引用先がツールで解決した話なので、自分はなぜツールでなく書く方なのかがあると噛み合う。",
+      "引用があるので何の話か分かった。最後の「日本語で話してもらうだけで、ここまで書くとは」は苦笑いが伝わって少し面白いが、自分の業務にどうつながるかは見えない。"
+    ],
+    "notes": [
+      "引用先にだけある分からない言葉（合否に数えない）：Opus 5.5・claude-code-japanese-guard"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Claude Code・会話の要約"
+    ]
+  }
+]

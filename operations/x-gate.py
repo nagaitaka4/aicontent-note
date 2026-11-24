@@ -30,6 +30,11 @@
      → 2026-11-18：朝ブリーフの`BRIEF-01`（毎朝6時半にClaudeがXの投稿案とリプライ先を出す）に
        「手の内を明かさない。ポストが全部AIで作ったものと思われる。実際は毎日8割以上を自分の言葉に直している」
 
+  14. リプライの型（2026-11-25新設・リプライのみ）：本文80字超／3文以上／書き出しが「」の引用・定型の共感／
+      「ブログ・記事」と「Claude Code」の両方、のどれかで止める。問いで終わっているかは参考表示
+     → 2026-11-25：11月のリプライが毎回「「相手の言葉」、私もです→ブログでClaude Code→締め」の3文で、
+       ユーザーに「AI臭い。AIの自動返信と気づかれてる気がする」。11/13以降のビューは2〜160
+
 x-firstline.py（1行目の固有名詞）は[要目視]を返すだけなので、ここでは参考表示にとどめる。
 """
 import importlib.util
@@ -167,6 +172,27 @@ def main():
     print(f"13 手の内: {'[NG] 「' + '・'.join(hand) + '」＝X運用の仕組み（AIが投稿・リプライの案を出している）を明かしている。投稿が全部AI製に見える（2026-11-18 ユーザー指示）' if hand else '[OK]'}")
     if hand:
         ng.append("手の内")
+
+    if reply:
+        # 14 リプライの型（2026-11-25新設・ユーザー指摘「リプライ、なんかAI臭い。AIの自動返信と気づかれてる気がする」）
+        body = "".join(l.strip() for l in text.splitlines() if l.strip() and not l.strip().startswith("http"))
+        sents = [x for x in re.split(r"[。！？!?]+", body) if len(x.strip()) >= 2]
+        why = []
+        if len(body) > 80:
+            why.append(f"本文{len(body)}字（80字まで）")
+        if len(sents) >= 3:
+            why.append(f"文が{len(sents)}つ（2文まで）")
+        if body.startswith(("「", "『")):
+            why.append("書き出しが相手の言葉の「」引用")
+        if re.search(r"^.{0,15}(まさに私|私もです|私も同じ|わかります|分かります)", body):
+            why.append("書き出しが定型の共感")
+        if re.search(r"ブログ|記事", body) and re.search(r"Claude ?Code", body):
+            why.append("「ブログ・記事」と「Claude Code」の自分の紹介が両方")
+        print(f"14 リプライの型: {'[NG] ' + '・'.join(why) + '＝同じ型の自動返信に見える（rules/x-post-flow.md「リプライの書き方」🔒2026-11-25）' if why else '[OK]'}")
+        asks = text.strip().endswith(("？", "?"))
+        print("  参考   : " + ("問いで終わっている" if asks else "問いで終わっていない（基本は相手が答えられる問いで終える）"))
+        if why:
+            ng.append("リプライの型")
 
     jibun = len(re.findall("自分", text))
     print(f"9 一人称 : {'[NG] 「自分」が' + str(jibun) + '個。主語を省くか「私」にする（2026-10-13ユーザー指示）' if jibun else '[OK]'}")

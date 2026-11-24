@@ -1,0 +1,230 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランでもチャットが無制限になった",
+      "ChatGPTのチャットが無料でも無制限になったという変更",
+      "ChatGPTの無料プランのチャットが無制限になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "1行目はニュースっぽいが、Plusを続けるか迷った話が身近で共感できた。「結局は安定して使いたい」の理由をもう少し具体的に（何に困ったか）書くと良い。",
+      "有料プランで迷っている自分には刺さる話題。ただ1行目と結論（Plusを続けた）がつながりにくく、無制限なのに「制限が明確じゃない」が矛盾して見えて読む気が少し落ちた。",
+      "1行目はニュースの紹介で、自分の迷いは後半に少しあるだけ。何に使っていてPlusのどこが決め手だったのか、具体的な場面があればもっと身近に感じます。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "EIGO-u5",
+    "text": "「気を抜いたら英語で喋りだす」\n作業を任せるAIのClaude Codeで気になってます。\n長い会話のあとに多いです。\n\nAIへの決まりごとを書いたメモの先頭にあること。\n・ツールの返事が英語でもつられない\n・要約されても、モデルが変わっても日本語\n\n日本語で話してもらうだけで、ここまで書くとは。",
+    "quote": "@gosrum（金のニワトリ）11/24 13:00\nOpus 5.5 が気を抜いたら英語で喋りだす問題、みのるんさんの「claude-code-japanese-guard」を使うようにしたらほぼ解決しました。圧倒的感謝...！\n「Opus 5.5 を使うときに、急に英語話し出して困る」という方は一度導入することをおすすめします",
+    "hash": "a4ad60ca28657aa0",
+    "label": "B",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "AIへの決まりごとを書いたメモ",
+      "Claude Code"
+    ],
+    "unknown_quote_only": [
+      "Opus 5.5",
+      "claude-code-japanese-guard"
+    ],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Opus 5.5が気を抜くと英語で喋りだす問題（引用元の投稿）",
+      "Opus 5.5が気を抜くと英語で喋りだす問題",
+      "Claude Code（Opus 5.5）が長い会話のあとに急に英語で話し出す問題"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "1行目の「気を抜いたら英語で喋りだす」は面白くて止まる。ただ「メモの先頭にあること」が誰のメモなのか一瞬分からず、自分のメモだと明確だと読みやすい。",
+      "「AIへの決まりごとを書いたメモ」の説明はわかりやすいが、引用先の解決ツールとの関係が見えず、自分のメモで直ったのかが分からない。効いたかどうかの一言があると良い。",
+      "1行目の引用は面白くて止まります。ただ「決まりごとを書いたメモ」が何なのかピンとこず、真ん中で少し読む気が落ちました。それで直ったのかどうか、結果が一言あると良いです。"
+    ],
+    "notes": [
+      "引用先にだけある分からない言葉（合否に数えない）：Opus 5.5・claude-code-japanese-guard"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：AIへの決まりごとを書いたメモ・Claude Code"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "C",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトモデルがOpus 5になった",
+      "Claude Maxの既定モデルがOpus 5になった",
+      "Claude MaxのデフォルトがOpus 5になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "固有名詞が多すぎて、Claudeを知らない自分には何の話か分からず1行目で離脱。違いを感じられなかった具体的な作業例が1つあれば読める。",
+      "モデル名が並んでいて初心者には何の違いか分からず1行目で流した。具体的にどんな作業で差がなかったかがあれば読める。",
+      "モデル名が並んでいて、Web担当の自分にはよく分からず置いていかれました。どんな作業で差が出なかったのか、具体例が1つあれば伝わります。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "D",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.33,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了する",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了する"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 1.67,
+    "comments": [
+      "「書いたばかりでした＞＜」の失敗談で人柄が見えて良い。ただ全体はニュース紹介の形が強く、マイGPTを自分がどう使っていて何が困るかがあるともっと刺さる。",
+      "終了の告知は止まるし、「書いたばかりでした＞＜」の失敗談で人柄が見えるのが良い。ただ前半は公式の要約なので、自分は何を移すかなど次の行動があると良い。",
+      "「書いたばかりでした＞＜」の失敗談で人柄が見えて良いです。ただ前半は告知の要約なので、自分の作ったマイGPTをどうするのかが入ると、もっと読みたくなります。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "EIGO-u4",
+    "text": "「気を抜いたら英語で喋りだす」\n作業を任せるAIのClaude Codeで気になってます。\n長い会話のあとに多いです。\n\nAIに毎回守らせるルールのメモに書いてること。\n・ツールの返事が英語でもつられない\n・要約されても、モデルが変わっても日本語\n\n日本語で話してもらうだけで、ここまで書くとは。",
+    "quote": "@gosrum（金のニワトリ）11/24 13:00\nOpus 5.5 が気を抜いたら英語で喋りだす問題、みのるんさんの「claude-code-japanese-guard」を使うようにしたらほぼ解決しました。圧倒的感謝...！\n「Opus 5.5 を使うときに、急に英語話し出して困る」という方は一度導入することをおすすめします",
+    "hash": "43b094e19d1249af",
+    "label": "E",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [
+      "Opus 5.5",
+      "claude-code-japanese-guard"
+    ],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Opus 5.5が気を抜くと英語で喋りだす問題（引用元の投稿）",
+      "Opus 5.5が気を抜くと英語で喋りだす問題",
+      "Claude Code（Opus 5.5）が長い会話のあとに急に英語で話し出す問題"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 1.67,
+    "comments": [
+      "Bより「AIに毎回守らせるルールのメモに書いてること」が自分のメモだと分かりやすい。英語で喋りだして困った具体的な場面が1つあると、もっと笑える。",
+      "「AIに毎回守らせるルールのメモ」の方がBより直感的に分かる。それでも書いた結果どうなったかが無く、締めが感想だけなので弱い。",
+      "「毎回守らせるルールのメモ」なら意味が分かり、すっと読めました。書いてみて英語が減ったのかどうか、結果まであればフォローしたくなります。"
+    ],
+    "notes": [
+      "引用先にだけある分からない言葉（合否に数えない）：Opus 5.5・claude-code-japanese-guard"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：Claude Code"
+    ]
+  }
+]

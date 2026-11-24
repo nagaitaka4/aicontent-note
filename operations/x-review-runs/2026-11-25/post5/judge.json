@@ -1,0 +1,229 @@
+[
+  {
+    "kind": "candidate",
+    "id": "EIGO-u3",
+    "text": "「気を抜いたら英語で喋りだす」\nAIのClaude Codeで気になってます。\n長い会話のあとに多いです。\n\nAIが毎回最初に読むメモの先頭に書いてます。\n・ツールの返事が英語でもつられない\n・要約されても、モデルが変わっても日本語\n\n日本語で話してもらうだけでここまで書くとは思ってなかったです。",
+    "quote": "@gosrum（金のニワトリ）11/24 13:00\nOpus 5.5 が気を抜いたら英語で喋りだす問題、みのるんさんの「claude-code-japanese-guard」を使うようにしたらほぼ解決しました。圧倒的感謝...！\n「Opus 5.5 を使うときに、急に英語話し出して困る」という方は一度導入することをおすすめします",
+    "hash": "2368ceb311949328",
+    "label": "A",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "AIが毎回最初に読むメモ",
+      "Claude Code"
+    ],
+    "unknown_quote_only": [
+      "Opus 5.5",
+      "claude-code-japanese-guard",
+      "みのるんさん"
+    ],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Opus 5.5が気を抜くと英語で話し出す問題",
+      "Claude Code（Opus 5.5）が長い会話の途中で急に英語で話し出す問題",
+      "Opus 5.5が気を抜くと英語で話しだす問題"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "1行目のカギカッコは気になるが、Claude Codeを知らないと他人事。「最初に読むメモ」が何か分からず、そこで読む気が落ちた。困った具体的な場面が一言あれば入りやすい。",
+      "「AIが毎回最初に読むメモ」がイメージしにくく、手順の話に見えて少し飽きる。書き足して英語が減ったのかどうか、結果が一言あると良い。",
+      "1行目のカギカッコだけでは何の話か分からず、2行目でようやくClaude Codeと分かる。「毎回最初に読むメモ」が何か一言あると、自分でも試せそうに感じる。"
+    ],
+    "notes": [
+      "引用先にだけある分からない言葉（合否に数えない）：Opus 5.5・claude-code-japanese-guard・みのるんさん"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：AIが毎回最初に読むメモ・Claude Code"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Maxの既定モデルがOpus 5になった",
+      "Claude MaxのデフォルトがOpus 5に変わった話",
+      "Claude MaxのデフォルトがOpus 5になったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 4.0,
+    "comments": [
+      "固有名詞だらけで、知らない人には何の話か分からない。違いを感じなかった具体的な作業が書いてあれば共感できた。",
+      "有料プランを迷っている身としては「違いを感じない」は正直で参考になる。Fableが何なのか分からず、そこで読む勢いが落ちた。",
+      "モデル名が続いて、Web担当の自分には違いが分からず置いていかれた。どんな作業で試したかが書いてあれば、感想として読める。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.67,
+      "follow": 3.33
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了する",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 1.33,
+    "comments": [
+      "ChatGPTは使っているので1行目で止まった。「書いたばかりでした＞＜」に人柄が出ていて良いが、全体はお知らせの要約に近い。自分はどうするかが書いてあればもっと読みたい。",
+      "前半はニュースの要約だが、「書いたばかりでした＞＜」で人柄が見えて止まった。乗り換えをどうするかまであると、次も読みたくなる。",
+      "「書いたばかりでした＞＜」で人柄が見えて親しみが湧いた。前半は公式発表の要約なので、自分ならどう移すかが一言あるともっと良い。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランでチャットが無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になった話",
+      "ChatGPTが無料でも無制限になったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 2.67,
+    "comments": [
+      "迷ってPlusを続けた決断が見えて身近。「画像生成・速度・モデル・・・」の部分は流し読みでは中身が薄く、何が決め手だったかもう少し具体的だと良い。",
+      "有料を続けるか迷っているのは自分と同じで共感した。ただ「画像生成・速度・モデル・・・」が箇条書きのメモみたいで、どれが決め手だったか分かりにくい。",
+      "有料を続けるかの迷いは自分ごととして読めた。「画像生成・速度・モデル・・・」が箇条の途中で終わっていて、何を比べたのかが伝わりにくい。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "EIGO-u2",
+    "text": "「気を抜いたら英語で喋りだす」\n作業を任せるAIのClaude Codeで気になってます。\n長い会話のあとに多いです。\n\nAIが毎回最初に読むメモの先頭に書いてること。\n・ツールの返事が英語でもつられない\n・要約されても、モデルが変わっても日本語\n\n日本語で話してもらうだけで、ここまで書くとは。",
+    "quote": "@gosrum（金のニワトリ）11/24 13:00\nOpus 5.5 が気を抜いたら英語で喋りだす問題、みのるんさんの「claude-code-japanese-guard」を使うようにしたらほぼ解決しました。圧倒的感謝...！\n「Opus 5.5 を使うときに、急に英語話し出して困る」という方は一度導入することをおすすめします",
+    "hash": "9daf4b6ad91c8c5a",
+    "label": "E",
+    "avg": {
+      "stop": 3.0,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 2,
+    "unknown_terms": [
+      "AIが毎回最初に読むメモ"
+    ],
+    "unknown_quote_only": [
+      "Opus 5.5",
+      "claude-code-japanese-guard",
+      "みのるんさん"
+    ],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Opus 5.5が気を抜くと英語で話し出す問題",
+      "Claude Code（Opus 5.5）が長い会話の途中で急に英語で話し出す問題",
+      "Opus 5.5が気を抜くと英語で話しだす問題"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.0,
+    "comments": [
+      "「作業を任せるAI」と添えてあるのでAより入りやすい。ただ「最初に読むメモ」は相変わらずピンとこず、締めの「ここまで書くとは」も少し他人事に聞こえる。",
+      "「作業を任せるAI」という説明があってAより入りやすい。最後の「ここまで書くとは。」で投げっぱなしに感じるので、効いたかどうかの一言がほしい。",
+      "「作業を任せるAI」と添えてあるのでAより入りやすい。締めの「ここまで書くとは。」が言い切りで少し突き放した感じがするので、Aのような素直な驚きのほうが人柄が伝わる。"
+    ],
+    "notes": [
+      "引用先にだけある分からない言葉（合否に数えない）：Opus 5.5・claude-code-japanese-guard・みのるんさん"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者2人：AIが毎回最初に読むメモ"
+    ]
+  }
+]

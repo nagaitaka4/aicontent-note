@@ -35,14 +35,14 @@ AIを使っても、片づく仕事の数が思ったほど増えないことが
 作る側だけが速くなると、確認や公開の前に仕事がたまっていくことがあります。
 
 本『ザ・ゴール』には、仕事全体を止めている所の前だけを速くしても、仕上がる数は増えない、という考え方があります。
-この考え方を、松本健太郎さんが日経COMEMOで[生成AIに当てはめています](https://comemo.nikkei.com/n/nb6e629d1a85c)。
+この考え方を、松本健太郎さんが[日経COMEMO](https://comemo.nikkei.com/n/nb6e629d1a85c)で生成AIに当てはめています。
 
-Google Cloudの[DORAレポート](https://cloud.google.com/blog/ja/products/ai-machine-learning/announcing-the-2025-dora-report)は、開発の技術職約5,000人を調べたものです。
+[Google CloudのDORAレポート](https://cloud.google.com/blog/ja/products/ai-machine-learning/announcing-the-2025-dora-report)は、開発の技術職約5,000人を調べたものです。
 AIはチームの良い所も弱い所もそのまま大きくし、作業が速くなった分、後ろの作業の弱い所が目立つことがある、としています。
 
 ### 2. AIが出したものを直す手間が増える
 
-人事ソフトの会社Workdayの[調査](https://www.workday.com/ja-jp/perspectives/hr/ai-speed-fix-rework.html)では、AIで減らした時間の約37%が、AIが出したものの手直しに使われていました。
+人事ソフトの会社[Workdayの調査](https://www.workday.com/ja-jp/perspectives/hr/ai-speed-fix-rework.html)では、AIで減らした時間の約37%が、AIが出したものの手直しに使われていました。
 AIの下書きが早くできても、そのまま使えなければ、減らした時間の一部は直す作業で消えます。
 
 ### 3. 仕事の流れが変わっていない
@@ -50,7 +50,7 @@ AIの下書きが早くできても、そのまま使えなければ、減らし
 時間が空いても、次の仕事が決まっていなければ、片づく数が増えないことがあります。
 COMEMOの記事も、時間が空いても新しい仕事が割り振られるわけではない、と書いています。
 
-PwC Japanの[調査](https://www.pwc.com/jp/ja/knowledge/thoughtleadership/generative-ai-survey2025.html)は、日本や米国など5か国の大企業の課長以上に聞いたものです。
+[PwC Japanの調査](https://www.pwc.com/jp/ja/knowledge/thoughtleadership/generative-ai-survey2025.html)は、日本や米国など5か国の大企業の課長以上に聞いたものです。
 効果が期待を下回る企業は、生成AIを一部の作業に道具として足すだけでした。
 こうした使い方では、今のやり方を少し良くするところで止まる、としています。
 

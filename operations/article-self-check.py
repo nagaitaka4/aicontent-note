@@ -408,6 +408,23 @@ def main(path):
         hint = "（統計・製品・公式の仕組みに触れているなら一次情報へのリンクが要る）"
     print(f"[INFO] 外部一次情報リンク {len(ext_links)}本／内部リンク {len(int_links)}本{hint}")
 
+    # --- 外部リンクを貼る語句（2026-11-24追加・no.91）---
+    # リンクは出典の名前（「日経COMEMO」「Google CloudのDORAレポート」「Workdayの調査」）に貼る。
+    # no.91では「生成AIに当てはめています」（述語）と「調査」（名前の抜けた一語）に貼っていて、
+    # 別のレビュー役2回とGPTレビューを素通りし、入稿後にユーザーが指摘した。
+    # 述語で終わる語句・名前の無い一般語だけの語句をNGにする。やむを得ないときだけ ALLOW_ANCHOR="理由"。
+    generic_anchor = {"調査", "レポート", "記事", "ページ", "こちら", "ここ", "発表", "資料",
+                      "データ", "解説", "説明", "論文", "報告", "リンク", "ブログ", "サイト"}
+    bad_anchors = [a for a, u in all_links if "aicontent-note.com" not in u
+                   and (a.strip() in generic_anchor
+                        or re.search(r"(ます|ました|ません|ている|ていた|した|です|でした)$", a.strip()))]
+    allow_anchor = os.environ.get("ALLOW_ANCHOR", "")
+    report(
+        "外部リンクは出典の名前に貼る（述語・「調査」だけの語句に貼らない）",
+        not bad_anchors or bool(allow_anchor),
+        f"{bad_anchors[:5]}" + (f"／許可の理由：{allow_anchor}" if allow_anchor and bad_anchors else ""),
+    )
+
     # --- 英語のページへのリンク・英語の引用（2026-10-28追加・no.77）---
     # 調べるのは英語の一次情報でよいが、読者は英語を読めない。リンク先は日本語版、
     # 引用は日本語の説明にする。no.77では英語リンク4本と英語の引用1か所が、

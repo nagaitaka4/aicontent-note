@@ -3,10 +3,10 @@ no: 93
 series:
 series_no:
 title: AIの定期実行で寝ている間の作業を任せるには？指示に書く5つのこと
-date: 2026-11-24
+date: 2026-11-25
 url: https://aicontent-note.com/ai-scheduled-tasks-overnight/
 slug: ai-scheduled-tasks-overnight
-status: draft
+status: published
 description: 毎日の決まった作業を寝ている間にAIに任せるなら、パソコンを閉じても動く仕組みかを先に確かめます。Claude Code・ChatGPT・Geminiの定期実行の違い、指示に書く5つのことと使える型、2か月以上動かして困った日の実例をまとめました。
 eyecatch: eyecatch_0093.png
 eyecatch_alt: 温かい白に近い地に「AIの定期実行で寝ている間の作業を任せるには？」の題と「指示に書く5つのこと」の札を置き、ベッドで眠る男性と机のノートパソコン、チェックリストのカードを描いたイラスト

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "r-kensuu-1",
+    "text": "収録しながら回すとき、野田さんは指示を出したらしばらく放っておく感じでしたか？",
+    "hash": "703591afaf88614d",
+    "label": "A",
+    "on_core": 3,
+    "same_subject": 3,
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "lecture": 0,
+    "template": 0,
+    "glad_author": 3,
+    "glad_avg": 3.0,
+    "profile": 0,
+    "comments": [
+      "書き手の立場が見えず、質問だけ。",
+      "質問だけなので、自分の一言があるとよい。",
+      "書き手自身の一言があるとよい。"
+    ],
+    "pass": false,
+    "why": [
+      "本人のうれしさ3（4以上必要）"
+    ]
+  },
+  {
+    "id": "r-kensuu-2",
+    "text": "収録中も回してるの、指示を出したあとは画面を見ずに話してる感じでしたか？",
+    "hash": "3a2c70bebaef9f19",
+    "label": "B",
+    "on_core": 3,
+    "same_subject": 3,
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "lecture": 0,
+    "template": 0,
+    "glad_author": 3,
+    "glad_avg": 3.0,
+    "profile": 0,
+    "comments": [
+      "主語が省かれている。書き手の体験が一言あると返しやすい。",
+      "主語が抜けている。",
+      "主語の野田さんが抜けている。"
+    ],
+    "pass": false,
+    "why": [
+      "本人のうれしさ3（4以上必要）"
+    ]
+  }
+]

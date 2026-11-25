@@ -1,0 +1,215 @@
+[
+  {
+    "kind": "candidate",
+    "id": "A3",
+    "text": "AIに記事を書かせる指示書、失敗のたびに書き足していたら4万字を超えてました。\n\nそれでも守られず、何度も指摘した決まりがありました。字数のように測れるものは、チェック用のプログラムに移してます。\n\nプロンプトはどこまでマークダウンで足りるのか、まとめました👇\nhttps://aicontent-note.com/prompt-markdown/",
+    "quote": "",
+    "hash": "19174991e07490a3",
+    "label": "A",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "マークダウン"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 1.33,
+    "comments": [
+      "「4万字」でつい止まる。でも2段落目の「何度も指摘した決まり」が何なのかが書いてなくて、少しモヤッとした。守られなかった決まりの例を1つ入れると、もっと自分のことのように読める。",
+      "「4万字」で止まった。2段落目の「何度も指摘した決まり」が具体的に何だったのか一例あると、自分ごとにしやすい。",
+      "「4万字」で止まった。2段落目の「何度も指摘した決まり」が何なのか1つでも具体例があると、自分の会社でも起きそうと思えて記事を開きたくなる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "B",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTが無料でも無制限になったという変更",
+      "ChatGPTの無料プランのチャットが無制限になったという変更",
+      "ChatGPTの無料プランでもチャットが無制限になったという変更"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "結論がはっきりしない。",
+      "決め手がぼやける。",
+      "並べただけで流れる。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "C",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトがOpus 5に変わったこと",
+      "Claude Maxの既定モデルがOpus 5に変わったこと",
+      "Claude Maxの標準モデルがOpus 5に変わったという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "知らない製品名が並ぶ。",
+      "初心者には遠い。",
+      "上級者の話に見えた。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "D",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.33,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 2,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPT提供終了の発表と、自分が8/21に「無料でも使える」と書いたこと",
+      "ChatGPTのマイGPTが終了するという発表と、本人が8/21に「無料でも使える」と書いた過去の投稿"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.0,
+    "comments": [
+      "前半は発表のまとめ。",
+      "ニュース紹介に見える。",
+      "発表の要約で最後に一言の形。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "A2",
+    "text": "AIに記事を書かせる指示書、失敗のたびに書き足していたら4万字を超えてました。\n\nそれでも守られない決まりがあって、字数のように測れるものはチェック用のプログラムに移しました。\n\nプロンプトはどこまでマークダウンで足りるのか、まとめました👇\nhttps://aicontent-note.com/prompt-markdown/",
+    "quote": "",
+    "hash": "8767647ae551beb1",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "マークダウン"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 2,
+    "avg_rank": 2.33,
+    "comments": [
+      "Aよりすっきりしていて読みやすい。ただ、守られなかった決まりが何なのか分からず、オチが少し弱い。例を1つ入れるとぐっと良くなる。",
+      "Aより短くて読みやすい。守られなかった決まりの具体例が1つあれば、もっと記事を開きたくなる。",
+      "Aより短くて読みやすいが、「何度も指摘した」が無い分、苦労の手触りが少し薄い。守られなかった決まりの具体例が1つあれば良くなる。"
+    ],
+    "pass": true,
+    "why": []
+  }
+]

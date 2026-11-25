@@ -1,7 +1,17 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-25
+最終更新: 2026-11-26
 
+
+---
+
+## [2026-11-26] 調査結果（デイリー・木曜）
+
+- npm：🆕 2.1.332（2026-11-24 22:06 UTC）。CHANGELOG.mdの先頭も`## 2.1.332`＝MCPサーバーのスキル（verbatim `Added skills from MCP servers (beta). They show as `server:skill` in the `/` menu`）・`PreSkillShellCommand`フック・デスクトップのCodeタブでセッションの一部が保存できなかったときの警告（verbatim `Added a warning in VS Code and Desktop's Code tab when part of a session couldn't be saved, saying how to save it with `/compact``）・自動の圧縮の失敗で「Prompt is too long」で止まる不具合の修正・10,000字を超える音声入力の文字が消える不具合の修正 等＝本人の使い方は変わらない＝記録のみ
+- Claude Appsリリースノート：🆕（11/25に未記録だった分）November 24「Send files to connected apps and save files from them (beta)」verbatim `File transfers with connectors are rolling out gradually in beta on Pro, Max, and Ultra plans`＝rolling out・本人の画面で未確認＝記録のみ。ほかはNovember 24の2件（既録）
+- claude.com/blog：最新は11/24の2本（既録）
+- @ClaudeDevs：🆕 11/26 01:32 JST「Our new engineering blog shares how we migrated the Claude Messages API from Python to Rust.」・11/25 08:07 JST「A practical guide to shipping with Claude Code: how to hand off PR follow-up work to Claude Ship」＝開発者向け＝記録のみ
+- 巡回チェック：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（実Chrome）／claude.com/blog ✅（実Chrome）／@ClaudeDevs ✅（実Chromeで読むだけ）／Newsroom ✗（未巡回）
 
 ---
 

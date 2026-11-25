@@ -1,6 +1,13 @@
 # 競合AIツール・新興ツール動向
 
-最終更新: 2026-11-25
+最終更新: 2026-11-26
+
+---
+
+## [2026-11-26] 調査結果（デイリー・木曜）
+
+- ChatGPT（[リリースノート](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)・実Chrome）：先頭はNovember 23「GPT-6.2, now in the chat tab」のまま（既録）＝差分なし
+- Gemini・国産AIライティングツール：本人の使い方に影響する差分は見当たらず
 
 ---
 

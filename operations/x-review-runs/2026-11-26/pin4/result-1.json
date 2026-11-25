@@ -1,0 +1,106 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "止めずに回す"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "自己紹介文で、絵文字の箇条書きが宣伝っぽく流してしまった。実際に止まりかけた話やAIが外した具体例が1つあれば読みたくなる。"
+  },
+  "B": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトがOpus 5になった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Claudeを知らないので製品名が並んだ時点で読む気が落ちた。どんな作業で比べたのかが一言あれば分かりやすい。"
+  },
+  "C": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのチャットが無料でも無制限になった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目は気になって止まった。迷った末にPlusを続けた理由が自分ごとで良いが、続けた具体的な決め手がもう少し欲しい。"
+  },
+  "D": {
+   "unknown": [
+    "止めずに回す"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Aとほぼ同じ自己紹介で宣伝に見える。公開ボタンは自分で押す理由が書いてあれば人柄が出て良くなる。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了する",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "書いたばかりなのに終了という失敗が見えて面白い。スキルやカスタムアクションの説明が一言あると事務職でも分かる。"
+  }
+ },
+ "rank": [
+  "E",
+  "C",
+  "D",
+  "A",
+  "B"
+ ]
+}

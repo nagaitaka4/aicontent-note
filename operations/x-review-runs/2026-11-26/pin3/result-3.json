@@ -1,0 +1,102 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという公式発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は発表の要約で、スキルやカスタムアクションが何なのか分からず読む気が落ちた。8/21に書いたばかりという失敗はおもしろいので、そこを1行目に持ってきて、自分の作業に何が起きるかを書けばもっと良くなる。"
+  },
+  "B": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "自己紹介の固定ポストのようで、1行目では止まらない。ただ、AIと人の分担は自分の迷いにそのまま関係するのでサイトは少し気になる。実際に外したことを1つ具体的に書いてあれば良かった。"
+  },
+  "C": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランのチャットが無制限になったという話",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "結局Plusを続けたのかどうかがはっきりせず、最後で少しぼやける。「安定して使いたいから続けた」と言い切ってくれれば、判断の材料として役に立つ。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Bとほぼ同じ内容。公開ボタンは自分で押すという線引きは少し人柄が見えるが、1行目は流してしまう。AIに任せて失敗した例が1つあれば止まる。"
+  },
+  "E": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトがOpus 5に変わったという話",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が多すぎて、詳しい人向けの話に見えて読む気が落ちた。ブログ作業でどこに差が出る、出ないといった具体例があれば、自分ごととして読める。"
+  }
+ },
+ "rank": [
+  "A",
+  "C",
+  "D",
+  "B",
+  "E"
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "自己紹介・固定ポストっぽく、流し見だと宣伝に見えて止まりにくい。分担の中で実際に失敗した具体例が1つあると人柄が見えて良くなる。"
+  },
+  "B": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わった",
+    "in_post": true,
+    "denied": "Opus 5はSonnet 5より明らかに良い",
+    "common": true
+   },
+   "comment": "モデル名が多く、有料プランを迷っている立場だと何の話か追いきれない。どんな作業で試して差が出なかったのか一例あると参考になる。"
+  },
+  "C": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランでもチャットが無制限になった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "有料を続けるか迷う話はまさに自分ごとで読めた。「画像生成・速度・モデル・・・」の比べた中身がもう少し具体的だと決め手が伝わる。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Aとほぼ同じだが「公開ボタンは私」で人が責任を持つ線引きが見えて少し人柄が出る。それでも1行目は宣伝調で止まりにくい。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPT機能が終了する",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約に見えるが「書いたばかりでした＞＜」の失敗談で一気に人柄が出て面白い。移行で自分が何をするかまであるとさらに良い。"
+  }
+ },
+ "rank": [
+  "E",
+  "C",
+  "B",
+  "D",
+  "A"
+ ]
+}

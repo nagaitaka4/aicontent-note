@@ -1,0 +1,102 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという公式発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表のまとめで、移行の話はマイGPTを使っていない人にはピンときません。「書いたばかりでした＞＜」の失敗は人柄が出ていて良いので、これを先頭に出して、実際に自分が何を移すのかまで書いてあれば読み続けます。"
+  },
+  "B": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "自己紹介の固定ポストに見えるので、1行目では止まりません。役割分担は参考になりますが、「AIが外した所」の実例が1つでもあれば読み進めたくなります。"
+  },
+  "C": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのチャットが無料でも無制限になったという話",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "有料プランに入るか迷っている自分には刺さりますし、迷って決めた過程も見えます。「画像生成・速度・モデル・・・」が駆け足なので、どれが決め手だったかを1つ具体的に書いてあればもっと良いです。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Bとほぼ同じ自己紹介ポストです。「公開ボタンは私」の一言は少し人柄が出ていて良いですが、それでも宣伝に見えて流してしまいます。"
+  },
+  "E": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名がたくさん並んで、Claudeを使っていない自分には置いていかれた感じがしました。「違いを実感できない」は正直で好感が持てるので、どんな作業で比べたのかが一言あれば分かりやすくなります。"
+  }
+ },
+ "rank": [
+  "C",
+  "A",
+  "E",
+  "D",
+  "B"
+ ]
+}

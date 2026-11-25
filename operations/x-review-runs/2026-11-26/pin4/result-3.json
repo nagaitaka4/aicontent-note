@@ -1,0 +1,102 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [],
+   "stop": 3,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "固定ポストっぽい自己紹介で、分担の箇条書きは分かりやすいです。ただ「止めずに回す」の結果（何本続いたか、外した例など）が1つあると、自分の会社でも使えそうか判断できて読みたくなります。"
+  },
+  "B": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude Maxの標準モデルがOpus 5に変わった",
+    "in_post": true,
+    "denied": "Opus 5はSonnet 5より違いが分かるほど良い",
+    "common": true
+   },
+   "comment": "モデル名が続いて、ブログ担当の自分には関係ない話に見えて読む気が落ちました。どんな作業で差が出なかったのか（例：ブログの下書き）が書いてあれば自分ごとになります。"
+  },
+  "C": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのチャットが無料でも無制限になった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「無料で無制限」で止まり、Plusを続けるか迷った話は自分も気になるので読めました。「画像生成・速度・モデル・・・」が並べただけで、決め手の中身が分かりにくいので、具体的にどれが惜しかったかが一言あると良いです。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Aとほぼ同じですが「公開ボタンは私」に人の判断が見えて少し印象に残ります。なぜ公開だけは自分で押すのかの理由が一言あれば、人柄が出てもっとフォローしたくなります。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了する",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「書いたばかりでした＞＜」の失敗談が見えて親しみが持てました。前半は発表の要約が続くので、自分のマイGPTをどうするつもりか（移す／やめる）があると読みごたえが出ます。"
+  }
+ },
+ "rank": [
+  "E",
+  "D",
+  "C",
+  "A",
+  "B"
+ ]
+}

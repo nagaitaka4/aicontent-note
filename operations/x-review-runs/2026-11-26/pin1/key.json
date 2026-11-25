@@ -1,0 +1,47 @@
+[
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "A"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "B"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "C"
+  },
+  {
+    "kind": "candidate",
+    "id": "PIN-02",
+    "text": "AIで作った運用の仕組みを、毎日そのまま動かして記録してます🐱\n\n「AIに何を任せて、どこを人がやるか」を、\n実際にブログを回しながら検証しています。\n📝 構成づくりから入稿まではClaude Code\n🎨 アイキャッチの絵はChatGPT\n🔧 失敗した所と直し方も記事に\n\naicontent-note.com",
+    "quote": "",
+    "hash": "9e3ff68e240b04e4",
+    "label": "D"
+  },
+  {
+    "kind": "candidate",
+    "id": "PIN-01",
+    "text": "AIで、コンテンツ運用を「止めずに回す」実験をしてます🐱\n\n「AIで楽になる」じゃなくて、\n「どうやって止まらない仕組みを作るか」を検証しています。\n📝 構成づくりから入稿までClaude Codeで\n🎨 アイキャッチの絵はChatGPTで\n✅ 何を書くか・公開するかは私が決める\n\naicontent-note.com",
+    "quote": "",
+    "hash": "4c2d4df77d8b37d3",
+    "label": "E"
+  },
+  {
+    "kind": "candidate",
+    "id": "PIN-03",
+    "text": "AIで、ブログの運用を「止めずに回す」実験をしてます🐱\n\n「AIで楽になる」じゃなくて、\n「どうやって止まらない仕組みを作るか」を検証しています。\n📝 構成づくりから入稿までClaude Codeで\n✍️ 言いたいことと公開ボタンは私\n🔧 AIが外した所と直し方も記録\n\naicontent-note.com",
+    "quote": "",
+    "hash": "cb03fbf86747c6cf",
+    "label": "F"
+  }
+]

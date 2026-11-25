@@ -1,0 +1,103 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目の「終了するそうです」で止まったけど、中盤は仕様の説明で、何を準備すればいいのかはピンとこなかった。8/21に書いたばかりという自虐は人柄が出ていてよかったので、そこをもっと前に出してほしい。"
+  },
+  "B": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "自己紹介か固定ポストの宣伝に見えて、流し見だと飛ばしてしまう。絵文字の箇条書きは整っているけど、失敗した話や具体的なエピソードが1つあれば興味がわく。"
+  },
+  "C": {
+   "unknown": [
+    "マイGPT",
+    "Plus"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランでもチャットが無制限になったという話",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「無料でも無制限」は会社員にも関係があるので止まる。ただ、結局Plusを続けたのか解約したのかが分かりにくい。最後の結論をはっきり書いてくれると、自分もどうするか決めやすい。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Bとほぼ同じ内容で、宣伝っぽさが強い。「公開ボタンは私」はちょっと人柄が見えるけど、それだけで止まるほどではない。"
+  },
+  "E": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Claudeを使っていないので、固有名詞ばかりで1行目から分からない。違いを実感できなかったという正直さはよいけど、どんな作業で比べたのかが1つあれば伝わりやすい。"
+  }
+ },
+ "rank": [
+  "C",
+  "A",
+  "D",
+  "B",
+  "E"
+ ]
+}

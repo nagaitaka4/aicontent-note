@@ -1,7 +1,18 @@
 # AI・Claude Code 最新情報・トレンド
 
-最終更新: 2026-11-26
+最終更新: 2026-11-27
 
+
+---
+
+## [2026-11-27] 調査結果（デイリー・金曜）
+
+- npm：最新は2.1.332（2026-11-24 22:06 UTC・既録）＝差分なし。CHANGELOG.mdの先頭も`## 2.1.332`のまま
+- Claude Appsリリースノート：先頭はNovember 24の3件（既録）＝差分なし
+- claude.com/blog（ja/resources/articlesへ転送）：最新は11/24の2本（既録）＝差分なし
+- anthropic.com/news：最新はNov 9のFable 5.2・Mythos 5.2（既録）＝差分なし（右上の「November 26, 2026」はページの日付表示で記事ではない）
+- @ClaudeDevs：最新は11/26 01:32 JSTのRust移行のエンジニアリングブログ（既録）＝差分なし
+- 巡回チェック：CHANGELOG ✅（curl）／npm ✅／Claude Apps ✅（実Chrome）／claude.com/blog ✅（実Chrome）／Newsroom ✅（実Chrome）／@ClaudeDevs ✅（実Chromeで読むだけ）
 
 ---
 

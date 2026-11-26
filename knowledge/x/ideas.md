@@ -95,6 +95,8 @@ research/配下の更新時にX向きと判断したAI動向ネタ。
 
 > **📅 2026-10-22 06〜07時台（`x-morning-brief`・木曜）：追記1件（`research-20261022-01`＝Claude Duet）→ 下書き（自作の朝ブリーフ×Duet）は盲検不合格（「Claude Duet」「ブリーフ」が3人とも通じない）＝キュー投入なし。**`research-20261021-01`（ChatGPTのチャットのロック・本人の画面で未確認）は期限（〜10/23）内だが下書きなし
 
+> **📅 2026-11-27 06〜07時台（`x-morning-brief`・金曜）：追記0件（Claude Code・Anthropic・ChatGPTとも差分なし）。期限内の生存行は`research-20261125-01`・`-02`（期限11/28・どちらも本人の画面で未確認）**
+
 > **📅 2026-11-25 06〜07時台（`x-morning-brief`・水曜）：追記2件（`research-20261125-01`＝Claudeで作ったアーティファクトをMac・Windowsのアプリとして入れられる〔ベータ・全プラン〕・`research-20261125-02`＝毎月のふりかえり〔Reflect〕がベータを終え、Claude Codeのセッションも材料に）＝どちらも本人の画面で未確認のためキュー投入なし。**Skills over MCP（MCPサーバーがスキルを配れる）は使う側が変わらない＝research/への記録のみ
 
 > **📅 2026-11-24 06〜07時台（`x-morning-brief`・火曜）：追記2件（`research-20261124-01`＝ChatGPTのチャットがGPT-6.2に〔Plus〕・`research-20261124-02`＝Claude Codeのデスクトップのサイドパネルがタブに〔Mac〕）＝どちらもrolling outで本人の画面で未確認のためキュー投入なし。**Claude Ship（/ship・プルリクエスト）・Enterpriseのゼロデータ保持・2.1.331の修正は使う側が変わらない＝research/への記録のみ

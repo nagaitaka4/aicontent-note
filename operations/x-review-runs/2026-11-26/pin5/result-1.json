@@ -1,0 +1,141 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "使わない言葉のリスト"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "AIで書いた記事はAIっぽさが残る",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目の「使わない言葉のリスト」が何かわからず、一瞬止まりました。×◯の例は具体的でわかりやすいです。直していて本人がどう感じたかが一言あれば、もっと人柄が見えます。"
+  },
+  "B": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude Maxの初期設定がOpus 5に変わった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "知らない固有名詞が4つ続き、1行目で離れました。Claudeを使っていない人には何がどう違うのか伝わらないので、作業の場面の例が一つあると入りやすいです。"
+  },
+  "C": {
+   "unknown": [
+    "使わない言葉のリスト"
+   ],
+   "stop": 3,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目が自己紹介なので流し見だと止まりにくいです。中身はAと同じで、本人の迷いや失敗の感情が無く、情報で終わっています。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "プロフィール文のようで、絵文字の箇条書きは宣伝に見えて流してしまいます。分担して気づいたことや失敗が一つあると読みたくなります。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了する",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「終了する」は気になって止まります。ただ、中盤の「スキル」「カスタムアクション」で置いていかれました。「書いたばかり＞＜」は人柄が出ていて良いので、そこを前に出すと良いです。"
+  },
+  "F": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "AIで書いた文章はAIっぽく読まれる",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "無料ツールで仕事に使えそうなので止まります。作ったきっかけや苦労が一言あると、宣伝感が薄れて人が見えます。"
+  },
+  "G": {
+   "unknown": [
+    "マイGPT",
+    "Plus"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのチャットが無料でも無制限になった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "無料で無制限は気になるので止まります。迷った末に続けた判断は共感できますが、「画像生成・速度・モデル・・・。」の並べ方が雑で、何に一番迷ったのかが見えません。"
+  }
+ },
+ "rank": [
+  "E",
+  "F",
+  "A",
+  "G",
+  "C",
+  "D",
+  "B"
+ ]
+}

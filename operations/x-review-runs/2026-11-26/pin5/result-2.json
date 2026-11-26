@@ -1,0 +1,141 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "使わない言葉のリスト"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「0件なのに20か所」の意外性で1行目は止まる。「使わない言葉のリスト」が何か一言あると分かりやすく、例が1つだけなのでもう1例あると記事を開く気が増す。"
+  },
+  "B": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が続いて、有料プランを迷っている段階の私には違いが分からない。どんな作業で試したのかが1行あると自分ごとにしやすい。"
+  },
+  "C": {
+   "unknown": [
+    "使わない言葉のリスト"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目が自己紹介なので止まる力はAより弱いが、何を発信する人か分かるのでフォローの判断がしやすい。0件なのに20か所の話を1行目に寄せると止まりやすい。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "プロフィール文のようで流し見では止まらない。分担は分かりやすいが、失敗や意外な発見が1つあると読みたくなる。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で、本人らしさは最後の「書いたばかりでした＞＜」だけ。その記事で何を勧めていたのか、自分はどうするのかがあると良い。"
+  },
+  "F": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "無料で自分の文章を確かめられるので試したくなる。作ったきっかけ（自分の記事で困ったこと）が1行あると人柄も見える。"
+  },
+  "G": {
+   "unknown": [
+    "マイGPT",
+    "Plus"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランのチャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "有料を続けるか迷った過程が私の状況と重なって読める。「画像生成・速度・モデル・・・」の比べた中身がもう少し具体的だと参考になる。"
+  }
+ },
+ "rank": [
+  "G",
+  "F",
+  "C",
+  "A",
+  "E",
+  "B",
+  "D"
+ ]
+}

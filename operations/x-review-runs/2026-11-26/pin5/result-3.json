@@ -1,0 +1,139 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "使わない言葉のリスト"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "AIで書いた記事はAIっぽさが残る",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "×◯の例があるので「あ、それか」と分かりやすい。「使わない言葉のリスト」が何なのか一言あると最初で迷わない。"
+  },
+  "B": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が並んで、使っていない自分には何の話か分からず1行目で離れた。ブログ運用でどう違ったかの具体例があれば読める。"
+  },
+  "C": {
+   "unknown": [
+    "使わない言葉のリスト"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "AIで書いた文章はAIっぽくなる",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "何をしている人か最初に分かり、具体例もあるのでフォローを考えた。1行目が自己紹介なので流し見だと止まりにくい。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "分担が分かるのは自分の悩み（外注か社内か）に近くて良い。ただ紹介文なので面白さはなく、実際にどれくらい時間が減ったかなど一つ数字があると気になる。"
+  },
+  "E": {
+   "unknown": [
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了する",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前に書いたことがひっくり返った＞＜は人柄が見えて良い。ただ大半は発表の要約で、マイGPTを使っていない自分には関係が薄い。"
+  },
+  "F": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "AIで書いた文章はAIっぽく読まれる",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "無料で貼るだけ・送られないので、すぐ試したくなった。作った理由や自分が困った話が一言あると人柄も見える。"
+  },
+  "G": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランのチャットが無制限になった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Plusを続けるか迷った話は共感できる。「画像生成・速度・モデル・・・」が途中で切れていて、何と比べて決めたのかが分かりにくい。"
+  }
+ },
+ "rank": [
+  "F",
+  "C",
+  "A",
+  "D",
+  "E",
+  "G",
+  "B"
+ ]
+}

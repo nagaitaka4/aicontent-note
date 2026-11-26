@@ -1,0 +1,300 @@
+[
+  {
+    "kind": "candidate",
+    "id": "PIN-10",
+    "text": "AIで書いた記事、使わない言葉のリストで調べたら0件。\nなのに読み返すと、直す所が20か所以上ありました。\n\n多かったのは、話すなら動詞で言う所を名詞にした文です。\n×継続課金の理由になりません\n◯有料を続ける理由になりません\n\n直す前と後を並べて、AIへの頼み方もまとめました👇\nhttps://aicontent-note.com/ai-like-writing-features-fix/",
+    "quote": "",
+    "hash": "9d04fda45bce1ebd",
+    "label": "A",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "使わない言葉のリスト"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIで書いた記事はAIっぽさが残る",
+      "",
+      "AIで書いた記事はAIっぽさが残る"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.33,
+    "comments": [
+      "1行目の「使わない言葉のリスト」が何かわからず、一瞬止まりました。×◯の例は具体的でわかりやすいです。直していて本人がどう感じたかが一言あれば、もっと人柄が見えます。",
+      "「0件なのに20か所」の意外性で1行目は止まる。「使わない言葉のリスト」が何か一言あると分かりやすく、例が1つだけなのでもう1例あると記事を開く気が増す。",
+      "×◯の例があるので「あ、それか」と分かりやすい。「使わない言葉のリスト」が何なのか一言あると最初で迷わない。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：使わない言葉のリスト"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Maxの初期設定がOpus 5に変わった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 6.67,
+    "comments": [
+      "知らない固有名詞が4つ続き、1行目で離れました。Claudeを使っていない人には何がどう違うのか伝わらないので、作業の場面の例が一つあると入りやすいです。",
+      "モデル名が続いて、有料プランを迷っている段階の私には違いが分からない。どんな作業で試したのかが1行あると自分ごとにしやすい。",
+      "モデル名が並んで、使っていない自分には何の話か分からず1行目で離れた。ブログ運用でどう違ったかの具体例があれば読める。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "PIN-11",
+    "text": "AIでブログを回しながら、AIが外した所と直し方を記録しています🐱\n\n一番多いのは、AIっぽい文章。\n使わない言葉のリストで0件でも、読み返すと直す所が20か所以上ありました。\n×継続課金の理由になりません\n◯有料を続ける理由になりません\n\n直す前と後を並べた表はこちら👇\nhttps://aicontent-note.com/ai-like-writing-features-fix/",
+    "quote": "",
+    "hash": "b6c0f0131f73818b",
+    "label": "C",
+    "avg": {
+      "stop": 3.0,
+      "fun": 2.67,
+      "follow": 3.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "使わない言葉のリスト"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      "AIで書いた文章はAIっぽくなる"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 2,
+    "profile_votes": 3,
+    "avg_rank": 3.33,
+    "comments": [
+      "1行目が自己紹介なので流し見だと止まりにくいです。中身はAと同じで、本人の迷いや失敗の感情が無く、情報で終わっています。",
+      "1行目が自己紹介なので止まる力はAより弱いが、何を発信する人か分かるのでフォローの判断がしやすい。0件なのに20か所の話を1行目に寄せると止まりやすい。",
+      "何をしている人か最初に分かり、具体例もあるのでフォローを考えた。1行目が自己紹介なので流し見だと止まりにくい。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：使わない言葉のリスト"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "PIN-08",
+    "text": "AIで、ブログの運用を「止めずに回す」実験をしてます🐱\n\nAIに任せる所と、人がやる所を分けて、\nブログを回しています。\n📝 構成のたたき台と入稿はAIに\n✍️ 言いたいこと・見出しの並び・公開ボタンは私\n🔧 AIが外した所と直し方も記録\n\naicontent-note.com",
+    "quote": "",
+    "hash": "3689003fcc11f702",
+    "label": "D",
+    "avg": {
+      "stop": 2.0,
+      "fun": 2.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "",
+      "",
+      ""
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 5.67,
+    "comments": [
+      "プロフィール文のようで、絵文字の箇条書きは宣伝に見えて流してしまいます。分担して気づいたことや失敗が一つあると読みたくなります。",
+      "プロフィール文のようで流し見では止まらない。分担は分かりやすいが、失敗や意外な発見が1つあると読みたくなる。",
+      "分担が分かるのは自分の悩み（外注か社内か）に近くて良い。ただ紹介文なので面白さはなく、実際にどれくらい時間が減ったかなど一つ数字があると気になる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのマイGPTが終了する",
+      "ChatGPTのマイGPTが終了するという発表",
+      "ChatGPTのマイGPTが終了する"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "「終了する」は気になって止まります。ただ、中盤の「スキル」「カスタムアクション」で置いていかれました。「書いたばかり＞＜」は人柄が出ていて良いので、そこを前に出すと良いです。",
+      "前半は公式発表の要約で、本人らしさは最後の「書いたばかりでした＞＜」だけ。その記事で何を勧めていたのか、自分はどうするのかがあると良い。",
+      "前に書いたことがひっくり返った＞＜は人柄が見えて良い。ただ大半は発表の要約で、マイGPTを使っていない自分には関係が薄い。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "PIN-12",
+    "text": "文章を貼るだけで、AIっぽく読まれやすい所に印が付く無料ツールを作りました。\n\n決まり文句、同じ文末の連続、「また、」「さらに、」の続けすぎなど。\n直し方の例も一緒に出ます。\n\n貼った文章はどこにも送られず、保存もされません👇\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "quote": "",
+    "hash": "1b414c00e05cd215",
+    "label": "F",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIで書いた文章はAIっぽく読まれる",
+      "",
+      "AIで書いた文章はAIっぽく読まれる"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 2,
+    "profile_votes": 3,
+    "avg_rank": 1.67,
+    "comments": [
+      "無料ツールで仕事に使えそうなので止まります。作ったきっかけや苦労が一言あると、宣伝感が薄れて人が見えます。",
+      "無料で自分の文章を確かめられるので試したくなる。作ったきっかけ（自分の記事で困ったこと）が1行あると人柄も見える。",
+      "無料で貼るだけ・送られないので、すぐ試したくなった。作った理由や自分が困った話が一言あると人柄も見える。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "G",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.33,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTのチャットが無料でも無制限になった",
+      "ChatGPTの無料プランのチャットが無制限になったこと",
+      "ChatGPTの無料プランのチャットが無制限になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.67,
+    "comments": [
+      "無料で無制限は気になるので止まります。迷った末に続けた判断は共感できますが、「画像生成・速度・モデル・・・。」の並べ方が雑で、何に一番迷ったのかが見えません。",
+      "有料を続けるか迷った過程が私の状況と重なって読める。「画像生成・速度・モデル・・・」の比べた中身がもう少し具体的だと参考になる。",
+      "Plusを続けるか迷った話は共感できる。「画像生成・速度・モデル・・・」が途中で切れていて、何と比べて決めたのかが分かりにくい。"
+    ]
+  }
+]

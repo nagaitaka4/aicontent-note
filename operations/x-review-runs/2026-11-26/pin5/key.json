@@ -1,0 +1,55 @@
+[
+  {
+    "kind": "candidate",
+    "id": "PIN-10",
+    "text": "AIで書いた記事、使わない言葉のリストで調べたら0件。\nなのに読み返すと、直す所が20か所以上ありました。\n\n多かったのは、話すなら動詞で言う所を名詞にした文です。\n×継続課金の理由になりません\n◯有料を続ける理由になりません\n\n直す前と後を並べて、AIへの頼み方もまとめました👇\nhttps://aicontent-note.com/ai-like-writing-features-fix/",
+    "quote": "",
+    "hash": "9d04fda45bce1ebd",
+    "label": "A"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "B"
+  },
+  {
+    "kind": "candidate",
+    "id": "PIN-11",
+    "text": "AIでブログを回しながら、AIが外した所と直し方を記録しています🐱\n\n一番多いのは、AIっぽい文章。\n使わない言葉のリストで0件でも、読み返すと直す所が20か所以上ありました。\n×継続課金の理由になりません\n◯有料を続ける理由になりません\n\n直す前と後を並べた表はこちら👇\nhttps://aicontent-note.com/ai-like-writing-features-fix/",
+    "quote": "",
+    "hash": "b6c0f0131f73818b",
+    "label": "C"
+  },
+  {
+    "kind": "candidate",
+    "id": "PIN-08",
+    "text": "AIで、ブログの運用を「止めずに回す」実験をしてます🐱\n\nAIに任せる所と、人がやる所を分けて、\nブログを回しています。\n📝 構成のたたき台と入稿はAIに\n✍️ 言いたいこと・見出しの並び・公開ボタンは私\n🔧 AIが外した所と直し方も記録\n\naicontent-note.com",
+    "quote": "",
+    "hash": "3689003fcc11f702",
+    "label": "D"
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "E"
+  },
+  {
+    "kind": "candidate",
+    "id": "PIN-12",
+    "text": "文章を貼るだけで、AIっぽく読まれやすい所に印が付く無料ツールを作りました。\n\n決まり文句、同じ文末の連続、「また、」「さらに、」の続けすぎなど。\n直し方の例も一緒に出ます。\n\n貼った文章はどこにも送られず、保存もされません👇\nhttps://aicontent-note.com/ai-like-text-checker/",
+    "quote": "",
+    "hash": "1b414c00e05cd215",
+    "label": "F"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "G"
+  }
+]

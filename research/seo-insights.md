@@ -1,6 +1,26 @@
 # SEOトレンド・キーワード調査
 
-最終更新: 2026-11-23
+最終更新: 2026-11-27
+
+---
+
+## [2026-11-27] 調査結果（フル版・金曜）
+
+**③の注目：November 2026 core update が11/24に完了し、同じ日に「December 2026 core update」が事前告知された（12月中に開始・開始日は未定）。Search Centralに「ランキング」の節と、生成AIの制御・出典の選び方の公式ドキュメント2本が新設。**
+
+- **🆕 November 2026 core update 完了**（[Search Status Dashboard incidents.json](https://status.search.google.com/incidents.json)・本日curl）：verbatim `The rollout was complete as of November 24, 2026.`（end `2026-11-24T14:03:00+00:00`＝開始から14日）
+- **🆕 December 2026 core update の事前告知**（[incident](https://status.search.google.com/incidents/AXrqxXXdtSjj3672ux7X)・2026-11-24 15:03 UTC）：verbatim `Preannounced the December 2026 core update, which focuses on multiple improvements to how our systems understand and rank relevant content (including for longer and more complex questions), as well as improving personalized results for people who have personalization turned on.`／`This update is scheduled to be released in December 2026.`。全言語・全地域が対象。**開始前に告知されたのは今回が初めて**（鈴木謙一氏の[解説 11/25](https://www.suzukikenichi.com/blog/google-pre-announces-december-core-update-and-opens-new-hub-for-ranking-transparency/)は「約30日前に告知する新しい運用」と書くが、**公式の[Stay informed](https://developers.google.com/search/docs/ranking/stay-informed)には日数の記載なし**＝「30日」は二次情報）
+- **🆕 Search Central に「ランキング」の節**（[Latest updates](https://developers.google.com/search/updates)・`Last updated 2026-11-24 UTC`）：[Ranking](https://developers.google.com/search/docs/ranking)／[Our principles for ranking results](https://developers.google.com/search/docs/ranking/principles-for-ranking-results)／[Stay informed](https://developers.google.com/search/docs/ranking/stay-informed)／[Submit feedback](https://developers.google.com/search/docs/ranking/submit-feedback)。Stay informed の要点：事前告知・開始・完了はSearch Status Dashboardに出す／verbatim 評価は `until an update is marked complete` ＋完了後少なくとも1週間のデータを待ってからSearch Consoleで見る
+  - **自サイトへの意味**：11/24完了＋1週間＝**12/1以降のGSCで11月の影響を見られる**。ただし12月のコアアップデートが始まると再び判定できなくなる＝**判定の窓は「12/1〜12月の開始日」の短い期間**。11/26の定点観測（直近2週間は約2割減）は展開中の数字なので、影響の結論にしない
+- **🆕 生成AIの制御ドキュメント**（[Control how your content is used for generative AI at Google](https://developers.google.com/search/docs/fundamentals/gen-ai-controls)・2026-11-24）：基盤モデルの学習／Gemini等の検索以外での利用／検索の生成AI機能（AI Overviews・AI Mode・Discover）の3つを別々に管理できると整理。検索側は**Search Consoleの設定**の `Exclude my site's links and content from Search generative AI features`（**提供国・提供状況の記載はページに無い**＝6/3の英国テスト以降の展開は公式には未確認のまま）。Google-Extendedは verbatim `not used as a ranking signal in Search`。共通の学習拒否の目印（`__usage_ai-training`）は2027年初めに対応予定（10/30既録の続き）
+- **🆕 出典の選び方ドキュメント**（[Attribution and factuality in Search generative AI features](https://developers.google.com/search/docs/fundamentals/gen-ai-attribution-factuality)）：AI Overviews・AI Modeの出典は検索インデックスから選び、関連検索（クエリファンアウト）で補う。出典になれる条件は verbatim `Only pages that are indexed and eligible to be shown in Search with a snippet`／助言は `Make sure important information is available in text`。**新しい対策は無く「インデックス＋スニペット可＋本文テキスト」の確認＝既存記事no.54（GEO）の内容と矛盾しない**
+- **Google検索プロフィール：日本からも申請可能に**（[鈴木謙一氏 11/24](https://www.suzukikenichi.com/blog/creators-in-japan-can-now-claim-google-search-profiles-with-new-support-for-linkedin-and-threads/)・**Googleの公式発表は未確認＝筆者の観測**）：条件はInstagram・TikTok・YouTube・Xのどれかでフォロワー1万人以上のまま＝**このメディア（Xフォロワー14人）は対象外・記録のみ**
+- 二次情報（記録のみ）：「世界の上位100万サイトで総訪問数が12%減」（鈴木謙一氏の週次まとめ 11/24・**原典・期間は記事本文に無く未確認**）／Googleトップページに折りたたみ式サイドバー（過去のAI検索を再開・11/20）
+- Search Central Blog：11月は既録の3本のまま（新着なし）
+
+### 記事側への影響
+- 訂正が必要な記事：なし
+- 既存記事の更新材料：AI検索の引用に触れる記事（no.54ほか）を改稿するとき、出典の条件を公式ドキュメント（gen-ai-attribution-factuality）で一次情報として書ける
 
 ---
 

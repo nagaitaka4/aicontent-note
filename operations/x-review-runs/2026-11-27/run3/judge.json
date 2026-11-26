@@ -1,0 +1,210 @@
+[
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "A",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.0,
+      "follow": 3.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "8/21に本人が「無料でもマイGPTは使える」と書いた投稿",
+      "8/21に書き手が「無料でもマイGPTは使える」と投稿していた",
+      "ChatGPTのマイGPTが終了するという発表"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 2.67,
+    "comments": [
+      "前半は終了のお知らせの要約で、ニュースっぽく読み流しかけた。「書いたばかりでした＞＜」で人柄が出るので、それを冒頭に持ってくると止まりやすい。",
+      "前半は公式発表の要約で、ニュースを読んでいる感じでした。「書いたばかりでした＞＜」で人柄が出るので、自分はこれからどうするかが一言あるともっと良いです。",
+      "前半は公式発表の要約で、ニュースとして読んでしまった。「書いたばかり」の＞＜で人柄が少し見えるが、自分の仕事への影響（どう移したか等）があればもっと良い。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c9",
+    "text": "【AIに任せていない判断】\n\n「何を言い切るか」\n「出していいか」\n「私がやっていない使い方を書いていないか」\n\nAIと記事を作っていて、この3つは今も私が決めています。\nゼロから構成を考えることはほとんどなくなり、AIの構成を確かめる時間のほうが長くなっています。\nhttps://aicontent-note.com/ai-thinking-ability-decline/",
+    "quote": "",
+    "hash": "c94219330f3db3f0",
+    "label": "B",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.33,
+      "follow": 3.0
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 1,
+    "premise_topics": [
+      "AIに任せると判断を手放してしまうのでは、という話",
+      "",
+      "AIで記事を作るとき、どこまでAIに任せるか"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 4.0,
+    "comments": [
+      "見出しと箇条書きが堅く、記事の宣伝に見えて読む気が落ちた。3つ目の項目が何を指すのか分かりにくい。具体的な失敗例が1つあると良い。",
+      "【】の見出しと箇条書きが硬く、講座っぽく見えて1行目では止まりませんでした。3つ目の「やっていない使い方を書いていないか」は具体的で気になるので、迷った実例が1つあると読みたくなります。",
+      "【】の見出しは記事の宣伝っぽく見えて少し引いた。3つの判断は社内で回すときの参考になり、外注か内製かで迷う身には刺さる。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "candidate",
+    "id": "c7",
+    "text": "AIを使うと考える力が落ちるのか、少し気になっています。\n私はもう、ゼロから記事の構成を考えることがほとんどありません。\n\n代わりに、AIが作った構成を確かめる時間のほうが長くなっています。\n「何を言い切るか」「出していいか」は、今も私が決めています。\nhttps://aicontent-note.com/ai-thinking-ability-decline/",
+    "quote": "",
+    "hash": "0cd61421c51b3b7f",
+    "label": "C",
+    "avg": {
+      "stop": 3.33,
+      "fun": 3.0,
+      "follow": 3.33
+    },
+    "unknown_readers": 0,
+    "unknown_terms": [],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "AIを使うと考える力が落ちると言われている",
+      "AIを使うと考える力が落ちると言われる",
+      "AIを使うと考える力が落ちるのではないかという話"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 2.67,
+    "comments": [
+      "1行目の問いは自分も気になるので少し止まった。ただ後半が記事への誘導で終わるので、本人がどう感じているか（不安なのか平気なのか）が一言あると良い。",
+      "1行目の問いは自分も気になるので止まりました。ただ結論が出ないままリンクで終わるので、本人がどう感じているか（落ちた気がする／しない）が一言欲しいです。",
+      "1行目の問いは自分も気になっていたので止まった。結論が「確かめる時間が長くなった」で少し弱く、落ちたのか落ちてないのか本人の実感が一言あると良い。"
+    ],
+    "pass": true,
+    "why": []
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "D",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.67,
+      "follow": 2.33
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 1,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude MaxのデフォルトがOpus 5になった",
+      "Claude Maxの標準モデルがOpus 5に変わった",
+      "Claude Maxの既定モデルがOpus 5になったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 4.0,
+    "comments": [
+      "Claudeを知らないので1行目から固有名詞だらけで分からない。「違いが分からなかった」という正直さは好感だが、知らない人向けに何の話か一言欲しい。",
+      "有料プランを迷っている身としては「違いを実感できない」が正直で参考になります。Fableが何か分からず、どこで「おっ」となったのかも書いてないので比べようがありません。",
+      "モデル名が並んで何の話か分からなかった。違いを感じなかった具体的な作業（ブログ記事など）が書いてあれば自分ごとにできる。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 3.33,
+      "follow": 3.33
+    },
+    "unknown_readers": 1,
+    "unknown_terms": [
+      "Plus",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料チャットが無制限になった",
+      "ChatGPTのチャットが無料でも無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になったこと"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 1.67,
+    "comments": [
+      "「無料で無制限」は自分にも関係があるので止まった。Plusを続けるか迷った過程が身近。最後の「勝ちました」でもう少し決め手が具体的だと良い。",
+      "まさに自分が迷っていることなので一番刺さりました。「安定して使いたいが勝った」という決め手が見えて良いです。いくら払っているか、何に一番使っているかがあるとさらに参考になります。",
+      "「無料で無制限」で止まり、有料を続けるか迷った話は共感できた。何に使っていて安定が必要だったのか（業務の例）があると決め手が伝わる。"
+    ]
+  }
+]

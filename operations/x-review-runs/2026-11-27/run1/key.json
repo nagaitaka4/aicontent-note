@@ -1,0 +1,47 @@
+[
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "A"
+  },
+  {
+    "kind": "candidate",
+    "id": "c2",
+    "text": "私はもう、ゼロから記事の構成を考えることがほとんどありません。\n\n構成のたたき台も本文もAIに任せています。\n代わりに長くなったのは、AIが作った構成を確かめる時間です。\nそれでも「何を言い切るか」「出していいか」だけは自分で決めています。\nhttps://aicontent-note.com/ai-thinking-ability-decline/",
+    "quote": "",
+    "hash": "602206a874da1f27",
+    "label": "B"
+  },
+  {
+    "kind": "candidate",
+    "id": "c1",
+    "text": "【AIに任せていない判断】\n\n「何を言い切るか」\n「出していいか」\n「私がやっていない使い方を書いていないか」\n\nAIと記事を作っていて、ここだけは自分で決めています。\n構成も本文もAIが書く分、確かめる時間のほうが長くなりました。\nhttps://aicontent-note.com/ai-thinking-ability-decline/",
+    "quote": "",
+    "hash": "1e8ccb22381fc0c3",
+    "label": "C"
+  },
+  {
+    "kind": "candidate",
+    "id": "c3",
+    "text": "AIなしで解くと点が下がった実験、下がったのは主に「答えをそのまま聞いた人」でした。\n私も構成のたたき台と本文はAIに任せています。\n\nただ、何を言い切るか・出していいかは自分で決めています。\nhttps://aicontent-note.com/ai-thinking-ability-decline/",
+    "quote": "",
+    "hash": "800d9ebd96b9afcc",
+    "label": "D"
+  },
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "E"
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "F"
+  }
+]

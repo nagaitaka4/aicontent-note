@@ -1,0 +1,218 @@
+[
+  {
+    "kind": "baseline",
+    "id": "Opus5-気",
+    "text": "Claude MaxのデフォルトがOpus 5になりました。\n\n少し触ってみましたが、\n今のところ、私の使い方では Sonnet 5 との違いを実感できず…。\n\nFableを初めて使ったときは\n「おっ！」となったんですが。\n\nOpus 5で差を感じる人はどんな使い方をしているか気になります。",
+    "hash": "6021741be711a0f6",
+    "label": "A",
+    "avg": {
+      "stop": 2.33,
+      "fun": 2.0,
+      "follow": 2.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Max",
+      "Fable",
+      "Opus 5",
+      "Sonnet 5"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 0,
+    "premise_topics": [
+      "Claude Maxのデフォルトモデルが変わったという発表",
+      "Claude MaxのデフォルトがOpus 5に変わった",
+      "Claude MaxのデフォルトモデルがOpus 5に変わった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 5.0,
+    "comments": [
+      "1行目からClaudeのプランやモデル名が並んでいて、知らない人には何の話かわかりません。Fableが何なのかも説明がないです。違いを感じなかった具体的な場面が1つあれば、もう少し読めました。",
+      "Fableが何か分からず、モデル名の比較ばかりで有料プランを迷う自分には遠い話でした。どんな作業でどう違ったのかが一つあれば読めます。",
+      "1行目が製品の更新報告で、私には関係のない話に見えて止まりませんでした。Fableが何なのかも分からず、どういう作業で比べたのかが書いてあれば読めたと思います。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "Plus3-気",
+    "text": "ChatGPTのチャット、無料でも無制限になりました。\n\n無料プランにしても、\n作ったマイGPTは使えるようです。\n\nPlusを続けるか迷いました。\n画像生成・速度・モデル・・・。\n\n利用制限がどれくらいかも明確じゃないので、\n「結局は安定して使いたい」が勝ちました。",
+    "hash": "cdc2803e7e531853",
+    "label": "B",
+    "avg": {
+      "stop": 3.67,
+      "fun": 2.67,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 2,
+    "premise_missing": 0,
+    "premise_topics": [
+      "ChatGPTの無料プランが無制限になったという発表",
+      "ChatGPTが無料でも無制限になった",
+      "ChatGPTの無料プランでチャットが無制限になった"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 0,
+    "avg_rank": 3.67,
+    "comments": [
+      "「無料でも無制限」は自分にも関係あるので止まりました。ただ、結局Plusを続けたのか解約したのかがはっきりせず、最後の「安定して使いたい」がどっちの結論なのか迷いました。",
+      "有料を続けるか迷う話は今の自分にかなり近く、刺さりました。「画像生成・速度・モデル・・・」の所がぼやけているので、何が決め手だったかを一つ具体的に書いてほしいです。",
+      "迷って結局Plusを続けたという決断は見えますが、前半は公式発表の要約に読めます。「安定して使いたい」がどんな仕事で効いているのかがあれば、自分ごとにできました。"
+    ]
+  },
+  {
+    "kind": "baseline",
+    "id": "GPTEND-01",
+    "text": "ChatGPTのマイGPTが、終了するそうです。\n\n全プランが対象で、個人向けの終了日は未定（会社向けは12/11）。\n\n中の指示は「スキル」に移せるけど、カスタムアクションは移りません。\n\n8/21に「無料でもマイGPTは使える」って書いたばかりでした＞＜\n\nChatGPT特有の機能でいいなと思ってたんですが。",
+    "hash": "0e3f71a3c765bb0b",
+    "label": "C",
+    "avg": {
+      "stop": 3.67,
+      "fun": 3.0,
+      "follow": 2.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "8/21に書いた投稿",
+      "カスタムアクション",
+      "スキル",
+      "マイGPT"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 3,
+    "premise_missing": 1,
+    "premise_topics": [
+      "ChatGPTのマイGPT機能が終了するという発表と、本人が以前『無料でも使える』と書いたこと",
+      "ChatGPTのマイGPTが終了する発表",
+      "ChatGPTのマイGPT機能が終了する"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 1,
+    "avg_rank": 3.33,
+    "comments": [
+      "前半は発表の要約で、スキルやカスタムアクションの話はついていけませんでした。「書いたばかりでした＞＜」で人柄が見えて少し笑えたので、そこをもっと前に出すといいと思います。",
+      "前半は公式発表の要約で、用語が分からず読む気が落ちました。「書いたばかりでした＞＜」は人柄が見えて良いので、そこから始めると止まります。",
+      "「8/21に書いたばかり」の自虐はちょっと人間味がありますが、全体はニュースの要約です。終了で自分の仕事がどう困るのか、どうするつもりかがあればフォローを考えました。"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c8",
+    "text": "AIが作ったプログラムのコードを、私は一度も読んでいません。\n\n作業を任せているAIのClaude Codeが、記事のチェックなどに使うものを、20本近く作っていました。\n\n昨日そのAIに、今も読んでいないかを確認されて、そもそもそれが何なのかを、こちらから聞いたくらいです。",
+    "quote": "",
+    "hash": "0c7b0c537fe0f290",
+    "label": "D",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 3.67
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 1,
+    "premise_topics": [
+      "",
+      "",
+      "AIが作ったコードは人が読んで確認するべきだという考え"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 2.0,
+    "comments": [
+      "AIに20本も作らせて一度も読んでいない、という告白は意外で止まりました。ただ3文目の「そもそもそれが何なのかを、こちらから聞いた」の「それ」が何を指すのか一瞬わからず、読み返しました。",
+      "「一度も読んでいません」で止まり、AIに確認されて逆に聞き返した所が意外で面白かったです。2文目が長く「使うもの」が何なのか少し分かりにくく、それで大丈夫だったのかが続きで気になります。",
+      "1行目の告白で止まりました。2文目の「使うものを、20本近く作っていました」は少し読みにくく、それで困ったのか大丈夫だったのかの一言があれば、もっと次を読みたくなります。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code"
+    ]
+  },
+  {
+    "kind": "candidate",
+    "id": "c9",
+    "text": "AIが作ったプログラムのコードを、私は一度も読んでいません。\n\n作業を任せているAIのClaude Codeが、記事のチェックなどに使うプログラムを20本近く作っていたのに、です。\n\n昨日、今も読んでいないかをそのAIに確認されて、そもそも何のことかを聞き返したくらいです。",
+    "quote": "",
+    "hash": "db52bb4681ddf2bb",
+    "label": "E",
+    "avg": {
+      "stop": 4.0,
+      "fun": 4.0,
+      "follow": 4.0
+    },
+    "unknown_readers": 3,
+    "unknown_terms": [
+      "Claude Code"
+    ],
+    "unknown_quote_only": [],
+    "news_votes": 0,
+    "premise_missing": 1,
+    "premise_topics": [
+      "",
+      "",
+      "AIが作ったコードは人が読んで確認するべきだという考え"
+    ],
+    "premise_asked": true,
+    "denied_uncommon": 0,
+    "denied_views": [
+      "",
+      "",
+      ""
+    ],
+    "common_asked": true,
+    "person_votes": 3,
+    "profile_votes": 3,
+    "avg_rank": 1.0,
+    "comments": [
+      "Dと同じ話ですが、「〜作っていたのに、です」で驚きが伝わり、最後の「何のことかを聞き返した」もすっと入ってきました。どうしてそれで回っているのかを一言足すと、次の投稿も読みたくなります。",
+      "Dと同じ驚きがあり、「〜のに、です。」で読んでいない状態がはっきり伝わって、Dより読みやすかったです。大丈夫なのか、困ったことはあったのかを一言あると、フォローの決め手になります。",
+      "「20本近く作っていたのに、です」で、読んでいないことの大きさが伝わってすっと読めました。読まずに任せて実際どうだったのか（問題は起きたのか）が続きで読めれば、すぐフォローします。"
+    ],
+    "pass": false,
+    "why": [
+      "分からない言葉を挙げた読者3人：Claude Code"
+    ]
+  }
+]

@@ -1,0 +1,143 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "AIのレビューを2回通った見出し（何のレビューか分からない）"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目がメディア名の自己紹介なので流し見では止まりません。「見出しが分からなかった話」は気になるので、それを先頭に出せば読む気になります。"
+  },
+  "B": {
+   "unknown": [
+    "指示書（AIへの指示のことかすぐには分からない）"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "絵文字の箇条書きで整理されていて読みやすいですが、紹介文止まりです。4万字の例が一番面白いのに3行目に埋もれています。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "4万字書き足しても守られない、という失敗から入るので止まり、社内でAIを回すとこうなるのかと自分ごとになります。最後の箇条書き1行は唐突で、もう1つ例があれば一覧に見えます。"
+  },
+  "D": {
+   "unknown": [
+    "指示書"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "B・Aとほぼ同じ紹介文で、特に引っかかりがありません。例の話をもっと具体的に先頭に置けば良くなります。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランのチャットが無制限になったという変更",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Plusを続けるか迷って結局続けた、という判断が見えるのは良いです。冒頭がニュースの一文なので、迷った話から入ると止まりやすいです。"
+  },
+  "F": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション",
+    "8/21に書いた（前の投稿を知らない）"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "終了の話は気になって止まりますが、中盤は発表の要約です。「書いたばかりでした＞＜」の人間味は良いので、使っていた人として何に困るかがあればもっと読みたくなります。"
+  },
+  "G": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude Maxのデフォルトモデルが変わったという変更",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が並んでいてWeb担当の私には違いの話が分かりにくいです。どんな作業で差を感じなかったかが一言あれば参考になります。"
+  }
+ },
+ "rank": [
+  "C",
+  "F",
+  "E",
+  "G",
+  "A",
+  "B",
+  "D"
+ ]
+}

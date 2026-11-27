@@ -1,0 +1,124 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "表には強調を入れる（何の指示か少し分かりにくい）"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目の「4万字」で止まった。途中の「・AIのレビューを2回通った見出し〜」が1項目だけで箇条書きの意味が分からず、自己紹介と失敗例が混ざって読みにくい。"
+  },
+  "B": {
+   "unknown": [
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で、自分に関係あるか分からないまま読んだ。「書いたばかりでした＞＜」で人柄が見えたので、そこをもっと前に出すと良い。"
+  },
+  "C": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトがOpus 5になったこと",
+    "in_post": true,
+    "denied": "Opus 5はSonnet 5より違いを実感できる",
+    "common": true
+   },
+   "comment": "固有名詞ばかりでClaudeを知らない自分には何の話か分からなかった。どんな作業で比べたのかが一言あれば読める。"
+  },
+  "D": {
+   "unknown": [
+    "表には強調を入れる（何の指示か少し分かりにくい）"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目は引きがある。後半の「AIで発信する人とつながりたいです」は少し定型的で、自分向けではない感じがして読む気が落ちた。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランでチャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "無料で無制限は自分にも関係あるので止まった。Plusを続けるか迷った過程は共感できるが、「画像生成・速度・モデル・・・」の部分がもう少し具体的だと良い。"
+  },
+  "F": {
+   "unknown": [
+    "表には強調を入れる（何の指示か少し分かりにくい）"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "失敗談から「こういう〜を見せるメディアです」につながっていて分かりやすい。記事とXで何が読めるかが書いてあるので、フォローする理由が持てた。"
+  }
+ },
+ "rank": [
+  "F",
+  "A",
+  "D",
+  "E",
+  "B",
+  "C"
+ ]
+}

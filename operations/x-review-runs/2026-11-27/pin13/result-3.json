@@ -1,0 +1,101 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "カスタムアクション",
+    "スキル（ChatGPTの機能名として）"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で、ニュースとして読んでしまう。「書いたばかりでした＞＜」の失敗は人柄が出ていて良いので、これを冒頭に出せばもっと止まる。"
+  },
+  "B": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字書き足しても守られない」は自社でAIを回すか迷っている身としては刺さる。ただ、どの決まりが守られなかったのか書かれないまま自己紹介に移るので、そこで少し読む気が落ちる。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "フックはBと同じで強い。「使い方や考え方」はBの「AIとブログ運用のこと」より抽象的で、自分の課題（ブログ運用）に関係ありそうだと伝わりにくい。"
+  },
+  "D": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランのチャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Plusを続けるか迷って決めた過程は共感できる。ただ1行目がニュースの見出しっぽく、自分ごとの迷いを最初に出した方が止まる。"
+  },
+  "E": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が続いて、何の話なのか自分には分からない。ブログ運用でどう違ったのかなど、具体的な作業の話があれば読める。"
+  }
+ },
+ "rank": [
+  "B",
+  "C",
+  "A",
+  "D",
+  "E"
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "AIコンテンツ運用ノート"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目がメディア名の自己紹介で、流し見だと止まりません。「レビューを2回通った見出しが分からなかった」の方が面白いので、それを先頭に出すと良くなりそうです。"
+  },
+  "B": {
+   "unknown": [
+    "AIコンテンツ運用ノート",
+    "指示書"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "絵文字つきの箇条書きで整理されていますが、看板の説明に見えて人柄が出てきません。「4万字書き足しても守られない」は気になるので、1行目に持ってきてほしいです。"
+  },
+  "C": {
+   "unknown": [
+    "指示書"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字」「何度も抜けた」で止まり、失敗があるので人柄が見えます。途中の「・」の1行だけ急に浮いているので、例だとわかる書き方にすると読みやすくなります。"
+  },
+  "D": {
+   "unknown": [
+    "AIコンテンツ運用ノート",
+    "指示書"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Aとほぼ同じで説明が続き、例が最後にあるので気づく前にスクロールしてしまいます。例を冒頭に出すと良くなります。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランのチャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「無料でも無制限」は自分にも関係するので止まり、Plusを続けるか迷う話は共感できます。何に一番お金を払う価値を感じたかが1つあると、もっと人柄が出ます。"
+  },
+  "F": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は発表の要約に見えて、ニュース紹介の印象です。「書いたばかりでした＞＜」は人柄が出ていて良いので、それを前に出すと面白くなります。"
+  },
+  "G": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude Maxの標準モデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Claudeを知らないので、1行目から固有名詞ばかりで読む気が落ちました。どんな作業で試したのかが1つあれば、知らない人にも伝わります。"
+  }
+ },
+ "rank": [
+  "C",
+  "E",
+  "F",
+  "A",
+  "B",
+  "D",
+  "G"
+ ]
+}

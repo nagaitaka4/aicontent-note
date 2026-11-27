@@ -1,0 +1,119 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "製品名が4つ続いて、AIに詳しい人向けの話に見えてしまいました。Web担当の仕事でどう違ったかが一言あれば、自分ごととして読めます。"
+  },
+  "B": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランのチャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "迷ったうえで有料を続けた決断は共感できます。「画像生成・速度・モデル・・・」の所が箇条書きのメモのようで、何に一番迷ったのか分かりにくかったです。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字」でスクロールが止まりました。ただ、守られなかった決まりが何かが書かれていないので、2行目で少し物足りなくなりました。"
+  },
+  "D": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了すると発表されたこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前に「無料でも使える」と書いたばかり、という所は人柄が見えて良いです。ただ前半は発表の要約なので、使っていない人には読み飛ばされそうです。"
+  },
+  "E": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "メディア名が入っているので、Cより何のアカウントかがはっきりします。それでも守られなかった決まりの中身が無いので、具体例が1つあると止まります。"
+  },
+  "F": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「表には強調を入れる」が抜けたという具体例と、「レビューを2回通った見出しが分からなかった」という失敗で、実際に回している人だと伝わりました。箇条書きが1つだけなのが少し中途半端なので、2〜3個並んでいるともっと読みたくなります。"
+  }
+ },
+ "rank": [
+  "F",
+  "E",
+  "C",
+  "D",
+  "B",
+  "A"
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "「表には強調を入れる」が何の指示か一瞬分かりにくい"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字書いても抜ける」は意外性があって止まる。箇条書きの1行が唐突で途中で切れた印象なので、もう1〜2例あると実況の中身が伝わる。"
+  },
+  "B": {
+   "unknown": [
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "8/21に書いた「無料でもマイGPTは使える」という過去の投稿",
+    "in_post": false,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で、最後の「書いたばかり」でやっと人柄が出る。自分のマイGPTをどうするかの決断があると読みたくなる。"
+  },
+  "C": {
+   "unknown": [
+    "Fable",
+    "Claude Max"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が並んでWeb担当の私には遠い。どんな作業で差が無かったのか具体例があれば判断材料になる。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "冒頭は強いが、後半の「つながりたいです」が自己紹介っぽく温度が下がる。外注か内製か迷う人に何が得られるかが一言あると良い。"
+  },
+  "E": {
+   "unknown": [],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "迷って有料を続けた判断が見えて共感できる。「画像生成・速度・モデル」のどれが決め手だったか具体的だともっと刺さる。"
+  },
+  "F": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「こういう」で冒頭の失敗談とメディアの説明が自然につながっていて分かりやすい。後半はやや説明的なので、記事を読むと何が分かるかが一言あると良い。"
+  }
+ },
+ "rank": [
+  "A",
+  "F",
+  "D",
+  "E",
+  "B",
+  "C"
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "表には強調を入れる"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目の「4万字」で止まるし、AIが外した所を実況する紹介もわかりやすい。「表には強調を入れる」がなぜ大事かを一言添えると、もっと自分ごとにできる。"
+  },
+  "B": {
+   "unknown": [
+    "カスタムアクション",
+    "スキル"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は終了のお知らせの要約で、ニュースに見える。「書いたばかり＞＜」の失敗談は人柄が出ていて良いので、そこをもっと前に出すと読み続けたくなる。"
+  },
+  "C": {
+   "unknown": [
+    "Fable",
+    "Claude Max"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトがOpus 5になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "有料プランを迷っている身として「差を感じない」は参考になる。ただFableが何か分からないので、そこで置いていかれた。どんな使い方で試したかがあるとうれしい。"
+  },
+  "D": {
+   "unknown": [
+    "表には強調を入れる"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目は強いが、後半の「つながりたいです」がよくある挨拶文で、温度が下がった。Aのように具体的な失敗例が1つあると良かった。"
+  },
+  "E": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料チャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "有料プランを続けるか迷った話は、まさに今の自分の悩みで刺さった。「安定して使いたい」が勝った理由をもう少し具体的に聞きたい。"
+  },
+  "F": {
+   "unknown": [
+    "表には強調を入れる"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目は良いが、後半が自己紹介の説明だけで、面白さはAより弱い。記事で何が分かるのか、具体的な例が1つ欲しい。"
+  }
+ },
+ "rank": [
+  "A",
+  "E",
+  "F",
+  "D",
+  "B",
+  "C"
+ ]
+}

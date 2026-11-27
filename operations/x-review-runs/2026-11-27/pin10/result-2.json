@@ -1,0 +1,142 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "AIコンテンツ運用ノート"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目がメディア紹介なので流し見では止まらない。「レビューを2回通った見出しが分からなかった」は面白そうなのに途中に埋もれていて、そこを先頭にすれば良くなる。"
+  },
+  "B": {
+   "unknown": [
+    "AIコンテンツ運用ノート"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "絵文字の箇条書きでよくある自己紹介に見えて読み飛ばしそうになる。4万字の例が一番気になるのに3行目なので、そこから始めてほしい。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字書き足しても抜ける」は自分も同じ目に遭いそうで共感して止まった。最後の「・」の一行だけ浮いていて、例として並べるならもう1つあるか、普通の文にした方が読みやすい。"
+  },
+  "D": {
+   "unknown": [
+    "AIコンテンツ運用ノート"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "説明が続くので途中で読む気が落ちる。例の4万字の話は気になるが最後なので、そこまで読む人が少なそう。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランでチャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "有料プランで迷っている自分には刺さる話題。ただ「結局は安定」がやや唐突で、何が決め手だったかの具体的な一言があると良い。"
+  },
+  "F": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半はニュースの要約だが、「書いたばかりでした＞＜」で人柄が出て和んだ。スキルやカスタムアクションが何か分からず、中盤で少し置いていかれた。"
+  },
+  "G": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "固有名詞が多くて有料プラン未加入の自分には別世界の話に見えた。どんな作業で違いを試したのかがあれば読み手も比べられる。"
+  }
+ },
+ "rank": [
+  "C",
+  "F",
+  "E",
+  "A",
+  "D",
+  "B",
+  "G"
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が並んで、AIを使い始めたばかりの私には何の話か分かりませんでした。どんな作業で違いを比べたのか、具体例が1つあれば読めます。"
+  },
+  "B": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランでもチャットが無制限になった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "有料プランを続けるか迷っている今の自分にはそのまま刺さりました。「画像生成・速度・モデル・・・」の所は、何と何を比べたのかがぼやけて少し流れてしまいます。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字でも守られない」で止まりましたが、どの決まりが守られなかったのかが書かれていないので、もやっとします。「こういう」が何を指すのかも少し分かりにくいです。"
+  },
+  "D": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は発表の要約で、用語が分からず読む気が落ちました。「8/21に書いたばかり」の失敗は人柄が出ていて、ここを冒頭に持ってくるほうが読みたくなります。"
+  },
+  "E": {
+   "unknown": [
+    "AIコンテンツ運用ノート"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Cとほぼ同じで、メディア名が入った分だけ何のアカウントか分かりやすいです。ただ守られなかった決まりの中身が無いので、続きへの引っかかりは弱めです。"
+  },
+  "F": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「表には強調を入れる」という具体的な決まりと、AIのレビューを2回通っても分からなかった見出しの例があり、実際に使っている人だと分かって信頼できました。箇条書きが1つだけなのは少し中途半端なので、2〜3個あればもっと良いです。"
+  }
+ },
+ "rank": [
+  "F",
+  "E",
+  "C",
+  "B",
+  "D",
+  "A"
+ ]
+}

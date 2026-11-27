@@ -1,0 +1,119 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Claudeの製品名が続いて、知らない人には何の話か分からない。違いを感じなかった具体的な作業が1つあれば読める。"
+  },
+  "B": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのチャットが無料でも無制限になった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Plusを続けるか迷った話は自分ごとで共感できた。「画像生成・速度・モデル・・・」が箇条書きのメモみたいで、何に一番迷ったのかが一言あればもっと伝わる。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "4万字は止まる数字。ただ2段落目から急に自己紹介になって、守られなかった決まりが何かが分からないままなのが惜しい。"
+  },
+  "D": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了する",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で、ニュース紹介に見える。「書いたばかりでした＞＜」の失敗が人柄で一番良い所なので、そこを前に出してほしい。"
+  },
+  "E": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Cとほぼ同じで、メディア名が入ったぶん何のアカウントかは分かりやすい。守られなかった決まりの中身が無いので、引っかかりが続かない。"
+  },
+  "F": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「表には強調を入れる」が抜けたという具体例で、AIあるあるとして笑えて自分も気になった。箇条書きが1つだけで唐突なので、2〜3個あると「この先も読みたい」になる。"
+  }
+ },
+ "rank": [
+  "F",
+  "C",
+  "E",
+  "B",
+  "D",
+  "A"
+ ]
+}

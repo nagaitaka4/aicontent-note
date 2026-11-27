@@ -1,0 +1,98 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPT（GPTs）が終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で、ニュースとして流し読みしてしまう。8/21に書いた話は面白いが、何を書いたのか、これからどうするのかがもう少しあると人柄が見える。"
+  },
+  "B": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1〜2行目の「4万字でも守られない」は気になるが、どの決まりだったかが書かれないまま急に自己紹介になり、肩透かし。その決まりを一つだけでも書けば止まる力が続く。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Bとほぼ同じで、守られなかった決まりの中身がないまま紹介に変わる。「使い方や考え方」は少しぼんやりしていて、Bの「AIとブログ運用」の方が何の発信か分かりやすい。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのチャットが無料でも無制限になったという変更",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "有料プランに入るか迷っている自分には一番刺さる。「画像生成・速度・モデル・・・」の部分は何を比べたのか曖昧なので、一つ具体的な決め手があると説得力が増す。"
+  },
+  "E": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude Maxの標準モデルがOpus 5に変わったという変更",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が並んでいて、AI初心者の自分には何の話か分からず1行目で離れた。どんな作業で比べたのかが書いてあれば、詳しくなくても読める。"
+  }
+ },
+ "rank": [
+  "D",
+  "B",
+  "C",
+  "A",
+  "E"
+ ]
+}

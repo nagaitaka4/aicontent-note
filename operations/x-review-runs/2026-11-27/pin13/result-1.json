@@ -1,0 +1,106 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は発表の要約で、ニュースの紹介に見える。8/21に書いたばかりという失敗の話は面白いので、それを先に出せばもっと人柄が見える。"
+  },
+  "B": {
+   "unknown": [
+    "AIコンテンツ運用ノート"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "4万字の指示書でも守られないという1行目は気になるが、どの決まりが守られなかったのか中身がなく、すぐ宣伝文に変わって気持ちが冷める。守られなかった具体例が一つあれば良い。"
+  },
+  "C": {
+   "unknown": [
+    "AIコンテンツ運用ノート"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Bとほぼ同じで、1行目の引きはあるが答えがないまま紹介文になる。「使い方や考え方」の方が自分にも役立ちそうに感じて少しだけ良い。"
+  },
+  "D": {
+   "unknown": [
+    "マイGPT",
+    "Plus"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランのチャットが無制限になったという変更",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Plusを続けるか迷った話は共感できる。結局続けたのか、月いくらの判断かがはっきりすると、もっと自分ごとになる。"
+  },
+  "E": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトがOpus 5になったという変更",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Claudeを知らないので製品名が並んだ時点で読む気が落ちた。どんな作業で違いを試したのかが書いてあれば、知らなくても読める。"
+  }
+ },
+ "rank": [
+  "C",
+  "B",
+  "D",
+  "A",
+  "E"
+ ]
+}

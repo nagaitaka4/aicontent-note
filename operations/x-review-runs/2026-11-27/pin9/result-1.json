@@ -1,0 +1,106 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "指示書4万字が何のことか少し曖昧",
+    "表には強調を入れる"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目の「4万字」は引っかかるが、2文目は誰が抜けたのか主語がなくて一瞬迷う。後半は自己紹介とリンクになり、宣伝っぽく見えて読む気が落ちた。"
+  },
+  "B": {
+   "unknown": [
+    "表には強調を入れる"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Aとほぼ同じだがAIが抜かしたと書いてあるので意味が通る。ただ後半が自己紹介とリンクで固定ポスト感が強く、失敗をもう1つ具体的に書いてくれれば面白くなりそう。"
+  },
+  "C": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのチャットが無料でも無制限になった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目は「え、そうなの？」と止まる。迷った末に有料を続けたという結論は共感できるが、何が決め手だったかがもう少し具体的だと良かった。"
+  },
+  "D": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトがOpus 5になった",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Claudeを知らないので固有名詞が多くて最初で離脱した。どんな作業で違いを試したのかがあれば、知らない人でも読めた。"
+  },
+  "E": {
+   "unknown": [
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了する",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約に見えるが、「書いたばかりでした＞＜」で人柄が見えて一気に親しみがわいた。スキルへの移し方が一言あると助かる。"
+  }
+ },
+ "rank": [
+  "E",
+  "C",
+  "B",
+  "A",
+  "D"
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "aicontent-note.com"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目の「4万字」は目を引きますが、2段落目からは自己紹介と宣伝の箇条書きになり、読む気が落ちました。守られなかった決まりが具体的に何だったのかが1つでも書いてあれば、続きが気になります。"
+  },
+  "B": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude Maxの初期設定のモデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "Opus 5はSonnet 5より違いを実感できる",
+    "common": true
+   },
+   "comment": "モデル名ばかりで、Claudeを知らない私には何の話か分かりませんでした。どんな作業で試して、何が同じだったのかが書いてあれば読めます。"
+  },
+  "C": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は発表の要約なので流し読みになりましたが、「書いたばかりでした＞＜」で人柄が見えて少し持ち直しました。自分はこの後どうするのかが書いてあれば、もっと良くなります。"
+  },
+  "D": {
+   "unknown": [
+    "aicontent-note.com"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Aとほぼ同じで、箇条書きの宣伝に入ったところで読む気が落ちました。「読んでも分からなかった」はAの「意味不明」より穏やかですが、その見出しの実物が見たいです。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT",
+    "Plus"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランでチャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「無料で無制限」は気になって止まりましたし、Plusを続けるか迷う気持ちは共感できます。「画像生成・速度・モデル・・・」が言いかけで終わっているので、迷った決め手を1つ言い切ってほしいです。"
+  }
+ },
+ "rank": [
+  "C",
+  "E",
+  "A",
+  "D",
+  "B"
+ ]
+}

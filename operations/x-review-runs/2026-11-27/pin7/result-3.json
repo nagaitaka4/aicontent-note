@@ -1,0 +1,103 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "aicontent-note.com"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字でも守られない決まり」は気になるけど、何が守られなかったかが書いてないので消化不良。具体的な決まりを1つ出してくれれば引き込まれる。"
+  },
+  "B": {
+   "unknown": [
+    "Claude Max",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "Opus 5はSonnet 5より明らかに良いという感覚",
+    "common": false
+   },
+   "comment": "有料プランやモデル名の話で、ブログ外注を迷う自分には関係が遠い。どんな作業で差が出なかったか一例あれば読める。"
+  },
+  "C": {
+   "unknown": [
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半はニュースの要約で流しそうになったが、「8/21に書いたばかり」で人柄が見えた。自分の使い方への影響を一言書くとさらに良い。"
+  },
+  "D": {
+   "unknown": [
+    "aicontent-note.com"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Aとほぼ同じで、「読んでも分からなかった」の方が少しやわらかく読みやすい。守られなかった決まりの中身が1つあれば止まる理由が強くなる。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランでチャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Plusを続けるか迷った過程は共感できるが、「画像生成・速度・モデル・・・」が箇条の途中で終わっていて決め手がぼやける。結局何に使っているから残したのかが欲しい。"
+  }
+ },
+ "rank": [
+  "D",
+  "A",
+  "C",
+  "E",
+  "B"
+ ]
+}

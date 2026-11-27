@@ -1,0 +1,136 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [],
+   "stop": 3,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「公開ボタンは自分で押しています」という1行目は、何が言いたいのかが少し遅れて伝わります。4万字の指示書の話を1行目に持ってくれば、すぐ止まると思います。"
+  },
+  "B": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目がアカウントの紹介文なので、流し見だとそのまま通り過ぎます。中身はAと同じなので、引きの強い事実から始めた方がいいです。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字」でまず止まり、AIを使っても手直しが要るという実感が、社内で回すか迷っている自分にちょうど刺さります。20か所直したのが具体的にどんな言い回しだったか、1つ例があればもっと良いです。"
+  },
+  "D": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わったという話",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が並んでいて、ふだん触っていない自分には違いが分かりません。ブログ運用でどう違ったのかが書いてあれば読めます。"
+  },
+  "E": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "すぐ使えそうなので、ブックマークはしたくなります。ただ作った理由やきっかけが無いので、人柄は伝わりません。"
+  },
+  "F": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランでもチャットが無制限になったという話",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "途中の「画像生成・速度・モデル・・・」で、何を比べているのかがぼやけました。結局Plusを続けた理由が、もう少しはっきり書いてあれば読みやすいです。"
+  },
+  "G": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「8/21に書いたばかり」の部分は人間らしくて良いですが、ほとんどは公式発表の要約に見えます。「スキル」「カスタムアクション」が何なのか分からず、読む気が落ちました。"
+  }
+ },
+ "rank": [
+  "C",
+  "A",
+  "E",
+  "B",
+  "F",
+  "G",
+  "D"
+ ]
+}

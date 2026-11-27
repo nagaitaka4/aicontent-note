@@ -1,0 +1,99 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字でも守られない決まり」で止まったが、その決まりが何なのか書かれておらず肩透かし。箇条書きからは宣伝・プロフィール文に見えて読む気が落ちた。守られなかった決まりを1つ具体的に書くと良くなる。"
+  },
+  "B": {
+   "unknown": [
+    "Claude Max",
+    "Fable"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトがOpus 5に変わった",
+    "in_post": true,
+    "denied": "Opus 5はSonnet 5よりはっきり違いが分かる",
+    "common": true
+   },
+   "comment": "有料プランを迷っている身には本音の感想が参考になった。ただFableが何なのか分からず途中で置いていかれた。どんな使い方で差が出なかったのかを1行入れてほしい。"
+  },
+  "C": {
+   "unknown": [
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了すると発表された",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で、ニュースとして読んだ。「書いたばかりでした＞＜」に人柄が出ていて良いので、これを1行目近くに上げると止まりやすい。"
+  },
+  "D": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Aとほぼ同じで、「4万字でも守られない」の答えが無いまま宣伝に移るのが惜しい。「読んでも分からなかった」はAの「意味不明」より穏やかで読みやすかった。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのチャットが無料でも無制限になった",
+    "in_post": true,
+    "denied": "無料が無制限になったなら有料プランは要らない",
+    "common": true
+   },
+   "comment": "有料を続けるか迷った過程が今の自分と重なり、一番読めた。「画像生成・速度・モデル・・・」の並べただけの所でテンポが落ちたので、どれが決め手だったかを一言入れると良くなる。"
+  }
+ },
+ "rank": [
+  "E",
+  "D",
+  "A",
+  "B",
+  "C"
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "4万字の指示書が何のことか（AIへのルールファイル？）"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1〜2行目の「4万字書いても抜ける」は刺さるが、後半が急に自己紹介になり、箇条書き1項目だけで尻切れに見える。抜けた時どう直したかが1行あれば読み続けた。"
+  },
+  "B": {
+   "unknown": [
+    "4万字の指示書が何のことか（AIへのルールファイル？）"
+   ],
+   "stop": 4,
+   "fun": 4,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "Aとほぼ同じで、主語「AIは」が入って誰が抜かしたか分かりやすい分だけ読みやすい。後半の自己紹介と箇条書き1項目は浮いている。"
+  },
+  "C": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランのチャットが無制限になったという変更",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "有料プランで迷っている自分には刺さる話題で、迷った末に続けた決断が見えるのは良い。「・・・」の並べ方が雑で、何が決め手かもう少し具体的だと良かった。"
+  },
+  "D": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude Maxの既定モデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が並んで、使い始めの自分には何の違いの話か分からず1行目で離れる。どんな作業で差が無かったかの具体例があれば読めた。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション",
+    "8/21に書いた投稿"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で用語が多く、流し見だと読み飛ばす。「書いたばかりでした＞＜」の失敗談は親しみが湧くので、そこを前に出すと良い。"
+  }
+ },
+ "rank": [
+  "B",
+  "A",
+  "C",
+  "E",
+  "D"
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "公開ボタン"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目の「公開ボタンは自分で押しています」は何が言いたいのか一瞬わからず、そこで少し止まりました。2行目の「外れることが思ったより多かった」を先頭に出したほうが引き込まれます。"
+  },
+  "B": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目が自己紹介なので流し見だと止まりにくいです。4万字の話は面白いので、それを1行目にしたほうが良いです。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字書き足しても守られない」で止まりました。自己紹介のあとに例が2つ並んで少し長く感じますが、20か所直した話で人柄が見えます。"
+  },
+  "D": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトのモデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "製品名が続いて、Claudeを知らない私には何の話かわかりませんでした。違いがわからないという正直な感想は良いのですが、何をして試したのかが一言あると読めます。"
+  },
+  "E": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "AIっぽい文章を直したいと思っていたので、すぐ使えそうで止まりました。ただ告知なので人柄は見えません。作ったきっかけが一言あると良いです。"
+  },
+  "F": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランでチャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「無料でも無制限」は気になって止まりました。結局Plusを続けたのか、文末の「勝ちました」だけだとはっきりしないので、結論を一言で書いてほしいです。"
+  },
+  "G": {
+   "unknown": [
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "中盤は発表の要約で読む気が落ちました。「8/21に書いたばかり」の失敗が面白いので、そこを前に出したほうが良いです。"
+  }
+ },
+ "rank": [
+  "C",
+  "E",
+  "A",
+  "B",
+  "G",
+  "F",
+  "D"
+ ]
+}

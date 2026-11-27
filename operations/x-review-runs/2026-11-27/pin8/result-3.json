@@ -1,0 +1,97 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [
+    "カスタムアクション",
+    "スキル（ChatGPT内の機能名として）"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPTが終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で、読み飛ばしそうになった。8/21に書いたばかりという失敗はおもしろいので、そこを1行目に持ってくると止まりやすい。"
+  },
+  "B": {
+   "unknown": [],
+   "stop": 3,
+   "fun": 2,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランでチャットが無制限になったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "プランの変更点を並べているだけに見えて、迷った理由も「画像生成・速度・モデル・・・」と並べただけなので伝わりにくい。何に使っていて何が困るから続けたのか、1つ具体的に書いてあるとよい。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "4万字書いても抜けるという失敗は自分のブログ運用に近くて止まった。後半が自己紹介文になるので少し宣伝っぽく感じ、読む気が落ちる。"
+  },
+  "D": {
+   "unknown": [
+    "Fable",
+    "Claude Max"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude MaxのデフォルトモデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が多くて、ブログ担当の自分にはどれがどう違うのか分からない。どんな作業で試して差が無かったのか書いてあれば参考になる。"
+  },
+  "E": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "AIのレビューを2回通っても見出しが分からなかったという話は、AIに任せようか迷っている自分には刺さる。Cと同じで後半の自己紹介が宣伝っぽい点だけ惜しい。"
+  }
+ },
+ "rank": [
+  "E",
+  "C",
+  "A",
+  "D",
+  "B"
+ ]
+}

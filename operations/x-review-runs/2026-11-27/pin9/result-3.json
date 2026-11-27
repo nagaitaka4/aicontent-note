@@ -1,0 +1,102 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「4万字書いても抜ける」の1行目は面白くて止まる。2文目は主語が無く、自分が抜けたのかAIが抜けたのか一瞬迷った。箇条書きが1項目だけなので、ほかの例も見たかった。"
+  },
+  "B": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "「AIは何度も抜かしました」と主語があるので、Aより意味がすっと入る。1行目の数字でつかみ、実況アカウントだと分かるのでプロフィールを見たくなる。"
+  },
+  "C": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTの無料プランが無制限になったという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "迷った話は出ているが、結局Plusを続けたのかやめたのか結論がはっきりせず、読み終えてもやもやした。最後に「だから続けた」と一言あれば良くなる。"
+  },
+  "D": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 2,
+   "fun": 3,
+   "follow": 2,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "Claude Maxの初期設定のモデルがOpus 5に変わったこと",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "モデル名が続いて、ふだん使っていない身には何の話か分からなかった。仕事のどんな作業で差が出なかったのかが書いてあれば自分ごとにできる。"
+  },
+  "E": {
+   "unknown": [
+    "マイGPT",
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTのマイGPT機能が終了するという発表",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で、読む気が落ちた。「書いたばかりでした＞＜」の失敗談はいいので、それを1行目に持ってくれば止まる。"
+  }
+ },
+ "rank": [
+  "B",
+  "A",
+  "E",
+  "C",
+  "D"
+ ]
+}

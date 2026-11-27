@@ -1,0 +1,135 @@
+{
+ "posts": {
+  "A": {
+   "unknown": [],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "AIにブログを書かせると公開まで任せきりにしがち、という前提",
+    "in_post": false,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目の「公開ボタンは自分で押しています」がなぜ大事なのか分からず、そこで少し止まりました。4万字の話を先頭に出した方が引っかかります。"
+  },
+  "B": {
+   "unknown": [],
+   "stop": 2,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "1行目が自己紹介なので流し見だと止まりません。中身はAと同じで、具体的な失敗が上に来れば読まれます。"
+  },
+  "C": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 4,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "4万字書いても守られない、が自分にも起きそうで止まりました。守られなかった決まりの具体例が1つあるともっと良いです。"
+  },
+  "D": {
+   "unknown": [
+    "Claude Max",
+    "Opus 5",
+    "Sonnet 5",
+    "Fable"
+   ],
+   "stop": 3,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "上位モデルなら違いを実感できるはず、という一般的な期待",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "有料プランを迷っている身としては気になる話ですが、モデル名が多くて置いていかれました。どんな作業で比べたのかが一言あると参考になります。"
+  },
+  "E": {
+   "unknown": [],
+   "stop": 4,
+   "fun": 2,
+   "follow": 3,
+   "profile": true,
+   "news": false,
+   "person": false,
+   "premise": {
+    "topic": "AIで書いた文章はAIっぽく読まれるのが心配、という悩み",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "ツール自体は使ってみたいですが、宣伝に見えて書き手の顔が見えません。作ったきっかけや自分の失敗が1行あると親しみが出ます。"
+  },
+  "F": {
+   "unknown": [
+    "マイGPT"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 4,
+   "profile": true,
+   "news": false,
+   "person": true,
+   "premise": {
+    "topic": "ChatGPTが無料でも無制限になったなら有料プランは要らないのでは、という話",
+    "in_post": true,
+    "denied": "",
+    "common": true
+   },
+   "comment": "まさに有料にするか迷っているので刺さりました。「安定して使いたい」が勝った具体的な場面があると納得感が増します。"
+  },
+  "G": {
+   "unknown": [
+    "スキル",
+    "カスタムアクション"
+   ],
+   "stop": 4,
+   "fun": 3,
+   "follow": 3,
+   "profile": false,
+   "news": true,
+   "person": true,
+   "premise": {
+    "topic": "8/21に本人が「無料でもマイGPTは使える」と書いた投稿",
+    "in_post": false,
+    "denied": "",
+    "common": true
+   },
+   "comment": "前半は公式発表の要約で、ニュースとして読みました。書いたばかりで外れた悔しさをもっと前に出すと人柄が見えます。"
+  }
+ },
+ "rank": [
+  "C",
+  "F",
+  "A",
+  "G",
+  "D",
+  "B",
+  "E"
+ ]
+}

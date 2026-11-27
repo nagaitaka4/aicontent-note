@@ -3,10 +3,10 @@ no: 94
 series:
 series_no:
 title: ブログのリライトをAIに任せるには？直す記事の選び方と効果の確かめ方
-date: 2026-11-25
+date: 2026-11-27
 url: https://aicontent-note.com/blog-rewrite-ai/
 slug: blog-rewrite-ai
-status: draft
+status: published
 description: ブログのリライトをAIに任せるなら、直す記事の候補と直し方の案を出させ、直すかは人が決めます。Search Consoleの数字で直す記事を選ぶ表、AIに頼むときの4つの条件と使える型、効果を同じ長さの期間で比べる確かめ方を、例とあわせてまとめました。
 eyecatch: eyecatch_0094.png
 eyecatch_alt: 明るい灰色の地に「ブログのリライトをAIに任せるには？」の題と「直す記事の選び方・効果の確かめ方」を置き、赤ペンでチェックを入れた記事の紙の束と、紙を見ながら考える男性を描いたイラスト
